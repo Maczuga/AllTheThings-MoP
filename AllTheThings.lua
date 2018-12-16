@@ -14,20 +14,20 @@ local backdrop = {
 
 -- Performance Cache 
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
-local C_ArtifactUI_GetAppearanceInfoByID = C_ArtifactUI.GetAppearanceInfoByID; 
-local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
-local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByID;
-local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
-local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
-local C_TransmogCollection_GetIllusionSourceInfo = C_TransmogCollection.GetIllusionSourceInfo;
-local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
-local C_TransmogCollection_GetIllusions = C_TransmogCollection.GetIllusions;
-local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
-local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
-local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
-local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
-local C_Map_GetMapDisplayInfo = C_Map.GetMapDisplayInfo;
-local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
+-- local C_ArtifactUI_GetAppearanceInfoByID = C_ArtifactUI.GetAppearanceInfoByID; 
+-- local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
+-- local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByID;
+-- local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
+-- local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
+-- local C_TransmogCollection_GetIllusionSourceInfo = C_TransmogCollection.GetIllusionSourceInfo;
+-- local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
+-- local C_TransmogCollection_GetIllusions = C_TransmogCollection.GetIllusions;
+-- local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
+-- local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
+-- local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
+-- local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
+-- local C_Map_GetMapDisplayInfo = C_Map.GetMapDisplayInfo;
+-- local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
 local EJ_GetCreatureInfo = _G["EJ_GetCreatureInfo"];
 local EJ_GetEncounterInfo = _G["EJ_GetEncounterInfo"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
@@ -872,31 +872,50 @@ local function BuildSourceTextForTSM(group, l)
 	return app.DisplayName;
 end
 local function GetSourceID(itemLink, itemID)
-    if IsDressableItem(itemLink) then
-		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
-		local sourceID = select(2, C_TransmogCollection.GetItemInfo(itemLink));
-		if sourceID then return sourceID, true; end
+    -- if IsDressableItem(itemLink) then
+	-- 	-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
+	-- 	local sourceID = select(2, C_TransmogCollection.GetItemInfo(itemLink));
+	-- 	if sourceID then return sourceID, true; end
 		
-		local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
-		if slotName then
-			local slots = inventorySlotsMap[slotName];
-			if slots then
-				DressUpModel:SetUnit('player');
-				DressUpModel:Undress();
-				for i, slot in pairs(slots) do
-					DressUpModel:TryOn(itemLink, slot);
-					local sourceID = DressUpModel:GetSlotTransmogSources(slot);
-					if sourceID and sourceID ~= 0 then
-						-- Added 5/4/2018 - Account for DressUpModel lag... sigh
-						local sourceItemLink = select(6, C_TransmogCollection.GetAppearanceSourceInfo(sourceID));
-						if sourceItemLink and tonumber(sourceItemLink:match("item:(%d+)")) == itemID then
-							return sourceID, true;
-						end
-					end
-				end
+	-- 	local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
+	-- 	if slotName then
+	-- 		local slots = inventorySlotsMap[slotName];
+	-- 		if slots then
+	-- 			DressUpModel:SetUnit('player');
+	-- 			DressUpModel:Undress();
+	-- 			for i, slot in pairs(slots) do
+	-- 				DressUpModel:TryOn(itemLink, slot);
+	-- 				local sourceID = DressUpModel:GetSlotTransmogSources(slot);
+	-- 				if sourceID and sourceID ~= 0 then
+	-- 					-- Added 5/4/2018 - Account for DressUpModel lag... sigh
+	-- 					local sourceItemLink = select(6, C_TransmogCollection.GetAppearanceSourceInfo(sourceID));
+	-- 					if sourceItemLink and tonumber(sourceItemLink:match("item:(%d+)")) == itemID then
+	-- 						return sourceID, true;
+	-- 					end
+	-- 				end
+	-- 			end
+	-- 		end
+	-- 	end
+	-- 	return nil, true;
+	-- end
+	local slotName = select(9, GetItemInfo(itemLink));
+	if slotName then
+		local slots = inventorySlotsMap[slotName];
+		if slots then
+			DressUpModel:SetUnit('player');
+			DressUpModel:Undress();
+			for i, slot in pairs(slots) do
+				DressUpModel:TryOn(itemLink, slot);
+				-- local sourceID = DressUpModel:GetSlotTransmogSources(slot);
+				-- if sourceID and sourceID ~= 0 then
+				-- 	-- Added 5/4/2018 - Account for DressUpModel lag... sigh
+				-- 	local sourceItemLink = select(6, C_TransmogCollection.GetAppearanceSourceInfo(sourceID));
+				-- 	if sourceItemLink and tonumber(sourceItemLink:match("item:(%d+)")) == itemID then
+				-- 		return sourceID, true;
+				-- 	end
+				-- end
 			end
 		end
-		return nil, true;
 	end
 	return nil, false;
 end
@@ -1287,19 +1306,6 @@ local function SortGearSetSources(a,b)
 	if first == 0 then return a.invType < b.invType; end
 	return first < 0;
 end
-local function GetArtifactCache()
-	local cache = GetTempDataMember("ARTIFACT_CACHE");
-	if not cache then
-		cache = {};
-		SetTempDataMember("ARTIFACT_CACHE", cache);
-		for i=1,10000,1 do
-			if C_ArtifactUI_GetAppearanceInfoByID(i) then
-				tinsert(cache, app.CreateArtifact(i));
-			end
-		end
-	end
-	return cache;
-end
 local function GetCollectionIcon(state)
 	return L((state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON");
 end
@@ -1334,20 +1340,7 @@ local function GetFactionCache()
 	end
 	return cache;
 end
-local function GetIllusionCache()
-	local cache = GetTempDataMember("ILLUSION_CACHE");
-	if not cache then
-		cache = {};
-		SetTempDataMember("ILLUSION_CACHE", cache);
-		for i=1,10000,1 do
-			local visualID = select(1, C_TransmogCollection.GetIllusionSourceInfo(i));
-			if visualID and visualID > 0 then
-				tinsert(cache, app.CreateIllusion(i));
-			end
-		end
-	end
-	return cache;
-end
+
 local function GetTitleCache()
 	local cache = GetTempDataMember("TITLE_CACHE");
 	if not cache then
@@ -1738,9 +1731,12 @@ local function SearchForItemLink(field, link)
 	if string.match(link, "item") then
 		-- Skip artifact weapons and common for now
 		local quality = select(3, GetItemInfo(link));
-		if quality and (quality < LE_ITEM_QUALITY_COMMON) then -- quality == LE_ITEM_QUALITY_ARTIFACT or 
+		if quality and (quality < 1) then
 			return nil; -- Do not search for Artifact, Poor, or Common Items.
 		end
+		-- if quality and (quality < LE_ITEM_QUALITY_COMMON) then -- quality == LE_ITEM_QUALITY_ARTIFACT or
+		-- 	return nil; -- Do not search for Artifact, Poor, or Common Items.
+		-- end
 	
 		-- Parse the link and get the itemID and bonus ids.
 		local itemString = string.match(link, "item[%-?%d:]+") or link;
@@ -2262,7 +2258,8 @@ local function RefreshSavesCoroutine()
 	end
 	
 	-- Cache the lockouts across your account.
-	local serverTime = GetServerTime();
+	-- TODO server time 
+	local serverTime = GetTime();
 	local lockouts = GetDataMember("lockouts", {});
 	
 	-- Cache your character's lockouts.
@@ -2384,12 +2381,6 @@ local function RefreshCollections()
 		while InCombatLockdown() do coroutine.yield(); end
 		app.print("Refreshing " .. app.DisplayName .. " collection status...");
 		
-		-- Harvest Illusion Collections
-		local collectedIllusions = GetDataMember("CollectedIllusions", {});
-		for i,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
-			if illusion.isCollected then collectedIllusions[illusion.sourceID] = 1; end
-		end
-		
 		-- Harvest Title Collections
 		local collectedTitles = GetDataMember("CollectedTitles", {});
 		for i=1,GetNumTitles(),1 do
@@ -2397,11 +2388,12 @@ local function RefreshCollections()
 		end
 		
 		-- Refresh Mounts / Pets
+		local mountCount = GetNumCompanions("Mount");
 		local collectedSpells = GetDataMember("CollectedSpells", {});
 		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
-		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
-			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-			if spellID and isCollected then
+		for i = 1, mountCount, 1 do
+			local mountID, name, spellID = GetCompanionInfo("Mount", i)
+			if spellID then
 				collectedSpells[spellID] = 1;
 				collectedSpellsPerCharacter[spellID] = 1;
 			end
@@ -2605,9 +2597,9 @@ app.ToggleCollectedThings = function()
 	app.SetCollectedThings(not app.GetDataMember("ShowCollectedItems"));
 end
 
-app.SetPortraitTexture = _G["SetPortraitTextureFromCreatureDisplayID"];
+app.SetPortraitTexture = _G["SetPortraitTexture"];
 app.GetCurrentMapID = function()
-	local uiMapID = C_Map.GetBestMapForUnit("player");
+	local uiMapID = GetCurrentMapAreaID();
 	
 	-- Onyxia's Lair fix
 	local text_to_mapID = app.L("ZONE_TEXT_TO_MAP_ID");
@@ -2621,8 +2613,8 @@ app.GetCurrentMapID = function()
 end
 app.GetMapName = function(mapID)
 	if mapID and mapID > 0 then
-		local info = C_Map.GetMapInfo(mapID);
-		return (info and info.name) or ("Map ID #" .. mapID);
+		local name = GetMapNameByID(mapID);
+		return (name) or ("Map ID #" .. mapID);
 	else
 		return "Map ID #???";
 	end
@@ -3340,8 +3332,8 @@ app.BaseTransmogCategory = {
   __index = function(t, key)
     if key == "text" then
       if t.itemSubClass < 20 then
-        return GetItemSubClassInfo(2, t.itemSubClass);
-      elseif t.itemSubClass == 21 then return GetItemSubClassInfo(4,6);
+        return "FIXME - GetItemSubClassInfo(2, t.itemSubClass)";
+      elseif t.itemSubClass == 21 then return "FIXME - GetItemSubClassInfo(4,6)";
       elseif t.itemSubClass <21 then
         return transmogArmorSlots[t.itemSubClass - 20]
       end
@@ -3355,87 +3347,6 @@ app.BaseTransmogCategory = {
 end)();
 app.CreateTransmogCategory = function(id, t)
   return createInstance(constructor(id, t, "category"), app.BaseTransmogCategory);
-end
-    
--- Artifact Lib
-(function()
-local artifactItemIDs = {
-	[841] = 133755, -- Underlight Angler [Base Skin]
-	[988] = 133755, -- Underlight Angler [Fisherfriend of the Isles]
-	[989] = 133755, -- Underlight Angler [Fisherfriend of the Isles]
-};
-app.BaseArtifact = {
-	__index = function(t, key)
-		if key == "key" then
-			return "artifactID";
-		elseif key == "collectible" then
-			return true;
-		elseif key == "collected" then
-			if GetDataSubMember("CollectedArtifacts", t.artifactID) then return true; end
-			if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
-				SetDataSubMember("CollectedArtifacts", t.artifactID, 1);
-				return true;
-			end
-		elseif key == "text" then
-			return t.parent.itemID and t.variantText or t.appearanceText;
-		elseif key == "title" then
-			return t.parent.itemID and t.appearanceText or t.variantText;
-		elseif key == "variantText" then
-			return Colorize("Variant " .. t.info[4], RGBToHex(t.info[9] * 255, t.info[10] * 255, t.info[11] * 255));
-		elseif key == "appearanceText" then
-			return "|cffe6cc80" .. (t.info[3] or "???") .. "|r";
-		elseif key == "description" then
-			return t.info[6] or "Awarded for completing the introductory quest for this Artifact.";
-		elseif key == "atlas" then
-			return "Forge-ColorSwatchBorder";
-		elseif key == "atlas-background" then
-			return "Forge-ColorSwatchBackground";
-		elseif key == "atlas-border" then
-			return "Forge-ColorSwatch";
-		elseif key == "atlas-color" then
-			return { t.info[9], t.info[10], t.info[11], 1.0 };
-		elseif key == "model" then
-			return GetRelativeValue(t.parent, key);
-		elseif key == "modelScale" then
-			return GetRelativeValue(t.parent, key) or 0.95;
-		elseif key == "modelRotation" then
-			return GetRelativeValue(t.parent, key) or 45;
-		elseif key == "info" then
-			--[[
-			local setID, appearanceID, appearanceName, displayIndex, appearanceUnlocked, unlockConditionText, 
-				uiCameraID, altHandUICameraID, swatchR, swatchG, swatchB, 
-				modelAlpha, modelDesaturation, suppressGlobalAnim = C_ArtifactUI_GetAppearanceInfoByID(t.artifactID);
-			]]--
-			local info = { C_ArtifactUI_GetAppearanceInfoByID(t.artifactID) };
-			rawset(t, "info", info);
-			return info;
-		elseif key == "silentLink" then
-			local itemID = artifactItemIDs[t.artifactID];
-			if itemID then
-				return select(2, GetItemInfo(string.format("item:%d::::::::::256:::%d", itemID, t.artifactID))), itemID;
-			elseif t.parent.npcID and (t.parent.npcID <= -5200 and t.parent.npcID >= -5205) then
-				itemID = GetRelativeValue(t.parent, "itemID");
-				artifactItemIDs[t.artifactID] = itemID;
-				return select(2, GetItemInfo(string.format("item:%d::::::::::256:::%d", itemID, t.artifactID))), itemID;
-			end
-		elseif key == "s" then
-			local s, itemID = t.silentLink;
-			if s then
-				s = app.GetSourceID(s, itemID);
-				if s then
-					rawset(t, "s", s);
-					return s;
-				end
-			end
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-end)();
-app.CreateArtifact = function(id, t)
-	return setmetatable(constructor(id, t, "artifactID"), app.BaseArtifact);
 end
 
 -- Category Lib
@@ -3730,109 +3641,104 @@ end
 		100,	-- Hellfire Peninsula (All of Outland)
 		118,	-- Icecrown (All of Northrend)
 		422,	-- Dread Wastes (All of Pandaria)
-		525,	-- Frostfire Ridge (All of Draenor)
-		630,	-- Azsuna (All of Broken Isles)
-		882,	-- Mac'Aree (All of Argus)
-		862,	-- Zuldazar (All of Zuldazar)
-		896,	-- Drustvar (All of Kul Tiras)
 	};
-	local cachedNodeData = {};
-	app.CacheFlightPathData = function()
-		for i,mapID in ipairs(arrOfNodes) do
-			local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
-			if allNodeData then
-				for j,nodeData in ipairs(allNodeData) do
-					local node = cachedNodeData[nodeData.nodeID];
-					if not node then
-						node = {};
-						cachedNodeData[nodeData.nodeID] = node;
-					end
-					if nodeData.faction then node["faction"] = nodeData.faction; end
-					if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
-					if nodeData.name then node["text"] = nodeData.name; end
-				end
-			end
-		end
-	end
-	app.CacheFlightPathDataForCurrentNode = function()
-		local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
-		if allNodeData then
-			local knownNodeIDs = {};
-			for j,nodeData in ipairs(allNodeData) do
-				local node = cachedNodeData[nodeData.nodeID];
-				if not node then
-					node = {};
-					cachedNodeData[nodeData.nodeID] = node;
-				end
-				if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
-				if nodeData.name then node["text"] = nodeData.name; end
-				if nodeData.state and nodeData.state < 2 then
-					table.insert(knownNodeIDs, nodeData.nodeID);
-				end
-			end
+	-- local cachedNodeData = {};
+	-- app.CacheFlightPathData = function()
+	-- 	for i,mapID in ipairs(arrOfNodes) do
+	-- 		local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
+	-- 		if allNodeData then
+	-- 			for j,nodeData in ipairs(allNodeData) do
+	-- 				local node = cachedNodeData[nodeData.nodeID];
+	-- 				if not node then
+	-- 					node = {};
+	-- 					cachedNodeData[nodeData.nodeID] = node;
+	-- 				end
+	-- 				if nodeData.faction then node["faction"] = nodeData.faction; end
+	-- 				if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
+	-- 				if nodeData.name then node["text"] = nodeData.name; end
+	-- 			end
+	-- 		end
+	-- 	end
+	-- end
+	-- app.CacheFlightPathDataForCurrentNode = function()
+	-- 	local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
+	-- 	if allNodeData then
+	-- 		local knownNodeIDs = {};
+	-- 		for j,nodeData in ipairs(allNodeData) do
+	-- 			local node = cachedNodeData[nodeData.nodeID];
+	-- 			if not node then
+	-- 				node = {};
+	-- 				cachedNodeData[nodeData.nodeID] = node;
+	-- 			end
+	-- 			if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
+	-- 			if nodeData.name then node["text"] = nodeData.name; end
+	-- 			if nodeData.state and nodeData.state < 2 then
+	-- 				table.insert(knownNodeIDs, nodeData.nodeID);
+	-- 			end
+	-- 		end
 			
-			if GetDataMember("FlightPathsAccountWide") then
-				for i,nodeID in ipairs(knownNodeIDs) do
-					if not GetDataSubMember("FlightPaths", nodeID) then
-						SetDataSubMember("FlightPaths", nodeID, 1);
-						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
-						app.UpdateSearchResults(SearchForField("flightPathID", nodeID));
-					end
-				end
-			else
-				for i,nodeID in ipairs(knownNodeIDs) do
-					if not GetPersonalDataSubMember("FlightPaths", nodeID) then
-						SetDataSubMember("FlightPaths", nodeID, 1);
-						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
-						app.UpdateSearchResults(SearchForField("flightPathID", nodeID));
-					end
-				end
-			end
-		end
-	end
-	app:RegisterEvent("TAXIMAP_OPENED");
-	app.events.TAXIMAP_OPENED = app.CacheFlightPathDataForCurrentNode;
-	app.BaseFlightPath = {
-		__index = function(t, key)
-			if key == "key" then
-				return "flightPathID";
-			elseif key == "collectible" then
-				return GetDataMember("FlightPathsCollectible");
-			elseif key == "collected" then
-				if GetDataMember("FlightPathsAccountWide")then
-					return GetDataSubMember("FlightPaths", t.flightPathID);
-				end
-				return GetPersonalDataSubMember("FlightPaths", t.flightPathID);
-			elseif key == "text" then
-				local info = t.info;
-				return info and info.text;
-			elseif key == "nmr" then
-				local info = t.info;
-				if info and info.faction then
-					if info.faction == 2 then
-						return app.Faction == "Horde";
-					elseif info.faction == 1 then
-						return app.Faction == "Alliance";
-					end
-				end
-			elseif key == "info" then
-				return cachedNodeData[t.flightPathID];
-			elseif key == "description" then
-				return "Flight paths are cached when you look at the flight master on each continent. We refresh the collection status when you look at the Flight Map. (blizzard limitation, not by choice... sorry!)\n\nHave fun!\n - Crieve";
-			elseif key == "icon" then
-				local info = t.info;
-				if info and info.faction and info.faction == 2 then
-					return "Interface/ICONS/Ability_Rogue_Sprint_Blue";
-				end
-				return "Interface/ICONS/Ability_Rogue_Sprint";
-			else
-				-- Something that isn't dynamic.
-				return table[key];
-			end
-		end
-	};
+	-- 		if GetDataMember("FlightPathsAccountWide") then
+	-- 			for i,nodeID in ipairs(knownNodeIDs) do
+	-- 				if not GetDataSubMember("FlightPaths", nodeID) then
+	-- 					SetDataSubMember("FlightPaths", nodeID, 1);
+	-- 					SetPersonalDataSubMember("FlightPaths", nodeID, 1);
+	-- 					app.UpdateSearchResults(SearchForField("flightPathID", nodeID));
+	-- 				end
+	-- 			end
+	-- 		else
+	-- 			for i,nodeID in ipairs(knownNodeIDs) do
+	-- 				if not GetPersonalDataSubMember("FlightPaths", nodeID) then
+	-- 					SetDataSubMember("FlightPaths", nodeID, 1);
+	-- 					SetPersonalDataSubMember("FlightPaths", nodeID, 1);
+	-- 					app.UpdateSearchResults(SearchForField("flightPathID", nodeID));
+	-- 				end
+	-- 			end
+	-- 		end
+	-- 	end
+	-- end
+	-- app:RegisterEvent("TAXIMAP_OPENED");
+	-- app.events.TAXIMAP_OPENED = app.CacheFlightPathDataForCurrentNode;
+	-- app.BaseFlightPath = {
+	-- 	__index = function(t, key)
+	-- 		if key == "key" then
+	-- 			return "flightPathID";
+	-- 		elseif key == "collectible" then
+	-- 			return GetDataMember("FlightPathsCollectible");
+	-- 		elseif key == "collected" then
+	-- 			if GetDataMember("FlightPathsAccountWide")then
+	-- 				return GetDataSubMember("FlightPaths", t.flightPathID);
+	-- 			end
+	-- 			return GetPersonalDataSubMember("FlightPaths", t.flightPathID);
+	-- 		elseif key == "text" then
+	-- 			local info = t.info;
+	-- 			return info and info.text;
+	-- 		elseif key == "nmr" then
+	-- 			local info = t.info;
+	-- 			if info and info.faction then
+	-- 				if info.faction == 2 then
+	-- 					return app.Faction == "Horde";
+	-- 				elseif info.faction == 1 then
+	-- 					return app.Faction == "Alliance";
+	-- 				end
+	-- 			end
+	-- 		elseif key == "info" then
+	-- 			return cachedNodeData[t.flightPathID];
+	-- 		elseif key == "description" then
+	-- 			return "Flight paths are cached when you look at the flight master on each continent. We refresh the collection status when you look at the Flight Map. (blizzard limitation, not by choice... sorry!)\n\nHave fun!\n - Crieve";
+	-- 		elseif key == "icon" then
+	-- 			local info = t.info;
+	-- 			if info and info.faction and info.faction == 2 then
+	-- 				return "Interface/ICONS/Ability_Rogue_Sprint_Blue";
+	-- 			end
+	-- 			return "Interface/ICONS/Ability_Rogue_Sprint";
+	-- 		else
+	-- 			-- Something that isn't dynamic.
+	-- 			return table[key];
+	-- 		end
+	-- 	end
+	-- };
 	app.CreateFlightPath = function(id, t)
-		return createInstance(constructor(id, t, "flightPathID"), app.BaseFlightPath);
+		return nil; --createInstance(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 	end
 end)();
 
@@ -3855,104 +3761,6 @@ app.BaseFilter = {
 };
 app.CreateFilter = function(id, t)
 	return createInstance(constructor(id, t, "filterID"), app.BaseFilter);
-end
-
--- Follower Lib
-app.BaseFollower = {
-	__index = function(t, key)
-		if key == "key" then
-			return "followerID";
-		elseif key == "collectible" then
-			return app.GetDataMember("FollowersCollectible");
-		elseif key == "collected" then
-			if app.GetDataMember("TrackFollowersAccountWide") then
-				if GetDataSubMember("CollectedFollowers", t.followerID) then return 1; end
-			else
-				if GetTempDataSubMember("CollectedFollowers", t.followerID) then return 1; end
-			end
-			if C_Garrison.IsFollowerCollected(t.followerID) then
-				SetTempDataSubMember("CollectedFollowers", t.followerID, 1);
-				SetDataSubMember("CollectedFollowers", t.followerID, 1);
-				return 1;
-			end
-		elseif key == "text" then
-			local info = t.info;
-			return info and info.name;
-		elseif key == "description" then
-			return "Followers can be collected Account Wide. Unlocking them on one toon will count as collected across all your characters in ATT. \n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
-		elseif key == "info" then
-			-- https://wow.gamepedia.com/API_C_Garrison.GetFollowerInfo
-			return C_Garrison.GetFollowerInfo(t.followerID);
-		elseif key == "icon" then
-			local info = t.info;
-			return info and info.portraitIconID;
-		elseif key == "displayID" then
-			local info = t.info;
-			return info and info.displayID;
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateFollower = function(id, t)
-	return createInstance(constructor(id, t, "followerID"), app.BaseFollower);
-end
-
--- /dump C_Garrison.GetBuildingInfo(1)
--- Garrison Building Lib
--- id, name, texPrefix, icon, description, rank, currencyID, currencyQty, goldQty, buildTime, needsPlan, isPrebuilt, possSpecs, upgrades, canUpgrade, isMaxLevel, hasFollowerSlot = C_Garrison.GetBuildingInfo(BuildingID)
--- https://wow.gamepedia.com/API_C_Garrison.GetBuildingInfo
-app.BaseGarrisonBuilding = {
-	__index = function(t, key)
-		if key == "key" then
-			return "buildingID";
-		elseif key == "f" then
-			if t.itemID then return 200; end
-		elseif key == "text" then
-			return t.link or select(2, C_Garrison.GetBuildingInfo(t.buildingID));
-		elseif key == "icon" then
-			if t.itemID then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
-			end
-			return select(4, C_Garrison.GetBuildingInfo(t.buildingID));
-		elseif key == "link" then
-			if t.itemID then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
-			end
-		elseif key == "description" then
-			return select(5, C_Garrison.GetBuildingInfo(t.buildingID));
-		elseif key == "collectible" then
-			return t.itemID and app.GetDataMember("BuildingsCollectible");
-		elseif key == "collected" then
-			if app.GetDataMember("TrackBuildingsAccountWide") then
-				if GetDataSubMember("CollectedBuildings", t.buildingID) then return 1; end
-			else
-				if GetTempDataSubMember("CollectedBuildings", t.buildingID) then return 1; end
-			end
-			if not select(11, C_Garrison.GetBuildingInfo(t.buildingID)) then
-				SetTempDataSubMember("CollectedBuildings", t.buildingID, 1);
-				SetDataSubMember("CollectedBuildings", t.buildingID, 1);
-				return 1;
-			end
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateGarrisonBuilding = function(id, t)
-	return createInstance(constructor(id, t, "buildingID"), app.BaseGarrisonBuilding);
 end
 
 -- Garrison Mission Lib
@@ -4094,49 +3902,6 @@ app.BaseHoliday = {
 };
 app.CreateHoliday = function(id, t)
 	return createInstance(constructor(id, t, "holidayID"), app.BaseHoliday);
-end
-
--- Illusion Lib
-app.BaseIllusion = {
-	__index = function(t, key)
-		if key == "key" then
-			return "illusionID";
-		elseif key == "collectible" then
-			return true;
-		elseif key == "collected" then
-			return GetDataSubMember("CollectedIllusions", t.illusionID);
-		elseif key == "f" then
-			return 103;
-		elseif key == "text" then
-			if t.itemID then
-				local name, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.text = "|cffff80ff[" .. name .. "]|r";
-					return t.text;
-				end
-			end
-			return t.silentLink;
-		elseif key == "link" then
-			if t.itemID then
-				local name, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					return link;
-				end
-			end
-		elseif key == "silentLink" then
-			return select(3, C_TransmogCollection_GetIllusionSourceInfo(t.illusionID));
-		elseif key == "icon" then
-			return "Interface/ICONS/INV_Enchant_Disenchant";
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateIllusion = function(id, t)
-	return createInstance(constructor(id, t, "illusionID"), app.BaseIllusion);
 end
 
 -- Gear Set Lib
@@ -5017,7 +4782,8 @@ app.BaseSpecies = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			if select(1, C_PetJournal.GetNumCollectedInfo(t.speciesID)) > 0 then
+			local numCollectedInfo = C_PetJournal.GetNumCollectedInfo(t.speciesID);
+			if numCollectedInfo == not nil and select(1, C_PetJournal.GetNumCollectedInfo(t.speciesID)) > 0 then
 				return 1;
 			end
 		elseif key == "f" then
@@ -7539,7 +7305,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(2144, app.Categories.Holidays);
 			db.f = 0;
 			db.expanded = false;
-			db.text = GetItemSubClassInfo(15,3); -- L("Holidays");
+			db.text = L("Holidays"); -- GetItemSubClassInfo(15,3); -- L("Holidays");
 			db.npcID = -3;
 			db.collectible = false;
 			table.insert(g, db);
@@ -7611,13 +7377,13 @@ function app:GetDataCache()
 		end
 		
 		-- Illusions
-		if app.Categories.Illusions then
-			db = {};
-			db.expanded = false;
-			db.text = "Illusions";
-			db.group = app.Categories.Illusions;
-			table.insert(g, db);
-		end
+		-- if app.Categories.Illusions then
+		-- 	db = {};
+		-- 	db.expanded = false;
+		-- 	db.text = "Illusions";
+		-- 	db.group = app.Categories.Illusions;
+		-- 	table.insert(g, db);
+		-- end
 		
 		-- Factions
 		if app.Categories.Factions then
@@ -8105,8 +7871,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 					t = app.CreateSpecies(t.speciesID, t);
 				elseif t.objectID then
 					t = app.CreateObject(t.objectID, t);
-				elseif t.followerID then
-					t = app.CreateFollower(t.followerID, t);
 				elseif t.professionID then
 					t = app.CreateProfession(t.professionID, t);
 				elseif t.categoryID then
@@ -8120,11 +7884,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 				elseif t.spellID then
 					t = app.CreateRecipe(t.spellID, t);
 				elseif t.itemID then
-					if t.isToy then
-						t = app.CreateToy(t.itemID, t);
-					else
-						t = app.CreateItem(t.itemID, t);
-					end
+					t = app.CreateItem(t.itemID, t);
 				elseif t.npcID or t.creatureID then
 					t = app.CreateNPC(t.npcID or t.creatureID, t);
 				elseif t.questID then
@@ -8204,7 +7964,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
 		scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
 		scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
-		scrollbar.back:SetColorTexture(0,0,0,0.4)
+		-- scrollbar.back:SetColorTexture(0,0,0,0.4)
 		scrollbar.back:SetAllPoints(scrollbar);
 		scrollbar:SetMinMaxValues(1, 1);
 		scrollbar:SetValueStep(1);
@@ -8774,16 +8534,16 @@ end):Show();
 								end
 							end
 							if not found then
-								difficultyID = GetLegacyRaidDifficultyID();
-								for _, row in ipairs(results.g) do
-									if (row.difficultyID and row.difficultyID == difficultyID)
-										or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-										if row.visible then
-											ExpandGroupsRecursively(row, true);
-											found = true;
-										end
-									end
-								end
+								-- difficultyID = GetLegacyRaidDifficultyID();
+								-- for _, row in ipairs(results.g) do
+								-- 	if (row.difficultyID and row.difficultyID == difficultyID)
+								-- 		or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+								-- 		if row.visible then
+								-- 			ExpandGroupsRecursively(row, true);
+								-- 			found = true;
+								-- 		end
+								-- 	end
+								-- end
 								
 								-- Expand them all!
 								if not found then
@@ -8904,7 +8664,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		self.initialized = true;
 		
 		-- Define the different window configurations that the mini list will switch to based on context.
-		local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
+		local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty;
 		
 		-- Raid Assistant
 		local difficultyLookup = {
@@ -8949,37 +8709,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						break;
 					else
 						SetRaidDifficultyID(difficultyID);
-					end
-				end
-			end);
-			self:Update(true);
-			return true;
-		end
-		local switchLegacyRaidDifficulty = function(row, button)
-			self.data = raidassistant;
-			local myself = self;
-			local difficultyID = row.ref.difficultyID;
-			if not self.legacyrunning then
-				self.legacyrunning = true;
-			else
-				self.legacyrunning = false;
-			end
-			SetLegacyRaidDifficultyID(difficultyID);
-			StartCoroutine("LegacyRaidDifficulty", function()
-				while InCombatLockdown() do coroutine.yield(); end
-				while myself.legacyrunning do
-					for i=0,150,1 do
-						if myself.legacyrunning then
-							coroutine.yield();
-						else
-							break;
-						end
-					end
-					if app.LegacyRaidDifficulty == difficultyID then
-						myself.legacyrunning = false;
-						break;
-					else
-						SetLegacyRaidDifficultyID(difficultyID);
 					end
 				end
 			end);
@@ -9140,24 +8869,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					end,
 					['back'] = 0.5,
 				}),
-				app.CreateDifficulty(5, {
-					['title'] = "Legacy Raid Difficulty",
-					["description"] = "The difficulty setting for legacy raids.\n\nClick this row to change it now!",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						-- Don't allow you to change difficulties when you're in LFR / Raid Finder
-						if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
-						self.data = legacyraiddifficulty;
-						self:Update(true);
-						return true;
-					end,
-					['OnUpdate'] = function(data)
-						if app.LegacyRaidDifficulty then
-							data.difficultyID = app.LegacyRaidDifficulty;
-						end
-					end,
-					['back'] = 0.5,
-				}),
 			}
 		};
 		lootspecialization = {
@@ -9256,59 +8967,26 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			['expanded'] = true,
 			['back'] = 1,
 			['g'] = {
-				app.CreateDifficulty(14, {
-					['OnClick'] = switchRaidDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-					['back'] = 0.5,
-				}),
-				app.CreateDifficulty(15, {
-					['OnClick'] = switchRaidDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-					['back'] = 0.5,
-				}),
-				app.CreateDifficulty(16, {
-					['OnClick'] = switchRaidDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-					['back'] = 0.5,
-				})
-			},
-		};
-		legacyraiddifficulty = {
-			['text'] = "Legacy Raid Difficulty",
-			['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-			["description"] = "This setting allows you to customize the difficulty of a legacy raid. (Pre-Siege of Orgrimmar)\n\nClick this row to go back to the Raid Assistant.",
-			['OnClick'] = function(row, button)
-				self.data = raidassistant;
-				self:Update(true);
-				return true;
-			end,
-			['visible'] = true, 
-			['expanded'] = true,
-			['back'] = 1,
-			['g'] = {
 				app.CreateDifficulty(3, {
-					['OnClick'] = switchLegacyRaidDifficulty,
+					['OnClick'] = switchRaidDifficulty,
 					["description"] = "Click to change now. (if available)",
 					['visible'] = true,
 					['back'] = 0.5,
 				}),
 				app.CreateDifficulty(5, {
-					['OnClick'] = switchLegacyRaidDifficulty,
+					['OnClick'] = switchRaidDifficulty,
 					["description"] = "Click to change now. (if available)",
 					['visible'] = true,
 					['back'] = 0.5,
 				}),
 				app.CreateDifficulty(4, {
-					['OnClick'] = switchLegacyRaidDifficulty,
+					['OnClick'] = switchRaidDifficulty,
 					["description"] = "Click to change now. (if available)",
 					['visible'] = true,
 					['back'] = 0.5,
 				}),
 				app.CreateDifficulty(6, {
-					['OnClick'] = switchLegacyRaidDifficulty,
+					['OnClick'] = switchRaidDifficulty,
 					["description"] = "Click to change now. (if available)",
 					['visible'] = true,
 					['back'] = 0.5,
@@ -9327,7 +9005,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	end
 	
 	-- Update the window and all of its row data
-	app.LegacyRaidDifficulty = GetLegacyRaidDifficultyID() or 1;
 	app.DungeonDifficulty = GetDungeonDifficultyID() or 1;
 	app.RaidDifficulty = GetRaidDifficultyID() or 14;
 	app.Spec = GetLootSpecialization();
@@ -9622,10 +9299,10 @@ ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
-WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
-WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
-WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
-WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipCleared", ClearTooltip);
+-- WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+-- WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+-- WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
+-- WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
@@ -9969,7 +9646,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("TomTomIgnoreCompletedObjects", false);
 	
 	GetDataMember("ShowAchievementID", false);
-	GetDataMember("ShowArtifactID", false);
 	GetDataMember("ShowBonusID", false);
 	GetDataMember("ShowCreatureID", false);
 	GetDataMember("ShowCurrencyID", false);
@@ -9977,7 +9653,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("ShowEncounterID", false);
 	GetDataMember("ShowFactionID", false);
 	GetDataMember("ShowFilterID", false);
-	GetDataMember("ShowIllusionID", false);
+	-- GetDataMember("ShowIllusionID", false);
 	GetDataMember("ShowInstanceID", false);
 	GetDataMember("ShowItemID", false);
 	GetDataMember("ShowItemString", false);
@@ -10003,8 +9679,8 @@ app.events.PLAYER_LOGIN = function()
 		if C_PetJournal.GetNumPets() < 1 then return true; end
 		
 		-- Detect how many mounts there are. If 0, Blizzard isn't ready yet.
-		local mountIDs = C_MountJournal.GetMountIDs();
-		if #mountIDs < 1 then return true; end
+		local knownMountCount = GetNumCompanions("Mount");
+		if knownMountCount < 1 then return true; end
 		
 		-- Harvest the Spell IDs for Conversion.
 		local collectedSpells = GetDataMember("CollectedSpells", {});
@@ -10019,7 +9695,7 @@ app.events.PLAYER_LOGIN = function()
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		RefreshSaves();
 		
-		app.CacheFlightPathData();
+		-- app.CacheFlightPathData();
 		
 		-- NOTE: The auto refresh only happens once.
 		if not app.autoRefreshedCollections then
@@ -10200,3 +9876,15 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		wipe(searchCache);
 	end
 end
+
+app.CreateArtifact = function(id, t) return null; end
+app.CreateFollower = function(id, t) return null; end
+app.CreateGarrisonBuilding = function(id, t) return null; end
+app.CreateGearSet = function(id, t) return null; end
+app.CreateGearSetHeader = function(id, t) return null; end
+app.CreateGearSetSubHeader = function(id, t) return null; end
+app.CreateHeirloom = function(id, t) return null; end
+app.CreateIllusion = function(id, t) return null; end
+app.CreateMusicRoll = function(id, t) return null; end
+app.CreateTransmogCategory = function(id, t) return null; end
+app.CreateToy = function(id, t) return null; end

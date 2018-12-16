@@ -28,23 +28,23 @@ local function createSettingFrame(self)
 	self.Version:SetText(GetAddOnMetadata("AllTheThings", "Version"));
 	self.Separator = self:CreateTexture(nil, "ARTWORK");
 	self.Separator:SetPoint("LEFT", self.Title, "BOTTOMLEFT", 0, -2);
-	self.Separator:SetColorTexture(0.2, 0.2, 0.2);
+	-- self.Separator:SetColorTexture(0.2, 0.2, 0.2);
 	self.Separator:SetSize(590, 1);
 	
 	local line = self:CreateTexture(nil, "BACKGROUND")
 	line:SetPoint('BOTTOMLEFT',11,11)
 	line:SetPoint('BOTTOMRIGHT',-11,11)
-	line:SetColorTexture(1, 1, 1, 0.4)
+	-- line:SetColorTexture(1, 1, 1, 0.4)
 	
 	local line1 = self:CreateTexture(nil, "BACKGROUND")
 	line1:SetPoint('TOPLEFT',11,-60)
 	line1:SetPoint('BOTTOMLEFT',11,11)
-	line1:SetColorTexture(1, 1, 1, 0.4)
+	-- line1:SetColorTexture(1, 1, 1, 0.4)
 	
 	local line2 = self:CreateTexture(nil, "BACKGROUND")
 	line2:SetPoint('TOPRIGHT',-11,-60)
 	line2:SetPoint('BOTTOMRIGHT',-11,11)
-	line2:SetColorTexture(1, 1, 1, 0.4)
+	-- line2:SetColorTexture(1, 1, 1, 0.4)
 end
 
 local function onClickTab(self)
@@ -175,7 +175,7 @@ local function createScroll(parent)
 	frame = UIConfig.ScrollFrame
 	UIConfig.ScrollFrame:SetPoint("TOPLEFT", AllTheThingsSettingsConfigDialogBG, "TOPLEFT", 4, -8);
 	UIConfig.ScrollFrame:SetPoint("BOTTOMRIGHT", AllTheThingsSettingsConfigDialogBG, "BOTTOMRIGHT", -3, 4);
-	UIConfig.ScrollFrame:SetClipsChildren(true);
+	-- UIConfig.ScrollFrame:SetClipsChildren(true);
 	UIConfig.ScrollFrame:SetScript("OnMouseWheel", ScrollFrame_OnMouseWheel);
 	
 	UIConfig.ScrollFrame.ScrollBar:ClearAllPoints();

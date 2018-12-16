@@ -1,6 +1,6 @@
-## Author: Crieve-Sargeras
-## Interface: 81000
-## Title: AllTheThings
+## Author: Crieve-Sargeras,Maczuga-Evermoon
+## Interface: 50400
+## Title: AllTheThings-MoP
 ## Name: AllTheThings
 ## SavedVariables: AllTheThingsAD, AllTheThingsDebugData, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsPCD
@@ -17,6 +17,7 @@ db\Presets.lua
 db\RaceDB.lua
 db\NPCDB.lua
 db\ItemDB.lua
+db\MountDB.lua
 db\Categories.lua
 Settings.lua
 ScrollFrame.xml

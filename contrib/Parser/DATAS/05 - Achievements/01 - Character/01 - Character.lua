@@ -56,7 +56,7 @@ _.Achievements =
 				ach(5455),		-- Got My Mind On My Money (50,000)
 				ach(5456),		-- Got My Mind On My Money (100,000)
 			}),
-			ach(12544, {	-- Level 120	
+			ach(6193, {	-- Level 90	
 				ach(6),			-- Level 10
 				ach(7),			-- Level 20
 				ach(8),			-- Level 30
@@ -66,9 +66,6 @@ _.Achievements =
 				ach(12),		-- Level 70
 				ach(13),		-- Level 80
 				ach(4826),		-- Level 85
-				ach(6193),		-- Level 90
-				ach(9060),		-- Level 100
-				ach(10671),		-- Level 110
 			}),
 			ach(7384, {		-- Quintessential Quintet
 				ach(7382),		-- Dynamic Duo
