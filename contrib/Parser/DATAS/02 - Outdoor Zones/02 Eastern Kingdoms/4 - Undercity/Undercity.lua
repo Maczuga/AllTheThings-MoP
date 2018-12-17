@@ -19,16 +19,6 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 					qg(10181, qh(31037)),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
-					qh(39960, {	-- The Legacy Passed On
-						["qg"] = 97766,	-- Francis Serbacon <Author Extrodinaire>
-						["sourceQuests"] = { 39959 },	-- The Plot Thickens
-						["requireSkill"] = 773,	-- Inscription
-						["g"]= {
-							{	-- Steamy Romance Novel Kit
-								["recipeID"]	= 192804,	-- Steamy Romance Novel Kit
-							},
-						},
-					}),
 --[[
 					q(24635),	-- A Cloudlet of Classy Cologne
 					qh( 38397),	-- A Curious Oddity
@@ -131,18 +121,6 @@ _.Zones =
 					}),
 --]]
 				}),
-				n(-16, { 	-- Rare	
-					o(240623, {	-- Sylvanas' Strongbox
-						["groups"] = {
-							i(122233)	-- Music Roll: Lament of the Highborne
-						},
-						["model"] = "World\\Expansion02\\Doodads\\Generic\\Scourge\\SC_Chest.mdx",
-						["modelScale"] = 1.3,
-						["modelRotation"] = 270,
-						["description"] = "Loot the strongbox at the base of a pillar to the left of Sylvannas Windrunner. Alliance characters *can* loot this.",
-						["icon"] = "Interface\\Icons\\Battleground_Strongbox_Skirmish_Horde"
-					}),
-				}),
 				nh(-2, { 	-- Vendors
 					n(4604, {	-- Abigail Sawyer <Bow Merchant>
 						i(11306),	-- Sturdy Recurve
@@ -174,62 +152,6 @@ _.Zones =
 					n(4561, {	-- Daniel Bartlett <Trade Supplies>
 						i(20854),	-- Design: Amulet of the Moon
 						i(16217),	-- Formula: Enchant Shield - Greater Stamina
-					}),
-					n(6566, {	-- Estelle Gendry <Heirloom "Curator">
-						i(122349),	-- Bloodied Arcanite Reaper
-						i(122350),	-- Balanced Heartseeker
-						i(122351),	-- Venerable Dal'Rend's Sacred Charge
-						i(122352),	-- Charmed Ancient Bone Bow
-						i(122353),	-- Dignified HEadmaster's Charge
-						i(122354),	-- Devout Aurastone Hammer
-						i(122355),	-- Polished Spaulders of Valor
-						i(122356),	-- Champion Herod's Shoulder
-						i(122357),	-- Mystical Pauldrons of Elements
-						i(122358),	-- Stained Shadowcraft Spaulders
-						i(122359),	-- Preened Ironfeather Shoulders
-						i(122360),	-- Tattered Dreadmist Mantle
-						i(122361),	-- Swift Hand of Justice
-						i(122362),	-- Discerning Eye of the Beast
-						i(122363),	-- Burnished Warden Staff
-						i(122364),	-- Sharpened Scarlet Kris
-						i(122365),	-- Reforged Truesilver Champion
-						i(122366),	-- Upgraded Dwarven Hand Cannon
-						i(122367),	-- The Blessed Hammer of Grace
-						i(122368),	-- Grand Staff of Jordan
-						i(122369),	-- Battleworn Thrash Blade
-						h(i(122370)),	-- Inherited Insignia of the Horde
-						i(122372),	-- Strengthened Stockade Pauldrons
-						i(122373),	-- Pristine Lightforge Spaulders
-						i(122374),	-- Prized Beastmaster's Mantle
-						i(122375),	-- Aged Paundrons of The Five Thunders
-						i(122376),	-- Exceptional Stormshroud Shoulders
-						i(122377),	-- Lasting Feralheart Spaulders
-						i(122378),	-- Exquisite Sunderseer Mantle
-						i(122379),	-- Champion's Deathdealer Breastplate
-						i(122380),	-- Mystical Vest of Elements
-						i(122381),	-- Polished Breastplate of Valor
-						i(122382),	-- Preened Ironfeather Breastplate
-						i(122383),	-- Stained Shadowcraft Tunic
-						i(122384),	-- Tatered Dreadmist Robe
-						i(122385),	-- Venerable Mass of McGowan
-						i(122386),	-- Repurposed Lava Dredger
-						i(122387),	-- Burnished Breastplate of Might
-						i(122388),	-- Burnished Pauldrons of Might
-						i(122389),	-- Bloodsoaked Skullforge Reaver
-						i(122390),	-- Musty Tome of the Lost
-						i(122391),	-- Flamescarred Draconian Deflector
-						i(122392),	-- Weathered Observers Shield
-						i(122530),	-- Inherited Mark of Tyranny
-						i(122662),	-- Eternal Talisman of Evasion
-						i(122663),	-- Eternal Amulet of the Redeemed
-						i(122664),	-- Eternal Horizon Choker
-						i(122666),	-- Eternal Woven Ivy Necklace
-						i(122667),	-- Eternal Emberfury Talisman
-						i(122668),	-- Eternal Will of the Martyr
-						i(127010),	-- Pristine Lightforge Breastplate
-						i(140773),	-- Eagletalon Spear
-						h(i(150744)),	-- Walking Kalimdor with the Earthmother Toy
-						h(i(150745)),	-- The Azeroth Campaign Toy
 					}),
 					n(4775, {	-- Felicia Doan <Trade Supplies>
 						i(20975),	-- Design: The Jade Eye
@@ -465,18 +387,6 @@ _.Zones =
 									i(69210),	-- Renowned Guild Tabard - Honored
 									--a(i(63206)),	-- Wrap of Unity - Honored
 									h(i(63207)),	-- Wrap of Unity - Honored
-									i(122266),	-- Ripped Sandstorm Cloak - Friendly
-									i(122260),	-- Worn Stoneskin Gargoyle Cape - Friendly
-									i(122261),	-- Inherited Cape of the Black Baron - Friendly
-									i(122262),	-- Ancient Bloodmoon Cloak - Friendly
-									i(122263),	-- Burnished Helm of Might - Friendly
-									i(122250),	-- Tattered Dreadmist Mask - Friendly
-									i(122249),	-- Preened Tribal War Feathers - Friendly
-									i(122248),	-- Stained Shadowcraft Cap - Friendly 
-									i(122247),	-- Mystical Coif of Elements - Friendly
-									i(122246),	-- Tarnished Raging Berserker's Helm - Friendly
-									i(127012),	-- Pristine Lightforged Helm - Friendly
-									i(122245),	-- Polished Helm of Valor - Friendly
 								},
 							}),
 						},

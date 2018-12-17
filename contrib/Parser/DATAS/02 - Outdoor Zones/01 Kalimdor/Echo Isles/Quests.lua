@@ -520,34 +520,6 @@ _.Zones =
 								["coord"] = { 38.4, 46.6 },
 								["sourceQuest"] = 32320, -- The Horde is Family
 							}),
-							-- Battle for Azeroth, Spirit of Vol'Jin questline
-							q(51514, {	-- Broken Bargain
-								["qg"] = 137878,	-- Master Gadrin
-								["lvl"] = 120,
-								["coord"] = { 59.5, 51.5 },
-								["sourceQuest"] = 51513,	-- Zalazane Returns
-							}),
-							q(51533, {	-- The Glaive of Vol'jin
-								["qg"] = 120173,	-- Zen'tarba
-								["lvl"] = 120,
-								["coord"] = { 59.2, 52.0 },
-								["sourceQuest"] = 51513,	-- Zalazane Returns
-							}),
-							q(51515, {	-- Vengeance for Vol'jin
-								["qg"] = 137878,	-- Master Gadrin
-								["lvl"] = 120,
-								["coord"] = { 59.5, 51.5 },
-								["sourceQuests"] = {
-									51514,	-- Broken Bargain
-									51533,	-- The Glaive of Vol'jin
-								},
-							}),
-							q(52114, {	-- Honoring a True Leader
-								["qg"] = 137878,	-- Master Gadrin
-								["lvl"] = 120,
-								["coord"] = { 59.5, 51.5 },
-								["sourceQuest"] = 51515,	-- Vengeance for Vol'jin
-							}),
 						},
 						["races"] = HORDE_ONLY,
 					}),

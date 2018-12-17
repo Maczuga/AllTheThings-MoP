@@ -24,26 +24,6 @@ _.Achievements =
 					un(2, ach(8645)),		-- Duelist: Season 14
 					un(2, ach(8668)),		-- Duelist: Season 15
 					un(2, ach(3436)),		-- Furious Gladiator
-					{	-- Gladiator: Battle for Azeroth Season 1
-						["achievementID"] = 12961,	-- Gladiator: Battle for Azeroth Season 1
-						--["u"] = 2,					-- Unobtainable Achievement
-						--Note!! Uncomment this out when Battle For Azeroth Season 2 hits!
-						--Note!! We do not need a description stating it's not account-bound.  It's well known and ATT tracks it accordingly.
-						["g"] = {
-							{	-- Gladiator Title
-								["titleID"] = 29,	-- Gladiator
-							},
-							{	-- Dread Gladiator's Proto-Drake
-								["itemID"] = 156879,	-- Dread Gladiator's Proto-Drake
-							},
-							{	-- Alliance Dread Gladiator's Tabard
-								["itemID"] = 164573,	--  Alliance Dread Gladiator's Tabard
-							},
-							{	-- Horde Dread Gladiator's Tabard
-								["itemID"] = 164572,	-- Horde Dread Gladiator's Tabard
-							},
-						},
-					},
 					un(2, ach(8644)),		-- Gladiator: Season 14
 					un(2, ach(8667)),		-- Gladiator: Season 15
 					un(2, ach(8643, {		-- Grievous Gladiator: Season 14
