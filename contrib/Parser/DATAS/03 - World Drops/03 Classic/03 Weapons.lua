@@ -152,7 +152,6 @@ _.WorldDrops =
 				}),			
 				n(-333, { -- Daggers	
 					i(10625),	-- Stealthblade
-					i(115349),	-- Talon of Vultros
 					i(12247),	-- Broad Bladed Knife
 					i(12248),	-- Daring Dirk
 					i(12531),	-- Searing Needle

@@ -22,7 +22,6 @@ profession(202, { -- Engineering
 		i(11826),	-- Lil' Smoky
 		i(111402),	-- Mechanical Axebeak
 		i(87526),	-- Mechanical Pandaren Dragonling
-		i(118741),	-- Mechanical Scorpid
 		i(4401),	-- Mechanical Squirrel Box
 		i(59597),	-- Personal World Destroyer
 		i(11825),	-- Pet Bombling
@@ -185,13 +184,11 @@ profession(202, { -- Engineering
 		i(13310),	-- Schematic: Accurate Scope
 		i(23799),	-- Schematic: Adamantite Rifle
 		i(23807),	-- Schematic: Adamantite Scope
-		i(116142),	-- Schematic: Alliance Firework
 		i(35186),	-- Schematic: Annihilator Holo-Gogs
 		i(16055),	-- Schematic: Arcane Bomb
 		i(16054),	-- Schematic: Arcanite Dragonling
 		i(89996),	-- Schematic: Autumn Flower Firework
 		i(18290),	-- Schematic: Biznicks 247x128 Accurascope
-		i(118490),	-- Schematic: Blingtron 5000
 		i(20000),	-- Schematic: Bloodvine Goggles
 		i(20001),	-- Schematic: Bloodvine Lens
 		i(18649),	-- Schematic: Blue Firework
@@ -206,13 +203,11 @@ profession(202, { -- Engineering
 		i(18292),	-- Schematic: Core Marksman Rifle
 		i(4415),	-- Schematic: Craftsman's Monocle
 		i(23810),	-- Schematic: Crashin' Thrashin' Robot
-		i(118497),	-- Schematic: Cybergenetic Mechshades
 		i(16049),	-- Schematic: Dark Iron Bomb
 		i(16048),	-- Schematic: Dark Iron Rifle
 		i(10602),	-- Schematic: Deadly Scope
 		i(10607),	-- Schematic: Deepdive Helmet
 		i(16050),	-- Schematic: Delicate Arcanite Converter
-		i(118493),	-- Schematic: Didi's Delicate Assembly
 		i(4413),	-- Schematic: Discombobulator Ray
 		i(23874),	-- Schematic: Elemental Seaforium Charge
 		i(71078),	-- Schematic: Extreme-Impact Hole Puncher
@@ -221,7 +216,6 @@ profession(202, { -- Engineering
 		i(23816),	-- Schematic: Fel Iron Toolbox
 		i(23800),	-- Schematic: Felsteel Boomstick
 		i(34114),	-- Schematic: Field Repair Bot 110G
-		i(118480),	-- Schematic: Findle's Loot-a-Rang
 		i(44919),	-- Schematic: Firework Launcher
 		i(21738),	-- Schematic: Firework Launcher
 		i(4411),	-- Schematic: Flame Deflector
@@ -244,8 +238,6 @@ profession(202, { -- Engineering
 		i(35196),	-- Schematic: Hard Khorium Goggles
 		i(35310),	-- Schematic: Healing Potion Injector
 		i(23883),	-- Schematic: Healing Potion Injector
-		i(118495),	-- Schematic: Hemet's Heartseeker
-		i(116144),	-- Schematic: Horde Firework
 		i(35190),	-- Schematic: Hyper-Magnified Moon Specs
 		i(23806),	-- Schematic: Hyper-Vision Goggles
 		i(13308),	-- Schematic: Ice Deflector
@@ -260,11 +252,9 @@ profession(202, { -- Engineering
 		i(21729),	-- Schematic: Large Red Rocket
 		i(21735),	-- Schematic: Large Red Rocket Cluster
 		i(4417),	-- Schematic: Large Seaforium Charge
-		i(118485),	-- Schematic: Lifelike Mechanical Frostboar
 		i(16044),	-- Schematic: Lifelike Mechanical Toad
 		i(35193),	-- Schematic: Lightning Etched Specs
 		i(11827),	-- Schematic: Lil' Smoky
-		i(118491),	-- Schematic: Linkgrease Locksprocket
 		i(13309),	-- Schematic: Lovingly Crafted Boomstick
 		i(18655),	-- Schematic: Major Recombobulator
 		i(35311),	-- Schematic: Mana Potion Injector
@@ -272,12 +262,9 @@ profession(202, { -- Engineering
 		i(16053),	-- Schematic: Master Engineer's Goggles
 		i(16046),	-- Schematic: Masterwork Target Dummy
 		i(35195),	-- Schematic: Mayhem Projection Goggles
-		i(118484),	-- Schematic: Mechanical Axebeak
 		i(13311),	-- Schematic: Mechanical Dragonling
-		i(119177),	-- Schematic: Mechanical Scorpid
 		i(4408),	-- Schematic: Mechanical Squirrel Box
 		i(44502),	-- Schematic: Mechano-Hog
-		i(118478),	-- Schematic: Megawatt Filament
 		i(44503),	-- Schematic: Mekgineer's Chopper
 		i(14639),	-- Schematic: Minor Recombobulator
 		i(10604),	-- Schematic: Mithril Heavy-Bore Rifle
@@ -293,20 +280,17 @@ profession(202, { -- Engineering
 		i(35192),	-- Schematic: Primal-Attuned Goggles
 		i(25887),	-- Schematic: Purple Smoke Flare
 		i(35197),	-- Schematic: Quad Deathblow X44 Goggles
-		i(118500),	-- Schematic: Razorguard Mechshades
 		i(18647),	-- Schematic: Red Firework
 		i(21732),	-- Schematic: Red Rocket Cluster
 		i(23887),	-- Schematic: Rocket Boots Xtreme
 		i(35582),	-- Schematic: Rocket Boots Xtreme Lite
 		i(89992),	-- Schematic: Serpent's Heart Firework
 		i(4410),	-- Schematic: Shadow Goggles
-		i(118476),	-- Schematic: Shrediron's Shredder
 		i(21724),	-- Schematic: Small Blue Rocket
 		i(21725),	-- Schematic: Small Green Rocket
 		i(21726),	-- Schematic: Small Red Rocket
 		i(4409),	-- Schematic: Small Seaforium Charge
 		i(19027),	-- Schematic: Snake Burst Firework
-		i(116146),	-- Schematic: Snake Firework
 		i(10608),	-- Schematic: Sniper Scope
 		i(17720),	-- Schematic: Snowmaster 9000
 		i(10605),	-- Schematic: Spellpower Goggles Xtreme
@@ -314,7 +298,6 @@ profession(202, { -- Engineering
 		i(23809),	-- Schematic: Stabilized Eternium Scope
 		i(22729),	-- Schematic: Steam Tonk Controller
 		i(35194),	-- Schematic: Surestrike Goggles v3.0
-		i(118489),	-- Schematic: Swapblaster
 		i(16041),	-- Schematic: Thorium Grenade
 		i(16043),	-- Schematic: Thorium Rifle
 		i(16047),	-- Schematic: Thorium Tube
@@ -327,8 +310,6 @@ profession(202, { -- Engineering
 		i(23811),	-- Schematic: White Smoke Flare
 		i(35191),	-- Schematic: Wonderheal XT68 Shades
 		i(18661),	-- Schematic: World Enlarger
-		i(118481),	-- Schematic: World Shrinker
-		i(118488),	-- Schematic: Wormhole Centrifuge
 		i(23888),	-- Schematic: Zapthrottle Mote Extractor
 	}),
 	--]]

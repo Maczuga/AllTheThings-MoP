@@ -436,8 +436,6 @@ _.Zones =
 						dr(01.4, i(68757)),	-- Imbued Pioneer Gloves
 						dr(01.3, i(6266)),	-- Disciple's Vest
 						dr(01.3, i(68754)),	-- Imbued Disciple's Boots
-						dr(00.7, i(115349)),	-- Talon of Vultros
-						dr(00.5, i(115348)),	-- Feathered Cape
 						un(7, i(5971)),		-- Feathered Cape
 						un(7, i(4454)),		-- Talon of Vultros
 					}), 

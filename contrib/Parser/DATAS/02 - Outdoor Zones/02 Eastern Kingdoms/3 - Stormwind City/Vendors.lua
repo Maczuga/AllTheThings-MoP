@@ -328,15 +328,6 @@ _.Zones =
 									i(16060),	-- Common White Shirt
 								},
 							},
-							{	-- Catarina Stanford <Inscription Trainer>
-								["npcID"] = 30713,	-- Catarina Stanford <Inscription Trainer>
-								["coord"] = { 49.79, 74.60 },
-								["g"] = {
-									{	-- Technique: Songs of the Alliance
-										["itemID"] = 140566,	-- Technique: Songs of the Alliance
-									},
-								},
-							},
 							{	-- Catherine Leland <Fishing Supplies>
 								["npcID"] = 5494,	-- Catherine Leland <Fishing Supplies>
 								["coord"] = { 55.03, 69.54 },
@@ -2334,7 +2325,6 @@ _.Zones =
 									i(103533, {	-- Vicious Saddle
 										i(70909),	-- Reins of the Vicious War Steed
 										i(102514),	-- Reins of the Vicious Warsaber
-										i(116777),	-- Vicious War Ram
 									}),
 								}),
 							},
@@ -2417,13 +2407,7 @@ _.Zones =
 									un(1, i(91016)),	-- Reins of the Great Red Dragon Turtle (Never Implemented?)
 								},
 							},
-							{	-- Paulie <Old Town Choppers>
-								["npcID"] = 87501,	-- Paulie <Old Town Choppers>
-								["coord"] = { 73.09, 59.38 },
-								["g"] = {
-									i(116789),	-- Champion's Treadblade
-								},
-							},
+
 							{	-- Rebecca Laughlin <Tabard Designer>
 								["npcID"] = 5193,	-- Rebecca Laughlin <Tabard Designer>
 								["description"] = "Tabards are only obtainable by those who have earned them.|r",
@@ -2630,13 +2614,6 @@ _.Zones =
 													i(65498),	-- Recipe: Big Cauldron of Battle
 												},
 											}),
-											ach(9651, {	-- Challenge Warlord: Gold - Guild Edition
-												["collectible"] = false,
-												["groups"] = {
-													un(4, i(114968)),	-- Deathwatch Hatchling - Revered
-												},
-												["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
-											}),
 											ach(5144, {	-- Critter Kill Squad
 												["collectible"] = false,
 												["groups"] = {
@@ -2655,12 +2632,7 @@ _.Zones =
 													i(63125),	-- Reins of the Dark Phoenix - Exalted
 												},
 											}),
-											ach(9669, {	-- Guild Glory of the Draenor Raider
-												["collectible"] = false,
-												["groups"] = {
-													i(116666),	-- Blacksteel Battleboar - Exalted
-												},
-											}),
+
 											ach(6682, {	-- Guild Glory of the Pandaria Raider
 												["collectible"] = false,
 												["groups"] = {

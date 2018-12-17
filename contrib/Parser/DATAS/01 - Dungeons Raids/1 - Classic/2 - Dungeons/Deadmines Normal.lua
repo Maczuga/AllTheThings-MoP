@@ -9,24 +9,6 @@ _.Instances =
 			inst(63, { 	-- Deadmines
 				["groups"] = {
 					n(-17, {	-- Quests
-						q( 44930,{ -- Deadmines: Sea'in Red
-							["groups"] = {
-								{ -- Ensemble: Blackened Defias Armor
-									["groups"] = {	
-										i(10399), -- Blackened Defias Armor
-										i(10401), -- Blackened Defias Gloves
-										i(10403), -- Blackened Defias Belt
-										i(10400), -- Blackened Defias Leggings
-										i(10402), -- Blackened Defias Boots
-									},
-									["itemID"] = 142273, -- Ensemble: Blackened Defias Armor
-									["classes"] = { 4 },	-- Rogue
-								},
-							},
-							["qg"] = 115818,	-- Captain Bramblebeard
-							["classes"] = { 4 },
-							["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Rogue in Outlaw Specialization.|r \n|cff3399ffSTEP 2:|r|cff66ccff Go to Ironclad Cove (Wooden Catwalk & Boat)|r \n|cff3399ffSTEP 3:|r|cff66ccff Locate the Ghostly Parrot (36.5,17).|r \n|cff3399ffSTEP 4:|r|cff66ccff Summon Green Wing Macaw (Extra Action Button will appear, grapple up the wall).|r \n|cff3399ffSTEP 5:|r|cff66ccff Accept quest and kill pirates for the 100 bandanas.|r \n|cff3399ffSTEP 6:|r|cff66ccff Repeat process to get back to questgiver to turn in.|r",
-						}),
 						qa(27756, {	-- The Foreman
 							["qg"] = 46612,	-- Lieutenant Horatio Laine
 						}),

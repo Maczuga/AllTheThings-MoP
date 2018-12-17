@@ -22,47 +22,6 @@ _.WorldEvents =
 							},
 						},
 					},
-					{	-- Death Metal Knight
-						["npcID"] = 122899,	-- Death Metal Knight
-						["achievementID"] = 11918, -- Hey, You're A Rockstar!
-						["questID"] = 47767,
-						["isWeekly"] = true,
-						["repeatable"] = true,
-						["description"] = "|cff66ccffDeath Metal Knight can be killed every hour on the half-hour, however, he will not drop his rare loot more than once per month per character.|r",
-						["g"] = {
-							{	-- Hey, You're a Rockstar!
-								["achievementID"] = 11918,	-- Hey, You're a Rockstar!
-							},
-							{	-- Mosh Pit
-								["achievementID"] = 11921,	-- Mosh Pit
-							},
-							{	-- Perfect Performance
-								["achievementID"] = 11920,	-- Perfect Performance
-							},
-							{	-- Taking this Show on the Road [Expand upon]
-								["achievementID"] = 11919,	-- Taking this Show on the Road
-							},
-							{	-- Blight Boar Microphone
-								["itemID"] = 151265,	-- Blight Boar Microphone
-							},
-							{	-- Necromedes, the Death Resonator
-								["itemID"] = 151255,	-- Necromedes, the Death Resonator
-							},
-							{	-- Lightly-Padded Cage Helm
-								["itemID"] = 151253,	-- Lightly-Padded Cage Helm
-							},
-							{	-- Leather-Lined Cage Helm'
-								["itemID"] = 151252,	-- Leather-Lined Cage Helm
-							},
-							{	-- Chain-Linked Cage Helm
-								["itemID"] = 151254,	-- Chain-Linked Cage Helm
-							},
-							{	-- Steel-Reinforced Cage Helm
-								["itemID"] = 151251,	-- Steel-Reinforced Cage Helm
-							},
-						},
-						
-					},
 					{	-- Moonfang
 						["npcID"] = 71992,	-- Moonfang
 						["g"] = {

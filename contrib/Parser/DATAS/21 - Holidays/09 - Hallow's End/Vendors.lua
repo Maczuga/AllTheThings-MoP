@@ -30,18 +30,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 										["u"] = 26,			-- Hallow's End Filter
 									},
 									-- Toys!!
-									{	-- Headless Horseman's Hearthstone
-										["itemID"] = 163045,	-- Headless Horseman's Hearthstone
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Horse Head Costume
-										["itemID"] = 151271,	-- Horse Head Costume
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Horse Tail Costume
-										["itemID"] = 151270,	-- Horse Tail Costume
-										["u"] = 26,				-- Hallow's End Filter
-									},
 									{	-- Little Wickerman
 										["itemID"] = 70722,	-- Little Wickerman
 										["u"] = 26,			-- Hallow's End Filter
@@ -57,33 +45,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 												["u"] = 26,					-- Hallow's End Filter
 											},
 										},
-									},
-									-- Heirlooms!!
-									{	-- Ancient Heirloom Armor Casing
-										["itemID"] = 122338,	-- Ancient Heirloom Armor Casing
-									},
-									{	-- Timeworn Heirlom Armor Casing
-										["itemID"] = 122340,	-- Timeworn Heirlom Armor Casing
-									},
-									{	-- Weathered Heirlom Armor Casing
-										["itemID"] = 151614,	-- Weathered Heirlom Armor Casing
-									},
-									-- Items that should be toys!!
-									{	-- Exquisite Costume Set: "Deathwing"
-										["itemID"] = 128643,	-- Exquisite Costume Set: "Deathwing"
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Exquisite Costume Set: "Grommash"
-										["itemID"] = 138990,	-- Exquisite Costume Set: "Grommash"
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Exquisite Costume Set: "The Lich King"
-										["itemID"] = 116828,	-- Exquisite Costume Set: "The Lich King"
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Exquisite Costume Set: "Xavius"
-										["itemID"] = 151268,	-- Exquisite Costume Set: "Xavius"
-										["u"] = 26,				-- Hallow's End Filter
 									},
 									-- Candy
 									{	-- Chewy Fel Taffy
@@ -129,27 +90,11 @@ _.Holidays = bubbleDown({["u"] = 26},
 							{	-- Tricky Treats
 								["itemID"] = 33226,-- Tricky Treats
 								["g"] = {
-									{	-- Hallowed Wand - Abomination
-										["itemID"] = 116851,	-- Hallowed Wand - Abomination
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Banshee
-										["itemID"] = 139004,	-- Hallowed Wand - Banshee
-										["u"] = 26,				-- Hallow's End Filter
-									},
 									{	-- Hallowed Wand - Bat
 										["itemID"] = 20410,			-- Hallowed Wand - Bat
 										["achievementID"] = 283,	-- The Masquerade
 										["criteriaID"] = 1,			-- Transformed by Hallowed Wand - Bat
 										["u"] = 26,					-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Gargoyle
-										["itemID"] = 128645,	-- Hallowed Wand - Gargoyle
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Geist
-										["itemID"] = 116853,	-- Hallowed Wand - Geist
-										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ghost
 										["itemID"] = 20409,			-- Hallowed Wand - Ghost
@@ -157,19 +102,11 @@ _.Holidays = bubbleDown({["u"] = 26},
 										["criteriaID"] = 2,			-- Transformed by Hallowed Wand - Ghost
 										["u"] = 26,					-- Hallow's End Filter
 									},
-									{	-- Hallowed Wand - Ghoul
-										["itemID"] = 116850,	-- Hallowed Wand - Ghoul
-										["u"] = 26,				-- Hallow's End Filter
-									},
 									{	-- Hallowed Wand - Leper Gnome
 										["itemID"] = 20399,			-- Hallowed Wand - Leper Gnome
 										["achievementID"] = 283,	-- The Masquerade
 										["criteriaID"] = 3,			-- Transformed by Hallowed Wand - Leper Gnome
 										["u"] = 26,					-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Nerubian
-										["itemID"] = 128646,	-- Hallowed Wand - Nerubian
-										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ninja
 										["itemID"] = 20398,			-- Hallowed Wand - Ninja
@@ -197,10 +134,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 									{	-- Hallowed Wand - Spider
 										["itemID"] = 116854,	-- Hallowed Wand - Spider
 										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Wight
-										["itemID"] = 128644,	-- Hallowed Wand - Wight
-										["u"] = 26,		s	-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Wisp
 										["itemID"] = 20414,			-- Hallowed Wand - Wisp
@@ -232,18 +165,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 										["u"] = 26,			-- Hallow's End Filter
 									},
 									-- Toys!!
-									{	-- Headless Horseman's Hearthstone
-										["itemID"] = 163045,	-- Headless Horseman's Hearthstone
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Horse Head Costume
-										["itemID"] = 151271,	-- Horse Head Costume
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Horse Tail Costume
-										["itemID"] = 151270,	-- Horse Tail Costume
-										["u"] = 26,				-- Hallow's End Filter
-									},
 									{	-- Little Wickerman
 										["itemID"] = 70722,	-- Little Wickerman
 										["u"] = 26,			-- Hallow's End Filter
@@ -259,33 +180,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 												["u"] = 26,					-- Hallow's End Filter
 											},
 										},
-									},
-									-- Heirlooms!!
-									{	-- Ancient Heirloom Armor Casing
-										["itemID"] = 122338,	-- Ancient Heirloom Armor Casing
-									},
-									{	-- Timeworn Heirlom Armor Casing
-										["itemID"] = 122340,	-- Timeworn Heirlom Armor Casing
-									},
-									{	-- Weathered Heirlom Armor Casing
-										["itemID"] = 151614,	-- Weathered Heirlom Armor Casing
-									},
-									-- Items that should be toys!!
-									{	-- Exquisite Costume Set: "Deathwing"
-										["itemID"] = 128643,	-- Exquisite Costume Set: "Deathwing"
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Exquisite Costume Set: "Grommash"
-										["itemID"] = 138990,	-- Exquisite Costume Set: "Grommash"
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Exquisite Costume Set: "The Lich King"
-										["itemID"] = 116828,	-- Exquisite Costume Set: "The Lich King"
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Exquisite Costume Set: "Xavius"
-										["itemID"] = 151268,	-- Exquisite Costume Set: "Xavius"
-										["u"] = 26,				-- Hallow's End Filter
 									},
 									-- Candy
 									{	-- Chewy Fel Taffy
@@ -511,54 +405,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 							},
 						},
 					},
-					{	-- Izzy Hollyfizzle [Garrison]
-						["npcID"] = 96362,	-- Izzy Hollyfizzle
-						["coords"] = {
-							{ 47.33, 38.47 },	-- Horde Garrison
-							{ 44.29, 51.05 },	-- Alliance Garrison
-						},
-						["maps"] = {
-							582,	-- Alliance Garrison
-							590,	-- Horde Garrison
-						},
-						["g"] = {
-							{	-- Spooky Supplies
-								["itemID"] = 128658,	-- Spooky Supplies
-								["u"] = 26,				-- Hallow's End Filter
-								["g"] = {
-										{	-- Ghoulish Guises
-											["itemID"] = 128660,	-- Ghoulish Guises
-											["questID"] = 39758,
-											["u"] = 26,				-- Hallow's End Filter
-										},
-										{	-- Hallow's Glow
-											["itemID"] = 128661,	-- Hallow's Glow
-											["questID"] = 39612,
-											["u"] = 26,				-- Hallow's End Filter
-										},
-										{	-- Seer's Invitation
-											["itemID"] = 128662,	-- Seer's Invitation
-											["questID"] = 39613,
-											["u"] = 26,				-- Hallow's End Filter
-										},
-										{	-- Witch's Brew
-											["itemID"] = 128663,	-- Witch's Brew
-											["questID"] = 39611,
-											["u"] = 26,				-- Hallow's End Filter
-										},
-										{	-- Creepy Crawlers
-											["itemID"] = 128664,	-- Creepy Crawlers
-											["questID"] = 39759,
-											["u"] = 26,				-- Hallow's End Filter
-										},
-										{	-- Tricky Treat
-											["itemID"] = 33226,		-- Tricky Treat
-											["u"] = 26,				-- Hallow's End Filter
-										},
-									},
-								},
-							},
-					},
 					{	-- Pippi [Pets // A - Elwynn // Woim]
 						["npcID"] = 109685,	-- Pippi
 						["races"] = ALLIANCE_ONLY,
@@ -574,17 +420,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 							{	-- Tricky Treats
 								["itemID"] = 33226,-- Tricky Treats
 								["g"] = {
-									{	-- Cursed Birman
-										["itemID"] = 116801,	-- Cursed Birman
-										["u"] = 26,				-- Hallow's End Filter
-									},
 									{	-- Feline Familiar
 										["itemID"] = 70908,	-- Feline Familiar
 										["u"] = 26,			-- Hallow's End Filter
-									},
-									{	-- Naxxy
-										["itemID"] = 151269,	-- Naxxy
-										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Sinister Squashling
 										["itemID"] = 33154,	-- Sinister Squashling
@@ -596,26 +434,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 												["u"] = 26,					-- Hallow's End Filter
 											},
 										},
-									},
-									{	-- Widget the Departed
-										["itemID"] = 116804,	-- Widget the Departed
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- "Lil' Starlet" Costume
-										["itemID"] = 116811,	-- "Lil' Starlet" Costume
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- "Mad Alchemist" Costume
-										["itemID"] = 116810,	-- "Mad Alchemist" Costume
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- "Yipp-Saron" Costume
-										["itemID"] = 116812,	-- "Yipp-Saron" Costume
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Ominous Pet Treat
-										["itemID"] = 139036,	-- Ominous Pet Treat
-										["u"] = 26,				-- Hallow's End Filter
 									},
 								},
 							},
@@ -831,27 +649,11 @@ _.Holidays = bubbleDown({["u"] = 26},
 							{	-- Tricky Treats
 								["itemID"] = 33226,-- Tricky Treats
 								["g"] = {
-									{	-- Hallowed Wand - Abomination
-										["itemID"] = 116851,	-- Hallowed Wand - Abomination
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Banshee
-										["itemID"] = 139004,	-- Hallowed Wand - Banshee
-										["u"] = 26,				-- Hallow's End Filter
-									},
 									{	-- Hallowed Wand - Bat
 										["itemID"] = 20410,			-- Hallowed Wand - Bat
 										["achievementID"] = 283,	-- The Masquerade
 										["criteriaID"] = 1,			-- Transformed by Hallowed Wand - Bat
 										["u"] = 26,					-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Gargoyle
-										["itemID"] = 128645,	-- Hallowed Wand - Gargoyle
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Geist
-										["itemID"] = 116853,	-- Hallowed Wand - Geist
-										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ghost
 										["itemID"] = 20409,			-- Hallowed Wand - Ghost
@@ -859,19 +661,11 @@ _.Holidays = bubbleDown({["u"] = 26},
 										["criteriaID"] = 2,			-- Transformed by Hallowed Wand - Ghost
 										["u"] = 26,					-- Hallow's End Filter
 									},
-									{	-- Hallowed Wand - Ghoul
-										["itemID"] = 116850,	-- Hallowed Wand - Ghoul
-										["u"] = 26,				-- Hallow's End Filter
-									},
 									{	-- Hallowed Wand - Leper Gnome
 										["itemID"] = 20399,			-- Hallowed Wand - Leper Gnome
 										["achievementID"] = 283,	-- The Masquerade
 										["criteriaID"] = 3,			-- Transformed by Hallowed Wand - Leper Gnome
 										["u"] = 26,					-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Nerubian
-										["itemID"] = 128646,	-- Hallowed Wand - Nerubian
-										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ninja
 										["itemID"] = 20398,			-- Hallowed Wand - Ninja
@@ -891,18 +685,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 										["achievementID"] = 283,	-- The Masquerade
 										["criteriaID"] = 6,			-- Transformed by Hallowed Wand - Skeleton
 										["u"] = 26,					-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Slime
-										["itemID"] = 116848,	-- Hallowed Wand - Slime
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Spider
-										["itemID"] = 116854,	-- Hallowed Wand - Spider
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Wight
-										["itemID"] = 128644,	-- Hallowed Wand - Wight
-										["u"] = 26,		s	-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Wisp
 										["itemID"] = 20414,			-- Hallowed Wand - Wisp
@@ -929,17 +711,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 							{	-- Tricky Treats
 								["itemID"] = 33226,-- Tricky Treats
 								["g"] = {
-									{	-- Cursed Birman
-										["itemID"] = 116801,	-- Cursed Birman
-										["u"] = 26,				-- Hallow's End Filter
-									},
 									{	-- Feline Familiar
 										["itemID"] = 70908,	-- Feline Familiar
 										["u"] = 26,			-- Hallow's End Filter
-									},
-									{	-- Naxxy
-										["itemID"] = 151269,	-- Naxxy
-										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Sinister Squashling
 										["itemID"] = 33154,	-- Sinister Squashling
@@ -951,26 +725,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 												["u"] = 26,					-- Hallow's End Filter
 											},
 										},
-									},
-									{	-- Widget the Departed
-										["itemID"] = 116804,	-- Widget the Departed
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- "Lil' Starlet" Costume
-										["itemID"] = 116811,	-- "Lil' Starlet" Costume
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- "Mad Alchemist" Costume
-										["itemID"] = 116810,	-- "Mad Alchemist" Costume
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- "Yipp-Saron" Costume
-										["itemID"] = 116812,	-- "Yipp-Saron" Costume
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Ominous Pet Treat
-										["itemID"] = 139036,	-- Ominous Pet Treat
-										["u"] = 26,				-- Hallow's End Filter
 									},
 								},
 							},

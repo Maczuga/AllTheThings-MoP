@@ -264,12 +264,12 @@ _.Zones =
 							},
 						}),
 						n(66973, {	-- Kai Featherfall <Phoenix Egg Trader>
-							un(2, i(90045, {	-- Ancestral Phoenix Egg
+							i(90045, {	-- Ancestral Phoenix Egg
 								i(89154),	-- Reins of the Crimson Pandaren Phoenix
 								i(90710),	-- Reins of the Ashen Pandaren Phoenix
 								i(90711),	-- Reins of the Emerald Pandaren Phoenix
 								i(90712),	-- Reins of the Violet Pandaren Phoenix
-							})),
+							}),
 						}),
 						n(65172, {	-- Len at Arms <Adventuring Supplies>
 							i(83158),	-- Wasteland Satin Hood
@@ -366,15 +366,6 @@ _.Zones =
 							i(83274),	-- Wasteland Blade
 							i(83275),	-- Wasteland Axe
 						}),
-						{	-- Lorewalker Huynh <Inscription Trainer>
-							["npcID"] = 64691,	-- Lorewalker Huynh <Inscription Trainer>
-							["coord"] = { 82.01, 29.37 },
-							["g"]= {
-								{	-- Technique: Songs of Peace
-									["itemID"] = 137788,	-- Technique: Songs of Peace
-								},
-							},
-						},
 						nh(64001, {	-- Sage Lotusbloom <The August Celestials Quartermaster>
 							["coords"] = {
 								{ 62.79, 23.38 },

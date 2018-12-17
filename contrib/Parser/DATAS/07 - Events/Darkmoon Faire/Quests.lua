@@ -682,20 +682,6 @@ _.WorldEvents =
 						},
 					},
 				},
-				{	-- Faded Treasure Map
-					["itemID"] = 126930,	-- Faded Treasure Map
-					["questID"] = 38934,	-- Sila's Secret Stash
-					["qg"] = 55103,			-- Galissa Sundew
-					["coords"] = {
-						{ 52.51, 88.79 },
-					},
-					["g"] = {
-						{	-- Sila's Secret Stash
-							["itemID"] = 127148,	-- Sila's Secret Stash
-							["description"] = "This item contains 100 Darkmoon Faire Tickets!!",
-						},
-					},
-				},
 				{	-- Firebird's Challenge [Token Game]
 					["questID"] = 36481,	-- Firebird's Challenge
 					["isDaily"] = true,
@@ -752,12 +738,6 @@ _.WorldEvents =
 								},
 							},
 						},
-						{	-- Returning Champion
-							["itemID"] = 126949,	-- Returning Champion
-							["sourceQuests"] = {
-								29761,	-- Master Pit Fighter
-							},
-						},
 					},
 				},
 				{	-- He Shoots, He Scores! [Token Game]
@@ -790,14 +770,6 @@ _.WorldEvents =
 						{ 53.28, 54.35 },
 					},
 					["g"] = {
-						{	-- That's Whack!
-							["achievementID"] = 9983,	-- That's Whack!
-							["g"] = {
-								{	-- Hogs
-									["itemID"] = 123862,	-- Hogs' Studded Collar
-								},
-							},
-						},
 						{	-- Whack-A-Gnoll
 							["achievementID"] = 6020,	-- Step Right Up
 							["criteriaID"] = 5,			-- Whack-A-Gnoll

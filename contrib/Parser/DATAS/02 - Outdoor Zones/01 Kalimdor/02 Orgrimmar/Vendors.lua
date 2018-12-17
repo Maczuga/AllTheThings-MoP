@@ -573,13 +573,7 @@ _.Zones =
 											i(65498),	-- Recipe: Big Cauldron of Battle
 										},
 									}),
-									ach(9651, {	-- Challenge Warlord: Gold - Guild Edition
-										["collectible"] = false,
-										["groups"] = {
-											un(4, i(114968)),	-- Deathwatch Hatchling - Revered
-										},
-										["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
-									}),
+
 									ach(5144, {	-- Critter Kill Squad
 										["collectible"] = false,
 										["groups"] = {
@@ -596,12 +590,6 @@ _.Zones =
 										["collectible"] = false,
 										["groups"] = {
 											i(63125),	-- Reins of the Dark Phoenix - Exalted
-										},
-									}),
-									ach(9669, {	-- Guild Glory of the Draenor Raider
-										["collectible"] = false,
-										["groups"] = {
-											i(116666),	-- Blacksteel Battleboar - Exalted
 										},
 									}),
 									ach(6682, {	-- Guild Glory of the Pandaria Raider

@@ -1280,10 +1280,6 @@ _.Zones =
 						},
 					},
 					n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
-						{
-							["itemID"] = 136801,	-- Divine Tome: Contemplation [Paladin]
-							--["recipeID"] = 121183,	-- Contemplation
-						},
 						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
 						i(19447),	-- Formula: Enchant Bracer - Healing Power
 						i(19442),	-- Formula: Powerful Anti-Venom

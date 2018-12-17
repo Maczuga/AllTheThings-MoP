@@ -8,7 +8,6 @@ _.WorldEvents =
 			n(-160, { -- Mounts
 				i(32458),	-- Ashes of Alar
 				i(95059),	-- Clutch of Ji-Kun
-				un(9, i(115484)),	-- Core Hound Chain
 				i(13335),	-- Deathcharger's Reins
 				i(78919),	-- Experiment 12-B
 				i(30480),	-- Fiery Warhorse's Reins 
@@ -257,7 +256,6 @@ _.WorldEvents =
 				--or consumables displayed it doesn't hurt the end user.  We don't remove information from the
 				-- addon or the files.  No adjustments need ot be made as it affects the item everywhere in the addon.
 			},
-			un(29, i(118572)), 	-- Illusion: Flame of Ragnaros
 			{	-- Kor'kron Shaman's Treasure
 				["groups"] = {
 					i(105745),	-- Kor'kron Dark Shaman Cowl
@@ -278,7 +276,6 @@ _.WorldEvents =
 					n(-160, { -- Mounts **
 						i(32458),	-- Ashes of Alar **
 						i(95059),	-- Clutch of Ji-Kun **
-						un(9, i(115484)),	-- Core Hound Chain **
 						i(13335),	-- Deathcharger's Reins **
 						i(78919),	-- Experiment 12-B **
 						i(30480),	-- Fiery Warhorse's Reins **
@@ -522,7 +519,6 @@ _.WorldEvents =
 						["icon"] = "Interface\\Icons\\passive_monk_teachingsofmonastery",
 						--Note!! Drops from container still.  Do not mark removed at all!
 					},
-					un(29, i(118572)), 	-- Illusion: Flame of Ragnaros **
 					{	-- Kor'kron Shaman's Treasure
 						["groups"] = {
 							i(105745),	-- Kor'kron Dark Shaman Cowl

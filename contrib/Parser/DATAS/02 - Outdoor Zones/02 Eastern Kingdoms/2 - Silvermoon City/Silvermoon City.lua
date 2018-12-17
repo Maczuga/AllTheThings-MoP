@@ -428,13 +428,6 @@ _.Zones =
 											i(65498),	-- Recipe: Big Cauldron of Battle
 										},
 									}),
-									ach(9651, {	-- Challenge Warlord: Gold - Guild Edition
-										["collectible"] = false,
-										["groups"] = {
-											un(4, i(114968)),	-- Deathwatch Hatchling - Revered
-										},
-										["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
-									}),
 									ach(5144, {	-- Critter Kill Squad
 										["collectible"] = false,
 										["groups"] = {
@@ -453,12 +446,7 @@ _.Zones =
 											i(63125),	-- Reins of the Dark Phoenix - Exalted
 										},
 									}),
-									ach(9669, {	-- Guild Glory of the Draenor Raider
-										["collectible"] = false,
-										["groups"] = {
-											i(116666),	-- Blacksteel Battleboar - Exalted
-										},
-									}),
+
 									ach(6682, {	-- Guild Glory of the Pandaria Raider
 										["collectible"] = false,
 										["groups"] = {
@@ -616,15 +604,6 @@ _.Zones =
 							i(23746)	-- Adamantite Rifle
 						})
 					}),
-					{	-- Zantasia <Inscription Trainer>
-						["npcID"] = 30710,	-- Zantasia <Inscription Trainer>
-						["coord"] = { 69.6, 23.6 },
-						["g"] = {
-							{	-- Technique: Songs of the Legion
-								["itemID"] = 137789,	-- Technique: Songs of the Legion
-							},
-						},
-					},
 					n(16689, {	-- Zaralda <Leatherworking Supplies>
 						i(67095), -- Pattern: Assassin's Chestplate						
 						i(67070), -- Pattern: Belt of Nefarious Whispers

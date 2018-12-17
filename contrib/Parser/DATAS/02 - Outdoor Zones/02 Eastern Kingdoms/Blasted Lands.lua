@@ -233,20 +233,6 @@ _.Zones =
 					qg(42298, qa(26163)),	-- Time is Short
 					qg(7783, qh(25689)),	-- Time is Short
 --]]					
-					qg(84929, qa(35495, { -- Toothsmash the Annihilator
-						i(118771),
-						i(118772),
-						i(118773),
-						i(118774),
-						i(118775),
-					})),
-					qg(84928, qh(35760, { -- Toothsmash the Annihilator
-						i(118771),
-						i(118772),
-						i(118773),
-						i(118774),
-						i(118775),
-					})),
 --[[					
 					qg(82270, qa(35462)),	-- Under Siege (secondary QG ID 84929)
 					qg(82851, qh(35746)),	-- Under Siege (secondary QG ID 84928)
@@ -848,26 +834,6 @@ _.Zones =
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
-					a(n(76117, {	-- Quartermaster Rindelle <Replacement Quest Rewards and General Goods>
-						["groups"]	= {
-							i(118771),	-- Wildfire Windcloak
-							i(118772),	-- Frostshaper Cape
-							i(118773),	-- Butcher's Wrap
-							i(118774),	-- Armswake Greatcloak
-							i(118775),	-- Night rowler's Cloak
-						},
-						["description"] = "Vendor only sells these quest reward items to those who have completed the quest 'Toothsmash the Annihilator'.|r",
-					})),
-					h(n(76522, {	-- Zerpy Clampshock <Replacement Quest Rewards and General Goods>
-						["groups"]	= {
-							i(118771),	-- Wildfire Windcloak
-							i(118772),	-- Frostshaper Cape
-							i(118773),	-- Butcher's Wrap
-							i(118774),	-- Armswake Greatcloak
-							i(118775),	-- Night rowler's Cloak
-						},
-						["description"] = "Vendor only sells these quest reward items to those who have completed the quest 'Toothsmash the Annihilator'.|r",
-					})),
 				}),
 				n(0,    {	-- Zone Drop
 					i(10593, {	-- Imperfect Draenethyst Fragment
@@ -989,7 +955,6 @@ _.Zones =
 						},
 						["description"] = "This has a high chance (about 50%) to drop from rares in the zone, but can technically drop from any mob in the zone.",							
 					}),
-					i(118675),	-- Time-Locked Box Bronze Whelpling
 				}),
 				n(-40,  {	-- Legacy
 					["groups"] = {

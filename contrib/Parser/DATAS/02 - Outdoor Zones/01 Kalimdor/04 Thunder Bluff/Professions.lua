@@ -134,13 +134,6 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Music Roll: Mulgore Plains
-								["itemID"] = 122214,	-- Music Roll: Mulgore Plains
-								["description"] = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
-								["coords"] = {
-									{ 28.61, 24.61, 88 },
-								},
-							},
 						},
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 356,

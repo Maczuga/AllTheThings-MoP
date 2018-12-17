@@ -965,74 +965,11 @@ _.Zones =
 									{	-- Recipe: Seafood Magnifique Feast
 										["itemID"] = 62800,	-- Recipe: Seafood Magnifique Feast
 									},
-									{	-- Ancient Bloodmoon Cloak
-										["itemID"] = 122262,	-- Ancient Bloodmoon Cloak
-									},
-									{	-- Burnished Helm of Might
-										["itemID"] = 122263,	-- Burnished Helm of Might
-									},
-									{	-- Burnished Legplates of Might
-										["itemID"] = 122264,	-- Burnished Legplates of Might
-									},
-									{	-- Inherited Cape of the Black Baron
-										["itemID"] = 122261,	-- Inherited Cape of the Black Baron
-									},
-									{	-- Mystical Coif of Elements
-										["itemID"] = 122247,	-- Mystical Coif of Elements
-									},
-									{	-- Mystical Kilt of Elements
-										["itemID"] = 122253,	-- Mystical Kilt of Elements
-									},
-									{	-- Polished Helm of Valor
-										["itemID"] = 122245,	-- Polished Helm of Valor
-									},
-									{	-- Polished Legplates of Valor
-										["itemID"] = 122251,	-- Polished Legplates of Valor
-									},
-									{	-- Preened Tribal War Feathers
-										["itemID"] = 122249,	-- Preened Tribal War Feathers
-									},
-									{	-- Preened Wildfeather Leggings
-										["itemID"] = 122255,	-- Preened Wildfeather Leggings
-									},
-									{	-- Pristine Lightforge Helm
-										["itemID"] = 127012,	-- Pristine Lightforge Helm
-									},
-									{	-- Pristine Lightforge Legplates
-										["itemID"] = 127011,	-- Pristine Lightforge Legplates
-									},
-									{	-- Ripped Sandstorm Cloak
-										["itemID"] = 122266,	-- Ripped Sandstorm Cloak
-									},
-									{	-- Stained Shadowcraft Cap
-										["itemID"] = 122248,	-- Stained Shadowcraft Cap
-									},
-									{	-- Stained Shadowcraft Pants
-										["itemID"] = 122254,	-- Stained Shadowcraft Pants
-									},
-									{	-- Tarnished Leggings of Destruction
-										["itemID"] = 122252,	-- Tarnished Leggings of Destruction
-									},
-									{	-- Tarnished Raging Berserker's Helm
-										["itemID"] = 122246,	-- Tarnished Raging Berserker's Helm
-									},
-									{	-- Tattered Dreadmist Leggings
-										["itemID"] = 122256,	-- Tattered Dreadmist Leggings
-									},
-									{	-- Tattered Dreadmist Mask
-										["itemID"] = 122250,	-- Tattered Dreadmist Mask
-									},
-									{	-- Worn Stoneskin Gargoyle Cape
-										["itemID"] = 122260,	-- Worn Stoneskin Gargoyle Cape
-									},
 									{	-- Banner of Cooperation
 										["itemID"] = 64400,	-- Banner of Cooperation
 									},
 									{	-- Battle Standard of Coordination
 										["itemID"] = 64402,	-- Battle Standard of Coordination
-									},
-									{	-- Garrison Guild Banners
-										["itemID"] = 120352,	-- Garrison Guild Banners
 									},
 									{	-- Guild Vault Voucher (7th Slot)
 										["itemID"] = 62286,	-- Guild Vault Voucher (7th Slot)

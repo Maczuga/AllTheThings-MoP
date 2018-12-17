@@ -7210,14 +7210,14 @@ function app:GetDataCache()
 		end
 		
 		-- Gear Sets
-		if app.Categories.GearSets then
-			db = {}; -- app.CreateAchievement(11761, app.Categories.GearSets);
-			db.f = 0;
-			db.expanded = false;
-			db.text = "Gear Sets"; -- L("GEAR_SETS");
-			db.icon = "Interface\\ICONS\\spell_magic_magearmor";
-			table.insert(g, db);
-		end
+		-- if app.Categories.GearSets then
+		-- 	db = {}; -- app.CreateAchievement(11761, app.Categories.GearSets);
+		-- 	db.f = 0;
+		-- 	db.expanded = false;
+		-- 	db.text = "Gear Sets"; -- L("GEAR_SETS");
+		-- 	db.icon = "Interface\\ICONS\\spell_magic_magearmor";
+		-- 	table.insert(g, db);
+		-- end
 		
 		-- In-Game Store
 		if app.Categories.InGameShop then
@@ -8979,8 +8979,6 @@ app:RegisterEvent("NEW_PET_ADDED");
 app:RegisterEvent("PET_JOURNAL_PET_DELETED");
 app:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
 app:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
-app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
-app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 
 -- Define Event Behaviours
 app.events.VARIABLES_LOADED = function()
@@ -10019,10 +10017,7 @@ app.events.VARIABLES_LOADED = function()
 	end
 	
 	-- Check to see if we have a leftover ItemDB cache
-	GetDataMember("CollectedBuildings", {});
 	GetDataMember("CollectedFactions", {});
-	GetDataMember("CollectedFollowers", {});
-	GetDataMember("CollectedMusicRolls", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
@@ -10044,33 +10039,6 @@ app.events.VARIABLES_LOADED = function()
 		myfactions = {};
 		factions[app.Me] = myfactions;
 		SetTempDataMember("CollectedFactions", myfactions);
-	end
-	
-	-- Cache your character's building data.
-	local buildings = GetDataMember("CollectedBuildingsPerCharacter", {});
-	local myBuildings = GetTempDataMember("CollectedBuildings", buildings[app.Me]);
-	if not myBuildings then
-		myBuildings = {};
-		buildings[app.Me] = myBuildings;
-		SetTempDataMember("CollectedBuildings", myBuildings);
-	end
-	
-	-- Cache your character's follower data.
-	local followers = GetDataMember("CollectedFollowersPerCharacter", {});
-	local myFollowers = GetTempDataMember("CollectedFollowers", followers[app.Me]);
-	if not myFollowers then
-		myFollowers = {};
-		followers[app.Me] = myFollowers;
-		SetTempDataMember("CollectedFollowers", myFollowers);
-	end
-	
-	-- Cache your character's music roll data.
-	local musicRolls = GetDataMember("CollectedMusicRollsPerCharacter", {});
-	local myMusicRolls = GetTempDataMember("CollectedMusicRolls", musicRolls[app.Me]);
-	if not myMusicRolls then
-		myMusicRolls = {};
-		musicRolls[app.Me] = myMusicRolls;
-		SetTempDataMember("CollectedMusicRolls", myMusicRolls);
 	end
 	
 	-- Register for Dynamic Events and Assign Filters

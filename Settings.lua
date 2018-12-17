@@ -709,7 +709,7 @@ local function createAccountFrame(parent)
 			app:RefreshData();
 		end, 
 		function(self) 
-			self:SetChecked(app.GetDataMember("RequiredSkillFilter"));
+			self:SetChecked(app.GetDataMember("RequiredSkillFilter", true));
 		end,
 		function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");

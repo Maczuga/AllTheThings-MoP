@@ -7,7 +7,6 @@ _.Toys =
 		i(87528),		-- Honorary Brewmaster Keg
 		un(4, i(89205)),	-- Mini Mana Bomb (Horde) No Longer Available
 		i(86596),		-- Nat's Fishing Chair
-		i(119215), 		-- Robo-Gnomebulator
 		i(92738),		-- Safari Hat
 		i(98132),		-- Shado-Pan Geyser Gun
 		i(43824),		-- The Schools of Arcane Magic - Mastery
@@ -129,18 +128,6 @@ _.Toys =
 		un(3, i(54653)),	-- Darkspear Pride (Horde) No Longer Available
 		un(3, i(54651)),	-- Gnomeregan Pride (Alliance) No Longer Available
 		un(16, i(33079)), 	-- Murloc Costume
-		{	-- Orgrimmar Hero's War Banner
-			["itemID"] = 163986,	-- Orgrimmar Hero's War Banner
-			["u"] = 16,	-- Blizzcon
-			["races"] = HORDE_ONLY,
-			["f"] = 102,	-- Toy
-		},
-		{	-- Stormwind Champion's War Banner
-			["itemID"] = 163987,	-- Stormwind Champion's War Banner
-			["u"] = 16,	-- Blizzcon
-			["races"] = ALLIANCE_ONLY,
-			["f"] = 102,	-- Toy
-		},
 	}),
 	n(-17, { 	-- Quest
 		i(88589),		-- Cremating Torch
@@ -296,10 +283,6 @@ _.Toys =
 		i(70161),		-- Mushroom Chair
 		i(70159), 		-- Mylune's Call
 		i(45014),		-- Orgrimmar Banner (Horde)
-		{	-- Overtuned Corgi Goggles
-			["itemID"] = 158149,	-- Overtuned Corgi Goggles
-			["u"] = 31,				-- WoW Anniversary Filter
-		},
 		i(89869), 		-- Pandaren Scarecrow
 		i(44820),		-- Red Ribbon Pet Leash
 		i(37460),		-- Rope Pet Leash

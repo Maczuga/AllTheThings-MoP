@@ -43,7 +43,6 @@ _.Zones =
 						n(-2, { -- Vendors
 							n(37674, { -- Lovely Merchant <Crown Chemical Co.>
 								i(72146),	-- Swift Lovebird
-								i(116155),	-- Lovebird Hatchling
 								i(22235),	-- Truesilver Shafted Arrow
 								i(34480),	-- Romantic Picnic Basket
 							}),

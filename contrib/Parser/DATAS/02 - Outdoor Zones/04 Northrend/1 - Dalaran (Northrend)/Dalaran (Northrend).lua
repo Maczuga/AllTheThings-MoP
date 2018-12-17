@@ -1883,25 +1883,6 @@ _.Zones =
 						i(44606),	-- Toy Train Set Toy
 						i(45057),	-- Wind-Up Train Wreck Toy
 					}),
-					{	-- Cravitz Lorent <Shady Book Dealer>
-						["npcID"]= 106887,	-- Cravitz Lorent <Shady Book Dealer>
-						["g"] = {
-							{	-- Technique: Glyph of Burnout
-								["itemID"] = 141056,	-- Technique: Glyph of Burnout
-							},
-							{	-- Scarlet Confessional Book
-								["itemID"] = 136927,	-- Scarlet Confessional Book
-							},
-							{	-- Tome of Hex: Cockroach
-								["itemID"] = 136972,	-- Tome of Hex: Cockroach
-								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
-							},
-							{	-- Tome of the Wilds: Treant Form
-								["itemID"] = 136803,	-- Dirty Tricks, Vol 1: Detection
-								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
-							},
-						},
-					},
 					n(34252, { 	-- Dubin Clay <Plate Armor Merchant>
 						i(45335),	-- Valorous Darkruned Chestguard
 						i(45336),	-- Valorous Darkruned Faceguard
@@ -2040,10 +2021,6 @@ _.Zones =
 					n(28715, { 	-- Endora Moorehead <Magical Goods>
 						i(82470),	-- Ancient Tome of Portal: Dalaran [Mage only]
 						un(2, i(44714)), -- Tome of Dalaran Brilliance. Deprecated and removed in 7.0.3. Any existing copies were renamed to [Magic Consumed Book]. 
-						{
-							["itemID"] = 136799,	-- Mystical Tome: Illusion [Mage only]
-							["spellID"] = 131784	-- Illusion
-						},
 						i(44709),	-- Tome of Polymorph: Black Cat [Mage only]
 					}),
 					{	-- Frozo the Renowned <Frozen Orb Trader>
@@ -2594,13 +2571,6 @@ _.Zones =
 											i(65498),	-- Recipe: Big Cauldron of Battle
 										},
 									}),
-									ach(9651, {	-- Challenge Warlord: Gold - Guild Edition
-										["collectible"] = false,
-										["groups"] = {
-											un(4, i(114968)),	-- Deathwatch Hatchling - Revered
-										},
-										["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
-									}),
 									ach(5144, {	-- Critter Kill Squad
 										["collectible"] = false,
 										["groups"] = {
@@ -2617,12 +2587,6 @@ _.Zones =
 										["collectible"] = false,
 										["groups"] = {
 											i(63125),	-- Reins of the Dark Phoenix - Exalted
-										},
-									}),
-									ach(9669, {	-- Guild Glory of the Draenor Raider
-										["collectible"] = false,
-										["groups"] = {
-											i(116666),	-- Blacksteel Battleboar - Exalted
 										},
 									}),
 									ach(6682, {	-- Guild Glory of the Pandaria Raider

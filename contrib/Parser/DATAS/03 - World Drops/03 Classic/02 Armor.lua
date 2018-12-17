@@ -156,7 +156,6 @@ _.WorldDrops =
 					i(10249),	-- Master's Cloak
 					i(10258),	-- Adventurer's Cape
 					i(10267),	-- Masterwork Cape
-					i(115348),	-- Feathered Cape
 					un(7, i(1190)), -- Overseer's Cloak
 					i(12253),	-- Brilliant Red Cloak
 					i(12254),	-- Well Oiled Cloak

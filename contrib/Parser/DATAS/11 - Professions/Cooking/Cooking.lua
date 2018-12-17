@@ -1,31 +1,5 @@
 -- Cooking - Skill ID 185 / Spell ID 2550
 profession(185, { -- Cooking
-	n(-37, {	-- Discovery
-		["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
-		["groups"] = {
-			i(118311),	-- Recipe Idea: Blackrock Ham
-			i(118313),	-- Recipe Idea: Braised Riverbeast
-			i(118315),	-- Recipe Idea: Clefthoof Sausages
-			i(118319),	-- Recipe Idea: Fat Sleeper Cakes
-			i(118320),	-- Recipe Idea: Fiery Calamari
-			i(118317),	-- Recipe Idea: Grilled Gulper
-			i(118310),	-- Recipe Idea: Hearty Elekk Steak
-			i(118312),	-- Recipe Idea: Pan-Seared Talbuk
-			i(118314),	-- Recipe Idea: Rylak Crepes
-			i(118321),	-- Recipe Idea: Skulker Chowder
-			i(118316),	-- Recipe Idea: Steamed Scorpion
-			i(118318),	-- Recipe Idea: Sturgeon Stew
-			i(118323),	-- Recipe Idea: Blackrock Barbecue
-			i(118326),	-- Recipe Idea: Calamari Crepes
-			i(118324),	-- Recipe Idea: Frosty Stew
-			i(118327),	-- Recipe Idea: Gorgrond Chowder
-			i(118325),	-- Recipe Idea: Sleeper Surprise
-			i(118322),	-- Recipe Idea: Talador Surf and Turf
-			i(118328),	-- Recipe Idea: Feast of Blood
-			i(118329),	-- Recipe Idea: Feast of the Waters
-			i(110684),	-- Leftovers [Pet!]
-		},
-	}),
 	n(-26, {	-- Drop
 		desc(i(43509), "Can drop from any Northrend mob."),	-- Recipe: Bad Clams
 		desc(i(43510), "Can drop from any Northrend mob."),	-- Recipe: Haunted Herring
@@ -200,16 +174,6 @@ profession(185, { -- Cooking
 				i(133843),	-- Recipe: Nightborne Delicacy Platter [Rank 2]
 				i(133863),	-- Recipe: Nightborne Delicacy Platter [Rank 3]
 			}),
-			{
-				["itemID"] = 151653,	-- Broken Isles Recipe Scrap
-				["description"] = "Use 10 of these to create an unlearned recipe. It appears as though you can only get Rank 2+ recipes from this item.",
-				["collectible"] = false,
-			},
-			{
-				["itemID"] = 146757,	-- Prepared Ingredients
-				["description"] = "Use 10 of these to create food or unlearned recipes. It appears as though you can only get Rank 2+ recipes from this item.",
-				["collectible"] = false,
-			},
 			n(-17, {	-- Quests
 				q(40989, {	-- The Prodigal Sous Chef
 					["description"] = "If you cooked with Nomi while questing in Pandaria, you will receive this quest instead of 'Too Many Chefs'.",

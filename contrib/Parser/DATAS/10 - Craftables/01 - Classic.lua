@@ -372,9 +372,6 @@ _.Craftables =
 				{	-- Barbaric Iron Breastplate
 					["itemID"] = 7914,	-- Barbaric Iron Breastplate
 				},
-				{	-- Barbaric Iron Hauberk
-					["itemID"] = 163964,	-- Barbaric Iron Hauberk
-				},
 				{	-- Bloodsoul Breastplate
 					["itemID"] = 19690,	-- Bloodsoul Breastplate
 					["u"] = 8,
@@ -852,9 +849,6 @@ _.Craftables =
 								{	-- Darkmoon Breastplate
 									["itemID"] = 39507,	-- Darkmoon Breastplate
 								},
-								{	-- Darkmoon Chainmail
-									["itemID"] = 131276,	-- Darkmoon Chainmail
-								},
 								{	-- Darkmoon Robe
 									["itemID"] = 38318,	-- Darkmoon Robe
 								},
@@ -879,9 +873,6 @@ _.Craftables =
 								},
 								{	-- Darkcloth Shoulders
 									["itemID"] = 39894,	-- Darkcloth Shoulders
-								},
-								{	-- Veiled Pauldrons
-									["itemID"] = 131277,	-- Veiled Pauldrons
 								},
 							},
 						},
