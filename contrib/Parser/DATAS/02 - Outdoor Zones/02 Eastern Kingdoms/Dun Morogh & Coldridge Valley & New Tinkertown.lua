@@ -392,7 +392,7 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
 					["description"] = "|cff66ccffColdridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.|r",
 				}),			
-				m(469,  {	-- New Tinkertown
+				m(469,  {	-- New Tinkertown [Above]
 					["groups"] = {	
 						n(-25, { 	-- Pet Battle
 							p(441), 	-- Alpine Hare

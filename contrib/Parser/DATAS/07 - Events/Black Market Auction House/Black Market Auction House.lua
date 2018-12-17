@@ -10,7 +10,7 @@ _.WorldEvents =
 				i(95059),	-- Clutch of Ji-Kun
 				i(13335),	-- Deathcharger's Reins
 				i(78919),	-- Experiment 12-B
-				i(30480),	-- Fiery Warhorse's Reins 
+				i(30480),	-- Fiery Warhorse's Reins
 				i(71665),	-- Flametalon of Alysrazor
 				i(50818),	-- Invincible's Reins
 				i(104253),	-- Kor'kron Juggernaut
@@ -130,7 +130,7 @@ _.WorldEvents =
 			}),
 			n(-3179, { -- Tier 3 (Naxxramas - Vanilla)
 				["groups"] = {
-					gs(355, {	-- Vestments of Faith	
+					gs(355, {	-- Vestments of Faith
 						un(9, i(22514)),	-- Circlet of Faith
 						un(9, i(22515)),	-- Shoulderpads of Faith
 						un(9, i(22512)),	-- Robe of Faith
@@ -139,8 +139,8 @@ _.WorldEvents =
 						un(9, i(22518)),	-- Belt of Faith
 						un(9, i(22513)),	-- Leggings of Faith
 						un(9, i(22516)),	-- Sandals of Faith
-					}),		
-					gs(907, {	-- Frostfire Regalia	
+					}),
+					gs(907, {	-- Frostfire Regalia
 						un(9, i(22498)),	-- Frostfire Circlet
 						un(9, i(22499)),	-- Frostfire Shoulderpads
 						un(9, i(22496)),	-- Frostfire Robe
@@ -149,8 +149,8 @@ _.WorldEvents =
 						un(9, i(22502)),	-- Frostfire Belt
 						un(9, i(22497)),	-- Frostfire Leggings
 						un(9, i(22500)),	-- Frostfire Sandals
-					}),		
-					gs(865, {	-- Plagueheart Raiment	
+					}),
+					gs(865, {	-- Plagueheart Raiment
 						un(9, i(22506)),	-- Plagueheart Circlet
 						un(9, i(22507)),	-- Plagueheart Shoulderpads
 						un(9, i(22504)),	-- Plagueheart Robe
@@ -159,8 +159,8 @@ _.WorldEvents =
 						un(9, i(22510)),	-- Plagueheart Belt
 						un(9, i(22505)),	-- Plagueheart Leggings
 						un(9, i(22508)),	-- Plagueheart Sandals
-					}),		
-					gs(924, {	--Dreamwalker Raiment	
+					}),
+					gs(924, {	--Dreamwalker Raiment
 						un(9, i(22490)),	-- Dreamwalker Headpiece
 						un(9, i(22491)),	-- Dreamwalker Spaulders
 						un(9, i(22488)),	-- Dreamwalker Tunic
@@ -169,8 +169,8 @@ _.WorldEvents =
 						un(9, i(22494)),	-- Dreamwalker Girdle
 						un(9, i(22489)),	-- Dreamwalker Legguards
 						un(9, i(22492)),	-- Dreamwalker Boots
-					}),		
-					gs(891, {	-- Bonescythe Armor	
+					}),
+					gs(891, {	-- Bonescythe Armor
 						un(9, i(22478)),	-- Bonescythe Helmet
 						un(9, i(22479)),	-- Bonescythe Pauldrons
 						un(9, i(22476)),	-- Bonescythe Breastplate
@@ -179,8 +179,8 @@ _.WorldEvents =
 						un(9, i(22482)),	-- Bonescythe Waistguard
 						un(9, i(22477)),	-- Bonescythe Legplates
 						un(9, i(22480)),	-- Bonescythe Sabatons
-					}),		
-					gs(914, {	-- Cryptstalker Armor	
+					}),
+					gs(914, {	-- Cryptstalker Armor
 						un(9, i(22438)),	-- Cryptstalker Headpiece
 						un(9, i(22439)),	-- Cryptstalker Spaulders
 						un(9, i(22436)),	-- Cryptstalker Tunic
@@ -189,8 +189,8 @@ _.WorldEvents =
 						un(9, i(22442)),	-- Cryptstalker Girdle
 						un(9, i(22437)),	-- Cryptstalker Legguards
 						un(9, i(22440)),	-- Cryptstalker Boots
-					}),		
-					gs(873, {	-- The Earthshatter	
+					}),
+					gs(873, {	-- The Earthshatter
 						un(9, i(22466)),	-- Earthshatter Headpiece
 						un(9, i(22467)),	-- Earthshatter Spaulders
 						un(9, i(22464)),	-- Earthshatter Tunic
@@ -199,8 +199,8 @@ _.WorldEvents =
 						un(9, i(22470)),	-- Earthshatter Girdle
 						un(9, i(22465)),	-- Earthshatter Legguards
 						un(9, i(22468)),	-- Earthshatter Boots
-					}),		
-					gs(899, {	-- Redemption  Armor	
+					}),
+					gs(899, {	-- Redemption  Armor
 						un(9, i(22428)),	-- Redemption Headpiece
 						un(9, i(22429)),	-- Redemption Spaulders
 						un(9, i(22425)),	-- Redemption Tunic
@@ -209,8 +209,8 @@ _.WorldEvents =
 						un(9, i(22431)),	-- Redemption Girdle
 						un(9, i(22427)),	-- Redemption Legguards
 						un(9, i(22430)),	-- Redemption Boots
-					}),		
-					gs(850, {	-- Dreadnaught's Battlegear	
+					}),
+					gs(850, {	-- Dreadnaught's Battlegear
 						un(9, i(22418)),	-- Dreadnaught Helmet
 						un(9, i(22419)),	-- Dreadnaught Pauldrons
 						un(9, i(22416)),	-- Dreadnaught Breastplate
@@ -219,7 +219,7 @@ _.WorldEvents =
 						un(9, i(22422)),	-- Dreadnaught Waistguard
 						un(9, i(22417)),	-- Dreadnaught Legplates
 						un(9, i(22420)),	-- Dreadnaught Sabatons
-					}),		
+					}),
 				},
 				["achievementID"] = 11744,	-- Drop Dead, Gorgeous
 			}),
@@ -270,7 +270,7 @@ _.WorldEvents =
 				["itemID"] = 105751,
 			},
 			i(14617),	-- Sawbones Shirt
-			un(9, i(44924)),	-- Sun-Lute of the Phoenix King 
+			un(9, i(44924)),	-- Sun-Lute of the Phoenix King
 			i(141995, { --  Unclaimed Black Market Container
 				["groups"] = {
 					n(-160, { -- Mounts **
@@ -399,7 +399,7 @@ _.WorldEvents =
 					}),
 					n(-3179, { -- Tier 3 (Naxxramas - Vanilla) **
 						["groups"] = {
-							gs(355, {	-- Vestments of Faith	
+							gs(355, {	-- Vestments of Faith
 								un(9, i(22514)),	-- Circlet of Faith
 								un(9, i(22515)),	-- Shoulderpads of Faith
 								un(9, i(22512)),	-- Robe of Faith
@@ -408,8 +408,8 @@ _.WorldEvents =
 								un(9, i(22518)),	-- Belt of Faith
 								un(9, i(22513)),	-- Leggings of Faith
 								un(9, i(22516)),	-- Sandals of Faith
-							}),		
-							gs(907, {	-- Frostfire Regalia	
+							}),
+							gs(907, {	-- Frostfire Regalia
 								un(9, i(22498)),	-- Frostfire Circlet
 								un(9, i(22499)),	-- Frostfire Shoulderpads
 								un(9, i(22496)),	-- Frostfire Robe
@@ -418,8 +418,8 @@ _.WorldEvents =
 								un(9, i(22502)),	-- Frostfire Belt
 								un(9, i(22497)),	-- Frostfire Leggings
 								un(9, i(22500)),	-- Frostfire Sandals
-							}),		
-							gs(865, {	-- Plagueheart Raiment	
+							}),
+							gs(865, {	-- Plagueheart Raiment
 								un(9, i(22506)),	-- Plagueheart Circlet
 								un(9, i(22507)),	-- Plagueheart Shoulderpads
 								un(9, i(22504)),	-- Plagueheart Robe
@@ -428,8 +428,8 @@ _.WorldEvents =
 								un(9, i(22510)),	-- Plagueheart Belt
 								un(9, i(22505)),	-- Plagueheart Leggings
 								un(9, i(22508)),	-- Plagueheart Sandals
-							}),		
-							gs(924, {	--Dreamwalker Raiment	
+							}),
+							gs(924, {	--Dreamwalker Raiment
 								un(9, i(22490)),	-- Dreamwalker Headpiece
 								un(9, i(22491)),	-- Dreamwalker Spaulders
 								un(9, i(22488)),	-- Dreamwalker Tunic
@@ -438,7 +438,7 @@ _.WorldEvents =
 								un(9, i(22494)),	-- Dreamwalker Girdle
 								un(9, i(22489)),	-- Dreamwalker Legguards
 								un(9, i(22492)),	-- Dreamwalker Boots
-							}),		
+							}),
 							gs(891, {	-- Bonescythe Armor
 								un(9, i(22478)),	-- Bonescythe Helmet
 								un(9, i(22479)),	-- Bonescythe Pauldrons
@@ -448,8 +448,8 @@ _.WorldEvents =
 								un(9, i(22482)),	-- Bonescythe Waistguard
 								un(9, i(22477)),	-- Bonescythe Legplates
 								un(9, i(22480)),	-- Bonescythe Sabatons
-							}),		
-							gs(914, {	-- Cryptstalker Armor	
+							}),
+							gs(914, {	-- Cryptstalker Armor
 								un(9, i(22438)),	-- Cryptstalker Headpiece
 								un(9, i(22439)),	-- Cryptstalker Spaulders
 								un(9, i(22436)),	-- Cryptstalker Tunic
@@ -458,8 +458,8 @@ _.WorldEvents =
 								un(9, i(22442)),	-- Cryptstalker Girdle
 								un(9, i(22437)),	-- Cryptstalker Legguards
 								un(9, i(22440)),	-- Cryptstalker Boots
-							}),		
-							gs(873, {	-- The Earthshatter	
+							}),
+							gs(873, {	-- The Earthshatter
 								un(9, i(22466)),	-- Earthshatter Headpiece
 								un(9, i(22467)),	-- Earthshatter Spaulders
 								un(9, i(22464)),	-- Earthshatter Tunic
@@ -468,8 +468,8 @@ _.WorldEvents =
 								un(9, i(22470)),	-- Earthshatter Girdle
 								un(9, i(22465)),	-- Earthshatter Legguards
 								un(9, i(22468)),	-- Earthshatter Boots
-							}),		
-							gs(899, {	-- Redemption  Armor	
+							}),
+							gs(899, {	-- Redemption  Armor
 								un(9, i(22428)),	-- Redemption Headpiece
 								un(9, i(22429)),	-- Redemption Spaulders
 								un(9, i(22425)),	-- Redemption Tunic
@@ -478,8 +478,8 @@ _.WorldEvents =
 								un(9, i(22431)),	-- Redemption Girdle
 								un(9, i(22427)),	-- Redemption Legguards
 								un(9, i(22430)),	-- Redemption Boots
-							}),		
-							gs(850, {	-- Dreadnaught's Battlegear	
+							}),
+							gs(850, {	-- Dreadnaught's Battlegear
 								un(9, i(22418)),	-- Dreadnaught Helmet
 								un(9, i(22419)),	-- Dreadnaught Pauldrons
 								un(9, i(22416)),	-- Dreadnaught Breastplate
@@ -488,13 +488,13 @@ _.WorldEvents =
 								un(9, i(22422)),	-- Dreadnaught Waistguard
 								un(9, i(22417)),	-- Dreadnaught Legplates
 								un(9, i(22420)),	-- Dreadnaught Sabatons
-							}),		
+							}),
 						},
 						["achievementID"] = 11744,	-- Drop Dead, Gorgeous
 					}),
 					n(-161, { -- Toy **
 						i(33223),	-- Fishing Chair **
-						i(45063),	-- Foam Sword Rack ** 
+						i(45063),	-- Foam Sword Rack **
 						i(33219),	-- Goblin Gumbo Kettle **
 						i(35227),	-- Goblin Weather Machine - Prototype 01-B **
 						i(32542),	-- Imp in a Ball **
