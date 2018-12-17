@@ -35,11 +35,6 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 				},
 				["g"] = {
 					i(46710),	-- Recipe: Bread of the Dead
-					i(116856),	-- "Blooming Rose" Contender's Costume
-					i(116888),	-- "Night Demon" Contender's Costume
-					i(116889),	-- "Purple Phantom" Contender's Costume
-					i(116890),	-- "Santo's Sun" Contender's Costume
-					i(116891),	-- "Snowy Owl" Contender's Costume
 					i(46861),	-- Bouquet of Orange Marigolds
 					i(46690),	-- Candy Skull
 					i(46718),	-- Orange Marigold

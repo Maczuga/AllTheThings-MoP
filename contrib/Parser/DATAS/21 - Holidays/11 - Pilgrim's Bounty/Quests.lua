@@ -89,11 +89,6 @@ _.Holidays = bubbleDown({["u"] = 28},
 						un(28, i(44785)), -- Pilgrim's Dress
 						un(28, i(46824)), -- Pilgrim's Robe
 						un(28, i(44788)), -- Pilgrim's Boots
-						i(116404, { -- Pilgrim's Bounty
-							un(28, i(116401)), -- Fine Pilgrim's Hat
-							un(28, i(116403)), -- Frightened Bush Chicken
-							un(28, i(116400)), -- Silver-Plated Turkey Shooter
-						}),
 					},
 					["qg"] = 34708, -- Caitrin Ironkettle
 					["maps"] = { 27, }, -- Dun Morogh
@@ -107,11 +102,6 @@ _.Holidays = bubbleDown({["u"] = 28},
 						un(28, i(44785)), -- Pilgrim's Dress
 						un(28, i(46824)), -- Pilgrim's Robe
 						un(28, i(44788)), -- Pilgrim's Boots
-						i(116404, { -- Pilgrim's Bounty
-							un(28, i(116401)), -- Fine Pilgrim's Hat
-							un(28, i(116403)), -- Frightened Bush Chicken
-							un(28, i(116400)), -- Silver-Plated Turkey Shooter
-						}),
 					},
 					["qg"] = 34708, -- Caitrin Ironkettle
 					["maps"] = { 27, }, -- Dun Morogh
@@ -125,11 +115,6 @@ _.Holidays = bubbleDown({["u"] = 28},
 						un(28, i(44785)), -- Pilgrim's Dress
 						un(28, i(46824)), -- Pilgrim's Robe
 						un(28, i(44788)), -- Pilgrim's Boots
-						i(116404, { -- Pilgrim's Bounty
-							un(28, i(116401)), -- Fine Pilgrim's Hat
-							un(28, i(116403)), -- Frightened Bush Chicken
-							un(28, i(116400)), -- Silver-Plated Turkey Shooter
-						}),
 					},
 					["qg"] = 34710, -- Ellen Moore
 					["maps"] = { 37, }, -- Elwynn Forest
@@ -143,11 +128,6 @@ _.Holidays = bubbleDown({["u"] = 28},
 						un(28, i(44785)), -- Pilgrim's Dress
 						un(28, i(46824)), -- Pilgrim's Robe
 						un(28, i(44788)), -- Pilgrim's Boots
-						i(116404, { -- Pilgrim's Bounty
-							un(28, i(116401)), -- Fine Pilgrim's Hat
-							un(28, i(116403)), -- Frightened Bush Chicken
-							un(28, i(116400)), -- Silver-Plated Turkey Shooter
-						}),
 					},
 					["qg"] = 34711, -- Mary Allerton
 					["maps"] = { 89, }, -- Darnassus
@@ -164,11 +144,6 @@ _.Holidays = bubbleDown({["u"] = 28},
 						un(28, i(44785)), -- Pilgrim's Dress
 						un(28, i(46824)), -- Pilgrim's Robe
 						un(28, i(44788)), -- Pilgrim's Boots
-						i(116404, { -- Pilgrim's Bounty
-							un(28, i(116401)), -- Fine Pilgrim's Hat
-							un(28, i(116403)), -- Frightened Bush Chicken
-							un(28, i(116400)), -- Silver-Plated Turkey Shooter
-						}),
 					},
 					["qg"] = 34744, -- Jasper Moore
 					["maps"] = { 37, }, -- Elwynn Forest
@@ -262,11 +237,6 @@ _.Holidays = bubbleDown({["u"] = 28},
 						un(28, i(44785)), -- Pilgrim's Dress
 						un(28, i(46824)), -- Pilgrim's Robe
 						un(28, i(44788)), -- Pilgrim's Boots
-						i(116404, { -- Pilgrim's Bounty
-							un(28, i(116401)), -- Fine Pilgrim's Hat
-							un(28, i(116403)), -- Frightened Bush Chicken
-							un(28, i(116400)), -- Silver-Plated Turkey Shooter
-						}),
 					},
 					["qg"] = 34768, -- William Mullins
 					["maps"] = { 90, }, -- Undercity
@@ -280,11 +250,6 @@ _.Holidays = bubbleDown({["u"] = 28},
 						un(28, i(44785)), -- Pilgrim's Dress
 						un(28, i(46824)), -- Pilgrim's Robe
 						un(28, i(44788)), -- Pilgrim's Boots
-						i(116404, { -- Pilgrim's Bounty
-							un(28, i(116401)), -- Fine Pilgrim's Hat
-							un(28, i(116403)), -- Frightened Bush Chicken
-							un(28, i(116400)), -- Silver-Plated Turkey Shooter
-						}),
 					},
 					["qg"] = 34712, -- Roberta Carter
 					["maps"] = { 90, }, -- Undercity
@@ -298,11 +263,6 @@ _.Holidays = bubbleDown({["u"] = 28},
 						un(28, i(44785)), -- Pilgrim's Dress
 						un(28, i(46824)), -- Pilgrim's Robe
 						un(28, i(44788)), -- Pilgrim's Boots
-						i(116404, { -- Pilgrim's Bounty
-							un(28, i(116401)), -- Fine Pilgrim's Hat
-							un(28, i(116403)), -- Frightened Bush Chicken
-							un(28, i(116400)), -- Silver-Plated Turkey Shooter
-						}),
 					},
 					["qg"] = 34713, -- Mahara Goldwheat
 					["maps"] = { 88, }, -- Thunder Bluff
@@ -316,11 +276,6 @@ _.Holidays = bubbleDown({["u"] = 28},
 						un(28, i(44785)), -- Pilgrim's Dress
 						un(28, i(46824)), -- Pilgrim's Robe
 						un(28, i(44788)), -- Pilgrim's Boots
-						i(116404, { -- Pilgrim's Bounty
-							un(28, i(116401)), -- Fine Pilgrim's Hat
-							un(28, i(116403)), -- Frightened Bush Chicken
-							un(28, i(116400)), -- Silver-Plated Turkey Shooter
-						}),
 					},
 					["qg"] = 34713, -- Ondani Greatmill
 					["maps"] = { 1, }, -- Durotar
@@ -334,11 +289,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 						un(28, i(44785)), -- Pilgrim's Dress
 						un(28, i(46824)), -- Pilgrim's Robe
 						un(28, i(44788)), -- Pilgrim's Boots
-						i(116404, { -- Pilgrim's Bounty
-							un(28, i(116401)), -- Fine Pilgrim's Hat
-							un(28, i(116403)), -- Frightened Bush Chicken
-							un(28, i(116400)), -- Silver-Plated Turkey Shooter
-						}),
+
 					},
 					["qg"] = 34713, -- Ondani Greatmill
 					["maps"] = { 1, }, -- Durotar

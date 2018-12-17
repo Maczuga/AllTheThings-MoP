@@ -382,9 +382,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 		n(-2, { -- Vendors
 			n(15909, { -- Fariel Starsong <Coin of Ancestry Collector>
 				un(17, i(21100, { -- Coin of Ancestry
-					un(17, i(116142)),  -- Schematic: Alliance Firework
-					un(17, i(116144)),  -- Schematic: Horde Firework
-					un(17, i(116146)),  -- Schematic: Snake Firework
 					un(17, i(44918)),  -- Schematic: Cluster Launcher
 					un(17, i(44919)),  -- Schematic: Firework Launcher
 					un(17, i(21740, {  -- Small Rocket Recipes

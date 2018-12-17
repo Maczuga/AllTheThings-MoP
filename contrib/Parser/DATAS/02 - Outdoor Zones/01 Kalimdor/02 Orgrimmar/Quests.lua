@@ -220,9 +220,9 @@ Legacy				q( 1436),	-- Alliance Relations
 						["questID"] = 13842,
 						["qg"] = 14720,	-- Eitrigg
 						["groups"] = {
-							i(119325),	-- Bow of Fire
-							i(119326),  -- Ring of Pardons
-							i(119327),	-- Durak's Downfall
+							i(56708),	-- Bow of Fire
+							i(56709),  -- Garrosh's Pardon
+							i(56710),	-- Unbountied Cloak
 						},
 						["coord"] = { 49.2, 72.3 },
 						["sourceQuest"] = 13841,	-- All Apologies

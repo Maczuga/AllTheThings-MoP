@@ -378,8 +378,6 @@ _.NeverImplemented =
 		un(1, i(92563)),	-- The Eye of the Storm
 		un(1, i(22233)), -- Zigris' Footlocker
 		un(1, i(35874)), -- Whizzlespark's Portable Pet Mansion
-		un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
-		un(1, i(116130)),	-- Draenic Crystal Fragments (Did not make it out of beta)
 		un(1, i(25497)),	-- Broken Balanced Stone Dirk
 		un(1, i(28025)),	-- Video Mount
 		un(1, i(28261)),	-- Video Invis Broken Fitz's Throwing Axe
@@ -514,8 +512,6 @@ _.NeverImplemented =
 	n(-162, { -- Pets
 		un(1, i(91031)), -- Darkmoon Glowfly (you get it via pet battles)
 		un(1, i(100870)), -- Murkimus' Tyrannical Spear
-		un(1, i(119147)), -- Nether Ray Fry (unsed Version)
-		un(1, i(119112)), -- Son of Sethe (unsed Version)
 		model(38311, n(51634, {["u"] = 1,} )),	-- Bubbles 					(Never added in Game)
 		
 		model(36583, n(51636, {["u"] = 1,})),	-- Lizzy 					(Never added in Game)
@@ -530,8 +526,6 @@ _.NeverImplemented =
 		model(36130, n(48377, {["u"] = 1,})),	-- Swirling Stormling 		(Never added in Game)
 		model(36131, n(48378, {["u"] = 1,})), 	-- Whirling Waveling 		(Never added in Game)
 		model(29060, n(34031, {["u"] = 1,})), 	-- XS-001 Constructor Bot 	(Never added in Game)
-		un(1, i(118600)), -- Forest Sproutling (unsed Version)
-		un(1, i(118597)), -- Never added
 		un(1, i(44972)), -- Alarming Clockbot (NOT IN USE)
 		model(49086, n(71700, { 	-- Crafty 								(Never added in Game)
 			["groups"] = {	
@@ -576,16 +570,6 @@ _.NeverImplemented =
 			un(1, i(71958)),	-- Recipe: Transmute Lava Coral
 			un(1, i(71959)),	-- Recipe: Transmute Shadow Spinel
 			un(1, i(71960)),	-- Recipe: Transmute Queen's Garnet
-			un(1, i(112025)),	-- Recipe: UNUSED
-			un(1, i(112032)),	-- Recipe: UNUSED
-			un(1, i(113625)),	-- Recipe: UNUSED
-			un(1, i(113626)),	-- Recipe: UNUSED
-			un(1, i(112049)),	-- Recipe: Alchemical Catalyst - Fireweed
-			un(1, i(112050)),	-- Recipe: Alchemical Catalyst - Flytrap
-			un(1, i(112051)),	-- Recipe: Alchemical Catalyst - Starflower
-			un(1, i(112052)),	-- Recipe: Alchemical Catalyst - Arrowbloom
-			un(1, i(112053)),	-- Recipe: Alchemical Catalyst - Orchid
-			un(1, i(112054)),	-- Recipe: Alchemical Catalyst - Lotus
 		}),
 		n(-192, { -- Cooking
 			un(1, i(86512)),	-- Journeyman Cookbook
@@ -617,11 +601,9 @@ _.NeverImplemented =
 			un(1, i(30474)),	-- Pattern: Lifeblood Bracers
 			un(1, i(30472)),	-- Pattern: Lifeblood Leggings
 			un(1, i(42195)),	-- Pattern: Light Blessed Mittens (pattern never went live, but it's learned at the trainer)
-			un(1, i(114867)),	-- Pattern: Miniature Flying Carpet - NYI
 			un(1, i(42181)),	-- Pattern: Moonshroud (pattern never went live, but it's learned at the trainer)
 			un(1, i(42198)),	-- Pattern: Moonshroud Gloves (pattern never went live, but it's learned at the trainer)
 			un(1, i(42197)),	-- Pattern: Moonshroud Robe (pattern never went live, but it's learned at the trainer)
-			un(1, i(118098)),	-- Pattern: Murloc Chew Toy
 			un(1, i(30470)),	-- Pattern: Netherflame Belt
 			un(1, i(30471)),	-- Pattern: Netherflame Boots
 			un(1, i(30469)),	-- Pattern: Netherflame Robe
@@ -644,8 +626,6 @@ _.NeverImplemented =
 		un(1, i(38568)), 	-- Drakkari Charm Bracelet
 		un(1, i(38569)), 	-- Unknown	
 		un(1, i(38570)), 	-- Unknown	
-		un(1, i(119220)),	-- Alliance Gladiator's Banner
-		un(1, i(119221)),	-- Horde Gladiator's Banner	
 		un(1, i(100902)),	-- Unknown
 		un(1, i(100903)),	-- Unknown	
 		un(1, i(108638)),	-- Unknown
@@ -739,8 +719,6 @@ _.NeverImplemented =
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(32178)),	-- Chancellor's Shanker
-	un(1, i(119408)), -- Foereaver Polearm [This version wasn't added]
-	un(1, i(115297)), -- Spectral Polearm
 	un(1, i(18316)),	-- Obsidian Bauble
 	un(1, i(19989)),	-- Tome of Devouring Shadows
 	un(1, i(32184)), -- Chancellor's Painsaw
@@ -803,7 +781,6 @@ _.NeverImplemented =
 	un(1, i(84527)),	-- Hidden Pass Meditation Staff
 	un(1, i(85588)), 	-- Reflex Edges [This version never implemented]
 	un(1, i(105956)), 	-- Wrath Gladiator's Razor [Not implemented, other version was instead]
-	un(1, i(117010)),	-- Forester's Axe 										(Never added in Game)
 	un(1, i(913)),	-- Huge Ogre Sword
 	un(1, i(12469)),	-- Mutilator
 	un(1, i(23432)),	-- Engraved Greatsword
@@ -813,8 +790,6 @@ _.NeverImplemented =
 	un(1, i(32176)),	-- Chancellor's Pummeler
 	un(1, i(38468)),	-- Kalu'ak Peacebringer
 	un(1, i(107390)),	-- Obliterator Firing Lever
-	un(1, i(115296)),	-- Spectral Warmace
-	un(1, i(115299)),	-- Spectral Scepter
 	un(1, i(56702)),	-- Saw Blade (never made it to live)
 	un(1, i(5255)),	-- Quilboar Tomahawk
 	un(1, i(17142)),	-- Shard of the Defiler

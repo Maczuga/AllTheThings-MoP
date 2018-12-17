@@ -56,9 +56,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(37571, {	-- "Brew of the Month" Club Membership Form
 							ach(2796),	-- Brew of the Month
 						}),
-						i(119209),	-- Angry Brewfest Letter
 						i(33047),	-- Belbi's Eyesight Enhancing Romance Goggles
-						i(116758),	-- Brewfest Banner
 						i(71137),	-- Brewfest Keg Pony
 						i(33927),	-- Brewfest Pony Keg
 						i(90426),	-- Brewhelm
@@ -67,8 +65,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(90427),	-- Pandaren Brewpack
 						i(46707),	-- Pint-Sized Pink Pachyderm
 						i(37816),	-- Preserved Brewfest Hops
-						i(116757),	-- Steamworks Sausage Grill
-						i(116756),	-- Stout Alemental
 						i(32233, {	-- Wolpertinger's Tankard
 							ach(1936),	-- Does Your Wolpertinger Linger?
 						}),
@@ -111,7 +107,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(34008, {	-- Blix's Eyesight Enhancing Romance Goggles
 							["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible
 						}),
-						i(116758),	-- Brewfest Banner
 						i(71137),	-- Brewfest Keg Pony
 						i(33927),	-- Brewfest Pony Keg
 						i(90426),	-- Brewhelm
@@ -120,8 +115,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(90427),	-- Pandaren Brewpack
 						i(46707),	-- Pint-Sized Pink Pachyderm
 						i(37816),	-- Preserved Brewfest Hops
-						i(116757),	-- Steamworks Sausage Grill
-						i(116756),	-- Stout Alemental
 						i(32233, {	-- Wolpertinger's Tankard
 							ach(1936),	-- Does Your Wolpertinger Linger?
 						}),

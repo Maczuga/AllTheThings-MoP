@@ -125,20 +125,6 @@ _.Holidays = bubbleDown({["u"] = 18},
 					i(22235),	-- Truesilver Shafted Arrow
 				},
 			}),
-			ach(9389, { -- It Might Just Save Your Life
-				["groups"] = {},
-			}),
-			ach(9392, { -- Love Magnet
-				["groups"] = {
-					ach(9393, { -- Beacon of Love
-						["groups"] = {
-							ach(9394, { -- They Really Love Me!
-								i(116651), -- True Love Prism
-							}),
-						},
-					}),
-				},
-			}),
 		}),
 		n(-139, { -- Bosses
 			n(36296, { -- Apothecary Hummel
@@ -171,32 +157,22 @@ _.Holidays = bubbleDown({["u"] = 18},
 				un(2, i(51808)),	-- Choker of the Pure Heart [Level 80]
 				un(2, i(68173)),	-- Choker of the Pure Heart [Level 85]
 				un(2, i(93394)),	-- Choker of the Pure Heart [Level 90]
-				un(2, i(117369)),	-- Choker of the Pure Heart [Level 100]
-				i(143908),	-- Choker of the Pure Heart [Level 110]
 				
 				un(2, i(51805)),	-- Heartbreak Charm [Level 80]
 				un(2, i(68176)),	-- Heartbreak Charm [Level 85]
 				un(2, i(93391)),	-- Heartbreak Charm [Level 90]
-				un(2, i(117366)),	-- Heartbreak Charm [Level 100]
-				i(143906),	-- Heartbreak Charm [Level 110]
 				
 				un(2, i(51806)),	-- Shard of Pirouetting Happiness [Level 80]
 				un(2, i(68172)),	-- Shard of Pirouetting Happiness [Level 85]
 				un(2, i(93395)),	-- Shard of Pirouetting Happiness [Level 90]
-				un(2, i(117370)),	-- Shard of Pirouetting Happiness [Level 100]
-				i(143907),	-- Shard of Pirouetting Happiness [Level 110]
 				
 				un(2, i(51807)),	-- Sweet Perfume Brooch [Level 80]
 				un(2, i(68174)),	-- Sweet Perfume Brooch [Level 85]
 				un(2, i(93393)),	-- Sweet Perfume Brooch [Level 90]
-				un(2, i(117368)),	-- Sweet Perfume Brooch [Level 100]
-				i(143909),	-- Sweet Perfume Brooch [Level 110]
 				
 				un(2, i(51804)),	-- Winking Eye of Love [Level 80]
 				un(2, i(68175)),	-- Winking Eye of Love [Level 85]
 				un(2, i(93392)),	-- Winking Eye of Love [Level 90]
-				un(2, i(117367)),	-- Winking Eye of Love [Level 100]
-				i(143905),	-- Winking Eye of Love [Level 110]
 			}),
 			n(-9978, { -- Northrend
 				inst(277, { -- Halls of Stone
@@ -479,22 +455,19 @@ _.Holidays = bubbleDown({["u"] = 18},
 				un(18, i(49927, { -- Love Token
 					-- Appearances --
 					i(50161, { -- Dinner Suit Box
-						un(18, i(151765)),	-- Blue Dinner Suit
-						un(18, i(151764)),	-- Purple Dinner Suit
-						un(18, i(151766)),	-- Red Dinner Suit
+						un(18, i(22281)),	-- Blue Dinner Suit
+						un(18, i(22282)),	-- Purple Dinner Suit
+						un(18, i(22277)),	-- Red Dinner Suit
 					}),
 					i(50160, { -- Lovely Dress Box
-						un(18, i(151770)),	-- Lovely Black Dress
-						un(18, i(151768)),	-- Lovely Blue Dress
-						un(18, i(151767)),	-- Lovely Purple Dress
-						un(18, i(151769)),	-- Lovely Red Dress
+						un(18, i(22279)),	-- Lovely Black Dress
+						un(18, i(22278)),	-- Lovely Blue Dress
+						un(18, i(22280)),	-- Lovely Purple Dress
+						un(18, i(22276)),	-- Lovely Red Dress
 					}),
 					-- Toys --
-					un(18, i(142341)),	-- Love Boat
 					un(18, i(34480)),	-- Romantic Picnic Basket
-					un(18, i(144339)),	-- Sturdy Love Fool
 					-- Pets --
-					un(18, i(116155)),	-- Lovebird Hatchling
 					un(18, i(22235)),	-- Truesilver Shafted Arrow
 					-- Mounts --
 					un(18, i(72146)),	-- Swift Lovebird

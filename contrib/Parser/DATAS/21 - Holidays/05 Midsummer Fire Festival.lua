@@ -1709,19 +1709,6 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					n(25740, { -- Ahune
 						["groups"] = {
 							ach(263),	-- Ice the Frost Lord
-							un(21, i(149753, { -- Knapsack of Chilled Goods [Uncommon Quality]
-								["groups"] = {
-									un(21, dr(5, i(117373))),	-- Frostscythe of Lord Ahune
-								},
-								["lvl"] = 23,
-							})),
-							un(21, i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
-								["groups"] = {
-									un(21, dr(5, i(117373))),	-- Frostscythe of Lord Ahune
-									un(21, dr(3, i(53641))), 	-- Ice Chip (Pet)
-								},
-								["lvl"] = 98,
-							})),
 							{
 								["questID"] = 11972, -- Shards of Ahune
 								["itemID"] = 35723, -- Shards of Ahune (Item)
@@ -1755,11 +1742,6 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							un(2, i(54802)), -- The Frost Lord's War Cloak
 							un(2, i(69766)), -- The Frost Lord's War Cloak
 							un(2, i(95430)), -- The Frost Lord's War Cloak
-							un(21, i(117372)),	-- Cloak of the Frigid Winds
-							un(21, i(117374)),	-- Icebound Cloak
-							un(21, i(117375)),	-- Shroud of Winter's Chill
-							un(21, i(117376)),	-- The Frost Lord's Battle Shroud
-							un(21, i(117377)),	-- The Frost Lord's War Cloak
 						},		
 						["description"] = "|cff66ccffYou can only loot the satchels once per day per toon by completing your first run of the day.|r",
 						["maps"] = { 265 },	-- The Slave Pens
