@@ -16,10 +16,6 @@ _.Achievements =
 		["groups"] = {
 			n(-9958, { -- Player vs Player
 				["groups"] = {
-					un(2, ach(2191)),		-- Ancient Courtyard Protector
-					un(2, ach(1766)),		-- Ancient Protector
-					un(2, ach(2189)),		-- Artillery Expert
-					un(2, ach(1763)),		-- Artillery Veteran
 					un(2, h(ach(449, {		-- Blood Guard
 						un(39, h(title(21))),	-- Blood Guard
 					}))),
@@ -35,11 +31,6 @@ _.Achievements =
 					un(2, a(ach(470, {		-- Corporal
 						un(39, a(title(2))),	-- Corporal
 					}))),
-					un(2, a(ach(1757))),	-- Defense of the Ancients (Alliance)
-					un(2, h(ach(2200))),	-- Defense of the Ancients (Horde)
-					un(2, ach(2190)),		-- Drop It Now!
-					un(2, ach(1764)),		-- Drop It!
-					un(2, ach(2193)),		-- Explosives Expert
 					un(2, a(ach(434, {		-- Field Marshal
 						un(39, a(title(13))),	-- Field Marshal
 					}))),
@@ -89,26 +80,9 @@ _.Achievements =
 					un(2, a(ach(473, {		-- Marshal
 						un(39, a(title(12))),	-- Marshal
 					}))),
-					un(2, ach(2194, {		-- Master of Strand of the Ancients
-						crit(1),				-- Strand of the Ancients Veteran
-						crit(2),				-- Storm the Beach
-						crit(3),				-- Steady Hands
-						crit(4),				-- The Dapper Sapper
-						crit(5),				-- Explosives Expert
-						crit(6),				-- Not Even a Scratch (Alliance);Defense of the Ancients (Horde)
-						crit(7),				-- Artillery Veteran
-						crit(8),				-- Artillery Expert
-						crit(9),				-- Drop It!
-						crit(10),				-- Drop It Now!
-						crit(11),				-- Ancient Protector
-						crit(12),				-- Ancient Courtyard Protector
-						crit(13),				-- Defense of the Ancients (Alliance);Defense of the Ancients (Horde)
-					})),
 					un(2, a(ach(441, {		-- Master Sergeant
 						un(39, a(title(4))),	-- Master Sergeant
 					}))),
-					un(2, a(ach(1762))),	-- Not Even a Scratch (Alliance)
-					un(2, h(ach(2192))),	-- Not Even a Scratch (Horde)
 					un(2, a(ach(610))),	-- Orgrimmar Offensive
 					un(2, a(ach(8642))),	-- Prideful Combatant (Alliance)
 					un(2, h(ach(8641))),	-- Prideful Combatant (Horde)
@@ -132,18 +106,12 @@ _.Achievements =
 					un(2, a(ach(440, {		-- Sergeant Major
 						un(39, a(title(5))),	-- Sergeant Major
 					}))),
-					un(2, ach(1765)),		-- Steady Hands
 					un(2, h(ach(451, {		-- Stone Guard
 						un(39, h(title(20))),	-- Stone Guard
 					}))),
-					un(2, ach(1310)),		-- Storm the Beach
-					un(2, ach(1309, {		-- Strand of the Ancients Veteran
-							un(2, ach(1308)),	-- Strand of the Ancients Victory
-					})),
 					un(2, ach(1174, {		-- The Arena Master
 						un(39, title(50)),	-- Arena Master
 					})),
-					un(2, ach(1761)),		-- The Dapper Sapper
 					un(2, a(ach(8218))),	-- Tyrannical Conquest (Alliance)
 					un(2, h(ach(8093))),	-- Tyrannical Conquest (Horde)
 					un(2, h(ach(445, {		-- Warlord

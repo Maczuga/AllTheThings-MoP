@@ -16,6 +16,11 @@ _.Achievements =
 		["groups"] = {
 			n(-9955, { -- General
 				["groups"] = {
+					un(2, ach(5539, {	-- 50,000 Conquest Points
+						un(2, ach(5540)),	-- 25,000 Conquest Points
+						un(2, ach(5541)),	-- 5000 Conquest Points
+						un(2, ach(5542)),	-- 1000 Conquest Points
+					})),
 					ach(5363, {		-- 250000 Honorable Kills
 						title(184),		-- the Bloodthirsty
 						ach(870, {		-- 100000 Honorable Kills

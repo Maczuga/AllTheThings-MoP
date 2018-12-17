@@ -10,6 +10,8 @@ _.Achievements =
 				["groups"] = {
 					ach(7318),		-- A Taste of History
 					ach(7294),		-- A Taste of Things to Come (Halfhill)
+					a(ach(8030)),	-- A Test of Valor (Alliance)
+					h(ach(8031)),	-- A Test of Valor (Horde)
 					ach(7296),		-- Ain't Lost No More (Halfhill)
 					ach(7312, {		-- Amber is the Color of My Energy (Dread Wastes)
 						crit(1),		-- Kil'ruk the Wind-Reaver
@@ -26,6 +28,14 @@ _.Achievements =
 					ach(8112),		-- Blue Response
 					ach(8118),		-- Boop
 					ach(7287),		-- Champion of Chi-Ji (Cradle of Chi-Ji)
+					ach(7533),		-- Chapter I: Trial of the Black Prince
+					a(ach(7534)),	-- Chapter II: Wrathion's War (Alliance)
+					h(ach(8008)),	-- Chapter II: Wrathion's War (Horde)
+					ach(7535),		-- Chapter III: Two Princes
+					ach(7536),		-- Chapter IV: Celestial Blessings
+					ach(8325, {		-- Chapter V: Judgment of the Black Prince
+						title(306),		-- ,Legend of Pandaria
+					}),
 					ach(7323),		-- Collateral Damage
 					ach(7310),		-- Defender of Gods (Townlong Steppes)
 					ach(8120),		-- Direhorn in a China Shop
@@ -81,6 +91,15 @@ _.Achievements =
 					ach(7292),		-- Green Acres (Halfhill)
 					ach(7290),		-- How To Strain Your Dragon (Jade Forest)
 					ach(7291),		-- In a Trail of Smoke (Jade Forest)
+					ach(8106, {				-- In the Hall of the Thunder King
+						["groups"] = {
+							crit(1),			-- Obtain a Handful of Stolen Gems from the Treasure Saurok
+							crit(2),			-- Loot 10 Golden Treasure Chests in one run
+							crit(3),			-- Slay God-Hulk Gulkan
+							crit(4),			-- Reach Tenwu of the Red Smoke
+						},
+						["classes"] = { 4 },
+					}),
 					ach(8099, {		-- Isle of Thunder
 						crit(1),		-- First Landing
 						crit(2),		-- Build a Base

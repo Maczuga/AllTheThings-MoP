@@ -859,11 +859,13 @@ AllTheThings.Locales.enUS = {
 		[-10058] = "Interface\\Icons\\Paladin_Protection",						-- 
 		[-10059] = "Interface\\Icons\\Paladin_Protection",						-- 
 		[-10060] = "Interface\\Icons\\achievement_faction_celestials",						-- The Four Celestials
+		
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101503] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101504] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		
+		[-80000] = "Interface\\Icons\\Paladin_Protection",						-- Dungeon Challenges
 		
 		[-91001] = "Interface\\Icons\\achievement_zone_durotar",
 		[-91002] = "Interface\\Icons\\achievement_zone_durotar",
@@ -1757,6 +1759,9 @@ AllTheThings.Locales.enUS = {
 		[-10068] = "PLACE_HOLDER",						 -- OPTION_TOOLTIP_ANIMATION
 		[-10069] = "Mag'har Orc",
 		
+		--80000+ custom
+		[-80000] = "Dungeon Challenges",
+
 		--90000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
 		
 		[-90000] = "Lunarwing Shallows",

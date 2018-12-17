@@ -14,6 +14,7 @@ _.Achievements =
 				ach(892),		-- The Right Stuff (Artisan)
 			}),
 			ach(7380),		-- Double Agent
+			ach(2716),		-- Dual Talent Specialization
 			ach(2097),		-- Get to the Choppa! (Engineering)
 			ach(6753, {		-- Got My Mind On My Money (200,000)
 				ach(1176),		-- Got My Mind On My Money (100)
@@ -25,6 +26,7 @@ _.Achievements =
 				ach(5456),		-- Got My Mind On My Money (100,000)
 			}),
 			ach(7386),	-- Grand Expedition Yak (Kun-Lai Summit)
+			ach(558),		-- Greedy
 			ach(6193, {	-- Level 90	
 				ach(6),			-- Level 10
 				ach(7),			-- Level 20
@@ -99,6 +101,7 @@ _.Achievements =
 					crit(15),		-- Weapon
 				}),
 			}),
+			ach(559),		-- Needy
 			ach(4888),		-- One Hump or Two? (Uldum)
 			ach(7384, {		-- Quintessential Quintet
 				ach(7382),		-- Dynamic Duo

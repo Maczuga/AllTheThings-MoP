@@ -16,6 +16,12 @@ _.Achievements =
 		["groups"] = {
 			n(-9955, { -- General
 				["groups"] = {
+					ach(6924, {	-- 100,000 Valor Points
+						ach(5538),	-- 50,000 Valor Points
+						ach(5537),	-- 25,000 Valor Points
+						ach(5536),	-- 5000 Valor Points
+						ach(5535),	-- 1000 Valor Points
+					}),
 					ach(4844, {		-- Cataclysm Dungeon Hero
 						crit(1),		-- Heroic: Blackrock Caverns
 						crit(2),		-- Heroic: Throne of the Tides
