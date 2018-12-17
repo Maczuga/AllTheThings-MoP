@@ -1717,7 +1717,6 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							})),
 							un(21, i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
 								["groups"] = {
-									un(21, dr(6, i(138838))), 	-- Illusion: Deathfrost
 									un(21, dr(5, i(117373))),	-- Frostscythe of Lord Ahune
 									un(21, dr(3, i(53641))), 	-- Ice Chip (Pet)
 								},
@@ -1732,7 +1731,6 @@ _.Holidays =  bubbleDown({["u"] = 21},
 								},
 								["description"] = "This item can be looted and completed once per character, but has no level requirement.",
 							},
-							un(21, i(138838)), -- Illusion: Deathfrost
 							un(21, dr(3, i(35498))), -- Formula: Enchant Weapon - Deathfrost
 							un(2, i(35514)), -- Frostscythe of Lord Ahune
 							un(2, i(54806)), -- Frostscythe of Lord Ahune
@@ -2010,12 +2008,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									["description"] = "You will need ten (10) of these torches to complete the Torch Juggler achievement.",
 								},
 								un(21, i(34686)),	-- Brazier of Dancing Flames
-								un(21, i(116439)), 	-- Blazing Cindercrawler Pet
 								un(21, i(23083)), 	-- Captured Flame Pet
-								un(21, i(141714)), 	-- Igneous Flameling Pet
-								un(21, i(116440)), 	-- Burning Defender's Medallion Toy
-								un(21, i(116435)), 	-- Cozy Bonfire Toy
-								un(21, i(141649)), 	-- Set of Matches Toy
 								un(21, i(74278)), 	-- Helm of the Fire Festival
 							})),
 						},
@@ -2044,12 +2037,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									["description"] = "You will need ten (10) of these torches to complete the Torch Juggler achievement.",
 								},
 								un(21, i(34686)),	-- Brazier of Dancing Flames
-								un(21, i(116439)), 	-- Blazing Cindercrawler Pet
 								un(21, i(23083)), 	-- Captured Flame Pet
-								un(21, i(141714)), 	-- Igneous Flameling Pet
-								un(21, i(116440)), 	-- Burning Defender's Medallion Toy
-								un(21, i(116435)), 	-- Cozy Bonfire Toy
-								un(21, i(141649)), 	-- Set of Matches Toy
 								un(21, i(74278)), 	-- Helm of the Fire Festival
 							})),
 						},

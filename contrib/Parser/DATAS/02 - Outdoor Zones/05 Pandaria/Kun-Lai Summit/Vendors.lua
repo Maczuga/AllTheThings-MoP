@@ -1210,19 +1210,6 @@ _.Zones =
 								i(84550),	-- Dreadful Gladiator's Copperskin Legguards
 								i(84551),	-- Dreadful Gladiator's Copperskin Tunic
 								i(84552),	-- Dreadful Gladiator's Copperskin Spaulders
-		--[[
-								i(138719),	-- Ensemble: Dreadful Gladiator's Dragonhide Armor
-								i(138714),	-- Ensemble: Dreadful Gladiator's Plate Armor
-								i(138716),	-- Ensemble: Dreadful Gladiator's Scaled Armor
-								i(138717),	-- Ensemble: Dreadful Gladiator's Ringmail Armor
-								i(138718),	-- Ensemble: Dreadful Gladiator's Chain Armor
-								i(138715),	-- Ensemble: Dreadful Gladiator's Dreadplate Armor
-								i(138720),	-- Ensemble: Dreadful Gladiator's Ironskin Armor
-								i(138721),	-- Ensemble: Dreadful Gladiator's Leather Armor
-								i(138722),	-- Ensemble: Dreadful Gladiator's Silk Armor
-								i(138723),	-- Ensemble: Dreadful Gladiator's Satin Armor
-								i(138724),	-- Ensemble: Dreadful Gladiator's Felweave Armor
-		--]]
 							}),
 							nh(75688, {	-- Roo Desvin
 								i(144245, { -- Arsenal: Tyrannical Gladiator's Weapons
@@ -1439,7 +1426,6 @@ _.Zones =
 								i(99993),	-- Tyrannical Gladiator's Plate Helm
 							}),
 							nh(78461, { -- Shonn Su
-								un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 								i(144250, { -- Arsenal: Prideful Gladiator's Weapons [ Horde / Tested ]
 									["groups"] = {
 										i(102785),	-- Prideful Gladiator's Barrier
@@ -1498,7 +1484,6 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 								}),
 								i(103444),	-- Prideful Gladiator's Clasp of Cruelty
-								i(147362),	-- Prideful Gladiator's Cord of Prowess
 								i(103338),	-- Prideful Gladiator's Greatsword
 								i(103339),	-- Prideful Gladiator's Cleaver
 								i(103340),	-- Prideful Gladiator's Pummeler

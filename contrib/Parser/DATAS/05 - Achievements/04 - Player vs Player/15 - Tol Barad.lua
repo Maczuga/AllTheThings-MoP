@@ -4,7 +4,7 @@
 
 _.Achievements = 
 {
-	n(-10055, { -- Expansion Features
+	n(-9958, { -- Player vs Player
 		["groups"] = {
 			n(-9996, { -- Tol Barad
 				["groups"] = {

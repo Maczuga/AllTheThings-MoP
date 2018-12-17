@@ -9,10 +9,7 @@ _.WorldEvents =
 				h(n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>
 					["groups"]	= {
 						i(93025),	-- Clock'em Pet
-						i(144394),	-- Tylarr Gronnden Pet
-						i(142403),	-- Brawler's Burly Basilisk Mount
 						i(98405),	-- Brawler's Burly Mushan Beast Mount - Unobtainable unless you reached Rank 8 in either Season 1 or Season 2
-						i(122396),	-- Brawler's Razor Claws
 						i(98543),	-- Wraps of the Blood-Soaked Brawler
 						i(98079),	-- Floot-Tooter's Tunic
 						i(98080),	-- Gorgeous Blouse

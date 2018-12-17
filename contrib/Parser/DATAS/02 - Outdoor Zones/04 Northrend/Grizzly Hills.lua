@@ -989,9 +989,6 @@ _.Zones =
 						["coord"] = { 13.8, 86.2 },
 						["description"] = "Only available while your faction controls the area. If no NPCs are available, ground your mount and flag for PVP. They will respawn once the control % reaches 100%. Each item costs 1 Mark of Honor. Venture Coins no longer exist in the game."
 					})),
-					desc(n(91632, {	-- Remington Brode <Traveling Lumberjack>
-						i(122236)
-					}), "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\""),
 				}),
 				n(0, { 		-- Zone Drop
 					["groups"] = {

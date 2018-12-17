@@ -9,10 +9,7 @@ _.WorldEvents =
 				n(68363, {	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
 					["groups"]	= {
 						i(93025),	-- Clock'em Pet
-						i(144394),	-- Tylarr Gronnden Pet
-						i(142403),	-- Brawler's Burly Basilisk Mount
 						i(98405),	-- Brawler's Burly Mushan Beast Mount - Unobtainable unless you reached Rank 8 in either Season 1 or Season 2
-						i(122396),	-- Brawler's Razor Claws
 						i(98543),	-- Wraps of the Blood-Soaked Brawler
 						i(98079),	-- Floot-Tooter's Tunic
 						i(98080),	-- Gorgeous Blouse
@@ -45,24 +42,9 @@ _.WorldEvents =
 				["description"] = "This Legacy Achievement and its reward shirt are reportedly still obtainable. Good luck!|r",
 			}),
 			i(143763, {		-- Bag of Chipped Dice
-				n(117208, {	-- a Seagull
-					i(144375, {		-- Feathered Brawler's Purse
-						i(144368),		-- Felfeather Jersey
-					}),
-				}),
 				n(70748, {		-- Argh
 					i(151222, {		-- Leather Brawler's Purse
 						i(98080),		-- Gorgeous Blouse
-					}),
-				}),
-				n(116855, {	-- Ash'katzuum
-					i(144373, {		-- Claw-Marked Brawler's Purse
-						i(144365),		-- The Very Best Shirt
-					}),
-				}),
-				n(115245, {	-- B3@7 B-0X
-					i(144374, {		-- Groovy Brawler's Purse
-						i(144366),		-- Dubvest
 					}),
 				}),
 				n(70694, {		-- Big Badda Boom
@@ -80,34 +62,14 @@ _.WorldEvents =
 						i(98091),		-- Last Seasons Shirt
 					}),
 				}),
-				n(67262, {		-- Bruce
-					i(144377, {		-- Beginning Brawler's Purse
-						i(144370),		-- Croc-Tooth Harness
-					}),
-				}),
 				n(68255, {		-- Dippy (and Doopy, but seriously I don't care about Doopy.)
 					i(151231, {		-- Brawler's Egg
 						i(98086),	-- Tuxedo-Like Shirt
 					}),
 				}),
-				n(68257, {		-- Goredome
-					i(144378, {		-- Gorestained Brawler's Purse
-						i(144371),		-- Gorstained Tunic
-					}),
-				}),
 				n(70678, {		-- Grandpa Grumplefloot
 					i(151229, {		-- Brawler's Music Box
 						i(98079),		-- Floot-Tooter's Tunic
-					}),
-				}),
-				n(70659, {		-- Hexos
-					i(144376, {		-- Agile Brawler's Purse
-						i(144367),		-- Observer's Shirt
-					}),
-				}),
-				n(119150, {	-- Klunk
-					i(151264, {		-- Clunky Brawler's Purse
-						i(151263),		-- Electrified Compression Shirt
 					}),
 				}),
 				n(71081, {		-- Mecha-Bruce
@@ -138,11 +100,6 @@ _.WorldEvents =
 				n(70666, {		-- Ty'Thar
 					i(151224, {		-- Bitten Brawler's Purse
 						i(98082),		-- Undisputed Champion's Shirt
-					}),
-				}),
-				n(68250, {		-- Unguloxx <The Murderaffe>
-					i(144379, {		-- Murderous Brawler's Purse
-						i(144372),		-- Hide of the Murderaffe
 					}),
 				}),
 			}),

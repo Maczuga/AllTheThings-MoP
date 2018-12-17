@@ -92,9 +92,7 @@ AllTheThings.Locales.enUS = {
 	["MOUNT"] = "Mount";
 	["MOUNTS"] = "Mounts";
 	["MOUNT_ID"] = "Mount ID";
-	["MUSIC_ROLL"] = "Music Roll";
-	["MUSIC_ROLLS"] = "Music Rolls";
-	["MUSIC_ROLL_ID"] = "Music Roll ID";
+
 	["NPC"] = "NPC";
 	["NPC_ID"] = "NPC ID";
 	["OBJECT_ID"] = "Object ID";
@@ -262,12 +260,12 @@ AllTheThings.Locales.enUS = {
 		[100] = "Mounts",						 -- GetItemSubClassInfo(15,5)
 		[101] = "Battle Pets",						 -- TOOLTIP_BATTLE_PET
 		[102] = "Toy",						 -- TOY
-		[103] = "Illusions",
+		-- [103] = "Illusions",
 		[104] = "Quest Items",						 -- ITEM_BIND_QUEST
 		[105] = "Achievements",						 -- TRACKER_FILTER_ACHIEVEMENTS
 		[106] = "Holiday",						 -- CALENDAR_FILTER_WEEKLY_HOLIDAYS
 		[107] = "Vignettes",
-		[108] = "Music Rolls",						 -- ENABLE_MUSIC.." "..ROLL
+
 		[109] = "Heirlooms",						 -- HEIRLOOMS
 		[110] = "Titles", 										-- Titles
 		[111] = "Glyph",						 -- GetItemClassInfo(16)
@@ -3085,7 +3083,7 @@ AllTheThings.Locales.enUS = {
 		{8, "|CFF00FFDEMay require Noblegarden to be active.|r", "Noblegarden (19)"};--19
 		{9, "|CFF00FFDEMay require Children's Week to be active.|r", "Children's Week (20)"};--20
 		{10, "|CFF00FFDEMay require Midsummer Fire Festival to be active.|r", "Midsummer Fire Festival (21)"};--21
-		{11, "|CFF00FFDEMay require Trial of Style to be active.|r", "Trial of Style (22)"};--22
+		{0, "|CFF00FFDEMay require Trial of Style to be active.|r", "Trial of Style (22)"};--22
 		{12, "|CFF00FFDEMay require Pirate's Day to be active.|r", "Pirate's Day (23)"};--23
 		{13, "|CFF00FFDEMay require Brewfest to be active.|r", "Brewfest (24)"};--24
 		{14, "|CFF00FFDEMay require Harvest Festival to be active.|r", "Harvest Festival (25)"};--25
@@ -3101,11 +3099,11 @@ AllTheThings.Locales.enUS = {
 		{3, "|CFFFF0000This item is purchased from the In-Game Store.|r", "In-Game Store (35)"}; --35
 		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed] (36)"}; -- 36
 		{1, "|CFFFF0000This title is no longer obtainable in game.|r", "Titles (37)"}; --37
-		{4, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria|r", "Ordos - Legendary Cloak (38)"}; --38
+		{0, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria|r", "Ordos - Legendary Cloak (38)"}; --38
 		{4, "|CFFFF0000This title is no longer available.|r", "Legacy Titles (39)"}; --39
 		{4, "|CFFFF0000This is a Legacy quest or quest item, and is no longer available.|r", "Legacy Quests (40)"}; -- 40
-		{4, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}; -- 41
-		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
+		{0, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}; -- 41
+		{0, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 	};
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";

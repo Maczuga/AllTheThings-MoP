@@ -146,7 +146,6 @@ _.Achievements =
 						un(2, ach(2916)),	-- Orbital Devastation (25 player)
 						un(2, ach(2918)),	-- Orbital Bombardment (25 player)
 					})),
-					un(38, ach(8533)),	-- Ordos
 					un(2, ach(2959)),	-- Rubble and Roll (10 player)
 					un(2, ach(2960)),	-- Rubble and Roll (25 player)
 					un(2, ach(2989)),	-- Set Up Us the Bomb (10 player)

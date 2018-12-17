@@ -25,44 +25,10 @@ _.Zones =
 						["qg"] = 620,	-- Chicken
 						["repeatable"] = true,
 					}),
-					q(45083, {	-- Crysa's Flyers
-						["groups"] = {
-							i(142447, {	-- Torn Sack of Pet Supplies
-								i(142448),	-- Albino Buzzard
-								i(89587),	-- Porcupette
-							}),	-- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
-						},
-						["qg"] = 115286,	-- Crysa
-						["coord"] = { 63.6, 35.8 },
-						["isDaily"] = true,
-					}),
 					qh(31819, {	-- Dagra the Fierce
 						["qg"] = 66135,	-- Dagra the Fierce
 						["coord"] = { 58.6, 53.0 },
 						["isDaily"] = true,
-					}),
-					q(45423, {	-- Wailing Critters
-						["groups"] = {
-							i(122457),	-- Ultimate Battle-Training Stone
-						},
-						["qg"] = 116781,	-- Muyani
-						["coord"] = { 38.8, 68.2 },
-					}),
-					ach(11765, { -- Pet Battle Challenge: Wailing Caverns
-						i(147543), -- Son of Skum
-						q(45539, {	-- Pet Battle Challenge: WC
-							["groups"] = {
-								i(143753, {	-- Damp Pet Supplies
-									i(143754), 	-- Cavern Moccasin
-									i(143755),	-- Young Venomfang
-									i(143756),	-- Everliving Spore
-								}), -- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
-							},
-							["qg"] = 116781,	-- Muyani
-							["coord"] = { 38.8, 68.2 },
-							["isWeekly"] = true,
-							["lvl"] = 110,
-						}),
 					}),
 				}),
 			},

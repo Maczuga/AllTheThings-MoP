@@ -180,6 +180,7 @@ _.Achievements =
 						crit(9),		-- Become the Locust
 					}),
 					ach(8077),		-- One-Up
+					ach(8533),	-- Ordos
 					ach(6937),		-- Overzealous
 					ach(8072, {		-- Pinnacle of Storms
 						crit(1),		-- Iron Qon

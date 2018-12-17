@@ -233,7 +233,7 @@ local function createGeneralFrame(parent)
 		end,
 		function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this setting if you want to see every item in the ATT database. This will disable all of the item filters for armor and weapons in addition to toys, mounts, pets, music rolls, and titles.\n\nThis is provided mostly for debugging purposes, but many users utilize this filter to measure overall account completion.\n\nDebug Mode is for users that want all of the appearances in the game.", nil, nil, nil, nil, true);
+			GameTooltip:SetText ("Enable this setting if you want to see every item in the ATT database. This will disable all of the item filters for armor and weapons in addition to toys, mounts, pets, and titles.\n\nThis is provided mostly for debugging purposes, but many users utilize this filter to measure overall account completion.\n\nDebug Mode is for users that want all of the appearances in the game.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
 	debugCb:SetPoint("TOPLEFT",mode,5,-frameSpacer)
@@ -866,54 +866,6 @@ local function createAccountFrame(parent)
 		end);
 	ignore:SetPoint("TOPLEFT",boe, 0, -frameSpacer)
 	addObject(elm,ignore)
-	
-	-- Treat Followers as Collectible
-	local treatFollowersAsCollectible = createCheckBox("Treat Followers as Collectible", child, function(self)
-			app.SetDataMember("FollowersCollectible", self:GetChecked());
-			app:RefreshData();
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("FollowersCollectible", true));
-		end,
-		function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this setting if you want to treat Followers as collectible.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-	treatFollowersAsCollectible:SetPoint("TOPLEFT",ignore,0,-frameSpacer)
-	addObject(elm,treatFollowersAsCollectible)
-	
-	-- Track Followers Account Wide
-	local followersAccountWide = createCheckBox("Track Followers Account-Wide", child, function(self)
-			app.SetDataMember("TrackFollowersAccountWide", self:GetChecked());
-			app:RefreshData();
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("TrackFollowersAccountWide", true));
-		end,
-		function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this setting if you want to treat Followers collected by any character on your account as Collected.\n\nIf you wish to treat only Followers known by your current character as Collected, turn this setting off.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-	followersAccountWide:SetPoint("TOPLEFT",treatFollowersAsCollectible,0,-frameSpacer)
-	addObject(elm,followersAccountWide)
-	
-	-- Track Music Rolls Account Wide
-	local musicRollsAccountWide = createCheckBox("Track Music Rolls Account-Wide", child, function(self)
-			app.SetDataMember("TrackMusicRollsAccountWide", self:GetChecked());
-			app:RefreshData();
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("TrackMusicRollsAccountWide", true));
-		end,
-		function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this setting if you want to treat Music Rolls collected by any character on your account as Collected.\n\nIf you wish to treat only Music Rolls known by your current character as Collected, turn this setting off.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-	musicRollsAccountWide:SetPoint("TOPLEFT",followersAccountWide,0,-frameSpacer)
-	addObject(elm,musicRollsAccountWide)
 	
 	-- seasonal
 	local seasonal = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
@@ -1676,7 +1628,7 @@ local function createMiniListFrame(parent)
 	local itemFilters = app.GetPersonalDataMember("ItemFilters");
 	local last = item;
 	local x = 5
-	for i,filter in ipairs({ 50, 55, 56, 57, 100, 101, 102, 103, 104, 108, 110, 113, 200, 999 }) do
+	for i,filter in ipairs({ 50, 55, 56, 57, 100, 101, 102, 104, 110, 113, 200, 999 }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
 			itemFilters[filter] = self:GetChecked();
 			app:RefreshData();
@@ -2317,7 +2269,7 @@ local function createAboutFrame(parent)
 	
 	local text = {}
 	text.introString = "|CFFADD8E6\nDo you find yourself completing old content just so that you can get literally everything for your Collections? Say no more! ALL THE THINGS will help you with your endeavor by giving you the ability to track your completion for everything.|r";
-	text.featureString = "|CFFADD8E6Features: \n • Supports tracking of Achievements, Appearances, Illusions, Mounts, Music Rolls, Pets, Quests, Titles & Toys \n • Primary Collections Window is moveable and resizeable \n • Auto Minilist \n • Datatext Support \n • Filters to allow you to customize the addon to your preferences \n • Extra tooltip information (Models, Icons, Descriptions, etc) \n • Fanfare music when you learn anything new. \n|r";
+	text.featureString = "|CFFADD8E6Features: \n • Supports tracking of Achievements, Appearances, Mounts, Pets, Quests, Titles & Toys \n • Primary Collections Window is moveable and resizeable \n • Auto Minilist \n • Datatext Support \n • Filters to allow you to customize the addon to your preferences \n • Extra tooltip information (Models, Icons, Descriptions, etc) \n • Fanfare music when you learn anything new. \n|r";
 	text.endString = "|CFFADD8E6Author -- Imoldgregg \nContributers -- Lucetia, Daktar, Slumber, Avella, Oiche, Gold, Aiue, Blueyleader, Iyanden, and Eiltherune \nDiscord -- https://discord.gg/3RAUKgu |r";
 		
 	local about = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");

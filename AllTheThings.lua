@@ -3368,9 +3368,9 @@ app.DifficultyColors = {
 	[15] = "ff0070dd",	--"Interface/Worldmap/Skull_64Blue",
 	[16] = "ffa335ee",	--"Interface/Worldmap/Skull_64Purple",
 	[17] = "ff9d9d9d",		--"Interface/Worldmap/Skull_64Grey",
-	[23] = "ffa335ee",	--"Interface/Worldmap/Skull_64Purple",
-	[24] = "ffe6cc80",	--"Interface/Worldmap/Skull_64Red",
-	[33] = "ffe6cc80",	--"Interface/Worldmap/Skull_64Red",
+	-- [23] = "ffa335ee",	--"Interface/Worldmap/Skull_64Purple",
+	-- [24] = "ffe6cc80",	--"Interface/Worldmap/Skull_64Red",
+	-- [33] = "ffe6cc80",	--"Interface/Worldmap/Skull_64Red",
 };
 app.DifficultyIcons = {
 	[1] = "Interface\\Addons\\AllTheThings\\assets\\Normal",	--"Interface/Worldmap/Skull_64Green",
@@ -3384,9 +3384,9 @@ app.DifficultyIcons = {
 	[15] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",	--"Interface/Worldmap/Skull_64Blue",
 	[16] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",	--"Interface/Worldmap/Skull_64Purple",
 	[17] = "Interface\\Addons\\AllTheThings\\assets\\LFR",		--"Interface/Worldmap/Skull_64Grey",
-	[23] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",	--"Interface/Worldmap/Skull_64Purple",
-	[24] = "Interface\\Addons\\AllTheThings\\assets\\Timewalking",	--"Interface/Worldmap/Skull_64Red",
-	[33] = "Interface\\Addons\\AllTheThings\\assets\\Timewalking",	--"Interface/Worldmap/Skull_64Red",
+	-- [23] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",	--"Interface/Worldmap/Skull_64Purple",
+	-- [24] = "Interface\\Addons\\AllTheThings\\assets\\Timewalking",	--"Interface/Worldmap/Skull_64Red",
+	-- [33] = "Interface\\Addons\\AllTheThings\\assets\\Timewalking",	--"Interface/Worldmap/Skull_64Red",
 };
 app.BaseDifficulty = {
 	__index = function(t, key)
@@ -3418,14 +3418,14 @@ app.BaseDifficulty = {
 					end
 				end
 			end
-		elseif key == "u" then
-			if t.difficultyID == 24 or t.difficultyID == 33 then
-				return 42;
-			end
-		elseif key == "description" then
-			if t.difficultyID == 24 or t.difficultyID == 33 then
-				return "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Debug Completionist that had 99% Ulduar completion and now only has 59% because your team duplicated the Source IDs rather than reuse the existing one.";
-			end
+		-- elseif key == "u" then
+		-- 	if t.difficultyID == 24 or t.difficultyID == 33 then
+		-- 		return 42;
+		-- 	end
+		-- elseif key == "description" then
+		-- 	if t.difficultyID == 24 or t.difficultyID == 33 then
+		-- 		return "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Debug Completionist that had 99% Ulduar completion and now only has 59% because your team duplicated the Source IDs rather than reuse the existing one.";
+		-- 	end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -4284,79 +4284,6 @@ app.CreateMount = function(id, t)
 	return createInstance(constructor(id, t, "spellID"), app.BaseMount);
 end
 
--- Music Roll Lib
-(function()
-local completed = false;
-local frame = CreateFrame("FRAME", nil, app);
-frame:SetSize(1, 1);
-frame:Hide();
-frame.events = {};
-frame:SetScript("OnEvent", function(self, e, ...) (self.events[e] or tostringall)(...); end);
-frame:RegisterEvent("PLAYER_LOGIN");
-frame:RegisterEvent("QUEST_LOG_UPDATE");
-frame.events.PLAYER_LOGIN = function()
-	if IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
-		completed = true;
-		frame:UnregisterEvent("PLAYER_LOGIN");
-	end
-end
-frame.events.QUEST_LOG_UPDATE = function()
-	if IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
-		completed = true;
-		frame:UnregisterEvent("QUEST_LOG_UPDATE");
-	end
-end
-app.BaseMusicRoll = {
-	__index = function(t, key)
-		if key == "key" then
-			return "questID";
-		elseif key == "collectible" or key == "trackable" then
-			return completed;
-		elseif key == "collected" or key == "saved" then
-			if app.GetDataMember("TrackMusicRollsAccountWide") then
-				if GetDataSubMember("CollectedMusicRolls", t.questID) then
-					return 1;
-				end
-			else
-				if GetTempDataSubMember("CollectedMusicRolls", t.questID) then
-					return 1;
-				end
-			end
-			if IsQuestFlaggedCompleted(t.questID) then
-				SetTempDataSubMember("CollectedMusicRolls", t.questID, 1);
-				SetDataSubMember("CollectedMusicRolls", t.questID, 1);
-				return 1;
-			end
-		elseif key == "f" then
-			return 108;
-		elseif key == "lvl" then
-			return 100;
-		elseif key == "text" then
-			return t.link;
-		elseif key == "link" then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				t.link = link;
-				t.icon = icon;
-				return link;
-			end
-		elseif key == "description" then
-			local description = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
-			if not completed then
-				description = description .. "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass quest in your garrison for this item to drop.";
-			end
-			return description;
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-end)();
-app.CreateMusicRoll = function(questID, t)
-	return createInstance(constructor(questID, t, "questID"), app.BaseMusicRoll);
-end
-
 -- NPC Lib
 app.BaseNPC = {
 	__index = function(t, key)
@@ -5081,14 +5008,18 @@ function app.FilterItemClass_RequireRaces(item)
 	return not item.nmr;
 end
 function app.FilterItemClass_UnobtainableItem(u)
-	if u and L("UNOBTAINABLE_ITEM_REASONS")[u][1] < 5 then
+	if u and L("UNOBTAINABLE_ITEM_REASONS")[u][1] == 0 then
+		return false;
+	elseif u and L("UNOBTAINABLE_ITEM_REASONS")[u][1] < 5 then
 	   return GetDataSubMember("UnobtainableItemFilters", u);
 	else
 		return true;
 	end
 end
 function app.FilterItemClass_SeasonalItem(u)
-   if u and L("UNOBTAINABLE_ITEM_REASONS")[u][1] > 4 then
+   if u and L("UNOBTAINABLE_ITEM_REASONS")[u][1] == 0 then
+		return false;
+	elseif u and L("UNOBTAINABLE_ITEM_REASONS")[u][1] > 4 then
       return GetDataSubMember("SeasonalFilters", u);
    else
       return true
@@ -10421,19 +10352,6 @@ app.events.QUEST_LOG_UPDATE = function()
 	end
 	wipe(DirtyQuests);
 end
-app.events.TOYS_UPDATED = function(itemID, new)
-	if itemID and not GetDataSubMember("CollectedToys", itemID) then
-		SetDataSubMember("CollectedToys", itemID, true);
-		app:RefreshData(false, true, true);
-		app:PlayFanfare();
-		wipe(searchCache);
-		
-		if GetDataMember("ShowNotifications", true) then
-			local name, link = GetItemInfo(itemID);
-			if link then print(format(L("ITEM_ID_ADDED"), link, itemID)); end
-		end
-	end
-end
 app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 	OpenMiniListForCurrentProfession(false, true);
 end
@@ -10442,63 +10360,6 @@ app.events.TRADE_SKILL_SHOW = function(...)
 end
 app.events.TRADE_SKILL_CLOSE = function(...)
 	app:GetWindow("Tradeskills"):SetVisible(false);
-end
-app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
-	if sourceID then
-		-- Cache the previous state. This will help keep lag under control.
-		local oldState = GetDataSubMember("CollectedSources", sourceID) or 0;
-		
-		-- Only do work if we weren't already learned.
-		-- We check here because Blizzard likes to double notify for items with timers.
-		if oldState ~= 1 then
-			SetDataSubMember("CollectedSources", sourceID, 1);
-			app.ActiveItemCollectionHelper(sourceID, oldState);
-			app:PlayFanfare();
-			wipe(searchCache);
-		end
-	end
-end
-app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
-	if sourceID and GetDataSubMember("CollectedSources", sourceID) then
-		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-		SetDataSubMember("CollectedSources", sourceID, nil);
-		
-		-- If the user is a Completionist
-		if GetDataMember("CompletionistMode") then
-			if GetDataMember("ShowNotifications", true) then
-				-- Oh shucks, that was nice of you to give this item to your friend.
-				-- WAIT, WHAT? A VENDOR?! OH GOD NO! TODO: Warn a user when they vendor an appearance?
-				local name, link = GetItemInfo(sourceInfo.itemID);
-				print(format(L("ITEM_ID_REMOVED"), link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
-			end
-		else
-			local shared = 0;
-			local categoryID, appearanceID, canEnchant, texture, isCollected, itemLink = C_TransmogCollection_GetAppearanceSourceInfo(sourceID);
-			if categoryID then
-				for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(appearanceID)) do
-					if GetDataSubMember("CollectedSources", otherSourceID) then
-						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
-						if not otherSourceInfo.isCollected and otherSourceInfo.categoryID == categoryID then
-							SetDataSubMember("CollectedSources", otherSourceID, nil);
-							shared = shared + 1;
-						end
-					end
-				end
-			end
-			
-			if GetDataMember("ShowNotifications", true) then
-				-- Oh shucks, that was nice of you to give this item to your friend.
-				-- WAIT, WHAT? A VENDOR?! OH GOD NO! TODO: Warn a user when they vendor an appearance?
-				local name, link = GetItemInfo(sourceInfo.itemID);
-				print(format(L(shared > 0 and "ITEM_ID_REMOVED_SHARED" or "ITEM_ID_REMOVED"), link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, shared));
-			end
-		end
-		
-		-- Refresh the Data and Cry!
-		app:RefreshData(false, true, true);
-		app:PlayRemoveSound();
-		wipe(searchCache);
-	end
 end
 
 app.CreateArtifact = function(id, t) return null; end
