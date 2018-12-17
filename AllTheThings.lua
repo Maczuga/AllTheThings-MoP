@@ -5796,7 +5796,7 @@ local function MinimapButtonOnClick(self, button)
 		if IsShiftKeyDown() then
 			RefreshCollections();
 		elseif IsAltKeyDown() or IsControlKeyDown() then
-			ToggleMiniListForCurrentZone();
+			app:ToggleMiniListForCurrentZone();
 		else
 			ToggleMainList();
 		end
