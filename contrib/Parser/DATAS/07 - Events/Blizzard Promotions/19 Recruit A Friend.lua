@@ -18,9 +18,6 @@ _.WorldEvents =
 				ach(8794, {	-- Friends In Places Even Higher Than That
 					i(106246), 	-- Emerald Hippogryph
 				}),
-				ach(9925, {	-- Friends In Places Yet Even Higher Than That
-					i(118515), 	-- Cindermane Charger
-				}),
 				i(34518), 	-- Golden Pig
 				i(34519), 	-- Silver Pig
 				p(231),		-- Jade Tiger

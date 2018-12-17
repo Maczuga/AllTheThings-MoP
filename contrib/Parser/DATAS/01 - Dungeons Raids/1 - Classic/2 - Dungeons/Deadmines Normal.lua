@@ -107,28 +107,17 @@ _.Instances =
 							i(2169),	-- Buzzer Blade
 							i(5444),	-- Miner's Cape
 							i(5195),	-- Gold-Flecked Gloves
-						-- i(157628), 	-- Gold-Flecked Gloves (NOTE: This ID only drops on Heroic Mode.)
 						})),
 						cr(47296, e(90, {	-- Helix Gearbreaker
 							i(  5200),	-- Impaling Harpoon
 							i(  5191),	-- Cruel Barb
 							i(  5443),	-- Gold-Plated Buckler
-							i(151062),	-- Armbands of Exiled Architects
-							i(151063),	-- Gear-Marked Gauntlets
-							i(132556),	-- Smelter's Britches
 							i(  5199),	-- Smelting Pants
-						-- i(157752), 	-- Armbands of Exiled Architects (NOTE: This ID only drops on Heroic Mode.)
 						})),
 						cr(43778, e(91, {	-- Foe Reaper 5000
 							i(  5201),	-- Emberstone Staff
 							i(  5187),	-- Foe Reaper
 							i(  1937),	-- Buzz Saw
-							i(151066),	-- Missing Diplomat's Pauldrons
-							i(151064),	-- Vest of the Curious Visitor
-							i(151065),	-- Old Friend's Gloves
-						-- i(157753), 	-- Vest of the Curious Visitor (NOTE: This ID only drops on Heroic Mode.)
-						-- i(157754), 	-- Old Friend's Gloves (NOTE: This ID only drops on Heroic Mode.)
-						-- i(157755), 	-- Missing Diplomat's Pauldrons (NOTE: This ID only drops on Heroic Mode.)
 						})),
 						cr(47626, e(92, {	-- Admiral Ripsnarl
 							i( 872),	-- Rockslicer

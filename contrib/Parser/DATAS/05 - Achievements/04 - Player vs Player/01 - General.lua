@@ -107,7 +107,6 @@ _.Achievements =
 					})),
 					ach(396),		-- Gurubashi Arena Grand Master
 					ach(389),		-- Gurubashi Arena Master
-					ach(10561),		-- Honorable Medallion
 					ach(8052, 8055, {	-- Khan
 						style(2, title(220)),	-- Khan
 						crit(1),		-- Master of the Battle for Gilneas

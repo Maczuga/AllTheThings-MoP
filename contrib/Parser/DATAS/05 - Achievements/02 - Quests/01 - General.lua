@@ -30,14 +30,6 @@ _.Achievements =
 						ach(508),		-- 1500 Quests Completed
 						ach(32),		-- 2000 Quests Completed
 					}),
-					ach(11132, {	-- 10,000 World Quests Completed
-						ach(11126),		-- 50 World Quests Completed
-						ach(11127),		-- 200 World Quests Completed
-						ach(11128),		-- 500 World Quests Completed
-						ach(11129),		-- 1000 World Quests Completed
-						ach(11130),		-- 2500 World Quests Completed
-						ach(11131),		-- 5000 World Quests Completed
-					}),
 					ach(31), 		-- A Simple Re-Quest
 					ach(941, {		-- Hemet Nesingwary: The Collected Quests
 						crit(2),		-- Hills Like White Elekk
@@ -65,8 +57,6 @@ _.Achievements =
 						crit(4),		-- Loremaster of Northrend
 						crit(5),		-- Loremaster of Cataclysm
 						crit(6),		-- Loremaster of Pandaria
-						crit(7),		-- Loremaster of Draenor
-						crit(8),		-- Loremaster of Legion
 					}),
 				},
 			}),

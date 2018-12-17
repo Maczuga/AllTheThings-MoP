@@ -15,6 +15,7 @@ _.Achievements =
 	n(-9968, { -- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
 			n(-9955, { -- General
+			-- TODO some might need to be moved into propher categories
 				["groups"] = {
 					un(2, ach(2921)),		-- A Quick Shave (25 player)
 					un(2, a(ach(8030))),	-- A Test of Valor (Alliance)
@@ -22,38 +23,15 @@ _.Achievements =
 					un(2, ach(7944)),		-- Bottle Service (Season 2) **Comments on wowhead indicate this might still available in Legion, this needs to be tested.**
 					un(2, a(ach(7941))),	-- Brawlin' and Shot Callin' (Season 1) (Alliance)
 					un(2, h(ach(7942))),	-- Brawlin' and Shot Callin' (Season 1) (Horde)
-					un(2, a(ach(9170, {	-- Brawlin' and Shot Callin' (Season 2) (Alliance)
-						un(2, a(ach(9169))),	-- The Second Rule of Brawler's Guild (Season 2)
-						un(2, a(ach(9168))),	-- You Are Not Your $#*@! Legplates (Season 2)
-						un(2, a(ach(7947))),	-- The First Rule of Brawler's Guild (Season 1 or 2)
-					}))),
-					un(2, a(ach(9174, {	-- Brawlin' and Shot Callin' (Season 2) (Horde)
-						un(2, h(ach(9173))),	-- The Second Rule of Brawler's Guild (Season 2)
-						un(2, h(ach(9172))),	-- You Are Not Your $#*@! Legplates (Season 2)
-						un(2, h(ach(7948))),	-- The First Rule of Brawler's Guild (Season 1 or 2)
-					}))),
-					un(2, ach(10765, {		-- Brokenly Epic (ilvl 840)
-						un(2, ach(9708)),		-- Savagely Epic (ilvl 640)
-						un(2, ach(6349)),		-- Mystically Epic (ilvl 476)
-						un(2, ach(5372)),		-- Cataclysmically Epic (ilvl 359)
-						un(2, ach(556)),		-- Epic (ilvl 213)
-					})),
-					un(2, ach(10764, {		-- Brokenly Superior (ilvl 790)
-						un(2, ach(9707)),		-- Savagely Superior (ilvl 608)
-						un(2, ach(6348)),		-- Mystically Superior (ilvl 450)
-						un(2, ach(5373)),		-- Cataclysmically Superior (ilvl 333)
-						un(2, ach(557)),		-- Superior (ilvl 187)
-					})),
-					un(2, ach(9640)),		-- Chapter I: Call of the Archmage
+					un(2, a(ach(7947))), -- The First Rule of Brawler's Guild (Season 1 or 2)
+					un(2, a(ach(7948))), -- The First Rule of Brawler's Guild (Season 1 or 2)
+					un(2, ach(6349)), -- Mystically Epic (ilvl 476)
+					un(2, ach(6348)), -- Mystically Superior (ilvl 450)
 					un(2, ach(7533)),		-- Chapter I: Trial of the Black Prince
-					un(2, ach(9641)),		-- Chapter II: Gul'dan Strikes Back
 					un(2, a(ach(7534))),	-- Chapter II: Wrathion's War (Alliance)
 					un(2, h(ach(8008))),	-- Chapter II: Wrathion's War (Horde)
-					un(2, ach(9642)),	 	-- Chapter III: The Foundry Falls
 					un(2, ach(7535)),		-- Chapter III: Two Princes
 					un(2, ach(7536)),		-- Chapter IV: Celestial Blessings
-					un(2, a(ach(10021))),	-- Chapter IV: Darkness Incarnate (Alliance)
-					un(2, h(ach(10148))),	-- Chapter IV: Darkness Incarnate(Horde)
 					un(2, ach(8325, {		-- Chapter V: Judgment of the Black Prince
 						un(39, title(306)),		-- ,Legend of Pandaria
 					})),
@@ -71,7 +49,7 @@ _.Achievements =
 					un(2, h(ach(8343, {	-- Deck Your Collection (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
 						--i(98543),	-- Wraps of the Blood-Soaked Brawler [Only leaving in under Season 2 since you are still able to complete that as of Legion and possibly BfA]
 					}))),
-					a(ach(9176, {			-- Deck Your Collection (Season 2) (Alliance) **Comments on wowhead indicate this is still available in Legion you just have to get lucky and get the random bosses you need for it.**
+					a(ach(8339, {			-- Collect Your Deck (Season 2)
 						i(98543),				-- Wraps of the Blood-Soaked Brawler
 						crit(1),				-- Grandpa Grumplefloot
 						crit(2),				-- Ty'thar
@@ -85,9 +63,8 @@ _.Achievements =
 						crit(10),				-- Ro-Shambo
 						crit(11),				-- Mingus Diggs
 						crit(12),				-- The Blind Hero
-						un(2, a(ach(8339))),	-- Collect Your Deck (Season 2)
 					})),
-					h(ach(9177, {			-- Deck Your Collection (Season 2) (Horde) **Comments on wowhead indicate this is still available in Legion you just have to get lucky and get the random bosses you need for it.**
+					h(ach(8342, {			-- Collect Your Deck (Season 2)
 						i(98543),				-- Wraps of the Blood-Soaked Brawler
 						crit(1),				-- Grandpa Grumplefloot
 						crit(2),				-- Ty'thar
@@ -101,7 +78,6 @@ _.Achievements =
 						crit(10),				-- Ro-Shambo
 						crit(11),				-- Mingus Diggs
 						crit(12),				-- The Blind Hero
-						un(2, h(ach(8342))),	-- Collect Your Deck (Season 2)
 					})),
 					un(2, ach(16)),		-- Did Somebody Order a Knuckle Sandwich?
 					un(2, ach(2357, {		-- Dreadsteed of Xoroth
@@ -137,8 +113,6 @@ _.Achievements =
 					un(2, ach(559)),		-- Needy
 					un(2, a(ach(7946))),	-- Now You're Just Showing Off (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
 					un(2, h(ach(8022))),	-- Now You're Just Showing Off (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
-					un(2, a(ach(9171))),	-- Now You're Just Showing Off (Season 2) (Alliance) **Comments on wowhead indicate this might still available in Legion, this needs to be tested.**
-					un(2, h(ach(9175))),	-- Now You're Just Showing Off (Season 2) (Horde) **Comments on wowhead indicate this might still available in Legion, this needs to be tested.**
 					un(2, ach(2019)),		-- Proof of Demise
 					un(2, ach(8507, {		-- Proving Yourself: Endless Damage (Wave 30) (Level 90)
 						un(2, ach(8504)),		-- Proving Yourself: Endless Damage (Wave 20) (Level 90)
@@ -167,16 +141,6 @@ _.Achievements =
 						["groups"] = {
 						},
 						["classes"] = { 11 },
-					})),
-					un(2, ach(11296, {		-- The Ancient Keeper
-						["groups"] = {
-						},
-						["classes"] = { 3 },
-					})),
-					un(2, ach(11297, {		-- The Balance of Light and Shadow
-						["groups"] = {
-						},
-						["classes"] = { 5 },
 					})),
 					un(2, a(ach(7940))),	-- The Second Rule of Brawler's Guild (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
 					un(2, h(ach(7939))),	-- The Second Rule of Brawler's Guild (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**					

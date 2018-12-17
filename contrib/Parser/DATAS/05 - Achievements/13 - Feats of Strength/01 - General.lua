@@ -16,92 +16,7 @@ _.Achievements =
 		["groups"] = {
 			n(-9955, { -- General
 				["groups"] = {
-					ach(11137, {	-- A Legendary Campaign
-						crit(1),	-- Death Knight
-						crit(2),	-- Demon Hunter
-						crit(3),	-- Druid
-						crit(4),	-- Hunter
-						crit(5),	-- Mage
-						crit(6),	-- Monk
-						crit(7),	-- Paladin
-						crit(8),	-- Priest
-						crit(9),	-- Rogue
-						crit(10),	-- Shaman
-						crit(11),	-- Warlock
-						crit(12),	-- Warrior
-					}),
-					ach(13089, {	-- Allied Races: Dark Iron Dwarf
-						["groups"] = {
-							ach(12510),	-- Ready for War
-							faction(2159),	-- 7th Legion
-						},
-						["races"] = ALLIANCE_ONLY,
-						["description"] = "Requires release of Battle for Azeroth, unlock requirements may still change.",
-					}),
-					ach(12445, {	-- Allied Races: Highmountain Tauren
-						["groups"] = {
-							ach(10059),	-- Ain't No Mountain High Enough
-							faction(1828), -- Highmountain Tribe
-							q(48433, {	-- Together We Are the Horde!
-								i(155662),	-- Highmountain Thunderhoof
-							}),
-						},
-						["races"] = HORDE_ONLY,
-						["description"] = "Requires Battle for Azeroth to be purchased.",
-						["lvl"] = 110,
-					}),
-					ach(12448, {	-- Allied Races: Lightforged Draenei
-						["groups"] = {
-							ach(12066),	-- You Are Now Prepared!
-							faction(2165), -- Army of the Light
-							q(50071, {	-- For the Light!
-								i(155656),	-- Lightforged Felcrusher
-							}),
-						},
-						["races"] = ALLIANCE_ONLY,
-						["description"] = "Requires Battle for Azeroth to be purchased.",
-						["lvl"] = 110,
-					}),
-					ach(13092, {	-- Allied Races: Mag'har Orc
-						["groups"] = {
-							ach(12509),	-- Ready for War
-							faction(2157),	-- The Honorbound
-						},
-						["races"] = HORDE_ONLY,
-						["description"] = "Requires release of Battle for Azeroth, unlock requirements may still change.",
-					}),
-					ach(12446, {	-- Allied Races: Nightborne
-						["groups"] = {
-							ach(11340),	-- Insurrection
-							faction(1859), -- The Nightfallen
-							q(49614, {	-- The Nightborne
-								i(156487),	-- Nightborne Manasaber
-							}),
-						},
-						["races"] = HORDE_ONLY,
-						["description"] = "Requires Battle for Azeroth to be purchased.",
-						["lvl"] = 110,
-					}),
-					ach(12447, {	-- Allied Races: Void Elf
-						["groups"] = {
-							ach(12066),	-- You Are Now Prepared!
-							faction(2170), -- Argussian Reach
-							q(48962, {	-- Telogrus Rift
-								i(156486),	-- Starcursed Voidstrider
-							}),
-						},
-						["races"] = ALLIANCE_ONLY,
-						["description"] = "Requires Battle for Azeroth to be purchased.",
-						["lvl"] = 110,
-					}),
-					un(3, ach(9016, {	-- Breaker of the Black Harvest
-						un(3,title(256)),	-- of the Black Harvest
-					})),
 					ach(4496),	-- It's Over Nine Thousand!
-					ach(10334, {	-- Predator
-						title(59),	-- Predator
-					}),
-					ach(13078),	-- Realm First! Battle for Azeroth Keystone Master
 					un(2, ach(3259, {	-- Realm First! Celestial Defender
 						un(39, title(125)),	-- the Celestial Defender
 					})),
@@ -146,7 +61,6 @@ _.Achievements =
 					un(2, ach(5389)),	-- Realm First! Illustrious Scribe
 					un(2, ach(5393)),	-- Realm First! Illustrious Skinner
 					un(2, ach(5394)),	-- Realm First! Illustrious Tailor
-					un(2, ach(11224)),	-- Realm First! Keystone Master
 					un(2, ach(457)),	-- Realm First! Level 80
 					un(2, ach(1405)),	-- Realm First! Level 80 Blood Elf
 					un(2, ach(461)),	-- Realm First! Level 80 Death Knight
@@ -214,8 +128,6 @@ _.Achievements =
 					un(2, ach(6867)),	-- Realm First! Zen Master Scribe
 					un(2, ach(6871)),	-- Realm First! Zen Master Skinner
 					un(2, ach(6872)),	-- Realm First! Zen Master Tailor
-					ach(9597),	-- You're Really Doing It Wrong
-					un(2, ach(8812)),	-- You're Really Doing It Wrong (Level 90)
 				},
 			}),
 		},

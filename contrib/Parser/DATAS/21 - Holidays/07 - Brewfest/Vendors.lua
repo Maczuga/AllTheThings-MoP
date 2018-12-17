@@ -33,7 +33,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(33029),	-- Barleybrew Dark
 						i(33028),	-- Barleybrew Light
 						i(33030),	-- Barleybrew Clear
-						i(138867),	-- Shimmer Stout
 					}),
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 37829,	-- Brewfest Prize Token
@@ -57,7 +56,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(37571, {	-- "Brew of the Month" Club Membership Form
 							ach(2796),	-- Brew of the Month
 						}),
-						i(122339),	-- Ancient Heirloom Scabbard
 						i(119209),	-- Angry Brewfest Letter
 						i(33047),	-- Belbi's Eyesight Enhancing Romance Goggles
 						i(116758),	-- Brewfest Banner
@@ -71,11 +69,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(37816),	-- Preserved Brewfest Hops
 						i(116757),	-- Steamworks Sausage Grill
 						i(116756),	-- Stout Alemental
-						i(138730, {	-- Synthebrew Goggles XL
-							["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible
-						}),
-						i(122341),	-- Timeworn Heirloom Scabbard
-						i(151615),	-- Weathered Heirloom Scabbard
 						i(32233, {	-- Wolpertinger's Tankard
 							ach(1936),	-- Does Your Wolpertinger Linger?
 						}),
@@ -88,15 +81,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 				n(23605, {	-- Bron
 					["groups"] = bubbleDown({["u"] = 24}, {
 						i(34063),	-- Dried Sausage
-						i(37829, {	-- Brewfest Prize Token
-							i(138900),	-- Gravil Goldbraid's Famous Sausage Hat
-						}),
 						i(33024),	-- Pickled Sausage
 						i(33023),	-- Savory Sausage
 						i(33025),	-- Spicy Smoked Sausage
 						i(34064),	-- Succulent Sausage
 						i(33026),	-- The Golden Link
-						i(138884),	-- Throwing Sausage
 					}),
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },
@@ -119,8 +108,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(37599, {	-- "Brew of the Month" Club Membership Form
 							ach(2796),	-- Brew of the Month
 						}),
-						i(122339),	-- Ancient Heirloom Scabbard
-						i(119209),	-- Angry Brewfest Letter
 						i(34008, {	-- Blix's Eyesight Enhancing Romance Goggles
 							["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible
 						}),
@@ -135,11 +122,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(37816),	-- Preserved Brewfest Hops
 						i(116757),	-- Steamworks Sausage Grill
 						i(116756),	-- Stout Alemental
-						i(138730, {	-- Synthebrew Goggles XL
-							["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible
-						}),
-						i(122341),	-- Timeworn Heirloom Scabbard
-						i(151615),	-- Weathered Heirloom Scabbard
 						i(32233, {	-- Wolpertinger's Tankard
 							ach(1936),	-- Does Your Wolpertinger Linger?
 						}),
@@ -152,7 +134,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 				n(24501, {	-- Drohn's Distillery Apprentice 
 					["groups"] = bubbleDown({["u"] = 24}, {
 						i(34018),	-- Long Stride Brew
-						i(138868),	-- Mannoroth's Blood Red Ale
 						i(34019),	-- Path of Brew
 						i(46402),	-- Promise of the Pandaren
 						i(34017),	-- Small Step Brew
@@ -163,7 +144,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 				n(23511, {	-- Gordok Brew Apprentice
 					["groups"] = bubbleDown({["u"] = 24}, {
 						i(46403),	-- Chuganpug's Delight
-						i(138869),	-- Gordok Bock
 						i(33034),	-- Gordok Grog
 						i(33036),	-- Mudder's Milk
 						i(33035),	-- Ogre Mead
@@ -173,15 +153,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 				n(23481, {	-- Keiran Donoghue
 					["groups"] = bubbleDown({["u"] = 24}, {
 						i(34063),	-- Dried Sausage
-						i(37829, {	-- Brewfest Prize Token
-							i(138900),	-- Gravil Goldbraid's Famous Sausage Hat
-						}),
 						i(33024),	-- Pickled Sausage
 						i(33023),	-- Savory Sausage
 						i(33025),	-- Spicy Smoked Sausage
 						i(34064),	-- Succulent Sausage
 						i(33026),	-- The Golden Link
-						i(138884),	-- Throwing Sausage
 					}),
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 24 },
@@ -191,7 +167,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(34021),	-- Brewdoo Magic
 						i(46401),	-- Crimson Stripe
 						i(34020),	-- Jungle River Water
-						i(138870),	-- Spirit Spirits
 						i(34022),	-- Stout Shrunken Head
 					}),
 					["races"] = HORDE_ONLY,
@@ -199,7 +174,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 				}),
 				n(23510, {	-- Thunderbrew Apprentice
 					["groups"] = bubbleDown({["u"] = 24}, {
-						i(138871),	-- Storming Saison
 						i(33031),	-- Thunder 45
 						i(46399),	-- Thunder's Plunder
 						i(33032),	-- Thunderbrew Ale

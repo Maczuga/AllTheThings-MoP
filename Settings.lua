@@ -549,25 +549,6 @@ local function createGeneralFrame(parent)
 	autoRaidAssistant:SetPoint("TOPLEFT",autoProfessionMinilist,0,-frameSpacer)
 	addObject(elm,autoRaidAssistant)
 	
-	-- show the world quests list auto
-	local autoWorldQuests = createCheckBox("Show the World Quests List Automatically", child, function(self)
-			app.SetDataMember("AutoWorldQuestsList", self:GetChecked());
-			if self:GetChecked() then
-				app:GetWindow("WorldQuests"):Show();
-			end
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("AutoWorldQuestsList", false));
-		end,
-		function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nDrag the window and rescale it where you want it to appear.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-	autoWorldQuests.Label:SetWidth(500);
-	autoWorldQuests:SetPoint("TOPLEFT",autoRaidAssistant,0,-frameSpacer)
-	addObject(elm,autoWorldQuests)
-	
 	-- auto minimize when not applicable 
 	local autoMin = createCheckBox("Automatically Minimize Inactive Difficulties in Mini Lists", child, function(self)
 			app.SetDataMember("AutoMinimize", self:GetChecked());
@@ -1679,17 +1660,6 @@ local function createMiniListFrame(parent)
 	showModels:SetPoint("TOPLEFT",showDes, 0, -frameSpacer)
 	addObject(elm,showModels)
 	
-	-- Show Currency on World Quest List
-	local showCurrencyOnWorldQuestList = createCheckBox("Show Currency on World Quest List", child, function(self)
-			app.SetDataMember("ShowCurrencyOnWorldQuestList", self:GetChecked());
-			if not self:GetChecked() then app:GetWindow("WorldQuests"):Clear(); end
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("ShowCurrencyOnWorldQuestList", true));
-		end);
-	showCurrencyOnWorldQuestList:SetPoint("TOPLEFT",showModels, 0, -frameSpacer)
-	addObject(elm,showCurrencyOnWorldQuestList)
-	
 	--Item Filters
 	local item = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 	item:SetPoint("TOPLEFT", showFrame, 0, -(showFrame:GetHeight() + frameSpacer))
@@ -2142,7 +2112,6 @@ local function createDebugFrame(parent)
 	obj[debugTab] = elm
 			
 	 local ids = {["ShowAchievementID"] = "Show Achievement ID",
-		["ShowArtifactID"] = "Show Artifact ID",
 		["ShowBonusID"] = "Show Bonus ID",
 		["ShowCreatureID"] = "Show Creature ID",
 		["ShowCurrencyID"] = "Show Currency ID",
@@ -2166,7 +2135,7 @@ local function createDebugFrame(parent)
 		["ShowVisualID"] = "Show Visual ID",
 		}
 	local last;
-	for _,id in pairs ({"ShowAchievementID","ShowArtifactID","ShowBonusID","ShowCreatureID","ShowCurrencyID","ShowDifficultyID","ShowEncounterID","ShowFactionID","ShowFilterID","ShowIllusionID","ShowInstanceID","ShowItemID","ShowItemString","ShowMapID","ShowModID","ShowObjectID","ShowQuestID","ShowSourceID","ShowSpeciesID","ShowSpellID","ShowTierID","ShowTitleID","ShowVisualID"}) do
+	for _,id in pairs ({"ShowAchievementID","ShowBonusID","ShowCreatureID","ShowCurrencyID","ShowDifficultyID","ShowEncounterID","ShowFactionID","ShowFilterID","ShowIllusionID","ShowInstanceID","ShowItemID","ShowItemString","ShowMapID","ShowModID","ShowObjectID","ShowQuestID","ShowSourceID","ShowSpeciesID","ShowSpellID","ShowTierID","ShowTitleID","ShowVisualID"}) do
 		local filter = createCheckBox(ids[id], child, function(self)
 			app.SetDataMember(id, self:GetChecked());
 			wipe(app.searchCache);

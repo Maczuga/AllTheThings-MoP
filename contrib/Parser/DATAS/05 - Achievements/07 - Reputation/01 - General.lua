@@ -16,9 +16,8 @@ _.Achievements =
 		["groups"] = {
 			n(-9955, { -- General
 				["groups"] = {
-					ach(12866, { 	-- 100 Exalted Reputations
-						i(163982),		-- Pureheart Courser
-						title(379), 	-- Esteemed <Name>
+					ach(6742, { 	-- 60 Exalted Reputations
+						title(197), 	-- <Name> the Beloved
 						n(-6013, { 		-- Faction
 							faction(1168), 	-- Guild
 							a(n(-9914, { 	-- Alliance
@@ -61,18 +60,6 @@ _.Achievements =
 									faction(1376), 	-- Operation: Shieldwall
 									faction(1242), 	-- Pearlfin Jinyu
 								}),
-								tier(6, { 	-- Warlords of Draenor
-									faction(1731), 	-- Councils of Exarchs
-									faction(1847), 	-- Hand of the Prophet
-									faction(1710), 	-- Sha'tari Defense
-									un(2, faction(1682)), 	-- Wyrnn's Vanguard
-								}), 
-								tier(8, { 	-- Battle For Azeroth
-									faction(2159), 	-- 7th Legion
-									faction(2161), 	-- Order of Embers
-									faction(2160), 	-- Proudmoore Admiralty
-									faction(2162), 	-- Storm's Wake
-								}),
 							})),
 							h(n(-9913, { 	-- Horde
 								n(-6014, { 	-- Cities
@@ -113,18 +100,6 @@ _.Achievements =
 									faction(1375), 	-- Dominance Offensive
 									faction(1228), 	-- Forest Hozen
 									faction(1388), 	-- Sunreaver Onslaught
-								}),
-								tier(6, { 	-- Warlords of Draenor
-									faction(1445), 	-- Frostwolf Orcs
-									faction(1708), 	-- Laughing Skull Orcs
-									faction(1848), 	-- Vol'jin's Headhunters
-									un(2, faction(1681)),	-- Vol'jin's Spear
-								}),
-								tier(8, { 	-- Battle For Azeroth 
-									faction(2156),	-- Talanji's  Expedition
-									faction(2157), 	-- The Honorbound
-									faction(2158), 	-- Voldunai
-									faction(2103), 	-- Zandalari Empire
 								}),
 							})),
 							tier(1, { 	-- Classic
@@ -198,36 +173,6 @@ _.Achievements =
 								faction(1435), 	-- Shado-Pan Assault
 								faction(1272), 	-- The Tillers
 							}),
-							tier(6, { 	-- Warlords of Draenor
-								faction(1515), 	-- Arakkoa Outcasts
-								faction(1849), 	-- Order of the Awakened
-								faction(1850), 	-- The Saberstalkers
-								faction(1711), 	-- Steamwheedle Preservation Society
-							}),
-							tier(7, { 	-- Legion
-								faction(1900), 	-- Court of Farondis
-								faction(2170), 	-- Argussian Reach
-								faction(2045), 	-- Armies of Legionfall
-								faction(2165), 	-- Army of the Light
-								faction(1883), 	-- Dreamweavers
-								faction(1828), 	-- Highmountain Tribe
-								faction(2018), 	-- Talon's Vengeance
-								faction(1859),	-- The Nightfallen
-								faction(1894), 	-- The Wardens
-								faction(1948),	-- Valarjar
-							}),
-							tier(8, {	-- Battle For Azeroth
-								faction(2164), 	-- Champions of Azeroth
-								faction(2163), 	-- Tortollan Seekers
-							}),
-						}),
-						ach(12865), 	-- 90 Exalted Reputations
-						ach(12864, { 	-- 80 Exalted Reputations
-							title(380), 	-- <Name> the Admired
-						}),
-						ach(11177), 	-- 70 Exalted Reputations
-						ach(6742, { 	-- 60 Exalted Reputations
-							title(197), 	-- <Name> the Beloved
 						}),
 						ach(6826), 		-- 55 Exalted Reputations
 						ach(5723), 		-- 50 Exalted Reputations
@@ -244,12 +189,6 @@ _.Achievements =
 						ach(523), 		-- 5 Exalted Reputations
 						ach(522), 		-- Somebody Likes Me
 					}),
-					a(ach(12515)),	-- Allied Races: Dark Iron Dwarf
-					h(ach(12245)),	-- Allied Races: Highmountain Tauren
-					a(ach(12243)),	-- Allied Races: Lightforged Draenei
-					h(ach(12518)),	-- Allied Races: Mag'har Orc
-					h(ach(12244)),	-- Allied Races: Nightborne
-					a(ach(12242)),	-- Allied Races: Void Elf				
 					a(ach(948, {	-- Ambassador of the Alliance
 						title(98),		-- Ambassador
 						faction(69),	-- Darnassus
@@ -272,100 +211,6 @@ _.Achievements =
 						title(100),		-- ,Guardian of Cenarius
 						faction(609),	-- Cenarion Circle
 						faction(942),	-- Cenarion Expedition
-					}),
-					ach(12415, {	-- Heritage of Highmountain
-						["groups"] = {
-							i(156668),	-- Highmountain Headdress
-							i(156669),	-- Highmountain Shoulderguards
-							i(156670),	-- Highmountain Harness
-							i(156671),	-- Highmountain Gloves
-							i(156672),	-- Highmountain Girdle
-							i(156673),	-- Highmountain Leggings
-							i(156674),	-- Highmountain Boots
-							i(156684),	-- Highmountain Bracers
-						},
-						["races"] = {28},
-					}),
-					ach(13076, {	-- Heritage of the Dark Iron
-						["groups"] = {
-							i(161015),	-- Dark Iron Bracers
-							i(161014),	-- Dark Iron Boots
-							i(161008),	-- Dark Iron Helm
-							i(161011),	-- Dark Iron Gloves
-							i(161010),	-- Dark Iron Mantle
-							i(161009),	-- Dark Iron Pauldrons
-							i(161012),	-- Dark Iron Belt
-							i(161013),	-- Dark Iron Leggings
-						},
-						["races"] = {34},
-					}),						
-					ach(12414, {	-- Heritage of the Lightforged
-						["groups"] = {
-							i(156699),	-- Lightforged Gorget
-							i(156700),	-- Lightforged Pauldrons
-							i(156701),	-- Lightforged Chestguard
-							i(156702),	-- Lightforged Gloves
-							i(156703),	-- Lightforged Girdle
-							i(156704),	-- Lightforged Legplates
-							i(156705),	-- Lightforged Hoofguards
-							i(156706),	-- Lightforged Bracers
-						},
-						["races"] = {30},
-					}),
-					ach(13077, {	-- Heritage of the Mag'har
-						["groups"] = {
-							i(161003),	-- Warsong Clan Bracers
-							i(160993),	-- Warsong Clan Pauldrons
-							i(160992),	-- Warsong Clan Helm
-							i(160994),	-- Warsong Clan Harness
-							i(160999),	-- Warsong Clan Gloves
-							i(161002),	-- Warsong Clan Boots
-							i(161001),	-- Warsong Clan Leggings
-							i(161000),	-- Warsong Clan Belt
-							i(161050),	-- Blackrock Clan Helm
-							i(161051),	-- Blackrock Clan Pauldrons
-							i(161052),	-- Blackrock Clan Harness
-							i(161054),	-- Blackrock Clan Gloves
-							i(161055),	-- Blackrock Clan Belt
-							i(161056),	-- Blackrock Clan Leggings
-							i(161057),	-- Blackrock Clan Boots
-							i(161058),	-- Blackrock Clan Bracers
-							i(161059),	-- Frostwolf Clan Helm
-							i(161060),	-- Frostwolf Clan Pauldrons
-							i(161061),	-- Frostwolf Clan Harness
-							i(161062),	-- Frostwolf Clan Gloves
-							i(161063),	-- Frostwolf Clan Belt
-							i(161064),	-- Frostwolf Clan Leggings
-							i(161065),	-- Frostwolf Clan Boots
-							i(161066),	-- Frostwolf Clan Bracers
-						},
-						["races"] = {36},
-					}),		
-					ach(12413, {	-- Heritage of the Nightborne
-						["groups"] = {
-							i(156675),	-- Shal'dorei Crown
-							i(156676),	-- Shal'dorei Mantle
-							i(156677),	-- Shal'dorei Finery
-							i(156678),	-- Shal'dorei Gloves
-							i(156679),	-- Shal'dorei Belt
-							i(156680),	-- Shal'dorei Leggings
-							i(156681),	-- Shal'dorei Slippers
-							i(156685),	-- Shal'dorei Bracers
-						},
-						["races"] = {27},
-					}),
-					ach(12291, {	-- Heritage of the Void
-						["groups"] = {
-							i(156690),	-- Ren'dorei Helm
-							i(156691),	-- Ren'dorei Pauldrons
-							i(156692),	-- Ren'dorei Mantle
-							i(156693),	-- Ren'dorei Gloves
-							i(156694),	-- Ren'dorei Belt
-							i(156695),	-- Ren'dorei Leggings
-							i(156696),	-- Ren'dorei Boots
-							i(156697),	-- Ren'dorei Bracers
-						},
-						["races"] = {29},
 					}),
 					ach(945, {		-- The Argent Champion
 						title(99),		-- the Argent Champion

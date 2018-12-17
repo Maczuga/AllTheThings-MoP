@@ -16,40 +16,7 @@ _.Achievements =
 		["groups"] = {
 			n(-10025, { -- Darkmoon Faire
 				["groups"] = {
-					ach(9885, {		-- Ace Tonk Commander
-						i(122122),		-- Darkmoon Tonk Controller
-					}),
-					ach(9817, {		-- Big Powermonger: Gold (20 tolls)
-						i(122124),		-- Darkmoon Cannon
-						ach(9815),		-- Big Powermonger: Silver (25 tolls)
-						ach(9813),		-- Big Powermonger: Bronze (30 tolls)
-						ach(9812),		-- Goal-Oriented (40 tolls)
-					}),
-					ach(9799, {		-- Big Race Roadhog (20 tolls)
-						i(122128),		-- Checkered Flag
-						ach(9797),		-- Big Race Leadfoot (25 tolls)
-						ach(9795),		-- Big Race Jockey (30 tolls)
-						ach(9794),		-- Big Race Novice (35 tolls)
-						ach(9793),		-- Big Race Enthusiast (40 tolls)
-					}),
-					ach(9805, {		-- Big Rocketeer: Gold (20 tolls)
-						i(122125),		-- Race MiniZep Controller
-						ach(9803),		-- Big Rocketeer: Silver (25 tolls)
-						ach(9801),		-- Big Rocketeer: Bronze (30 tolls)
-						ach(9800),		-- Rocket Man (40 tolls)
-					}),
-					ach(9811, {		-- Big Wanderluster: Gold (20 tolls)
-						i(122121),		-- Darkmoon Gazer
-						ach(9809),		-- Big Wanderluster: Silver (25 tolls)
-						ach(9807),		-- Big Wanderluster: Bronze (30 tolls)
-						ach(9806),		-- Vagabond (40 tolls)
-					}),
 					ach(6021),		-- Blastenheimer Bullseye
-					ach(9252, {		-- Brood of Alysrazor (50)
-						i(116115),		-- Blazing Wings
-						ach(9251),		-- Ringmaster (25)
-						ach(9250),		-- Flying High (10)
-					}),
 					ach(6019),		-- Come One, Come All!
 					ach(6028, {		-- Darkmoon Defender
 						crit(1),		-- Adventurer's Journal
@@ -76,14 +43,6 @@ _.Achievements =
 						crit(3),		-- Monstrous Egg
 						crit(4),		-- Mysterious Grimoire
 						crit(5),		-- Ornate Weapon
-					}),
-					ach(9819),		-- Darkmoon Like the Wind
-					ach(9755),		-- Darkmoon Race Enthusiast
-					ach(9761, {		-- Darkmoon Racer Roadhog (11 tolls)
-						i(122129),		-- Fire-Eater's Vial
-						ach(9760),		-- Darkmoon Racer Leadfoot (15 tolls)
-						ach(9759),		-- Darkmoon Racer Jockey (20 tolls)
-						ach(9756),		-- Darkmoon Racer Novice (25 tolls)
 					}),
 					ach(6032, {		-- Faire Favors
 						crit(1),		-- Alchemy
@@ -122,23 +81,8 @@ _.Achievements =
 						crit(17),		-- Iced Berry Slush
 						crit(18),		-- Sasparilla Sinker
 					}),
-					ach(11918),		-- Hey, You're a Rockstar!
 					ach(6025),		-- I Was Promised a Pony
-					ach(11921),		-- Mosh Pit
-					ach(11920),		-- Perfect Performance
-					ach(9785, {		-- Powermonger: Gold (11 tolls)
-						i(122120),		-- Gaze of the Darkmoon
-						ach(9783),		-- Powermonger: Silver (15 tolls)
-						ach(9781),		-- Powermonger: Bronze (20 tolls)
-						ach(9780),		-- Go-Getter (25 tolls)
-					}),
 					ach(6022),		-- Quick Shot
-					ach(9764, {		-- Rocketeer: Gold (11 tolls)
-						i(122119),		-- Everlasting Darkmoon Firework
-						ach(9766),		-- Rocketeer: Silver (15 tolls)
-						ach(9769),		-- Rocketeer: Bronze (20 tolls)
-						ach(9770),		-- Blast Off! (25 tolls)
-					}),
 					ach(6020, {		-- Step Right Up
 						crit(1),		-- Cannon Blast
 						crit(2),		-- Shooting Gallery
@@ -162,25 +106,7 @@ _.Achievements =
 						crit(5),		-- Thunder Bluff
 						crit(6),		-- Undercity
 					})),
-					ach(11919, {	-- Taking this Show on the Road
-						crit(1),		-- Guitarist
-						crit(2),		-- Bassist
-						crit(3),		-- Drummer
-						crit(4),		-- Vocals
-					}),
 					ach(6332),		-- That Rabbit's Dynamite!
-					ach(9983, {		-- That's Whack!
-						i(123862),		-- Hogs' Studded Collar
-					}),
-					ach(9894, {		-- Triumphant Turtle Tossing
-						i(122123),		-- Darkmoon Ring-Flinger
-					}),
-					ach(9792, {		-- Wanderluster: Gold (11 tolls)
-						i(122126),		-- Attraction Sign
-						ach(9790),		-- Wanderluster: Silver (15 tolls)
-						ach(9787),		-- Wanderluster: Bronze (20 tolls)
-						ach(9786),		-- Wayfarer (25 tolls)
-					}),
 				},
 			}),
 		},

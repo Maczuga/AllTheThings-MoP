@@ -21,14 +21,6 @@ _.Achievements =
 						i(92744),		-- Heavy Sack of Gold
 					}),
 					ach(7936),		-- Pandaren Spirit Tamer*
-					ach(11856, {	-- Pet Battle Challenge: Deadmines*
-						i(151632),		-- Mining Monkey
-					}),
-					ach(11765, {	-- Pet Battle Challenge: Wailing Caverns*
-						i(147543),		-- Son of Skum
-					}),
-					ach(12927),		-- Polished Pet Charmer*
-					ach(9712),	 	-- Shiny Pet Charmer*
 					ach(6607, {		-- Taming Azeroth*
 						title(207),		-- Tamer
 						crit(1),		-- Taming Outland
@@ -42,14 +34,6 @@ _.Achievements =
 						crit(2),		-- Bordin Steadyfist (Deepholm)
 						crit(3),		-- Goz Banefury (Twilight Highlands)
 						crit(4),		-- Obalis (Uldum)
-					}),
-					ach(9724, {		-- Taming Draenor*
-						crit(1),		-- Ashlei (Shadowmoon Valley)
-						crit(2),		-- Cymre Brightblade (Gorgrond)
-						crit(3),		-- Gargra (Frostfire Ridge)
-						crit(4),		-- Taralune (Talador)
-						crit(5),		-- Tarr the Terrible (Nagrand)
-						crit(6),		-- Vesharr (Spires of Arak)
 					}),
 					a(ach(6603, {	-- Taming Eastern Kingdoms*
 						crit(1),		-- Julia Stevens (Elwynn Forest)

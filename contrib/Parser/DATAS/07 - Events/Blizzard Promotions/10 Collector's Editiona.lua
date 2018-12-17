@@ -18,11 +18,6 @@ _.WorldEvents =
 						})),
 					}),
 				}),
-				n(-568, {	-- Overwatch: Origins
-					un(6, ach(11064, {	-- Collector's Edition: Baby Winston
-						un(6, i(134047)),	-- Baby Winston
-					})),
-				}),
 				n(-550, {	-- Starcraft Collector's Edition
 					n(-564, {	-- Starcraft II: Wings of Liberty
 						un(6, ach(4824, {	-- Collector's Edition: Mini Thor
@@ -32,11 +27,6 @@ _.WorldEvents =
 					n(-565, {	-- Starcraft II: Heart of the Swarm
 						un(6, ach(7842, {	-- Collector's Edition: Baneling
 							un(6, i(90177)),	-- Baneling 
-						})),
-					}),
-					n(-576, {	-- Starcraft II: Legacy of the Void
-						un(6, ach(10309, {	-- Collector's Edition: Zeradar
-							un(6, i(128423)),	-- Zeradar
 						})),
 					}),
 				}),
@@ -84,25 +74,6 @@ _.WorldEvents =
 						})),
 						un(6, ach(8916, {	-- Collector's Edition: Dread Raven
 							un(6, i(109013)),	-- Reins of the Dread Raven
-						})),
-					}),
-					tier(7, {	-- Legion
-						un(6, ach(10321, {	-- Collector's Edition: Nibbles
-							un(6, i(128426)),	-- Nibbles
-						})),
-						un(6, ach(10320, {	-- Collector's Edition: Illidari Felstalker
-							un(6, i(128425)),	-- Reins of the Illidari Felstalker
-						})),
-					}),
-					n(-10052, {	-- Battle for Azeroth
-						un(6, h(ach(12230, {	-- Collector's Edition: Gilded Ravasaur
-							i(153540),	-- Gilded Ravasaur
-						}))),
-						un(6, a(ach(12229, {	-- Collector's Edition: Seabraid Stallion
-							i(153539),	-- Seabraid Stallion
-						}))),
-						un(6, ach(12232, {	-- Collector's Edition: Tottle
-							i(153541),	-- Tottle
 						})),
 					}),
 				}),

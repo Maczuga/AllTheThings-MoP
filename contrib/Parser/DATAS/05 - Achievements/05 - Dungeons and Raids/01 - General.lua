@@ -16,16 +16,6 @@ _.Achievements =
 		["groups"] = {
 			n(-9955, { -- General
 				["groups"] = {
-					ach(12807, {	-- Battle for Azeroth Dungeon Hero
-						crit(1),		-- Heroic: The Temple of Sethraliss
-						crit(2),		-- Heroic: Underrot
-						crit(3),		-- Heroic: Waycrest Manor
-						crit(4),		-- Heroic: Freehold
-						crit(5),		-- Heroic: Shrine of the Storm
-						crit(6),		-- Heroic: Atal'Dazar
-						crit(7),		-- Heroic: Tol Dagor
-						crit(8),		-- Heroic: The MOTHERLODE!!
-					}),
 					ach(4844, {		-- Cataclysm Dungeon Hero
 						crit(1),		-- Heroic: Blackrock Caverns
 						crit(2),		-- Heroic: Throne of the Tides
@@ -97,30 +87,6 @@ _.Achievements =
 						crit(11),		-- Throne of the Four Winds
 						crit(12),		-- The Bastion of Twilight
 					}),
-					ach(9391, {		-- Draenor Dungeon Hero
-						crit(1),		-- Heroic: Bloodmaul Slag Mines
-						crit(2),		-- Heroic: Iron Docks
-						crit(3),		-- Heroic: Auchindoun
-						crit(4),		-- Heroic: Skyreach
-						crit(5),		-- Heroic: The Everbloom
-						crit(6),		-- Heroic: Grimrail Depot
-						crit(7),		-- Heroic: Shadowmoon Burial Grounds
-						crit(8),		-- Heroic: Upper Blackrock Spire
-					}),
-					ach(11987, {	-- Glory of the Argus Raider
-						i(152815),		-- Antoran Gloomhound
-						crit(1),		-- Hard to Kill
-						crit(2),		-- Together We Stand
-						crit(3),		-- Worm-monger
-						crit(4),		-- Portal Combat
-						crit(5),		-- Don't Sweat the Technique
-						crit(6),		-- Hounds Good To Me
-						crit(7),		-- This is the War Room!
-						crit(8),		-- Spheres of Influence
-						crit(9),		-- The World Revolves Around Me
-						crit(10),		-- Remember the Titans
-						crit(11),		-- Stardust Crusaders
-					}),
 					ach(4845, {		-- Glory of the Cataclysm Hero
 						i(62900),		-- Reins of the Volcanic Stone Drake
 						crit(1),		-- Cataclysm Dungeon Hero
@@ -179,52 +145,6 @@ _.Achievements =
 						crit(23),		-- Stay Chill
 						crit(24),		-- Four Play
 					}),
-					ach(9396, {		-- Glory of the Draenor Hero
-						i(116670),		-- Frostplains Battleboar
-						crit(1),		-- Draenor Dungeon Hero
-						crit(2),		-- A Gift of Earth and Fire
-						crit(3),		-- Come With Me If You Want to Live
-						crit(4),		-- Is Draenor on Fire?
-						crit(5),		-- Militaristic, Expansionist
-						crit(6),		-- Expert Timing
-						crit(7),		-- Take Cover!
-						crit(8),		-- ...They All Fall Down
-						crit(9),		-- Ready for Raiding IV
-						crit(10),		-- Magnify... Enhance
-						crit(11),		-- I Saw Solis
-						crit(12),		-- Monomania
-						crit(13),		-- This Is Why We Can't Have Nice Things
-						crit(14),		-- No Ticket
-						crit(15),		-- Water Management
-						crit(16),		-- Weed Whacker
-						crit(17),		-- What's Your Sign?
-						crit(18),		-- Icky Ichors
-						crit(19),		-- Souls of the Lost
-						crit(20),		-- Magnets, How Do They Work?
-						crit(21),		-- Leeeeeeeeeeeeeroy...?
-						crit(22),		-- Bridge Over Troubled Fire
-						crit(23),		-- Dragonmaw? More Like Dragonfall!
-					}),
-					ach(8985, {		-- Glory of the Draenor Raider
-						i(116383),		-- Gorestrider Gronnling
-						crit(1),		-- Flame On!
-						crit(2),		-- Hurry Up, Maggot!
-						crit(3),		-- More Like Wrecked-us
-						crit(4),		-- A Fungus Among Us
-						crit(5),		-- Brothers in Arms
-						crit(6),		-- Pair Annihilation
-						crit(7),		-- Lineage of Power
-						crit(8),		-- The Iron Price
-						crit(9),		-- He Shoots, He Ores
-						crit(10),		-- Stamp Stamp Revolution
-						crit(11),		-- Fain Would Lie Down
-						crit(12),		-- The Steel Has Been Brought
-						crit(13),		-- There's Always a Bigger Train
-						crit(14),		-- Ya, We've Got Time...
-						crit(15),		-- Would You Give Me a Hand?
-						crit(16),		-- Be Quick or Be Dead
-						crit(17),		-- Ashes, Ashes...
-					}),
 					ach(6169, {		-- Glory of the Dragon Soul Raider
 						i(77068),		-- Reins of the Twilight Harbinger
 						crit(1),		-- Heroic: Morchok
@@ -255,22 +175,6 @@ _.Achievements =
 						crit(10),		-- Bucket List
 						crit(11),		-- Share the Pain
 						crit(12),		-- Only the Penitent...
-					}),
-					ach(10149, {	-- Glory of the Hellfire Raider
-						i(127140),		-- Infernal Direwolf
-						crit(1),		-- Nearly Indestructible
-						crit(2),		-- Turning the Tide
-						crit(3),		-- Waves Came Crashing Down All Around
-						crit(4),		-- Don't Fear the Reaper
-						crit(5),		-- A Race Against Slime
-						crit(6),		-- Get In My Belly!
-						crit(7),		-- Pro Toss
-						crit(8),		-- I'm a Soul Man
-						crit(9),		-- This Land Was Green and Good Until...
-						crit(10),		-- You Gotta Keep 'em Separated
-						crit(11),		-- Non-Lethal Enforcer
-						crit(12),		-- Bad Manner(oth)
-						crit(13),		-- Echoes of Doomfire
 					}),
 					ach(2136, {		-- Glory of the Hero
 						i(44160),		-- Reins of the Red Proto-Drake
@@ -350,55 +254,6 @@ _.Achievements =
 						crit(15),		-- All You Can Eat (25 player)
 						crit(16),		-- Been Waiting a Long Time for This (25 player)
 						crit(17),		-- Neck-Deep in Vile (25 player)
-					}),
-					ach(11163, {	-- Glory of the Legion Hero
-						i(141217),		-- Reins of the Leyfeather Hippogryph
-						crit(1),		-- But You Say He's Just a Friend
-						crit(2),		-- Stay Salty
-						crit(3),		-- Ready for Raiding V
-						crit(4),		-- Egg-cellent!
-						crit(5),		-- Burning Down the House
-						crit(6),		-- Got to Ketchum All
-						crit(7),		-- Can't Eat Just One
-						crit(8),		-- Stag Party
-						crit(9),		-- I Got What You Mead
-						crit(10),		-- Surge Protector
-						crit(11),		-- I Made a Food!
-						crit(12),		-- You're Just Making It WORSE!
-						crit(13),		-- I Ain't Even Cold
-						crit(14),		-- Who's Afraid of the Dark?
-						crit(15),		-- A Specter, Illuminated
-						crit(16),		-- You Used to Scrawl Me In Your Fel Tome
-						crit(17),		-- Black Rook Moan
-						crit(18),		-- Adds? More Like Bads
-						crit(19),		-- Instant Karma
-						crit(20),		-- Helheim Hath No Fury
-						crit(21),		-- Poor Unfortunate Souls
-						crit(22),		-- No Time to Waste
-						crit(23),		-- Clean House
-						crit(24),		-- Arcanic Cling
-						crit(25),		-- Waiting for Gerdo
-						crit(26),		-- Dropping Some Eaves
-					}),
-					ach(11180, {	-- Glory of the Legion Raider
-						i(141216),		-- Defiled Reins
-						crit(1),		-- Buggy Fight
-						crit(2),		-- Webbing Crashers
-						crit(3),		-- Scare Bear
-						crit(4),		-- Took the Red Eye Down
-						crit(5),		-- Imagined Dragons World Tour
-						crit(6),		-- Use the Force(s)
-						crit(7),		-- I Attack the Darkness
-						crit(8),		-- Cage Rematch
-						crit(9),		-- Grand Opening
-						crit(10),		-- Gluten Free
-						crit(11),		-- A Change In Scenery
-						crit(12),		-- Elementalry!
-						crit(13),		-- Fruit of All Evil
-						crit(14),		-- Not For You
-						crit(15),		-- Burning Bridges
-						crit(16),		-- Infinitesimal
-						crit(17),		-- I've Got My Eyes On You
 					}),
 					ach(8454, {		-- Glory of the Orgrimmar Raider
 						i(104208),		-- Reins of Galakras
@@ -541,92 +396,6 @@ _.Achievements =
 						crit(21),		-- Can't Touch This
 						crit(22),		-- From Dusk 'til Dawn
 						crit(23),		-- A Complete Circuit
-					}),
-					ach(11763, {	-- Glory of the Tomb Raider
-						style(3, title(362)),	-- ,the Tomb Raider
-						i(101426),		-- Micronax Controller (you also get this - Crieve)
-						crit(1),		-- Fel Turkey!
-						crit(2),		-- Grin and Bear It
-						crit(3),		-- Bingo!
-						crit(4),		-- Five Course Seafood Buffet
-						crit(5),		-- Sky Walker
-						crit(6),		-- Great Soul, Great Purpose
-						crit(7),		-- Wax On, Wax Off
-						crit(8),		-- Dark Souls
-						crit(9),		-- Grand Fin-ale
-					}),
-					ach(12806, {	-- Glory of the Uldir Raider
-						i(163216),		-- Bloodgorged Crawg
-						crit(1),		-- Double Dribble
-						crit(2),		-- Elevator Music
-						crit(3),		-- Parental Controls
-						crit(4),		-- Thrash Mouth - All Stars
-						crit(5),		-- What's in the Box?
-						crit(6),		-- Now We Got Bad Blood
-						crit(7),		-- Edgelords
-						crit(8),		-- Existential Crisis
-					}),
-					ach(12401, {	-- Glory of the Ulduar Raider
-						i(45802),		-- Reins of the Rusted Proto-Drake
-						i(45801),		-- Reins of the Ironbound Proto-Drake
-						crit(1),		-- Orbit-uary
-						crit(2),		-- Stokin' the Furnace
-						crit(3),		-- Iron Dwarf, Medium Rare
-						crit(4),		-- Heartbreaker
-						crit(5),		-- I Choose You, Steelbreaker
-						crit(6),		-- Disarmed
-						crit(7),		-- Crazy Cat Lady
-						crit(8),		-- I Could Say That This Cache Was Rare
-						crit(9),		-- Lose Your Illusion
-						crit(10),		-- Knock, Knock, Knock on Wood
-						crit(11),		-- Firefighter
-						crit(12),		-- I Love the Smell of Saronite in the Morning
-						crit(13),		-- One Light in the Darkness
-					}),
-					ach(12812, {	-- Glory of the Wartorn Hero
-						i(161215),		-- Reins of the Obsidian Krolusk
-						crit(1),		-- Pecking Order
-						crit(2),		-- I'm in Charge Now!
-						crit(3),		-- That Sweete Booty
-						crit(4),		-- Losing My Profession
-						crit(5),		-- Run Wild Like a Man On Fire
-						crit(6),		-- Alchemical Romance
-						crit(7),		-- Breath of the Shrine
-						crit(8),		-- The Void Lies Sleeping
-						crit(9),		-- Trust No One
-						crit(10),		-- Bringing Hexy Back
-						crit(11),		-- Gold Fever
-						crit(12),		-- It's Lit!
-						crit(13),		-- Not a Fun Guy
-						crit(14),		-- Taint Nobody Got Time For That
-						crit(15),		-- Sporely Alive
-						crit(16),		-- Snake Eyes
-						crit(17),		-- Snake Eater
-						crit(18),		-- Good Night, Sweet Prince
-						crit(19),		-- Remix to Ignition
-						crit(20),		-- Shot Through the Heart
-						crit(21),		-- Pitch Invasion
-						crit(22),		-- Ready for Raiding VI
-						crit(23),		-- Stand by Me
-						crit(24),		-- A Fish Out of Water
-						crit(25),		-- It Belongs in a Mausoleum!
-						crit(26),		-- How to Keep a Mummy
-						crit(27),		-- Wrap God
-					}),
-					ach(11162, {	-- Keystone Master
-						ach(11185),		-- Keystone Conqueror
-						ach(11184),		-- Keystone Challenger
-						ach(11183),		-- Keystone Initiate
-					}),
-					ach(11164, {	-- Legion Dungeon Hero
-						crit(1),		-- Heroic: Eye of Azshara
-						crit(2),		-- Heroic: Darkheart Thicket
-						crit(3),		-- Heroic: Halls of Valor
-						crit(4),		-- Heroic: Neltharion's Lair
-						crit(5),		-- Heroic: Assault on Violet Hold
-						crit(6),		-- Heroic: Vault of the Wardens
-						crit(7),		-- Heroic: Black Rook Hold
-						crit(8),		-- Heroic: Maw of Souls
 					}),
 					ach(4478, {		-- Looking For Multitudes
 						i(49912),		-- Perky Pug

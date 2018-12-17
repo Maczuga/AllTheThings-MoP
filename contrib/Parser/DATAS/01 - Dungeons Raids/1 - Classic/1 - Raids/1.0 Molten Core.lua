@@ -628,7 +628,6 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(11502, e(1528, { -- Ragnaros
 				ach(686),	-- Molten Core
-				i(138018),	-- Clothes Chest Pattern: Molten Core
 				i(17204, {	-- Eye of Sulfuras
 					["groups"] = {
 						i(17182, { 	-- Sulfuras, Hand of Ragnaros
@@ -641,7 +640,6 @@ _.Instances = { tier(1, {	-- Classic
 					},
 					["classes"] = { 6, 11, 2, 7, 1 }, -- Death Knight / Druid / Paladin / Shaman / Warrior
 				}),
-				i(138833),	-- Illusion: Flametongue (Shaman)
 				i(17076),	-- Bonereaver's Edge
 				i(17104),	-- Spinal Reaper
 				i(18816),	-- Perdition's Blade

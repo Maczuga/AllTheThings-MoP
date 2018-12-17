@@ -14,7 +14,6 @@ local backdrop = {
 
 -- Performance Cache 
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
--- local C_ArtifactUI_GetAppearanceInfoByID = C_ArtifactUI.GetAppearanceInfoByID; 
 -- local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 -- local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByID;
 -- local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
@@ -249,166 +248,27 @@ app.GetTempDataSubMember = GetTempDataSubMember;
 (function()
 	-- Map all Skill IDs to the old Skill IDs
 	local tradeSkillMap = {
-		-- Alchemy Skills
-		[171] = 171,	-- Alchemy [7.3.5]
-		[2485] = 171,	-- Classic Alchemy [8.0.1]
-		[2484] = 171,	-- Outland Alchemy [8.0.1]
-		[2483] = 171,	-- Northrend Alchemy [8.0.1]
-		[2482] = 171,	-- Cataclysm Alchemy [8.0.1]
-		[2481] = 171,	-- Pandaria Alchemy [8.0.1]
-		[2480] = 171,	-- Draenor Alchemy [8.0.1]
-		[2479] = 171,	-- Legion Alchemy [8.0.1]
-		[2478] = 171,	-- Kul Tiran Alchemy [8.0.1]
-		
-		-- Archaeology Skills
-		[794] = 794,	-- Archaeology [7.3.5]
-		
-		-- Blacksmithing Skills
-		[164] = 164,	-- Blacksmithing [7.3.5]
-		[2477] = 164,	-- Classic Blacksmithing [8.0.1]
-		[2476] = 164,	-- Outland Blacksmithing [8.0.1]
-		[2475] = 164,	-- Northrend Blacksmithing [8.0.1]
-		[2474] = 164,	-- Cataclysm Blacksmithing [8.0.1]
-		[2473] = 164,	-- Pandaria Blacksmithing [8.0.1]
-		[2472] = 164,	-- Draenor Blacksmithing [8.0.1]
-		[2454] = 164,	-- Legion Blacksmithing [8.0.1]
-		[2437] = 164,	-- Kul Tiran Blacksmithing [8.0.1]
-		
-		-- Cooking Skills
-		[185] = 185,	-- Cooking [7.3.5]
-		[975] = 185,	-- Way of the Grill
-		[976] = 185,	-- Way of the Wok
-		[977] = 185,	-- Way of the Pot
-		[978] = 185,	-- Way of the Steamer
-		[979] = 185,	-- Way of the Oven
-		[980] = 185,	-- Way of the Brew
-		[2548] = 185,	-- Classic Cooking [8.0.1]
-		[2547] = 185,	-- Outland Cooking [8.0.1]
-		[2546] = 185,	-- Northrend Cooking [8.0.1]
-		[2545] = 185,	-- Cataclysm Cooking [8.0.1]
-		[2544] = 185,	-- Pandaria Cooking [8.0.1]
-		[2543] = 185,	-- Draenor Cooking [8.0.1]
-		[2542] = 185,	-- Legion Cooking [8.0.1]
-		[2541] = 185,	-- Kul Tiran Cooking [8.0.1]
-		
-		-- Enchanting Skills
-		[333] = 333,	-- Enchanting [7.3.5]
-		[2494] = 333,	-- Classic Enchanting [8.0.1]
-		[2493] = 333,	-- Outland Enchanting [8.0.1]
-		[2492] = 333,	-- Northrend Enchanting [8.0.1]
-		[2491] = 333,	-- Cataclysm Enchanting [8.0.1]
-		[2489] = 333,	-- Pandaria Enchanting [8.0.1]
-		[2488] = 333,	-- Draenor Enchanting [8.0.1]
-		[2487] = 333,	-- Legion Enchanting [8.0.1]
-		[2486] = 333,	-- Kul Tiran Enchanting [8.0.1]
-		
-		-- Engineering Skills
-		[202] = 202,	-- Engineering [7.3.5]
-		[2506] = 202,	-- Classic Engineering [8.0.1]
-		[2505] = 202,	-- Outland Engineering [8.0.1]
-		[2504] = 202,	-- Northrend Engineering [8.0.1]
-		[2503] = 202,	-- Cataclysm Engineering [8.0.1]
-		[2502] = 202,	-- Pandaria Engineering [8.0.1]
-		[2501] = 202,	-- Draenor Engineering [8.0.1]
-		[2500] = 202,	-- Legion Engineering [8.0.1]
-		[2499] = 202,	-- Kul Tiran Engineering [8.0.1]
-		
-		-- First Aid Skills
-		[129] = 129,	-- First Aid [7.3.5] [REMOVED FROM GAME]
-		
-		-- Fishing Skills
-		[356] = 356,	-- Fishing [7.3.5]
-		[2592] = 356,	-- Classic Fishing [8.0.1]
-		[2591] = 356,	-- Outland Fishing [8.0.1]
-		[2590] = 356,	-- Northrend Fishing [8.0.1]
-		[2589] = 356,	-- Cataclysm Fishing [8.0.1]
-		[2588] = 356,	-- Pandaria Fishing [8.0.1]
-		[2587] = 356,	-- Draenor Fishing [8.0.1]
-		[2586] = 356,	-- Legion Fishing [8.0.1]
-		[2585] = 356,	-- Kul Tiran Fishing [8.0.1]
-		
-		-- Herbalism Skills
-		[182] = 182,	-- Herbalism [7.3.5]
-		[2556] = 182,	-- Classic Herbalism [8.0.1]
-		[2555] = 182,	-- Outland Herbalism [8.0.1]
-		[2554] = 182,	-- Northrend Herbalism [8.0.1]
-		[2553] = 182,	-- Cataclysm Herbalism [8.0.1]
-		[2552] = 182,	-- Pandaria Herbalism [8.0.1]
-		[2551] = 182,	-- Draenor Herbalism [8.0.1]
-		[2550] = 182,	-- Legion Herbalism [8.0.1]
-		[2549] = 182,	-- Kul Tiran Herbalism [8.0.1]
-		
-		-- Inscription Skills
-		[773] = 773,	-- Inscription [7.3.5]
-		[2514] = 773,	-- Classic Inscription [8.0.1]
-		[2513] = 773,	-- Outland Inscription [8.0.1]
-		[2512] = 773,	-- Northrend Inscription [8.0.1]
-		[2511] = 773,	-- Cataclysm Inscription [8.0.1]
-		[2510] = 773,	-- Pandaria Inscription [8.0.1]
-		[2509] = 773,	-- Draenor Inscription [8.0.1]
-		[2508] = 773,	-- Legion Inscription [8.0.1]
-		[2507] = 773,	-- Kul Tiran Inscription [8.0.1]
-		
-		-- Jewelcrafting Skills
-		[755] = 755,	-- Jewelcrafting [7.3.5]
-		[2524] = 755,	-- Classic Jewelcrafting [8.0.1]
-		[2523] = 755,	-- Outland Jewelcrafting [8.0.1]
-		[2522] = 755,	-- Northrend Jewelcrafting [8.0.1]
-		[2521] = 755,	-- Cataclysm Jewelcrafting [8.0.1]
-		[2520] = 755,	-- Pandaria Jewelcrafting [8.0.1]
-		[2519] = 755,	-- Draenor Jewelcrafting [8.0.1]
-		[2518] = 755,	-- Legion Jewelcrafting [8.0.1]
-		[2517] = 755,	-- Kul Tiran Jewelcrafting [8.0.1]
-		
-		-- Leatherworking Skills
-		[165] = 165,	-- Leatherworking [7.3.5]
-		[2532] = 165,	-- Classic Leatherworking [8.0.1]
-		[2531] = 165,	-- Outland Leatherworking [8.0.1]
-		[2530] = 165,	-- Northrend Leatherworking [8.0.1]
-		[2529] = 165,	-- Cataclysm Leatherworking [8.0.1]
-		[2528] = 165,	-- Pandaria Leatherworking [8.0.1]
-		[2527] = 165,	-- Draenor Leatherworking [8.0.1]
-		[2526] = 165,	-- Legion Leatherworking [8.0.1]
-		[2525] = 165,	-- Kul Tiran Leatherworking [8.0.1]
-		
-		-- Mining Skills
-		[186] = 186,	-- Mining [7.3.5]
-		[2572] = 186,	-- Classic Mining [8.0.1]
-		[2571] = 186,	-- Outland Mining [8.0.1]
-		[2570] = 186,	-- Northrend Mining [8.0.1]
-		[2569] = 186,	-- Cataclysm Mining [8.0.1]
-		[2568] = 186,	-- Pandaria Mining [8.0.1]
-		[2567] = 186,	-- Draenor Mining [8.0.1]
-		[2566] = 186,	-- Legion Mining [8.0.1]
-		[2565] = 186,	-- Kul Tiran Mining [8.0.1]
-		
-		-- Skinning Skills
-		[393] = 393,	-- Skinning [7.3.5]
-		[2564] = 393,	-- Classic Skinning [8.0.1]
-		[2563] = 393,	-- Outland Skinning [8.0.1]
-		[2562] = 393,	-- Northrend Skinning [8.0.1]
-		[2561] = 393,	-- Cataclysm Skinning [8.0.1]
-		[2560] = 393,	-- Pandaria Skinning [8.0.1]
-		[2559] = 393,	-- Draenor Skinning [8.0.1]
-		[2558] = 393,	-- Legion Skinning [8.0.1]
-		[2557] = 393,	-- Kul Tiran Skinning [8.0.1]
-		
-		-- Tailoring Skills
-		[197] = 197,	-- Tailoring [7.3.5]
-		[2540] = 197,	-- Classic Tailoring [8.0.1]
-		[2539] = 197,	-- Outland Tailoring [8.0.1]
-		[2538] = 197,	-- Northrend Tailoring [8.0.1]
-		[2537] = 197,	-- Cataclysm Tailoring [8.0.1]
-		[2536] = 197,	-- Pandaria Tailoring [8.0.1]
-		[2535] = 197,	-- Draenor Tailoring [8.0.1]
-		[2534] = 197,	-- Legion Tailoring [8.0.1]
-		[2533] = 197,	-- Kul Tiran Tailoring [8.0.1]
+		["Alchemy"] = 171,	-- Alchemy
+		["Archaeology"] = 794,	-- Archaeology
+		["Blacksmithing"] = 164,	-- Blacksmithing
+		["Cooking"] = 185,	-- Cooking
+		["Enchanting"] = 333,	-- Enchanting
+		["Engineering"] = 202,	-- Engineering
+		["First Aid"] = 129,	-- First Aid
+		["Fishing"] = 356,	-- Fishing
+		["Herbalism"] = 182,	-- Herbalism
+		["Inscription"] = 773,	-- Inscription
+		["Jewelcrafting"] = 755,	-- Jewelcrafting
+		["Leatherworking"] = 165,	-- Leatherworking
+		["Mining"] = 186,	-- Mining
+		["Skinning"] = 393,	-- Skinning
+		["Tailoring"] = 197,	-- Tailoring
 	};
 	app.GetBaseTradeSkillID = function(skillID)
 		return tradeSkillMap[skillID] or skillID;
 	end
 	app.GetTradeSkillLine = function()
-		return app.GetBaseTradeSkillID(C_TradeSkillUI.GetTradeSkillLine());
+		return app.GetBaseTradeSkillID(select(1, GetTradeSkillLine()));
 	end
 	app.GetTradeSkillCache = function(invalidate)
 		local cache = GetTempDataMember("PROFESSION_CACHE");
@@ -1360,42 +1220,71 @@ local function GetHolidayCache()
 		cache = {};
 		SetTempDataMember("HOLIDAY_CACHE", cache);
 		SetDataMember("HOLIDAY_CACHE", cache);
-		local date = C_Calendar.GetDate();
-		C_Calendar.SetAbsMonth(date.month, date.year);
+		-- local date = C_Calendar.GetDate();
+		local _, curMonth, curDay, curYear = CalendarGetDate()
+		-- C_Calendar.SetAbsMonth(date.month, date.year);
 		for month=1,12,1 do
-			C_Calendar.SetMonth(1);
+			-- C_Calendar.SetMonth(1);
 			for day=1,31,1 do
-				local numEvents = C_Calendar.GetNumDayEvents(0, day);
+				local monthOffset = month - curMonth;
+				local numEvents = CalendarGetNumDayEvents(monthOffset, day);
 				if numEvents > 0 then
 					for index=1,numEvents,1 do
-						local event = C_Calendar.GetDayEvent(0, day, index)
-						if event and event.calendarType == "HOLIDAY" and event.sequenceType == "START" then
-							if event.iconTexture then
-								local t = cache[event.iconTexture];
+						local title, hour, minute, calendarType, sequenceType, eventType, texture, modStatus, inviteStatus, invitedBy, difficulty, inviteType, sequenceIndex, numSequenceDayss = CalendarGetDayEvent(monthOffset, day, index)
+						-- local event = C_Calendar.GetDayEvent(0, day, index)
+						if calendarType and calendarType == "HOLIDAY" then
+							if texture then
+								local t = cache[texture];
 								if not t then
 									t = {
-										["name"] = event.title,
-										["icon"] = event.iconTexture,
+										["name"] = title,
+										["icon"] = texture,
 										["times"] = {},
 									};
-									cache[event.iconTexture] = t;
-								elseif event.iconTexture == 235465 then
+									cache[texture] = t;
+								elseif texture == 235465 then
 									-- Harvest Festival and Pilgrims Bounty use the same icon...
 									t = {
-										["name"] = event.title,
-										["icon"] = event.iconTexture,
+										["name"] = title,
+										["icon"] = texture,
 										["times"] = {},
 									};
 									cache[235466] = t;
 								end
+
+								if sequenceType then
+									if sequenceType == "START" then
+										tinsert(t.times,
+										{
+											["start"] = time({
+												year=curYear,
+												month=month,
+												day=curDay,
+												hour=hour,
+												minute=minute,
+											}),
+										});
+									elseif sequenceType == "END" then
+										tinsert(t.times,
+										{
+											["end"] = time({
+												year=curYear,
+												month=month,
+												day=curDay,
+												hour=hour,
+												minute=minute,
+											}),
+										});
+									end
+								end
 								tinsert(t.times,
 								{
 									["start"] = time({
-										year=event.startTime.year,
-										month=event.startTime.month,
-										day=event.startTime.monthDay,
-										hour=event.startTime.hour,
-										minute=event.startTime.minute,
+										year=curYear,
+										month=month,
+										day=curDay,
+										hour=hour,
+										minute=minute,
 									}),
 									["end"] = time({
 										year=event.endTime.year,
@@ -1413,7 +1302,7 @@ local function GetHolidayCache()
 				end
 			end
 		end
-		C_Calendar.SetAbsMonth(date.month, date.year);
+		-- C_Calendar.SetAbsMonth(date.month, date.year);
 	end
 	return cache;
 end
@@ -2127,95 +2016,97 @@ local function OpenMainList()
 	app:OpenWindow("Prime");
 end
 local function OpenMiniListForCurrentProfession(manual, refresh)
-	if app.Categories.Professions then
-		local popout = app:GetWindow("Tradeskills");
-		local tradeSkillLine = AllTheThings.GetTradeSkillLine();
-		if tradeSkillLine and GetDataMember("AutoProfessionMiniList") and fieldCache["requireSkill"][tradeSkillLine]
-			and not (C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild()) then
-			if manual or not refresh then
-				popout:ClearAllPoints();
-				popout:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
-				popout:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
-				popout:SetVisible(true);
-			end
-		else
-			if manual then
-				app.print("You must have a profession open to open the profession mini list.");
-			end
-			popout:SetVisible(false);
-		end
+	-- TODO I tried redoing - there is no receipe into in Blizzard MoP API
+	-- if app.Categories.Professions then
+	-- 	local popout = app:GetWindow("Tradeskills");
+	-- 	local tradeSkillLine = AllTheThings.GetTradeSkillLine();
+	-- 	if tradeSkillLine and GetDataMember("AutoProfessionMiniList") and fieldCache["requireSkill"][tradeSkillLine]
+	-- 		and not (IsTradeSkillLinked()) then
+	-- 		-- and not (IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild()) then
+	-- 		if manual or not refresh then
+	-- 			popout:ClearAllPoints();
+	-- 			popout:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
+	-- 			popout:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+	-- 			popout:SetVisible(true);
+	-- 		end
+	-- 	else
+	-- 		if manual then
+	-- 			app.print("You must have a profession open to open the profession mini list.");
+	-- 		end
+	-- 		popout:SetVisible(false);
+	-- 	end
 		
-		if popout:IsShown() and refresh then
-			-- Cache Learned Spells
-			local skillCache = fieldCache["spellID"];
-			if skillCache then
-				local currentCategoryID, categories = -1, {};
-				local categoryIDs = { C_TradeSkillUI.GetCategories() };
-				for i = 1,#categoryIDs do
-					currentCategoryID = categoryIDs[i];
-					local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-					if categoryData then
-						if not categories[currentCategoryID] then
-							app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
-							categories[currentCategoryID] = true;
-						end
-					end
-				end
+	-- 	if popout:IsShown() and refresh then
+	-- 		-- Cache Learned Spells
+	-- 		local skillCache = fieldCache["spellID"];
+	-- 		if skillCache then
+	-- 			local currentCategoryID, categories = -1, {};
+	-- 			local categoryIDs = { C_TradeSkillUI.GetCategories() };
+	-- 			for i = 1,#categoryIDs do
+	-- 				currentCategoryID = categoryIDs[i];
+	-- 				local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+	-- 				if categoryData then
+	-- 					if not categories[currentCategoryID] then
+	-- 						app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
+	-- 						categories[currentCategoryID] = true;
+	-- 					end
+	-- 				end
+	-- 			end
 				
-				-- Cache learned recipes
-				local learned = 0;
-				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
-				for i = 1,#recipeIDs do
-					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
-						currentCategoryID = spellRecipeInfo.categoryID;
-						if not categories[currentCategoryID] then
-							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-							if categoryData then
-								app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
-								categories[currentCategoryID] = true;
-							end
-						end
-						if spellRecipeInfo.learned then
-							SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-							if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
-								SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-								learned = learned + 1;
-							end
-						end
-						if not skillCache[spellRecipeInfo.recipeID] then
-							--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
-							skillCache[spellRecipeInfo.recipeID] = { {} };
-						end
-					end
-				end
+	-- 			-- Cache learned recipes
+	-- 			local learned = 0;
+	-- 			local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
+	-- 			for i = 1,#recipeIDs do
+	-- 				if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+	-- 					currentCategoryID = spellRecipeInfo.categoryID;
+	-- 					if not categories[currentCategoryID] then
+	-- 						local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+	-- 						if categoryData then
+	-- 							app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
+	-- 							categories[currentCategoryID] = true;
+	-- 						end
+	-- 					end
+	-- 					if spellRecipeInfo.learned then
+	-- 						SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+	-- 						if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
+	-- 							SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+	-- 							learned = learned + 1;
+	-- 						end
+	-- 					end
+	-- 					if not skillCache[spellRecipeInfo.recipeID] then
+	-- 						--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
+	-- 						skillCache[spellRecipeInfo.recipeID] = { {} };
+	-- 					end
+	-- 				end
+	-- 			end
 				
-				-- Open the Tradeskill list for this Profession
-				local tradeSkillID = AllTheThings.GetTradeSkillLine();
-				if popout.tradeSkillID ~= tradeSkillID then
-					popout.tradeSkillID = tradeSkillID;
-					for i,group in ipairs(app.Categories.Professions) do
-						if group.requireSkill == tradeSkillID then
-							popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
-							app.BuildGroups(popout.data, popout.data.g);
-							app.UpdateGroups(popout.data, popout.data.g, 1);
-							if not popout.data.expanded then
-								popout.data.expanded = true;
-								ExpandGroupsRecursively(popout.data, true);
-							end
-							popout:SetVisible(true);
-						end
-					end
-				end
+	-- 			-- Open the Tradeskill list for this Profession
+	-- 			local tradeSkillID = AllTheThings.GetTradeSkillLine();
+	-- 			if popout.tradeSkillID ~= tradeSkillID then
+	-- 				popout.tradeSkillID = tradeSkillID;
+	-- 				for i,group in ipairs(app.Categories.Professions) do
+	-- 					if group.requireSkill == tradeSkillID then
+	-- 						popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
+	-- 						app.BuildGroups(popout.data, popout.data.g);
+	-- 						app.UpdateGroups(popout.data, popout.data.g, 1);
+	-- 						if not popout.data.expanded then
+	-- 							popout.data.expanded = true;
+	-- 							ExpandGroupsRecursively(popout.data, true);
+	-- 						end
+	-- 						popout:SetVisible(true);
+	-- 					end
+	-- 				end
+	-- 			end
 			
-				-- If something new was "learned", then refresh the data.
-				if learned > 0 then
-					app:RefreshData(false, true, true);
-					app.print("Cached " .. learned .. " known recipes!");
-					wipe(searchCache);
-				end
-			end
-		end
-	end
+	-- 			-- If something new was "learned", then refresh the data.
+	-- 			if learned > 0 then
+	-- 				app:RefreshData(false, true, true);
+	-- 				app.print("Cached " .. learned .. " known recipes!");
+	-- 				wipe(searchCache);
+	-- 			end
+	-- 		end
+	-- 	end
+	-- end
 end
 local function ToggleMainList()
 	app:ToggleWindow("Prime");
@@ -2406,33 +2297,34 @@ local function RefreshCollections()
 		app:GetDataCache();
 		
 		-- Refresh Toys from Cache
-		local collectedToys = GetDataMember("CollectedToys", {});
-		for id,group in pairs(fieldCache["toyID"]) do
-			if not collectedToys[id] and PlayerHasToy(id) then
-				collectedToys[id] = 1;
-			end
-		end
+		-- local collectedToys = GetDataMember("CollectedToys", {});
+		-- for id,group in pairs(fieldCache["toyID"]) do
+		-- 	if not collectedToys[id] and PlayerHasToy(id) then
+		-- 		collectedToys[id] = 1;
+		-- 	end
+		-- end
 		
 		-- Refresh Sources from Cache
-		local collectedSources = GetDataMember("CollectedSources");
-		if GetDataMember("CompletionistMode") then
-			-- Completionist Mode can simply use the *fast* blizzard API.
-			for id,group in pairs(fieldCache["s"]) do
-				if not collectedSources[id] then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						collectedSources[id] = 1;
-					end
-				end
-			end
-		else
-			-- Unique Mode requires a lot more calculation.
-			for id,group in pairs(fieldCache["s"]) do
-				if not collectedSources[id] then
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(id);
-					if sourceInfo and app.ItemSourceFilter(sourceInfo) then collectedSources[id] = sourceInfo.isCollected and 1 or 2; end
-				end
-			end
-		end
+		-- local collectedSources = GetDataMember("CollectedSources");
+		-- if GetDataMember("CompletionistMode") then
+		-- 	-- Completionist Mode can simply use the *fast* blizzard API.
+		-- 	for id,group in pairs(fieldCache["s"]) do
+		-- 		print(id)
+		-- 		if not collectedSources[id] then
+		-- 			if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
+		-- 				collectedSources[id] = 1;
+		-- 			end
+		-- 		end
+		-- 	end
+		-- else
+		-- 	-- Unique Mode requires a lot more calculation.
+		-- 	for id,group in pairs(fieldCache["s"]) do
+		-- 		if not collectedSources[id] then
+		-- 			local sourceInfo = C_TransmogCollection_GetSourceInfo(id);
+		-- 			if sourceInfo and app.ItemSourceFilter(sourceInfo) then collectedSources[id] = sourceInfo.isCollected and 1 or 2; end
+		-- 		end
+		-- 	end
+		-- end
 		
 		-- Refresh the Collection Windows!
 		app:RefreshData(false, true);
@@ -2450,11 +2342,12 @@ local function RefreshMountCollection()
 		local previousProgress = app:GetDataCache().progress or 0;
 		
 		-- Refresh Mounts
+		local mountCount = GetNumCompanions("Mount");
 		local collectedSpells = GetDataMember("CollectedSpells", {});
 		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
-		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
-			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-			if spellID and isCollected then
+		for i = 1, mountCount, 1 do
+			local mountID, name, spellID = GetCompanionInfo("Mount", i)
+			if spellID then
 				collectedSpells[spellID] = 1;
 				collectedSpellsPerCharacter[spellID] = 1;
 			end
@@ -2599,21 +2492,41 @@ end
 
 app.SetPortraitTexture = _G["SetPortraitTexture"];
 app.GetCurrentMapID = function()
-	local uiMapID = GetCurrentMapAreaID();
+	-- Cache the original map ID.
+	local originalMapID = GetCurrentMapAreaID();
+	SetMapToCurrentZone();
+	local mapID = GetCurrentMapAreaID();
 	
 	-- Onyxia's Lair fix
 	local text_to_mapID = app.L("ZONE_TEXT_TO_MAP_ID");
-	if text_to_mapID then
-		local otherMapID = (GetRealZoneText() and text_to_mapID[GetRealZoneText()]) or (GetSubZoneText() and text_to_mapID[GetSubZoneText()]);
-		if otherMapID then uiMapID = otherMapID; end
+	local otherMapID = text_to_mapID[GetRealZoneText()] or text_to_mapID[GetSubZoneText()];
+	if otherMapID then
+		mapID = otherMapID;
+	else
+		-- This is necessary because the map area ID for instances
+		-- is -1 when you initially enter them for a few moments. (not even a full second)
+		mapID = GetCurrentMapAreaID();
 	end
 	
-	-- print("Current UI Map ID: ", uiMapID);
-	return uiMapID;
+	SetMapByID(originalMapID);
+	return mapID;
 end
 app.GetMapName = function(mapID)
 	if mapID and mapID > 0 then
-		local name = GetMapNameByID(mapID);
+		mapID = app.BFAToLegionMapID(mapID);
+
+		local name = "";
+
+		-- Following mapIDs won't return their names in MoP client. Hardcode it.
+		if mapID == 13 then name = "Kalimdor";
+		elseif mapID == 14 then name = "Eastern Kingdoms";
+		elseif mapID == 466 then name = "Outland";
+		elseif mapID == 485 then name = "Northrend";
+		elseif mapID == 862 then name = "Pandaria";
+		elseif mapID == 948 then name = "The Maelstrom";
+		else
+			name = GetMapNameByID(mapID);
+		end;
 		return (name) or ("Map ID #" .. mapID);
 	else
 		return "Map ID #???";
@@ -3901,7 +3814,7 @@ app.BaseHoliday = {
 	end
 };
 app.CreateHoliday = function(id, t)
-	return createInstance(constructor(id, t, "holidayID"), app.BaseHoliday);
+	return nil; -- createInstance(constructor(id, t, "holidayID"), app.BaseHoliday);
 end
 
 -- Gear Set Lib
@@ -4286,8 +4199,8 @@ app.BaseMap = {
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
 			return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or "Interface/ICONS/INV_Misc_Map09";
-		elseif key == "lvl" then
-			return select(1, C_Map.GetMapLevels(t.mapID));
+		-- elseif key == "lvl" then
+		-- 	return select(1, C_Map.GetMapLevels(t.mapID));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -4341,10 +4254,11 @@ app.BaseMount = {
 			if not temp then
 				-- Harvest the Spell IDs for Conversion.
 				temp = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", {});
-				for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
-					local spellID = select(2, C_MountJournal_GetMountInfoByID(mountID));
-					if spellID then temp[spellID] = mountID; end
-				end
+				if t.spellID then temp[t.spellID] = mountID; end
+				-- for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+				-- 	local spellID = select(2, C_MountJournal_GetMountInfoByID(mountID));
+				-- 	if spellID then temp[spellID] = mountID; end
+				-- end
 				
 				-- Assign to the temporary data container.
 				SetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", temp);
@@ -4570,7 +4484,7 @@ end
 -- Profession Lib
 local SkillIDToSpellID = setmetatable({
 	[171] = 2259,	-- Alchemy
-	[794] = 158762,	-- Arch
+	[794] = 78670,	-- Arch
 	[164] = 2018,	-- Blacksmithing
 	[185] = 2550,	-- Cooking
 	[333] = 7411,	-- Enchanting
@@ -4590,11 +4504,13 @@ app.BaseProfession = {
 		if key == "key" then
 			return "requireSkill";
 		elseif key == "text" then
-			if t.requireSkill == 129 then return select(1, GetSpellInfo(t.spellID)); end
-			return C_TradeSkillUI.GetTradeSkillDisplayName(t.requireSkill);
+			return select(1, GetSpellInfo(t.requireSkill));
+			-- if t.requireSkill == 129 then return select(1, GetSpellInfo(t.spellID)); end
+			-- return C_TradeSkillUI.GetTradeSkillDisplayName(t.requireSkill);
 		elseif key == "icon" then
-			if t.requireSkill == 129 then return select(3, GetSpellInfo(t.spellID)); end
-			return C_TradeSkillUI.GetTradeSkillTexture(t.requireSkill);
+			return select(3, GetSpellInfo(t.requireSkill));
+			-- if t.requireSkill == 129 then return select(3, GetSpellInfo(t.spellID)); end
+			-- return C_TradeSkillUI.GetTradeSkillTexture(t.requireSkill);
 		elseif key == "spellID" then
 			return SkillIDToSpellID[t.requireSkill];
 		else
@@ -4782,8 +4698,8 @@ app.BaseSpecies = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			local numCollectedInfo = C_PetJournal.GetNumCollectedInfo(t.speciesID);
-			if numCollectedInfo == not nil and select(1, C_PetJournal.GetNumCollectedInfo(t.speciesID)) > 0 then
+			local numCollected, limit = C_PetJournal.GetNumCollectedInfo(t.speciesID);
+			if (numCollected or 0) > 0 then
 				return 1;
 			end
 		elseif key == "f" then
@@ -6754,12 +6670,16 @@ local function RowOnEnter(self)
 		if lvl > 1 then GameTooltip:AddDoubleLine(L("REQUIRES_LEVEL"), tostring(lvl)); end
 		--if reference.b then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
 		if reference.requireSkill then
-			GameTooltip:AddDoubleLine(L("REQUIRES"), tostring(GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0)));
+			local spellName = select(1, GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0));
+			if (spellName) then
+				GameTooltip:AddDoubleLine(L("REQUIRES"), tostring(spellName));
+			else
+				print("Invalid spell ID: " .. SkillIDToSpellID[reference.requireSkill]);
+			end
 			-- GameTooltip:AddDoubleLine(L("REQUIRE_SKILL_ID"), tostring(reference.requireSkill));
 		end
 		if reference.f and reference.f > 0 and GetDataMember("ShowFilterID") then GameTooltip:AddDoubleLine(L("FILTER_ID"), tostring(L("FILTER_ID_TYPES")[reference.f])); end
 		if reference.achievementID and GetDataMember("ShowAchievementID") then GameTooltip:AddDoubleLine(L("ACHIEVEMENT_ID"), tostring(reference.achievementID)); end
-		if reference.artifactID and GetDataMember("ShowArtifactID") then GameTooltip:AddDoubleLine(L("ARTIFACT_ID"), tostring(reference.artifactID)); end
 		if reference.difficultyID and GetDataMember("ShowDifficultyID") then GameTooltip:AddDoubleLine(L("DIFFICULTY_ID"), tostring(reference.difficultyID)); end
 		if GetDataMember("ShowCreatureID") then 
 			if reference.creatureID then
@@ -7222,8 +7142,8 @@ function app:GetDataCache()
 		-- Dungeons & Raids
 		db = {};
 		db.expanded = false;
-		db.text = GROUP_FINDER; -- L("DUNGEONS&RAIDS");
-		db.icon = "Interface\\LFGFRAME\\LFGIcon-ReturntoKarazhan"; -- LFGICON-DUNGEON";
+		db.text = "Dungeons & Raids"; -- L("DUNGEONS&RAIDS");
+		db.icon = "Interface\\ICONS\\achievement_raid_terraceofendlessspring03"; -- LFGICON-DUNGEON";
 		db.g = app.Categories.Instances;
 		table.insert(g, db);
 		
@@ -7232,7 +7152,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(46, app.Categories.Zones);
 			db.f = 0;
 			db.expanded = false;
-			db.text = BUG_CATEGORY2; -- L("ZONES");
+			db.text = "Outdoor Zones"; -- L("ZONES");
 			db.icon = "Interface\\ICONS\\Achievement_Zone_Outland_01"
 			db.collectible = false;
 			table.insert(g, db);
@@ -7242,7 +7162,7 @@ function app:GetDataCache()
 		if app.Categories.WorldDrops then
 			db = {};
 			db.expanded = false;
-			db.text = TRANSMOG_SOURCE_4; -- L("WORLD_DROPS");
+			db.text = "World Drops"; -- L("WORLD_DROPS");
 			db.icon = "Interface\\ICONS\\INV_Misc_Map02";
 			db.g = app.Categories.WorldDrops;
 			table.insert(g, db);
@@ -7253,7 +7173,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(4476, app.Categories.GroupFinder);	-- Looking for More
 			db.f = 0;
 			db.expanded = false;
-			db.text = DUNGEONS_BUTTON;
+			db.text = "Group Finder";
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -7263,7 +7183,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(4496, app.Categories.Achievements);	-- It's Over Nine Thousand
 			db.f = 0;
 			db.expanded = false;
-			db.text = TRACKER_HEADER_ACHIEVEMENTS;
+			db.text = "Achievements";
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -7273,8 +7193,8 @@ function app:GetDataCache()
 			db = {};
 			db.lvl = 67;
 			db.expanded = false;
-			db.text = GetCategoryInfo(15301);
-			db.icon = "Interface\\ICONS\\Achievement_Battleground_TempleOfKotmogu_02_Green";
+			db.text = "Expansion Features";
+			db.icon = "Interface\\ICONS\\achievement_battleground_templeofkotmogu_02";
 			db.g = app.Categories.ExpansionFeatures;
 			db.collectible = false;
 			table.insert(g, db);
@@ -7282,17 +7202,17 @@ function app:GetDataCache()
 		
 		-- World Events
 		if app.Categories.WorldEvents then
-			db = app.CreateAchievement(12827, app.Categories.WorldEvents);
+			db = app.CreateAchievement(7853, app.Categories.WorldEvents);
 			db.f = 0;
 			db.expanded = false;
-			db.text = EVENTS_LABEL; -- L("EVENTS");
+			db.text = "World Events"; -- L("EVENTS");
 			db.collectible = false;
 			table.insert(g, db);
 		end
 		
 		-- Anniversary
 		if app.Categories.Anniversary then
-			db = app.CreateAchievement(12827, app.Categories.Anniversary);
+			db = app.CreateAchievement(7853, app.Categories.Anniversary);
 			db.f = 0;
 			db.expanded = false;
 			db.text = "WoW Anniversary"; -- L("EVENTS");
@@ -7305,7 +7225,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(2144, app.Categories.Holidays);
 			db.f = 0;
 			db.expanded = false;
-			db.text = L("Holidays"); -- GetItemSubClassInfo(15,3); -- L("Holidays");
+			db.text = "Holidays"; -- GetItemSubClassInfo(15,3); -- L("Holidays");
 			db.npcID = -3;
 			db.collectible = false;
 			table.insert(g, db);
@@ -7317,7 +7237,7 @@ function app:GetDataCache()
 			db.f = 0;
 			db.lvl = 5; -- Must be 5 to train
 			db.expanded = false;
-			db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
+			db.text = "Pet Battles"; -- Pet Battles
 			db.g = app.Categories.PetBattles;
 			db.collectible = false;
 			table.insert(g, db);
@@ -7327,8 +7247,8 @@ function app:GetDataCache()
 		if app.Categories.PVP then
 			db = {};
 			db.expanded = false;
-			db.text = STAT_CATEGORY_PVP;
-			db.icon = "Interface\\Icons\\Achievement_PVP_Legion08";
+			db.text = "PvP";
+			db.icon = "Interface\\Icons\\achievement_pvp_p_250k";
 			db.g = app.Categories.PVP;
 			db.collectible = false;
 			table.insert(g, db);
@@ -7338,7 +7258,7 @@ function app:GetDataCache()
 		if app.Categories.Craftables then
 			db = app.CreateAchievement(5035, {});
 			db.expanded = false;
-			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM; -- L("Crafted Items");
+			db.text = "Craftables"; -- L("Crafted Items");
 			db.icon = "Interface\\ICONS\\ability_repair";
 			db.g = app.Categories.Craftables;
 			db.collectible = false;
@@ -7347,9 +7267,9 @@ function app:GetDataCache()
 		
 		-- Professions
 		if app.Categories.Professions then
-			db = app.CreateAchievement(10583, {});
+			db = app.CreateAchievement(7379, {});
 			db.expanded = false;
-			db.text = TRADE_SKILLS; -- L("PROFESSIONS");
+			db.text = "Professions"; -- L("PROFESSIONS");
 			db.icon = "Interface\\ICONS\\INV_Scroll_04";
 			db.g = app.Categories.Professions;
 			db.collectible = false;
@@ -7358,11 +7278,11 @@ function app:GetDataCache()
 		
 		-- Gear Sets
 		if app.Categories.GearSets then
-			db = app.CreateAchievement(11761, app.Categories.GearSets);
+			db = {}; -- app.CreateAchievement(11761, app.Categories.GearSets);
 			db.f = 0;
 			db.expanded = false;
-			db.text = LOOT_JOURNAL_ITEM_SETS; -- L("GEAR_SETS");
-			db.icon = "Interface\\ICONS\\Achievement_Transmog_Collections";
+			db.text = "Gear Sets"; -- L("GEAR_SETS");
+			db.icon = "Interface\\ICONS\\spell_magic_magearmor";
 			table.insert(g, db);
 		end
 		
@@ -7370,7 +7290,7 @@ function app:GetDataCache()
 		if app.Categories.InGameShop then
 			db = { };
 			db.expanded = false;
-			db.text = BATTLE_PET_SOURCE_10;
+			db.text = "In-Game Store";
 			db.icon = "Interface\\ICONS\\INV_Misc_Map02";
 			db.g = app.Categories.InGameShop;
 			table.insert(g, db);
@@ -7387,7 +7307,7 @@ function app:GetDataCache()
 		
 		-- Factions
 		if app.Categories.Factions then
-			db = app.CreateAchievement(11177, app.Categories.Factions);
+			db = app.CreateAchievement(6742, app.Categories.Factions);
 			db.expanded = false;
 			db.text = "Factions";
 			table.insert(g, db);
@@ -7395,19 +7315,19 @@ function app:GetDataCache()
 		
 		-- Mounts
 		if app.Categories.Mounts then
-			db = app.CreateAchievement(app.Faction == "Horde" and 12934 or 12933, app.Categories.Mounts);
+			db = app.CreateAchievement(app.Faction == "Horde" and 8302 or 8304, app.Categories.Mounts);
 			db.f = 100;
 			db.expanded = false;
-			db.text = MOUNTS; -- L("MOUNTS");
+			db.text = "Mounts"; -- L("MOUNTS");
 			table.insert(g, db);
 		end
 		
 		-- Pet Journal
 		if app.Categories.PetJournal then
-			db = app.CreateAchievement(12958, app.Categories.PetJournal);
+			db = app.CreateAchievement(7501, app.Categories.PetJournal);
 			db.f = 100;
 			db.expanded = false;
-			db.text = PET_JOURNAL;
+			db.text = "Pet Journal";
 			db.icon = "Interface\\ICONS\\INV_Pet_BattlePetTraining";
 			table.insert(g, db);
 		end
@@ -7421,13 +7341,13 @@ function app:GetDataCache()
 		end
 		
 		-- Toys
-		if app.Categories.Toys then
-			db = app.CreateAchievement(12996, app.Categories.Toys);
-			db.icon = "Interface\\ICONS\\INV_Misc_Toy_10";
-			db.expanded = false;
-			db.text = TOY_BOX; -- Toy Box
-			table.insert(g, db);
-		end
+		-- if app.Categories.Toys then
+		-- 	db = app.CreateAchievement(12996, app.Categories.Toys);
+		-- 	db.icon = "Interface\\ICONS\\INV_Misc_Toy_10";
+		-- 	db.expanded = false;
+		-- 	db.text = TOY_BOX; -- Toy Box
+		-- 	table.insert(g, db);
+		-- end
 		
 		--[[
 		-- Never Implemented
@@ -9019,268 +8939,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	end
 	UpdateWindow(self, true);
 end);
-(function()
-	local worldMapIDs = {
-		14,		-- Arathi Highlands
-		62,		-- Darkshore
-		875,	-- Zandalar
-		876,	-- Kul'Tiras
-		619,	-- The Broken Isles
-		885,	-- Antoran Wastes
-		830,	-- Krokuun
-		882,	-- Mac'Aree
-	};
-	app:GetWindow("WorldQuests", UIParent, function(self)
-		if not self.initialized then
-			self.initialized = true;
-			self.data = {
-				['text'] = "World Quests",
-				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp", 
-				["description"] = "These are World Quests that are currently available somewhere. Go get 'em!",
-				['visible'] = true, 
-				['expanded'] = true,
-				['back'] = 1,
-				['g'] = {
-					{
-						['text'] = "Update World Quests Now",
-						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
-						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
-						['OnClick'] = function(row, button)
-							Push(self, "Rebuild", self.Rebuild);
-							return true;
-						end,
-						['back'] = 0.5,
-					},
-				},
-			};
-			self.rawData = {};
-			local OnUpdateForItem = function(self)
-				for i,o in ipairs(self.g) do
-					o.visible = false;
-				end
-			end;
-			self.Clear = function(self)
-				local temp = self.data.g[1];
-				wipe(self.data.g);
-				wipe(self.rawData);
-				tinsert(self.data.g, temp);
-				self:Rebuild();
-			end
-			self.Rebuild = function(self, no)
-				-- Rebuild all World Quest data
-				local retry = false;
-				local temp = {};
-				local showCurrencies = GetDataMember("ShowCurrencyOnWorldQuestList", false);
-				for _,mapID in pairs(worldMapIDs) do
-					local mapObject = { mapID=mapID,g={},progress=0,total=0};
-					local cache = fieldCache["mapID"][mapID];
-					if cache then
-						for _,data in ipairs(cache) do
-							if data.mapID and data.icon then
-								mapObject.icon = data.icon;
-								mapObject.lvl = data.lvl;
-								mapObject.description = data.description;
-								break;
-							end
-						end
-					end
-					
-					local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
-					if pois then
-						for i,poi in ipairs(pois) do
-							local questObject = {questID=poi.questId,g={},progress=0,total=0};
-							if poi.mapID ~= mapID then
-								local subMapObject = { mapID=poi.mapID,g={},progress=0,total=0};
-								cache = fieldCache["mapID"][poi.mapID];
-								if cache then
-									for _,data in ipairs(cache) do
-										if data.mapID and data.icon then
-											subMapObject.icon = data.icon;
-											subMapObject.lvl = data.lvl;
-											subMapObject.description = data.description;
-											break;
-										end
-									end
-								end
-								self:MergeObject(subMapObject.g, questObject);
-								self:MergeObject(mapObject.g, subMapObject);
-							else
-								self:MergeObject(mapObject.g, questObject);
-							end
-							local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = GetQuestTagInfo(questObject.questID);
-							if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
-								questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE then
-								questObject.icon = "Interface\\Icons\\PetJournalPortrait";
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
-								questObject.icon = "Interface\\Icons\\Trade_BlackSmithing";
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON then
-								-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-								-- TODO: Add the relevent dungeon icon.
-								
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_RAID then
-								-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-								-- TODO: Add the relevent dungeon icon.
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_INVASION or worldQuestType == LE_QUEST_TAG_TYPE_INVASION_WRAPPER then
-								questObject.icon = "Interface\\Icons\\achievements_zone_brokenshore";
-							--elseif worldQuestType == LE_QUEST_TAG_TYPE_TAG then
-								-- completely useless
-								--questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-							--elseif worldQuestType == LE_QUEST_TAG_TYPE_NORMAL then
-							--	questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-							end
-							
-							cache = fieldCache["questID"][questObject.questID];
-							if cache then
-								for _,data in ipairs(cache) do
-									for key,value in pairs(data) do
-										if not (key == "g" or key == "parent") then
-											questObject[key] = value;
-										end
-									end
-									if data.g then
-										for _,entry in ipairs(data.g) do
-											tinsert(questObject.g, entry);
-										end
-									end
-								end
-							end
-							
-							local numQuestRewards = GetNumQuestLogRewards (questObject.questID)
-							for j=1,numQuestRewards,1 do
-								local itemID = select(6, GetQuestLogRewardInfo (j, questObject.questID));
-								if itemID then
-									if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
-										-- QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
-										local item = { ["itemID"] = itemID, ["expanded"] = false, };
-										cache = fieldCache["itemID"][itemID];
-										if cache then
-											for _,data in ipairs(cache) do
-												if data.f then
-													item.f = data.f;
-												end
-												if data.s then
-													item.s = data.s;
-												end
-												if data.g and #data.g > 0 then
-													if not item.g then
-														item.g = {};
-														item.progress = 0;
-														item.total = 0;
-														item.OnUpdate = OnUpdateForItem;
-													end
-													for __,subdata in ipairs(data.g) do
-														self:MergeObject(item.g, subdata);
-													end
-												end
-											end
-										end
-										self:MergeObject(questObject.g, item);
-									end
-								else
-									return true;
-								end
-							end
-							
-							if showCurrencies then
-								local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
-								if numCurrencies > 0 then
-									for j=1,numCurrencies,1 do
-										local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
-										if currencyID then
-											local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
-											cache = fieldCache["currencyID"][currencyID];
-											if cache then
-												for _,data in ipairs(cache) do
-													if data.f then
-														item.f = data.f;
-													end
-													if data.g and #data.g > 0 then
-														if not item.g then
-															item.g = {};
-															item.progress = 0;
-															item.total = 0;
-															item.OnUpdate = OnUpdateForItem;
-														end
-														for __,subdata in ipairs(data.g) do
-															self:MergeObject(item.g, subdata);
-														end
-													end
-												end
-											end
-											if not item.g then
-												item.g = {};
-												item.progress = 0;
-												item.total = 0;
-												item.OnUpdate = OnUpdateForItem;
-											end
-											self:MergeObject(questObject.g, item);
-										else
-											return true;
-										end
-									end
-								end
-							end
-							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID, timeRemaining);
-							--print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
-						end
-						table.sort(mapObject.g, self.Sort);
-					end
-					if #mapObject.g > 0 then
-						self:MergeObject(temp, mapObject);
-					end
-				end
-				for i,o in ipairs(temp) do
-					self:MergeObject(self.rawData, o);
-				end
-				for i,o in ipairs(self.rawData) do
-					self:MergeObject(self.data.g, self:CreateObject(o));
-				end
-				BuildGroups(self.data, self.data.g);
-				if not no then self:Update(); end
-			end
-			self.Sort = function(a, b)
-				if a.isRaid then
-					if b.isRaid then
-						return false;
-					else
-						return true;
-					end
-				elseif b.isRaid then
-					return false;
-				end
-				if a.questID then
-					if b.questID then
-						return a.questID < b.questID;
-					else
-						return true;
-					end
-				end
-				if a.mapID then
-					if b.mapID then
-						if a.text and b.text then
-							return a.text < b.text;
-						else
-							return a.mapID < b.mapID;
-						end
-					else
-						return true;
-					end
-				end
-				return false;
-			end;
-		end
-		
-		-- Update the window and all of its row data
-		self.data.progress = 0;
-		self.data.total = 0;
-		UpdateGroups(self.data, self.data.g, 1);
-		UpdateWindow(self, true);
-	end);
-end)();
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
@@ -9405,6 +9063,973 @@ app.events.VARIABLES_LOADED = function()
 	end
 	AllTheThingsHarvestItems = {};
 	
+		-- There were some API changes between Legion and BFA:
+	local uiMapIDTables = {		
+	{	1,4,0,0	},
+	{	2,4,598,8	},
+	{	3,4,602,10	},
+	{	4,4,603,11	},
+	{	5,4,604,12	},
+	{	6,4,657,19	},
+	{	7,9,0,0	},
+	{	8,9,570,6	},
+	{	9,9,575,7	},
+	{	10,11,0,0	},
+	{	11,11,690,20	},
+	{	12,13,0,0	},
+	{	13,14,0,0	},
+	{	14,16,0,0	},
+	{	15,17,0,0	},
+	{	16,17,695,18	},
+	{	17,19,0,0	},
+	{	18,20,0,0	},
+	{	19,20,592,13	},
+	{	20,20,976,25	},
+	{	21,21,0,0	},
+	{	22,22,0,0	},
+	{	23,23,0,0	},
+	{	24,23,947,20	},
+	{	25,24,0,0	},
+	{	26,26,0,0	},
+	{	27,27,0,0	},
+	{	28,27,581,6	},
+	{	29,27,582,7	},
+	{	30,27,585,10	},
+	{	31,27,587,11	},
+	{	32,28,0,0	},
+	{	33,28,625,14	},
+	{	34,28,626,15	},
+	{	35,28,627,16	},
+	{	36,29,0,0	},
+	{	37,30,0,0	},
+	{	38,30,567,1	},
+	{	39,30,577,2	},
+	{	40,30,706,19	},
+	{	41,30,1085,21	},
+	{	42,32,0,0	},
+	{	43,32,1087,22	},
+	{	44,32,1089,23	},
+	{	45,32,1090,24	},
+	{	46,32,1016,27	},
+	{	47,34,0,0	},
+	{	48,35,0,0	},
+	{	49,36,0,0	},
+	{	50,37,0,0	},
+	{	51,38,0,0	},
+	{	52,39,0,0	},
+	{	53,39,579,4	},
+	{	54,39,580,5	},
+	{	55,39,689,17	},
+	{	56,40,0,0	},
+	{	57,41,0,0	},
+	{	58,41,558,2	},
+	{	59,41,564,3	},
+	{	60,41,565,4	},
+	{	61,41,566,5	},
+	{	62,42,0,0	},
+	{	63,43,0,0	},
+	{	64,61,0,0	},
+	{	65,81,0,0	},
+	{	66,101,0,0	},
+	{	67,101,696,21	},
+	{	68,101,699,22	},
+	{	69,121,0,0	},
+	{	70,141,0,0	},
+	{	71,161,0,0	},
+	{	72,161,622,15	},
+	{	73,161,623,16	},
+	{	74,161,631,17	},
+	{	75,161,632,18	},
+	{	76,181,0,0	},
+	{	77,182,0,0	},
+	{	78,201,0,0	},
+	{	79,201,621,14	},
+	{	80,241,0,0	},
+	{	81,261,0,0	},
+	{	82,261,620,13	},
+	{	83,281,0,0	},
+	{	84,301,0,0	},
+	{	85,321,0,0	},
+	{	86,321,118,1	},
+	{	87,341,0,0	},
+	{	88,362,0,0	},
+	{	89,381,0,0	},
+	{	90,382,0,0	},
+	{	91,401,0,0	},
+	{	92,443,0,0	},
+	{	93,461,0,0	},
+	{	94,462,0,0	},
+	{	95,463,0,0	},
+	{	96,463,593,1	},
+	{	97,464,0,0	},
+	{	98,464,594,2	},
+	{	99,464,688,3	},
+	{	100,465,0,0	},
+	{	101,466,0,0	},
+	{	102,467,0,0	},
+	{	103,471,0,0	},
+	{	104,473,0,0	},
+	{	105,475,0,0	},
+	{	106,476,0,0	},
+	{	107,477,0,0	},
+	{	108,478,0,0	},
+	{	109,479,0,0	},
+	{	110,480,0,0	},
+	{	111,481,0,0	},
+	{	112,482,0,0	},
+	{	113,485,0,0	},
+	{	114,486,0,0	},
+	{	115,488,0,0	},
+	{	116,490,0,0	},
+	{	117,491,0,0	},
+	{	118,492,0,0	},
+	{	119,493,0,0	},
+	{	120,495,0,0	},
+	{	121,496,0,0	},
+	{	122,499,0,0	},
+	{	123,501,0,0	},
+	{	124,502,0,0	},
+	{	125,504,27,1	},
+	{	126,504,26,2	},
+	{	127,510,0,0	},
+	{	128,512,0,0	},
+	{	129,520,25,1	},
+	{	130,521,0,0	},
+	{	131,521,34,1	},
+	{	132,522,50,1	},
+	{	133,523,1,1	},
+	{	134,523,2,2	},
+	{	135,523,41,3	},
+	{	136,524,39,1	},
+	{	137,524,40,2	},
+	{	138,525,54,1	},
+	{	139,525,55,2	},
+	{	140,526,53,1	},
+	{	141,527,61,1	},
+	{	142,528,0,0	},
+	{	143,528,42,1	},
+	{	144,528,43,2	},
+	{	145,528,45,3	},
+	{	146,528,46,4	},
+	{	147,529,0,0	},
+	{	148,529,69,1	},
+	{	149,529,70,2	},
+	{	150,529,71,3	},
+	{	151,529,72,4	},
+	{	152,529,98,5	},
+	{	153,530,0,0	},
+	{	154,530,36,1	},
+	{	155,531,0,0	},
+	{	156,532,63,1	},
+	{	157,533,47,1	},
+	{	158,533,48,2	},
+	{	159,533,49,3	},
+	{	160,534,37,1	},
+	{	161,534,38,2	},
+	{	162,535,56,1	},
+	{	163,535,57,2	},
+	{	164,535,58,3	},
+	{	165,535,59,4	},
+	{	166,535,60,5	},
+	{	167,535,73,6	},
+	{	168,536,52,1	},
+	{	169,540,0,0	},
+	{	170,541,0,0	},
+	{	171,542,96,1	},
+	{	172,543,94,1	},
+	{	173,543,95,2	},
+	{	174,544,0,0	},
+	{	175,544,611,1	},
+	{	176,544,614,2	},
+	{	177,544,615,3	},
+	{	178,544,616,4	},
+	{	179,545,0,0	},
+	{	180,545,606,1	},
+	{	181,545,609,2	},
+	{	182,545,610,3	},
+	{	183,601,101,1	},
+	{	184,602,0,0	},
+	{	185,603,102,1	},
+	{	186,604,103,1	},
+	{	187,604,104,2	},
+	{	188,604,105,3	},
+	{	189,604,106,4	},
+	{	190,604,107,5	},
+	{	191,604,108,6	},
+	{	192,604,109,7	},
+	{	193,604,110,8	},
+	{	194,605,0,0	},
+	{	195,605,617,5	},
+	{	196,605,618,6	},
+	{	197,605,619,7	},
+	{	198,606,0,0	},
+	{	199,607,0,0	},
+	{	200,609,0,0	},
+	{	201,610,0,0	},
+	{	202,611,0,0	},
+	{	203,613,0,0	},
+	{	204,614,0,0	},
+	{	205,615,0,0	},
+	{	206,626,0,0	},
+	{	207,640,0,0	},
+	{	208,640,991,1	},
+	{	209,640,992,2	},
+	{	210,673,0,0	},
+	{	213,680,136,1	},
+	{	217,684,0,0	},
+	{	218,685,0,0	},
+	{	219,686,0,0	},
+	{	220,687,176,1	},
+	{	221,688,162,1	},
+	{	222,688,163,2	},
+	{	223,688,164,3	},
+	{	224,689,0,0	},
+	{	225,690,165,1	},
+	{	226,691,168,1	},
+	{	227,691,169,2	},
+	{	228,691,170,3	},
+	{	229,691,172,4	},
+	{	230,692,171,1	},
+	{	231,692,180,2	},
+	{	232,696,181,1	},
+	{	233,697,0,0	},
+	{	234,699,0,0	},
+	{	235,699,262,1	},
+	{	236,699,263,2	},
+	{	237,699,264,3	},
+	{	238,699,265,4	},
+	{	239,699,266,5	},
+	{	240,699,267,6	},
+	{	241,700,0,0	},
+	{	242,704,200,1	},
+	{	243,704,201,2	},
+	{	244,708,0,0	},
+	{	245,709,0,0	},
+	{	246,710,222,1	},
+	{	247,717,0,0	},
+	{	248,718,196,1	},
+	{	249,720,0,0	},
+	{	250,721,202,1	},
+	{	251,721,207,2	},
+	{	252,721,208,3	},
+	{	253,721,209,4	},
+	{	254,721,210,5	},
+	{	255,721,211,6	},
+	{	256,722,214,1	},
+	{	257,722,215,2	},
+	{	258,723,216,1	},
+	{	259,723,217,2	},
+	{	260,724,218,1	},
+	{	261,725,221,1	},
+	{	262,726,223,1	},
+	{	263,727,226,1	},
+	{	264,727,227,2	},
+	{	265,728,228,1	},
+	{	266,729,230,1	},
+	{	267,730,231,1	},
+	{	268,730,232,2	},
+	{	269,731,233,1	},
+	{	270,731,234,2	},
+	{	271,731,235,3	},
+	{	272,732,238,1	},
+	{	273,733,0,0	},
+	{	274,734,0,0	},
+	{	275,736,0,0	},
+	{	276,737,0,0	},
+	{	277,747,0,0	},
+	{	279,749,28,1	},
+	{	280,750,256,1	},
+	{	281,750,257,2	},
+	{	282,752,252,1	},
+	{	283,753,116,1	},
+	{	284,753,117,2	},
+	{	285,754,131,1	},
+	{	286,754,132,2	},
+	{	287,755,182,1	},
+	{	288,755,183,2	},
+	{	289,755,184,3	},
+	{	290,755,185,4	},
+	{	291,756,166,1	},
+	{	292,756,167,2	},
+	{	293,757,123,1	},
+	{	294,758,128,1	},
+	{	295,758,129,2	},
+	{	296,758,134,3	},
+	{	297,759,119,1	},
+	{	298,759,120,2	},
+	{	299,759,135,3	},
+	{	300,760,150,1	},
+	{	301,761,149,1	},
+	{	302,762,137,1	},
+	{	303,762,140,2	},
+	{	304,762,141,3	},
+	{	305,762,179,4	},
+	{	306,763,151,1	},
+	{	307,763,152,2	},
+	{	308,763,153,3	},
+	{	309,763,154,4	},
+	{	310,764,142,1	},
+	{	311,764,143,2	},
+	{	312,764,144,3	},
+	{	313,764,145,4	},
+	{	314,764,146,5	},
+	{	315,764,147,6	},
+	{	316,764,148,7	},
+	{	317,765,155,1	},
+	{	318,765,156,2	},
+	{	319,766,191,1	},
+	{	320,766,192,2	},
+	{	321,766,195,3	},
+	{	322,767,126,1	},
+	{	323,767,127,2	},
+	{	324,768,125,1	},
+	{	325,769,122,1	},
+	{	327,772,0,0	},
+	{	328,773,271,1	},
+	{	329,775,0,0	},
+	{	330,776,322,1	},
+	{	331,779,341,1	},
+	{	332,780,355,1	},
+	{	333,781,0,0	},
+	{	334,782,349,1	},
+	{	335,789,0,0	},
+	{	336,789,440,1	},
+	{	337,793,0,0	},
+	{	338,795,0,0	},
+	{	339,796,0,0	},
+	{	340,796,433,1	},
+	{	341,796,434,2	},
+	{	342,796,435,3	},
+	{	343,796,436,4	},
+	{	344,796,437,5	},
+	{	345,796,438,6	},
+	{	346,796,439,7	},
+	{	347,797,219,1	},
+	{	348,798,236,1	},
+	{	349,798,237,2	},
+	{	350,799,383,1	},
+	{	351,799,385,2	},
+	{	352,799,386,3	},
+	{	353,799,387,4	},
+	{	354,799,388,5	},
+	{	355,799,389,6	},
+	{	356,799,390,7	},
+	{	357,799,391,8	},
+	{	358,799,393,9	},
+	{	359,799,398,10	},
+	{	360,799,399,11	},
+	{	361,799,401,12	},
+	{	362,799,402,13	},
+	{	363,799,403,14	},
+	{	364,799,404,15	},
+	{	365,799,405,16	},
+	{	366,799,406,17	},
+	{	367,800,0,0	},
+	{	368,800,467,1	},
+	{	369,800,466,2	},
+	{	370,803,458,1	},
+	{	371,806,0,0	},
+	{	372,806,678,6	},
+	{	373,806,679,7	},
+	{	374,806,691,15	},
+	{	375,806,692,16	},
+	{	376,807,0,0	},
+	{	377,807,687,14	},
+	{	378,808,0,0	},
+	{	379,809,0,0	},
+	{	380,809,680,8	},
+	{	381,809,682,9	},
+	{	382,809,683,10	},
+	{	383,809,684,11	},
+	{	384,809,685,12	},
+	{	385,809,707,17	},
+	{	386,809,739,20	},
+	{	387,809,740,21	},
+	{	388,810,0,0	},
+	{	389,810,686,13	},
+	{	390,811,0,0	},
+	{	391,811,668,1	},
+	{	392,811,669,2	},
+	{	393,811,670,3	},
+	{	394,811,671,4	},
+	{	395,811,708,18	},
+	{	396,811,709,19	},
+	{	397,813,0,0	},
+	{	398,816,0,0	},
+	{	399,819,0,0	},
+	{	400,819,502,1	},
+	{	401,820,0,0	},
+	{	402,820,495,1	},
+	{	403,820,496,2	},
+	{	404,820,497,3	},
+	{	405,820,498,4	},
+	{	406,820,499,5	},
+	{	407,823,0,0	},
+	{	408,823,1157,1	},
+	{	409,824,0,0	},
+	{	410,824,503,1	},
+	{	411,824,504,2	},
+	{	412,824,505,3	},
+	{	413,824,512,4	},
+	{	414,824,513,5	},
+	{	415,824,514,6	},
+	{	416,851,0,0	},
+	{	417,856,0,0	},
+	{	418,857,0,0	},
+	{	419,857,727,1	},
+	{	420,857,728,2	},
+	{	421,857,729,3	},
+	{	422,858,0,0	},
+	{	423,860,576,1	},
+	{	424,862,0,0	},
+	{	425,864,0,0	},
+	{	426,864,578,3	},
+	{	427,866,0,0	},
+	{	428,866,584,9	},
+	{	429,867,633,1	},
+	{	430,867,634,2	},
+	{	431,871,639,1	},
+	{	432,871,640,2	},
+	{	433,873,0,0	},
+	{	434,873,677,5	},
+	{	435,874,641,1	},
+	{	436,874,648,2	},
+	{	437,875,649,1	},
+	{	438,875,650,2	},
+	{	439,876,635,1	},
+	{	440,876,636,2	},
+	{	441,876,637,3	},
+	{	442,876,638,4	},
+	{	443,877,0,0	},
+	{	444,877,651,1	},
+	{	445,877,652,2	},
+	{	446,877,653,3	},
+	{	447,878,0,0	},
+	{	448,880,0,0	},
+	{	449,881,0,0	},
+	{	450,882,0,0	},
+	{	451,883,0,0	},
+	{	452,884,0,0	},
+	{	453,885,654,1	},
+	{	454,885,655,2	},
+	{	455,885,656,3	},
+	{	456,886,0,0	},
+	{	457,887,0,0	},
+	{	458,887,660,1	},
+	{	459,887,661,2	},
+	{	460,888,0,0	},
+	{	461,889,0,0	},
+	{	462,890,0,0	},
+	{	463,891,0,0	},
+	{	464,891,599,9	},
+	{	465,892,0,0	},
+	{	466,892,588,12	},
+	{	467,893,0,0	},
+	{	468,894,0,0	},
+	{	469,895,0,0	},
+	{	470,895,583,8	},
+	{	471,896,663,1	},
+	{	472,896,664,2	},
+	{	473,896,665,3	},
+	{	474,897,666,1	},
+	{	475,897,667,2	},
+	{	476,898,642,1	},
+	{	477,898,643,2	},
+	{	478,898,644,3	},
+	{	479,898,645,4	},
+	{	480,899,672,1	},
+	{	481,900,673,1	},
+	{	482,900,674,2	},
+	{	483,906,0,0	},
+	{	486,911,0,0	},
+	{	487,912,0,0	},
+	{	488,914,0,0	},
+	{	489,914,726,1	},
+	{	490,919,0,0	},
+	{	491,919,732,1	},
+	{	492,919,733,2	},
+	{	493,919,734,3	},
+	{	494,919,735,4	},
+	{	495,919,736,5	},
+	{	496,919,737,6	},
+	{	497,919,738,7	},
+	{	498,920,0,0	},
+	{	499,922,741,1	},
+	{	500,922,742,2	},
+	{	501,924,746,1	},
+	{	502,924,748,2	},
+	{	503,925,749,1	},
+	{	504,928,0,0	},
+	{	505,928,758,1	},
+	{	506,928,759,2	},
+	{	507,929,0,0	},
+	{	508,930,750,1	},
+	{	509,930,751,2	},
+	{	510,930,752,3	},
+	{	511,930,753,4	},
+	{	512,930,754,5	},
+	{	513,930,755,6	},
+	{	514,930,756,7	},
+	{	515,930,757,8	},
+	{	516,933,0,0	},
+	{	517,933,761,1	},
+	{	518,934,760,1	},
+	{	519,935,0,0	},
+	{	520,937,0,0	},
+	{	521,937,775,1	},
+	{	522,938,776,1	},
+	{	523,939,0,0	},
+	{	524,940,0,0	},
+	{	525,941,0,0	},
+	{	526,941,815,1	},
+	{	527,941,816,2	},
+	{	528,941,817,3	},
+	{	529,941,818,4	},
+	{	530,941,859,6	},
+	{	531,941,860,7	},
+	{	532,941,861,8	},
+	{	533,941,862,9	},
+	{	534,945,0,0	},
+	{	535,946,0,0	},
+	{	536,946,884,13	},
+	{	537,946,885,14	},
+	{	538,946,937,30	},
+	{	539,947,0,0	},
+	{	540,947,886,15	},
+	{	541,947,894,22	},
+	{	542,948,0,0	},
+	{	543,949,0,0	},
+	{	544,949,888,16	},
+	{	545,949,889,17	},
+	{	546,949,890,18	},
+	{	547,949,891,19	},
+	{	548,949,892,20	},
+	{	549,949,893,21	},
+	{	550,950,0,0	},
+	{	551,950,863,10	},
+	{	552,950,864,11	},
+	{	553,950,880,12	},
+	{	554,951,0,0	},
+	{	555,951,808,22	},
+	{	556,953,0,0	},
+	{	557,953,789,1	},
+	{	558,953,790,2	},
+	{	559,953,793,3	},
+	{	560,953,794,4	},
+	{	561,953,795,5	},
+	{	562,953,796,6	},
+	{	563,953,797,7	},
+	{	564,953,798,8	},
+	{	565,953,800,9	},
+	{	566,953,801,10	},
+	{	567,953,802,11	},
+	{	568,953,803,12	},
+	{	569,953,804,13	},
+	{	570,953,805,14	},
+	{	571,955,0,0	},
+	{	572,962,0,0	},
+	{	573,964,814,1	},
+	{	574,969,828,1	},
+	{	575,969,830,2	},
+	{	576,969,831,3	},
+	{	577,970,0,0	},
+	{	578,970,858,1	},
+	{	579,971,902,23	},
+	{	580,971,903,24	},
+	{	581,971,904,25	},
+	{	582,973,0,0	},
+	{	585,976,905,26	},
+	{	586,976,906,27	},
+	{	587,976,907,28	},
+	{	588,978,0,0	},
+	{	589,978,934,29	},
+	{	590,980,0,0	},
+	{	592,983,0,0	},
+	{	593,984,837,1	},
+	{	594,986,0,0	},
+	{	595,987,839,1	},
+	{	596,988,842,1	},
+	{	597,988,841,2	},
+	{	598,988,840,3	},
+	{	599,988,843,4	},
+	{	600,988,844,5	},
+	{	601,989,845,1	},
+	{	602,989,846,2	},
+	{	606,993,847,1	},
+	{	607,993,848,2	},
+	{	608,993,849,3	},
+	{	609,993,850,4	},
+	{	610,994,0,0	},
+	{	611,994,852,1	},
+	{	612,994,853,2	},
+	{	613,994,854,3	},
+	{	614,994,855,4	},
+	{	615,994,856,5	},
+	{	616,995,877,1	},
+	{	617,995,878,2	},
+	{	618,995,879,3	},
+	{	619,1007,0,0	},
+	{	620,1008,0,0	},
+	{	621,1008,912,1	},
+	{	622,1009,0,0	},
+	{	623,1010,0,0	},
+	{	624,1011,0,0	},
+	{	625,1014,0,0	},
+	{	626,1014,993,4	},
+	{	627,1014,1009,10	},
+	{	628,1014,1010,11	},
+	{	629,1014,1011,12	},
+	{	630,1015,0,0	},
+	{	631,1015,1019,17	},
+	{	632,1015,1020,18	},
+	{	633,1015,1021,19	},
+	{	634,1017,0,0	},
+	{	635,1017,1018,1	},
+	{	636,1017,1006,9	},
+	{	637,1017,1034,25	},
+	{	638,1017,1035,26	},
+	{	639,1017,1036,27	},
+	{	640,1017,1037,28	},
+	{	641,1018,0,0	},
+	{	642,1018,1012,13	},
+	{	643,1018,1013,14	},
+	{	644,1018,1014,15	},
+	{	645,1020,0,0	},
+	{	646,1021,0,0	},
+	{	647,1021,939,1	},
+	{	648,1021,940,2	},
+	{	649,1022,0,0	},
+	{	650,1024,0,0	},
+	{	651,1024,996,5	},
+	{	652,1024,997,6	},
+	{	653,1024,1005,8	},
+	{	654,1024,1015,16	},
+	{	655,1024,1025,20	},
+	{	656,1024,1026,21	},
+	{	657,1024,1038,29	},
+	{	658,1024,1039,30	},
+	{	659,1024,1040,31	},
+	{	660,1024,1117,40	},
+	{	661,1026,0,0	},
+	{	662,1026,926,1	},
+	{	663,1026,927,2	},
+	{	664,1026,925,3	},
+	{	665,1026,928,4	},
+	{	666,1026,929,5	},
+	{	667,1026,930,6	},
+	{	668,1026,931,7	},
+	{	669,1026,932,8	},
+	{	670,1026,933,9	},
+	{	671,1027,0,0	},
+	{	672,1028,0,0	},
+	{	673,1028,1022,1	},
+	{	674,1028,1023,2	},
+	{	675,1028,1024,3	},
+	{	676,1031,0,0	},
+	{	677,1032,941,1	},
+	{	678,1032,942,2	},
+	{	679,1032,943,3	},
+	{	680,1033,0,0	},
+	{	681,1033,1031,22	},
+	{	682,1033,1032,23	},
+	{	683,1033,1033,24	},
+	{	684,1033,1064,32	},
+	{	685,1033,1065,33	},
+	{	686,1033,1068,34	},
+	{	687,1033,1069,35	},
+	{	688,1033,1070,36	},
+	{	689,1033,1071,37	},
+	{	690,1033,1072,38	},
+	{	691,1033,1114,39	},
+	{	692,1033,1007,41	},
+	{	693,1033,1008,42	},
+	{	694,1034,0,0	},
+	{	695,1035,946,1	},
+	{	696,1037,0,0	},
+	{	697,1038,0,0	},
+	{	698,1039,948,1	},
+	{	699,1039,949,2	},
+	{	700,1039,954,3	},
+	{	701,1039,958,4	},
+	{	702,1040,966,1	},
+	{	703,1041,0,0	},
+	{	704,1041,963,1	},
+	{	705,1041,964,2	},
+	{	706,1042,0,0	},
+	{	707,1042,967,1	},
+	{	708,1042,968,2	},
+	{	709,1044,0,0	},
+	{	710,1045,969,1	},
+	{	711,1045,970,2	},
+	{	712,1045,971,3	},
+	{	713,1046,0,0	},
+	{	714,1047,0,0	},
+	{	715,1048,0,0	},
+	{	716,1049,973,1	},
+	{	717,1050,0,0	},
+	{	718,1051,0,0	},
+	{	719,1052,0,0	},
+	{	720,1052,981,1	},
+	{	721,1052,982,2	},
+	{	723,1054,974,1	},
+	{	725,1056,0,0	},
+	{	726,1057,0,0	},
+	{	728,1059,0,0	},
+	{	729,1060,975,1	},
+	{	731,1065,0,0	},
+	{	732,1066,977,1	},
+	{	733,1067,0,0	},
+	{	734,1068,978,1	},
+	{	735,1068,979,2	},
+	{	736,1069,980,1	},
+	{	737,1070,983,1	},
+	{	738,1071,0,0	},
+	{	739,1072,0,0	},
+	{	740,1073,985,1	},
+	{	741,1073,986,2	},
+	{	742,1075,987,1	},
+	{	743,1075,988,2	},
+	{	744,1076,989,1	},
+	{	745,1076,990,2	},
+	{	746,1076,1078,3	},
+	{	747,1077,0,0	},
+	{	748,1078,0,0	},
+	{	749,1079,994,1	},
+	{	750,1080,0,0	},
+	{	751,1081,998,1	},
+	{	752,1081,999,2	},
+	{	753,1081,1000,3	},
+	{	754,1081,1001,4	},
+	{	755,1081,1002,5	},
+	{	756,1081,1003,6	},
+	{	757,1082,0,0	},
+	{	758,1084,0,0	},
+	{	759,1085,1027,1	},
+	{	760,1086,0,0	},
+	{	761,1087,0,0	},
+	{	762,1087,1029,1	},
+	{	763,1087,1030,2	},
+	{	764,1088,1041,1	},
+	{	765,1088,1042,2	},
+	{	766,1088,1043,3	},
+	{	767,1088,1044,4	},
+	{	768,1088,1045,5	},
+	{	769,1088,1046,6	},
+	{	770,1088,1047,7	},
+	{	771,1088,1048,8	},
+	{	772,1088,1049,9	},
+	{	773,1090,0,0	},
+	{	774,1090,1050,1	},
+	{	775,1091,0,0	},
+	{	776,1092,0,0	},
+	{	777,1094,1051,1	},
+	{	778,1094,1052,2	},
+	{	779,1094,1053,3	},
+	{	780,1094,1054,4	},
+	{	781,1094,1055,5	},
+	{	782,1094,1056,6	},
+	{	783,1094,1057,7	},
+	{	784,1094,1058,8	},
+	{	785,1094,1059,9	},
+	{	786,1094,1060,10	},
+	{	787,1094,1061,11	},
+	{	788,1094,1062,12	},
+	{	789,1094,1086,13	},
+	{	790,1096,0,0	},
+	{	791,1097,1066,1	},
+	{	792,1097,1067,2	},
+	{	793,1099,0,0	},
+	{	794,1100,1073,1	},
+	{	795,1100,1074,2	},
+	{	796,1100,1075,3	},
+	{	797,1100,1076,4	},
+	{	798,1102,1077,1	},
+	{	799,1104,0,0	},
+	{	800,1104,1079,1	},
+	{	801,1104,1080,2	},
+	{	802,1104,1081,3	},
+	{	803,1104,1082,4	},
+	{	804,1105,1083,1	},
+	{	805,1105,1084,2	},
+	{	806,1114,0,0	},
+	{	807,1114,1091,1	},
+	{	808,1114,1092,2	},
+	{	809,1115,1093,1	},
+	{	810,1115,1094,2	},
+	{	811,1115,1095,3	},
+	{	812,1115,1096,4	},
+	{	813,1115,1097,5	},
+	{	814,1115,1098,6	},
+	{	815,1115,1099,7	},
+	{	816,1115,1100,8	},
+	{	817,1115,1101,9	},
+	{	818,1115,1102,10	},
+	{	819,1115,1103,11	},
+	{	820,1115,1104,12	},
+	{	821,1115,1105,13	},
+	{	822,1115,1106,14	},
+	{	823,1116,0,0	},
+	{	824,1126,0,0	},
+	{	825,1127,1110,1	},
+	{	826,1129,1111,1	},
+	{	827,1130,1112,1	},
+	{	828,1131,1113,1	},
+	{	829,1132,1115,1	},
+	{	830,1135,0,0	},
+	{	831,1135,1163,1	},
+	{	832,1135,1165,2	},
+	{	833,1135,1184,7	},
+	{	834,1136,0,0	},
+	{	835,1137,1118,1	},
+	{	836,1137,1119,2	},
+	{	837,1139,0,0	},
+	{	838,1140,0,0	},
+	{	839,1142,1123,1	},
+	{	840,1143,1120,1	},
+	{	841,1143,1121,2	},
+	{	842,1143,1122,3	},
+	{	843,1144,0,0	},
+	{	844,1145,0,0	},
+	{	845,1146,1124,1	},
+	{	846,1146,1125,2	},
+	{	847,1146,1126,3	},
+	{	848,1146,1127,4	},
+	{	849,1146,1128,5	},
+	{	850,1147,1129,1	},
+	{	851,1147,1130,2	},
+	{	852,1147,1132,3	},
+	{	853,1147,1133,4	},
+	{	854,1147,1134,5	},
+	{	855,1147,1135,6	},
+	{	856,1147,1136,7	},
+	{	857,1148,1138,1	},
+	{	858,1149,0,0	},
+	{	859,1150,0,0	},
+	{	860,1151,0,0	},
+	{	861,1152,0,0	},
+	{	862,1153,0,0	},
+	{	863,1154,0,0	},
+	{	864,1155,0,0	},
+	{	865,1156,1143,1	},
+	{	866,1156,1144,2	},
+	{	867,1157,1140,1	},
+	{	868,1158,1139,1	},
+	{	869,1159,1141,1	},
+	{	870,1159,1142,2	},
+	{	871,1160,0,0	},
+	{	872,1161,0,0	},
+	{	873,1161,1145,1	},
+	{	874,1161,1146,2	},
+	{	875,1162,0,0	},
+	{	876,1163,0,0	},
+	{	877,1164,0,0	},
+	{	878,1165,0,0	},
+	{	879,1165,1147,1	},
+	{	880,1165,1148,2	},
+	{	881,1166,1150,1	},
+	{	882,1170,0,0	},
+	{	883,1170,1166,3	},
+	{	884,1170,1167,4	},
+	{	885,1171,0,0	},
+	{	886,1171,1168,5	},
+	{	887,1171,1169,6	},
+	{	888,1172,1154,1	},
+	{	889,1173,1149,1	},
+	{	890,1173,1156,2	},
+	{	891,1174,0,0	},
+	{	892,1174,1181,1	},
+	{	893,1174,1179,2	},
+	{	894,1174,1180,3	},
+	{	895,1175,0,0	},
+	{	896,1176,0,0	},
+	{	897,1177,0,0	},
+	{	898,1177,1158,1	},
+	{	899,1177,1159,2	},
+	{	900,1177,1160,3	},
+	{	901,1177,1161,4	},
+	{	902,1177,1162,5	},
+	{	903,1178,0,0	},
+	{	904,1183,0,0	},
+	{	905,1184,0,0	},
+	{	906,1185,0,0	},
+	{	907,1186,0,0	},
+	{	908,1187,0,0	},
+	{	909,1188,0,0	},
+	{	910,1188,1170,1	},
+	{	911,1188,1171,2	},
+	{	912,1188,1172,3	},
+	{	913,1188,1173,4	},
+	{	914,1188,1174,5	},
+	{	915,1188,1175,6	},
+	{	916,1188,1176,7	},
+	{	917,1188,1177,8	},
+	{	918,1188,1178,9	},
+	{	919,1188,1182,10	},
+	{	920,1188,1183,11	},
+	{	921,1190,0,0	},
+	{	922,1191,0,0	},
+	{	923,1192,0,0	},
+	{	924,1193,0,0	},
+	{	925,1194,0,0	},
+	{	926,1195,0,0	},
+	{	927,1196,0,0	},
+	{	928,1197,0,0	},
+	{	929,1198,0,0	},
+	{	930,1199,0,0	},
+	{	931,1200,0,0	},
+	{	932,1201,0,0	},
+	{	933,1202,0,0	},
+	{	934,1204,1185,1	},
+	{	935,1204,1186,2	},
+	{	936,1205,0,0	},
+	{	938,1210,0,0	},
+	{	939,1211,0,0	},
+	{	940,1212,1188,1	},
+	{	941,1212,1189,2	},
+	{	942,1213,0,0	},
+	{	943,1214,0,0	},
+	{	971,1215,0,0	},
+	{	972,1216,0,0	},
+	{	973,1217,1190,1	},
+	{	974,1219,0,0	},
+	{	975,1219,1191,1	},
+	{	976,1219,1192,2	},
+	{	977,1219,1193,3	},
+	{	978,1219,1194,4	},
+	{	979,1219,1195,5	},
+	{	980,1219,1196,6	},
+	{	981,1220,0,0	},
+	{	994,1184,0,0	},
+	{	998,382,0,0	},
+	};
+	app.BFAToLegionMapID = function(uiMapID)
+		for i,values in ipairs(uiMapIDTables) do
+			if values[1] == uiMapID then
+				--print(values[1], values[2], values[3], values[4]);
+				--return values[3] > 0 and values[3] or values[2];
+				return values[2];
+			end
+		end
+		return uiMapID;
+	end
+	app.LegionToBFAMapID = function(mapID)
+		for i,values in ipairs(uiMapIDTables) do
+			if values[4] == 0 and (values[2] == mapID or values[3] == mapID) then
+				return values[1];
+			end
+		end
+		for i,values in ipairs(uiMapIDTables) do
+			if values[4] == 1 and (values[2] == mapID or values[3] == mapID) then
+				return values[1];
+			end
+		end
+		for i,values in ipairs(uiMapIDTables) do
+			if values[2] == mapID or values[3] == mapID then
+				return values[1];
+			end
+		end
+		return mapID;
+	end
 	-- Setup the localization and interpret the Display Information.
 	SetLocale(GetLocale());
 	app:UpdateWindowColors();
@@ -9719,9 +10344,6 @@ app.events.PLAYER_LOGIN = function()
 	})
 	if GetDataMember("AutoRaidAssistant", false) then
 		app:GetWindow("RaidAssistant"):Show();
-	end
-	if GetDataMember("AutoWorldQuestsList", false) then
-		app:GetWindow("WorldQuests"):Show();
 	end
 	if GetDataMember("AutoMainList") then
 		app:OpenMainList();

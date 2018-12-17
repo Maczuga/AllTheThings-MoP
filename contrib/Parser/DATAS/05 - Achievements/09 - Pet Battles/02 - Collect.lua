@@ -17,74 +17,6 @@ _.Achievements =
 			n(-10027, { -- Collect (need to review locations for future use, some from wowhead are questionable)
 				["groups"] = {
 					ach(7465),		-- An Uncommon Find*
-					ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
-						i(163634),		-- Dreadtick Leecher
-						crit(1),		-- Shadowback Crawler
-						crit(2),		-- River Frog
-						crit(3),		-- Freshwater Crawler
-						crit(4),		-- Vale Marmot
-						crit(5),		-- Valley Chicken
-						crit(6),		-- Sandyback Crawler
-						crit(7),		-- River Otter
-						crit(8),		-- Parasitic Boarfly
-						crit(9),		-- Shack Crab
-						crit(10),		-- Inland Croaker
-						crit(11),		-- Giant Woodworm
-						crit(12),		-- Shore Butterfly
-						crit(13),		-- Barrier Hermit
-						crit(14),		-- Coastal Scuttler
-						crit(15),		-- Golden Beetle
-						crit(16),		-- Bloodfever Tarantula
-						crit(17),		-- Elusive Skimmer
-						crit(18),		-- Leafy Flutterwing
-						crit(19),		-- Young Sand Sifter
-						crit(20),		-- Sticky Oozeling
-						crit(21),		-- Returned Hatchling
-						crit(22),		-- Glutted Bleeder
-						crit(23),		-- Spectral Raven
-						crit(24),		-- Boghopper
-						crit(25),		-- Hermit Crab
-						crit(26),		-- Coastal Bounder
-						crit(27),		-- Honey Bee
-					}),
-					ach(11233, {	-- Broken Isles Safari*
-						i(141352),		-- Rescued Fawn
-						crit(1),		-- Albatross Chick (Azsuna, Stormheim)
-						crit(2),		-- Fledgling Kingfeather (Azsuna)
-						crit(3),		-- Fledgling Oliveback (Azsuna)
-						crit(4),		-- Golden Eaglet (Stormheim)
-						crit(5),		-- Long-Eared Owl (Highmountain, Stormheim)
-						crit(6),		-- Northern Hawk Owl (Highmountain)
-						crit(7),		-- Burrow Spiderling (Highmountain)
-						crit(8),		-- Juvenile Scuttleback (Azsuna, Eye of Azshara)
-						crit(9),		-- Olivetail Hare (Azsuna)
-						crit(10),		-- Felspider (Azsuna)
-						crit(11),		-- Shimmering Aquafly (Val'sharah)
-						crit(12),		-- Terror Larva (Val'sharah)
-						crit(13),		-- Slithering Brownscale (Stormheim, Val'sharah, Azsuna)
-						crit(14),		-- Vale Flitter (Val'sharah)
-						crit(15),		-- Auburn Ringtail (Val'sharah)
-						crit(16),		-- Spring Strider (Val'sharah)
-						crit(17),		-- Black-Footed Fox Kit (Highmountain, Stormheim)
-						crit(18),		-- Mist Fox Kit (Highmountain, Stormheim)
-						crit(19),		-- Rose Taipan (Stormheim)
-						crit(20),		-- Tiny Apparition (Stormheim)
-						crit(21),		-- Echo Batling (Highmountain)
-						crit(22),		-- Hog-Nosed Bat (Highmountain)
-						crit(23),		-- Spiketail Beaver (Highmountain)
-						crit(24),		-- Erudite Manafiend (Azsuna)
-						crit(25),		-- Eldritch Manafiend (Azsuna)
-						crit(26),		-- Coralback Fiddler (Highmountain)
-						crit(27),		-- Mudshell Conch (Highmountain)
-						crit(28),		-- Dust Bunny (Dalaran)
-						crit(29),		-- Vicious Broodling (Suramar)
-						crit(30),		-- Crystalline Broodling (Suramar)
-						crit(31),		-- Thornclaw Broodling (Suramar)
-						crit(32),		-- Gleamhoof Fawn (Val'sharah)
-						crit(33),		-- Coastal Sandpiper (Azsuna, Suramar, Eye of Azshara)
-						crit(34),		-- Blind Rat (Dalaran)
-						crit(35),		-- Stormstruck Beaver (Stormheim)
-					}),
 					ach(8519, {		-- Celestial Family*
 						crit(1),		-- Xu-Fu, Cub of Xuen
 						crit(2),		-- Chi-Chi, Hatchling of Chi-Ji
@@ -135,34 +67,6 @@ _.Achievements =
 						crit(24),		-- White Kitten
 						crit(25),		-- Winterspring Cub
 						crit(26),		-- Xu-Fu, Cub of Xuen
-					}),
-					ach(9685, {		-- Draenor Safari*
-						i(111866),		-- Royal Peacock
-						crit(1),		-- Amberbarb Wasp (Gorgrond)
-						crit(2),		-- Axebeak Hatchling (Gorgrond)
-						crit(3),		-- Bloodsting Wasp (Spires of Arak)
-						crit(4),		-- Brilliant Bloodfeather (Talador)
-						crit(5),		-- Flat-Tooth Calf (Talador)
-						crit(6),		-- Frostfur Rat (Frostfire Ridge)
-						crit(7),		-- Frostshell Pincher (Frostfire Ridge)
-						crit(8),		-- Golden Dawnfeather (Spires of Arak)
-						crit(9),		-- Icespine Hatchling (Frostfire Ridge)
-						crit(10),		-- Ironclaw Scuttler (Frostfire Ridge, Stormheim)
-						crit(11),		-- Junglebeak (Gorgrond)
-						crit(12),		-- Kelp Scuttler (Azsuna, Stormheim)
-						crit(13),		-- Leatherhide Runt (Nagrand)
-						crit(14),		-- Moonshell Crab (Shadowmoon Valley)
-						crit(15),		-- Mossbite Skitterer (Shadowmoon Valley)
-						crit(16),		-- Mud Jumper (Spires of Arak, Talador, Stormheim, Highmountain, Nagrand)
-						crit(17),		-- Mudback Calf (Gorgrond)
-						crit(18),		-- Royal Moth (Shadowmoon Valley, Talador, Spires of Arak, Azsuna)
-						crit(19),		-- Shadow Sporebat (Talador)
-						crit(20),		-- Swamplighter Firefly (Spires of Arak, Highmountain)
-						crit(21),		-- Thicket Skitterer (Spires of Arak)
-						crit(22),		-- Twilight Wasp (Frostfire Ridge, Gorgrond, Frostwall)
-						crit(23),		-- Waterfly (Shadowmoon Valley, Talador, Spires of Arak, Tanaan Jungle)
-						crit(24),		-- Wood Wasp (Gorgrond)
-						crit(25),		-- Zangar Crawler (Shadowmoon Valley, Spires of Arak)
 					}),
 					ach(6586, {		-- Eastern Kingdoms Safari*
 						crit(1),		-- Adder (Northern Barrens, Southern Barrens, Durotar, Hellfire Peninsula, Nagrand (Outland), Spires of Arak, Valley of Trials, Nagrand (Draenor), Blasted Lands)
@@ -417,39 +321,6 @@ _.Achievements =
 						crit(20),		-- Un'Goro Crater
 						crit(21),		-- Winterspring
 					}),
-					ach(12958, {	-- Master of Minions (1000) *
-						i(163218),		-- Hearthy
-						ach(12992, {	-- Pet Emporium
-							i(163220),		-- Rooter
-						}),
-						ach(9643, {		-- So. Many. Pets. (600)
-							i(118577),		-- Stormwing
-						}),
-						ach(7501, {		-- That's a Lot of Pet Food (400)
-							i(89736),		-- Venus
-						}),
-						ach(7500, {		-- Going to Need More Leashes(250)
-							i(85578),		-- Feral Vermling
-						}),
-						ach(5875, {		-- Littlest Pet Shop (150)
-							i(54810),		-- Celestial Dragon
-						}),
-						ach(5877, {		-- Menagerie (125)
-							i(71387),		-- Brilliant Kaliri
-						}),
-						ach(5876, {		-- Petting Zoo (100)
-							i(71140),		-- Nuts' Acorn
-						}),
-						ach(2516, {		-- Lil' Game Hunter (75)
-							i(44841),		-- Little Fawn's Salt Lick
-						}),
-						ach(1250, {		-- Shop Smart, Shop Pet...Smart (50)
-							i(40653),		-- Reeking Pet Carrier
-						}),
-						ach(1248),		-- Plethora of Pets (25)
-						ach(15),		-- Plenty of Pets (15)
-						ach(1017),		-- Can I Keep Him? (1)
-					}),
 					ach(6588, {		-- Northrend Safari*
 						crit(1),		-- Arctic Fox Kit (The Storm Peaks)
 						crit(2),		-- Arctic Hare (Dragonblight, The Storm Peaks, Borean Tundra, Zul'Drak)
@@ -629,58 +500,6 @@ _.Achievements =
 						crit(8),		-- Pocket Reaver (The Eye - Void Reaver)
 						crit(9),		-- Lesser Voidcaller (The Eye - High Astromancer Solarian) 
 						crit(10),		-- Phoenix Hawk Hatchling (The Eye - Al'ar)
-					}),
-					ach(9824, {		-- Raiding with Leashes III: Drinkin' From the Sunwell*
-						i(122116),		-- Holy Chime
-						crit(1),		-- Grotesque (Hyjal Summit - Azgalor)
-						crit(2),		-- Leviathan Hatchling (Black Temple - High Warlord Naj'entus)
-						crit(3),		-- Abyssius (Black Temple - Supremus)
-						crit(4),		-- Fragment of Anger (Black Temple - Reliquary of the Lost)
-						crit(5),		-- Fragment of Suffering (Black Temple - Reliquary of the Lost)
-						crit(6),		-- Fragment of Desire (Black Temple - Reliquary of the Lost)
-						crit(7),		-- Sister of Temptation (Black Temple - Mother Shahraz)
-						crit(8),		-- Stinkrot (Hyjal Summit - Anetheron)
-						crit(9),		-- Hyjal Wisp (Hyjal Summit - Archimonde)
-						crit(10),		-- Sunblade Micro-Defender (Sunwell Plateau - Brutallus)
-						crit(11),		-- Chaos Pup (Sunwell Plateau - M'uru)
-						crit(12),		-- Wretched Servant (Sunwell Plateau - Eredar Twins)
-					}),
-					ach(11320, {	-- Raiding with Leashes IV: Wrath of the Lick King*
-						i(142210),		-- Celestial Invitation (Begins a quest for a pet)
-						crit(1),		-- Dreadmaw (Trial of the Crusader - Icehowl)
-						crit(2),		-- Nerubian Swarmer (Trial of the Crusader - Anub'arak)
-						crit(3),		-- Magma Rageling (Ulduar - Ignis the Furnace Master)
-						crit(4),		-- Ironbound Proto-Whelp (Ulduar - Razorscale)
-						crit(5),		-- Runeforged Servitor (Ulduar - Iron Council)
-						crit(6),		-- Sanctum Cub (Ulduar - Auriaya)
-						crit(7),		-- Winter Rageling (Ulduar - Cache of Winter from Hodir)
-						crit(8),		-- Snaplasher (Ulduar - Freya's Gift from Freya)
-						crit(9),		-- G0-R41-0N Ultratonk (Ulduar - Cache of Innovation from Mimiron)
-						crit(10),		-- Creeping Tentacle (Ulduar - Yogg-Saron)
-						crit(11),		-- Boneshard (Icecrown Citadel - Lord Marrowgar)
-						crit(12),		-- Blood Boil (Icecrown Citadel - Deathbringer's Cache from Deathbringer Saurfang)
-						crit(13),		-- Blightbreath (Icecrown Citadel - Professor Putricide)
-						crit(14),		-- Soulbroken Whelpling (Icecrown Citadel - Sindragosa)
-						crit(15),		-- Drudge Ghoul (Icecrown Citadel - The Lich King)
-						crit(16),		-- Wicked Soul (Icecrown Citadel - The Lich King)
-					}),
-					ach(12079, {	-- Raiding with Leashes V: Cuteaclysm*
-						i(152963),		-- Amalgam of Destruction
-						crit(1),		-- Tinytron (Blackwing Descent - Magmatron)
-						crit(2),		-- Discarded Experiment (Blackwing Descent - Maloriak)
-						crit(3),		-- Rattlejaw (Blackwing Descent - Nefarian)
-						crit(4),		-- Twilight Clutch-Sister (The Bastion of Twilight - Valiona)
-						crit(5),		-- Bound Stream (The Bastion of Twilight - Elementium Monstrosity)
-						crit(6),		-- Faceless Minion (The Bastion of Twilight - Cho'gall)
-						crit(7),		-- Drafty (Throne of the Four Winds - Nezir)
-						crit(8),		-- Zephyrian Prince (Throne of the Four Winds - Al'Akir)
-						crit(9),		-- Blazehound (Firelands - Shannox)
-						crit(10),		-- Cinderweb Recluse (Firelands - Beth'tilac)
-						crit(11),		-- Surger (Firelands - Baleroc)
-						crit(12),		-- Infernal Pyreclaw (Firelands - Majordomo Staghelm)
-						crit(13),		-- Faceless Mindlasher (Dragon Soul - Yor'sahj the Unsleeping)
-						crit(14),		-- Corrupted Blood (Dragon Soul - Greater Cache of the Aspects from Spine of Deathwing)
-						crit(15),		-- Unstable Tendril (Dragon Soul - Elementium Fragment from Madness of Deathwing)
 					}),
 					ach(6571),		-- That Was Close!*
 					ach(6590, {		-- World Safari*

@@ -25,7 +25,6 @@ _.Achievements =
 						crit(5),				-- Have Keg, Will Travel
 						crit(6),				-- Does Your Wolpertinger Linger?
 					})),
-					un(27, ach(9428)),		-- Calavera (Day of the Dead)
 					un(27, ach(3456)),		-- Dead Man's Party (Day of the Dead)
 					un(18, ach(1693, {		-- Fool For Love (Love is in the Air)
 						title(103),				-- the Love Fool
@@ -146,8 +145,6 @@ _.Achievements =
 						crit(11),				-- Frenzied Firecracker
 						crit(12),				-- Elune's Blessing
 					})),
-					un(27, ach(9426)),		-- To The Afterlife (Day of the Dead)
-					un(27, ach(9427)),		-- Vientos! (Day of the Dead)
 					ach(2144, {				-- What a Long, Strange Trip It's Been
 						i(44177),				-- Reins of the Violet Proto-Drake
 						crit(1),				-- To Honor One's Elders

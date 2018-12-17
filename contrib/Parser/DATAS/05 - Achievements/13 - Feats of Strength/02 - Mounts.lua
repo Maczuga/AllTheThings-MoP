@@ -23,21 +23,13 @@ _.Achievements =
 					un(18, ach(4627)),	-- Big Love Rocket
 					un(14, ach(2316)),	-- Brutal Nether Drake
 					un(14, ach(6741)),	-- Cataclysmic Gladiator's Twilight Drake
-					un(14, ach(11001)),	-- Cruel Gladiator's Storm Dragon
 					un(14, ach(3096)),	-- Deadly Gladiator's Frost Wyrm
 					ach(729),			-- Deathcharger's Reins
-					un(14, ach(12140)),	-- Demonic Gladiator's Storm Dragon
-					un(14, ach(12139)),	-- Dominant Gladiator's Storm Dragon
-					un(14, ach(13093)),	-- Dread Gladiator's Proto-Drake
-					un(14, ach(11000)),	-- Fearless Gladiator's Storm Dragon
-					un(14, ach(11002)),	-- Ferocious Gladiator's Storm Dragon
-					un(14, ach(12138)),	-- Fierce Gladiator's Storm Dragon - this was showing as a valid achievement until 8.0
 					ach(882),			-- Fiery Warhorse's Reins
 					ach(4832),			-- Friends In Even Higher Places
 					ach(1436),			-- Friends In High Places
 					ach(8794),			-- Friends In Places Even Higher Than That
 					ach(8213),			-- Friends In Places Higher Yet
-					ach(9925),			-- Friends In Places Yet Even Higher Than That
 					un(14, ach(3756)),	-- Furious Gladiator's Frost Wyrm
 					ach(2081),			-- Grand Black War Mammoth
 					un(14, ach(8705)),	-- Grievous Gladiator's Cloud Serpent
@@ -49,7 +41,6 @@ _.Achievements =
 					un(2, ach(879)),	-- Old School Ride
 					un(3, ach(3896)),	-- Onyx Panther (Korea only)
 					un(14, ach(8707)),	-- Prideful Gladiator's Cloud Serpent
-					un(14, ach(9229)),	-- Primal Gladiator's Felblood Gronnling
 					ach(883),			-- Reins of the Raven Lord
 					un(14, ach(3757)),	-- Relentless Gladiator's Frost Wyrm
 					un(14, ach(6322)),	-- Ruthless Gladiator's Twilight Drake
@@ -66,10 +57,7 @@ _.Achievements =
 					un(14, ach(888)),	-- Vengeful Nether Drake
 					h(ach(3357)),		-- Venomhide Ravasaur
 					un(14, ach(6003)),	-- Vicious Gladiator's Twilight Drake
-					un(14, ach(10999)),	-- Vindictive Gladiator's Storm Dragon
-					un(14, ach(10146)),	-- Warmongering Gladiator's Felblood Gronnling
 					ach(424),			-- Why? Because It's Red
-					un(14, ach(10137)),	-- Wild Gladiator's Felblood Gronnling
 					a(ach(3356)),		-- Winterspring Frostsaber
 					un(14, ach(4600)),	-- Wrathful Gladiator's Frost Wyrm
 				},

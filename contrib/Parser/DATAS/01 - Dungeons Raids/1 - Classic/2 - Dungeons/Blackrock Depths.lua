@@ -432,7 +432,6 @@ _.Instances =
 							i( 11840), 	-- Master Builder's Shirt
 							i( 11839), 	-- Chief Architect's Monocle
 							i( 11841), 	-- Senior Designer's Pantaloons
-							i(151406), 	-- Belt  of the Eminent Mason 
 							i( 11842), 	-- Land Surveyor's Mantle
 							i( 22223), 	-- Foreman's Head Protector
 						})),
@@ -452,7 +451,6 @@ _.Instances =
 								i( 22241), -- Dark Warder's Pauldrons
 								i( 11782), -- Boreal Mantle
 								i( 11783), -- Chillsteel Girdle
-								i(151405), -- Cold-Forged Chestplate
 								n(  9042, { -- Verek
 									i(11755),	-- Verek's Collar
 									i(22242),	-- Verek's Leash
@@ -572,8 +570,6 @@ _.Instances =
 								i( 11922), 		-- Blood-Etched Blade
 								i( 18044), 		-- Hurley's Tankard
 								i( 11735), 		-- Ragefury Eyepatch
-								i(151408), 		-- Dark Iron Dredger's Pauldrons
-								i(151407),		-- Blackened Pit Trousers
 								i( 18043), 		-- Coal Miner Boots
 								i( 22275), 		-- Firemoss Boots
 							},
@@ -595,7 +591,6 @@ _.Instances =
 							}),
 							i( 12791), 	-- Barman Shanker
 							i( 12793), 	-- Mixologist's Tunic
-							i(151410),	-- Bottle-Popper Ring
 							i(18653),  -- Schematic: Goblin Jumper Cables XL
 						})),
 						cr(9502, e( 381, {	-- Phalanx
@@ -604,7 +599,6 @@ _.Instances =
 								i( 22212), 		-- Golem Fitted Pauldrons
 								i( 22204), 		-- Wristguards of Renown
 								i( 11745), 		-- Fists of Phalanx
-								i(151409), 		-- Ferrous Cord
 								un(2, i(11743)),	-- Rockfist
 							},
 							["description"]	= "Private Rocknot must be sent into a drunken rage to aggro Phalanx. \nTo do that, feed him 6 dark iron ale mugs, which can be bought from Plugger Spazzring. \nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",
@@ -701,7 +695,6 @@ _.Instances =
 							i( 22208), 	-- Lavastone Hammer
 							i( 11935), 	-- Magmus Stone
 							i( 11746), 	-- Golem Skull Helm
-							i(151411), 	-- Molten-Warden Leggings 
 							i( 22275), 	-- Firemoss Boots
 						})),
 						cr(9019, e( 387, {	-- Emperor Dagran Thaurissan

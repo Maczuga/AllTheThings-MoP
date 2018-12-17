@@ -13,7 +13,7 @@ _.Achievements =
 				ach(892),		-- The Right Stuff (Artisan)
 			}),
 			ach(7380),		-- Double Agent
-			ach(12547, {	-- Epic (ilvl 340)
+			ach(6349, {	-- Mystically Epic (ilvl 476)
 				crit(1),		-- Head
 				crit(2),		-- Neck
 				crit(3),		-- Shoulder
@@ -29,7 +29,7 @@ _.Achievements =
 				crit(13),		-- Second Trinket
 				crit(14),		-- Cloak
 				crit(15),		-- Weapon
-				ach(12546, {	-- Superior (ilvl 310)
+				ach(6348, {	-- Mystically Superior (ilvl 450 )
 					crit(1),		-- Head
 					crit(2),		-- Neck
 					crit(3),		-- Shoulder

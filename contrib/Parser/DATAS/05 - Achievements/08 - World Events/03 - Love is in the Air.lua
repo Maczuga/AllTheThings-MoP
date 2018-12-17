@@ -56,7 +56,6 @@ _.Achievements =
 						crit(4),		-- The Culling of Stratholme
 						crit(5),		-- Naxxramas
 					}),
-					ach(9389),		-- It Might Just Save Your Life
 					ach(1291),		-- Lonely?
 					ach(1694),		-- Lovely Luck Is On Your Side
 					ach(1703),		-- My Love is Like a Red, Red Rose
@@ -81,11 +80,6 @@ _.Achievements =
 						crit(4),		-- Very Berry Cream
 					}),
 					ach(1696),		-- The Rocket's Pink Glare
-					ach(9394, {		-- 	They Really Love Me! (50)
-						i(116651),		-- True Love Prism
-						ach(9393),		-- Beacon of Love (25)
-						ach(9392),		-- Love Magnet (10)
-					}),
 					ach(4624),		-- Tough Love (Shadowfang Keep)
 				},
 			}),

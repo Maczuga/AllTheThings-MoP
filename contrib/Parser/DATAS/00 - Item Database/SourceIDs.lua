@@ -23,11 +23,7 @@ i(15945, 1, 6528);		-- Runic Stave [Blizzard changed equip type and removed ID n
 -- C O S M E T I C S --
 -----------------------
 
-i(130064, 1, 74444);	-- Deadeye Monocle	
-i(139300, 1, 80594);	-- Finely-Tailored Green Holiday Hat
-i(139299, 1, 80593);	-- Finely-Tailored Red Holiday Hat
 i(52489, 1, 25733);		-- Rhinestone Sunglasses [Non Equip]
-i(142000, 1, 82990);	-- Rhinestone Sunglasses [BoP]
 i(52486, 1, 25730);		-- Jeweler's Sapphire Monocle
 i(52488, 1, 25732);		-- Jeweler's Sapphire Monocle
 i(52485, 1, 25729);		-- Jeweler's Ruby Monocle
@@ -85,8 +81,6 @@ i(84660, 1, 43158);		-- Pandaren Fishing Pole
 i(116825, 1, 65557);	-- Savage Fishing Pole
 i(25978, 1, 10687);		-- Seth's Graphite Fishing Pole
 i(88535, 1, 45845);		-- Sharpened Tuskarr Spear
-i(120163, 1, 67918);	-- Thruk's Fishing Rod
-i(133755, 1, 76909);	-- Underlight Angler
 
 -------------------
 -- F I S H I E S --
@@ -101,18 +95,4 @@ i(34484, 1, 15992);		-- Old Ironjaw
 --------------------------------------------
 -- H I D D E N      A P P E A R A N C E S --
 --------------------------------------------
-i(119601, 1, 67418);	-- Mistdancer Shoulders [Hidden Shoulder Appearance]
-i(119588, 1, 67410);	-- Mistdancer Pauldrons [Hidden Shoulder Appearance]
-i(119585, 1, 67407);	-- Mistdancer Handguards [Hidden Glove Appearance]
-i(162812, 1, 98652);	-- Serene Disciple's Padding [Hidden Glove Appearance]
-i(162809, 1, 98649);	-- Serene Disciple's Handguards [Hidden Glove Appearance]
-i(119556, 1, 67388);	-- Trailseeker Spaulders [Hidden Shoulder Appearance]
-i(162796, 1, 98636);	-- Wildguard Spaulders [Hidden Shoulder Appearance]
-i(129485, 1, 74101);	-- Mistdancer Pauldrons [Hidden Shoulders]
-i(129482, 1, 74098);	-- Mistdancer Handguards
-i(129714, 1, 74250); 	-- Trailseeker Spaulders [Hidden Shoulders]
-i(153810, 1, 91083);	-- Trailseeker Spaulders
-i(153842, 1, 91113);	-- Mistdancer Spaulders
-i(153839, 1, 91102);	-- Mistandcer Handguards
-i(153842, 1, 91105);	-- Mistdancer Pauldrons
 i(11930, 1, 4326);		-- The Emperor's New Cape

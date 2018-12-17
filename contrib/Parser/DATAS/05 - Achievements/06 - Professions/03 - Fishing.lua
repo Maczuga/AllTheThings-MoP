@@ -47,28 +47,6 @@ _.Achievements =
 						crit(21),		-- Vareesa's Copper Coin
 						crit(22),		-- Vargoth's Copper Coin
 					}),
-					ach(10596, {	-- Bigger Fish to Fry
-						crit(1),		-- Ancient Black Barracuda
-						crit(2),		-- Ancient Highmountain Salmon
-						crit(3),		-- Ancient Mossgill
-						crit(4),		-- Axefish
-						crit(5),		-- Coldriver Carp
-						crit(6),		-- Ghostly Queenfish
-						crit(7),		-- Graybelly Lobster
-						crit(8),		-- Leyshimmer Blenny
-						crit(9),		-- Magic-Eater Frog
-						crit(10),		-- Mountain Puffer
-						crit(11),		-- Nar'thalas Hermit
-						crit(12),		-- Oodelfjisk
-						crit(13),		-- Seabottom Squid
-						crit(14),		-- Seerspine Puffer
-						crit(15),		-- Tainted Runescale Koi
-						crit(16),		-- Terrorfin
-						crit(17),		-- Thorned Flounder
-						crit(18),		-- Thundering Stormray
-						ach(10595),		-- A Cast Above the Rest
-					}),
-					ach(9456),		-- Abyssal Gulper Eel Angler
 					ach(1516, {		-- Accomplished Angler
 						title(51),		-- Salty
 						crit(1),		-- Grand Master Fisherman
@@ -86,17 +64,11 @@ _.Achievements =
 						crit(13),		-- 1000 Fish
 						crit(14),		-- The Coin Master
 					}),
-					ach(12757),		-- Angling for Battle
 					ach(128, {		-- Artisan Fisherman
 						ach(127),		-- Expert Fisherman
 						ach(126),		-- Journeyman Fisherman
 					}),
-					a(ach(12758)),	-- Baiting the Enemy
-					h(ach(12759)),	-- Baiting the Enemy
-					ach(9457),		-- Blackwater Whiptail Angler
-					ach(9458),		-- Blind Lake Sturgeon Angler
 					ach(4917),		-- Cataclysmic Fisherman
-					ach(12990),		-- Catchin' Some Rays
 					ach(3217, {		-- Chasing Marcia
 						crit(1),		-- The Ghostfish
 						crit(2), 		-- Jewel Of The Sewers
@@ -104,22 +76,7 @@ _.Achievements =
 						crit(4),		-- Blood Is Thicker
 						crit(5),		-- Disarmed!
 					}),
-					ach(9462, {		-- Draenor Angler
-						i(111928),		-- Fishing Shack, Level 3 [Blueprints]
-						crit(1),		-- Sea Scorpion Angler
-						crit(2),		-- Jawless Skulker Angler
-						crit(3),		-- Fat Sleeper Angler
-						crit(4),		-- Blind Lake Sturgeon Angler
-						crit(5),		-- Blackwater Whiptail Angler
-						crit(6),		-- Abyssal Gulper Eel Angler
-						crit(7),		-- Fire Ammonite Angler
-					}),
-					ach(9503),		-- Draenor Fisherman
-					ach(9547),		-- Everything Is Awesome!
-					ach(9459),		-- Fat Sleeper Angler
-					ach(9455),		-- Fire Ammonite Angler
 					ach(1243),		-- Fish Don't Leave Footprints
-					ach(12756),		-- Fish Me In the Moonlight
 					a(ach(5848, {	-- Fish or Cut Bait: Darnassus
 						crit(1),		-- Happy as a Clam Digger
 						crit(2),		-- Stocking Up
@@ -162,52 +119,13 @@ _.Achievements =
 						crit(4),		-- Time for Slime
 						crit(5),		-- Moat Monster!
 					})),
-					ach(11725, {	-- Fisherfriend of the Isles
-						i(152583),		-- Underlight Emerald
-						crit(1),		-- Ilyssia of the Waters
-						crit(2),		-- Corbyn
-						crit(3),		-- Akule Riverhorn
-						crit(4),		-- Impus
-						crit(5),		-- Sha'leth
-						crit(6),		-- Keeper Raynae
-					}),
-					ach(10598, {	-- Fishing 'Round the Isles
-						crit(1),		-- Huge Mossgill Perch
-						crit(2),		-- Work Order: Cursed Queenfish
-						crit(3),		-- Lively Runescale Koi
-						crit(4),		-- Lively Cursed Queenfish
-						crit(5),		-- Queen Queenfish
-						crit(6),		-- Wild Northern Barracuda
-						crit(7),		-- Huge Cursed Queenfish
-						crit(8),		-- Huge Runescale Koi
-						crit(9),		-- Lively Highmountain Salmon
-						crit(10),		-- Lively Stormrays
-						crit(11),		-- Huge Highmountain Salmon
-						crit(12),		-- Buoy Fishing
-						crit(13),		-- Raft Fishing
-						crit(14),		-- Huge Stormrays
-						crit(15),		-- Slippery Stormrays
-						crit(16),		-- Cave Fishing
-						crit(17),		-- Work Order: Stormrays
-						crit(18),		-- Work Order: Highmountain Salmon
-						crit(19),		-- Lively Mossgill Perch
-						crit(20),		-- Migrating Highmountain Salmon
-						crit(21),		-- Rocket Boot Fishing
-						crit(22),		-- Work Order: Mossgill Perch
-						crit(23),		-- Work Order: Runescale Koi
-						crit(24),		-- The Angler Mangler
-					}),
 					ach(5851, {		-- Gone Fishin'
 						crit(1),		-- Darnassus/Undercity
 						crit(2),		-- Ironforge?Thunder Bluff
 						crit(3),		-- SDtormwind/Orgrimmar
 					}),
 					ach(1958),		-- I Smell A Giant Rat
-					ach(9460),		-- Jawless Skulker Angler
-					a(ach(12753)),	-- Kul Tiran Fisherman
 					ach(7274),		-- Learning from the Best
-					ach(10597),		-- Legion Aquaculture
-					ach(10594),		-- Legion Fisherman
 					ach(7614, {		-- Locking Down the Docks
 						crit(1),		-- Shocking!
 						crit(2),		-- What Lurks Below
@@ -272,8 +190,6 @@ _.Achievements =
 						crit(11),		-- Spinefish Alpha
 						crit(12),		-- Tiger Gourami
 					}),
-					ach(12755),		-- Scent of the Sea
-					ach(9461),		-- Sea Scorpion Angler
 					ach(2095, {		-- Silver in the City
 						crit(1),		-- Aegwynn's Silver Coin
 						crit(2),		-- Alleria's Silver Coin
@@ -387,64 +303,6 @@ _.Achievements =
 						crit(4),		-- Waterlogged Wreckage
 						crit(5),		-- Floating Wreckage
 					}),
-					ach(10722, {	-- The Wish Remover
-						crit(1),		-- Stellagosa's Silver Coin
-						crit(2),		-- Prince Farondis's Royal Seal
-						crit(3),		-- Runas' Last Copper
-						crit(4),		-- Senegos' Ancient Coin
-						crit(5),		-- Okuna Longtusk's Doubloon
-						crit(6),		-- Ooker's Dookat
-						crit(7),		-- Coin of Golk the Rumble
-						crit(8),		-- Daglop's Infernal Copper Coin
-						crit(9),		-- Tyrande's Coin
-						crit(10),		-- Malfurion's Coin
-						crit(11),		-- Kur'talos Ravencrest's Spectral Coin
-						crit(12),		-- Jarod Shadowsong's Coin
-						crit(13),		-- Penelope Heathrow's Allowance
-						crit(14),		-- Remulos' Sigil
-						crit(15),		-- Elothir's Golden Leaf
-						crit(16),		-- Koda's Sigil
-						crit(17),		-- King Mrgl-Mrgl's Coin
-						crit(18),		-- Hemet Nesingwary's Bullet
-						crit(19),		-- Murky's Coin
-						crit(20),		-- Spiritwalker Ebonhorn's Coin
-						crit(21),		-- Addie Fizzlebog's Coin
-						crit(22),		-- Boomboom Brullingsworth's Coin
-						crit(23),		-- The Candleking's Candlecoin
-						crit(24),		-- Torok Bloodtotem's Coin
-						crit(25),		-- God-King Skovald's Fel-Tainted Coin
-						crit(26),		-- Genn Greymane's Coin
-						crit(27),		-- Nathanos Blightcaller's Coin
-						crit(28),		-- Helya's Coin
-						crit(29),		-- Sir Finley Mrrgglton's Coin
-						crit(30),		-- Havi's Coin
-						crit(31),		-- Vydhar's Wooden Nickel
-						crit(32),		-- Rax Sixtrigger's Gold-Painted Copper Coin
-						crit(33),		-- First Arcanist Thalyssra's Coin
-						crit(34),		-- Magistrix Elisande's Coin
-						crit(35),		-- Oculeth's Vanishing Coin
-						crit(36),		-- Ly'leth Lunastre's Family Crest
-						crit(37),		-- Pearlhunter Phin's Soggy Coin
-						crit(38),		-- Advisor Vandros' Coin
-						crit(39),		-- Gul'dan's Coin
-						crit(40),		-- Yowlon's Mark
-						crit(41),		-- Allari the Souleater's Coin
-						crit(42),		-- Altruis the Sufferer's Coin
-						crit(43),		-- Cyana Nightglaive's Coin
-						crit(44),		-- Falara Nightsong's Coin
-						crit(45),		-- Izal Whitemoon's Coin
-						crit(46),		-- Jace Darkweaver's Coin
-						crit(47),		-- Kayn Sunfury's Coin
-						crit(48),		-- Kor'vas Bloodthorn's Coin
-						crit(49),		-- The Coin
-						crit(50),		-- Blingtron's Botcoin
-						crit(51),		-- Lady Liadrin's Coin
-						crit(52),		-- Lunara's Coin
-						crit(53),		-- Illidan's Coin
-						crit(54),		-- Queen Azshara's Royal Seal
-						crit(55),		-- Gallywix's Coin-on-a-String
-						crit(56),		-- Li Li's Coin
-					}),
 					ach(1957, {		-- There's Gold In That There Fountain
 						crit(1),		-- Anduin Wrynn's Gold Coin
 						crit(2),		-- Archimonde's Gold Coin
@@ -463,7 +321,6 @@ _.Achievements =
 						crit(15),		-- Uther Lightbringer's Gold Coin
 					}),
 					ach(3218),		-- Turtles All the Way Down
-					h(ach(12754)),	-- Zandalari Fisherman			
 					ach(6839),		-- Zen Master Fisherman
 				},
 			}),

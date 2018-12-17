@@ -23,10 +23,8 @@ _.Achievements =
 						ach(1998),		-- Cooking Award
 					}),
 					ach(5845),		-- A Bunch of Lunch
-					ach(10591),		-- All Grown Up
 					ach(1801),		-- Captain Rumsey's Lager
 					ach(4916),		-- Cataclysmic Cook
-					ach(12747),		-- Catering for Combat
 					ach(123, {		-- Classic Cook
 						ach(122),		-- Expert Cook
 						ach(121),		-- Journeyman Cook
@@ -39,8 +37,6 @@ _.Achievements =
 						crit(3),		-- Warsong Gulch
 						crit(4),		-- Eye of the Storm
 					}),
-					ach(9500),		-- Draenor Cook
-					ach(10593),		-- Everything Tastes Better
 					ach(1563, {		-- Hail to the Chef
 						title(52),		-- Chef
 						crit(1),		-- Northrend Cook
@@ -69,8 +65,6 @@ _.Achievements =
 						crit(3),		-- Manalicious
 						crit(4),		-- Soup for the Soup
 					}),
-					a(ach(12742)),	-- Kul Tiran Cook
-					ach(10589),		-- Legion Cook
 					a(ach(5842, {	-- Let's Do Lunch: Darnassus
 						crit(1),		-- The Secret to Perfect Kimchi
 						crit(2),		-- Remembering the Ancestors
@@ -128,7 +122,6 @@ _.Achievements =
 					ach(7302),		-- Master of the Pot
 					ach(7303),		-- Master of the Steamer
 					ach(7301),		-- Master of the Wok
-					ach(10592),		-- Never A Day's Rest
 					ach(125),		-- Northrend Cook
 					ach(7325, {		-- Now I Am the Master
 						crit(1),		-- Obtain the Cooking School Bell
@@ -190,67 +183,6 @@ _.Achievements =
 						crit(31),		-- Tender Baked Turtle
 						crit(32),		-- Whitecrest Gumbo
 						ach(5472),		-- The Cataclysmic Gourmet (15)
-					}),
-					ach(9501, {		-- The Draenor Gourmet
-						crit(1),		-- Blackrock Barbecue
-						crit(2),		-- Blackrock Ham
-						crit(3),		-- Braised Riverbeast
-						crit(4),		-- Calamari Crepes
-						crit(5),		-- Clefthoof Sausages
-						crit(6),		-- Fat Sleeper Cakes
-						crit(7),		-- Feast of Blood
-						crit(8),		-- Feast of the Waters
-						crit(9),		-- Fiery Calamari
-						crit(10),		-- Frosty Stew
-						crit(11),		-- Gorgrond Chowder
-						crit(12),		-- Grilled Gulper
-						crit(13),		-- Grilled Saberfish
-						crit(14),		-- Hearty Elekk Steak
-						crit(15),		-- Pan-Seared Talbuk
-						crit(16),		-- Rylak Crepes
-						crit(17),		-- Saberfish Broth
-						crit(18),		-- Skulker Chowder
-						crit(19),		-- Sleeper Surprise
-						crit(20),		-- Steamed Scorpion
-						crit(21),		-- Sturgeon Stew
-						crit(22),		-- Talador Surf and Turf
-					}),
-					a(ach(12744, {	-- The Kul Tiran Menu
-						crit(1),		-- Bountiful Captain's Feast
-						crit(2),		-- Galley Banquet
-						crit(3),		-- Grilled Catfish
-						crit(4),		-- Honey-Glazed Haunches
-						crit(5),		-- Kul Tiramisu
-						crit(6),		-- Loa Loaf
-						crit(7),		-- Mon'Dazi
-						crit(8),		-- Ravenberry Tarts
-						crit(9),		-- Sailor's Pie
-						crit(10),		-- Seasoned Loins
-						crit(11),		-- Spiced Snapper
-						crit(12),		-- Swamp Fish 'n Chips
-					})),
-					ach(10762, {	-- The Legion Menu
-						crit(1),		-- Salt and Pepper Shank
-						crit(2),		-- Deep-Fried Mossgill
-						crit(3),		-- Pickled Stormray
-						crit(4),		-- Faronaar Fizz
-						crit(5),		-- Spiced Rib Roast
-						crit(6),		-- Leybeque Ribs
-						crit(7),		-- Suramar Surf and Turf
-						crit(8),		-- Barracuda Mrglgagh
-						crit(9),		-- Koi-Scented Stormray
-						crit(10),		-- Drogbar-Style Salmon
-						crit(11),		-- The Hungry Magister
-						crit(12),		-- Azshari Salad
-						crit(13),		-- Nightborne Delicacy Platter
-						crit(14),		-- Seed-Battered Fish Plate
-						crit(15),		-- Fishbrul Special
-						crit(16),		-- Dried Mackerel Strips
-						crit(17),		-- Bear Tartare
-						crit(18),		-- Fighter Chow
-						crit(19),		-- Hearty Feast
-						crit(20),		-- Lavish Suramar Feast
-						crit(21),		-- Crispy Bacon
 					}),
 					ach(1779, {		-- The Northrend Gourmet (45)
 						crit(1),		-- Bad Clams
@@ -388,7 +320,6 @@ _.Achievements =
 						crit(12),		-- Swamp Fish 'n Chips
 					})),
 					ach(5779),		-- You'll Feel Right as Rain
-					h(ach(12743)),	-- Zandalari Cook
 					ach(6365),		-- Zen Master Cook
 				},
 			}),

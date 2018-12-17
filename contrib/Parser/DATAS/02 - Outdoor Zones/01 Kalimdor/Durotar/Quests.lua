@@ -326,45 +326,6 @@ _.Zones =
 						["coord"] = { 45.6, 12.6 },
 						["races"] = { 24 },	-- Pandaren (Neutral)
 					}),
-					qh(40518, {	-- The Battle for Broken Shore
-						["groups"] = {
-							i(136582), -- Bonegrinder of the Horde Vanguard
-							i(136583), -- Longbow of the Horde Vanguard
-							i(136584), -- Dagger of the Horde Vanguard
-							i(136587), -- Poleaxe of the Horde Vanguard
-							i(136588), -- Quickblade of the Horde Vanguard
-							i(136589), -- Battle mace of the Horde Vanguard
-							i(136590), -- Staff of the Horde Vanguard
-							i(136595), -- Mageblade of the Horde Vanguard
-							i(136591), -- Waraxe of the Horde Vanguard
-							i(139292), -- Splitter of the Horde Vanguard
-						},
-						["qg"] = 113547, -- Stone Guard Mukar
-						["lvl"] = 98,
-						["sourceQuests"] = { 44281 }, -- To Be Prepared
-						["description"] = "Legion expansion introduction quest.|r",
-					}),
-					qh(40605, {	-- Keep Your Friends Close
-						["qg"] = 101035, -- Lady Sylvanas Windrunner
-						["classes"] = { 12 },
-					}),
-					qh(40982, {	-- Second Sight
-						["qg"] = 100873, -- Allari the Souleater
-						["classes"] = { 12 },
-					}),
-					qh(41002, {	-- A Weapon of the Horde
-						["qg"] = 101035, -- Lady Sylvanas Windrunner
-						["classes"]= { 12 },
-					}),
-					q(42484, {	-- The Firstborn Rises (DK class campaign)
-						["qg"] = 107554, -- Thassarian
-						["classes"] = { 6 },
-					}),
-					qh(44281, {	-- To Be Prepared
-						["qg"] = 4311, -- Holgar Stormaxe
-						["lvl"] = 98,
-						["sourceQuests"] = { 43926 } -- The Legion Returns
-					}),
 --[[
 					qg(41621, qh(25924)),	-- Call of Duty
 					qg(100873, qh(40983, {	-- Demons Among Them

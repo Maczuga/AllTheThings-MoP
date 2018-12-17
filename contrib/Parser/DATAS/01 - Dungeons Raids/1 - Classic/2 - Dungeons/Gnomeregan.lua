@@ -24,7 +24,6 @@ _.Instances =
 								i(9363, {	-- Sparklematic-Wrapped Box
 									["description"] = "Kill mobs for [Grime-Encrusted Object], clean them at the Sparklematic 5200.",
 									["groups"] = {
-										a(i(122207)),	-- Music Roll: Tinkertown
 										i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
 										i(10299),	-- Gnomeregan Amulet
 										i(10298),	-- Gnomeregan Band
@@ -120,8 +119,6 @@ _.Instances =
 								i( 65963),	-- Temple's Vest
 								i( 65939),	-- Murd Doc's Leggings
 								i( 65913),	-- Hann Ibal's Epaulettes
-								i(131624),	-- Barechus' Chainmail
-								i(131625),	-- Hann Ibal's Chain Dungarees
 							},
 						},
 					}),
@@ -253,18 +250,12 @@ _.Instances =
 						}),
 					}),
 					cr( 7361, e(419, {	-- Grubbis
-						i(151080),	-- Grubbis' Protective Pail
 						i(  9445),	-- Grubbis Paws
-						i(151079),	-- Chomper-Hide Belt
-						i(151078),	-- Shabby Trogg Britches
 					})),
 					cr( 7079, e(420, {	-- Viscous Fallout
 						i(  9452),	-- Hydrocane
 						i(  9453),	-- Toxic Revenger
-						i(151081),	-- Gnomish Rebreather
-						i(151082),	-- Lead Apron
 						i(  9454),	-- Acidic Walkers
-						i(151083),	-- Hazmat Galoshes
 					})),
 					cr( 6235, e(421, {	-- Electrocutioner 6000
 						i(9446),	-- Electrocutioner Leg
@@ -273,9 +264,6 @@ _.Instances =
 					})),
 					cr( 6229, e(418, {	-- Crowd Pummeler 9-60
 						i(  9449),	-- Manual Crowd Pummeler
-						i(151085),	-- Glitchbot Helm
-						i(151084),	-- Grease-Smudged Sash
-						i(132558),	-- Bot Operator's Treads
 						i(  9450),	-- Gnomebot Operating Boots
 					})),
 					n(  6228, {			-- Dark Iron Ambassador
@@ -297,13 +285,6 @@ _.Instances =
 						i(4411), 	-- Schematic: Flame Deflector
 						i(6672),    -- Schematic: Flash Bomb
 					})),
-					n(113621, {			-- Endgineer Omegaplugg
-						["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Head to the last boss in Gnomeregan, and kill him.|r\n|cff3399ffSTEP 2:|r|cff66ccff Go to the back of the pillar on the left side of the entrance as you enter the room, and press the small button.|r\n|cff3399ffSTEP 3:|r|cff66ccff Endgineer Omegaplugg will spawn, and his health is based on your level (110: 1.8M, 120: 8.65M).|r\n|cff3399ffSTEP 4:|r|cff66ccff To stop the bombs from spawning, you must disable the conduits in the room by pressing all the large red buttons in an anticlockwise format. (This is the first conduit on the right as you enter the room.)|r\n|cff3399ffSTEP 5:|r|cff66ccff Kill the boss, and all players can loot the toy. Good luck, have fun!",
-						["lvl"] = 110,
-						["groups"] = {
-							i(141331), -- Vial of Green Goo (TOY!)
-						},
-					}),
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)

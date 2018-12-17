@@ -24,7 +24,6 @@ _.Achievements =
 						crit(4),		-- Extinguishing Northrend
 						crit(5),		-- Extinguishing Outland
 					}),
-					ach(11276, 11277),	-- Extinguishing Draenor (Frostfire Ridge)
 					a(ach(1028, {	-- Extinguishing Eastern Kingdoms (Alliance)
 						crit(1),		-- Arathi Highlands
 						crit(2),		-- Badlands
@@ -131,8 +130,6 @@ _.Achievements =
 					})),
 					a(ach(8042)),	-- Extinguishing Pandaria (Alliance)
 					h(ach(8043)),	-- Extinguishing Pandaria (Horde)
-					a(ach(11278)),	-- Extinguishing the Broken Isles (Suramar) (Alliance)
-					h(ach(11279)),	-- Extinguishing the Broken Isles (Suramar) (Horde)
 					a(ach(6013, {	-- Extinguishing the Cataclysm (Alliance)
 						crit(1),		-- Twilight Highlands
 						crit(2),		-- Uldum
@@ -147,13 +144,6 @@ _.Achievements =
 						crit(3),		-- Hyjal
 						crit(4),		-- Deepholm
 						crit(5),		-- Uldum
-					})),
-					h(ach(11284, {	-- Flame Keeper of Draenor (Horde)
-						crit(1),		-- Spires of Arak
-						crit(2),		-- Talador
-						crit(3),		-- Nagrand
-						crit(4),		-- Gorgrond
-						crit(5),		-- Frostfire Ridge
 					})),
 					h(ach(1025, {	-- Flame Keeper of Eastern Kingdoms (Horde)
 						crit(1),		-- Arathi Highlands

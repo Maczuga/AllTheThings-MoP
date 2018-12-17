@@ -1,16 +1,5 @@
 {
     "mounts": [{
-        "name": "Ivory Hawkstrider",
-        "mountID": 230401,
-        "creatureId": -73991,
-        "itemId": 142369,
-        "qualityId": 4,
-        "icon": "inv_ability_mount_cockatricemount_white",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Traveler's Tundra Mammoth",
         "mountID": 61447,
         "creatureId": 32213,
@@ -21,17 +10,6 @@
         "isFlying": false,
         "isAquatic": true,
         "isJumping": true
-    }, {
-        "name": "Smoldering Ember Wyrm",
-        "mountID": 231428,
-        "creatureId": -74104,
-        "itemId": 142552,
-        "qualityId": 4,
-        "icon": "inv_nightbane2mount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
     }, {
         "name": "Mekgineer's Chopper",
         "mountID": 60424,
@@ -44,89 +22,12 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Deathlord's Vilebrood Vanquisher",
-        "mountID": 229387,
-        "creatureId": 119708,
-        "itemId": 142231,
-        "qualityId": 4,
-        "icon": "ability_mount_dkmount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Highlord's Golden Charger",
-        "mountID": 231435,
-        "creatureId": -74148,
-        "itemId": 143502,
-        "qualityId": 4,
-        "icon": "inv_paladinmount_blue",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Huntmaster's Loyal Wolfhawk",
-        "mountID": 229386,
-        "creatureId": 119571,
-        "itemId": 142227,
-        "qualityId": 4,
-        "icon": "inv_huntermount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Shadowblade's Murderous Omen",
-        "mountID": 231434,
-        "creatureId": -74133,
-        "itemId": 143493,
-        "qualityId": 4,
-        "icon": "inv_roguemount_blue",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Ban-Lu, Grandmaster's Companion",
-        "mountID": 229385,
-        "creatureId": -73784,
-        "itemId": 142225,
-        "qualityId": 4,
-        "icon": "inv_monkmount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Flying Carpet",
         "mountID": 61451,
         "creatureId": 25460,
         "itemId": 44554,
         "qualityId": 3,
         "icon": "ability_mount_flyingcarpet",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Battlelord's Bloodthirsty War Wyrm",
-        "mountID": 229388,
-        "creatureId": 120037,
-        "itemId": 142232,
-        "qualityId": 4,
-        "icon": "inv_warriormount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Farseer's Raging Tempest",
-        "mountID": 231442,
-        "creatureId": 120918,
-        "itemId": 143489,
-        "qualityId": 4,
-        "icon": "inv_shamanmount",
         "isGround": true,
         "isFlying": true,
         "isAquatic": false,
@@ -198,17 +99,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Prestigious Ivory Courser",
-        "mountID": 222238,
-        "creatureId": -70998,
-        "itemId": 140233,
-        "qualityId": 4,
-        "icon": "inv_horse2mountlight",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Grand Ice Mammoth",
         "mountID": 61470,
         "creatureId": 31858,
@@ -220,56 +110,12 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Prestigious Forest Courser",
-        "mountID": 222237,
-        "creatureId": -70999,
-        "itemId": 140232,
-        "qualityId": 4,
-        "icon": "inv_horse2mountgreen",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Prestigious Royal Courser",
-        "mountID": 222236,
-        "creatureId": -70997,
-        "itemId": 140230,
-        "qualityId": 4,
-        "icon": "inv_horse2mountpurple",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Black Qiraji Battle Tank",
         "mountID": 26656,
         "creatureId": 15711,
         "itemId": 21176,
         "qualityId": 5,
         "icon": "inv_misc_qirajicrystal_05",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Prestigious Midnight Courser",
-        "mountID": 222241,
-        "creatureId": -71000,
-        "itemId": 140407,
-        "qualityId": 4,
-        "icon": "inv_horse2mountblack",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Prestigious Azure Courser",
-        "mountID": 222240,
-        "creatureId": -70996,
-        "itemId": 140408,
-        "qualityId": 4,
-        "icon": "inv_horse2mountyellow",
         "isGround": true,
         "isFlying": false,
         "isAquatic": true,
@@ -318,28 +164,6 @@
         "isFlying": true,
         "isAquatic": false,
         "isJumping": false
-    }, {
-        "name": "Unpainted Mechanostrider",
-        "mountID": 17454,
-        "creatureId": 10180,
-        "itemId": 13322,
-        "qualityId": 3,
-        "icon": "ability_mount_mechastrider",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Chauffeured Mekgineer's Chopper",
-        "mountID": 179245,
-        "creatureId": -61804,
-        "itemId": 120968,
-        "qualityId": 7,
-        "icon": "inv_misc_key_06",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
     }, {
         "name": "Fluorescent Green Mechanostrider",
         "mountID": 17458,
@@ -451,56 +275,12 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Huntmaster's Dire Wolfhawk",
-        "mountID": 229439,
-        "creatureId": -73781,
-        "itemId": 142228,
-        "qualityId": 4,
-        "icon": "inv_huntermount_blue",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Huntmaster's Fierce Wolfhawk",
-        "mountID": 229438,
-        "creatureId": -73782,
-        "itemId": 142226,
-        "qualityId": 4,
-        "icon": "inv_huntermount_green",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Abyss Worm",
-        "mountID": 232519,
-        "creatureId": -74315,
-        "itemId": 143643,
-        "qualityId": 4,
-        "icon": "inv_serpentmount_green",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Spectral Steed",
         "mountID": 92231,
         "creatureId": 49487,
         "itemId": 64998,
         "qualityId": 4,
         "icon": "inv_mount_spectralhorse",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Vicious War Turtle",
-        "mountID": 232523,
-        "creatureId": -74320,
-        "itemId": 143648,
-        "qualityId": 4,
-        "icon": "inv_viciousdragonturtlemount",
         "isGround": true,
         "isFlying": false,
         "isAquatic": true,
@@ -528,17 +308,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Spirit of Eche'ro",
-        "mountID": 196681,
-        "creatureId": -70874,
-        "itemId": 131734,
-        "qualityId": 4,
-        "icon": "inv_ghostlymoosemount",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Flameward Hippogryph",
         "mountID": 97359,
         "creatureId": 52672,
@@ -549,17 +318,6 @@
         "isFlying": true,
         "isAquatic": false,
         "isJumping": false
-    }, {
-        "name": "Vicious War Turtle",
-        "mountID": 232525,
-        "creatureId": -74321,
-        "itemId": 143649,
-        "qualityId": 4,
-        "icon": "inv_viciousdragonturtlemount",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
     }, {
         "name": "Cobalt War Talbuk",
         "mountID": 34896,
@@ -660,28 +418,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Dread Raven",
-        "mountID": 155741,
-        "creatureId": 77178,
-        "itemId": 109013,
-        "qualityId": 4,
-        "icon": "inv_ravenlordmount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Shadowblade's Lethal Omen",
-        "mountID": 231523,
-        "creatureId": -74135,
-        "itemId": 143492,
-        "qualityId": 4,
-        "icon": "inv_roguemount_purple",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Great Red Elekk",
         "mountID": 65637,
         "creatureId": 33415,
@@ -715,17 +451,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Shadowblade's Crimson Omen",
-        "mountID": 231525,
-        "creatureId": -74136,
-        "itemId": 143490,
-        "qualityId": 4,
-        "icon": "inv_roguemount_red",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Swift Moonsaber",
         "mountID": 65638,
         "creatureId": 33319,
@@ -736,17 +461,6 @@
         "isFlying": false,
         "isAquatic": true,
         "isJumping": true
-    }, {
-        "name": "Shadowblade's Baneful Omen",
-        "mountID": 231524,
-        "creatureId": -74134,
-        "itemId": 143491,
-        "qualityId": 4,
-        "icon": "inv_roguemount_green",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
     }, {
         "name": "Great Golden Kodo",
         "mountID": 65641,
@@ -825,45 +539,12 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Vicious War Bear",
-        "mountID": 229487,
-        "creatureId": -73805,
-        "itemId": 142234,
-        "qualityId": 4,
-        "icon": "inv_mount_viciousalliancebearmount",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Swift Purple Raptor",
         "mountID": 65644,
         "creatureId": 34549,
         "itemId": 46760,
         "qualityId": 4,
         "icon": "ability_mount_raptor",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Vicious War Bear",
-        "mountID": 229486,
-        "creatureId": -73806,
-        "itemId": 142235,
-        "qualityId": 4,
-        "icon": "inv_mount_vicioushordebearmount",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Vicious Gilnean Warhorse",
-        "mountID": 223341,
-        "creatureId": 116231,
-        "itemId": 140353,
-        "qualityId": 4,
-        "icon": "inv_mount_vicioushorse",
         "isGround": true,
         "isFlying": false,
         "isAquatic": true,
@@ -884,17 +565,6 @@
         "mountID": 102514,
         "creatureId": 54903,
         "itemId": 72582,
-        "qualityId": 4,
-        "icon": "ability_mount_warhippogryph",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Long-Forgotten Hippogryph",
-        "mountID": 215159,
-        "creatureId": 39676,
-        "itemId": 138258,
         "qualityId": 4,
         "icon": "ability_mount_warhippogryph",
         "isGround": true,
@@ -935,28 +605,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Bloodfang Widow",
-        "mountID": 213115,
-        "creatureId": -69276,
-        "itemId": 137570,
-        "qualityId": 4,
-        "icon": "inv_spidermount",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Midnight",
-        "mountID": 229499,
-        "creatureId": -73808,
-        "itemId": 142236,
-        "qualityId": 4,
-        "icon": "ability_mount_dreadsteed",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Flying Machine",
         "mountID": 44153,
         "creatureId": 24418,
@@ -967,28 +615,6 @@
         "isFlying": true,
         "isAquatic": false,
         "isJumping": false
-    }, {
-        "name": "Vicious War Trike",
-        "mountID": 223354,
-        "creatureId": -71816,
-        "itemId": 140354,
-        "qualityId": 4,
-        "icon": "inv_viciousgoblintrike",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Vicious Warstrider",
-        "mountID": 223363,
-        "creatureId": -71975,
-        "itemId": 140348,
-        "qualityId": 4,
-        "icon": "ability_mount_vicioushawkstrider",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
     }, {
         "name": "Wrathful Gladiator's Frost Wyrm",
         "mountID": 71810,
@@ -1034,17 +660,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Vicious War Lion",
-        "mountID": 229512,
-        "creatureId": -73817,
-        "itemId": 142237,
-        "qualityId": 4,
-        "icon": "inv_viciousgoldenking",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Armored Blue Dragonhawk",
         "mountID": 142478,
         "creatureId": 71381,
@@ -1066,17 +681,6 @@
         "isFlying": true,
         "isAquatic": false,
         "isJumping": false
-    }, {
-        "name": "Felblaze Infernal",
-        "mountID": 213134,
-        "creatureId": -70040,
-        "itemId": 137574,
-        "qualityId": 4,
-        "icon": "inv_infernalmount",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
     }, {
         "name": "Prideful Gladiator's Cloud Serpent",
         "mountID": 148620,
@@ -1143,17 +747,6 @@
         "isFlying": false,
         "isAquatic": true,
         "isJumping": true
-    }, {
-        "name": "Soaring Skyterror",
-        "mountID": 191633,
-        "creatureId": -65040,
-        "itemId": 128706,
-        "qualityId": 4,
-        "icon": "spell_beastmaster_rylak",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
     }, {
         "name": "Ironforge Ram",
         "mountID": 63636,
@@ -1254,50 +847,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Prestigious War Steed",
-        "mountID": 193695,
-        "creatureId": -65760,
-        "itemId": 129280,
-        "qualityId": 4,
-        "icon": "inv_alliancepvpmount",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Highlord's Vengeful Charger",
-        "mountID": 231587,
-        "creatureId": -74149,
-        "itemId": 143503,
-        "qualityId": 4,
-        "icon": "inv_paladinmount_red",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Predatory Bloodgazer",
-        "mountID": 213158,
-        "creatureId": -70060,
-        "itemId": 137577,
-        "qualityId": 4,
-        "icon": "inv_falcosaurosblack",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Highlord's Valorous Charger",
-        "mountID": 231589,
-        "creatureId": -74151,
-        "itemId": 143505,
-        "qualityId": 4,
-        "icon": "inv_paladinmount_yellow",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Wooly White Rhino",
         "mountID": 74918,
         "creatureId": 40191,
@@ -1320,45 +869,12 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Highlord's Vigilant Charger",
-        "mountID": 231588,
-        "creatureId": -74150,
-        "itemId": 143504,
-        "qualityId": 4,
-        "icon": "inv_paladinmount_purple",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Snowfeather Hunter",
-        "mountID": 213163,
-        "creatureId": -70063,
-        "itemId": 137578,
-        "qualityId": 4,
-        "icon": "inv_falcosauroswhite",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Swift Zhevra",
         "mountID": 49322,
         "creatureId": 27684,
         "itemId": 37719,
         "qualityId": 4,
         "icon": "ability_mount_charger",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Viridian Sharptalon",
-        "mountID": 213165,
-        "creatureId": -70061,
-        "itemId": 137580,
-        "qualityId": 4,
-        "icon": "inv_falcosaurosgreen",
         "isGround": true,
         "isFlying": false,
         "isAquatic": true,
@@ -1374,17 +890,6 @@
         "isFlying": true,
         "isAquatic": false,
         "isJumping": false
-    }, {
-        "name": "Brilliant Direbeak",
-        "mountID": 213164,
-        "creatureId": -70062,
-        "itemId": 137579,
-        "qualityId": 4,
-        "icon": "inv_falcosaurosred",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
     }, {
         "name": "Blue Drake",
         "mountID": 59568,
@@ -1513,28 +1018,6 @@
         "itemId": 94231,
         "qualityId": 4,
         "icon": "ability_mount_triceratopsmount_green",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Wild Dreamrunner",
-        "mountID": 242875,
-        "creatureId": -76424,
-        "itemId": 147804,
-        "qualityId": 4,
-        "icon": "inv_horse2green",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Highmountain Elderhorn",
-        "mountID": 242874,
-        "creatureId": -67039,
-        "itemId": 147807,
-        "qualityId": 4,
-        "icon": "inv_moosemount2",
         "isGround": true,
         "isFlying": false,
         "isAquatic": true,
@@ -1683,17 +1166,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Valarjar Stormwing",
-        "mountID": 242882,
-        "creatureId": -68053,
-        "itemId": 147805,
-        "qualityId": 4,
-        "icon": "inv_stormdragonmount2",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Red Skeletal Warhorse",
         "mountID": 22722,
         "creatureId": 14331,
@@ -1704,17 +1176,6 @@
         "isFlying": false,
         "isAquatic": true,
         "isJumping": true
-    }, {
-        "name": "Cloudwing Hippogryph",
-        "mountID": 242881,
-        "creatureId": -63628,
-        "itemId": 147806,
-        "qualityId": 4,
-        "icon": "inv_hippogryph2azsuna",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
     }, {
         "name": "Black War Tiger",
         "mountID": 22723,
@@ -1991,17 +1452,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Steelbound Devourer",
-        "mountID": 213209,
-        "creatureId": 107475,
-        "itemId": 137686,
-        "qualityId": 4,
-        "icon": "inv_mount_felcorehoundmoun",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Sea Turtle",
         "mountID": 64731,
         "creatureId": 34187,
@@ -2023,17 +1473,6 @@
         "isFlying": true,
         "isAquatic": false,
         "isJumping": false
-    }, {
-        "name": "Bristling Hellboar",
-        "mountID": 190690,
-        "creatureId": -64726,
-        "itemId": 128481,
-        "qualityId": 3,
-        "icon": "inv_giantboarmount_brown",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
     }, {
         "name": "Great Brewfest Kodo",
         "mountID": 49379,
@@ -2221,17 +1660,6 @@
         "isFlying": true,
         "isAquatic": false,
         "isJumping": false
-    }, {
-        "name": "Voidtalon of the Dark Star",
-        "mountID": 179478,
-        "creatureId": 89959,
-        "itemId": 121815,
-        "qualityId": 4,
-        "icon": "ability_mount_fireravengodmountpurple",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
     }, {
         "name": "Spawn of Horridon",
         "mountID": 136471,
@@ -2497,17 +1925,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Mystic Runesaber",
-        "mountID": 180545,
-        "creatureId": 91986,
-        "itemId": 122469,
-        "qualityId": 4,
-        "icon": "inv_saber2mount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Life-Binder's Handmaiden",
         "mountID": 107845,
         "creatureId": 57228,
@@ -2585,39 +2002,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Riddler's Mind-Worm",
-        "mountID": 243025,
-        "creatureId": -74314,
-        "itemId": 147835,
-        "qualityId": 4,
-        "icon": "inv_serpentmount_darkblue",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Great Northern Elderhorn",
-        "mountID": 213339,
-        "creatureId": -67042,
-        "itemId": 129962,
-        "qualityId": 4,
-        "icon": "inv_moosemount2white",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Vicious War Elekk",
-        "mountID": 223578,
-        "creatureId": -72020,
-        "itemId": 140350,
-        "qualityId": 4,
-        "icon": "ability_mount_viciouswarelekk",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Argent Charger",
         "mountID": 66906,
         "creatureId": 16510,
@@ -2673,17 +2057,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Prestigious War Wolf",
-        "mountID": 204166,
-        "creatureId": -68069,
-        "itemId": 143864,
-        "qualityId": 4,
-        "icon": "ability_mount_hordepvpmount",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Black War Mammoth",
         "mountID": 59785,
         "creatureId": 31849,
@@ -2694,17 +2067,6 @@
         "isFlying": false,
         "isAquatic": true,
         "isJumping": true
-    }, {
-        "name": "Infinite Timereaver",
-        "mountID": 201098,
-        "creatureId": -67594,
-        "itemId": 133543,
-        "qualityId": 4,
-        "icon": "inv_infinitedragonmount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
     }, {
         "name": "Black War Mammoth",
         "mountID": 59788,
@@ -2948,17 +2310,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Brawler's Burly Basilisk",
-        "mountID": 230844,
-        "creatureId": -73248,
-        "itemId": 142403,
-        "qualityId": 4,
-        "icon": "inv_basaliskmount",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Red Qiraji Battle Tank",
         "mountID": 26054,
         "creatureId": 15716,
@@ -3031,17 +2382,6 @@
         "itemId": 67107,
         "qualityId": 4,
         "icon": "inv_mount_hordescorpiong",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Primal Gladiator's Felblood Gronnling",
-        "mountID": 186828,
-        "creatureId": -63956,
-        "itemId": 128277,
-        "qualityId": 4,
-        "icon": "inv_fellessergronnmount",
         "isGround": true,
         "isFlying": false,
         "isAquatic": true,
@@ -3179,17 +2519,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Leyfeather Hippogryph",
-        "mountID": 225765,
-        "creatureId": -63625,
-        "itemId": 141217,
-        "qualityId": 4,
-        "icon": "inv_mount_hippogryph_arcane",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Golden Gryphon",
         "mountID": 32235,
         "creatureId": 18360,
@@ -3200,17 +2529,6 @@
         "isFlying": true,
         "isAquatic": false,
         "isJumping": false
-    }, {
-        "name": "Grove Defiler",
-        "mountID": 193007,
-        "creatureId": -72700,
-        "itemId": 141216,
-        "qualityId": 4,
-        "icon": "inv_moosemount2nightmare",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
     }, {
         "name": "Ebon Gryphon",
         "mountID": 32239,
@@ -3311,17 +2629,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Fel Bat (Test)",
-        "mountID": 215545,
-        "creatureId": 110479,
-        "itemId": 138386,
-        "qualityId": 4,
-        "icon": "inv_spidermount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Warhorse",
         "mountID": 13819,
         "creatureId": 9158,
@@ -3361,28 +2668,6 @@
         "itemId": 5668,
         "qualityId": 3,
         "icon": "ability_mount_blackdirewolf",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Deathtusk Felboar",
-        "mountID": 190977,
-        "creatureId": -64849,
-        "itemId": 128527,
-        "qualityId": 3,
-        "icon": "inv_giantboarmount_brown",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Ratstallion",
-        "mountID": 215558,
-        "creatureId": 110708,
-        "itemId": 138387,
-        "qualityId": 4,
-        "icon": "inv_ratmount",
         "isGround": true,
         "isFlying": false,
         "isAquatic": true,
@@ -3652,17 +2937,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Illidari Felstalker",
-        "mountID": 189998,
-        "creatureId": 91905,
-        "itemId": 128425,
-        "qualityId": 4,
-        "icon": "inv_felstalkermount",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Gray Kodo",
         "mountID": 18989,
         "creatureId": 12149,
@@ -3702,17 +2976,6 @@
         "itemId": 87251,
         "qualityId": 3,
         "icon": "ability_mount_rocketmount4",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Grove Warden",
-        "mountID": 189999,
-        "creatureId": 95827,
-        "itemId": 128422,
-        "qualityId": 4,
-        "icon": "inv_moosemount",
         "isGround": true,
         "isFlying": true,
         "isAquatic": false,
@@ -3762,34 +3025,12 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Darkwater Skate",
-        "mountID": 228919,
-        "creatureId": -73254,
-        "itemId": 142398,
-        "qualityId": 4,
-        "icon": "inv_stingray2mount",
-        "isGround": false,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": false
-    }, {
         "name": "Red Proto-Drake",
         "mountID": 59961,
         "creatureId": 31902,
         "itemId": 44160,
         "qualityId": 4,
         "icon": "ability_mount_drake_proto",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Ironbound Wraithcharger",
-        "mountID": 142910,
-        "creatureId": 71497,
-        "itemId": 129922,
-        "qualityId": 4,
-        "icon": "ability_mount_steelwarhorse",
         "isGround": true,
         "isFlying": true,
         "isAquatic": false,
@@ -3806,17 +3047,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Mechanized Lumber Extractor",
-        "mountID": 223814,
-        "creatureId": 112432,
-        "itemId": 140500,
-        "qualityId": 4,
-        "icon": "ability_mount_shreddermount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Black Proto-Drake",
         "mountID": 59976,
         "creatureId": 31912,
@@ -3828,45 +3058,12 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Arcanist's Manasaber",
-        "mountID": 230987,
-        "creatureId": -74032,
-        "itemId": 142436,
-        "qualityId": 4,
-        "icon": "inv_suramarmount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Green Dragon Turtle",
         "mountID": 120395,
         "creatureId": 61809,
         "itemId": 82765,
         "qualityId": 3,
         "icon": "ability_mount_pandaranmountgreen",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Vicious War Scorpion",
-        "mountID": 230988,
-        "creatureId": -74034,
-        "itemId": 142437,
-        "qualityId": 4,
-        "icon": "ability_mount_viciouskorkronannihilator",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Vicious War Mechanostrider",
-        "mountID": 183889,
-        "creatureId": -63249,
-        "itemId": 124089,
-        "qualityId": 4,
-        "icon": "ability_mount_viciouswarmechanostrider",
         "isGround": true,
         "isFlying": false,
         "isAquatic": true,
@@ -4158,17 +3355,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Wild Gladiator's Felblood Gronnling",
-        "mountID": 189043,
-        "creatureId": -64378,
-        "itemId": 128281,
-        "qualityId": 4,
-        "icon": "inv_fellessergronnmount_pale",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Frostplains Battleboar",
         "mountID": 171632,
         "creatureId": -59344,
@@ -4224,34 +3410,12 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Warmongering Gladiator's Felblood Gronnling",
-        "mountID": 189044,
-        "creatureId": -64377,
-        "itemId": 128282,
-        "qualityId": 4,
-        "icon": "inv_fellessergronnmount_dark",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Trained Rocktusk",
         "mountID": 171637,
         "creatureId": -59735,
         "itemId": 116675,
         "qualityId": 3,
         "icon": "inv_giantboarmount_brown",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Arcadian War Turtle",
-        "mountID": 227956,
-        "creatureId": -68848,
-        "itemId": 141713,
-        "qualityId": 4,
-        "icon": "inv_turtlemount",
         "isGround": true,
         "isFlying": false,
         "isAquatic": true,
@@ -4312,17 +3476,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Felsteel Annihilator",
-        "mountID": 182912,
-        "creatureId": -62893,
-        "itemId": 123890,
-        "qualityId": 4,
-        "icon": "ability_mount_felreavermount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Cataclysmic Gladiator's Twilight Drake",
         "mountID": 124550,
         "creatureId": 63816,
@@ -4345,50 +3498,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Vindictive Gladiator's Storm Dragon",
-        "mountID": 227986,
-        "creatureId": -73315,
-        "itemId": 141843,
-        "qualityId": 4,
-        "icon": "inv_stormdragonmount2",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Ferocious Gladiator's Storm Dragon",
-        "mountID": 227991,
-        "creatureId": -73319,
-        "itemId": 141846,
-        "qualityId": 4,
-        "icon": "inv_stormdragonmount2green",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Cruel Gladiator's Storm Dragon",
-        "mountID": 227989,
-        "creatureId": -73317,
-        "itemId": 141845,
-        "qualityId": 4,
-        "icon": "inv_stormdragonmount2dark",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Fearless Gladiator's Storm Dragon",
-        "mountID": 227988,
-        "creatureId": -73316,
-        "itemId": 141844,
-        "qualityId": 4,
-        "icon": "inv_stormdragonmount2blue",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Felsteed",
         "mountID": 5784,
         "creatureId": 304,
@@ -4399,28 +3508,6 @@
         "isFlying": false,
         "isAquatic": true,
         "isJumping": true
-    }, {
-        "name": "Demonic Gladiator's Storm Dragon",
-        "mountID": 227995,
-        "creatureId": -73321,
-        "itemId": 141848,
-        "qualityId": 4,
-        "icon": "inv_stormdragonmount2yellow",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Fierce Gladiator's Storm Dragon",
-        "mountID": 227994,
-        "creatureId": -73320,
-        "itemId": 141847,
-        "qualityId": 4,
-        "icon": "inv_stormdragonmount2light",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
     }, {
         "name": "Drake of the West Wind",
         "mountID": 88741,
@@ -4928,17 +4015,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Vicious War Kodo",
-        "mountID": 185052,
-        "creatureId": -63580,
-        "itemId": 124540,
-        "qualityId": 4,
-        "icon": "ability_mount_viciouswarkodo",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "White Ram",
         "mountID": 6898,
         "creatureId": 4777,
@@ -4993,17 +4069,6 @@
         "isFlying": false,
         "isAquatic": true,
         "isJumping": true
-    }, {
-        "name": "Brinedeep Bottom-Feeder",
-        "mountID": 214791,
-        "creatureId": -68849,
-        "itemId": 138811,
-        "qualityId": 4,
-        "icon": "inv_fishmount",
-        "isGround": false,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": false
     }, {
         "name": "Relentless Gladiator's Frost Wyrm",
         "mountID": 67336,
@@ -5082,17 +4147,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Fathom Dweller",
-        "mountID": 223018,
-        "creatureId": -71939,
-        "itemId": 138201,
-        "qualityId": 4,
-        "icon": "inv_fishing_lure_starfish",
-        "isGround": false,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": false
-    }, {
         "name": "Swift Stormsaber",
         "mountID": 23338,
         "creatureId": 14602,
@@ -5132,17 +4186,6 @@
         "itemId": 116769,
         "qualityId": 3,
         "icon": "inv_hippo_green",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Hellfire Infernal",
-        "mountID": 171827,
-        "creatureId": -70051,
-        "itemId": 137575,
-        "qualityId": 4,
-        "icon": "inv_infernalmountred",
         "isGround": true,
         "isFlying": false,
         "isAquatic": true,
@@ -5390,17 +4433,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Llothien Prowler",
-        "mountID": 171850,
-        "creatureId": -68851,
-        "itemId": 137573,
-        "qualityId": 4,
-        "icon": "foxmounticon",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Garn Nighthowl",
         "mountID": 171851,
         "creatureId": 86480,
@@ -5456,28 +4488,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Corrupted Dreadwing",
-        "mountID": 183117,
-        "creatureId": -63032,
-        "itemId": 123974,
-        "qualityId": 4,
-        "icon": "inv_feldreadravenmount",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Minion of Grumpus",
-        "mountID": 191314,
-        "creatureId": -64960,
-        "itemId": 128671,
-        "qualityId": 4,
-        "icon": "inv_misc_pet_pandaren_yeti_grey",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Grand Expedition Yak",
         "mountID": 122708,
         "creatureId": 62809,
@@ -5522,34 +4532,12 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Netherlord's Accursed Wrathsteed",
-        "mountID": 238454,
-        "creatureId": -75533,
-        "itemId": 142233,
-        "qualityId": 4,
-        "icon": "inv_warlockmountshadow",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Green Riding Nether Ray",
         "mountID": 39798,
         "creatureId": 22958,
         "itemId": 32314,
         "qualityId": 4,
         "icon": "ability_hunter_pet_netherray",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
-        "name": "Netherlord's Brimstone Wrathsteed",
-        "mountID": 238452,
-        "creatureId": -75532,
-        "itemId": 143637,
-        "qualityId": 4,
-        "icon": "inv_warlockmountfire",
         "isGround": true,
         "isFlying": true,
         "isAquatic": false,
@@ -5786,17 +4774,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Leywoven Flying Carpet",
-        "mountID": 233364,
-        "creatureId": -74480,
-        "itemId": 143764,
-        "qualityId": 4,
-        "icon": "inv_suramarflyingcarpet",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Headless Horseman's Mount",
         "mountID": 48025,
         "creatureId": 27152,
@@ -5885,17 +4862,6 @@
         "isAquatic": false,
         "isJumping": false
     }, {
-        "name": "Eclipse Dragonhawk",
-        "mountID": 194464,
-        "creatureId": -65994,
-        "itemId": 129923,
-        "qualityId": 4,
-        "icon": "ability_hunter_pet_dragonhawk",
-        "isGround": true,
-        "isFlying": true,
-        "isAquatic": false,
-        "isJumping": false
-    }, {
         "name": "Vicious Gladiator's Twilight Drake",
         "mountID": 101282,
         "creatureId": 54335,
@@ -5940,17 +4906,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Coalfist Gronnling",
-        "mountID": 189364,
-        "creatureId": -64426,
-        "itemId": 128311,
-        "qualityId": 4,
-        "icon": "inv_lessergronnmount_red",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Armored Red Dragonhawk",
         "mountID": 142266,
         "creatureId": 71313,
@@ -5968,17 +4923,6 @@
         "itemId": 104253,
         "qualityId": 4,
         "icon": "inv_mount_hordescorpiong",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Infernal Direwolf",
-        "mountID": 186305,
-        "creatureId": -63873,
-        "itemId": 127140,
-        "qualityId": 4,
-        "icon": "inv_wolfdraenor_felmount",
         "isGround": true,
         "isFlying": false,
         "isAquatic": true,
@@ -6094,17 +5038,6 @@
         "isAquatic": true,
         "isJumping": true
     }, {
-        "name": "Primal Flamesaber",
-        "mountID": 232405,
-        "creatureId": -74298,
-        "itemId": 143631,
-        "qualityId": 4,
-        "icon": "inv_firecatmount",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
         "name": "Crimson Primal Direhorn",
         "mountID": 140250,
         "creatureId": 70525,
@@ -6148,17 +5081,6 @@
         "isFlying": true,
         "isAquatic": false,
         "isJumping": false
-    }, {
-        "name": "Creeping Carpet",
-        "mountID": 169952,
-        "creatureId": 67803,
-        "itemId": 115363,
-        "qualityId": 4,
-        "icon": "inv_tailoring_blackcarpet",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
     }, {
         "name": "Dark War Talbuk",
         "mountID": 34790,
@@ -6287,17 +5209,6 @@
         "itemId": 82811,
         "qualityId": 4,
         "icon": "ability_mount_pandaranmountepicred",
-        "isGround": true,
-        "isFlying": false,
-        "isAquatic": true,
-        "isJumping": true
-    }, {
-        "name": "Prestigious Bronze Courser",
-        "mountID": 222202,
-        "creatureId": -71001,
-        "itemId": 140228,
-        "qualityId": 4,
-        "icon": "inv_horse2mount",
         "isGround": true,
         "isFlying": false,
         "isAquatic": true,

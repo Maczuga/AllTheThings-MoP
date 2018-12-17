@@ -6,169 +6,75 @@ _.Mounts =
 	n(-4, { 	-- Achievement
 		i(44178),	-- Albino Drake
 		i(98259),	-- Armored Blue Dragonhawk
-		i(116668),	-- Armored Frostboar
-		i(116781),	-- Armored Frostwolf
 		i(98104),	-- Armored Red Dragonhawk
 		i(93662),	-- Armored Skyscreamer
-		i(137614),	-- Biting Frostshard Core
 		i(44223),	-- Black War Bear (Alliance)
 		i(44224),	-- Black War Bear (Horde)
-		i(116666),	-- Blacksteel Battleboar
-		i(153041),	-- Bleakhoof Ruinstrider
 		i(51954),	-- Bloodbathed Frostbrood Vanquisher
-		i(163216), 	-- Bloodgorged Crawg
 		i(44843),	-- Blue Dragonhawk
-		i(120968),	-- Chauffeured Mekgineer's Chopper (Alliance)
-		i(122703),	-- Chauffeured Mekgineer's Chopper (Horde)
-		i(163577),	-- Conquerer's Scythemaw
 		i(69230),	-- Corrupted Fire Hawk
 		i(87769),	-- Crimson Cloud Serpent
-		i(161331),	-- Dark Iron Core Hound [Dark Iron Dwarf Allied Race]
 		i(62901),	-- Drake of the East Wind
-		i(118676),	-- Emerald Drake
 		i(69226),	-- Felfire Hawk
 		i(69213),	-- Flameward Hippogryph
-		i(163981),	-- Frenzied Feltalon
-		i(116670),	-- Frostplains Battleboar
-		i(116383),	-- Gorestrider Gronnling
-		i(141216),	-- Grove Defiler
 		i(87776),	-- Heavenly Azure Cloud Serpent
 		i(87773),	-- Heavenly Crimson Cloud Serpent
-		i(155662),	-- Highmountain Thunderhoof (Horde Only)
 		i(51955),	-- Icebound Frostbrood Vanquisher
-		i(127140),	-- Infernal Direwolf
 		i(45801),	-- Ironbound Proto-Drake
 		i(91802),	-- Jade Pandaren Kite
-		i(141217),	-- Leyfeather Hippogryph
-		i(155656),	-- Lightforged Felcrusher (Alliance)
-		i(140500),	-- Mechanized Lumber Extractor
-		i(156487),	-- Nightborne Manasaber (Horde)
-		i(161215),	-- Reins of the Obsidian Krolusk
 		i(89785),	-- Pandaren Kite (Alliance)
 		i(81559),	-- Pandaren Kite (Horde)
-		i(140408),	-- Prestigious Azure Courser
-		i(164250),	-- Prestigious Bloodforged Courser
-		i(140228),	-- Prestigious Bronze Courser
-		i(140232),	-- Prestigious Forest Courser
-		i(140233),	-- Prestigious Ivory Courser
-		i(140407),	-- Prestigious Midnight Courser
-		i(140230),	-- Prestigious Royal Courser
-		i(129280),	-- Prestigious War Steed
-		i(143864),	-- Prestigious War Wolf
-		i(138387),	-- Ratstallion
 		i(44842),	-- Red Dragonhawk
 		i(44160),	-- Red Proto-Drake
 		i(45802),	-- Rusted Proto-Drake
-		i(128706),	-- Soaring Skyterror
 		i(104208),	-- Spawn of Galakras
-		i(156486),	-- Starcursed Voidstrider (Alliance)
 		i(77068),	-- Twilight Harbinger
-		i(140353),	-- Vicious Gilnean Warhorse*
 		i(102533),	-- Vicious Skeletal Warhorse*
-		i(142234),	-- Vicious War Bear (Alliance)*
-		i(142235),	-- Vicious War Bear (Horde)*
-		i(140350),	-- Vicious War Elekk*
-		i(152869),  -- Vicious War Fox (Horde)*
-		i(152870),	-- Vicious War Fox (Alliance)*
-		i(124540),	-- Vicious War Kodo*
-		i(142237),	-- Vicious War Lion*
-		i(124089),	-- Vicious War Mechanostrider*
-		i(116777),	-- Vicious War Ram*
-		i(116778),	-- Vicious War Raptor*
 		i(102514),	-- Vicious Warsaber*
-		i(142437),	-- Vicious War Scorpion*
 		i(70909),	-- Vicious War Steed*
-		i(140348),	-- Vicious Warstrider*
-		i(140354),	-- Vicious War Trike*
-		i(143648),	-- Vicious War Turtle (Alliance)*
-		i(143649),	-- Vicious War Turtle (Horde)*
 		i(70910),	-- Vicious War Wolf*
 		i(44177),	-- Violet Proto-Drake
 		i(62900),	-- Volcanic Stone Drake
-		i(157870),	-- Zandalari Direhorn  [Zandalari Allied Race Quest Chain]
 	}),
 	n(-26, { 	-- Drop
-		i(143643),	-- Abyss Worm
-		i(152904),	-- Acid Belcher
 		i(69747),	-- Amani Battle Bear
 		i(94230),	-- Amber Primordial Direhorn
-		i(152816),	-- Antoran Charhound
-		i(116669),	-- Armored Razorback
 		i(68823),	-- Armored Razzashi Raptor
 		i(32458),	-- Ashes of Al'ar
 		i(87777),	-- Astral Cloud Serpent
-		i(153044),	-- Avenging Felcrusher Mount
 		i(43952),	-- Azure Drake
-		i(152903),	-- Biletooth Gnasher Mount [Note: Drop Argus]
 		i(43986),	-- Black Drake
 		i(94292),	-- Black Primal Raptor
 		i(77067),	-- Blazing Drake
-		i(153043),	-- Blessed Felcrusher Mount
-		i(116659),	-- Bloodhoof Bull
 		i(43953),	-- Blue Drake
 		i(44151),	-- Blue Proto-Drake
 		i(21218),	-- Blue Qiraji Battle Tank
-		i(163578), 	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
-		i(163576),	-- Captured Dune Scavenger
-		i(163574),	-- Chewed-On Reins of the Terrified Pack Mule
-		i(147806),	-- Cloudwing Hippogryph
 		i(95059),	-- Clutch of Ji-Kun
 		i(94228),	-- Cobalt Primordial Direhorn
-		i(163583),  -- Craghorn Chasm-Leaper
-		i(152905),	-- Crimson Slavermaw
-		i(152843),	-- Darkspore Mana Ray Mount
 		i(63040),	-- Drake of the North Wind
 		i(63041),	-- Drake of the South Wind
 		i(78919),	-- Experiment 12-B
-		i(138201),	-- Fathom Dweller
-		i(137574),	-- Felblaze Infernal
-		i(152841),	-- Felglow Mana Ray Mount
-		i(123890),	-- Felsteel Annihilator
 		i(30480),	-- Fiery Warhorse
 		i(71665),	-- Flametalon of Alysrazor
-		i(116794),	-- Garn Nighthowl
-		i(116779),	-- Garn Steelmaw
-		i(116673),	-- Giant Coldsnout
-		i(153042),	-- Glorious Felcrusher Mount
-		i(163573),	-- Goldenmane's Rein's
 		i(43959),	-- Grand Black War Mammoth (Alliance)
 		i(44083),	-- Grand Black War Mammoth (Horde)
-		i(116674),	-- Great Greytusk
 		i(94293),	-- Green Primal Raptor
 		i(44707),	-- Green Proto-Drake
 		i(21323),	-- Green Qiraji Battle Tank
 		i(63046),	-- Grey Riding Camel
 		i(87771),	-- Heavenly Onyx Cloud Serpent
-		i(137575),	-- Hellfire Infernal
-		i(163579),	-- Highland Mustang
-		i(147807),	-- Highmountain Elderhorn
 		i(50818),	-- Invincible
-		i(116660),	-- Ironhoof Destroyer
 		i(94231),	-- Jade Primordial Direhorn
 		i(104253),	-- Kor'kron Juggernaut
-		i(152844),	-- Lambent Mana Ray
-		i(143764),	-- Leywoven Flying Carpet
 		i(77069),	-- Life-Binder's Handmaiden
-		i(163646),	-- Lil' Donkey
-		i(138258),	-- Long-Forgotten Hippogryph
-		i(151623),	-- Lucid Nightmare Mount [Note: Drop's from Puzzler's Demise; a puzzle mount similar  to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
-		i(152814),	-- Maddened Chaorunner
-		i(142236),	-- Midnight
 		i(45693),	-- Mimiron's Head
-		i(116661),	-- Mottled Meadowstomper
-		i(159921), 	-- Mummified Raptor Skull
-		i(161479),	-- Nazjatar Blood Serpentr
-		i(142233),	-- Netherlord's Accursed Wrathsteed
 		i(49636),	-- Onyxian Drake
 		i(63042),	-- Phosphorescent Stone Drake
 		i(69224),	-- Pureblood Fire Hawk
-		i(163582),  -- Qinsho's Eternal Hound
 		i(32768),	-- Raven Lord
 		i(94291),	-- Red Primal Raptor
 		i(21321),	-- Red Qiraji Battle Tank
-		i(163575),	-- Reins of a Tamed Bloodfeaster
-		i(147835),	-- Riddler's Mind-Worm
 		i(13335),	-- Rivendare's Deathcharger
 		i(94229),	-- Slate Primordial Direhorn
 		i(89783),	-- Son of Galleon
@@ -214,13 +120,11 @@ _.Mounts =
 	}),
 	n(-31, { 	-- Promotion
 		un(16, i(43599)),	-- Big Blizzard Bear
-		i(118515),		-- Cindermane Charger
 		un(6, i(109013)),	-- Dread Raven
 		i(106246),		-- Emerald Hippogryph
 		i(98618),		-- Hearthsteed
 		un(6, i(85870)),	-- Imperial Quilen
 		i(83086),		-- Obsidian Nightwing
-		un(3, i(143631)),	-- Primal Flamesaber
 		un(3, i(76889)),	-- Spectral Gryphon
 		un(3, i(76902)),	-- Spectral Wind Rider
 		i(37719),		-- Swift Zhevra
@@ -232,27 +136,14 @@ _.Mounts =
 			["mountID"] = 48778,	-- Acherus Deathcharger
 			["classes"] = {6},
 		},
-		{
-			["mountID"] = 229376,	-- Archmage's Prismatic Disc
-			["classes"] = {8},
-		},
 		i(85430),		-- Azure Cloud Serpent
 		i(32858),		-- Azure Netherwing Drake
-		{
-			["itemID"] = 142225,	-- Ban-Lu, Grandmaster's Companion
-			["classes"] = {10},
-		},
-		{
-			["itemID"] = 142232,	-- Battlelord's Bloodthirsty War Wyrm
-			["classes"] = {1},
-		},
 		i(94290),		-- Bone-White Primal Raptor
 		{
 			["mountID"] = 23214,	-- Charger
 			["classes"] = {2},
 			["races"] = {1,3},
 		},
-		i(128311),		-- Coalfist Gronnling
 		i(32859),		-- Cobalt Netherwing Drake
 		i(52200),		-- Crimsom Deathcharger
 		{
@@ -285,14 +176,6 @@ _.Mounts =
 		i(87768),		-- Onyx Cloud Serpent
 		i(32857),		-- Onyx Netherwing Drake
 		i(32860),		-- Purple Netherwing Drake
-		{
-			["itemID"] = 143493,	-- Shadowblade's Murderous Omen
-			["classes"] = {4},
-		},
-		{
-			["mountID"] = 229417,	-- Slayer's Felbroken Shrieker
-			["classes"] = {12},
-		},
 		i(54465),		-- Vashj'ir Seahorse
 		i(46102),		-- Venomhide Ravasaur
 		i(32861),		-- Veridian Netherwing Drake
@@ -490,27 +373,13 @@ _.Mounts =
 		i(25476),		-- Green Wind Rider
 		i(87788),		-- Grey Riding Yak
 		i(87774),		-- Heavenly Golden Cloud Serpent
-		{
-			["itemID"] = 142228,	-- Huntmaster's Dire Wolfhawk
-			["classes"] = {3},
-		},
-		{
-			["itemID"] = 142226,	-- Huntmaster's Fierce Wolfhawk
-			["classes"] = {3},
-		},
 		i(43958),		-- Ice Mammoth (Alliance)
 		i(44080),		-- Ice Mammoth (Horde)
 		i(45586),		-- Ironforge Ram
 		i(67107),		-- Kor'kron Annihilator
 		i(73838),		-- Mountain Horse
-		{
-			["itemID"] = 143637,	-- Netherlord's Brimstone Wrathsteed
-			["classes"] = {9},
-		},
 		i(47101),		-- Ochre Skeletal Warhorse
 		i(45595),		-- Orgrimmar Wolf
-		un(2, i(116776)),	-- Pale Thorngrazer (Rep removed from Medallion of the Legion in hotfix for 8.0)
-		i(163589),		-- Reins of the Palehide Direhorn
 		i(2414),		-- Pinto
 		{
 			["itemID"] = 91006,	-- Purple Dragon Turtle (Panda)
@@ -700,9 +569,6 @@ _.Mounts =
 		})),
 		un(2, ach(880, {	-- Swift Zulian Tiger
 			un(9, i(19902)),	-- Swift Zulian Tiger
-		})),
-		un(2, ach(9496, {	-- Warlord's Deathwheel
-			un(2, i(116788)),	-- Warlord's Deathwheel
 		})),
 		un(2, ach(886, {	-- Swift Nether Drake
 			un(2, i(30609)),	-- Swift Nether Drake

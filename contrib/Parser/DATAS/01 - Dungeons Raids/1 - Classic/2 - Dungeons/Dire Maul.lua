@@ -436,17 +436,6 @@ _.Instances =
 								i(18380),	-- Eldritch Reinforced Legplates
 								i(18378),	-- Silvermoon Leggings
 								i(18395),	-- Emerald Flame Ring
-								i(139620, {	-- A Complete Copy of "Nat Pagle's Guide to Extreme Anglin'."
-									["questID"] = 43682,	-- Book Presented [Retribution Paladin Hidden Artifact Appearance]
-									["description"] = "You need to bring the Complete Copy of Nat Pagle's Fishing Guide and the Head of Nefarian for him to grant you this interaction.\n\nAlliance: Go to Western Plaguelands and talk to Alexia Ironknife.\n\nHorde: Go to Tirisfall Glades and talk to Bardu Sharpeye.",
-									["classes"] = { 2 },	-- Paladin Only
-									["sourceQuests"] = { -91190 }, -- Special Quest ID for Sister Elda <Keeper of the Ancient Tomes>
-									["lvl"] = 110,
-									["groups"] = {
-										a(i(19003)),	-- Head of Nefarian [Alliance]
-										h(i(19002)),	-- Head of Nefarian [Horde]
-									},
-								}),
 							})),
 							n(  -2, {	-- Vendors
 								n(14371, { -- Shen'dralar Provisioner
