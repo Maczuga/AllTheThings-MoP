@@ -224,75 +224,12 @@ _.WorldEvents =
 						},
 					},
 				},
-				n(85484, { -- Chester
-					["groups"] = {
-						i(116138, {	-- Last Deck of Nemelex Xobeh
-							["f"] = 50,
-						}),
-						i(122238), -- Music Roll
-						i(116052),
-						i(116133),
-						i(116134),
-						i(116136),
-						i(116137),
-						i(116139), -- ["isToy"] = true
-					},
-					["currencyID"] = 515,	-- Darkmoon Prize Ticket
-				}),
-				n(56335, { -- Daenrand Dawncrest <Heirloom Prizes>
-					["groups"] = {
-						i(122350), -- Balanced Heartseeker
-						i(122349), -- Bloodied Arcanite Reaper
-						i(122389), -- Bloodsoaked Skullforge Reaver
-						i(122363), -- Burnished Warden Staff
-						i(122352), -- Charmed Ancient Bone Bow
-						i(122354), -- Devout Aurastone Hammer
-						i(122353), -- Dignified Headmaster's Charge
-						i(122391), -- Flamescarred Draconian Deflector
-						i(122390), -- Musty Tome of the Lost
-						i(122386), -- Repurposed Lava Dredger
-						i(122351), -- Venerable Dal'Rend's Sacred Charge
-						i(122385), -- Venerable Mass of McGowan
-						i(122392), -- Weathered Observer's Shield
-						i(122360), -- Tattered Dreadmist Mantle
-						i(122384), -- Tattered Dreadmist Robe
-						i(122359), -- Preened Ironfeather Shoulders
-						i(122382), -- Preened Ironfeather Brestplate
-						i(122358), -- Stained Shadowcraft Spaulders
-						i(122383), -- Stained Shadowcraft Tunic
-						i(122356), -- Champion Herod's Shoulders
-						i(122379), -- Champion's Deathdealer Breastplate
-						i(122357), -- Mystical Pauldrons of Elements
-						i(122380), -- Mystical Vest of Elements
-						i(122388), -- Burnished Pauldrons of Might
-						i(122387), -- Burnished Breastplate of Might
-						i(122355), -- Polished Spaulders of Valor
-						i(122381), -- Polished Breastplate of Valor
-					},
-					["currencyID"] = 515,	-- Darkmoon Prize Ticket
-				}),
 				n(14860, { -- Flik
 					["groups"] = {
 						i(11026), -- Tree Frog Box
 						i(11027), -- Wood Frog Box
 					},
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
-				}),
-				n(55103, { -- Galissa Sundew <Fishing Prizes>
-					["groups"] = {
-						i(126929), 	-- Recipe: Fancy Darkmoon Feast
-						i(126928),	-- Recipe: Lemon Herb Filet
-						i(126927), 	-- Recipe: Sugar-Crusted Fish Feast
-						i(126930), -- Faded Treasure Map
-						i(142398), -- Darkwater Skate
-						i(126925), -- Blorp's Bubble
-						i(126926), -- Translucent Shell
-						i(126931), -- Seafarer's Slidewhistle
-					},
-					["itemID"] = 124669,	--  Darkmoon Daggermaw
-					["coords"] = {
-						{ 52.51, 88.79 },
-					},
 				}),
 				n(14828, { -- Gelvas Grimegate <Souvenir & Toy Prizes>
 					["groups"] = {
@@ -308,7 +245,6 @@ _.WorldEvents =
 				n(14846, { -- Lhara
 					["groups"] = {
 						i(73766), -- Darkmoon Dancing Bear Mount
-						i(153485), -- Darkmoon Dirigible Mount
 						i(72140), -- Swift Forest Strider Mount
 						i(73762), -- Darkmoon Balloon Pet
 						i(74981), -- Darkmoon Cub Pet
@@ -436,7 +372,6 @@ _.WorldEvents =
 				},
 				n(108785, { -- Scarlet Quartermaster
 					["groups"] = {
-						i(138429), -- Tabard
 						{ -- Ensemble: Chain of the Scarlet Crusade
 							["groups"] = {
 								i(10328), -- chest
@@ -448,18 +383,6 @@ _.WorldEvents =
 							},
 							["ignoreBonus"] = true,
 							["itemID"] = 138430,
-						},
-						{ -- Ensemble: Scale of the Scarlet Crusade
-							["groups"] = {
-								i(138423), -- chest
-								i(138428), -- bracers
-								i(138426), -- gloves
-								i(138424), -- belt
-								i(138425), -- legs
-								i(138427), -- feet
-							},
-							["ignoreBonus"] = true,
-							["itemID"] = 138431,
 						},
 					},
 					["description"] = "|cff66ccffMust be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster.  If you are not wearing it then you will just get flavor text.  A tabard that has been transmog will NOT work.|r"

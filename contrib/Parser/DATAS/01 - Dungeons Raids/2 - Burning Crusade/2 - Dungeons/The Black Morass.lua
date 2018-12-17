@@ -113,44 +113,6 @@ _.Instances =
 								i(28190),	-- Scarab of the Infinite Cycle
 							}))
 						}}),
-					d(24, {	-- Timewalking
-						["lvl"] = 60,
-						["groups"] = {
-							cr(17879, e(552, {	-- Chrono Lord Deja
-								i(127434),	-- Melmorta's Twilight Longbow
-								i(127436),	-- Mask of Inner Fire
-								i(127437),	-- Mantle of Three Terrors
-								i(127438),	-- Sun-Gilded Shouldercaps
-								i(127435),	-- Burnoose of Shifting Ages
-								i(127433),	-- Legplates of the Bold (7.3.5 - Moved from Aeonus)
-								i(127432),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
-								i(127439),	-- Ring of Spiritual Precision
-							})),
-							cr(17880, e(553, {	-- Temporus
-								i(127440),	-- Epoch-Mender
-								i(127456),	-- Quantum Blade (7.3.5 - Moved from Chrono Lord Deja)
-								i(127442),	-- Millennium Blade
-								i(127445),	-- Star-Heart Lamp
-								i(127444),	-- Laughing Skull Battle-Harness
-								i(127430),	-- Handgrips of Assassination (7.3.5 - Moved from Chrono Lord Deja)
-								i(127443),	-- Khadgar's Kilt of Abjuration
-								i(127441),	-- Hourglass of the Unraveller
-							})),
-							cr(17881, e(554, {	-- Aeonus
-								i(127446),	-- Bloodfire Greatstaff
-								i(127447),	-- Latro's Shifting Sword
-								i(127452),	-- Cowl of the Guiltless
-								i(127449),	-- Helm of Desolation
-								i(127450),	-- Mana-Etched Crown
-								i(127453),	-- Pauldrons of the Crimson Flight
-								i(127451),	-- Primal Surge Bracers
-								i(127454),	-- Girdle of the Deathdealer
-								i(127455),	-- Girdle of Valorous Deeds
-								i(127457),	-- Breeches of the Occultist
-								i(127431),	-- Legplates of the Righteous
-								i(127448),	-- Scarab of the Infinite Cycle
-							}))
-						}})
 				},
 				["lvl"] = 65,
 				["mapID"] = 273

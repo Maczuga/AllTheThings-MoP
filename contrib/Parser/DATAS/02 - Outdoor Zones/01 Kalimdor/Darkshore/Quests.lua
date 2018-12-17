@@ -50,7 +50,6 @@ _.Zones =
 									i( 52595),	-- Goat Hide Vest
 									i( 52621),	-- Woven Plate Leggings
 									i( 52633),	-- Satyr Horn Staff
-									i(131282),	-- Treetender Tunic
 								},
 								["qg"] = 32978,	-- Tharnarium Treetender
 								["sourceQuests"] = { 13528 },	-- Buzzbox 723
@@ -63,7 +62,6 @@ _.Zones =
 								["groups"] = {
 									i( 52629),	-- Naga Plate Bracers
 									i( 52603),	-- Mossy Boots
-									i(131287),	-- Grass-Stained Stompers
 								},
 								["qg"] = 33126,	-- Seraphine
 								["sourceQuests"] = { 13564 },	-- A Lost Companion
@@ -81,7 +79,6 @@ _.Zones =
 									i( 52615),	-- Moonstalker Bracers
 									i( 55126),	-- Thistle Bear Girdle
 									i( 52664),	-- Cloak of the Stag
-									i(131288),	-- Moonstalker Wristwraps
 								},
 								["qg"] = 33048,	-- Keeper Karithus
 								["sourceQuests"] = { 13566, 13565, 13598 },	-- Ritual Materials, Twice Removed, & Unsavory Remedies
@@ -123,7 +120,6 @@ _.Zones =
 								["groups"] = {
 									i( 52659),	-- Cover of Leaves
 									i( 52597),	-- Tysha's Chestguard
-									i(131278),	-- Sentinel's Leafbough Chestpiece
 								},
 								["qg"] = 32965,	-- Sentinel Tysha Moonblade
 								["sourceQuests"] = { 13504, 13505 },	-- Shatterspear Laborers, Remnants of the Highborne
@@ -164,7 +160,6 @@ _.Zones =
 								["groups"] = {
 									i( 52598),	-- Soothsaying Vest
 									i( 55134),	-- Fiery Bracers
-									i(131291),	-- Soothsayer's Harness
 								},
 								["qg"] = 33117,	-- Elder Brownpaw
 								["sourceQuests"] = { 13576 },	-- Mutual Aid
@@ -180,7 +175,6 @@ _.Zones =
 								["groups"] = {
 									i( 55133),	-- Wildkin Feather Belt
 									i( 52643),	-- Wildkin Claw Dagger
-									i(131290),	-- Wildkin Feathered Links
 								},
 								["qg"] = 33119,	-- Aroom
 								["sourceQuests"] = { 13577 },	-- The Last Wildkin
@@ -215,7 +209,6 @@ _.Zones =
 							q(13587, {	-- The Waking Nightmare
 								["groups"] = {
 									i( 52614),	-- Thessera's Gift
-									i(131824),	-- Thessera's Gratitude
 								},
 								["qg"] = 33166,	-- Thessera
 								["sourceQuests"] = { 13586 },	-- The Emerald Dream
@@ -241,7 +234,6 @@ _.Zones =
 								["groups"] = {
 									i( 52590),	-- Wisp-Chaser Cord
 									i( 52612),	-- Planter's Gloves
-									i(131311),	-- Seedhandler's Soft Grips
 								},
 								["qg"] = 34301,	-- Kathrena Winterwisp
 								["sourceQuests"] = { 13881 },	-- Consumed
@@ -259,7 +251,6 @@ _.Zones =
 									i( 52618),	-- Ancient Cuffs
 									i( 52660),	-- Incorruptable Shawl
 									i( 52628),	-- Ancient Handguards
-									i(131315),	-- Ancient Armbands
 								},
 								["qg"] = 34301,	-- Kathrena Winterwisp
 								["sourceQuests"] = { 13885 },	-- In Defense of Darkshore
@@ -283,7 +274,6 @@ _.Zones =
 									i( 52606),	-- Blackwood Boots
 									i( 52647),	-- Blackwood Hunter's Bow
 									i( 52651),	-- Blackwood Ritual Stick
-									i(131284),	-- Blackwood Treads
 								},
 								["qg"] = 32967,	-- Elder Brolg
 							}),
@@ -320,7 +310,6 @@ _.Zones =
 									i( 52588),	-- Ritual Stopper's Slippers
 									i( 52610),	-- Strap of the Ancient Horn
 									i( 52630),	-- Horn Sounder's Bracers
-									i(131317),	-- Cord of the Ancient Horn
 									i( 55135),  -- Tia's Ring
 								},
 								["qg"] = 34423,	-- 
@@ -330,7 +319,6 @@ _.Zones =
 								["groups"] = {
 									i( 52616),	-- Bracers of the Ancient Grove
 									i( 52655),	-- Darkshore Warder's Shield
-									i(131316),	-- Armguards of the Ancient Grove
 								},
 								["qg"] = 34422,	-- Malfurion Stormrage
 								["description"] = "If you don't pick this quest up promptly after the event ends, Malfurion will despawn and you will have to repeat the event to get the quest.",
@@ -354,7 +342,6 @@ _.Zones =
 								["groups"] = {
 									i( 52593),	-- Becalmed Bracers
 									i( 52617),	-- Very Tranquil Bracers
-									i(131283),	-- Serene Breeze Bracers
 								},
 								["qg"] = 3694,	-- Sentinel Selarin
 							}),
@@ -363,7 +350,6 @@ _.Zones =
 									i( 52586),	-- Archaeologist's Dungarees
 									i( 52632),	-- Digging Staff
 									i( 52602),	-- Archaeologist's Britches
-									i(131293),	-- Archaeologist's Leggings
 								},
 								["qg"] = 33232,	-- Archaeologist Hollee
 							}),
@@ -380,7 +366,6 @@ _.Zones =
 								["groups"] = {
 									i( 52596),	-- Aetherion Imbued Vest
 									i( 52622),	-- Auberdine Platemail
-									i(131285),	-- Auberdine Ringmail Tunic
 								},
 								["qg"] = 6887,	-- Yalda
 								["sourceQuests"] = { 13547 },	-- Coaxing the Spirits
@@ -393,7 +378,6 @@ _.Zones =
 										i( 55128),	-- Silver Embossed Boots
 										i( 55129),	-- Silver Plated Belt
 										i( 52675),	-- Silver Embroidered Cloak
-										i(131292),	-- Silver Inlaid Footguards
 									},
 									["qg"] = 32862,	-- Jor'kil the Soulripper
 								}),
@@ -408,7 +392,6 @@ _.Zones =
 								["groups"] = {
 									i( 52637),	-- Aynasha's Spare Sword
 									i( 52613),	-- Morra's Gloves
-									i(131279),	-- Starbreeze Gauntlets
 								},
 								["qg"] = 32964,	-- Sentinel Aynasha
 								["description"] = "To see this quest, use the cage key dropped by Rit'ko - you can pick it up during One Bitter Wish, or you can get the key without doing any other quests in the zone.",
@@ -443,7 +426,6 @@ _.Zones =
 									i( 52623),	-- Wild Bark Boots
 									i( 52607),	-- Forsaken Belt
 									i( 52591),	-- Narassin's Gloves
-									i(131305),	-- Wildwood Chain Links
 								},
 								["qg"] = 34041,	-- Mathas Wildwood
 								["sourceQuests"] = { 13507, 13509 },	-- Denying Manpower & War Supplies
@@ -460,7 +442,6 @@ _.Zones =
 						sz(844, 9, {	-- Lor'danel
 							q(13520, {	-- The Boon of the Seas
 								["groups"] = {
-									i(131823),	-- Diver's Waistband
 									i( 52609),	-- Diver's Cord
 								},
 								["qg"] = 32972,	-- Serendia Oakwhisper
@@ -479,7 +460,6 @@ _.Zones =
 								["groups"] = {
 									i( 52654),	-- Forlorn Shield
 									i( 52599),	-- Restless Leggings
-									i(131286),	-- Legguards of Eternal Longing
 								},
 								["qg"] = 32959,	-- Cerellean Whiteclaw
 								["sourceQuests"] = { 13529 },	-- The Corruption's Source
@@ -500,7 +480,6 @@ _.Zones =
 								["groups"] = {
 									i( 52627),	-- Gloves of the Plate Fist
 									i( 52605),	-- Fanatical Treads
-									i(131280),	-- Lendra's Cult-Stompers
 								},
 								["qg"] = 32912,	-- Sentinel Lendra
 								["sourceQuests"] = { 13591 },	-- Disturbing Connections
@@ -514,7 +493,6 @@ _.Zones =
 									i( 52645),	-- Whiteclaw Dagger
 									i( 52641),	-- Cerellean's Dagger
 									i( 55132),	-- Darkshore Bow
-									i(156966),	-- Cerellean's Spellsword
 									i( 46325), 	-- Withers (PET!)
 								},
 								["qg"] = 32959,	-- Cerellean Whiteclaw
@@ -554,7 +532,6 @@ _.Zones =
 								["groups"] = {
 									i( 52592),	-- Woolgathering Gloves
 									i( 52600),	-- Oblivious Leggings
-									i(131318),	-- Absentminded Legguards
 									i( 52671),  -- Bahrum's Bad Mood Ring
 								},
 								["qg"] = 34343,	-- Prospector Remtravel
@@ -583,7 +560,6 @@ _.Zones =
 								["groups"] = {
 									i( 55127),	-- Tharill's Blessing
 									i( 52662),	-- Tidal Cloak
-									i(131281),	-- Tharill's Boon
 								},
 								["qg"] = 32932,	-- Moon Priestess Tharill
 							}),
@@ -601,7 +577,6 @@ _.Zones =
 								["groups"] = {
 									i( 52608),	-- Torn Fur Belt
 									i( 52624),	-- Fire Stompers
-									i(131289),	-- Jadefire Squelcher Cord
 								},
 								["qg"] = 32968,	-- Gren Tornfur
 								["sourceQuests"] = { 13544 },	-- The Bear's Blessing

@@ -10,10 +10,8 @@ _.Instances =
 				["groups"] = {
 					n(-17, {	-- Quests 			
 						qg(53151, qa(29155, {	-- A Shiny Reward
-							i(133997),  -- Black Ice (Toy)
 						})),
 						qg(53151, qh(29253, {	-- A Shiny Reward
-							i(133997),  -- Black Ice (Toy)
 						})),
 						qg(52877, q(29208, {	-- An Old Friend
 							["groups"] = {
@@ -112,7 +110,6 @@ _.Instances =
 						i(69627),	-- Zulian Ward
 						i(69622),	-- The Hexxer's Mask
 						i(69623),	-- Vestments of the Soulflayer
-						h(i(122215)),	-- Music Roll: Zul'Gurub Voodoo
 					})),
 					-- Elite Mobs
 					n(52442,  {	-- Florawing Hive Queen

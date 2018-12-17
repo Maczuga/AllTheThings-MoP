@@ -11,8 +11,6 @@ _.Instances =
 					d(3, {	-- 10-Player
 						cr(34797, e(1618, {	-- Northrend Beasts [Icehowl]
 							["groups"] = {
-								  i(142083),	-- Giant Worm Egg (PET!)
-								  i(142084),	-- Magnataur Hunting Horn (PET!)
 								a(i(47612)), 	-- Rod of Imprisoned Souls
 								h(i(47856)),	-- Scepter of Imprisoned Souls
 								a(i(47607)),	-- Collar of Ceaseless Torment
@@ -169,7 +167,6 @@ _.Instances =
 						})),
 						cr(34564, e(1623, {	-- Anub'arak
 							["groups"] = {
-								  i(142085),	-- Nerubian Relic (PET!)
 								h(i(47911)),	-- Anguish
 								a(i(47815)),	-- Cold Convergence
 								a(i(47834)),	-- Fordragon Blades
@@ -291,8 +288,6 @@ _.Instances =
 						}),
 						cr(34797, e(1618, {	-- Northrend Beasts [Icehowl]
 							["groups"] = {
-								  i(142083),	-- Giant Worm Egg (PET!)
-								  i(142084),	-- Magnataur Hunting Horn (PET!)
 								a(i(47922)),	-- Rod of Imprisoned Souls
 								h(i(47995)),	-- Scepter of Imprisoned Souls
 								a(i(47915)),	-- Collar of Ceaseless Torment
@@ -449,7 +444,6 @@ _.Instances =
 						})),
 						cr(34564, e(1623, {	-- Anub'arak
 							["groups"] = {
-								  i(142085),	-- Nerubian Relic (PET!)
 								h(i(48056)),	-- Anguish
 								a(i(47968)),	-- Cold Convergence
 								a(i(47979)),	-- Fordragon Blades
@@ -572,8 +566,6 @@ _.Instances =
 						}),
 						cr(34797, e(1618, {	-- Northrend Beasts [Icehowl]
 							["groups"] = {
-								  i(142083),	-- Giant Worm Egg (PET!)
-								  i(142084),	-- Magnataur Hunting Horn (PET!)
 								h(i(47261)),	-- Barb of Tarasque
 								a(i(46979)),	-- Blade of Tarasque
 								a(i(46958)),	-- Steel Bladebreaker
@@ -754,7 +746,6 @@ _.Instances =
 						})),
 						cr(34564, e(1623, {	-- Anub'arak
 							["groups"] = {
-								  i(142085),	-- Nerubian Relic (PET!)
 								a(i(47233)),	-- Archon Glaive
 								h(i(47329)),	-- Hellion Glaive
 								h(i(47314)),	-- Hellscream Slicer
@@ -881,8 +872,6 @@ _.Instances =
 						}),
 						cr(34797, e(1618, {	-- Northrend Beasts [Icehowl]
 							["groups"] = {
-								  i(142083),	-- Giant Worm Egg (PET!)
-								  i(142084),	-- Magnataur Hunting Horn (PET!)
 								h(i(47422)),	-- Barb of Tarasque
 								a(i(46980)),	-- Blade of Tarasque
 								a(i(46969)),	-- Steel Bladebreaker
@@ -1059,7 +1048,6 @@ _.Instances =
 						})),
 						cr(34564, e(1623, {	-- Anub'arak
 							["groups"] = {
-								  i(142085),	-- Nerubian Relic (PET!)
 								a(i(47239)),	-- Archon Glaive
 								h(i(47491)),	-- Hellion Glaive
 								h(i(47475)),	-- Hellscream Slicer

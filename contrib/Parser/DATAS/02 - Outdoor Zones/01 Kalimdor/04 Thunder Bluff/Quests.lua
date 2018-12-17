@@ -125,7 +125,6 @@ _.Zones =
 						["groups"] = {
 							i(33267),	-- Fleshripper
 							i(33259),	-- Crimson Barbut
-							i(156977),	-- Serrated Gladius 
 						},
 						["qg"] = 4943,	-- Mosarn
 						["lvl"] = 35,
@@ -198,7 +197,6 @@ _.Zones =
 							i(57230),	-- Kodo Mallet
 							i(57214),	-- Stunted Tree Root
 							i(57239),	-- Sunwalker's Stunner
-							i(156986),	-- Kodo Gavel
 						},
 					},
 				}),

@@ -335,7 +335,6 @@ _.Instances =
 					}),
 					e(1578, {	-- Anetheron
 						["groups"] = {
-							i(122111),	-- Smelly Gravestone (PET!)
 							i( 30883),	-- Pillar of Ferocity
 							i( 30881),	-- Blade of Infamy
 							i( 30874),	-- The Unbreakable Will
@@ -410,7 +409,6 @@ _.Instances =
 								i(31967),	-- 
 								i(31055),	-- 
 							}),
-							i(122105),	-- Grotesque Statue (PET!)
 							i( 30901),	-- Boundless Agony
 							i( 30899),	-- Don Rodrigo's Poncho
 							i( 30896),	-- Glory of the Defender
@@ -463,7 +461,6 @@ _.Instances =
 								i(31999),	-- Merciless Gladiator's Leather Helm
 								i(31027),	-- Slayer's Helm
 							}),
-							i(122112),	-- Hyjal Wisp (PET!)
 							i( 30908),	-- Apostle of Argus
 							i( 30902),	-- Cataclysm's Edge
 							i( 30910),	-- Tempest of Chaos

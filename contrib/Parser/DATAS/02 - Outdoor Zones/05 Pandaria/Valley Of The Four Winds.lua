@@ -3020,7 +3020,6 @@ _.Zones =
 						},
 					}),
 					na(78456, {	-- Starlight Sinclair <Prideful Gladiator>
-						un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 						i(144248, { -- Arsenal: Prideful Gladiator's Weapons [ Alliance ]
 							["groups"] = {
 								i(102785),	-- Prideful Gladiator's Barrier

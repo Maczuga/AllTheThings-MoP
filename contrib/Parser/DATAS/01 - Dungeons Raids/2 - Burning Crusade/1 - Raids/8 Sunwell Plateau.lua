@@ -959,7 +959,6 @@ _.Instances =
 								i(33912),	-- Vindicator's Silk Belt
 								i(34558),	-- Slayer's Belt
 							}),
-							i(122113),	-- Sunblade Rune of Activation (PET!)
 							i( 34176),	-- Reign of Misery
 							i( 34179),	-- Heart of the Pit
 							i( 34177),	-- Clutch of Demise
@@ -1155,7 +1154,6 @@ _.Instances =
 								i(33913),	-- Vindicator's Silk Cuffs
 								i(34448),	-- Slayer's Bracers
 							}),
-							i(122115),	-- Servant's Bell (PET!)
 							i( 34198),	-- Stanchion of Primal Intellect
 							i( 34199),	-- Archon's Gavel
 							i( 34203),	-- Grip of Mannoroth
@@ -1227,7 +1225,6 @@ _.Instances =
 					}),
 					e(1595, {	-- M'uru
 						["groups"] = {
-							i(122114),	-- Void Collar (PET!)
 							i( 34214),	-- Muramasa
 							i( 34231),	-- Aegis of Angelic Fortune (MISSING IN ADVENTURE GUIDE)
 							i( 34232),	-- Fel Conqueror Raiments (MISSING IN ADVENTURE GUIDE)

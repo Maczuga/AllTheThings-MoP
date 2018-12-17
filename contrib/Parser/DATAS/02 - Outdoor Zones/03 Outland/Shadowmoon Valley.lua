@@ -1350,15 +1350,6 @@ _.Zones =
 								19755,	-- Mo'arg Weaponsmith
 							},
 						}),
-						o(240622, {	-- Warden's Scroll Case
-							["groups"] = {
-								i(122228)		-- Music Roll: The Black Temple
-							},
-							["model"] = "World\\Expansion04\\Doodads\\Pandaren\\Scroll\\PA_Scroll_04.mdx",
-							["modelScale"] = .5,
-							["icon"] = "Interface\\Icons\\INV_Icon_Daily_Mission_Scroll",
-							["description"] = "|cff66ccffLoot the Warden's Scrollcase inside the Warden's Cage.|r",
-						}),
 					},
 				}),
 			},

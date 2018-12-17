@@ -56,7 +56,6 @@ _.Zones =
 							i( 57566),	-- Siege Engineer's Belt
 							i( 57562),	-- Hammerfoot's Plate Leggings
 							i( 57563),	-- South Gate Blunderbuss
-							i(131612),	-- Siege Engineer's Waistband
 						}),
 					}),
 --[[
@@ -75,7 +74,6 @@ _.Zones =
 							i(57575),	-- Belt of Dark Schemes
 							i(57576),	-- Dark Iron Infiltrator's Bracer
 							i(57578),	-- Dark Iron Hobplate Boots
-							i(131462),	-- Dark Iron Spy-Bands
 						},
 						["qg"] = 41786,	-- Sergeant Bahrum
 						["coord"] = { 82.8, 48.4 },
@@ -132,8 +130,6 @@ _.Zones =
 							i(57580),	-- Tunic of Dark Leather
 							i(57581),	-- Grimaxe's Black Breastplate
 							i(57582),	-- Stonebreaker's Gauntlets
-							i(131483),	-- Vest of Dark Chainmail
-							i(131484),	-- Grimaxe's Chainmail Breastplate
 						},
 						["qg"] = 41853,	-- Commander Stonebreaker
 						["coord"] = { 78.2, 20.5 },
@@ -173,7 +169,6 @@ _.Zones =
 							i(57571),	-- Archaeologist's Pants
 							i(57572),	-- Dun Morogh Hiking Pants
 							i(57574),	-- Museum Guard's Bracers
-							i(131459),	-- Museum Guard's Warboots
 							i(57549, {	-- Prospector's Bag
 								["f"] = 113,	-- Bag
 							}),
@@ -236,8 +231,6 @@ _.Zones =
 						i(57570),
 						i(57568),
 						i(57569),
-						i(131208),
-						i(131209),
 					})),
 --[[					
 					qg(1252, qa(  291)),	-- The Reports
@@ -402,14 +395,6 @@ _.Zones =
 				m(469,  {	-- New Tinkertown
 					["groups"] = {	
 						n(-25, { 	-- Pet Battle
-							n(124617, {	-- Environeer Bert
-								["groups"] = {
-									i(151638, {	-- Leprous Sack of Pet Supplies
-										i(151645),	-- Model D1-BB-L3R
-									}),
-								},
-								["description"] = "This pet has a chance of dropping after defeating Environeer Bert.  He is also located in Gnomeregan."
-							}),
 							p(441), 	-- Alpine Hare
 							p(1162), 	-- Fluxfire Feline
 							p(442), 	-- Irradiated Roach
@@ -541,12 +526,6 @@ _.Zones =
 								})),
 								qg(42396, qa(31135, {	-- The Future of Gnomeregan
 									["classes"] = {10},	-- Monk
-								})),
-								qg(42396, q(41217, {	-- The Future of Gnomeregan
-									["groups"] = {
-										i(134123),
-									},
-									["classes"] = {3},	-- Hunter
 								})),
 --[[								
 								qg(124280, qa(47709)),	-- The Great Gnomeregan Race

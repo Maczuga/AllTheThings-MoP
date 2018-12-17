@@ -37,17 +37,6 @@ _.Zones =
 						i(89125),	-- Sack of Pet Supplies
 					}),
 					qr(qa(31780)), 	-- Old MacDonald
-					ach(11856, { -- Pet Battle Challenge: Wailing Caverns
-						i(151632), -- Mining Monkey
-						model(64432, n(119390, { -- Marcus "Bagman" Brown
-							["groups"] = {
-								i(150742), -- Pet Reaper 0.9
-								i(150741), -- Tricorne
-								i(150739), -- Pocket Cannon
-							},
-							["description"] = "Must have completed the Wailing Caverns Pet Battle Dungeon quest Wailing Critters and the breadcrumb quest Deadmines, Part Three?."
-						})),
-					}),
 				}),
 				n(-17, {	-- Quests
 --[[	Achievement info for Loremaster related zone quests
@@ -62,7 +51,6 @@ _.Zones =
 						i(58926),	-- Gryan's Boots
 						i(58924),	-- Legwork Trousers
 						i(58925),	-- Troublesome Gloves
-						i(131504),	-- Troublesome Grips
 					})),
 --					qa(12340),	-- Candy Bucket
 					o(34, {	-- Old Jug
@@ -88,7 +76,6 @@ _.Zones =
 							qa(26296, { -- Evidence Collection
 								i(58921),	-- Evidence Collection Gloves
 								i(58923),	-- Gregorky's Bracers
-								i(131505),	-- Worn Defias Bindings
 								i(58922),	-- Worn Defias Bracers
 							}),
 						}),
@@ -104,7 +91,6 @@ _.Zones =
 					qg(821, qa(26365, { -- Hero's Call: Redridge Mountains!
 						i(60689),	-- Belt of Unsolvable Problems
 						i(60690),	-- Doody Boots
-						i(131517),	-- Doody Shoes
 						i(60688),	-- Parker's Yardstick
 						i(60691),	-- Unfortunate Treads
 					})),
@@ -118,7 +104,6 @@ _.Zones =
 --]]
 					qg(234, qa(26286, { -- In Defense of Westfall
 						i(58914),	-- Sentinel Hill Breastplate
-						i(131502),	-- Sentinel Hill Hauberk
 						i(58912),	-- Sentinel Hill Surcoat
 						i(58913),	-- Sentinel Hill Vest
 					})),
@@ -130,12 +115,10 @@ _.Zones =
 						i(58905),	-- Kobold Basher
 						i(58903),	-- Kobold Candle
 						i(58902),	-- Kobold Sticker
-						i(156935), 	-- Kobold Torch
 						i(58904),	-- Wax Catcher
 					})),
 					qg(233, qa(26257, { -- It's Alive!
 						i(58916),	-- Chewed Belt
-						i(131497),	-- Chewed Chain Cord
 						i(58915),	-- Harvester Boots
 						i(58917),	-- Saldean's Working Gloves
 					})),
@@ -143,7 +126,6 @@ _.Zones =
 						i(58920),	-- Dust Plains Greaves
 						i(58918),	-- Mystic Riverpaw Wand
 						i(58919),	-- Spothide Leggings
-						i(131503),	-- Spothide Legguards
 					})),
 --[[
 					qg(, qa(26347)),	-- Keeper of the Flame
@@ -171,7 +153,6 @@ _.Zones =
 						i(58931),	-- House Wrynn Claymore
 						i(58929),	-- House Wrynn Crossbow
 						i(58927),	-- House Wrynn Dagger
-						i(156934),	-- House Wrynn Gavel
 						i(58928),	-- House Wrynn Halberd
 						i(58930),	-- House Wrynn Staff
 					})),
@@ -200,7 +181,6 @@ _.Zones =
 --]]
 					qg(235, qa(26241, { -- Westfall Stew
 						i(58910),	-- Boiled Boots
-						i(131496),	-- Boiled Chain Footpads
 						i(58909),	-- Golden Sunshine Cloak
 						i(58911),	-- Tightly Cinched Belt
 					})),
@@ -465,7 +445,6 @@ _.Zones =
 				n(-77, {	-- Special
 					o(269830, { 	-- Gift of the Mind-Seekers
 						["groups"] = {
-							i(147835),	-- Riddler's Mind Worm
 						},
 						["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
 						["questID"] = 47214,

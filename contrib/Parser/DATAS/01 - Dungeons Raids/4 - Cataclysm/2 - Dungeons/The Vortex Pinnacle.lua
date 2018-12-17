@@ -63,11 +63,8 @@ _.Instances =
 							}),
 						}),
 						cr(43878, e(114, {	-- Grand Vizier Ertan
-							i(157603),	-- Thundercleaver Axe
 							i(56357),	-- Biting Wind
 							i(56358),	-- Headcover of Fog
-							i(157601),	-- Choker of Stolen Thunder
-							i(157602),	-- Ionized Choker
 							i(56360),	-- Red Sky Pendant
 							i(56359),	-- Fallen Snow Shoulderguards
 							i(56356),	-- Stratosphere Belt
@@ -83,9 +80,7 @@ _.Instances =
 							i(56364),	-- Axe of the Eclipse
 							i(56362),	-- Amulet of Tender Breath
 							i(56361),	-- Mantle of Bestilled Winds
-							i(157604),	-- Billowing Skydrape
 							i(56363),	-- Hail-Strung Belt
-							i(157605),	-- Sandals of the West Wind
 							i(56365),	-- Skyshard Ring
 							nld({	-- Legacy
 								un(2, i(55841)),	-- Axe of the Eclipse (7.3.5 - Removed from Game!)
@@ -140,11 +135,8 @@ _.Instances =
 								}),
 							}),
 							cr(43878, e(114, {	-- Grand Vizier Ertan
-								i(157603),	-- Thundercleaver Axe
 								i(56357),	-- Biting Wind
 								i(56358),	-- Headcover of Fog
-								i(157601),	-- Choker of Stolen Thunder
-								i(157602),	-- Ionized Choker
 								i(56360),	-- Red Sky Pendant
 								i(56359),	-- Fallen Snow Shoulderguards
 								i(56356),	-- Stratosphere Belt
@@ -154,9 +146,7 @@ _.Instances =
 								i(56364),	-- Axe of the Eclipse
 								i(56362),	-- Amulet of Tender Breath
 								i(56361),	-- Mantle of Bestilled Winds
-								i(157604),	-- Billowing Skydrape
 								i(56363),	-- Hail-Strung Belt
-								i(157605),	-- Sandals of the West Wind
 								i(56365),	-- Skyshard Ring
 							})),
 							cr(43875, e(116, {	-- Asaad, Caliph of Zephyrs
@@ -172,46 +162,6 @@ _.Instances =
 								i(56367),	-- Legguards of Winnowing Wind
 								i(56373),	-- Ring of Frozen Rain
 								i(56370),	-- Heart of Thunder
-							})),
-						},
-					}),
-					d(24, {	-- Timewalking
-						["lvl"] = 80,
-						["groups"] = {
-							cr(43878, e(114, { -- Grand Vizier Ertan
-								i(133233),	-- Biting Wind
-								i(133234),	-- Headcover of Fog
-								i(133361),	-- Choker of Stolen Thunder
-								i(133369),	-- Ionized Choker
-								i(133236),	-- Red Sky Pendant
-								i(133235),	-- Fallen Snow Shoulderguards
-								i(133232),	-- Stratosphere Belt
-								i(133252),	-- Rainsong
-							})),
-							cr(43873, e(115, { -- Altairus
-								i(63040),	-- Reins of the Drake of the North Wind (MOUNT!)
-								i(133371),	-- Thundercleaver Axe
-								i(133240),	-- Axe of the Eclipse
-								i(133251),	-- Thundercall
-								i(133238),	-- Amulet of Tender Breath
-								i(133237),	-- Mantle of Bestilled Winds
-								i(133362),	-- Billowing Skydrape
-								i(133239),	-- Hail-Strung Belt
-								i(133253),	-- Darksky Treads
-								i(133370),	-- Sandals of the West Wind
-								i(133241),	-- Skyshard Ring
-							})),
-							cr(43875, e(116, { -- Asaad, Caliph of Zephyrs
-								i(133242),	-- Lightningflash
-								i(133249),	-- Lunar Halo
-								i(133245),	-- Billowing Cape
-								i(133247),	-- Shadow of Perfect Bliss
-								i(133244),	-- Gloves of Haze
-								i(133250),	-- Leggings of Iridescent Clouds
-								i(133243),	-- Legguards of Winnowing Wind
-								i(133372),	-- Ion-Cage Signet
-								i(133248),	-- Ring of Frozen Rain
-								i(133246),	-- Heart of Thunder
 							})),
 						},
 					}),

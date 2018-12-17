@@ -16,7 +16,4 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	ach(8293, { -- Raiding with Leashes II: Attunement Edition
 		i(97558), -- Tito's  Basket
 	}),
-	ach(9824, { -- Raiding with Leashes III: Drinkin' From the Sunwell
-		i(122116), -- Holy Chime
-	}),
 })};

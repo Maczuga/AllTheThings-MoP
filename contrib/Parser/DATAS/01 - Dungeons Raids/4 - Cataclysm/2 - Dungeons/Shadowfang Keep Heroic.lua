@@ -54,7 +54,6 @@ _.Instances =
 								i( 63465),	-- Mantle of Loss
 								i( 63463),	-- Mantle of the Eastern Lords
 								i( 63458),	-- Lord Walden's Breastplate
-								i(157617),	-- Wolfshide Vest
 								i( 63457),	-- Shackles of Undeath
 								i( 63464),	-- Greaves of the Misguided
 							})),

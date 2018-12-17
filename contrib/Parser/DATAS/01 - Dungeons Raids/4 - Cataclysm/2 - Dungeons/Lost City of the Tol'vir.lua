@@ -73,7 +73,6 @@ _.Instances =
 						}),
 						cr(44577, e(117, {	-- General Husam
 							i(56382),	-- Siliza's Spear
-							i(157600),	-- Necklace of Rumbling Earth
 							i(56379),	-- Kaleti Cloak
 							i(56383),	-- Ionic Gloves
 							i(56381),	-- Greaves of Wu the Elder
@@ -114,7 +113,6 @@ _.Instances =
 						})),
 						cr(44819, e(122, {	-- Siamat
 							i(56396),	-- Hammer of Sparks
-							i(157599),	-- Sceptre of  Swirling Winds
 							i(56402),	-- Zora's Ward
 							i(56399),	-- Mantle of Master Cho
 							i(56397),	-- Geordan's Cloak
@@ -185,7 +183,6 @@ _.Instances =
 							}),
 							cr(44577, e(117, {	-- General Husam
 								i(56382),	-- Siliza's Spear
-								i(157600),	-- Necklace of Rumbling Earth
 								i(56379),	-- Kaleki Cloak
 								i(56383),	-- Ionic Gloves
 								i(56381),	-- Greaves of Wu the Elder
@@ -219,7 +216,6 @@ _.Instances =
 								ach(5292),	-- Headed South
 								ach(5066),	-- Heroic: Lost City of the Tol'vir
 								i(56396),	-- Hammer of Sparks
-								i(157599),	-- Sceptre of Swirling Winds
 								i(56402),	-- Zora's Ward
 								i(56399),	-- Mantle of Master Cho
 								i(56397),	-- Geordan's Cloak
@@ -229,49 +225,6 @@ _.Instances =
 								i(56398),	-- Ring of Three Lights
 								i(56400),	-- Sorrowsong
 								i(56394),	-- Tia's Grace
-							})),
-						},
-					}),
-					d(24, {	-- Timewalking
-						["lvl"] = 80,
-						["groups"] = {
-							cr(44577, e(117, {	-- General Husam
-								i(133257),	-- Saliza's Spear
-								i(133373),	-- Necklace of Rumbling Earth
-								i(133254),	-- Kaleki Cloak
-								i(133258),	-- Ionic Gloves
-								i(133256),	-- Greaves of Wu the Elder
-								i(133255),	-- Spirit Creeper Ring
-							})),
-							cr(43614, e(118, {	-- Lockmaw
-								i(133259),	-- Resonant Kris
-								i(133260),	-- Tauntka's Necklace
-								i(133280),	-- Oasis Bracers
-								i(133278),	-- Evelyn's Belt
-								i(133261),	-- Balkar's Waders
-								i(133262),	-- Greaves of Wu the Younger
-								i(133263),	-- Ring of the Darkest Day
-								i(133281),	-- Impetuous Query
-							})),
-							cr(43612, e(119, {	-- High Prophet Barim
-								i(133265),	-- Barin's Main Gauche
-								i(133277),	-- Zora's Ward
-								i(133264),	-- Sand Silk Wristband
-								i(133267),	-- Sand Dune Belt
-								i(133276),	-- Leggings of the Path
-								i(133279),	-- Mirage Ring
-								i(133266),	-- Veneficial Band
-								i(133268),	-- Heart of Solace
-							})),
-							cr(44819, e(122, {	-- Siamat
-								i(133271),	-- Hammer of Sparks
-								i(133376),	-- Hammer of Swirling Winds
-								i(133274),	-- Mantle of Master Cho
-								i(133272),	-- Geordan's Cloak
-								i(133270),	-- Crafty's Gaiters
-								i(133273),	-- Ring of Three Lights
-								i(133275),	-- Sorrowsong
-								i(133269),	-- Tia's Grace
 							})),
 						},
 					}),

@@ -325,7 +325,6 @@ _.Zones =
 							i(56888),	-- Sandscraper Bracers
 							i(56889),	-- Business Finisher
 							i(56890),	-- Bilgewater Brooch
-							i(157014),	-- Dunemaul Skullcracker 
 						},
 						["qg"] = 38849,	-- Megs Dreadshredder
 						["sourceQuests"] = { 24963 },	-- Maul 'Em With Kindness
@@ -342,7 +341,6 @@ _.Zones =
 							i(56844),	-- Bone Valley Mace
 							i(56845),	-- Blood Speaker Tunic
 							i(56846),	-- Bloodcraver Pauldrons
-							i(157024),	-- Sandfury Hatchet 
 						},
 						["qg"] = 38927,	-- Mazoga
 						["sourceQuests"] = { 25021 },	-- Blood to Thrive
@@ -675,7 +673,6 @@ _.Zones =
 							i(56884),	-- "Smart Bracers"
 							i(56885),	-- Dagger of the Ides
 							i(56886),	-- Gnomeregan Medallion of Merit
-							i(157015),	-- Meatface's Tenderizer 
 						},
 						["qg"] = 39059,	-- Kelsey Steelspark
 					}),

@@ -77,7 +77,6 @@ _.Zones =
 							i(62161),	-- Bullmastiff Vest
 							i(62163),	-- Fox Hunter's Rifle
 							i(62162),	-- Territorial Helm
-							i(131622),	-- Whitetail Fox Tunic
 						},
 						["qg"] = 11055,	-- Shadow Priestess Vandis
 					}),
@@ -394,13 +393,6 @@ _.Zones =
 						dr(0.9, i(6512)),	-- Disciple's Robe
 						un(7, i(4303)),	-- Cranial Thumper							
 					}), 
-					o(240624, {	-- Faerie Dragon Nest
-						["groups"] = {
-							i(122234)	-- Music Roll: Faerie Dragon
-						},
-						["description"] = "The nest materialises directly in the centre of the white mushroom circle at 17.57, 67.53 once the 7 dragons channel the beams and begin their song. It is not visible before this.",
-						["icon"] = "Interface\\Icons\\INV_FaerieDragonMount"
-					}),
 					n(10358, { 	-- Fellicent's Shade
 						dr(8, i(6267)),		-- Disciple's Pants
 						dr(6, i(6269)),		-- Pioneer Trousers

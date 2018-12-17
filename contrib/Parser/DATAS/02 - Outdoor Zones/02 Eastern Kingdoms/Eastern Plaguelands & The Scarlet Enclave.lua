@@ -65,7 +65,6 @@ _.Zones =
 									i(62937),  -- Thorondoril River Boots
 									i(62936),  -- Treads of Banshee Bells
 									i(62935),  -- Flower Picker's Gloves
-									i(131668), -- Stem-Laced Boots
 								},
 								["qg"] = 45428, -- Gidwin Goldbraids
 								["sourceQuests"] = { 27368 },	-- Just Encased
@@ -85,8 +84,6 @@ _.Zones =
 									i(62941),  -- Plaguehound Armbands
 									i(62940),  -- Belt of Appeasement
 									i(62939),  -- Caravan Sash
-									i(131669), -- Plaguehound Bracers
-									i(131670), -- Cinch of Good Will
 								},
 								["qg"] = 45429, -- Tarenar Sunstrike
 								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
@@ -154,7 +151,6 @@ _.Zones =
 									i(62960),   -- Brightening Wand
 									i(62959),   -- Hidden Treasure
 									i(62958),   -- Militia Hatchet
-									i(157007),	-- Militia Dagger
 								},
 								["qg"] = 10926,	-- Pamela Redpath
 								["sourceQuests"] = { 27390 },	-- "The Battle of Darrowshire"
@@ -324,7 +320,6 @@ _.Zones =
 									i(62937),  -- Thorondoril River Boots
 									i(62936),  -- Treads of Banshee Bells
 									i(62935),  -- Flower Picker's Gloves
-									i(131668), -- Stem-Laced Boots
 								},
 								["qg"] = 45428, -- Gidwin Goldbraids
 								["sourceQuests"] = { 27368 },	-- Just Encased
@@ -346,8 +341,6 @@ _.Zones =
 									i(62941),  -- Plaguehound Armbands
 									i(62940),  -- Belt of Appeasement
 									i(62939),  -- Caravan Sash
-									i(131669), -- Plaguehound Bracers
-									i(131670), -- Cinch of Good Will
 								},
 								["qg"] = 45429, -- Tarenar Sunstrike
 								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
@@ -525,8 +518,6 @@ _.Zones =
 									i(62977),  -- Light's Shield
 									i(62976),  -- Breastplate of the Droplet
 									i(62975),  -- Plaguefix Launcher
-									i(156978), -- Cauldron Cracker
-									i(156979), -- Cauldron Dredger
 								},
 								["qg"] = 11035,	-- Betina Bigglezink
 								["sourceQuests"] = {27453} -- "Catalysm"
@@ -1275,7 +1266,6 @@ _.Zones =
 					n(29587, {	-- Dread Commander Thalanor
 						["groups"] = {
 							i(40775),	-- Winged Steed of the Ebon Blade
-							i(136796),	-- Necrophile Tome: Corpse Exploder
 						},
 						["coord"] = { 84.0, 49.8 },
 						["classes"] = { 6 },	-- Death Knight
@@ -1294,7 +1284,6 @@ _.Zones =
 							["itemID"] = 136801,	-- Divine Tome: Contemplation [Paladin]
 							--["recipeID"] = 121183,	-- Contemplation
 						},
-						i(136928),	-- Thaumaturgist's Orb Toy - Priest only
 						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
 						i(19447),	-- Formula: Enchant Bracer - Healing Power
 						i(19442),	-- Formula: Powerful Anti-Venom
@@ -1627,7 +1616,6 @@ _.Zones =
 									["questID"] = 12619,
 									["groups"] = {
 										i(38707),	-- Runed Soulblade
-										i(142320),	-- Runed Soulsaber
 									},
 									["qg"] = 28357,	-- Instructor Razuvious
 									["coord"] = { 47.7, 29.4 },
@@ -1934,7 +1922,6 @@ _.Zones =
 									["groups"] = {
 										i(38633),	-- Greataxe of the Ebon Blade
 										i(38632),	-- Greatsword of the Ebon Blade
-										i(142321),	-- Saber of the Ebon Blade
 									},
 									["qg"] = 31082,	-- Scourge Commander Thalanor
 									["coord"] = { 34.0, 30.3 },

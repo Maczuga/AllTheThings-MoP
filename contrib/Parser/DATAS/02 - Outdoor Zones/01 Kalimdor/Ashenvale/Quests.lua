@@ -43,7 +43,6 @@ _.Zones =
 									i(56627),	-- Labor Camp Frock
 									i(56628),	-- Manager's Mantle
 									i(56629),	-- Hands of Encouragement
-									i(131297),	-- Gorka's Brass Shoulderguards
 								},
 								["qg"] = 33421,	-- Gorka
 								["coord"] = { 72.9, 80.4 },
@@ -63,7 +62,6 @@ _.Zones =
 									i(56639),	-- Mourner's Stole
 									i(56640),	-- Leggings of Loss
 									i(56641),	-- Burden of Sacrifice
-									i(131299),	-- Griefbearer Leggings
 								},
 								["qg"] = 33421,	-- Gorka
 								["coord"] = { 72.9, 80.4 },
@@ -83,7 +81,6 @@ _.Zones =
 									i(56727),	-- Scrupleless Bracers
 									i(56728),	-- Bloodtaint Boots
 									i(56729),	-- Forest Heart Piercer
-									i(131304),	-- Heart-Corruptor Wristguards
 								},
 								["qg"] = 33760,	-- Durak
 								["coord"] = { 72.1, 57.6 },
@@ -112,7 +109,6 @@ _.Zones =
 									i(56724),	-- Wet Work Gloves
 									i(56725),	-- Belt of Secret Signs
 									i(56726),	-- Disarray Boots
-									i(131307),	-- Krokk's Notched Belt
 								},
 								["qg"] = 33889,	-- Krokk
 								["coord"] = { 82.5, 53.7 },
@@ -135,7 +131,6 @@ _.Zones =
 									i(56718),	-- Detective Buckler
 									i(56719),	-- Pilfered Kaldorei Belt
 									i(56720),	-- Security Crossbow
-									i(131308),	-- Gorthak's Tool Belt
 								},
 								["qg"] = 17304,	-- Overseer Gorthak
 								["coord"] = { 90.9, 58.1 },
@@ -158,8 +153,6 @@ _.Zones =
 										i(56649),	-- Folly's Edge
 										i(56650),	-- Felfire-Tainted Vest
 										i(56651),	-- Legguards of Abandoned Virtue
-										i(131302),	-- Felfire-Scorched Chesteguard
-										i(156958),	-- Scepter of Questionable Decision Making
 									},
 									["qg"] = 33726,	-- Splintertree Demolisher
 									["coord"] = { 73.3, 62.1 },
@@ -210,7 +203,6 @@ _.Zones =
 									i(56715),	-- Oily Bracers
 									i(56716),	-- Alighted Boots
 									i(56717),	-- Mystlash Bracers
-									i(131314),	-- Darkbreaker Treads
 								},
 								["qg"] = 34122,	-- Commander Grimfang
 								["coord"] = { 12.1, 33.8 },
@@ -249,7 +241,6 @@ _.Zones =
 									i(56721),	-- Meat Packer Ribbon
 									i(56722),	-- Je'neu's Hunting Vest
 									i(56723),	-- Deerstalker Leggings
-									i(131319),	-- Je'neu's Ringmail Jerkin
 								},
 								["qg"] = 34122,	-- Commander Grimfang
 								["coord"] = { 12.1, 33.8 },
@@ -285,7 +276,6 @@ _.Zones =
 									i(56667),	-- Cloak of Readiness
 									i(56668),	-- Bracers of Humility
 									i(56669),	-- Groundwork Shield
-									i(131322),	-- Preparation Wristguards
 								},
 								["qg"] = 34359,	-- Captain Goggath
 								["coord"] = { 38.1, 43.8 },
@@ -305,7 +295,6 @@ _.Zones =
 									i(56661),	-- Preemptive Striker
 									i(56662),	-- Staff of Fiery Fate
 									i(56663),	-- Leggings of Hellscream's Watch
-									i(131323),	-- Tweedle's Blastproof Legguards
 								},
 								["qg"] = 34359,	-- Captain Goggath
 								["coord"] = { 38.1, 43.8 },
@@ -376,7 +365,6 @@ _.Zones =
 									i(56686),	-- Blossom of the Earthen Ring
 									i(56687),	-- Subduer's Gloves
 									i(56688),	-- Belt of Equilibrium
-									i(131313),	-- Subduer's Gauntlets
 								},
 								["qg"] = 34289,	-- The Vortex
 								["coord"] = { 52.3, 56.8 },
@@ -415,7 +403,6 @@ _.Zones =
 						["groups"] = {
 							i(56642),	-- Starwhisper Monnions
 							i(56643),	-- Woodguard Vest
-							i(131532),	-- Starwhisper Spaulders
 						},
 						["qg"] = 17287,	-- Sentinel Luciel Starwhisper
 					}),
@@ -424,7 +411,6 @@ _.Zones =
 							i(56676),	-- Whitemoon Gloves
 							i(56677),	-- Belt of Healing Charms
 							i(56678),	-- Boots of the Deliverer
-							i(131320),	-- Whitemoon Mender Cord
 						},
 						["qg"] = 34358,	-- Avrus the Redeemed
 						["sourceQuest"] = 13922,	-- In the Hands of the Perverse
@@ -529,7 +515,6 @@ _.Zones =
 							i(56670),	-- Raynewood Shield
 							i(56671),	-- Shadumbra's Wrath
 							i(56672),	-- Frostshadow Crossbow
-							i(131321),	-- Shadumbra's Might
 						},
 						["qg"] = 34377,	-- Halannia
 						["sourceQuest"] = 13928,	-- Recover the Fallen
@@ -599,8 +584,6 @@ _.Zones =
 							i(56646),	-- Shredder Blade
 							i(56647),	-- Powder Burn Vest
 							i(56648),	-- Forestkeeper Legguards
-							i(131301),	-- Soot-Stained Chainmail Breastplate
-							i(156957),	-- Shredder Piston
 						},
 						["qg"] = 17287,	-- Sentinel Luciel Starwhisper
 						["sourceQuest"] = 26457,	-- Agents of Destruction
@@ -629,7 +612,6 @@ _.Zones =
 							i(56655),	-- Bloodcup Slippers
 							i(56656),	-- Faithful Treads
 							i(56657),	-- Gloves of Unforgotten Vows
-							i(131309),	-- Faithful Footguards
 						},
 						["qg"] = 34242,	-- Guardian Gurtar
 						["races"] = HORDE_ONLY,
@@ -663,7 +645,6 @@ _.Zones =
 					qa(26472, {	-- Insane Druids
 						["groups"] = {
 							i(5813),	-- Emil's Brand
-							i(156959),	-- Emil's Staff
 						},
 						["qg"] = 33777,	-- Gaivan Shadewalker
 						["sourceQuest"] = 13792,	-- The Shadewalker
@@ -674,7 +655,6 @@ _.Zones =
 							i(16659),	-- Deftkin Belt
 							i(16660),	-- Driftmire Shield
 							i(16661),	-- Soft Willow Cape
-							i(131216),	-- Nimblereed Chain
 						},
 						["qg"] = 12737, -- Mastok Wrilehiss
 						["coord"] = { 74.1, 60.7 },
@@ -694,7 +674,6 @@ _.Zones =
 						["groups"] = {
 							i(17005),	-- Boorguard Tunic
 							i(17006),	-- Cobalt Legguards
-							i(131234),	-- Feral Vestment
 						},
 						["qg"] = 12696,	-- Senani Thunderheart
 						["coord"] = { 49.7, 65.1 },
@@ -737,7 +716,6 @@ _.Zones =
 							i(56664),	-- Shael'dryn's Bracers
 							i(56665),	-- Possumfoot Boots
 							i(56666),	-- Dissembling Bracers
-							i(131534),	-- Possumfoot Treads
 						},
 						["qg"] = 3916,	-- Shael'dryn
 						["sourceQuest"] = 26477,	-- Search the Bole
@@ -768,7 +746,6 @@ _.Zones =
 							i(56630),	-- Delgren's Leggings
 							i(56631),	-- Onaeya's Gloves
 							i(56632),	-- Feero's Pauldrons
-							i(131296),	-- Feero's Ringmail Grips
 						},
 						["qg"] = 11806,	-- Sentinel Onaeya
 						["sourceQuest"] = 13624,	-- A Squad of Your Own
@@ -782,7 +759,6 @@ _.Zones =
 							i(56673),	-- Fiery Loop
 							i(56674),	-- Thenysil's Vest
 							i(56675),	-- Astranaar Legguards
-							i(131306),	-- Glaivethrower Expert's Chestpiece
 						},
 						["qg"] = 4079,	-- Sentinel Thenysil
 						["sourceQuest"] = 13849,	-- Astranaar's Burning!
@@ -862,7 +838,6 @@ _.Zones =
 							i(56652),	-- Ablution Slippers
 							i(56653),	-- Somber Treads
 							i(56654),	-- Heartwise Boon
-							i(131298),	-- Somber Boots
 						},
 						["qg"] = 33443,	-- Keeper Heartwise
 					}),
@@ -883,7 +858,6 @@ _.Zones =
 							i(56636),	-- Forest Grace Mantle
 							i(56637),	-- Severed Druid's Leggings
 							i(56638),	-- Gnarlbark Shoulders
-							i(131303),	-- Barkburn Legguards
 						},
 						["qg"] = 33777,	-- Gaivan Shadewalker
 						["sourceQuest"] = 13792,	-- The Shadewalker
@@ -893,7 +867,6 @@ _.Zones =
 							i(56703),	-- Jalin's Recompense
 							i(56704),	-- Braintrust Vest
 							i(56705),	-- Skunkworks Sword
-							i(131326),	-- Bombgineer Blasting Vest
 						},
 						["qg"] = 34354,	-- Huntress Jalin
 					}),
@@ -902,7 +875,6 @@ _.Zones =
 							i(56689),	-- Adansonian Cloak
 							i(56690),	-- Unringed Bands
 							i(56691),	-- Baobab Fruit Shell
-							i(131327),	-- Sheltered Aessina Wristguards
 						},
 						["qg"] = 34604,	-- Big Baobob
 						["sourceQuest"] = 13985,	-- Clear the Shrine
@@ -915,7 +887,6 @@ _.Zones =
 							i(56624),	-- Falathim-Washed Robes
 							i(56625),	-- Broadleaf Mantle
 							i(56626),	-- Maestra's Gloves
-							i(131533),	-- Broadleaf Spaulders
 						},
 						["qg"] = 3891,	-- Teronis' Corpse
 						["sourceQuest"] = 26463,	-- Finding Teronis
@@ -987,7 +958,6 @@ _.Zones =
 						["groups"] = {
 							i(16889),	-- Polished Walking Staff
 							i(16890),	-- Slatemetal Cutlass
-							i(156956),	-- Rugged Walking Staff
 						},
 						["qg"] = 12858,	-- Torek
 						["coord"] = { 68.4, 75.2 },
@@ -1004,7 +974,6 @@ _.Zones =
 							i(56694),	-- Silverwind Bracers
 							i(56695),	-- Wolfrunner Boots
 							i(56696),	-- Legacy of Teronis
-							i(131535),	-- Wolfrunner Wristbands
 						},
 						["qg"] = 3897,	-- Krolg
 						["sourceQuest"] = 26481,	-- A New Adornment
@@ -1025,7 +994,6 @@ _.Zones =
 							i(56683),	-- Blossom of the Earthen Ring
 							i(56684),	-- Subduer's Gloves
 							i(56685),	-- Belt of Equilibrium
-							i(131312),	-- Subduer's Gauntlets
 						},
 						["qg"] = 34289,	-- The Vortex
 						["sourceQuests"] = {

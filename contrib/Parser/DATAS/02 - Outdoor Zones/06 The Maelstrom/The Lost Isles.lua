@@ -118,7 +118,6 @@ _.Zones =
 								i(52933), -- Mechachicken Feather Cloak
 								i(52951), -- Chicken Chopper
 								i(52905), -- Best. Bracers. Ever.
-								i(131829), -- Fryer Gloves
 							},
 							["qg"] = 38120, -- Hobart Grapplehammer
 							["sourceQuests"] = { 24741 }, --Trading Up
@@ -159,7 +158,6 @@ _.Zones =
 							["groups"] = {
 								i(52954), -- Hatchling Prodder
 								i(52908), -- Hathcling Handlers
-								i(131830), -- Hatchling Gloves
 							},
 							["qg"] = 38432, -- Megs Dreadshredder
 							["sourceQuests"] = { 24864 }, --Irresistable Pool Pony
@@ -189,7 +187,6 @@ _.Zones =
 								i(52956), -- Oomlot Staff
 								i(52934), -- Pygmy Cloak
 								i(52910), -- Yngwie's Vest
-								i(131831), -- Yngwie's Tunic
 							},
 							["qg"] = 38647, -- Izzy
 							["sourceQuests"] = { 24925 }, -- Free the Captives
@@ -206,7 +203,6 @@ _.Zones =
 							["groups"] = {
 								i(52912), -- S.B.R.B. Prototype 1
 								i(52958), -- S.B.R.B. Prototype 2
-								i(131842), -- S.B.R.B. Prototype 3
 								i(52936), -- S.B.R.B. Prototype 4
 							},
 							["qg"] = 38738, -- Coach Crosscheck
@@ -215,7 +211,6 @@ _.Zones =
 						q(24945, { -- Three Little Pygmies
 							["groups"] = {	
 								i(52913), -- Witchdoctor Leggings
-								i(131832), -- Witchdoctor Legwraps
 								i(52959), -- Oystein Bracers
 							},
 							["qg"] = 36471, -- Foreman Dampwick
@@ -236,7 +231,6 @@ _.Zones =
 						q(24958, { -- Volcanoth!
 							["groups"] = {
 								i(52914), -- Rescue Ladder Cord
-								i(131833), -- Rescue Ladder Waistband
 							},
 							["qg"] = 38120, -- Hobart  Grapplehammer
 							["sourceQuests"] = { 24954 }, -- Children of a Turtle God
@@ -265,7 +259,6 @@ _.Zones =
 							["groups"] = {
 								i(52961), -- Gnomish Parachute Scrap
 								i(52916), -- Gunner's Gloves
-								i(131834), -- Gunner's Grips
 							},
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25024, 25093, 25058 }, -- Repel the Paratroopers / The Heads of SI:7 / Mine Disposal, the Goblin Way
@@ -302,7 +295,6 @@ _.Zones =
 							["groups"] = {
 								i(52918), -- Delicia's Tights
 								i(52963), -- Soulstone Breaker Wristbands
-								i(131843), -- Soulstone Breaker Bracers
 							},
 							["qg"] = 39199, -- Assistant Greely
 							["sourceQuests"] = { 25110 }, -- Kaja'Cola Gives you IDEAS!™
@@ -340,14 +332,12 @@ _.Zones =
 						q(25207, { -- Good-bye, Sweet Oil
 							["groups"] = {
 								i(52922), -- Demolitionist's Boots
-								i(131836), -- Demolitionist's Footguards
 								i(52967), -- Oil-Stained Leggings
 							},
 							["sourceQuests"] = { 25200, 25201 }, -- Shredder Shutdown / The Ultimate Footbomb Uniform
 						}),
 						q(25203, { -- What Kind of Name is Chip, Anyway? [Male Version]
 							["groups"] = {
-								i(131844), -- Fickle Cord
 								i(52921), -- Ex-Stealer's Gloves
 								i(52966), -- Fickle Belt
 								i(52938), -- Jeealousy's Edge
@@ -360,7 +350,6 @@ _.Zones =
 								i(52965), -- Heartache Dagger
 								i(52937), -- Chip's Cloak
 								i(52920), -- Cardio-Extractor Gloves
-								i(131835), -- Cardio-Extractor Handguards
 							},
 							["qg"] = 38647, -- Izzy
 							["sourceQuests"] = { 25204, 25207 }, -- Release the Valces / Good-bye, Sweet Oil
@@ -373,7 +362,6 @@ _.Zones =
 							["groups"] = {
 								i(52923), -- Rocket-Fuel Soaked Bracers
 								i(52968), -- Orbital Leggings
-								i(131845), -- Oribital Greaves
 								i(52939), -- Cage-Launcher's Plate
 							},
 							["qg"] = 38120, -- Hobart Grapplehammer
@@ -383,7 +371,6 @@ _.Zones =
 							["groups"] = {
 								i(52920), -- Cardio-Extractor Gloves
 								i(52937), -- Chip's Cloak
-								i(131835), -- Cardio-Extractor Handguards
 								i(52965), -- Heartache Dagger
 							},
 							["qg"] = 38387, -- Sassy Hardwrench
@@ -393,7 +380,6 @@ _.Zones =
 							["groups"] = {
 								i(52972), -- Ex-Stealer's Gloves
 								i(52970), -- Fickle Belt
-								i(131846), -- Fickle Cord
 								i(52941), -- Jealousy's Edge
 								i(52938), -- Jealousy's Edge [Yes, there are two.  Both are awarded on completion.]
 							},
@@ -410,8 +396,6 @@ _.Zones =
 								i(52971), -- Igneous Leggings
 								i(62335), -- Thrall's Gift
 								i(58499), -- Grasp of Victory
-								i(131847), -- Victor's Legguards
-								i(131893), -- Victor's Igneous Cuffs
 							},
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25251 }, -- Final Confrontation

@@ -223,7 +223,6 @@ _.Instances =
 										i( 89986),	-- Shadowgrip Girdle
 										i( 86908),	-- Dreadwoven Leggings of Failure
 										i( 86907),	-- Essence of Terror
-										i(122199),	-- Music Roll: Heart of Pandaria
 									})),
 								},
 							}),
@@ -413,7 +412,6 @@ _.Instances =
 									i(85377),	-- Hood of the Burning Scroll
 									i(85301),	-- Helmet of the Thousandfold Blades
 								}),
-								i(138805),	-- Illusion: Jade Spirit
 								i( 86386),	-- Shin'ka, Execution of Dominion
 								i( 86387),	-- Kilrak, Jaws of Terror
 								i( 89887),	-- Robes of Pinioned Eyes
@@ -421,7 +419,6 @@ _.Instances =
 								i( 89839),	-- Shadowgrip Girdle
 								i( 86389),	-- Dreadwoven Leggings of Failure
 								i( 86388),	-- Essence of Terror
-							    i(122199),	-- Music Roll: Heart of Pandaria
 							})),
 						},
 					}),
@@ -609,7 +606,6 @@ _.Instances =
 									i(87008),	-- Hood of the Burning Scroll
 									i(87126),	-- Helmet of the Thousandfold Blades
 								}),
-								i(138805),	-- Illusion: Jade Spirit
 								i( 87176),	-- Shin'ka, Execution of Dominion
 								i( 87173),	-- Kilrak, Jaws of Terror
 								i( 89949),	-- Robes of Pinioned Eyes
@@ -617,7 +613,6 @@ _.Instances =
 								i( 89951),	-- Shadowgrip Girdle
 								i( 87174),	-- Dreadwoven Leggings of Failure
 								i( 87175),	-- Essence of Terror
-                                i(122199),	-- Music Roll: Heart of Pandaria
 							})),
 						},
 					}),

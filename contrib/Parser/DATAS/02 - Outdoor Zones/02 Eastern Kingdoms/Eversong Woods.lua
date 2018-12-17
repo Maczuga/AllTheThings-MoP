@@ -131,7 +131,6 @@ _.Zones =
 						["groups"] = {
 							i(28148),	-- Bronze Plate Bracers
 							i(28146),	-- Courier's Wraps
-							i(131243),	-- Tranquillien Ranger's Cuffs
 							i(28147),	-- Tranquillien Scout's Bracers
 							i(22571),	-- Courier's Bag
 						},

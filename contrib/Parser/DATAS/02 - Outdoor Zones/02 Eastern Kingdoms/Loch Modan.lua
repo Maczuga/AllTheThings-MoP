@@ -36,7 +36,6 @@ _.Zones =
 						i(58989),	-- Belt of the Valley of Kings
 						i(58990),	-- Rugelfuss Bracers
 						i(58988),	-- Unbound Leggings
-						i(131492),	-- Waistguard of the Valley of Kings
 					})),
 --[[
 					qg(44345, qa(26929)),	-- A Load of Croc
@@ -53,7 +52,6 @@ _.Zones =
 --]]					
 					qg(1090, qa(26147, { -- Bigger and Uglier
 						i(58995),	-- Bonesnapper Bracers
-						i(131491),	-- Bonesnapper Cuffs
 						i(58996),	-- Mountaineer's Belt
 						i(58994),	-- Trogg-Slayer Boots
 					})),
@@ -96,7 +94,6 @@ _.Zones =
 						i(58997),	-- Carved Stone Mace
 						i(58999),	-- Thelsamar Breastplate
 						i(58998),	-- Trogg Kickers
-						i(131628),	-- Trogg Stompers
 					})),
 --[[					
 					qg(1073, qa(27078)),	-- Gor'kresh
@@ -106,9 +103,7 @@ _.Zones =
 						["groups"] = {	
 							i(58993),	-- Old Dwarven Hammer
 							i(58991),	-- Star Shooter
-							i(156932),	-- Surveyor's Staff 
 							i(58992),	-- Uncovered Breastplate
-							i(131300),	-- Uncovered Chestguard
 						},
 						["description"] = "After turning in all six Stolen Explorers' League Documents, this quest will pop up.",
 					}),
@@ -116,7 +111,6 @@ _.Zones =
 					qg(1154, qa(27028)),	-- Hornet Hunting
 --]]
 					qg(1092, qa(26146, { -- In Defense of the King's Lands
-						i(131490),	-- Greaves of Uncanny Courage
 						i(58985),	-- Leggings of Uncanny Courage
 						i(58986),	-- Stone Stompers
 						i(58984),	-- Stonesplinter Staff
@@ -132,7 +126,6 @@ _.Zones =
 					qg(2057, qa(  309, { 	-- Protecting the Shipment
 						i(58981),	-- Dastardly Bracers
 						i(58982),	-- Foreman Gloves
-						i(131204),	-- Foreman Handguards
 						i(58983),	-- Ironband Legguards
 					})),
 --[[					
@@ -157,7 +150,6 @@ _.Zones =
 						i(58970),	-- Mori's Cloak
 						i(58971),	-- Mori's Compass
 						i(58972),	-- Mori's Gear Stick
-						i(156933),	-- Mori's Pocketknife
 					})),
 --[[
 					qg(1089, qa(26145)),	-- The Trogg Threat
@@ -173,7 +165,6 @@ _.Zones =
 						i(59010),	-- Swiftwind Blade
 						i(59008),	-- Unsanitary Gloves
 						i(59009),	-- Vyrin's Belt
-						i(131633),	-- Vyrin's Waistband
 					})),
 --[[					
 					qg(1156, qa(27036)),	-- Vyrin's Revenge

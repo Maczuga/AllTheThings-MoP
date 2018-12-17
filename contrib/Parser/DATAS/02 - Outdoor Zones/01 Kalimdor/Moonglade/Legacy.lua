@@ -27,16 +27,6 @@ _.Zones =
 							["classes"] = { 11 },	-- Druid
 						})),
 						{
-							["questID"] = 40962,	-- Dark Waters
-							["qg"] = 102432,	-- Malfurion Stormrage
-							["sourceQuest"] = 40904,	-- Shadow of the Defiler
-							["u"] = 40, -- LEGACY
-							["lvl"] = 100,
-							["groups"] = {
-								un(2, i(128422)),	-- Reins of the Grove Warden
-							},
-						},
-						{
 							["questID"] = 5526,	-- Shards of the Felvine
 							["qg"] = 11801,	-- Quest Giver: Rabine Saturna
 							["u"] = 40,	-- LEGACY

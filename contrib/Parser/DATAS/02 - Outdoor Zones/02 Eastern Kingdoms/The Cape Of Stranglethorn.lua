@@ -65,7 +65,6 @@ _.Zones =
 									i(61531),  -- Veil of the Silent Listener
 									i(61532),  -- Monnion of the Bat
 									i(61533),  -- Small Pouch of Incense
-									i(131606), -- Spaulders of the Bat
 								},
 								["qg"] = 44084, -- Maywiki
 								["sourceQuests"] = {26808},
@@ -88,7 +87,6 @@ _.Zones =
 									i(61549),  -- Maywiki's Favorite Ring
 									i(61550),  -- Boots of the Foolhardy
 									i(61551),  -- Cloak of Great Endeavors
-									i(131607), -- Treads of the Foolhardy
 								},
 								["sourceQuests"] = {26813},
 							}),
@@ -108,8 +106,6 @@ _.Zones =
 									i(61518),  -- Iconic Vest
 									i(61519),  -- Wandering Hands
 									i(61520),  -- Corpsepump Belt
-									i(131530), -- Iconic Breastplate
-									i(131531), -- Sassy Grippers
 								},
 								["qg"] = 43095, -- Sassy Hardwrench
 							}),
@@ -130,7 +126,6 @@ _.Zones =
 									i(61534),  -- Veil of the Silent Listener
 									i(61535),  -- Monnion of the Bat
 									i(61536),  -- Small Pouch of Incense
-									i(131554), -- Spaulders of the Bat
 								},
 								["qg"] = 43098, -- Chabal
 								["sourceQuests"] = {26495},
@@ -153,7 +148,6 @@ _.Zones =
 									i(61552),  -- Chabal's Favorite Ring
 									i(61553),  -- Boots of the Foolhardy
 									i(61554),  -- Cloak of Great Endeavors
-									i(131555), -- Treads of the Foolhardy
 								},
 								["sourceQuests"] = {26554},
 							}),
@@ -183,7 +177,6 @@ _.Zones =
 										i( 61564),  -- Sea Song Epaulettes
 										i( 61566),  -- Landlubber Headband
 										i( 61568),  -- Sea Legs
-										i(131561),  -- Landlubber Helm
 									},
 									["qg"] = 2500,
 									["sourceQuests"] = {26602},
@@ -205,7 +198,6 @@ _.Zones =
 										i(61586),  -- Princess Poobah's Dress
 										i(61588),  -- Princess Poobah's Bracelets
 										i(61588),  -- Princess Poobah's Tiara
-										i(131562), -- Princess Poobah's Bangles
 									},
 									["qg"] = 2634, -- Princess Poobah
 									["sourceQuests"] = {26605},
@@ -222,8 +214,6 @@ _.Zones =
 										i(61538),  -- Nice Shorts
 										i(61540),  -- Phase Three Bracers
 										i(61542),  -- Forceful Shield
-										i(131558), -- Phase Three Leggings
-										i(131559), -- Nice Cuffs
 									},
 									["qg"] = 2501, -- "Sea Wolf" MacKinley
 									["sourceQuests"] = {26594},
@@ -248,7 +238,6 @@ _.Zones =
 										i(61572),  -- Belt of Supremacy
 										i(61574),  -- Sea Baron's Breastplate
 										i(61576),  -- Pirate's Musket
-										i(131563), -- Cord of Supremecy
 									},
 									["qg"] = 2496, -- Baron Revilgaz
 									["sourceQuests"] = {26611},
@@ -292,8 +281,6 @@ _.Zones =
 									i(61580),  -- Swabbie's Booties
 									i(61582),  -- Riptide Vest
 									i(61584),  -- Keelhaul Shackles
-									i(131567), -- Riptide Boots
-									i(131568), -- Keelhaul Harness
 								},
 								["qg"] = 2548, -- Captain Keelhaul
 								["sourceQuests"] = {26631},
@@ -320,7 +307,6 @@ _.Zones =
 									i(61594),  -- Venture Blaster
 									i(61596),  -- Slippery Glovelettes
 									i(61598),  -- Ironpatch Shoulderguards
-									i(131573), -- Ironpatch Handguards
 								},
 								["qg"] = 2547, -- Ironpatch
 								["sourceQuests"] = {26647},
@@ -330,8 +316,6 @@ _.Zones =
 									i(61600),  -- Mortal Naginata
 									i(61604),  -- Other-Eye Patch
 									i(61606),  -- Pauldrons of the Eternal Battle
-									i(131572), -- One-Eye Patch
-									i(156952), -- Adversarial Blackjack
 								},
 								["qg"] = 43556, -- "Dead-Eye" Drederick McGumm
 								["sourceQuests"] = {26644},
@@ -379,7 +363,6 @@ _.Zones =
 									i(61608),  -- Mongrel Shooter
 									i(61610),  -- Flight Master's Gift
 									i(61612),  -- Baron's Baton
-									i(157000), -- Fuse-Cutter Knife
 								},
 								["qg"] = 2496, -- Baron Revilgaz
 								["sourceQuests"] = {26695},
@@ -393,7 +376,6 @@ _.Zones =
 									i(61620),  -- Revilgaz's Cutlass
 									i(61622),  -- Bruised Vest
 									i(61624),  -- Brash Cloak
-									i(131585), -- Revilgaz's Tunic
 								},
 								["qg"] = 2487, -- Fleet Master Seahorn
 								["sourceQuests"] = {26698},
@@ -407,7 +389,6 @@ _.Zones =
 									i(61626),  -- Booty Bay Pendant
 									i(61630),  -- Booty Bay Pantaloons
 									i(61632),  -- Booty Bay Helm
-									i(131586), -- Booty Bay Trousers
 									i(61628),  -- Star of Stranglethorn
 								},
 								["qg"] = 2496, -- Baron Revilgaz
@@ -431,7 +412,6 @@ _.Zones =
 									i(61556),  -- Feverish Bracers
 									i(61558),  -- Savage Handwraps
 									i(61560),  -- Chestpiece of Returning Strength
-									i(131560), -- Savage Handguards
 								},
 								["qg"] = 2486, -- Fin Fizracket
 							}),
@@ -467,7 +447,6 @@ _.Zones =
 									i(61525), -- Goris' Medallion
 									i(61526), -- Staff of First Occurrences
 									i(61527), -- Slither-Dog Headguard
-									i(131611), -- Slither-Dog Helm
 								},
 								["qg"] = 44100, -- Goris
 							}),
@@ -492,7 +471,6 @@ _.Zones =
 									i(61543),  -- Dask's Cloak
 									i(61544),  -- Leggings with Mysterious Stains
 									i(61545),  -- Glass Encrusted Boots
-									i(131608), -- Pantaloons with Myserious Stains
 								},
 								["qg"] = 44099, -- Dask "The Flask" Gobfizzle
 								["sourceQuests"] = {26815},
@@ -503,8 +481,6 @@ _.Zones =
 									i(61514),  -- Velvety Vest
 									i(61515),  -- Supple Gloves
 									i(61516),  -- Hambone's Spare Collar
-									i(131609), -- Supple Support Harness
-									i(131610), -- Velvet-Lined Chain Gloves
 								},
 								["qg"] = 44083, -- Linzi Hewstrike
 								["sourceQuests"] = {26823},
@@ -522,13 +498,11 @@ _.Zones =
 							qg(43096, qh(26434, { -- Primal Reagents of Power
 								i(61529),
 								i(61530),
-								i(131529),
 							})),	
 							qg(43097, qh(26535, { -- Recipe for Disaster
 								i(61546),
 								i(61547),
 								i(61548),
-								i(131551),
 							})),
 						}),
 --[[
@@ -536,12 +510,6 @@ _.Zones =
 					qg(, qh(29400)),	-- A Season for Celebration
 					qg(, qa(29074)),	-- A Season for Celebration
 --]]					
-					qg(2496, qa(29155, {	-- A Shiny Reward
-						i(133997),  -- Black Ice (Toy)
-					})),
-					qg(2496, qh(29253, {	-- A Shiny Reward
-						i(133997),  -- Black Ice (Toy)
-					})),
 --[[
 					qg(, qa(31917)),	-- A Tamer's Homecoming
 					qg(, qh(26404)),	-- Above My Pay Grade
@@ -681,7 +649,6 @@ _.Zones =
 									}),
 								},
 							}),
-							i(122222),			-- Music Roll: Angelic
 							dr(7, {				-- Rare Drops (7% Chance)
 								i(18711),		-- Arena Bands
 								i(18710),		-- Arena Bracers
@@ -972,21 +939,6 @@ _.Zones =
 					n(2699, {	-- Rikqiz <Leatherworking Supplies>
 						i(18239), -- Pattern: Shadowskin Gloves							
 						i(14635), -- Pattern: Gem-Studded Leather Belt						
-					}),
-					n(105637, {	-- Scowling Rosa <Texts and Specialty Goods>
-						["description"] = "These are completely useless as far as we know. I bought one of each and they're sitting in my bank just in case Blizzard ever removes the vendor.\b - Crieve",
-						["groups"] = {
-							i(140101),	-- A Hypothetical Examination of the Legion's Weaknesses
-							i(140133),	-- Axe, Blade, and Fist
-							i(140109),	-- How to Meditate in a Hurricane
-							i(140113),	-- Legends of the Silver Hand
-							i(139403),	-- Powerful Magical Foci and Those Who Wielded Them
-							i(140097),	-- The Fall of Lordaeron and the Scouring of the Eastweald
-							i(140125),	-- The Fall of the Warchief
-							i(140117),	-- The Hunt for Light's Wrath
-							i(140121),	-- The Seven Curses of the Southern Seas
-							i(140093),	-- The Untold Tales of the War of the Ancients
-						},
 					}),
 					n(2670, {	-- Xizk Goodstitch <Tailoring Supplies>
 						i(7087), 	-- Pattern: Crimson Silk Cloak

@@ -104,7 +104,6 @@ _.Instances =
 					cr( 9196, e(388, {	-- Highlord Omokk
 						un(2, i(16670)),	-- Boots of Elements
 						i(13167),	-- Fist of Omokk
-						i(151412),	-- Ogre Highlord's Casque
 						i(13168),	-- Plate of the Shaman King
 						i(13170),	-- Skyshroud Leggings
 						i(13166),	-- Slamshot Shoulders
@@ -116,7 +115,6 @@ _.Instances =
 						i( 13257),	-- Demonic Runed Spaulders
 						i( 12626),	-- Funeral Cuffs
 						i( 13255),	-- Trueaim Gauntlets
-						i(151413),	-- Smolderthorn Greatbelt
 						un(7, i(16712)), 	-- Shadowcraft Gloves																				
 					})),
 					n( 16080, {			-- Mor Grayhoof Summonable Read Description
@@ -159,7 +157,6 @@ _.Instances =
 					cr(10596, e(391, {	-- Mother Smolderweb
 						i( 68673),	-- Smolderthorn Egg (PET!)
 						i( 13183),	-- Venomspitter
-						i(151414),	-- Arcanophile's Greatcloak
 						i( 13244),	-- Gilded Gauntlets
 						i( 13213),	-- Smolderweb's Eye
 						un(2, i(16715)),	-- Wildheart Boots
@@ -178,8 +175,6 @@ _.Instances =
 						i( 12264),	-- Worg Carrier (PET!)
 						i( 13253),	-- Hands of Power
 						i( 13252),	-- Cloudrunner Girdle
-						i(151416),	-- Dark Horde Grunt's Legplates
-						i(151415),	-- Veteran Spearman's Chain Boots
 						i(21955),   -- Design: Black Diamond Crab
 						un(7, i(16680)),	-- Beaststalker's Belt
 						un(7, i(16735)),	-- Bracers of Valor
@@ -198,8 +193,6 @@ _.Instances =
 					})),
 					cr(10268, e(395, {	-- Gizrul the Slavener
 						i( 13205),	-- Rhombeard Protector
-						i(151418),	-- Raider Aspirant's Helm
-						i(151417),	-- Worg-Keeper's Spaulders
 						i( 13208),	-- Bleak Howler Armguards
 						i( 13206),	-- Wolfshear Leggings
 						un(2, i(16718)),	-- Wildheart Spaulders
@@ -219,7 +212,6 @@ _.Instances =
 						i( 13162),	-- Reiver Claws
 						i( 13143),	-- Mark of the Dragon Lord
 						i( 22321),	-- Heart of Wyrmthalak
-						i(142370),	-- Plans: Arcanite Champion
 						un(2, i(16679)),	-- Beaststalker's Mantle
 						un(2, i(13148)), 	-- Chillpike [Disappeared sometime around 3.0]
 						un(2, i(13164)),	-- Heart of the Scale

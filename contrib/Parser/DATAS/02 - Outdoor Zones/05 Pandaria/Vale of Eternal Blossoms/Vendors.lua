@@ -487,7 +487,6 @@ _.Zones =
 						}),
 						n(64605, {	-- Tan Shin Tiao <Lorewalkers Quartermaster>
 							i(89363),	-- Disc of the Red Flying Cloud Mount
-							i(122221),	-- Music Roll: Song of Liu Lang
 							i(89795),	-- Lorewalkers Tabard
 							i(93230),	-- Grand Commendation of the Lorewalkers
 						}),

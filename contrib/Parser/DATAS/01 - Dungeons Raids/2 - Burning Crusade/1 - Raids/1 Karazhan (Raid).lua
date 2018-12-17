@@ -96,7 +96,6 @@ _.Instances =
 					e(  1554, {			-- Moroes
 						["groups"] = {
 							i( 22559),	-- Formula: Enchant Weapon - Mongoose
-							i(138797),	-- Illusion: Mongoose
 							i( 28524),	-- Emerald Ripper
 							i( 28525),	-- Signet of Unshakable Faith
 							i( 28530),	-- Brooch of Unquenchable Fury
@@ -130,7 +129,6 @@ _.Instances =
 					cr(16812, e(1556, {	-- Opera Hall
 						n(17521, {		-- The Big Bad Wolf (Random)	
 							["groups"] = {
-								i(138017),	-- Clothes Chest Pattern: Karazhan Opera House
 								i( 97548),	-- Spiky Collar (PET!)
 								i( 28584),	-- Big Bad Wolf's Paw
 								i( 28581),	-- Wolfslayer Sniper Rifle
@@ -141,13 +139,11 @@ _.Instances =
 								i( 28591),	-- Earthsoul Leggings
 								i( 28594),	-- Trial-Fire Trousers
 								i( 28590),	-- Ribbon of Sacrifice
-								i(122231),	-- Music Roll: Karazhan Opera House
 							},
 							["description"] = "This is one of three possible bosses for this event."
 						}),
 						n(17534, {		-- Julianne
 							["groups"] = {
-								i(138017),	-- Clothes Chest Pattern: Karazhan Opera House
 								i( 28573),	-- Despair
 								i( 28572),	-- Blade of the Unrequited
 								i( 28593),	-- Eternium Greathelm
@@ -157,13 +153,11 @@ _.Instances =
 								i( 28594),	-- Trial-Fire Trousers
 								i( 28590),	-- Ribbon of Sacrifice
 								i( 28579),	-- Romulo's Poison Vial
-								i(122231),	-- Music Roll: Karazhan Opera House
 							},
 							["description"] = "This is one of three possible bosses for this event.  Also, paired with Romulo"
 						}),
 						n(17533, {		-- Romulo
 							["groups"] = {
-								i(138017),	-- Clothes Chest Pattern: Karazhan Opera House
 								i( 28573),	-- Despair
 								i( 28572),	-- Blade of the Unrequited
 								i( 28593),	-- Eternium Greathelm
@@ -173,13 +167,11 @@ _.Instances =
 								i( 28594),	-- Trial-Fire Trousers
 								i( 28590),	-- Ribbon of Sacrifice
 								i( 28579),	-- Romulo's Poison Vial
-								i(122231),	-- Music Roll: Karazhan Opera House
 							},
 							["description"] = "This is one of three possible bosses for this event. Also paired with Julianne"
 						}),
 						n(18168, {		-- Wizard of Oz - The Crone (Random)
 							["groups"] = {
-								i(138017),	-- Clothes Chest Pattern: Karazhan Opera House
 								i( 28587),	-- Legacy
 								i( 28588),	-- Blue Diamond Witchwand
 								i( 28593),	-- Eternium Greathelm
@@ -189,7 +181,6 @@ _.Instances =
 								i( 28594),	-- Trial-Fire Trousers
 								i( 28585),	-- Ruby Slippers
 								i( 28590),	-- Ribbon of Sacrifice
-								i(122231),	-- Music Roll: Karazhan Opera House
 							},
 							["description"] = "This is one of three possible bosses for this event."
 						}),
@@ -263,7 +254,6 @@ _.Instances =
 					e(  1560, {			-- Terestian Illhoof
 						["groups"] = {
 							i( 22561),	-- Formula: Enchant Weapon - Soulfrost
-							i(138799), 	-- Illusion: Soulfrost
 							i( 97551),	-- Satyr Charm (PET!)
 							i( 28658),	-- Terestian's Stranglestaff
 							i( 28657),	-- Fool's Bane
@@ -282,7 +272,6 @@ _.Instances =
 					e(  1559, {			-- Shade of Aran
 						["groups"] = {
 							i( 22560),	-- Formula: Enchant Weapon - Sunfire
-							i(138798),	-- Illusion: Sunfire
 							i( 28673),	-- Tirisfal Wand of Ascendancy
 							i( 28728),	-- Aran's Soothing Sapphire
 							i( 28671),	-- Steelspine Faceguard

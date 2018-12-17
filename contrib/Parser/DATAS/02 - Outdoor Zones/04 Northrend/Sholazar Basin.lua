@@ -637,17 +637,6 @@ _.Zones =
 						},
 					},
 				}),
-				n(-2, {		-- Vendors
-					n(28040, {	-- Mardan Thunderhoof <Gunsmith>
-						["groups"] = {
-							i(136855),	-- Hunter's Call
-							i(136780),	-- Pet Training Manual: Play Dead
-							i(136781),	-- Pet Training Manual: Fetch
-							i(136783),	-- The Art of Concealment
-						},
-						["classes"] = {3},
-					}),
-				}),
 				n(0, { 		-- Zone Drop
 					i(41122, { -- Plans: Reinforced Cobalt Chestpiece
 						["crs"] = {

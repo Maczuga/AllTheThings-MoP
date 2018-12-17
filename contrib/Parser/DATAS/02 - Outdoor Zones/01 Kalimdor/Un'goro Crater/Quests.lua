@@ -164,7 +164,6 @@ _.Zones =
 								i(53563),	-- Stegodon Tusk Mace
 								i(53564),	-- Osteoderm Belt
 								i(53565),	-- Diemetradon Plate Gloves
-								i(156996),	-- Tailspike Pike 
 							},
 							["qg"] = 38270,	-- Nolen Tacker
 						}),
@@ -311,7 +310,6 @@ _.Zones =
 							["groups"] = {
 								i(53583),	-- Beast Clobberer
 								i(53584),	-- Beastkiller
-								i(156995),	-- Beastflayer
 							},
 							["description"] = "This quest should pop up when you enter the Fungal Rock cave to do The Apes of Un'Goro.",
 						}),
@@ -381,7 +379,6 @@ _.Zones =
 						}),
 						q(45057, {	-- Saving My Head
 							["groups"] = {
-								i(142383),	-- Plans: Darkspear
 							},
 							["qg"] = 115923,	-- Ko'Zan
 							["sourceQuests"] = { 45055 },	-- A Taste of Their Own Medicine

@@ -59,12 +59,10 @@ _.Instances =
 								i( 63467),	-- Shadow of the Past
 								i( 63468),	-- Defias Brotherhood Vest
 								i( 63471),	-- Vest of the Curious Visitor
-								i(157628),	-- Gold-Flecked Gloves
 							})),
 							cr(47296, e(90, { -- Helix Gearbreaker
 								i( 65164),	-- Cruel Barb
 								i( 63473),	-- Cloak of Thredd
-								i(157752),	-- Armbands of Exiled Architects
 								i( 63476),	-- Gearbreaker's Bindings
 								i( 63474),	-- Gear-Marked Gauntlets
 								i( 63475),	-- Old Friend's Gloves
@@ -73,9 +71,6 @@ _.Instances =
 								i( 65167),	-- Emberstone Staff
 								i( 65165),	-- Foe Reaper
 								i( 65166),	-- Buzz Saw
-								i(157755),	-- Missing Diplomat's Pauldrons
-								i(157753),	-- Vest of the Curious Visitor
-								i(157754),	-- Old Friend's Gloves
 							})),
 							cr(47626, e(92, { -- Admiral Ripsnarl
 								ig(44731),	-- Bouquet of Ebon Roses

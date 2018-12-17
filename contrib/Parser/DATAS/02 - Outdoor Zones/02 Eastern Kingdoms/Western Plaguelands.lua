@@ -6,41 +6,6 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(22, {	-- Western Plaguelands
 			["groups"] = {
-				n(-10067, {	-- Artifacts
-					["lvl"] = 110,
-					["groups"] = {
-						na(11609, {	-- Alexia Ironknife
-							["description"] = "After talking to Prince Tortheldrin, you can talk to her for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
-							["classes"] = { 2 },	-- Paladin only
-							["coord"] = { 43.0, 84.2 },
-							["questID"] = 43683,	-- Traveller Found [Retribution Paladin Hidden Artifact Appearance]
-							["sourceQuests"] = { 43682 },	-- Book Presented
-						}),
-						n(111121, {	-- Grand Inquisitor Isillien's Journal
-							["description"] = "After reading this, you can go kill Large Vile Slime next to Thondroril River in Western Plaguelands.",
-							["classes"] = { 2 },	-- Paladin only
-							["coord"] = { 42, 18 },
-							["questID"] = 43684,	-- Notes Read [Retribution Paladin Hidden Artifact Appearance]
-							["sourceQuests"] = { 43683 },	-- Traveller Found [Retribution Paladin Hidden Artifact Appearance]
-						}),
-						n(111122, {	-- Large Vile Slime
-							["description"] = "Supposedly has a random spawn up to 30 hours, unpredictable due to phasing and server sharding, be prepared to wait.",
-							["sourceQuests"] = { 43684 },	-- Notes Read [Retribution Paladin Hidden Artifact Appearance]
-							["classes"] = { 2 },	-- Paladin only
-							["coord"] = { 69.0, 45.8 },
-							["groups"] = {
-								i(139623, {	-- Timolain's Phylactery
-									["description"] = "It first took 350 casts in the river (RNG, could be 10 casts, could be 10,000 casts)\n\nYou may fish anywhere along the river, as long as your location says \"Thondroril River\"\nYour fishing skill does not matter",
-									["questID"] = 43685,	-- Phylactery Used [Retribution Paladin Hidden Artifact Appearance]
-									["sourceQuests"] = { -111122 },	-- Large Vile Slime
-									["groups"] = {
-										i(139624),	-- Shard of Darkness
-									},
-								}),
-							},
-						}),
-					},
-				}),
 				n(-228, {	-- Flight Path
 					fp(649, { -- Andorhal, Western Plaguelands
 						["coord"] = { 46.6, 64.6 },
@@ -84,8 +49,6 @@ _.Zones =
 									i( 62142),	-- Behemoth Boots
 									i( 62141),	-- Belt of the Laconic
 									i( 62140),	-- Dried-Up Bracers
-									i(131642),	-- Putrid Mail Boots
-									i(131643),	-- Succinct Sash
 								},
 								["qg"] = 44471,	-- Lurid
 							}),
@@ -106,8 +69,6 @@ _.Zones =
 									i( 62150),	-- Elimination Bracers
 									i( 62149),	-- Burden of Time
 									i( 62148),	-- Gandling's Gloves
-									i(131644),	-- Armguards of Binding
-									i(131645),	-- Shoulderguard of Timeless Restraint
 								},
 								["qg"] = 44453,	-- Thassarian
 								["sourceQuests"] = { 27159, 27160 },	-- Scourge First... Horde Later & War Machines
@@ -126,8 +87,6 @@ _.Zones =
 									i( 62146),	-- Behemoth Boots
 									i( 62145),	-- Belt of the Blathering Fool
 									i( 62144),	-- Bracers of Favorable Chance
-									i(131618),	-- Putrid Mail Boots
-									i(131619),	-- Belt of Recklessness
 								},
 								["qg"] = 44466,	-- Lindsay Ravensun
 							}),
@@ -148,8 +107,6 @@ _.Zones =
 									i( 62154),	-- Elimination Bracers
 									i( 62153),	-- Burden of Time
 									i( 62152),	-- Gandling's Gloves
-									i(131620),	-- Armguards of Binding
-									i(131621),	-- Shoulderguard of Timeless Restraint
 								},
 								["qg"] = 44452,	-- Koltira Deathweaver
 								["sourceQuests"] = { 26921, 26923 },	-- Scourge First... Alliance Later & War Machines
@@ -169,7 +126,6 @@ _.Zones =
 									i( 62158),	-- Homestead Helm
 									i( 62157),	-- Farmer's Vest
 									i( 62156),  -- Grant's Signet
-									i(131646),	-- Leather Stitched Chain Tunic
 								},
 								["qg"] = 45165,	-- Thurman Grant
 							}),
@@ -206,7 +162,6 @@ _.Zones =
 									i( 62183),	-- Gory Gloves
 									i( 62182),	-- Training Leggings
 									i( 62181),	-- Zombie Shotgun
-									i(131647),	-- Faded Mail Gauntlets
 								},
 								["qg"] = 45165,	-- Thurman Grant
 								["sourceQuests"] = { 27173 },	-- This Is Our Army
@@ -221,7 +176,6 @@ _.Zones =
 									i( 62187),	-- Charming Gloves
 									i( 62186),	-- Ravensun Britches
 									i( 62185),	-- Zombie Shotgun
-									i(131623),	-- Ravensun Gloves
 								},
 								["sourceQuests"] = { 26937 },	-- When Death is Not Enough
 							}),
@@ -238,8 +192,6 @@ _.Zones =
 									i( 62204),	-- Gloves of the Able
 									i( 62203),	-- Belt of the Unafraid
 									i( 62202),	-- Bracers of Envy
-									i(131653),	-- Gloves of Approaching Victory
-									i(131654),	-- Belt of Proficiency
 								},
 								["qg"] = 44467,	-- Lang Loosegrip
 								["sourceQuests"] = { 27197 },	-- The Battle Resumes!
@@ -262,7 +214,6 @@ _.Zones =
 									i( 62212),	-- Quelling Bracers
 									i( 62211),	-- Shoulderwraps of the Enthralled
 									i( 62210),  -- Pack Leader's Band
-									i(131655),	-- Bracer of Grievance
 								},
 								["qg"] = 45165,	-- Thurman Grant
 								["sourceQuests"] = { 27205 },	-- The Depravity of the Forsaken
@@ -278,7 +229,6 @@ _.Zones =
 									i( 62220),	-- Chillwind Tunic
 									i( 62219),	-- Chillwind Staff
 									i( 62218),	-- Chillwind Dagger
-									i(131656),	-- Chillwind Breeches
 								},
 								["qg"] = 44453,	-- Thassarian
 								["sourceQuests"] = { 27204 },	-- Aradne
@@ -297,8 +247,6 @@ _.Zones =
 									i( 62208),	-- Gloves of the Able
 									i( 62207),	-- Belt of the Unafraid
 									i( 62206),	-- Bracers of Envy
-									i(131637),	-- Gloves of Approaching Victory
-									i(131638),	-- Belt of Proficiency
 								},
 								["qg"] = 44462,	-- Jearl Donald
 								["sourceQuests"] = { 27083 },	-- The Battle Resumes!
@@ -317,7 +265,6 @@ _.Zones =
 									i( 62216),	-- Lurid Bracers
 									i( 62215),	-- Shoulderwraps of the Enthralled
 									i( 62214),  -- Ring of Aces
-									i(131639),	-- Forsaken Trooper Armguards
 								},
 								["qg"] = 44451,	-- Lady Sylvanas Windrunner
 								["sourceQuests"] = { 27087 },	-- Lindsay Ravensun, Revealed
@@ -333,7 +280,6 @@ _.Zones =
 									i( 62225),	-- Andorhal Tunic
 									i( 62224),	-- Staff of Andorhal
 									i( 62223),	-- Dagger of Andorhal
-									i(131641),	-- Andorhal Chain Leggings
 								},
 								["qg"] = 44451,	-- Lady Sylvanas Windrunner
 								["sourceQuests"] = { 27090 },	-- Andorhal, Once and For All
@@ -359,7 +305,6 @@ _.Zones =
 									i( 62174),	-- Bracers of the Returning Wild
 									i( 62173),	-- Boots of the Flowering Earth
 									i( 62172),	-- Forest Green Cloak
-									i(131630),	-- Treads of Renewed Growth
 								},
 								["qg"] = 44454,	-- Field Agent Kaartish
 								["sourceQuests"] = { 27175, 27233, 26952 },	-- The Menders' Stead (A/A/H versions)
@@ -428,7 +373,6 @@ _.Zones =
 									i( 62201),	-- Kaartish's Sword
 									i( 62200),	-- Field Agent's Belt
 									i( 62199),	-- Malicia's Scepter
-									i(131635),	-- Plague-Free Disciple Belt
 								},
 								["sourceQuests"] = { 27054 },	-- Desperate Acts
 							}),	
@@ -447,7 +391,6 @@ _.Zones =
 									i( 62194),	-- Breastplate of the Patient
 									i( 62193),	-- Leggings of the Slipper Shifter
 									i( 62192),  -- Zen'Kiki's Thanks
-									i(131627),	-- Scaled Pants of Patience
 								},
 								["qg"] = 44456,	-- Adrine Towhide
 								["sourceQuests"] = { 27057,26953 },	-- Return to the Stead
@@ -496,8 +439,6 @@ _.Zones =
 									i( 62197),	-- Gahrron's Shoulderguard
 									i( 62196),	-- Gloria's Work Vest
 									i( 62195),	-- Footfalls of Memories
-									i(131631),	-- Del's Discarded Shoulderguard
-									i(131632),	-- Dusty Gahrron Chainmail
 								},
 								["qg"] = 44458,	-- Del Gahrron
 								["sourceQuests"] = { 26957 },	-- The Long Trip Home

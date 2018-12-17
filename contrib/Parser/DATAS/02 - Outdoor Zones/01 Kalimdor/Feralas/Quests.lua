@@ -35,8 +35,6 @@ _.Zones =
 									i(54915),	-- Green Whelp Shoulderguard
 									i(54916),	-- Konu's Platemail
 									i(54913),	-- Runetotem Staff
-									i(131411),	-- Green Whelp Spaulders
-									i(156983),	-- Runetotem Slicer 
 								},
 								["qg"] = 39377,	-- Konu Runetotem
 								["coord"] = { 41.3, 15.4 },
@@ -62,7 +60,6 @@ _.Zones =
 								["groups"] = {
 									i(54919),	-- Dream Bough Robes
 									i(54920),	-- Belt of Natural Essence
-									i(131412),	-- Chain of Natural Essence
 								},
 								["qg"] = 39377,	-- Konu Runetotem
 								["coord"] = { 41.3, 15.4 },
@@ -94,7 +91,6 @@ _.Zones =
 									i(54933),	-- Shoulder of the Ogre-Nabber
 									i(54934),	-- Abductor's Coverings
 									i(54932),	-- Modified Spell Shield
-									i(131418),	-- Spaulders of the Ogre-Nabber
 								},
 								["qg"] = 39840,	-- Swar'jan
 								["coord"] = { 51.9, 46.6 },
@@ -107,7 +103,6 @@ _.Zones =
 									i(54939),	-- Sermon-Halter Gloves
 									i(54940),	-- Ogre's Coif
 									i(54938),	-- Stonemaul Slinger
-									i(131415),	-- Ogre's Visage
 								},
 								["qg"] = 39656,	-- Orhan Ogreblade
 								["coord"] = { 51.9, 47.9 },
@@ -164,7 +159,6 @@ _.Zones =
 									i(54970),	-- Power of the Mountain Giant
 									i(54971),	-- Power of the Faerie Dragon
 									i(54972),	-- Power of the Treant
-									i(157023),	-- Power of the Forest
 								},
 								["qg"] = 8115,	-- Witch Doctor Uzer'i
 								["coord"] = { 74.4, 43.3 },
@@ -190,7 +184,6 @@ _.Zones =
 									i(54925),	-- Luring Footpads
 									i(54926),	-- Condensed Essence Bracers
 									i(54923),	-- Sensiria's Shroud
-									i(131419),	-- Luring Treads
 								},
 								["qg"] = 40131,	-- Sensiria
 								["coord"] = { 65.9, 62.8 },
@@ -280,7 +273,6 @@ _.Zones =
 						["groups"] = {
 							i(54921),	-- Dark Crystal Waistband
 							i(54922),	-- Bracers of the Captured Heart
-							i(131417),	-- Captured Heart Bindings
 						},
 						["qg"] = 40035,	-- Erina Willowborn
 						["races"] = ALLIANCE_ONLY,
@@ -290,7 +282,6 @@ _.Zones =
 						["groups"] = {
 							i(54921),	-- Dark Crystal Waistband
 							i(54922),	-- Bracers of the Captured Heart
-							i(131417),	-- Captured Heart Bindings
 						},
 						["qg"] = 7776,	-- Talo Thornhoof
 						["coord"] = { 41.5, 15.2 },
@@ -384,7 +375,6 @@ _.Zones =
 						["questID"] = 25450,
 						["groups"] = {
 							i(54967),	-- Pratt's Handcrafted Vest
-							i(131862),	-- Pratt's Handmade Hauberk
 						},
 						["qg"] = 40226,	-- Pratt McGrubben
 						["races"] = ALLIANCE_ONLY,
@@ -393,7 +383,6 @@ _.Zones =
 					{	-- Improved Quality
 						["questID"] = 25453,
 						["groups"] = {
-							i(131863),	-- Jangdor's Handmade Hauberk
 							i(54968),	-- Jangdor's Handcrafted Vest
 						},
 						["qg"] = 7854,	-- Hangdor Swiftstrider
@@ -417,7 +406,6 @@ _.Zones =
 							i(54936),	-- Sermon-Halter Gloves
 							i(54937),	-- Sentinel's Headpiece
 							i(54935),	-- Shadowleaf Bow
-							i(131416),	-- Sentinel's Headgear
 						},
 						["qg"] = 39653,	-- Silvia
 						["races"] = ALLIANCE_ONLY,
@@ -430,8 +418,6 @@ _.Zones =
 							i(54911),	-- Green Whelp Shoulderguard
 							i(54912),	-- Telaron's Platemail
 							i(54909),	-- Windflight Staff
-							i(131421),	-- Green Whelp Spaulders
-							i(156984),	-- Windflight Knife 
 						},
 						["qg"] = 40032,	-- Telaron Windflight
 						["races"] = ALLIANCE_ONLY,
@@ -444,7 +430,6 @@ _.Zones =
 							i(54929),	-- Shoulder of the Ogre-Nabber
 							i(54930),	-- Abductor's Coverings
 							i(54928),	-- Modified Spell Shield
-							i(131423),	-- Spaulders of the Ogre-Nabber
 						},
 						["qg"] = 40052,	-- Estulan
 						["races"] = ALLIANCE_ONLY,
@@ -508,7 +493,6 @@ _.Zones =
 							i(54943),	-- Yeti Hide Britches
 							i(54944),	-- Big Footwear
 							i(54945),	-- Shadebough Cloak
-							i(131424),	-- Yeti Hide Padded Greaves
 						},
 						["qg"] = 39725,	-- Adella
 						["races"] = ALLIANCE_ONLY,
@@ -519,7 +503,6 @@ _.Zones =
 							i(54946),	-- Yeti Hide Britches
 							i(54947),	-- Big Footwear
 							i(54948),	-- Mojache Cloak
-							i(131420),	-- Yeti Hide Padded Greaves
 						},
 						["qg"] = 39847,	-- Chief Spirithorn
 						["coord"] = { 74.5, 42.8 },
@@ -544,7 +527,6 @@ _.Zones =
 						["groups"] = {
 							i(54917),	-- Dream Bough Robes
 							i(54918),	-- Belt of Natural Essence
-							i(131422),	-- Chain of Natural Essence
 						},
 						["qg"] = 40032,	-- Telaron Windflight
 						["races"] = ALLIANCE_ONLY,
@@ -683,8 +665,6 @@ _.Zones =
 						["groups"] = {
 							i(9630),	-- Pratt's Handcrafted Boots
 							i(9631),	-- Pratt's Handcrafted Gloves
-							i(131425),	-- Pratt's Handcrafted Greaves
-							i(131426),	-- Pratt's Handcrafted Gauntlets
 						},
 						["qg"] = 40226,	-- Pratt McGrubben
 						["races"] = ALLIANCE_ONLY,
@@ -694,8 +674,6 @@ _.Zones =
 						["groups"] = {
 							i(9633),	-- Jangdor's Handcrafted Boots
 							i(9632),	-- Jangdor's Handcrafted Gloves
-							i(131427),	-- Jangdor's Handcrafted Greaves
-							i(131428),	-- Jangdor's Handcrafted Gauntlets
 						},
 						["qg"] = 7854,	-- Jangdor Swiftstrider
 						["coord"] = { 52.8, 47.1 },
@@ -734,7 +712,6 @@ _.Zones =
 							i(63559),	-- Maloof's Spare Boots
 							i(63560),	-- Floating Belt
 							i(63561),	-- Bracers of Desperate Need
-							i(131430),	-- Maloof's Spare Treads
 						},
 						["qg"] = 39992,	-- Rendow
 						["races"] = ALLIANCE_ONLY,

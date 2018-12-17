@@ -181,7 +181,6 @@ _.Zones =
 							["groups"] = {
 								i(53369), -- Fizzle's Gloves
 								i(53366), -- Enforcer's Gloves
-								i(131413), -- Gor's Re-Inforced Gloves
 							},
 							["qg"] = 39379, -- Gor the Enforcer
 							["coord"] = { 44.9, 14.7 },
@@ -199,7 +198,6 @@ _.Zones =
 								i(53358), -- Blade Cultist Slippers
 								i(53387), -- Searing Bracers
 								i(53390), -- Skull Rock Belt
-								i(131414), -- Burning Armbands
 							},
 							["qg"] = 3208, -- Margoz
 							["coord"] = { 56.4, 20.0 },
@@ -228,7 +226,6 @@ _.Zones =
 							["groups"] = {
 								i(53368), -- Feckless Armbands
 								i(53374), -- Heedless Treads
-								i(131410), -- Bindings of Disregard
 							},
 							["qg"] = 39379, -- Gor the Enforcer
 							["lvl"] = 8,
@@ -297,15 +294,9 @@ _.Zones =
 					}),
 					q(25267,  {	-- Message for Saurfang
 						["groups"] = {
-							i(118217),	-- Staff of Dubious Pacts
-							i(118219),	-- Harness of Forward Directions
-							i(131898),	-- Chestguard of Forward Directions
-							i(118218),	-- Girdle of Common Causes
-							nld({	-- Legacy (same quest ID, different name)
-								un(34, i(67154)),	-- Staff of the Unwelcome
-								un(34, i(67157)),	-- Harness of Binding
-								un(34, i(67156)),	-- Girdle of Servitude
-							}),
+							i(67154),	-- Staff of the Unwelcome
+							i(67157),	-- Harness of Binding
+							i(67156),	-- Girdle of Servitude
 						},
 						["qgs"] = {
 							86884,	-- Darkspear Loyalist

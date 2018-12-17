@@ -1846,13 +1846,11 @@ _.Zones =
 						i(44822),	-- Albino Snake Pet
 						i(46398),	-- Cat Carrier (Calico Cat) Pet
 						i(48120),	-- Obsidian Hatchling Pet
-						i(129826),	-- Nursery Spider Pet
 						i(44820),	-- Red Ribbon Pet Leash Toy
 					}),
 					n(28722, {	-- Bryan Landers <Engineering Supplies>
 						["coord"] = { 39.0, 26.0 },
 						["groups"] = {
-							i(136782),	-- Fireworks Instruction Manual
 							i(23817),	-- Schematic: Titanium Toolbox
 						},
 					}),
@@ -2041,11 +2039,7 @@ _.Zones =
 					}),
 					n(28715, { 	-- Endora Moorehead <Magical Goods>
 						i(82470),	-- Ancient Tome of Portal: Dalaran [Mage only]
-						i(137294),	-- Dalaran Initiates' Pin Toy [Mage only]
-						i(136846),	-- Familiar Stone Toy [Mage only]
-						i(136797),	-- Mystical Tome: Arcane Linguist [Mage only]
 						un(2, i(44714)), -- Tome of Dalaran Brilliance. Deprecated and removed in 7.0.3. Any existing copies were renamed to [Magic Consumed Book]. 
-						--i(136799),	-- Mystical Tome: Illusion [Mage only]
 						{
 							["itemID"] = 136799,	-- Mystical Tome: Illusion [Mage only]
 							["spellID"] = 131784	-- Illusion
@@ -2411,7 +2405,6 @@ _.Zones =
 						i(95621),	-- Warbot Ignition Key Pet
 						i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
 						i(104324),	-- Foot Ball Toy
-						i(137663),	-- Small Foam Sword Toy
 						i(104323),	-- The Pigskin Toy
 						i(54438),	-- Tiny Blue Ragdoll Toy
 						i(54437),	-- Tiny Green Ragdoll Toy
@@ -2728,19 +2721,7 @@ _.Zones =
 											i(63138),	-- Dark Phoenix Hatchling - Exalted
 										},
 									})),
-									ach(6626, {	-- Working Better as a Team
-										["collectible"] = false,
-										["groups"] = {
-											i(127011),	-- Pristine Lightforged Legplates - Honored
-											i(122252),	-- Tarnished Leggings of Destruction - Honored
-											i(122251),	-- Polished Legplates of Valor - Honored
-											i(122254),	-- Stained Shadowcraft Pants - Honored
-											i(122253),	-- Mystical Kilt of Elements - Honored
-											i(122256),	-- Tattered Dreadmist Leggings - Honored
-											i(122255),	-- Preened Wildfeather Leggings - Honored
-											i(122264),	-- Burnished Legplates of Might - Honored
-										},
-									}),
+
 									
 									i(67107),	-- Reins of the Kor'kron Annihilator - Exalted
 									i(62298),	-- Reins of the Golden King - Exalted
@@ -2748,18 +2729,6 @@ _.Zones =
 									i(69210),	-- Renowned Guild Tabard - Honored
 									i(63206),	-- Wrap of Unity - Honored
 									i(63207),	-- Wrap of Unity - Honored
-									i(122266),	-- Ripped Sandstorm Cloak - Friendly
-									i(122260),	-- Worn Stoneskin Gargoyle Cape - Friendly
-									i(122261),	-- Inherited Cape of the Black Baron - Friendly
-									i(122262),	-- Ancient Bloodmoon Cloak - Friendly
-									i(122263),	-- Burnished Helm of Might - Friendly
-									i(122250),	-- Tattered Dreadmist Mask - Friendly
-									i(122249),	-- Preened Tribal War Feathers - Friendly
-									i(122248),	-- Stained Shadowcraft Cap - Friendly 
-									i(122247),	-- Mystical Coif of Elements - Friendly
-									i(122246),	-- Tarnished Raging Berserker's Helm - Friendly
-									i(127012),	-- Pristine Lightforged Helm - Friendly
-									i(122245),	-- Polished Helm of Valor - Friendly
 								},
 							}),
 						},
@@ -3588,11 +3557,8 @@ _.Zones =
 									i(41991),	-- Hateful Gladiator's Felweave Cowl
 									i(42009),	-- Hateful Gladiator's Felweave Amice
 									i(42001),	-- Hateful Gladiator's Felweave Raiment
-									i(147586),	-- Hateful Gladiator's Cuffs of Ascendancy
 									i(42015),	-- Hateful Gladiator's Felweave Handguards
-									i(147587),	-- Hateful Gladiator's Cord of Ascendancy
 									i(42003),	-- Hateful Gladiator's Felweave Trousers
-									i(147588),	-- Hateful Gladiator's Slippers of Ascendancy
 								}),		
 								i(146559, { -- Ensemble: Hateful Gladiator's Dragonhide Armor		
 									i(41676),	-- Hateful Gladiator's Dragonhide Helm
@@ -3658,11 +3624,8 @@ _.Zones =
 									i(40820),	-- Hateful Gladiator's Dreadplate Helm
 									i(40860),	-- Hateful Gladiator's Dreadplate Shoulders
 									i(40781),	-- Hateful Gladiator's Dreadplate Chestpiece
-									i(147583),	-- Hateful Gladiator's Bracers of Victory
 									i(40803),	-- Hateful Gladiator's Dreadplate 
-									i(147584),	-- Hateful Gladiator's Girdle of Victory
 									i(40841),	-- Hateful Gladiator's Dreadplate 
-									i(147585),	-- Hateful Gladiator's Greaves of Victory
 								}),	
 								i(42563),	-- Hateful Gladiator's Barrier
 								i(42512),	-- Hateful Gladiator's Baton of Light
@@ -3712,7 +3675,6 @@ _.Zones =
 								i(41828),	-- Hateful Gladiator's Boots of Triumph
 								i(40972),	-- Hateful Gladiator's Bracers of Salvation
 								i(40887),	-- Hateful Gladiator's Bracers of Triumph
-								i(147583),	-- Hateful Gladiator's Bracers of Victory
 								i(41085),	-- Hateful Gladiator's Chain Armor
 								i(41141),	-- Hateful Gladiator's Chain Gauntlets
 								i(41155),	-- Hateful Gladiator's Chain Helm
@@ -3725,10 +3687,8 @@ _.Zones =
 								i(42056),	-- Hateful Gladiator's Cloak of Subjugation
 								i(42060),	-- Hateful Gladiator's Cloak of Triumph
 								i(42061),	-- Hateful Gladiator's Cloak of Victory
-								i(147587),	-- Hateful Gladiator's Cord of Ascendancy
 								i(41896),	-- Hateful Gladiator's Cord of Dominance
 								i(41877),	-- Hateful Gladiator's Cord of Salvation
-								i(147586),	-- Hateful Gladiator's Cuffs of Ascendancy
 								i(41907),	-- Hateful Gladiator's Cuffs of Dominance
 								i(41878),	-- Hateful Gladiator's Cuffs of Salvation
 								i(41771),	-- Hateful Gladiator's Dragonhide Gloves
@@ -3748,10 +3708,8 @@ _.Zones =
 								i(42003),	-- Hateful Gladiator's Felweave Trousers
 								i(40966),	-- Hateful Gladiator's Girdle of Salvation
 								i(40877),	-- Hateful Gladiator's Girdle of Triumph
-								i(147584),	-- Hateful Gladiator's Girdle of Victory
 								i(40973),	-- Hateful Gladiator's Greaves of Salvation
 								i(40878),	-- Hateful Gladiator's Greaves of Triumph
-								i(147585),	-- Hateful Gladiator's Greaves of Victory
 								i(41284),	-- Hateful Gladiator's Kodohide Gloves
 								i(41319),	-- Hateful Gladiator's Kodohide Helm
 								i(41296),	-- Hateful Gladiator's Kodohide Legguards
@@ -3810,7 +3768,6 @@ _.Zones =
 								i(41969),	-- Hateful Gladiator's Silk Handguards
 								i(41950),	-- Hateful Gladiator's Silk Raiment
 								i(41957),	-- Hateful Gladiator's Silk Trousers
-								i(147588),	-- Hateful Gladiator's Slippers of Ascendancy
 								i(41901),	-- Hateful Gladiator's Slippers of Dominance
 								i(41879),	-- Hateful Gladiator's Slippers of Salvation
 								i(41068),	-- Hateful Gladiator's Waistguard of Dominance
@@ -4025,12 +3982,6 @@ _.Zones =
 								i(42066),	-- Deadly Gladiator's Cloak of Deliverance
 								i(42067),	-- Deadly Gladiator's Cloak of Triumph
 								i(42068),	-- Deadly Gladiator's Cloak of Victory
-								i(147593),	-- Deadly Gladiator's Cord of Ascendancy
-								i(147592),	-- Deadly Gladiator's Cuffs of Ascendancy
-								i(147591),	-- Deadly Gladiator's Greaves of Victory
-								i(147590),	-- Deadly Gladiator's Girdle of Victory
-								i(147589),	-- Deadly Gladiator's Bracers of Victory
-								i(147594),	-- Deadly Gladiator's Treads of Ascendancy
 							},
 							["itemID"] = 137642,  -- Marks of Honor
 						}),
@@ -4253,12 +4204,6 @@ _.Zones =
 								i(40889),	-- Furious Gladiator's Bracers of Triumph
 								i(40882),	-- Furious Gladiator's Greaves of Triumph
 								i(40881),	-- Furious Gladiator's Girdle of Triumph
-								i(147599),	-- Furious Gladiator's Girdle of Victory
-								i(147598),	-- Furious Gladiator's Bracers of Victory
-								i(147597),	-- Furious Gladiator's Slippers of Ascendancy
-								i(147596),	-- Furious Gladiator's Cord of Ascendancy
-								i(147595),	-- Furious Gladiator's Cuffs of Ascendancy
-								i(147600),	-- Furious Gladiator's Greaves of Victory
 							},
 							["itemID"] = 137642,  -- Marks of Honor
 						}),
@@ -4785,10 +4730,6 @@ _.Zones =
 								i(51361),	-- Wrathful Gladiator's Bracers of Salvation
 								i(51362),	-- Wrathful Gladiator's Girdle of Triumph
 								i(51363),	-- Wrathful Gladiator's Greaves of Triumph
-								i(147607),	-- Wrathful Gladiator's Bracers of Victory
-								i(147606),	-- Wrathful Gladiator's Cord of Ascendancy
-								i(147605),	-- Wrathful Gladiator's Cuffs of Ascendancy
-								i(147608),	-- Wrathful Gladiator's Girdle of Victory
 							},
 							["itemID"] = 137642,  -- Marks of Honor
 						}),
@@ -4969,7 +4910,6 @@ _.Zones =
 								i(41837),	-- Relentless Gladiator's Boots of Triumph
 								i(40984),	-- Relentless Gladiator's Bracers of Salvation
 								i(40890),	-- Relentless Gladiator's Bracers of Triumph
-								i(147603),	-- Relentless Gladiator's Bracers of Victory
 								i(42078),	-- Relentless Gladiator's Cloak of Ascendancy
 								i(42080),	-- Relentless Gladiator's Cloak of Deliverance
 								i(42076),	-- Relentless Gladiator's Cloak of Dominance
@@ -4981,15 +4921,12 @@ _.Zones =
 								i(41899),	-- Relentless Gladiator's Cord of Dominance
 								i(41882),	-- Relentless Gladiator's Cord of Salvation
 								i(49181),	-- Relentless Gladiator's Cuffs of Alacrity
-								i(147602),	-- Relentless Gladiator's Cuffs of Ascendancy
 								i(41910),	-- Relentless Gladiator's Cuffs of Dominance
 								i(41894),	-- Relentless Gladiator's Cuffs of Salvation
 								i(40978),	-- Relentless Gladiator's Girdle of Salvation
 								i(40883),	-- Relentless Gladiator's Girdle of Triumph
-								i(147604),	-- Relentless Gladiator's Girdle of Victory
 								i(40979),	-- Relentless Gladiator's Greaves of Salvation
 								i(40884),	-- Relentless Gladiator's Greaves of Triumph
-								i(147601),	-- Relentless Gladiator's Greaves of Victory
 								i(41076),	-- Relentless Gladiator's Sabatons of Dominance
 								i(41056),	-- Relentless Gladiator's Sabatons of Salvation
 								i(41231),	-- Relentless Gladiator's Sabatons of Triumph of Defeat

@@ -106,7 +106,6 @@ _.Instances =
 								i( 13404),	-- Mask of the Unforgiven
 								i( 13405),	-- Wailing Nightbane Pauldrons
 								i( 13409),	-- Tearfall Bracers
-								i(151404),	-- Gauntlets of Purged Sanity
 								un(7, i(16717)),	-- Wildheart Gloves
 							})),
 							n( 11143, {			-- Postmaster Malown
@@ -123,7 +122,6 @@ _.Instances =
 							cr(10808, e(445, { 	-- Timmy the Cruel
 								i( 13401),	-- The Cruel Hand of Timmy
 								i( 13400),	-- Vambraces of the Sadist
-								i(151403),	-- Fetid Stranglers
 								i( 13403),	-- Grimgore Noose
 								i( 13402),	-- Timmy's Galoshes
 								un(7, i(16724)),	-- Lightforge Gauntlets
@@ -288,7 +286,6 @@ _.Instances =
 									i(18736),	-- Plaguehound Leggings
 									i(18745),	-- Sacred Cloth Leggings
 									i(18742),	-- Stratholme Militia Shoulderguard
-									i(142337),	-- Plans: Blight
 									n(10422, {	-- Risen Sorcerer
 										dr(6, i(16249)),	-- Formula: Enchant 2H Weapon - Major Intellect
 									}),

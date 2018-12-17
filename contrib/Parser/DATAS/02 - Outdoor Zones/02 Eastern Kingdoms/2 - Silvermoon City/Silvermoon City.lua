@@ -563,19 +563,6 @@ _.Zones =
 											i(63138),	-- Dark Phoenix Hatchling - Exalted
 										},
 									})),
-									ach(6626, {	-- Working Better as a Team
-										["collectible"] = false,
-										["groups"] = {
-											i(127011),	-- Pristine Lightforged Legplates - Honored
-											i(122252),	-- Tarnished Leggings of Destruction - Honored
-											i(122251),	-- Polished Legplates of Valor - Honored
-											i(122254),	-- Stained Shadowcraft Pants - Honored
-											i(122253),	-- Mystical Kilt of Elements - Honored
-											i(122256),	-- Tattered Dreadmist Leggings - Honored
-											i(122255),	-- Preened Wildfeather Leggings - Honored
-											i(122264),	-- Burnished Legplates of Might - Honored
-										},
-									}),
 									
 									h(i(67107)),	-- Reins of the Kor'kron Annihilator - Exalted
 									--a(i(62298)),	-- Reins of the Golden King - Exalted
@@ -583,18 +570,6 @@ _.Zones =
 									i(69210),	-- Renowned Guild Tabard - Honored
 									--a(i(63206)),	-- Wrap of Unity - Honored
 									h(i(63207)),	-- Wrap of Unity - Honored
-									i(122266),	-- Ripped Sandstorm Cloak - Friendly
-									i(122260),	-- Worn Stoneskin Gargoyle Cape - Friendly
-									i(122261),	-- Inherited Cape of the Black Baron - Friendly
-									i(122262),	-- Ancient Bloodmoon Cloak - Friendly
-									i(122263),	-- Burnished Helm of Might - Friendly
-									i(122250),	-- Tattered Dreadmist Mask - Friendly
-									i(122249),	-- Preened Tribal War Feathers - Friendly
-									i(122248),	-- Stained Shadowcraft Cap - Friendly 
-									i(122247),	-- Mystical Coif of Elements - Friendly
-									i(122246),	-- Tarnished Raging Berserker's Helm - Friendly
-									i(127012),	-- Pristine Lightforged Helm - Friendly
-									i(122245),	-- Polished Helm of Valor - Friendly
 								},
 							}),
 						},

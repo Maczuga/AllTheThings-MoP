@@ -31,28 +31,22 @@ _.Instances =
 					cr(61408, e(694, {	-- Adarogg
 						i( 82880), 	-- Fang of Adarogg
 						i( 82879), 	-- Collarspike Bracers
-						i(151422),	-- Bonecoal Waistguard
 						i( 82772), 	-- Snarlmouth Leggings
-						i(151421),	-- Scorched Blazehound Boots
 					})),
 					cr(61412, e(695, {	-- Dark Shaman Koranthal
 						i( 82882), 	-- Dark Ritual Cape
-						i(132551), 	-- Dark Shaman's Jerkin
 						i( 82877), 	-- Grasp of the Broken Totem
 						i( 82881), 	-- Cuffs of Black Elements
 					})),
 					cr(61463, e(696, {	-- Slagmaw
 						i( 82878),	-- Fireworm Robes
 						i( 82885),	-- Flameseared Carapace
-						i(132552),	-- Chitonous Bindings
 						i( 82884),	-- Chitonous Bracers
 					})),
 					cr(61528, e(697, {	-- Lava Guard Gordoth
 						ach(629),	-- Ragefire Chasm
 						i( 82888),	-- Heartboiler Staff
 						i( 82883),	-- Bloodcursed Felblade
-						i(151425),	-- Gordoth's Crushers
-						i(151424),	-- Belt of Boundless Fury
 						i( 82886),	-- Gorewalker Treads
 					})),
 					n(-40, { -- Legacy
@@ -70,11 +64,9 @@ _.Instances =
 								})),
 								un(40, qh(26858, { -- Taragaman the Hungerer
 									["groups"] = {
-										un(2, i(131614)), 	-- Chasm Linked Pants
 										un(2,  i(66031)), 	-- Hide Vest of the Shaman
 										un(2,  i(66022)), 	-- Ragefire Leggings
 										un(2,  i(49541)), 	-- Robes of the Doomed Ritual
-										un(2, i(131613)), 	-- Scaled Vest of the Shaman 
 										un(2,  i(66040)), 	-- Searing Belt
 										un(2,  i(66045)), 	-- Stone Guard Greaves
 									},

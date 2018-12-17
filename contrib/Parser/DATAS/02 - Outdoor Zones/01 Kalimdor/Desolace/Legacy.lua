@@ -65,7 +65,6 @@ _.Zones =
 							un(40, q(1384)), -- Raid on the Kolkar	
 							un(40, q(1467, {	-- Reagents for Reclaimers Inc. (REMOVED per wowhead comments)
 								un(2, i(6793)),	-- Auric Bracers
-								un(2, i(131232)),	-- Stormfire Gauntlets
 								un(2, i(6794)),	-- Tawny Gloves
 							})),
 							un(40, qa(1440, {	-- Return to Vahlarriel

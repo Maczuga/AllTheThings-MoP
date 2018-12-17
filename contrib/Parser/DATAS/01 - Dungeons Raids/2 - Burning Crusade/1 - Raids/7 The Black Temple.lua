@@ -83,7 +83,6 @@ _.Instances =
 								["classes"] = { 6, 12, 10, 4, 1 },	-- DK, DH, Monk, Rogue, Warrior
 							}),
 							cr(22887, e(1582, {	-- High Warlord Naj'entus
-								i(122104),	-- Leviathan Egg (PET!)
 								i( 32248),	-- Halberd of Desolation
 								i( 32236),	-- Rising Tide
 								i( 32237),	-- The Maelstrom's Fury
@@ -100,7 +99,6 @@ _.Instances =
 								i( 32247),	-- Ring of Captured Storms
 							})),
 							cr(22898, e(1583, {	-- Supremus
-								i(122106),	-- Shard of Supremus (PET!)
 								i( 32262),	-- Syphon of the Nathrezim
 								i( 32254),	-- The Brutalizer
 								i( 32253),	-- Legionkiller
@@ -158,9 +156,6 @@ _.Instances =
 								i(32501),	-- Shadowmoon Insignia
 							})),
 							cr(23418, e(1587, {	-- Reliquary of Souls
-								i(122107),	-- Fragment of Anger (PET!)
-								i(122109),	-- Fragment of Desire (PET!)
-								i(122108),	-- Fragment of Suffering (PET!)
 								i( 32332),	-- Torch of the Damned
 								i( 32363),	-- Naaru-Blessed Life Rod
 								i( 32350),	-- Touch of Inspiration
@@ -216,7 +211,6 @@ _.Instances =
 									i(32001),	-- Merciless Gladiator's Leather Spaulders
 									i(31030),	-- Slayer's Shoulderpads
 								}),
-								i(122110),	-- Sultry Grimoire (PET!)
 								i( 32369),	-- Blade of Savagery
 								i( 32370),	-- Nadina's Pendant of Purity
 								i( 32365),	-- Heartshatter Breastplate
@@ -327,7 +321,6 @@ _.Instances =
 								i( 32497),	-- Stormrage Signet Ring
 								i( 32496),	-- Memento of Tyrande
 								i( 32483),	-- The Skull of Gul'dan
-								i(122196),	-- Music Roll: The Burning Legion
 							})),
 						},	
 						["lvl"] = 68,

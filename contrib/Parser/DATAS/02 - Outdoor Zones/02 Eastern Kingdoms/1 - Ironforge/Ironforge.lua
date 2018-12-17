@@ -30,7 +30,6 @@ _.Zones =
 							qr(qg(5161, qa(29347))),	-- Live Bait
 							qr(qg(5161, qa(29343))),	-- One fer the Ages
 							qr(qg(5161, qa(29350))),	-- The Gnomish Bait-o-Matic
-							a(i(122204)),	-- Music Roll: Cold Mountain
 							i(34484),		-- Old Ironjaw
 						},
 						["description"] = "Go fishing for a bit in the Forlorn Cavern.",
@@ -73,7 +72,6 @@ _.Zones =
 							i(57583),	-- The Slaghammer
 							i(57584),	-- Battleaxe of the Sober Dwarf
 							i(57585),	-- Ambassador's Duplicitous Dagger
-							i(133692),	-- Ambassador's Deceitful Dagger
 						},
 						["qg"] = 42129,	-- Moira Thaurissan
 						["coord"] = { 39.7, 57.3 },
@@ -313,62 +311,6 @@ _.Zones =
 								dr(0.5, i(45992)),	-- Jeweled Fishing Pole
 							}),
 						}),
-					}),
-					n(6294, {	-- Krom Stoutarm <Heirloom Curator>
-						i(122349),	-- Bloodied Arcanite Reaper
-						i(122350),	-- Balanced Heartseeker
-						i(122351),	-- Venerable Dal'Rend's Sacred Charge
-						i(122352),	-- Charmed Ancient Bone Bow
-						i(122353),	-- Dignified HEadmaster's Charge
-						i(122354),	-- Devout Aurastone Hammer
-						i(122355),	-- Polished Spaulders of Valor
-						i(122356),	-- Champion Herod's Shoulder
-						i(122357),	-- Mystical Pauldrons of Elements
-						i(122358),	-- Stained Shadowcraft Spaulders
-						i(122359),	-- Preened Ironfeather Shoulders
-						i(122360),	-- Tattered Dreadmist Mantle
-						i(122361),	-- Swift Hand of Justice
-						i(122362),	-- Discerning Eye of the Beast
-						i(122363),	-- Burnished Warden Staff
-						i(122364),	-- Sharpened Scarlet Kris
-						i(122365),	-- Reforged Truesilver Champion
-						i(122366),	-- Upgraded Dwarven Hand Cannon
-						i(122367),	-- The Blessed Hammer of Grace
-						i(122368),	-- Grand Staff of Jordan
-						i(122369),	-- Battleworn Thrash Blade
-						a(i(122371)),	-- Inherited Insignia of the Alliance
-						i(122372),	-- Strengthened Stockade Pauldrons
-						i(122373),	-- Pristine Lightforge Spaulders
-						i(122374),	-- Prized Beastmaster's Mantle
-						i(122375),	-- Aged Paundrons of The Five Thunders
-						i(122376),	-- Exceptional Stormshroud Shoulders
-						i(122377),	-- Lasting Feralheart Spaulders
-						i(122378),	-- Exquisite Sunderseer Mantle
-						i(122379),	-- Champion's Deathdealer Breastplate
-						i(122380),	-- Mystical Vest of Elements
-						i(122381),	-- Polished Breastplate of Valor
-						i(122382),	-- Preened Ironfeather Breastplate
-						i(122383),	-- Stained Shadowcraft Tunic
-						i(122384),	-- Tatered Dreadmist Robe
-						i(122385),	-- Venerable Mass of McGowan
-						i(122386),	-- Repurposed Lava Dredger
-						i(122387),	-- Burnished Breastplate of Might
-						i(122388),	-- Burnished Pauldrons of Might
-						i(122389),	-- Bloodsoaked Skullforge Reaver
-						i(122390),	-- Musty Tome of the Lost
-						i(122391),	-- Flamescarred Draconian Deflector
-						i(122392),	-- Weathered Observers Shield
-						i(122530),	-- Inherited Mark of Tyranny
-						i(122662),	-- Eternal Talisman of Evasion
-						i(122663),	-- Eternal Amulet of the Redeemed
-						i(122664),	-- Eternal Horizon Choker
-						i(122666),	-- Eternal Woven Ivy Necklace
-						i(122667),	-- Eternal Emberfury Talisman
-						i(122668),	-- Eternal Will of the Martyr
-						i(127010),	-- Pristine Lightforge Breastplate
-						i(140773),	-- Eagletalon Spear
-						a(i(150743)),	-- Surviving Kalimdor Toy
-						a(i(150746)),	-- To Modernize the Provisions of Azeroth Toy
 					}),
 					{	-- Laida Gembold <Jewelcrafting Supplies>
 						["npcID"] = 52584,	-- Laida Gembold <Jewelcrafting Supplies>
@@ -709,19 +651,6 @@ _.Zones =
 										},
 									})),
 									]]--
-									ach(6626, {	-- Working Better as a Team
-										["collectible"] = false,
-										["groups"] = {
-											i(127011),	-- Pristine Lightforged Legplates - Honored
-											i(122252),	-- Tarnished Leggings of Destruction - Honored
-											i(122251),	-- Polished Legplates of Valor - Honored
-											i(122254),	-- Stained Shadowcraft Pants - Honored
-											i(122253),	-- Mystical Kilt of Elements - Honored
-											i(122256),	-- Tattered Dreadmist Leggings - Honored
-											i(122255),	-- Preened Wildfeather Leggings - Honored
-											i(122264),	-- Burnished Legplates of Might - Honored
-										},
-									}),
 									
 									--h(i(67107)),	-- Reins of the Kor'kron Annihilator - Exalted
 									a(i(62298)),	-- Reins of the Golden King - Exalted
@@ -729,18 +658,6 @@ _.Zones =
 									i(69210),	-- Renowned Guild Tabard - Honored
 									a(i(63206)),	-- Wrap of Unity - Honored
 									--h(i(63207)),	-- Wrap of Unity - Honored
-									i(122266),	-- Ripped Sandstorm Cloak - Friendly
-									i(122260),	-- Worn Stoneskin Gargoyle Cape - Friendly
-									i(122261),	-- Inherited Cape of the Black Baron - Friendly
-									i(122262),	-- Ancient Bloodmoon Cloak - Friendly
-									i(122263),	-- Burnished Helm of Might - Friendly
-									i(122250),	-- Tattered Dreadmist Mask - Friendly
-									i(122249),	-- Preened Tribal War Feathers - Friendly
-									i(122248),	-- Stained Shadowcraft Cap - Friendly 
-									i(122247),	-- Mystical Coif of Elements - Friendly
-									i(122246),	-- Tarnished Raging Berserker's Helm - Friendly
-									i(127012),	-- Pristine Lightforged Helm - Friendly
-									i(122245),	-- Polished Helm of Valor - Friendly
 								},
 							}),
 						},

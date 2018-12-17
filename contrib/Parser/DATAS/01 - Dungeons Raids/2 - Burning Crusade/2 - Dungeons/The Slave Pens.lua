@@ -137,54 +137,6 @@ _.Instances =
 							}))
 						},
 					}),
-					d(24, {	-- Timewalking
-						["lvl"] = 60,
-						["groups"] = {
-							cr(17941, e(570, { -- Mennu the Betrayer
-								i(127183),	-- Spellfire Longsword
-								i(127191),	-- Starlight Dagger
-								i(127179),	-- Wastewalker Shiv
-								i(127213),	-- Adamantine Chain of the Unbroken
-								i(127193),	-- Traitor's Noose
-								i(127180),	-- Vest of Living Lightning
-								i(127189),	-- Archery Belt of the Broken
-								i(127190),	-- Cord of Belief
-								i(127182),	-- Tracker's Belt
-								i(127195),	-- Girdle of Many Blessings (The normal version drops from Rokmar?! Need to verify this.)
-								i(127192),	-- Mennu's Scaled Leggings
-								i(127181),	-- Princely Reign Leggings
-							})),
-							cr(17991, e(571, { -- Rokmar the Crackler
-								i(127185),	-- Coilfang Hammer of Renewal
-								i(127187),	-- Calming Spore Reed
-								i(127188),	-- Coilfang Needler
-								i(127204),	-- Swamplight Lantern (NOTE: Not listed from this boss in Normal Mode?)
-								i(127198),	-- Skeletal Necklace of Battlerage
-								i(127186),	-- Bogstrok Scale Cloak
-								i(127197),	-- Ironscale War Cloak
-								i(127194),	-- Coldwhisper Cord
-								i(127210),	-- Liar's Cord
-								i(127209),	-- Earthsoul Britches (NOTE: Not listed from this boss in Normal Mode?)
-								i(127196),	-- Wavefury Boots
-								i(127184),	-- Runed Fungalcap
-							})),
-							cr(17942, e(572, { -- Quagmirran
-								i(127206),	-- Bleeding Hollow Warhammer
-								i(127200),	-- Phosphorescent Blade
-								i(127208),	-- Mana-Etched Spaulders
-								i(127203),	-- Pauldrons of Desolation
-								i(127215),	-- Pauldrons of Wild Magic
-								i(127211),	-- Breastplate of Righteous Fury
-								i(127202),	-- Shackles of Quagmirran
-								i(127199),	-- Girdle of the Immovable
-								i(127207),	-- Mage-Fury Girdle
-								i(127214),	-- Midnight Legguards
-								i(127212),	-- Boots of Blasphemy
-								i(127205),	-- Band of Ursol
-								i(127201),	-- Quagmirran's Eye
-							})),
-						},
-					}),
 				},
 				["lvl"] = 59,
 				["mapID"] = 265

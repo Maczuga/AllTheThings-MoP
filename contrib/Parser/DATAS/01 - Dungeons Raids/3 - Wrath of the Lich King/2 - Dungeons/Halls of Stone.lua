@@ -95,7 +95,6 @@ _.Instances =
 							i(37655),	-- Mantle of the Tribunal
 							i(35677),	-- Cosmos Vestments
 							i(35675),	-- Linked Armor of the Sphere
-							i(157564), 	-- Marbled Bracers
 							i(37656),	-- Raging Construct Bands
 							i(35676),	-- Constellation Leggings
 							i(37654),	-- Sabaton of the Ages
@@ -176,7 +175,6 @@ _.Instances =
 								i(37655),	-- Mantle of the Tribunal
 								i(35677),	-- Cosmos Vestments
 								i(35675),	-- Linked Armor of the Sphere
-								i(157564), 	-- Marbled Bracers
 								i(37656),	-- Raging Construct Bands
 								i(35676),	-- Constellation Leggings
 								i(37654),	-- Sabaton of the Ages

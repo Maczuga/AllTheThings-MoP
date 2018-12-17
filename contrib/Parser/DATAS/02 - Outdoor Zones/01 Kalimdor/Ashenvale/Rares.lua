@@ -300,16 +300,6 @@ _.Zones =
 							{ 12.6, 29.2 },
 						},
 					}),
-					o(240617, {	-- Lost Sentinel's Pouch
-						["groups"] = {
-							i(122226)		-- Music Roll: Magic
-						},
-						["coord"] = { 56.5, 49.3 },
-						["model"] = "World\\Expansion04\\Doodads\\Hozu\\HZ_PouchClosed.mdx",
-						["modelScale"] = .2,
-						["icon"] = "Interface\\Icons\\INV_Misc_Bag_HerbPouch",
-						["description"] = "|cff66ccffLoot the Lost Sentinel's Pouch inside a large hollow tree trunk.|r",
-					}),
 					n(10644, { 	-- Mist Howler
 						["groups"] = {
 							i(9776),	-- Bandit Boots

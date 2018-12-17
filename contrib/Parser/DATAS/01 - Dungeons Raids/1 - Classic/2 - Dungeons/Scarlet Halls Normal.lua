@@ -37,7 +37,6 @@ _.Instances =
 							i( 88271),	-- Harlan's Shoulders
 							i( 88270),	-- Lightblade Bracer
 							i( 88269),	-- Scarlet Sandals
-							i(132550),	-- Scarlet Chain Footpads
 						})),
 						cr(59150, e(656, {	-- Flameweaver Koegler
 							ach(7413),	-- Scarlet Halls

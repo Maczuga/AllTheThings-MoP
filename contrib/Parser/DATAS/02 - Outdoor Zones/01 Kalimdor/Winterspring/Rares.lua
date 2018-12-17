@@ -144,7 +144,6 @@ _.Zones =
 					}), 
 					o(240616, {		-- Frozen Supplies
 						["groups"] = {	
-							i(122224)		-- Music Roll: Mountains
 						},
 						["coord"] = { 68.0, 73.9 },
 						["modelID"] = 32854,
@@ -458,7 +457,6 @@ _.Zones =
 					}), 
 					o(272487, { 	-- Oddly-Colored Egg
 						["groups"] = {
-							i(142223),	-- Sun Darter Hatchling (PET!)
 						},
 						["coord"] = { 50.9, 2.3 },
 						["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",

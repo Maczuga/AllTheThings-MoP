@@ -23,7 +23,6 @@ _.Zones =
 									i(57471),	-- Elf-Killer Breastplate
 									i(57470),	-- Incinerator's Gauntlets
 									i(57469),	-- Saurboz's Leggings
-									i(131463),	-- Saurboz's Handwraps
 								},
 								["qg"] = 34341,	-- Saurboz
 								["coord"] = { 74.3, 47.7, 65 },
@@ -56,7 +55,6 @@ _.Zones =
 								["groups"] = {
 									i(57479),	-- Flamethrower's Gloves
 									i(57478),	-- Vest of Ashes
-									i(131464),	-- Tunic of Ashes
 								},
 								["qg"] = 41023,	-- Overlord Krom'gar
 								["coord"] = { 66.0, 63.7, 65 },
@@ -105,7 +103,6 @@ _.Zones =
 								["groups"] = {
 									i(57491),	-- Spare Part Leggings
 									i(57490),	-- Blastgineer's Belt
-									i(131472),	-- Blastgineer's Waistband
 								},
 								["qg"] = 41991,	-- Sergeant Dontrag
 								["coord"] = { 67.1, 64.5, 65 },
@@ -179,7 +176,6 @@ _.Zones =
 									i(57507),	-- Kobold-Wrangler Leggings
 									i(57506),	-- Unearthed Cloak
 									i(57508),	-- Devo's Handaxe
-									i(131476),	-- Kobold-Wrangler Legguards
 								},
 								["qg"] = 42023,	-- Subjugator Devo
 								["races"] = HORDE_ONLY,
@@ -283,7 +279,6 @@ _.Zones =
 									i(57512),	-- Cliffwalker Boots
 									i(57511),	-- Belt of the Grieving Father
 									i(57510),	-- Masha's Armbands
-									i(131486),	-- Cinch of the Grieving Father
 								},
 								["qg"] = 42106,	-- Overlord Krom'gar
 								["coord"] = { 45.6, 34.1, 65 },
@@ -315,7 +310,6 @@ _.Zones =
 						["groups"] = {
 							i(57449),	-- Diplomat's Chestguard
 							i(57448),	-- Basecamp Leggings
-							i(131447),	-- Basecamp Breeches
 						},
 						["qg"] = 41229,	-- Force Commander Valen
 						["races"] = ALLIANCE_ONLY,
@@ -353,7 +347,6 @@ _.Zones =
 									i(57429),	-- Fisherman's Belt
 									i(57430),	-- Irongoat Legguards
 									i(57428),	-- Fish Stunner
-									i(131879),	-- Fisherman's Links
 								},
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 25621,	-- Field Test: Gnomecorder (may be available earlier, but definitely has a prereq)
@@ -363,7 +356,6 @@ _.Zones =
 								["groups"] = {
 									i(57482),	-- Anara's Belt
 									i(57481),	-- Fisherman's Gloves
-									i(131471),	-- Anara's Cord
 								},
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26004,	-- Krom'gar Fortress
@@ -376,7 +368,6 @@ _.Zones =
 							i(57435),	-- Oil-Stained Bracers
 							i(57436),	-- Well Oiled Helm
 							i(57437),	-- Barus' Backup Sword
-							i(131881),	-- Barus' Armbands
 						},
 						["qg"] = 40896,	-- Lord Fallowmere
 						["races"] = ALLIANCE_ONLY,
@@ -394,7 +385,6 @@ _.Zones =
 							i(57462),	-- Goldrinn Acolyte's Cowl
 							i(57461),	-- Egg Smasher
 							i(57464),	-- Hierophant's Blessed Hands
-							i(131457),	-- Brood-Killer Amice
 						},
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25930,	-- Ascending the Vale
@@ -432,7 +422,6 @@ _.Zones =
 							i(57468),	-- Valen's Cloak
 							i(57467),	-- Fancy Footwork
 							i(57466),	-- Negotiator's Armbands
-							i(131449),	-- Valen's Treads
 						},
 						["qg"] = 11858,	-- Grundig Darkcloud
 						["races"] = ALLIANCE_ONLY,
@@ -623,7 +612,6 @@ _.Zones =
 							i(57440),	-- Shoulderguards of Warning
 							i(57439),	-- Messenger's Chestpiece
 							i(57438),	-- News Bearer Gloves
-							i(131453),	-- Messenger's Vest
 						},
 						["qg"] = 41434,	-- "Goblin" Pump Controller
 						["races"] = ALLIANCE_ONLY,
@@ -666,7 +654,6 @@ _.Zones =
 							i(57415),	-- Stardust Belt
 							i(57416),	-- Hippogryph Down Belt
 							i(57417),	-- Clear Path Boots
-							i(131877),	-- Stardust Waistcord
 						},
 						["qg"] = 39256,	-- Kalen Trueshot
 						["races"] = ALLIANCE_ONLY,
@@ -678,7 +665,6 @@ _.Zones =
 							i(57432),	-- Thwarter's Boots
 							i(57433),	-- Windshear Axe
 							i(57431),	-- Strategy Guide
-							i(131880),	-- Thwarter's Footguards
 						},
 						["qg"] = 41071,	-- Huntress Illiona
 						["races"] = ALLIANCE_ONLY,
@@ -695,7 +681,6 @@ _.Zones =
 						["groups"] = {
 							i(57460),	-- Breastplate of Rescue
 							i(57459),	-- Headguard of the Innocent
-							i(131455),	-- Helm of the Innocent
 						},
 						["qg"] = 41482,	-- Master Thal'darah
 						["races"] = ALLIANCE_ONLY,
@@ -707,7 +692,6 @@ _.Zones =
 							i(57453),	-- Yvonia's Pauldrons
 							i(57452),	-- Shield of Control
 							i(57451),	-- Sabotage Leggings
-							i(131454),	-- Yvonia's Spaulders
 						},
 						["qg"] = 41441,	-- Scout Mistress Yvonia
 						["races"] = ALLIANCE_ONLY,
@@ -728,7 +712,6 @@ _.Zones =
 							i(57456),	-- Headguard of Solace
 							i(57455),	-- Sareth'na's Mantle
 							i(57454),	-- Elune-Blessed Bow
-							i(131456),	-- Cowl of Solace
 						},
 						["qg"] = 41486,	-- Elder Sareth'na
 						["races"] = ALLIANCE_ONLY,
@@ -819,7 +802,6 @@ _.Zones =
 						["groups"] = {
 							i(57422),	-- Quiet Slippers
 							i(57423),	-- Overseer's Gloves
-							i(131878),	-- Overseer's Handguards
 						},
 						["qg"] = 40973,	-- Sentinal Heliana
 						["races"] = ALLIANCE_ONLY,

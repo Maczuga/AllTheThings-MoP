@@ -47,7 +47,6 @@ _.Instances =
 									ach(4852, {	-- Double Dragon
 										["description"] = "Achievement can be completed on Normal or Heroic mode."
 									}),
-									i(152969),	-- Odd Twilight Egg (PET!)
 									i( 63536),	-- Blade of the Witching Hour
 									i( 63533),	-- Fang of Twilight
 									i( 63532),	-- Dragonheart Piercer
@@ -68,7 +67,6 @@ _.Instances =
 									ach(5311, {	-- Elementary
 										["description"] = "Achievement can be completed on Normal or Heroic mode."
 									}),
-									i(152970),	-- Lesser Circle of Binding (PET!)
 									i( 59513),	-- Scepter of Ice
 									i( 59504),	-- Arion's Crown
 									i( 59509),	-- Glaciated Helm
@@ -114,7 +112,6 @@ _.Instances =
 										i(60343),	-- Magma Plated Pauldrons
 										i(60246),	-- Firelord's Mantle
 									}),
-									i(152972),	-- Twilight Summoning Portal (PET!)
 									i( 59330),	-- Shalug'doom, the Axe of Unmaking
 									i( 59494),	-- "Uhn'agh Fash, the Darkest Betrayal"
 									i( 63680),	-- Twilight's Hammer
@@ -188,7 +185,6 @@ _.Instances =
 									ach(4852, {	-- Double Dragon
 										["description"] = "Achievement can be completed on Normal or Heroic mode."
 									}),
-									i(152969),	-- Odd Twilight Egg (PET!)
 									i( 65091),	-- Blade of the Witching Hour
 									i( 65094),	-- Fang of Twilight
 									i( 65095),	-- Dragonheart Piercer
@@ -210,7 +206,6 @@ _.Instances =
 									ach(5311, {	-- Elementary
 										["description"] = "Achievement can be completed on Normal or Heroic mode."
 									}),
-									i(152970),	-- Lesser Circle of Binding (PET!)
 									i( 65111),	-- Scepter of Ice
 									i( 65120),	-- Arion's Crown
 									i( 65115),	-- Glaciated Helm
@@ -257,7 +252,6 @@ _.Instances =
 										i(65183),	-- Magma Plated Pauldrons
 										i(65213)	-- Firelord's Mantle
 									}),
-									i(152972),	-- Twilight Summoning Portal (PET!)
 									i( 65145),	-- Shalug'doom, the Axe of Unmaking
 									i( 65090),	-- Twilight's Hammer
 									i( 68600),	-- Uhn'agh Fash, the Darkest Betrayal

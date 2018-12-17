@@ -26,7 +26,6 @@ _.WorldDrops =
 					i(90576),	-- Spaulders of the Scorned
 				}),
 				n(-322, { -- Back
-					i(116693),	-- Coldsinger Cloak
 					i(82017),	-- Intricate Cloak
 					i(82061),	-- Gemmed Cloak
 					i(82116),	-- Shamanic Cloak

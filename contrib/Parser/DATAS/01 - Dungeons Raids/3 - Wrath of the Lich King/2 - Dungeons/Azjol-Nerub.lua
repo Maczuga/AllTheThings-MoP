@@ -90,7 +90,6 @@ _.Instances =
 							},
 							i( 35655),	-- Cobweb Machete
 							i( 37216),	-- Facade Shield of Glyphs
-							i(157582),	-- Nerubian Mantle
 							i( 37219),	-- Custodian's Chestpiece
 							i( 37217),	-- Golden Limb Bands
 							i( 35656),	-- Aura Focused Gauntlets
@@ -106,7 +105,6 @@ _.Instances =
 							i( 35660),	-- Spinneret Epaulets
 							i( 37222),	-- Egg Sac Robes
 							i( 37230),	-- Grotto Mist Gloves
-							i(157581),	-- Skittering Gauntlets
 							i( 37221),	-- Hollowed Mandibles Legplates
 							i( 35659),	-- Treads of Aspiring Heights
 							i( 37220),	-- Essence of Gossamer
@@ -164,7 +162,6 @@ _.Instances =
 								},
 								i( 35655),	-- Cobweb Machete
 								i( 37216),	-- Facade Shield of Glyphs
-								i(157582),	-- Nerubian Mantle
 								i( 37219),	-- Custodian's Chestpiece
 								i( 37217),	-- Golden Limb Bands
 								i( 35656),	-- Aura Focused Gauntlets
@@ -181,7 +178,6 @@ _.Instances =
 								i( 35660),	-- Spinneret Epaulets
 								i( 37222),	-- Egg Sac Robes
 								i( 37230),	-- Grotto Mist Gloves
-								i(157581),	-- Skittering Gauntlets
 								i( 37221),	-- Hollowed Mandibles Legplates
 								i( 35659),	-- Treads of Aspiring Heights
 								i( 37220),	-- Essence of Gossamer

@@ -82,7 +82,6 @@ _.Zones =
 				["groups"] = {
 					i(60689),	-- Belt of Unsolvable Problems
 					i(60690),	-- Doody Boots
-					i(131517),	-- Doody Shoes
 					i(60688),	-- Parker's Yardstick
 					i(60691),	-- Unfortunate Treads
 				},

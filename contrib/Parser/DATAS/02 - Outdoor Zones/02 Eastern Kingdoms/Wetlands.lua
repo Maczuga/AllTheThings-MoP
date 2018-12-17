@@ -51,8 +51,6 @@ _.Zones =
 						i(59078),
 						i(59077),
 						i(59076),
-						i(131441),
-						i(157005),	-- Stout Fist 
 					})),
 --[[					
 					qa(12343),	-- Candy Bucket
@@ -65,8 +63,6 @@ _.Zones =
 						i(59081),
 						i(59080),
 						i(59079),
-						i(131442),
-						i(131443),
 					})),
 --[[
 					qg(, qa(25211)),	-- Cleaning Hovel
@@ -83,14 +79,12 @@ _.Zones =
 						i(59095),
 						i(59094),
 						i(59093),
-						i(131451),
 					})),
 --					qg(, qa(25734)),	-- Down In Thelgen Rock
 					qg(41086, qa(25727, { -- Drungeld Glowerglare
 						i(59072),	-- Addled Blotter Bracers
 						i(59071),	-- Bad Belt
 						i(59070),	-- Surveyor's Leggings
-						i(131438),	-- Bad Waistguard
 					})),
 --[[
 					qg(, qa(25725)),	-- Fenbush Berries
@@ -102,8 +96,6 @@ _.Zones =
 						i(59108),
 						i(59107),
 						i(59106),
-						i(131460),
-						i(131461),
 					})),
 --[[
 					qg(, qa(25733)),	-- Get Out Of Here, Stalkers
@@ -118,7 +110,6 @@ _.Zones =
 						i(59066),
 						i(59065),
 						i(59064),
-						i(131439),
 					})),
 --[[					
 					qg(, qa(11964)),	-- Incense for the Summer Scorchlings
@@ -137,7 +128,6 @@ _.Zones =
 							i(59085),
 							i(59084),
 							i(59083),
-							i(131444),
 						}),
 					}),
 --					qg(, qa(25804)),	-- Search More Hovels
@@ -145,7 +135,6 @@ _.Zones =
 						i(59075),
 						i(59074),
 						i(59073),
-						i(131437),
 					})),
 --[[					
 					qg(, qa(25850)),	-- Strike the Earth!
@@ -157,8 +146,6 @@ _.Zones =
 						i(59112),
 						i(59111),
 						i(59110),
-						i(131488),
-						i(131489),
 					})),
 --					qg(, qa(26120)),	-- The Crazed Dragonmaw
 					qg(41307, qa(25817, { -- The Cursed Crew
@@ -166,7 +153,6 @@ _.Zones =
 						i(59088),
 						i(59087),
 						i(59086),
-						i(131445),
 					})),
 					o(112948, {	-- Intrepid's Locked Strongbox
 						qa(25819, { -- The Eye of Paleth
@@ -174,7 +160,6 @@ _.Zones =
 							i( 59092),
 							i( 59091),
 							i( 59090),
-							i(131446),
 						}),
 					}),
 					n(41167, {	-- Torrention
@@ -183,7 +168,6 @@ _.Zones =
 								i(59069),
 								i(59068),
 								i(59067),
-								i(131440),
 							}),
 						}),
 					}),
@@ -191,7 +175,6 @@ _.Zones =
 						i(59098),
 						i(59097),
 						i(59096),
-						i(131452),
 					})),
 --[[					
 					qg(, q(25803)),	-- The Search Continues
@@ -206,8 +189,6 @@ _.Zones =
 						i(59104),
 						i(59103),
 						i(60338),
-						i(131450),
-						i(157026), -- Fresh-Haft Axe
 					})),
 --[[					
 					qg(, qa(26981)),	-- Whelgar's Retreat
@@ -220,8 +201,6 @@ _.Zones =
 						i(59101),
 						i(59100),
 						i(59099),
-						i(157006), -- Old Guard's Bow
-						i(157004), -- Old Guard's Poleaxe 
 					})),
 				}),
 				n(-16, {	-- Rares

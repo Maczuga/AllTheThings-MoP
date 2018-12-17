@@ -181,11 +181,6 @@ _.Zones =
 					p(633), 	-- Mountain Skunk
 					p(412), 	-- Spider
 					p(1238), 	-- Unborn Val'kyr
-					ach(11320, { -- Raiding With Leashes IV: Wrath of the Lick King
-						q(44767, { -- A Celestial Invitation
-							i(142100), -- Stardust
-						}),
-					}),
 				}),
 				n(-17,  {	-- Quests
 --[[	Achievement info for Loremaster related zone quests

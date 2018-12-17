@@ -44,7 +44,6 @@ _.Instances =
 							i(27487),	-- Bloodlord Legplates
 						})),
 						cr(17380, e(556, {	-- Broggok
-							i(141063),	-- Technique: Glyph of the Observer
 							i(27490),	-- Firebrand Battleaxe
 							i(24389),	-- Legion Blunderbuss
 							i(24392),	-- Arcing Bracers
@@ -97,7 +96,6 @@ _.Instances =
 								i(27487),	-- Bloodlord Legplates
 							})),
 							cr(17380, e(556, {	-- Broggok
-								i(141063),	-- Technique: Glyph of the Observer
 								i(27490),	-- Firebrand Battleaxe
 								i(24389),	-- Legion Blunderbuss
 								i(24392),	-- Arcing Bracers

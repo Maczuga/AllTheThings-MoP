@@ -13,12 +13,6 @@ _.Zones =
 						i(12706),	-- Plans: Runic Plate Shoulders
 						i(12707),	-- Plans: Runic Plate Boots
 					}),
-					n(115923, {	-- Ko'Zan <Courier>
-						["groups"] = {
-							i(142383),	-- Plans: Darkspear
-						},
-						["description"] = "Vendor only sells plans to those who have completed the quest 'Saving My Head'.",
-					}),
 					n(12959, {	-- Nergal <General Goods>
 						i(15772),	-- Pattern: Devilsaur Leggings
 						i(15758),	-- Pattern: Devilsaur Gauntlets

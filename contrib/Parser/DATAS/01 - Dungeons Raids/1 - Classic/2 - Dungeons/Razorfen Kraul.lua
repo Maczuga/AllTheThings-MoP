@@ -20,7 +20,6 @@ _.Instances =
 								i( 65991),	-- Boots of the Noble Path
 								i( 65944),	-- Charlga's Breastplate
 								i( 65918),	-- Agamaggan's Gift
-								i(131617),	-- Razorflank's Chainmail
 							},
 							["qg"] = 44415,	-- Spirit of Agamaggan
 							["sourceQuests"] = { 26906 },	-- Agamaggan
@@ -138,12 +137,9 @@ _.Instances =
 					}),
 					cr(75001, e(896, {	-- Hunter Bonetusk
 						i(  6681),	-- Thornspike 
-						i(151442), 	-- Bonetusk Cloak
 					})),
 					cr(74948, e(895, {	-- Roogug
 						i(  6691),	-- Swinetusk Shank
-						i(151443),	-- Roogug's Swinesteel Girdle
-						i(132565),	-- Carnal Britches
 						i(  6690),	-- Ferine Leggings
 					})),
 					cr(74462, e(899, {	-- Warlord Ramtusk
@@ -151,7 +147,6 @@ _.Instances =
 							i(  6687),	-- Corpsemaker
 							i(  6686),	-- Tusken Helm
 							i(  6685), 	-- Death Speaker Mantle
-							i(151445),	-- Porcine-Warlord's Legplates
 						},
 						
 					})),

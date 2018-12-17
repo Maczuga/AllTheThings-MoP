@@ -9,7 +9,6 @@ _.Zones =
 				n( -2, {	-- Vendors
 					n(50314, {	-- Provisioner Whitecloud <Guardians of Hyjal Quartermaster>
 						i(65906),	-- Tabard of the Guardians of Hyjal
-						i(138803),	-- Illusion: Mending
 						i(62378),	-- Acorn of the Daughter Tree
 						i(62376),	-- Mountain's Mouth
 						i(62377),	-- Cloak of the Dryads

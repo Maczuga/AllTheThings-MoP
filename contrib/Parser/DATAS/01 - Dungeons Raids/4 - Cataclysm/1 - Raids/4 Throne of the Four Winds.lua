@@ -15,7 +15,6 @@ _.Instances =
 							e(154, { -- The Conclave of Wind
 								["groups"] = {
 									ach(5304),	-- Stay Chill
-									i(152974),	-- Breezy Essence (PET!)
 									i(63497),	-- Gale Rouser Belt
 									i(63496),	-- Lightning Well belt
 									i(63490),	-- Sky Strider Belt
@@ -58,7 +57,6 @@ _.Instances =
 										i(60351),	-- Magma Plated Faceguard
 										i(60243),	-- Firelord's Hood
 									}),
-									i(138836),	-- Illusion: Windfury
 									i(64315, {	-- Mantle of the Forlorn Conqueror	
 										i(60252),	-- Shadowflame Mantle
 										i(60358),	-- Reinforced Sapphirium Shoulderguards
@@ -85,7 +83,6 @@ _.Instances =
 										i(60246),	-- Firelord's Mantle
 									}),
 									i(63041),	-- Reins of the Drake of the South Wind (MOUNT!)
-									i(152973),	-- Zephyr's Call (PET!)
 									i(68127),	-- Stormwake, the Tempest's Reach
 									i(68128),	-- Stormwake, the Tempest's Reach
 									i(68129),	-- Stormwake, the Tempest's Reach
@@ -118,7 +115,6 @@ _.Instances =
 								["groups"] = {
 									ach(5122),	-- Heroic: Conclave of Wind
 									ach(5304),	-- Stay Chill
-									i(152974),	-- Breezy Essence (PET!)
 									i(65374),	-- Gale Rouser Belt
 									i(65377),	-- Lightning Well Belt
 									i(65369),	-- Sky Strider Belt
@@ -289,7 +285,6 @@ _.Instances =
 											i(65242),	-- Wind Dancer's Legguards
 										}),		
 									}),
-									i(138836),	-- Illusion: Windfury
 									i(63041),	-- Reins of the Drake of the South Wind (MOUNT!)
 									i(65088, {	-- Shoulders of the Forlorn Conqueror		
 										i(65263),	-- Shadowflame Mantle	
@@ -316,7 +311,6 @@ _.Instances =
 										i(65183),	-- Magma Plated Pauldrons	
 										i(65213)	-- Firelord's Mantle	
 									}),
-									i(152973),	-- Zephyr's Call (PET!)
 									i(68132),	-- Stormwake, the Tempest's Reach
 									i(68130),	-- Stormwake, the Tempest's Reach
 									i(68131),	-- Stormwake, the Tempest's Reach

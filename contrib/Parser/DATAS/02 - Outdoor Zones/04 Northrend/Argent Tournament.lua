@@ -1288,7 +1288,6 @@ _.Zones =
 									["itemID"] = 46758,	-- Swift Gray Steed
 									["races"] = { 3, 4, 7, 11, 22, 25, 29, 30, 32, 34 },
 								},
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44974),	-- Elwynn Lamb Pet
 								i(45011),	-- Stormwind Banner Toy
 								i(45130),	-- Blunderbuss of Khaz Modan
@@ -1344,37 +1343,6 @@ _.Zones =
 								i(47541, {	-- Argent Pony Bridle
 									ach(3736),	-- Pony Up!
 								}),
-								i(122350),	-- Balanced Heartseeker
-								i(122349),	-- Bloodied Arcanite Reaper
-								i(122389),	-- Bloodsoaked Skullforge Reaver
-								i(122363),	-- Burnished Warden Staff
-								i(122352),	-- Charmed Ancient Bone Bow
-								i(122354),	-- Devout Aurastone Hammer
-								i(122353),	-- Dignified Headmaster's Charge
-								i(122391),	-- Flamescarred Draconian Deflector
-								i(122390),	-- Musty Tome of the Lost
-								i(122386),	-- Repurposed Lava Dredger
-								i(122351),	-- Venerable Dal'Rend's Sacred Charge
-								i(122385),	-- Venerable Mass of McGowan
-								i(122392),	-- Weathered Observer's Shield
-								i(122360),	-- Tattered Dreadmist Mantle
-								i(122384),	-- Tattered Dreadmist Robe
-								i(122359),	-- Preened Ironfeather Shoulders
-								i(122382),	-- Preened Ironfeather Brestplate
-								i(122358),	-- Stained Shadowcraft Spaulders
-								i(122383),	-- Stained Shadowcraft Tunic
-								i(122356),	-- Champion Herod's Shoulders
-								i(122379),	-- Champion's Deathdealer Breastplate
-								i(122357),	-- Mystical Pauldrons of Elements
-								i(122380),	-- Mystical Vest of Elements
-								i(122388),	-- Burnished Pauldrons of Might
-								i(122387),	-- Burnished Breastplate of Might
-								i(122355),	-- Polished Spaulders of Valor
-								i(122381),	-- Polished Breastplate of Valor
-								i(122362),	-- Discerning Eye of the Beast
-								i(122361),	-- Swift Hand of Justice
-								i(122338),	-- Ancient Heirloom Armor Casing
-								i(122339),	-- Ancient Heirloom Scabbard
 							}),
 						},
 					}),
@@ -1393,7 +1361,6 @@ _.Zones =
 									["itemID"] = 46762,	-- Swift Violet Ram
 									["races"] = { 1, 4, 7, 11, 22, 25, 29, 30, 32, 34 },
 								},
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44970),	-- Dun Morogh Cub Pet
 								i(45018),	-- Ironforge Banner Toy
 								i(45130),	-- Blunderbuss of Khaz Modan
@@ -1431,7 +1398,6 @@ _.Zones =
 								i(45725),	-- Argent Hippogryph Mount 
 								i(46755),	-- Great Golden Kodo
 								i(45592),	-- Thunder Bluff Mount
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44980),	-- Mulgore Hatchling Pet
 								i(45013),	-- Thunder Bluff Banner Toy
 								i(45204),	-- Axe of the Sen'jin Protector
@@ -1469,7 +1435,6 @@ _.Zones =
 								i(45725),	-- Argent Hippogryph Mount
 								i(45597),	-- Forsaken Mount
 								i(46764),	-- White Skeletal Warhorse Mount
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44971),	-- Tirisfal Batling Pet
 								i(45016),	-- Undercity Banner Toy
 								i(45204),	-- Axe of the Sen'jin Protector
@@ -1513,7 +1478,6 @@ _.Zones =
 								i(45725),	-- Argent Hippogryph Mount 
 								i(45595),	-- Orgrimmar Wolf Mount
 								i(46757),	-- Swift Burgundy Wolf
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44973),	-- Durotar Scorpion Pet
 								i(45014),	-- Orgrimmar Banner Toy
 								i(45204),	-- Axe of the Sen'jin Protector
@@ -1569,7 +1533,6 @@ _.Zones =
 									["itemID"] = 46756,	-- Great Red Elekk
 									["races"] = { 1, 3, 4, 7, 22, 25, 29, 30, 32, 34 },
 								},
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44984),	-- Ammen Vale Lashling Pet
 								i(45020),	-- Exodar Banner Toy
 								i(45130),	-- Blunderbuss of Khaz Modan
@@ -1751,7 +1714,6 @@ _.Zones =
 									["itemID"] = 46763,	-- Turbostrider
 									["races"] = { 1, 3, 4, 11, 22, 25, 29, 30, 32, 34 },
 								},
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(45002),	-- Mechanopeep Pet
 								i(45019),	-- Gnomeregan Banner Toy
 								i(45130),	-- Blunderbuss of Khaz Modan
@@ -1796,7 +1758,6 @@ _.Zones =
 									["itemID"] = 46759,	-- Swift Moonsaber
 									["races"] = { 1, 3, 7, 11, 22, 25, 29, 30, 32, 34 },
 								},
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44965),	-- Teldrassil Sproutling Pet
 								i(45021),	-- Darnassus Banner Toy
 								i(45130),	-- Blunderbuss of Khaz Modan
@@ -1834,7 +1795,6 @@ _.Zones =
 								i(45725),	-- Argent Hippogryph Mount 
 								i(45593),	-- Darkspear Raptor Mount
 								i(46760),	-- Swift Purple Raptor
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(45606),	-- Sen'jin Fetish Pet
 								i(45015),	-- Sen'jin Banner Toy
 								i(45204),	-- Axe of the Sen'jin Protector
@@ -1879,7 +1839,6 @@ _.Zones =
 									["itemID"] = 46761,	-- Swift Red Hawkstrider
 									["races"] = { 2, 5, 6, 8, 9, 26, 27, 28,  31, 36 },
 								},
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44982),	-- Enchanted Broom Pet
 								i(45017),	-- Silvermoon Banner Toy
 								i(45204),	-- Axe of the Sen'jin Protector

@@ -2344,7 +2344,6 @@ _.Zones =
 							i(84584),	-- Formula: Enchant Weapon - Dancing Steel
 							i(84583),	-- Formula: Enchant Weapon - Jade Spirit
 							i(84580),	-- Formula: Enchant Weapon - River's Song
-							i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan
 							i(89656),	-- Gauntlets of Restraint
 							i(89654),	-- Gloves of Forgotten Wisdom
 							i(93220),	-- Grand Commendation of the Shado-Pan

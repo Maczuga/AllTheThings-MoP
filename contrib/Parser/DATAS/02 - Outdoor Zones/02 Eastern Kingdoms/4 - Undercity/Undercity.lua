@@ -367,19 +367,6 @@ _.Zones =
 											i(63138),	-- Dark Phoenix Hatchling - Exalted
 										},
 									})),
-									ach(6626, {	-- Working Better as a Team
-										["collectible"] = false,
-										["groups"] = {
-											i(127011),	-- Pristine Lightforged Legplates - Honored
-											i(122252),	-- Tarnished Leggings of Destruction - Honored
-											i(122251),	-- Polished Legplates of Valor - Honored
-											i(122254),	-- Stained Shadowcraft Pants - Honored
-											i(122253),	-- Mystical Kilt of Elements - Honored
-											i(122256),	-- Tattered Dreadmist Leggings - Honored
-											i(122255),	-- Preened Wildfeather Leggings - Honored
-											i(122264),	-- Burnished Legplates of Might - Honored
-										},
-									}),
 									
 									h(i(67107)),	-- Reins of the Kor'kron Annihilator - Exalted
 									--a(i(62298)),	-- Reins of the Golden King - Exalted

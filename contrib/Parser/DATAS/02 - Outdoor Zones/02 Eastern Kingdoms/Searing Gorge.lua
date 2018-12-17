@@ -105,10 +105,6 @@ _.Zones =
 									i(63229),  -- K'Vlar Vest
 									i(63228),  -- Rendan's Signet
 									i(63227),  -- Dark Iron Gun
-									i(156937), -- Dark Iron Blackjack
-									i(157009), -- Dark Iron Shank
-									i(157010), -- Dark Iron Maul
-									i(156937), -- Dark Iron Blackjack
 								},
 								["qg"] = 47393,	-- Mountain-Lord Rendan
 								["sourceQuests"] = { 27986 }, -- 
@@ -150,7 +146,6 @@ _.Zones =
 									i(63239),  -- Belt of Turning Tides
 									i(63238),  -- Suntara Spaulders
 									i(63237),  -- Sootsmoke Wand
-									i(156936), -- Dark Iron Pike
 								},
 								["qg"] = 47393,	-- Mountain-Lord Rendan
 								["sourceQuests"] = { 28052 }, -- 
@@ -698,20 +693,6 @@ _.Zones =
 							5840,	-- Dark Iron Steamsmith
 						},
 						["description"] = "As of 7.3, Dark Iron Steamsmiths drop |cff3399ffPattern: Shadoweave Mask|r, which is required for the |cff3399ffLucid Nightmare|r mount."
-					}),
-					n(47463,       { 	-- Searing Flamewraith
-						["groups"] = {
-							i(142359, { 	-- Lava Oil
-								o(266289, { 	-- Time Lost Chest
-									["groups"] = {
-										i(142358),	-- Plans: Blazing Rapier
-									},
-									["modelID"] = 49789,
-									["modelScale"] = 2,
-								}),
-							}),
-						},
-						["description"] = "Kill Searing Flamewraith's until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down open the chest, then hearth.",
 					}),
 					i(14476,       {	-- Pattern: Cindercloth Gloves
 						["crs"] = {

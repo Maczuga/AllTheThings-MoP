@@ -88,7 +88,6 @@ _.Zones =
 									i(65794),	-- Marshseeker Gloves
 									i(65793),	-- Hamatep Legguards
 									i(65795),	-- Vir'naal Guardsman's Axe
-									i(157550),	-- Vir'naal Cleaver
 								},
 								["qg"] = 46136,
 								["sourceQuests"] = {27629},
@@ -178,7 +177,6 @@ _.Zones =
 									i(65846),	-- Bracers of the Verdant Cradle
 									i(65845),	-- Misappropriated Girdle of Khartut
 									i(65844),	-- Tombbreaker Mace
-									i(157551),	-- Tombbreaker Gavel
 								},
 								["qg"] = 48501,
 								["sourceQuests"] = {28501},

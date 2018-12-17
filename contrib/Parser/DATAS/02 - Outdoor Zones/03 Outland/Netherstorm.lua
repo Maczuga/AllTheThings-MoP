@@ -338,7 +338,6 @@ _.Zones =
 							i( 30019),	-- Area 52 Defender's Pants
 							i( 30016),	-- X-52 Technician's Helm
 							i( 30014),	-- X-52 Pilot's Leggings
-							i(134021),	-- X-52 Rocket Helmet (TOY!)
 						},
 						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["sourceQuests"] = { 10248 },	-- You, Robot
@@ -1025,7 +1024,6 @@ _.Zones =
 								i(35110),	-- Brutal Gladiator's Waraxe
 							},
 						}),
-						-- i(146598),	-- Ensemble: Brutal Gladiator's Chain Armor [TODO]
 						i(35077),	-- Brutal Gladiator's Ringmail Armor
 						i(35085),	-- Brutal Gladiator's Satin Leggings
 						i(34991),	-- Brutal Gladiator's Chain Gauntlets
@@ -1279,11 +1277,6 @@ _.Zones =
 							i(77848),	-- Replica Knight-Captain's Dreadweave Tunic
 							i(77777),	-- Replica Knight-Captain's Silk Legguards
 							i(77720),	-- Replica Knight-Lieutenant's Dragonhide Grips
-							i(120993),	-- Replica Knight-Lieutenant's Leather Clasp
-							i(120992),	-- Replica Knight-Lieutenant's Dragonhide Belt
-							i(120996),	-- Replica Knight-Lieutenant's Dreadweave Wrap
-							i(120995),	-- Replica Knight-Lieutenant's Satin Belt
-							i(120994),	-- Replica Knight-Lieutenant's Silk Cinch
 							i(77733),	-- Replica Knight-Lieutenant's Dreadweave Handwraps
 							i(77732),	-- Replica Knight-Lieutenant's Dreadweave Walkers
 							i(77731),	-- Replica Knight-Lieutenant's Leather Grips
@@ -1396,7 +1389,6 @@ _.Zones =
 								i(32034),
 								i(32979),
 								i(32036),
-								i(147609),
 							},	
 							["classes"] = { 5 },	
 						}),		
@@ -1444,11 +1436,8 @@ _.Zones =
 								i(31999),
 								i(32001),
 								i(32002),
-								i(147612),
 								i(31998),
-								i(147610),
 								i(32000),
-								i(147611),
 							},	
 							["classes"] = { 4 },	
 						}),		
@@ -1632,9 +1621,6 @@ _.Zones =
 						i(32802),	-- Veteran's Leather Belt
 						i(32790),	-- Veteran's Leather Boots
 						i(32814),	-- Veteran's Leather Bracers
-						i(147611),	-- Veteran's Leather Footguards
-						i(147610),	-- Veteran's Leather Waistband
-						i(147612),	-- Veteran's Leather Wristguards
 						i(32816),	-- Veteran's Linked Bracers
 						i(32803),	-- Veteran's Linked Girdle
 						i(32791),	-- Veteran's Linked Sabatons
@@ -1653,7 +1639,6 @@ _.Zones =
 						i(32997),	-- Veteran's Ringmail Bracers
 						i(32998),	-- Veteran's Ringmail Girdle
 						i(32999),	-- Veteran's Ringmail Sabatons
-						i(147609),	-- Veteran's Satin Slippers
 						i(32806),	-- Veteran's Scaled Belt
 						i(32819),	-- Veteran's Scaled Bracers
 						i(32794),	-- Veteran's Scaled Greaves
@@ -1666,7 +1651,6 @@ _.Zones =
 					}),
 					n(20242, {	-- Karaaz <Consortium Quartermaster>
 						i(31776),	-- Consortium Tabard
-						i(138796),	-- Illusion: Executioner
 						i(33156),	-- Design: Crimson Sun
 						i(23134),	-- Design: Delicate Blood Garnet
 						i(33305),	-- Design: Don Julio's Heart
@@ -1715,11 +1699,8 @@ _.Zones =
 								i(27708),	-- Gladiator's Satin Hood
 								i(27710),	-- Gladiator's Satin Mantle
 								i(27711),	-- Gladiator's Satin Robe
-								i(147771),	-- General's Satin Cuffs
 								i(27707),	-- Gladiator's Satin Gloves
-								i(147613),	-- General's Satin Cord
 								i(27709),	-- Gladiator's Satin Leggings
-								i(147614),	-- General's Satin Slippers
 							},		
 							["classes"] = { 5 },		
 						}),			
@@ -1740,11 +1721,8 @@ _.Zones =
 								i(30187),	-- Gladiator's Felweave Cowl
 								i(30186),	-- Gladiator's Felweave Amice
 								i(30200),	-- Gladiator's Felweave Raiment
-								i(147772),	-- General's Felweave Cuffs
 								i(30188),	-- Gladiator's Felweave Handguards
-								i(147615),	-- General's Felweave Belt
 								i(30201),	-- Gladiator's Felweave Trousers
-								i(147616),	-- General's Felweave Boots
 							},		
 							["classes"] = { 9 },		
 						}),			
@@ -1829,9 +1807,6 @@ _.Zones =
 						i(28404),	-- General's Dreadweave Belt
 						i(28405),	-- General's Dreadweave Cuffs
 						i(28402),	-- General's Dreadweave Stalkers
-						i(147615),	-- General's Felweave Belt
-						i(147616),	-- General's Felweave Boots
-						i(147772),	-- General's Felweave Cuffs
 						i(31594),	-- General's Kodohide Belt
 						i(31595),	-- General's Kodohide Boots
 						i(31598),	-- General's Kodohide Bracers
@@ -1859,9 +1834,6 @@ _.Zones =
 						i(32992),	-- General's Ringmail Girdle
 						i(32993),	-- General's Ringmail Sabatons
 						i(32991),	-- General's Ringmail Bracers
-						i(147613),	-- General's Satin Cord
-						i(147771),	-- General's Satin Cuffs
-						i(147614),	-- General's Satin Slippers
 						i(28644),	-- General's Scaled Belt
 						i(28646),	-- General's Scaled Bracers
 						i(28645),	-- General's Scaled Greaves
@@ -2123,7 +2095,6 @@ _.Zones =
 								i(33701),	-- Vengeful Gladiator's Leather Helm
 								i(33703),	-- Vengeful Gladiator's Leather Spaulders
 								i(33704),	-- Vengeful Gladiator's Leather Tunic
-								i(147670),	-- Vindicator's Leather Wristguards
 								i(33700),	-- Vengeful Gladiator's Leather Gloves
 								i(33891),	-- Vindicator's Leather Belt
 								i(33702),	-- Vengeful Gladiator's Leather Legguards
@@ -2358,7 +2329,6 @@ _.Zones =
 						i(33881),	-- Vindicator's Dragonhide Bracers
 						i(33913),	-- Vindicator's Silk Cuffs
 						i(33813),	-- Vindicator's Plate Bracers
-						i(147670),	-- Vindicator's Leather Wristguards			
 					}),
 					n(23396, {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate>
 						["groups"] = {
@@ -2403,7 +2373,6 @@ _.Zones =
 							i(77858),	-- Replica Knight-Captain's Plate Hauberk
 							i(77864),	-- Replica Knight-Captain's Plate Leggings
 							i(77644),	-- Replica Knight-Lieutenant's Mail Greaves
-							i(120977),	-- Replica Knight-Lieutenant's Plate Waistguard
 							i(77646),	-- Replica Knight-Lieutenant's Mail Vices
 							i(77735),	-- Replica Knight-Lieutenant's Plate Greaves
 							i(77734),	-- Replica Knight-Lieutenant's Plate Gauntlets
@@ -2411,9 +2380,6 @@ _.Zones =
 							i(77726),	-- Replica Knight-Lieutenant's Lamellar Sabatons
 							i(77723),	-- Replica Knight-Lieutenant's Chain Greaves
 							i(77722),	-- Replica Knight-Lieutenant's Chain Vices
-							i(120983),	-- Replica Knight-Lieutenant's Chain Belt
-							i(120982),	-- Replica Knight-Lieutenant's Mail Links
-							i(120981),	-- Replica Knight-Lieutenant's Lamellar Girdle
 							i(77625),	-- Replica Knight-Lieutenant's Lamellar Sabatons
 							i(77607),	-- Replica Lieutenant Commander's Chain Pauldrons
 							i(77659),	-- Replica Sergeant Major's Plate Wristguards
@@ -2482,7 +2448,6 @@ _.Zones =
 							i(77760),	-- Replica Legionnaire's Chain Legguards
 							i(77768),	-- Replica Legionnaire's Chain Hauberk
 							i(77764),	-- Replica Blood Guard's Chain Vices
-							i(120991),	-- Replica Blood Guard's Chain Belt
 							i(77833),	-- Replica Blood Guard's Mail Vices
 							i(77830),	-- Replica Blood Guard's Mail Greaves
 							i(77863),	-- Replica Blood Guard's Plate Gauntlets
@@ -2490,9 +2455,6 @@ _.Zones =
 							i(77862),	-- Replica Blood Guard's Plate Greaves
 							i(77928),	-- Replica Blood Guard's Lamellar Sabatons
 							i(77929),	-- Replica Blood Guard's Lamellar Gauntlets
-							i(120976),	-- Replica Blood Guard's Plate Waistguard
-							i(120980),	-- Replica Blood Guard's Lamellar Girdle
-							i(120990),	-- Replica Blood Guard's Mail Links
 							i(77861),	-- Replica First Sergeant's Plate Bracers
 							i(77828),	-- Replica Blood Guard's Mail Walkers
 							i(77827),	-- Replica Champion's Mail Helm
@@ -2571,15 +2533,10 @@ _.Zones =
 							i(77750),	-- Replica Blood Guard's Dragonhide Grips
 							i(77803),	-- Replica Blood Guard's Satin Handwraps
 							i(77804),	-- Replica Blood Guard's Satin Walkers
-							i(120984),	-- Replica Blood Guard's Dragonhide Belt
-							i(120988),	-- Replica Blood Guard's Satin Waistwrap
-							i(120987),	-- Replica Blood Guard's Silk Cinch
-							i(120986),	-- Replica Blood Guard's Dreadweave Wrap
 							i(77747),	-- Replica Blood Guard's Dragonhide Treads
 							i(77783),	-- Replica Blood Guard's Silk Handwraps
 							i(77773),	-- Replica Blood Guard's Silk Walkers
 							i(77843),	-- Replica Blood Guard's Dreadweave Walkers
-							i(120985),	-- Replica Blood Guard's Leather Clasp
 							i(77816),	-- Replica Blood Guard's Leather Walkers
 							i(77849),	-- Replica Blood Guard's Dreadweave Handwraps
 							i(77817),	-- Replica Blood Guard's Leather Grips

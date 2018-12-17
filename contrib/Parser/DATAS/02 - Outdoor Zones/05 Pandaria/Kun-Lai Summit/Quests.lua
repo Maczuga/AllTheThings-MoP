@@ -340,13 +340,6 @@ _.Zones =
 										["qgs"] = 120726, -- Waterspeaker Ryuli
 										["sourceQuests"] = { 46348 }, -- The River to Ban-Lu
 									}),	
-									q(46350, { -- The Trial of Ban-Lu	
-										["groups"] = {
-											i(142225), -- Ban-Lu, Grandmaster's Companion
-										},
-										["qgs"] = 120726, -- Waterspeaker Ryuli
-										["sourceQuests"] = { 46349 }, -- Lilies for Ryuli
-									}),	
 								},
 								["classes"] = { 10 }, -- Monk
 								["lvl"] = 110,

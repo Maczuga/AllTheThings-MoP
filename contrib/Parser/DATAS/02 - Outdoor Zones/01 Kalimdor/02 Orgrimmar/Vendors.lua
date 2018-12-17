@@ -13,7 +13,6 @@ _.Zones =
 						i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
 						i(104324),	-- Foot Ball Toy
 						i(69895),	-- Green Balloon Toy
-						i(137663),	-- Soft Foam Sword Toy
 						i(104323),	-- The Pigskin Toy
 						i(54438),	-- Tiny Blue Ragdoll Toy
 						i(54437),	-- Tiny Green Ragdoll Toy
@@ -288,14 +287,6 @@ _.Zones =
 							i(103533, {	-- Vicious Saddle
 								i(70910),	-- Horn of the Vicious War Wolf Mount
 								i(102533),	-- Reins of the Vicious Skeletal Warhorse Mount
-								i(142235),	-- Vicious War Bear
-								i(152869),	-- Vicious War Fox
-								i(124540),	-- Vicious War Kodo Mount
-								i(116778),	-- Vicious War Raptor Mount
-								i(142437),	-- Vicious War Scorpion Mount
-								i(140354),	-- Vicious War Trike Mount
-								i(143649),	-- Vicious War Turtle Mount
-								i(140348),	-- Vicious Warstrider Mount
 							}),
 						}),
 					}),
@@ -519,23 +510,6 @@ _.Zones =
 						},
 						["coord"] = { 50.0, 58.6 },
 					}),
-					n(52036, {	-- Galra <Honor Heirlooms>
-						i(122364),	-- Sharpened Scarlet Kris
-						i(122365),	-- Reforged Truesilver Champion
-						i(122366),	-- Upgraded Dwarven Hand Cannon
-						i(122367),	-- The Blessed Hammer of Grace
-						i(122368),	-- Grand Staff of Jordan
-						i(122369),	-- Battleworn Thrash Blade
-						i(122370),	-- Inherited Insignia of the Horde
-						i(122372),	-- Strengthened Stockade Pauldrons
-						i(122373),	-- Pristine Lightforge Spaulders
-						i(122374),	-- Prized Beastmaster's Mantle
-						i(122375),	-- Aged Paundrons of The Five Thunders
-						i(122376),	-- Exceptional Stormshroud Shoulders
-						i(122377),	-- Lasting Feralheart Spaulders
-						i(122378),	-- Exquisite Sunderseer Mantle
-						i(122530),	-- Inherited Mark of Tyranny
-					}),
 					n(5188, {	-- Garyl <Tabard Vendor>
 						["groups"] = {
 							h(i(20131)),	-- Battle Tabard of the Defilers
@@ -734,19 +708,6 @@ _.Zones =
 											i(63138),	-- Dark Phoenix Hatchling - Exalted
 										},
 									})),
-									ach(6626, {	-- Working Better as a Team
-										["collectible"] = false,
-										["groups"] = {
-											i(127011),	-- Pristine Lightforged Legplates - Honored
-											i(122252),	-- Tarnished Leggings of Destruction - Honored
-											i(122251),	-- Polished Legplates of Valor - Honored
-											i(122254),	-- Stained Shadowcraft Pants - Honored
-											i(122253),	-- Mystical Kilt of Elements - Honored
-											i(122256),	-- Tattered Dreadmist Leggings - Honored
-											i(122255),	-- Preened Wildfeather Leggings - Honored
-											i(122264),	-- Burnished Legplates of Might - Honored
-										},
-									}),
 									
 									h(i(67107)),	-- Reins of the Kor'kron Annihilator - Exalted
 									--a(i(62298)),	-- Reins of the Golden King - Exalted
@@ -754,18 +715,6 @@ _.Zones =
 									i(69210),	-- Renowned Guild Tabard - Honored
 									--a(i(63206)),	-- Wrap of Unity - Honored
 									h(i(63207)),	-- Wrap of Unity - Honored
-									i(122266),	-- Ripped Sandstorm Cloak - Friendly
-									i(122260),	-- Worn Stoneskin Gargoyle Cape - Friendly
-									i(122261),	-- Inherited Cape of the Black Baron - Friendly
-									i(122262),	-- Ancient Bloodmoon Cloak - Friendly
-									i(122263),	-- Burnished Helm of Might - Friendly
-									i(122250),	-- Tattered Dreadmist Mask - Friendly
-									i(122249),	-- Preened Tribal War Feathers - Friendly
-									i(122248),	-- Stained Shadowcraft Cap - Friendly 
-									i(122247),	-- Mystical Coif of Elements - Friendly
-									i(122246),	-- Tarnished Raging Berserker's Helm - Friendly
-									i(127012),	-- Pristine Lightforged Helm - Friendly
-									i(122245),	-- Polished Helm of Valor - Friendly
 								},
 							}),
 						},

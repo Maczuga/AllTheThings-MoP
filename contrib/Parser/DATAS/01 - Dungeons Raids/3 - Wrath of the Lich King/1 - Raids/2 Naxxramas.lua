@@ -652,7 +652,6 @@ _.Instances =
 									i(39419),	-- Nerubian Conqueror
 									i(39426),	-- Wand of the Archlich
 									i(39425),	-- Cloak of the Dying
-									i(122197),	-- Music Roll: Wrath of the Lich King
 								},
 								["description"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects."
 							})),
@@ -1502,7 +1501,6 @@ _.Instances =
 									i(40403),	-- Drape of the Deadly Foe
 									i(40398),	-- Leggings of Mortal Arrogance
 									i(40399),	-- Signet of Manifested Pain
-									i(122197),	-- Music Roll: Wrath of the Lich King
 								},
 								["description"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects."
 							})),

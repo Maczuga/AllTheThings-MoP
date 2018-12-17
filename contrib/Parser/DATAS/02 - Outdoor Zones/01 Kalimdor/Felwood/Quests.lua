@@ -110,7 +110,6 @@ _.Zones =
 									i(65278),	-- Gold Pot Gloves
 									i(65298),	-- Cheerful Shoulders
 									i(65317),	-- Rainbow Band
-									i(133998),  -- Rainbow Generator (TOY!)
 								},
 								["qg"] = 47341,	-- Arcanist Delaris
 								["coord"] = { 41.9, 72.0 },
@@ -156,7 +155,6 @@ _.Zones =
 									i( 65280),	-- Shadow Hold Mace
 									i( 65300),	-- Moonbow
 									i( 65319),	-- Purified Jaedenar Amulet
-									i(156982),	-- Shadow Hold Dagger 
 								},
 								["qg"] = 51664,	-- Andalar Shadevale
 								["coord"] = { 36.3, 58.2 },

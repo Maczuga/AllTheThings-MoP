@@ -117,8 +117,6 @@ _.Instances =
 						["description"] = "This is a rare that is not always present.",
 					}),
 					n( 7272, { 			-- Theka the Martyr
-						dr(0.16, i(142402)),	-- Plans: Light Earthforged Blade
-						i(151456),	-- Theka's Seal of Vigilance
 					}),
 					cr(8127, e(484, { 	-- Antu'sul
 						i(9379, { 	-- Sang'thraze the Deflector
@@ -130,7 +128,6 @@ _.Instances =
 					})),
 					cr(7271, e(486, { 	-- Witch Doctor Zum'rah
 						i( 18082),	-- Zum'rah's Vexing Cane
-						i(151457),	-- Witch Doctor's Ritual Collar
 						i( 18083),	-- Jumanza Grips
 					})),
 					n(10081, {			-- Dustwraith
@@ -143,9 +140,7 @@ _.Instances =
 						i(  9475), 	-- Diabolic Skiver
 						i(  9470), 	-- Bad Mojo Mask
 						i(  9473), 	-- Jinxed Hoodoo Skin
-						i(151459), 	-- Nekrum's Witherguard
 						i(  9474), 	-- Jinxed Hoodoo Kilt
-						i(151458),	-- Sezz'ziz's Captive Kickers
 					})),
 					cr(7267, e(489, { 	-- Chief Ukorz Sandscalp
 						ach(639),	-- Zul'Farrak
@@ -156,12 +151,9 @@ _.Instances =
 						i(  9478), 	-- Ripsaw
 						i(  9479), 	-- Embrace of the Lycan
 						i(  9476), 	-- Big Bad Pauldrons
-						i(151460),	-- Farraki Ceremonial Robes
-						i(151461), 	-- Ukorz's Chain Leggings
 					})),
 					cr(7273, e(483, { 	-- Gahz'rilla
 						i(9467), 	-- Gahz'rilla Fang
-						i(151455), 	-- Gahz'rilla Scale Cloak
 						i(9469), 	-- Gahz'rilla Scale Armor
 					})),
 					n(-40, {	-- Legacy

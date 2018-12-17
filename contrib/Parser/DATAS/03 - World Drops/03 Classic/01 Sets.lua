@@ -11,7 +11,6 @@ _.WorldDrops =
 				i(3291),	-- Ancestral Woollies
 				i(3282),	-- Battle Chain Pants
 				un(7, i(3283)),	-- Battle Chain Tunic
-				i(120950),	-- Battle Chain Vest
 				i(14090),	-- Beaded Britches
 				i(14091),	-- Beaded Robe
 				i(14094),	-- Beaded Wraps
@@ -97,7 +96,6 @@ _.WorldDrops =
 				i(15495),	-- Bloodspattered Wristbands
 				i(3302),	-- Brackwater Boots
 				un(7, i(3305)), -- Brackwater Leggings
-				i(120954),	-- Brackwater Legguards
 				i(3306),	-- Brackwater Vest
 				i(6608),	-- Bright Armor
 				i(4708),	-- Bright Belt
@@ -286,7 +284,6 @@ _.WorldDrops =
 				i(2977),	-- Veteran Armor
 				i(2980),	-- Veteran Gloves
 				i(2978),	-- Veteran Leggings
-				i(120953),	-- Veteran Legguards
 				i(14722),	-- War Paint Anklewraps
 				i(14723),	-- War Paint Bindings
 				i(14730),	-- War Paint Chestpiece

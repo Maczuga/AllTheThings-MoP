@@ -38,8 +38,6 @@ _.Zones =
 							i( 59195),	-- Bracers of Sensations
 							i( 59196),	-- Alina's Gloves
 							i( 59197),	-- Lordaeron-Made Breastplate
-							i(131479),	-- Cuffs of Feeling
-							i(131480),	-- Grips of the Forsaken
 						},
 						["qg"] = 41944,	-- Galen Trollbane
 						["sourceQuests"] = { 26033 }	-- Trol'kalar
@@ -51,7 +49,6 @@ _.Zones =
 							i( 59161),	-- Belt of Refuge
 							i( 59162),	-- Lightstep Boots
 							i( 59163),	-- Craig's Steel
-							i(131470),	-- Refuge Cinch
 						},
 						["qg"] = 41983,	-- Apprentice Kryten
 						["sourceQuests"] = { 26037 },	-- Trelane's Defenses
@@ -73,8 +70,6 @@ _.Zones =
 							i( 59179),	-- Extra Credit Boots
 							i( 59180),	-- Lurking Belt
 							i( 59181),	-- Belt of Gutted Rain
-							i(131467),	-- Gold Star Boots
-							i(131468),	-- Chain of Ogre Ruin
 						},
 						["qg"] = 41966,	-- Deathstalker Maudria
 						["sourceQuests"] = { 26053 },	-- Clearing the Highlands
@@ -91,8 +86,6 @@ _.Zones =
 							i( 59213),	-- Faldir's Leggings
 							i( 59214),	-- Armguards of the Good Captain
 							i( 59215),	-- Legguards of the Promising Hero
-							i(131565),	-- Seafarer's Chain Leggings
-							i(131566),	-- The Good Captain's Bindings
 						},
 						["qg"] = 2610,	-- Shakes O'Breen
 						["sourceQuests"] = { 26052 },	-- Speak to Shakes
@@ -102,7 +95,6 @@ _.Zones =
 							i( 59205),	-- Folly's Spar
 							i( 59206),	-- Steelgut Vest
 							i( 59207),	-- Maiden's Tattered Sail
-							i(131475),	-- Steelgut's Undermail
 						},
 						["qg"] = 2769,	-- Captain Steelgut
 						["sourceQuests"] = { 26083 },	-- Hello Lolo
@@ -116,7 +108,6 @@ _.Zones =
 							i( 59168),	-- Stromgarde Surcoat
 							i( 59169),	-- Stromgarde Leggings
 							i( 59170),	-- Stromgarde Bracers
-							i(131487),	-- Stromgarde Greaves
 						},
 						["qg"] = 2712,	-- Quae
 						["sourceQuests"] = { 26116 },	-- Kinelory Strikes
@@ -129,9 +120,6 @@ _.Zones =
 						["groups"] = {
 							i( 59203),	-- Hammerfall Gloves
 							i( 59204),	-- Hammerfall Mace
-							i(131485),	-- Hammerfaul Gauntlets
-							i(156947),	-- Hammerfall Cudgel
-							i(156960),	-- Hammerfall Gavel
 						},
 						["qg"] = 42130,	-- Gor'mul
 						["sourceQuests"] = { 26107 },	-- Raising Spirits
@@ -200,8 +188,6 @@ _.Zones =
 							i( 59191),	-- Yellow Ribbon Armbands
 							i( 59192),	-- Griefstricken Gloves
 							i( 59193),	-- Heartsick Breastplate
-							i(131481),	-- Bindings of Longing
-							i(131482),	-- Grips of the Weary
 						},
 						["qg"] = 2700,	-- Captain Nials
 						["sourceQuests"] = { 26093 },	-- Northfold Manner
@@ -210,8 +196,6 @@ _.Zones =
 						["groups"] = {
 							i( 59199),	-- Bottom Waders
 							i( 59200),	-- Decalcified Elven Spear
-							i(131474),	-- Chain Weighted Shoes
-							i(156948),	-- Waterlogged Elven Spear 
 						},
 						["qg"] = 2774,	-- Doctor Draxlegauge
 						["sourceQuests"] = { 26050 },	-- Goggle Boggle
@@ -231,7 +215,6 @@ _.Zones =
 							i( 59209),	-- Eldritch Gloves
 							i( 59210),	-- Earthbound Mantle
 							i( 59211),	-- Shackling Gloves
-							i(131473),	-- Mantle of the Bound
 						},
 						["qg"] = 2789,	-- Skuerto
 						["sourceQuests"] = { 26346 },	-- Myzrael's Tale
@@ -242,7 +225,6 @@ _.Zones =
 							i( 59209),	-- Eldritch Gloves
 							i( 59210),	-- Earthbound Mantle
 							i( 59211),	-- Shackling Gloves
-							i(131473),	-- Mantle of the Bound
 						},
 						["qg"] = 2787,	-- Zaruk
 						["sourceQuests"] = { 26911 },	-- Myzrael's Tale
@@ -253,7 +235,6 @@ _.Zones =
 							i( 59187),	-- Silent Huntress
 							i( 59188),	-- Belt of Affront
 							i( 59189),	-- Mistspray Vest
-							i(131469),	-- Seabreeze Hauberk
 						},
 						["qg"] = 41966,	-- Deathstalker Maudria
 						["sourceQuests"] = { 26027 },	-- Call to Arms
@@ -270,7 +251,6 @@ _.Zones =
 							i( 59171),	-- Bloodstone-Studded Cloak
 							i( 59172),	-- Drakeskin Leggings
 							i( 59173),	-- Radiant Silver Armguards
-							i(131466),	-- Highland Chain Greaves
 						},
 						["qg"] = 41949,	-- Dark Ranger Alina
 						["sourceQuests"] = { 26022 },	-- First Blood
@@ -282,7 +262,6 @@ _.Zones =
 							i( 59165),	-- Genavie's Leggings
 							i( 59166),	-- Adulterous Belt
 							i( 59167),	-- Treads of Unforgotten Pain
-							i(131528),	-- Cheater's Cinch
 						},
 						["qg"] = 4486,	-- Genavie Callow
 					}),
@@ -311,15 +290,12 @@ _.Zones =
 							i( 59183),	-- Silenced Rifle
 							i( 59184),	-- Demon-Trafficker's Belt
 							i( 59185),	-- Vest of Dark Rumors
-							i(131465),	-- Hauberk of Dire Tidings
 						}),
 						qa(26079, {	-- Wanted! Otto and Falconcrest
 							i( 59174),	-- Dustfall Bracers
 							i( 59175),	-- Sandals of Sorrow
 							i( 59176),	-- War Rider Belt
 							i( 59177),	-- Captain Nials' Belt
-							i(131477),	-- Boots of the Refuge Captain
-							i(131478),	-- Battle Rider Belt
 						}),
 					}),
 					qa(26035, {	-- Worth Its Weight in Gold

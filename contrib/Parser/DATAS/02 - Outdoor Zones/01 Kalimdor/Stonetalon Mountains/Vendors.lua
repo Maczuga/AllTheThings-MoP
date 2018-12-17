@@ -41,24 +41,16 @@ _.Zones =
 							i(57515),	-- Krom'gar General's Leather Mask
 							i(57516),	-- Krom'gar General's Plate Helm
 							i(57517),	-- Krom'gar General's Armored Helm
-							i(131886),	-- Krom'gar Champion's Mesh Shoulderguard
-							i(131887),	-- Krom'gar Champion's Chain Shoulderguard
-							i(131888),	-- Krom'gar General's Mesh Mask
-							i(131889),	-- Krom'gar General's Chain Mask
 							i(57484),	-- Krom'gar Legionnaire's Linen Bracers
 							i(57485),	-- Krom'gar Legionnaire's Hide Wraps
 							i(57486),	-- Krom'gar Legionnaire's Leather Bracers
 							i(57487),	-- Krom'gar Legionnaire's Plate Bracers
 							i(57488),	-- Krom'gar Legionnaire's Armored Bracers
-							i(131884),	-- Krom'gar Legionnaire's Mesh Wraps
-							i(131885),	-- Krom'gar Legionnaire's Chain Bracers
 							i(57472),	-- Krom'gar Sergeant's Linen Footwraps
 							i(57473),	-- Krom'gar Sergeant's Hide Boots
 							i(57474),	-- Krom'gar Sergeant's Leather Boots
 							i(57475),	-- Krom'gar Sergeant's Plate Greaves
 							i(57476),	-- Krom'gar Sergeant's Armored Greaves
-							i(131882),	-- Krom'gar Sergeant's Mesh Boots
-							i(131883),	-- Krom'gar Sergeant's Chain Boots
 						},
 						["coord"] = { 65.8, 64.0, 65 },
 						["races"] = HORDE_ONLY,

@@ -150,7 +150,6 @@ _.Instances =
 							i( 35630),	-- Summoner's Stone Gavel
 							i( 37718),	-- Temple Crystal Fragment
 							i( 35631),	-- Crystal Pendant of Warding
-							i(157558),	-- Shoddily Stitched Shoulderguards
 							i( 37722),	-- Breastplate of Undeath
 							i( 35632),	-- Robes of Novos
 							i( 40490),	-- Necromantic Wristguards
@@ -161,7 +160,6 @@ _.Instances =
 							i( 35634),	-- Scabarous-Hide Helm
 							i( 37724),	-- Handler's Arm Strap
 							i( 37725),	-- Savage Wound Wrap
-							i(157561),	-- Dino-Toothed Waistguard
 							i( 35635),	-- Stable Master's Breeches
 							i( 37723),	-- Incisor Fragment
 						})),
@@ -279,7 +277,6 @@ _.Instances =
 								i( 35630),	-- Summoner's Stone Gavel
 								i( 37718),	-- Temple Crystal Fragment
 								i( 35631),	-- Crystal Pendant of Warding
-								i(157558),	-- Shoddily Stitched Shoulderguards
 								i( 37722),	-- Breastplate of Undeath
 								i( 35632),	-- Robes of Novos
 								i( 40490),	-- Necromantic Wristguards
@@ -290,7 +287,6 @@ _.Instances =
 								i( 35634),	-- Scabarous-Hide Helm
 								i( 37724),	-- Handler's Arm Strap
 								i( 37725),	-- Savage Wound Wrap
-								i(157561),	-- Dino-Toothed Waistguard
 								i( 35635),	-- Stable Master's Breeches
 								i( 37723),	-- Incisor Fragment
 							})),

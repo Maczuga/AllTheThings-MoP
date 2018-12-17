@@ -50,7 +50,6 @@ _.Zones =
 									i(53241),  -- Steel-Patched Belt
 									i(53258),  -- Terrortooth Hide Bracers
 									i(53248),  -- Raptor Scrap Cloak
-									i(131371),  -- Steel-Patched Armbands
 								},
 								["qg"] = 37138,	-- Onatay
 								["coord"] = { 39.4, 20.3 },
@@ -67,7 +66,6 @@ _.Zones =
 								["groups"] = {
 									i(53239),  -- Holgom's Bracers
 									i(53231),  -- Climbing Straps
-									i(131370),  -- Holgom's Waistcord
 								},
 								["qg"] = 37153,	-- Holgom
 								["coord"] = { 37.6, 16.6 },
@@ -85,7 +83,6 @@ _.Zones =
 								["groups"] = {
 									i(53307),  -- Surveying Gloves
 									i(53308),  -- Zykes' Belt
-									i(131372),  -- Surveying Gauntlets
 								},
 								["qg"] = 37154,	-- Kilrok Gorehammer
 								["coord"] = { 39.6, 19.8 },
@@ -124,7 +121,6 @@ _.Zones =
 								["groups"] = {
 									i(53252),	-- Sabersnout's Cloak
 									i(53228),	-- Boarpocalypse Boots
-									i(131374),	-- Bristleback Challenge Treads
 								},
 								["qg"] = 11857,	-- Makaba Flathoof
 								["coord"] = { 44.2, 33.6 },
@@ -168,9 +164,6 @@ _.Zones =
 								["groups"] = {
 									i(53160),	-- Vest of the Nightmare Rift
 									i(53159),	-- Naralex's Slippers
-									i(131379),	-- Tunic of the Nightmare Rift
-									i(156997),	-- Scepter of Naralex 
-									i(156998),	-- Cudgel of Naralex
 								},
 								["qg"] = 37570,	-- Naralex
 								["coord"] = { 50.4, 40.6 },
@@ -192,7 +185,6 @@ _.Zones =
 									i(53254),	-- Sternhorn's Shield
 									i(53257),	-- Taurajo Leggings
 									i(53251),	-- Robes of the Bloody Field
-									i(131375),	-- Taurajo Greaves
 								},
 								["qg"] = 3418,	-- Kirge Sternhorn
 								["coord"] = { 41.6, 46.5 },
@@ -218,7 +210,6 @@ _.Zones =
 									i(53237),	-- Grease-Covered Boots
 									i(53238),	-- Groady Goblin Wand
 									i(53247),	-- Pewter Slab
-									i(131376),	-- Grease-Covered Footguards
 								},
 								["qg"] = 37679,	-- Warlord Bloodhilt
 								["coord"] = { 41.4, 46.8 },
@@ -260,7 +251,6 @@ _.Zones =
 									i(53259),	-- Tomusa's Sword
 									i(53233),	-- Earthbound Leggings
 									i(53234),	-- Flightmare Mantle
-									i(131382),	-- Earthbound Trousers
 								},
 								["qg"] = 37909,	-- Tomusa
 								["coord"] = { 41.0, 70.9 },
@@ -285,7 +275,6 @@ _.Zones =
 									i(53236),	-- Gloves of Desolation Hold
 									i(53242),	-- Breeches of Authority
 									i(53243),	-- Loose Cannon
-									i(131377),	-- Gauntlets of Desolation Hold
 								},
 								["coord"] = { 41.6, 69.8 },
 								["races"] = HORDE_ONLY,
@@ -318,7 +307,6 @@ _.Zones =
 									i(53229),	-- Brain-Splattered Leggings
 									i(53260),	-- Vest of Abomification
 									i(53246),	-- Neurosurgeon's Tool
-									i(131381),	-- Chestguard of Abomification
 								},
 								["qg"] = 37908,	-- Calder Gray
 								["coord"] = { 42.6, 70.2 },
@@ -331,7 +319,6 @@ _.Zones =
 									i(53226),  -- Battlescar Monnion
 									i(53232),  -- Cloak of Harvested Fear
 									i(53256),  -- Taurajo Butcher's Blade
-									i(131383),  -- Battlescar Amice
 								},
 								["qg"] = 37837,	-- Warlord Bloodhilt
 								["coord"] = { 41.6, 69.8 },
@@ -431,7 +418,6 @@ _.Zones =
 								["groups"] = {
 									i(53255),	-- Stonespire Shoulders
 									i(53253),	-- Spearhead Helm
-									i(131384),	-- Spearhead Faceguard
 								},
 								["qg"] = 38140,	-- Weezil Slipshadow
 								["coord"] = { 50.7, 86.8 },
@@ -448,7 +434,6 @@ _.Zones =
 							i(53301),	-- Taurajo Leggings
 							i(53291),	-- Robes of the Bloody Field
 							i(53275),	-- Hawthorne's Shield
-							i(131399),	-- Taurajo Greaves
 						},
 						["qg"] = 38323,	-- General Hawthorne
 					}),
@@ -468,7 +453,6 @@ _.Zones =
 							i(53264),	-- Bael'dun Plate Leggings
 							i(53306),	-- Vest of Bael'dun Keep
 							i(53300),	-- Survivor's Blade
-							i(131404),	-- Chestguard of Bael'dun Keep
 						},
 						["qg"] = 39218,	-- Bael'dun Survivor
 						["sourceQuests"] = { 25120 },	-- Marley's Final Flight
@@ -479,7 +463,6 @@ _.Zones =
 							i(53303),	-- Thunderhead Kid Gloves
 							i(53281),	-- Mizzy's Dungarees
 							i(53285),	-- Pistonhammer Gun
-							i(131400),	-- Mizzy's Gauntlets
 						},
 						["qg"] = 39084,	-- Mizzy Pistonhammer
 						["sourceQuests"] = { 25079 },	-- Powder Play
@@ -501,7 +484,6 @@ _.Zones =
 						["groups"] = {
 							i(53265),	-- Boarpocalypse Boots
 							i(53292),	-- Sabersnout's Cloak
-							i(131398),	-- Bristleback Challenge Treads
 						},
 						["qg"] = 38986,	-- Ambassador Gaines
 						["sourceQuests"] = { 25022 }	-- A Failure to Communicate
@@ -511,7 +493,6 @@ _.Zones =
 							i(53263),	-- Bael Modan Monnion
 							i(53271),	-- Feegly's Shroud
 							i(53280),	-- Misery's End
-							i(131602),	-- Bael Modan Amice
 						},
 						["qg"] = 39155,	-- Marley Twinbraid
 						["sourceQuests"] = { 25104 },	-- Digsite Status
@@ -527,7 +508,6 @@ _.Zones =
 					qa(25008, {	-- Filthy Animals
 						["groups"] = {
 							i(53276),	-- Hecklefang Hide Belt
-							i(131395),	-- Hecklefang Links
 						},
 						["qg"] = 38873,	-- Goucho
 					}),
@@ -539,7 +519,6 @@ _.Zones =
 						["groups"] = {
 							i(53273),	-- Gloves of Honor's Stand
 							i(53295),	-- Singleton Sash
-							i(131407),	-- Singleton Gauntlets
 						},
 						["qg"] = 38380,	-- Janice Mattingly
 						["sourceQuests"] = { 24863, 24862 },	-- Breaking the Siege & Running the Gauntlet
@@ -585,7 +564,6 @@ _.Zones =
 							i(53299),	-- Stormsnout Hide Boots
 							i(53286),	-- Pot Stirrer
 							i(53284),	-- Pewter Slab
-							i(131397),	-- Stormsnout Stompers
 						},
 						["qg"] = 39003,	-- Sam Trawley
 						["sourceQuests"] = { 25041 }	-- Lion's Pride
@@ -611,7 +589,6 @@ _.Zones =
 							i(53298),	-- Stonesthrow Sword
 							i(53278),	-- Landquaker Leggings
 							i(53277),	-- Kodo-Repellant Shoulders
-							i(131401),	-- Landquaker Trousers
 						},
 						["qg"] = 39154,	-- Hurlston Stonesthrow
 					}),
@@ -645,7 +622,6 @@ _.Zones =
 							i(53283),	-- Paxton's Belt
 							i(53297),	-- Spoils of the Courtyard
 							i(53294),	-- Seized Rangeroar Cloak
-							i(131386),	-- Seized Rageroar Belt
 						},
 						["qg"] = 38620,	-- Thomas Paxton
 						["sourceQuests"] = { 24941 },	-- Langridge Shot
@@ -657,7 +633,6 @@ _.Zones =
 						["groups"] = {
 							i(53282),
 							i(53268),
-							i(131385),
 						},
 						["qg"] = 3454,	-- Cannoneer Smythe
 						["sourceQuests"] = { 24938 },	-- The Guns of Northwatch
@@ -704,7 +679,6 @@ _.Zones =
 							["groups"] = {
 								i(53305),	-- Twinbraid Shoulders
 								i(53274),	-- Goblin Miner's Helmet
-								i(131406),	-- Goblin Miner's Hardhat
 							},
 							["sourceQuests"] = { 25183 },	-- ...And Bury the Rest
 						}),
@@ -748,7 +722,6 @@ _.Zones =
 						["groups"] = {
 							i(53302),	-- Three-Tooth Bracers
 							i(53287),	-- Quilboar Crone Gloves
-							i(131396),	-- Three-Tooth Armguards
 						},
 						["qg"] = 38871,	-- Corporal Teegan
 						["sourceQuests"] = { 25022, 25015 }	-- A Failure to Communicate & Make 'Em Squeal

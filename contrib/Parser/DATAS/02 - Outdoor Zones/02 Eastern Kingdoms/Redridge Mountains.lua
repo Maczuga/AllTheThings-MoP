@@ -36,7 +36,6 @@ _.Zones =
 								["groups"] = {
 									i(60687),	-- Belt of the Sons
 									i(60686),	-- Boots of the Prolific Sire
-									i(131538),	-- Striders of the Prolific Sire
 									i(60685),	-- Yowling Cloak
 								},
 								["sourceQuests"] = {26365},	-- Hero's Call: Redridge Mountains!
@@ -69,10 +68,8 @@ _.Zones =
 								["groups"] = {
 									i(60692),	-- Breadwinner's Gloves
 									i(60695),	-- Cloak of Insomnia
-									i(131540),	-- Starvation Leggings
 									i(60694),	-- Starvation Vest
 									i(60693),	-- Ventillated Leggings
-									i(131541),	-- Ventillated Vest
 								},
 								["sourceQuests"] = {26510,26503,26505},	-- We Must Prepare! + Still Assessing the Threat + Parker's Report)
 							})),
@@ -80,7 +77,6 @@ _.Zones =
 								["groups"] = {
 									i(60703),	-- Escalation Britchers
 									i(60705),	-- Legguards of Invasion
-									i(131552),	-- Mongrel Greaves
 									i(60704),	-- Mongrel Leggings
 								},
 								["sourceQuests"] = {26544},	-- They've Wised Up...
@@ -89,7 +85,6 @@ _.Zones =
 								qa(26520, { -- Saving Foreman Oslow
 									["groups"] = {
 										i(60701),	-- Leverage Bracers
-										i(131543),	-- Leverage Wriststraps
 										i(60700),	-- Solomon's Gavel
 										i(60702),	-- Sword of the Falling Sky
 									},
@@ -129,7 +124,6 @@ _.Zones =
 								["groups"] = {
 									i(60708),	-- Blackrock Shield
 									i(60707),	-- Lakeshire Gloves
-									i(131556),	-- Lakeshire Handwraps
 									i(60706),	-- Sandals of the Neverending Bridge
 								},
 								["sourceQuests"] = {26568},	-- This Ain't My War
@@ -139,7 +133,6 @@ _.Zones =
 							})),
 							qg(43221, qa(26573, {	-- His Heart Must Be In It
 								["groups"] = {
-									i(131557),	-- Hauberk of the Changing Heart
 									i(60710),	-- Troteman's Bracers
 									i(60709),	-- Vest of the Changing Heart
 								},
@@ -160,7 +153,6 @@ _.Zones =
 								["groups"] = {
 									i(60717),	-- Everstill Breastplate
 									i(60716),	-- Muckdweller Gloves
-									i(131569),	-- Muckdweller Handguards
 									i(60715),	-- Vial of Chloroform
 								},
 								["sourceQuests"] = {26616},	-- It's Never Over
@@ -183,8 +175,6 @@ _.Zones =
 							qg(43611, qa(26668, {	-- Detonation
 								["groups"] = {
 									i(60712),	-- Exterminator's Armbands
-									i(131576),	-- Exterminator's Bracers
-									i(156953),	-- 'Liberated' Greataxe
 									i(60714),	-- Massive Firearm of Death
 									i(60711),	-- Messner's Cuffs
 									i(60713),	-- Redridge Legguards
@@ -195,7 +185,6 @@ _.Zones =
 								["groups"] = {
 									i(60719),	-- Danforth's Breastplate
 									i(60718),	-- Shadowhide Boots
-									i(131583),	-- Shadowhide Footguards
 								},
 								["sourceQuests"] = {26668},	-- Detonation
 							})),
@@ -205,19 +194,16 @@ _.Zones =
 							qg(43611, qa(26694, {	-- The Grand Magus Doane
 								["groups"] = {
 									i(60721),	-- Shalewind Belt
-									i(131584),	-- Treacherous Boots
 									i(60720),	-- Treacherous Treads
 								},
 								["sourceQuests"] = {26693},	-- The Dark Tower
 							})),
 							qg(43733, qa(26708, {	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 								["groups"] = {
-									i(131588),	-- Bravo Company Amice
 									i(60722),	-- Bravo Company Mantle
 									i(60723),	-- Bravo Company Monnions
 									i(60725),	-- Bravo Company Pauldrons
 									i(60724),	-- Bravo Company Shoulderguards
-									i(131589),	-- Bravo Company Spaulders
 								},
 								["description"] = "Shadowhide Extinction isn't really a prerequisite, since you can pick these both up at the same time, but until you complete it you'll be phased and unable to turn in this quest.",
 								["sourceQuests"] = {26692, 26694},	-- Shadowhide Extinction, The Grand Magus Doane
@@ -245,8 +231,6 @@ _.Zones =
 								qg(900, qa(26511, {	-- Lake Everstill Clean Up
 									i(60699),	-- Bailiff's Gloves
 									i(60698),	-- Belt of Recurring Raids
-									i(131539),	-- Chain of Recurring Raids
-									i(157001),	-- Everstill Hewer
 									i(60697),	-- Indiscriminate Wand
 									i(60696),	-- Shield of the Lesson
 								})),

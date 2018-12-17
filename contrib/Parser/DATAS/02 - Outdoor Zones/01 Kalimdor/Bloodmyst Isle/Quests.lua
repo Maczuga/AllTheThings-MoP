@@ -23,7 +23,6 @@ _.Zones =
 						["groups"] = {
 							i(26018),	-- Elekk Handler's Leathers
 							i(26031),	-- Elekk Rider's Plate
-							i(131264),	-- Elekk Tender's Chain
 							i(26004),	-- Farmhand's Vest
 						},
 						["qg"] = 17599,	-- Aonar
@@ -38,7 +37,6 @@ _.Zones =
 						["groups"] = {
 							i(26051),	-- 2 Stone Sledgehammer
 							i(26053),	-- Elekk Handler's Blade
-							i(156993),	-- Long-Reach Elekk Prod
 							i(26049),	-- Old Elekk Prod
 							i(27389),	-- Surplus Bastard Sword
 						},
@@ -67,8 +65,6 @@ _.Zones =
 					}),
 					qa(9629, { 	-- Catch and Release
 						["groups"] = {
-							i(131265),	-- Analyst's Gloves
-							i(120951),	-- Protective Field Grips
 							i(26022),	-- Researcher's Gloves
 							i(26008),	-- Scholar's Gloves
 							un(32, i(26034)),	-- Protective Field Gloves
@@ -80,7 +76,6 @@ _.Zones =
 							i(26035),	-- Corin's Handguards
 							i(26009),	-- Flutter Silk Handwraps
 							i(26023),	-- Ravager Hide Gloves
-							i(131273),	-- Ravager Scale Grips
 						},
 						["qg"] = 17986,	-- Vindicator Corin
 						["sourceQuests"] = { 9760 },	-- Vindicator's Rest
@@ -108,7 +103,6 @@ _.Zones =
 							i(26013),	-- Cincture of Woven Reeds
 							i(26026),	-- Ornately Tooled Belt
 							i(26038),	-- Segmented Girdle
-							i(131266),	-- Ornate Wire Cinch
 						},
 						["qg"] = 17642,	-- Tracker Lyceon
 					}),
@@ -124,7 +118,6 @@ _.Zones =
 					qa(9666, { 	-- Declaration of Power
 						["groups"] = {
 							i(26012),	-- Kessel's Cinch Wrap
-							i(131269),	-- Kessel's Elekk Leading Chain
 							i(26039),	-- Kessel's Sturdy Riding Handle
 							i(26027),	-- Kessel's Sweat Stained Elekk Leash
 						},
@@ -161,7 +154,6 @@ _.Zones =
 					}),
 					qa(9579, {	-- Galaen's Fate
 						["groups"] = {
-							i(131261),	-- Articifer's Boots
 							i(26011),	-- Cryo-Core Attendant's Boots
 							i(26037),	-- Lightweight Plate Boots
 							i(26025),	-- Technician's Boots
@@ -174,7 +166,6 @@ _.Zones =
 					}),
 					qa(9700, { 	-- I Shoot Magic Into the Darkness
 						["groups"] = {
-							i(131271),	-- Vindicator's Chain Boots
 							i(26024),	-- Vindicator's Leather Moccasins
 							i(26010),	-- Vindicator's Soft Sole Slippers
 							i(26036),	-- Vindicator's Stompers
@@ -199,7 +190,6 @@ _.Zones =
 							i(26006),	-- Crystal-Flecked Pants
 							i(26032),	-- Crystal-Studded Legguards
 							i(26020),	-- Shard-Covered Leggings
-							i(131262),	-- Shard-Linked Greaves
 						},
 						["qg"] = 17423,	-- Harbinger Mikolaas
 					}),
@@ -210,7 +200,6 @@ _.Zones =
 					qa(9648, {	-- Mac'Aree Mushroom Menagerie
 						["groups"] = {
 							i(26028),	-- Jessera's Fungus Lined Bands
-							i(131267),	-- Jessera's Fungus Lined Bindings
 							i(26040),	-- Jessera's Fungus Lined Bracers
 							i(26014),	-- Jessera's Fungus Lined Cuffs
 						},
@@ -218,7 +207,6 @@ _.Zones =
 					}),
 					qa(9711, {	-- Matis the Cruel
 						["groups"] = {
-							i(131272),	-- Vindicator's Chain Leggings
 							i(26033),	-- Vindicator's Iron Legguards
 							i(26021),	-- Vindicator's Leather Chaps
 							i(26007),	-- Vindicator's Woolies
@@ -257,7 +245,6 @@ _.Zones =
 					qa(9689, {	-- Razormaw
 						["groups"] = {
 							i(24348),	-- Breastplate of the Dragon Slayer
-							i(131270),	-- Chainmail of the Dragon Slayer
 							i(24346),	-- Robe of the Dragon Slayer
 							i(24347),	-- Vest of the Dragon Slayer
 						},
@@ -279,7 +266,6 @@ _.Zones =
 					}),
 					qa(9667, {	-- Saving Princess Stillpine
 						["groups"] = {
-							i(156994),	-- Stillpine Family Letter Opener 
 							i(24342),	-- Stillpine Shocker
 							i(24343),	-- The Thumper
 						},
@@ -394,7 +380,6 @@ _.Zones =
 					}),
 					qa(9649, {	-- Ysera's Tears
 						["groups"] = {
-							i(131268),	-- Jessera's Fungus Lined Chainmail
 							i(26030),	-- Jessera's Fungus Lined Hauberk
 							i(26005),	-- Jessera's Fungus Lined Tunic
 							i(26019),	-- Jessera's Fungus Lined Vest

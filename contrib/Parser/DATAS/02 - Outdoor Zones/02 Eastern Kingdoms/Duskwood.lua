@@ -5,29 +5,7 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(47, {		-- Duskwood
-			["groups"] = {
-				n(-538, {	-- Diablo 20th Anniversary Promotion
-					["groups"] = {	
-						n(116041, {	-- Treasure Goblin
-							["groups"] = {
-								n(116034, {	-- The Cow King
-									un(3, i(143543)),	-- Twelve String Guitar
-									i(142543, {	-- Scroll of Town Portal
-										i(143628, {	-- Blank Diabolic Tome
-											["groups"] = {
-												un(3, i(142542)),	-- Tome of Town Portal
-											},
-											["description"] = "Combine 10x Scroll of Town Portals with 1x Blank Diabolic Tome (dropped from Treasure Goblin) to create Tome of Town Portal.",
-										}),
-									}),
-									un(3, i(143327)),	-- Livestock Lochaber Axe
-								}),	
-							},
-							["description"] = "Can be found after killing the last boss in a dungeon or randomly in Legion zones. Kill him and enter his portal to fight The Cow King.",
-						}),
-					},
-					["u"] = 2,					
-				}),				
+			["groups"] = {		
 				n(-228, {	-- Flight Path
 					fp(12, {	-- Darkshire, Duskwood
 						["coord"] = { 77.4, 44.2 },
@@ -66,16 +44,12 @@ _.Zones =
 --					qg(43730, qa(26720)),	-- A Curse We Cannot Lift
 					qg(576, qa(26797, { -- A Daughters Love
 						i(60937),
-						i(156954),	-- Refurbished Archeus
-						i(156955),	-- Reconditioned Archeus
 					})),
 					qg(43738, qa(26707, { -- A Deadly Vine
 						i(60924),
 						i(60925),
 						i(60926),
 						i(60927),
-						i(131587),
-						i(157003), -- Corpseweed Hewer						
 					})),
 --[[					
 					qart(qg(101651, q(40785, {	-- A Foe of the Dark
@@ -85,12 +59,10 @@ _.Zones =
 					qg(288, qa(26787, { -- Bear In Mind
 						i(60934),
 						i(60935),
-						i(131604),
 					})),
 					qg(264, qa(26686, { -- Bones That Walk
 						i(60941),
 						i(60942),
-						i(131581),
 					})),
 --[[
 					o(204824, {	-- Lightforged Arch
@@ -102,7 +74,6 @@ _.Zones =
 --]]					qg(276, qa(26685, { -- Classy Glass
 						i(60908),
 						i(60909),
-						i(131580),
 					})),
 --[[					
 					qg(43453, qa(26672)),	-- Clawing at the Truth
@@ -112,13 +83,11 @@ _.Zones =
 						i(60928),
 						i(60929),
 						i(60930),
-						i(131597),
 					})),
 					qg(265, qa(26655, { -- Deliver the Thread
 						i(60899),
 						i(60900),
 						i(60901),
-						i(131574),
 					})),
 --[[
 					qg(43738, qa(26719)),	-- Delivery to Master Harris
@@ -151,7 +120,6 @@ _.Zones =
 					qg(273, qa(26676, { -- Juice Delivery
 						i(60902),
 						i(60903),
-						i(131579),
 					})),
 --					qg(276, qa(26683)),	-- Look To The Stars
 					qg(265, qa(26674, { -- Mistmantle's Revenge
@@ -159,14 +127,12 @@ _.Zones =
 						i(60918),
 						i(60919),
 						i(60920),
-						i(131578),
 					})),					
 --					qg(264, qa(26795)),	-- Mor'Ladim
 					o(204825, {	-- Lightforged Crest
 						qa(26754, { -- Morbent's Bane	
 							i(60939),
 							i(60940),
-							i(131596),
 						}),
 					}),
 --[[					
@@ -184,9 +150,6 @@ _.Zones =
 						i(60914),
 						i(60915),
 						i(60916),
-						i(131577),
-						i(157002), -- Exorcist's Crossbow
-						i(156975), -- Exorcist's Dagger						
 					})),
 					qa(26620, {	-- Seasoned Wolf Kabobs
 						i(2701),	-- Recipe: Seasoned Wolf Kabob
@@ -204,7 +167,6 @@ _.Zones =
 						i(60921),
 						i(60922),
 						i(60923),
-						i(131600),
 					})),
 --					qg(264, qa(26796)),	-- The Daughter Who Lived
 					qg(263, qa(26727, { -- The Embalmer's Revenge
@@ -229,9 +191,6 @@ _.Zones =
 						i(60911),
 						i(60912),
 						i(60913),
-						i(131575),
-						i(156974),	-- Archivist's Walking Stick
-						i(156973),	-- Archivist's Staff
 					})),
 --[[					
 					o(61, {	-- A Weathered Grave
@@ -244,13 +203,11 @@ _.Zones =
 					qg(264, qa(26618, { -- Wolves at Our Heels
 						i(60896),
 						i(60897),
-						i(131564),
 					})),
 					qg(663, qa(26691, { -- Worgen in the Woods
 						i(60931),
 						i(60932),
 						i(60933),
-						i(131582),
 					})),
 --[[					
 					qg(663, qa(26688)),	-- Worgen in the Woods					
@@ -382,7 +339,6 @@ _.Zones =
 					}), 
 					n(91592, {	-- Forlorn Composer
 						["groups"] = {
-							i(122223),	-- Music Roll: Ghost
 						},
 						["description"] = "Travel to the northeast corner of Raven Hill Cemetery. Getting this music requires you to speak to Forlorn Composer while you are dead. The easiest way to do this is to fly up very high and dismount (removing armor first will avoid repair charges)."
 					}),

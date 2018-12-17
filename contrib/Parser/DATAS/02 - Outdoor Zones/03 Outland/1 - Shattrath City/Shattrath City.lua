@@ -366,15 +366,6 @@ _.Zones =
 						["coord"] = { 54.7, 44.3 },
 						["sourceQuests"] = { 10210 },	-- A'dal
 					}),
-					q(44863, { -- Clearing the Air
-						["groups"] = {
-							i(142279), -- Plans: Windforged Rapier
-							i(142283), -- Plans: Skyforged Great Axe
-							i(142282), -- Plans: Stormforged Axe
-						},
-						["qg"] = 115546, -- Lunelli
-						["requireSkill"] = 164, -- Blacksmithing
-					}),
 					q( 10009, {	-- Crackin' Some Skulls
 						["qg"] = 18584,	-- Sal'salabim
 						["sourceQuests"] = { 10004 },	-- Patience and Understanding *UNTESTED*
@@ -383,15 +374,6 @@ _.Zones =
 						["qg"] = 123252,	-- Vormu
 						["isWeekly"] = true,
 						["description"] = "This quest is only available during BC Timewalking.",
-					}),
-					q(41160, { -- Earth to Earth
-						["groups"] = {
-							i(142284), -- Plans: Stoneforged Claymore
-							i(142287), -- Plans: Great Earthforged Hammer
-							i(142286), -- Plans: Lavaforged Warhammer
-						},
-						["qg"] = 115546, -- Lunelli
-						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					q( 10949, {	-- Entry Into the Black Temple (UNTESTED, NEEDS CONFIRMATION)
 						["qg"] = 18481,	-- A'dal
@@ -1093,8 +1075,6 @@ _.Zones =
 						["groups"] = {
 							i(38082),	-- "Gigantique" Bag
 							i(51809),	-- Portable Hole
-							i(134007),	-- Eternal Black Diamond Ring Toy
-							i(134004),	-- Noble's Eternal Elementium Signet
 						},
 						["coord"] = { 75.6, 30.6 },
 					}),
@@ -1553,18 +1533,6 @@ _.Zones =
 						},
 						["description"] = "Tabards are only obtainable by those who have earned them.|r",
 						["coord"] = { 58.8, 46.4 },
-					}),
-					n(115546, {	-- Lunelli <Keeper of Lost Recipes>
-						["groups"] = {
-							i(142287), -- Plans: Great Earthforged Hammer
-							i(142286), -- Plans: Lavaforged Warhammer
-							i(142283), -- Plans: Skyforged Great Axe
-							i(142284), -- Plans: Stoneforged Claymore
-							i(142282), -- Plans: Stormforged Axe
-							i(142279), -- Plans: Windforged Rapier
-						},
-						["description"] = "She will only sell these recipes to those who have completed the quests that reward them.|r",
-						["coord"] = { 64.2, 71.4 },
 					}),
 					n(19663, {	-- Madame Ruby <Enchanting Supplies>
 						["groups"] = {
@@ -2079,19 +2047,6 @@ _.Zones =
 											i(63138),	-- Dark Phoenix Hatchling - Exalted
 										},
 									})),
-									ach(6626, {	-- Working Better as a Team
-										["collectible"] = false,
-										["groups"] = {
-											i(127011),	-- Pristine Lightforged Legplates - Honored
-											i(122252),	-- Tarnished Leggings of Destruction - Honored
-											i(122251),	-- Polished Legplates of Valor - Honored
-											i(122254),	-- Stained Shadowcraft Pants - Honored
-											i(122253),	-- Mystical Kilt of Elements - Honored
-											i(122256),	-- Tattered Dreadmist Leggings - Honored
-											i(122255),	-- Preened Wildfeather Leggings - Honored
-											i(122264),	-- Burnished Legplates of Might - Honored
-										},
-									}),
 									
 									h(i(67107)),	-- Reins of the Kor'kron Annihilator - Exalted
 									a(i(62298)),	-- Reins of the Golden King - Exalted
@@ -2099,18 +2054,6 @@ _.Zones =
 									i(69210),	-- Renowned Guild Tabard - Honored
 									a(i(63206)),	-- Wrap of Unity - Honored
 									h(i(63207)),	-- Wrap of Unity - Honored
-									i(122266),	-- Ripped Sandstorm Cloak - Friendly
-									i(122260),	-- Worn Stoneskin Gargoyle Cape - Friendly
-									i(122261),	-- Inherited Cape of the Black Baron - Friendly
-									i(122262),	-- Ancient Bloodmoon Cloak - Friendly
-									i(122263),	-- Burnished Helm of Might - Friendly
-									i(122250),	-- Tattered Dreadmist Mask - Friendly
-									i(122249),	-- Preened Tribal War Feathers - Friendly
-									i(122248),	-- Stained Shadowcraft Cap - Friendly 
-									i(122247),	-- Mystical Coif of Elements - Friendly
-									i(122246),	-- Tarnished Raging Berserker's Helm - Friendly
-									i(127012),	-- Pristine Lightforged Helm - Friendly
-									i(122245),	-- Polished Helm of Valor - Friendly
 								},
 							}),
 						},

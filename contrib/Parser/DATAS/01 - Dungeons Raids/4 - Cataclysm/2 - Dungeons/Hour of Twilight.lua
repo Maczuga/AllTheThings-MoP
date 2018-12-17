@@ -47,7 +47,6 @@ _.Instances =
 						i( 72859),	-- Dawnslayer Helm
 						i( 72856),	-- Pauldrons of Midnight Whispers
 						i( 76151),	-- Cloak of Subtle Light
-						i(157616),	-- Chestguard of Futility
 						i( 72857),	-- Leggings of Blinding Speed
 					})),
 					cr(54938, e(341, {	-- Archbishop Benedictus

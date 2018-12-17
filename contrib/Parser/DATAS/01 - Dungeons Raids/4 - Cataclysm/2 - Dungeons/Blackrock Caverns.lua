@@ -84,7 +84,6 @@ _.Instances =
 							i( 56314),	-- Shield of the Iron Maiden
 							i( 56311),	-- Inquisition Robes
 							i( 56313),	-- Manacles of Pain
-							i(157608),	-- Groundrumble Boots
 							i( 56310),	-- Skullcracker Ring
 							nld({	-- Legacy
 								un(2, i(55777)),	-- Torturer's Mercy (7.3.5 - Removed from Game!)
@@ -124,7 +123,6 @@ _.Instances =
 							i( 56302), 	-- Steelbender's Masterpiece
 							i( 56300),	-- Quicksilver Amulet
 							i( 56304), 	-- Burned Gatherings
-							i(157610), 	-- Heat-Shielded Tunic
 							i( 56301), 	-- Bracers of Cooled Anger
 							i( 56303), 	-- Heat Wave Leggings
 							nld({	-- Legacy
@@ -137,7 +135,6 @@ _.Instances =
 						cr(39700, e(108, { -- Beauty
 							i( 56306), 	-- Beauty's Favorite Bone
 							i( 56308), 	-- Beauty's Plate
-							i(157607), 	-- Gently Gnawed Hauberk
 							i( 56305), 	-- Beauty's Silken Ribbon
 							i( 56309), 	-- Beauty's Chew Toy
 							i( 56307),	-- Kibble
@@ -178,7 +175,6 @@ _.Instances =
 								i( 56314),	-- Shield of the Iron Maiden
 								i( 56311),	-- Inquisition Robes
 								i( 56313),	-- Manacles of Pain
-								i(157608),	-- Groundrumble Boots
 								i( 56310),	-- Skullcracker Ring
 							})),
 							cr(39679, e(106, { -- Corla, Herald of Twilight
@@ -207,14 +203,12 @@ _.Instances =
 								i( 56302), 	-- Steelbender's Masterpiece
 								i( 56300),	-- Quicksilver Amulet
 								i( 56304), 	-- Burned Gatherings
-								i(157610), 	-- Heat-Shielded Tunic
 								i( 56301), 	-- Bracers of Cooled Anger
 								i( 56303), 	-- Heat Wave Leggings
 							})),
 							cr(39700, e(108, { -- Beauty
 								i( 56306), 	-- Beauty's Favorite Bone
 								i( 56308), 	-- Beauty's Plate
-								i(157607), 	-- Gently Gnawed Hauberk
 								i( 56305), 	-- Beauty's Silken Ribbon
 								i( 56309), 	-- Beauty's Chew Toy
 								i( 56307),	-- Kibble

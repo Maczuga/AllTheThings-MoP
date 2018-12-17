@@ -94,7 +94,6 @@ _.Zones =
 	--]]
 						qa(10632, {	-- Cutting Your Teeth
 							i(31447),	-- Vibro Dagger
-							i(157549),	-- Vibro Knuckles 
 							i(31446),	-- Vibro Shanker
 							i(31448),	-- Vibro Sword
 						}),

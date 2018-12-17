@@ -78,7 +78,6 @@ _.Instances =
 							}),
 						})),
 						cr(39788, e(126, {	-- Anraphet
-							i(157611),  	-- Crown of Patient Vigil
 							i( 57866),  	-- Mantle of Soft Shadows
 							i( 57868),  	-- Anraphet's Regalia
 							i( 57869),  	-- Omega Breastplate
@@ -93,7 +92,6 @@ _.Instances =
 							}),
 						})),
 						cr(39587, e(127, {	-- Isiset, Construct of Magic
-							i(157609), 	-- Scepter of Stargazing
 							i( 56416),	-- Armguards of Unearthly Light
 							i( 56413),	-- Legwraps of Astral Rain
 							i( 56415),	-- Nova Band
@@ -200,7 +198,6 @@ _.Instances =
 								i(56423),	-- Underworld Cord
 							})),
 							cr(39788, e(126, {	-- Anraphet
-								i(157611),	-- Crown of Patient Vigil
 								i( 57866),	-- Mantle of Soft Shadows
 								i( 57868),	-- Anraphet's Regalia
 								i( 57869),	-- Omega Breastplate
@@ -208,7 +205,6 @@ _.Instances =
 								i( 57867),	-- Boots of Crumbling Ruin
 							})),
 							cr(39587, e(127, {	-- Isiset, Construct of Magic
-								i(157609),	-- Scepter of Stargazing
 								i( 56416),	-- Armguards of Unearthly Light
 								i( 56413),	-- Legwraps of Astral Rain
 								i( 56415),	-- Nova Band

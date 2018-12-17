@@ -66,7 +66,6 @@ _.Zones =
 								["groups"] = {
 									i(33250),	-- Archer's Wristguard
 									i(57851),	-- Swamp Gas Gauntlets
-									i(131253),	-- Archer's Chain Bracer
 									un(2, i(33269)),	-- Bejeweled Dagger
 									un(2, i(33252)),	-- Gleaming Scale Breastplate
 								},
@@ -98,7 +97,6 @@ _.Zones =
 								["groups"] = {
 									i(57834),	-- Frog Boots
 									i(57845),	-- Swamp Splints
-									i(131648),	-- Frog Stompers
 								},
 								["qg"] = 4792,	-- "Swamp Eye" Jarl
 								["coord"] = { 55.4, 26.2 },
@@ -123,7 +121,6 @@ _.Zones =
 								["groups"] = {
 									i(9518),	-- Mud's Crushers
 									i(9519),	-- Durtfeet Stompers
-									i(131651),	-- Mud's Chain Boots
 								},
 								["qg"] = 4792,	-- "Swamp Eye" Jarl
 								["coord"] = { 55.4, 26.2 },
@@ -135,7 +132,6 @@ _.Zones =
 									i(5016),	-- Artisan's Trousers
 									i(57835),	-- "Swamp Eye" Belt
 									i(9622),	-- Reedknot Ring
-									i(131649),	-- "Swamp Eye" Chain Sash
 								},
 								["qg"] = 4792,	-- "Swamp Eye" Jarl
 								["coord"] = { 55.4, 26.2 },
@@ -153,7 +149,6 @@ _.Zones =
 									i(33229),	-- Mordant's Travel Tunic
 									i(33257),	-- Scaled Marshwalkers
 									i(33245),	-- Grimsby's Gaudy Girdle
-									i(131650),	-- Grimsby's Chain Cinch
 								},
 								["qg"] = 23843,	-- Mordant Grimsby
 								["coord"] = { 55.5, 26.1 },
@@ -272,7 +267,6 @@ _.Zones =
 								["groups"] = {
 									i(33271),	-- Battlecaster's Edge
 									i(57829),	-- Steel-Backed Hauberk
-									i(156976),	-- Staff of Memory 
 								},
 								["qg"] = 6546,	-- Tabetha
 								["coord"] = { 46.0, 57.0 },
@@ -297,7 +291,6 @@ _.Zones =
 									i(57833),	-- Brooding Mask
 									i(57838),	-- Searing Dagger
 									i(57839),	-- Whelp Slaying Axe
-									i(131673),	-- Brooding Collar
 								},
 								["qg"] = 4501,	-- Draz'Zilb
 								["coord"] = { 37.1, 33.0 },
@@ -322,7 +315,6 @@ _.Zones =
 								["groups"] = {
 									i(57836),	-- Encarmine Spaulders
 									i(57841),	-- Wyrmbog Amulet
-									i(131674),	-- Encarmine Pauldrons
 								},
 								["qg"] = 4501,	-- Draz'Zilb
 								["coord"] = { 37.1, 33.0 },
@@ -337,8 +329,6 @@ _.Zones =
 									i(57846),	-- Overlord's Trophy Shoulders
 									i(57847),	-- Mok'Morokk's Beat Stick
 									i(57850),	-- Dustwallow Impaler
-									i(131675),	-- Overlord's Trophy Pauldrons
-									i(156999),	-- Mok'Morokk's Headcracker
 								},
 								["qg"] = 4500,	-- Overlord Mok'Morokk
 								["coord"] = { 36.2, 31.5 },
@@ -422,7 +412,6 @@ _.Zones =
 						["groups"] = {
 							i(33235),	-- Journeyman's Epaulets
 							i(33241),	-- Oiled Leather Leggings
-							i(131672),	-- Chain Linked Leggings
 						},
 						["qg"] = 23570,	-- Gizzix Grimegurgle
 						["coord"] = { 41.5, 72.9 },
@@ -444,7 +433,6 @@ _.Zones =
 							i(33239),	-- Marshwarden's Tunic
 							i(33255),	-- Rustproof Waistguard
 							i(57840),	-- Corroded Helmet
-							i(131666),	-- Marshwarden's Vest
 						},
 						["qg"] = 23797,	-- Moxie Steelgrille
 						["coord"] = { 53.5, 56.9 },
@@ -476,7 +464,6 @@ _.Zones =
 							i(57827),	-- Morlann's Other Seal
 							i(33261),	-- Destroyer's Cloak
 							i(57831),	-- Direhorn Cinch
-							i(131664),	-- Grimtotem Earthbinder's Vest
 						},
 						["qg"] = 23600,	-- Apprentice Morlann
 						["coord"] = { 46.0, 57.4 },
@@ -573,7 +560,6 @@ _.Zones =
 						["groups"] = {
 							i(57848),	-- Mok'Morokk's Grog Bottle
 							i(57854),	-- Stonemaul Gloves
-							i(131676),	-- Stonemaul Gauntlets
 						},
 						["qg"] = 4500,	-- Overlord Mok'Morokk
 						["coord"] = { 36.2, 31.3 },
@@ -583,7 +569,6 @@ _.Zones =
 						["groups"] = {
 							i(33271),	-- Battlecaster's Edge
 							i(57829),	-- Steel-Backed Hauberk
-							i(156976),	-- Staff of Memory 
 						},
 						["qg"] = 4944,	-- Captain Garran Vimes
 						["sourceQuest"] = 27430,	-- Justice for the Hyals
@@ -611,7 +596,6 @@ _.Zones =
 						["groups"] = {
 							i(33267),	-- Fleshripper
 							i(33259),	-- Crimson Barbut
-							i(156977),	-- Serrated Gladius 
 						},
 						["qg"] = 23569,	-- Renn McGill
 						["sourceQuest"] = 27236,	-- Secondhand Diving Gear
@@ -652,7 +636,6 @@ _.Zones =
 						["groups"] = {
 							i(57851),	-- Swamp Gas Gauntlets
 							i(33250),	-- Archer's Wristguard
-							i(131253),	-- Archer's Chain Bracer
 						},
 						["qg"] = 4968,	-- Lady Jaina Proudmoore
 						["sourceQuest"] = 27238,	-- Jaina Must Know
@@ -672,7 +655,6 @@ _.Zones =
 							i(57842),	-- Tower of Theramore
 							i(33247),	-- Swift Wind Spaulder
 							i(57849),	-- Seamonster Harpoon
-							i(131659),	-- Swift Wind Shoulders
 						},
 						["qg"] = 23905,	-- Major Mills
 						["sourceQuest"] = 27221,	-- Oh, It's Real
@@ -716,8 +698,6 @@ _.Zones =
 							i(57832),	-- Journeyman's Helm
 							i(33249),	-- Boots of the Skirmisher
 							i(57853),	-- Proudmoore Cloak
-							i(131657),	-- Journeyman's Headguard
-							i(131658),	-- Treads of the Skirmisher
 						},
 						["qg"] = 23566,	-- Calia Hastings
 						["sourceQuest"] = 27212,	-- Discrediting the Deserters
@@ -728,7 +708,6 @@ _.Zones =
 							i(33260),	-- Spellbound Cloak
 							i(33273),	-- Seasoned Marshwood Bow
 							i(33244),	-- The Wanderer's Cover
-							i(131663),	-- The Explorer's Coif
 						},
 						["qg"] = 23601,	-- Apprentice Garion
 						["coord"] = { 46.0, 57.2 },
@@ -778,7 +757,6 @@ _.Zones =
 							i(33266),	-- Book of the Adept
 							i(33248),	-- Crested Shoulderguard
 							i(33265),	-- Pendant of Ferocity
-							i(131662),	-- Crested Chain Epaulets
 						},
 						["qg"] = 23723,	-- Sergeant Lukas
 						["sourceQuest"] = 27242,	-- Raptor Captor
@@ -793,7 +771,6 @@ _.Zones =
 									i(33258),	-- Protective Engineer's Leggings
 									i(33263),	-- Raptor Eye Ring
 									i(33242),	-- Raptorhide Legguards
-									i(131671),	-- Raptorhide Chain Leggings
 								},
 							},
 						},

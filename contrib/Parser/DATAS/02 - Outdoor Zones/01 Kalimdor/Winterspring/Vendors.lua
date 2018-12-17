@@ -50,13 +50,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Vendor only sells this mount to those exalted with the Wintersaber Trainers.|r",
 					}),
-					n(11184, {		-- Wixxrak <Weaponsmith & Gunsmith>
-						["groups"] = {
-							i(142357),	-- Plans: Dawn's Edge
-						},
-						["coord"] = { 60.2, 50.2 },
-						["description"] = "Vendor only sells the plans to those who have completed the quest 'Blackrock Depths: Jewel of the Depths'|r",
-					}),
 				}),
 			},
 		}),

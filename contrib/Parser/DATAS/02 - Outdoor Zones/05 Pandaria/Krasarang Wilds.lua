@@ -1902,7 +1902,6 @@ _.Zones =
 					}),
 					nh(67751, {	-- Ongrom Black Tooth <Collector of Commissions>
 						i(91838, {  -- Lion's Landing Commission
-							i(122211),	-- Music Roll: War March
 							i(92527, {	-- Rodent Crate
 								["groups"] = {
 									p(1128), 	-- Sumprush Rodent
@@ -1913,7 +1912,6 @@ _.Zones =
 					}),
 					na(67881, {	-- Proveditor Grantley <Collector of Commissions>
 						i(91877, { --  Domination Point Commission
-							i(122202),	-- Music Roll: High Seas
 							i(92532, {	-- Rodent Crate
 								["groups"] = {
 									p(1128), 	-- Sumprush Rodent

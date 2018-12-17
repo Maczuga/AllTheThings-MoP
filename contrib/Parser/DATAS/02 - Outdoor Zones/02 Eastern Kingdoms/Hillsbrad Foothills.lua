@@ -83,7 +83,6 @@ _.Zones =
 							i(65721),	-- Corrahn's Cloak
 							i(65703),	-- Gavin's Pauldrons
 							i(65683),	-- Sofera's Belt
-							i(131699),	-- Headland Belt
 						},
 						["qg"] = 48545,	-- High Warlord Cromush
 						["sourceQuests"] = { 28506 },	-- March of the Stormpike
@@ -116,8 +115,6 @@ _.Zones =
 							i(65722),	-- Lilith's Wand
 							i(65704),	-- Vest of the Phantom
 							i(65684),	-- Poisoned Bracers
-							i(131700),	-- Phantom Chain Tunic
-							i(131701),	-- Bracers of Deceit
 						},
 						["qg"] = 49035,	-- Lilith
 						["sourceQuests"] = { 28566 },	-- Decimation
@@ -144,7 +141,6 @@ _.Zones =
 							i(65714),	-- "Jenny's" Gloves
 							i(65696),	-- Awesome Boots
 							i(65674),	-- Star Pony Leggings
-							i(131693),	-- Amazing Chain Boots
 						},
 						["qg"] = 48021,	-- Johnny Awesome
 						["sourceQuests"] = { 28209 },	-- Freedom for Lydon
@@ -196,7 +192,6 @@ _.Zones =
 						["groups"] = {
 							i(65713),	-- Monstrous Shield
 							i(65673),	-- Aberrant Vest
-							i(131692),	-- Sludge Guard Mail Vest
 						},
 						["qg"] = 47900,	-- Master Apothecary Lydon
 						["sourceQuests"] = { 28206 },	-- Little Girl Lost
@@ -215,7 +210,6 @@ _.Zones =
 							i(65710),	-- Creeping Boots
 							i(65692),	-- Bear Hide Vest
 							i(65670),	-- Spider-Handler's Mantle
-							i(131689),	-- Web Encased Tunic
 						},
 						["qg"] = 47432,	-- Apothecary Underhill
 						["sourceQuests"] = { 28096 },	-- Welcome to the Machine
@@ -238,8 +232,6 @@ _.Zones =
 							i(65719),	-- Spaulders of the Hero
 							i(65701),	-- Gloves of the Hero
 							i(65680),	-- Belt of the Hero
-							i(131696),	-- Pauldrons of the Hero
-							i(131697),	-- Gauntlets of the Hero
 						},
 						["qg"] = 48503,	-- Kingslayer Orkus
 						["sourceQuests"] = { 28397 },	-- They Will Never Expect This...
@@ -285,7 +277,6 @@ _.Zones =
 							i(65709),	-- Binding Plates
 							i(65690),	-- Slaver's Leggings
 							i(65668),	-- Officer's Armbands
-							i(131690),	-- Web Coated Leggings
 						},
 						["qg"] = 47554,	-- Captain Keyton
 						["sourceQuests"] = { 28111 },	-- Trouble at Azurelode
@@ -308,7 +299,6 @@ _.Zones =
 							i(65717),	-- Kingslayer's Breastplate
 							i(65699),	-- Mudsnout Spaulders
 							i(65678),	-- Red Riding Gloves
-							i(131695),	-- Orkus' Riding Spaulders
 						},
 						["qg"] = 48218,	-- Kingslayer Orkus
 						["sourceQuests"] = { 28348 },	-- Stormpike Rendezvous
@@ -317,7 +307,6 @@ _.Zones =
 						["groups"] = {
 							i(65689),	-- Brazie's Plant Light
 							i(65666),	-- Botanist's Britches
-							i(131894),	-- Botanist's Chain Pants
 							i(66067),	-- Singing Sunflower (PET!)
 						},
 						["qg"] = 49687,	-- Brazie the Botanist
@@ -367,7 +356,6 @@ _.Zones =
 						["groups"] = {
 							i(65691),	-- Floppy Shoulderguards
 							i(65669),	-- Keyton's Sash
-							i(131691),	-- Keyton's Mail Pauldrons
 						},
 					},
 					qh(28192, {	-- No One Here Gets Out Alive
@@ -458,7 +446,6 @@ _.Zones =
 							i(65724),	-- Grasps of the Unyielding
 							i(65706),	-- Mr. Hider's Bracers
 							i(65686),	-- Mantle of Haunting
-							i(131703),	-- Foreboding Bracers
 						},
 						["qg"] = 49240,	-- Captain Ironhill's Ghost
 						["sourceQuests"] = { 28635 },	-- A Haunting in Hillsbrad
@@ -478,7 +465,6 @@ _.Zones =
 							i(65723),	-- Cloak of Treason
 							i(65705),	-- Pocket-Nuke Belt
 							i(65685),	-- Broken Fingers of Hillsbrad
-							i(131702),	-- Nuke Resistant Gauntlets
 						},
 						["qg"] = 48545,	-- High Warlord Cromush
 						["sourceQuests"] = { 28556, 28605 },	-- Breaking the Hand & Domination
@@ -552,7 +538,6 @@ _.Zones =
 							i(65720),	-- Tell-Tale Bracers
 							i(65702),	-- Supple Yeti Leggings
 							i(65682),	-- Bel'varil's Armbands
-							i(131698),	-- Bel'varil's Chain Leggings
 						},
 						["qg"] = 2437,	-- Keeper Bel'varil
 					}),
@@ -585,7 +570,6 @@ _.Zones =
 							i(65718),	-- Lethality Leggings
 							i(65700),	-- Chet's Slimy Bracers
 							i(65679),	-- Hinott's Outer Robe
-							i(131694),	-- Slime Resistant Bracer
 						},
 						["sourceQuests"] = { 28329 },	-- Angry Scrubbing Bubbles
 					}),
@@ -610,7 +594,6 @@ _.Zones =
 							i(65711),	-- Portable Lap Desk
 							i(65693),	-- Quest Giver's Pauldrons
 							i(65671),	-- Cue Cue Gloves
-							i(131688),	-- Winning Mail Gloves
 						},
 						["qg"] = 2215,	-- High Executor Darthalia
 						["sourceQuests"] = { 27746, 28089 },	-- Empire of Dirt & Warchief's Command: Hillsbrad Foothills!

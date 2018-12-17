@@ -82,7 +82,6 @@ _.Instances =
 							i( 88296),	-- Waistplate of Imminent Resurrection
 							i( 88298),	-- Leggings of Hallowed Fire
 							i( 88295),	-- Dashing Strike Treads
-							i(132549),	-- Deft Strike Treads
 							i( 88300),	-- Triune Signet
 							i( 88294),	-- Flashing Steel Talisman
 						})),

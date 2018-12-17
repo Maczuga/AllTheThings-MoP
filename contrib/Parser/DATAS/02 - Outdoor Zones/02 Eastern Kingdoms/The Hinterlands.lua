@@ -56,8 +56,6 @@ _.Zones =
 							i(59262),	-- Cloudcaller Leggings
 							i(59263),	-- Belt of the Scattering Wind
 							i(59264),	-- Legguards of Caution
-							i(131570),	-- Cloudcaller Greaves
-							i(131571),	-- Cinch of the Scattering Wind
 						},
 						["qg"] = 43200,	-- Gilda Cloudcaller
 						["sourceQuests"] = { 27625, 27626 },	-- In Defense of Quel'Danil & The Highvale Documents
@@ -68,8 +66,6 @@ _.Zones =
 							i(59299),	-- Apothecary Leggings
 							i(59300),	-- Shadraspawn Belt
 							i(59301),	-- Legguards of Caution
-							i(131519),	-- Apothecary Chain Pants
-							i(131520),	-- Shadraspawn Waistguard
 						},
 						["qg"] = 42896,	-- Apothecary Surlis
 					}),
@@ -92,7 +88,6 @@ _.Zones =
 								},
 								["description"] = "You will not be able to transmog this item.",
 							}),
-							i(131545),	-- Spider Venom Legguards
 						},
 						["qg"] = 43156,	-- Fraggar Thundermantle
 						["sourceQuests"] = { 26523 },	-- All That Skitters
@@ -112,7 +107,6 @@ _.Zones =
 								},
 								["description"] = "You will not be able to transmog this item.",
 							}),
-							i(131511),	-- Spider Venom Legguards
 						},
 						["qg"] = 42622,	-- Eliza Darkgrin
 						["sourceQuests"] = { 26310 },	-- All That Skitters
@@ -157,7 +151,6 @@ _.Zones =
 							i(59274),	-- Katoom's Mask
 							i(59275),	-- Stomachache Belt
 							i(59276),	-- Snapjaw Bracers
-							i(131495),	-- Stomachache Cinch
 						},
 						["qg"] = 14740,	-- Katoom the Angler
 					}),
@@ -167,7 +160,6 @@ _.Zones =
 							i(59243),	-- Theresa's Bracers
 							i(59244),	-- Stormfeather Boots
 							i(59245),	-- Head Kickers
-							i(131536),	-- Stormfeather Treads
 						},
 						["qg"] = 43108,	-- Kerr Ironsight
 					}),
@@ -184,8 +176,6 @@ _.Zones =
 							i(59257),	-- Leggings of Secret Rituals
 							i(59258),	-- Gloves of Strange Words
 							i(59259),	-- Tablet-Bearer's Pauldrons
-							i(131546),	-- Gauntlets of Strange Words
-							i(156945),	-- Talon Hatchet
 						},
 						["qg"] = 43156,	-- Fraggar Thundermantle
 						["sourceQuests"] = { 26517 },	-- Summit of Fate
@@ -196,8 +186,6 @@ _.Zones =
 							i(59285),	-- Leggings of Secret Rituals
 							i(59286),	-- Gloves of Strange Words
 							i(59287),	-- Tablet-Bearer's Pauldrons
-							i(131518),	-- Gauntlets of Strange Words
-							i(156945),	-- Talon Hatchet 
 						},
 						["qg"] = 42642,	-- Primal Torntusk
 						["sourceQuests"] = { 26363 },	-- Summit of Fate
@@ -214,7 +202,6 @@ _.Zones =
 						["groups"] = {
 							i(59246),	-- Blood Drinker Staff
 							i(59247),	-- Soul Eater Shoulderguard
-							i(131542),	-- Soul Eater Pauldrons
 						},
 						["qg"] = 43157,	-- Doran Steelwing
 						["sourceQuests"] = { 26498 },	-- Death to the Vilebranch
@@ -223,7 +210,6 @@ _.Zones =
 						["groups"] = {
 							i(59291),	-- Blood Drinker Staff
 							i(59292),	-- Soul Eater Shoulderguard
-							i(131509),	-- Soul Eater Pauldrons
 						},
 						["qg"] = 42642,	-- Primal Torntusk
 						["sourceQuests"] = { 26307 },	-- Death to the Vilebranch
@@ -261,8 +247,6 @@ _.Zones =
 							i(59239),	-- Wand of Oomph
 							i(59240),	-- Blastbrew Hat
 							i(59241),	-- Direglob-Slimed Belt
-							i(131537),	-- Blastbrew Headgear
-							i(156946),	-- Goopy Mallet
 						},
 						["qg"] = 43109,	-- Dron Blastbrew
 						["sourceQuests"] = { 26483, 26462 },	-- Gan'dranda & The Wicked Revantusk
@@ -272,8 +256,6 @@ _.Zones =
 							i(59277),	-- Research Assistant's Wand
 							i(59278),	-- Slime Hunter Headguard
 							i(59279),	-- Skulk Rock Belt
-							i(131501),	-- Slime Hunter Headgear
-							i(156946),	-- Goopy Mallet
 						},
 						["qg"] = 42612,	-- Malcolm Fendelson
 						["sourceQuests"] = { 26238, 26263 },	-- The Savage Dwarves & Thornar Thunderclash						
@@ -290,7 +272,6 @@ _.Zones =
 							i(59236),	-- Gryphon-Down Scarf
 							i(59237),	-- Gryphon Master's Belt
 							i(59238),	-- Talon Axe
-							i(131553),	-- Gryphon Master's Chain
 						},
 						["qg"] = 5636,	-- Gryphon Master Talonaxe
 					}),
@@ -300,8 +281,6 @@ _.Zones =
 							i(59270),	-- Headguard of Aerie Peak
 							i(59271),	-- Headcover of Aerie Peak
 							i(59272),	-- Helm of Aerie Peak
-							i(131549),	-- Aerie Headgear
-							i(131550),	-- Aerie War Cap
 						},
 						["qg"] = 43298,	-- Wildhammer Lookout
 						["sourceQuests"] = { 26531 },	-- Summoning Shadra
@@ -312,8 +291,6 @@ _.Zones =
 							i(59307),	-- Virulent Headguard
 							i(59308),	-- Venomous Headcover
 							i(59309),	-- Poisoner's Helm
-							i(131526),	-- Virulent Headpiece
-							i(131527),	-- Venomous Headgear
 						},
 						["qg"] = 43299,	-- Deathstalker Lookout
 						["sourceQuests"] = { 26558 },	-- Summoning Shadra
@@ -422,8 +399,6 @@ _.Zones =
 							i(59266),	-- Gwenyth's Bracers
 							i(59267),	-- Gloves of Fanatical Zealotry
 							i(59268),	-- Greathammer of the Hinterlands
-							i(131547),	-- Gwenyth's Wristguards
-							i(131548),	-- Grips of Fanatical Zealotry
 						},
 						["qg"] = 43200,	-- Gilda Cloudcaller
 						["sourceQuests"] = { 26529 },	-- The Fang of Shadra
@@ -434,8 +409,6 @@ _.Zones =
 							i(59303),	-- Gwenyth's Bracers
 							i(59304),	-- Gloves of Fanatical Zealotry
 							i(59305),	-- Greataxe of the Hinterlands
-							i(131524),	-- Gwenyth's Wristguards
-							i(131525),	-- Grips of Fanatical Zealotry
 						},
 						["qg"] = 42898,	-- Darkcleric Marnal
 						["sourceQuests"] = { 26406 },	-- The Fang of Shadra
@@ -449,7 +422,6 @@ _.Zones =
 							i(59281),	-- Elder's Wristwraps
 							i(59282),	-- Encroaching Treads
 							i(59283),	-- Revantusk Boots
-							i(131498),	-- Encroaching Boots
 						},
 						["qg"] = 42613,	-- Elder Torntusk
 					}),

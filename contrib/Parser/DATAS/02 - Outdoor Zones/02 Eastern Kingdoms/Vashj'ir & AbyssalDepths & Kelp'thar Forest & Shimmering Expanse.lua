@@ -770,7 +770,6 @@ _.Zones =
 								dr(1.4, i(67134)), -- Dory's Finery
 							}), 
 							n(50052, { -- Burgy Blackheart
-								dr(100, i(134022))	-- Burgy Blackheart's Handsome Hat
 							}), 
 							--[[
 							n(51071, { -- Captain Florence: Does not drop collectible loot.

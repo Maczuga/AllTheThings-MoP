@@ -85,7 +85,6 @@ _.Zones =
 									i(67161),	-- Dagger of Wretched Spectres
 									i(67195),	-- Mace of the Sin'dorei Spirit
 									i(67178),	-- Blade of Wretched Spirits
-									i(157021),	-- Staff of Haunted Memory 
 									i(67211),	-- Orb of Kel'theril
 								},
 								["qg"] = 48660,	-- Sin'dorei Spirit
@@ -385,15 +384,6 @@ _.Zones =
 							},
 						}),
 					}),
-					{	-- Blackrock Depths: Jewel of the Depths
-						["questID"] = 44952,
-						["groups"] = {
-							i(142357),	-- Plans: Dawn's Edge
-						},
-						["qg"] = 11184,	-- Wixxrak
-						["coord"] = { 60.2, 50.2 },
-						["requireSkill"] = 2477, -- Classic Blacksmithing
-					},
 					{	-- Blasted Lands: The Other Side of the World
 						["questID"] = 28857,
 						["qg"] = 11118,	-- Innkeeper Vizzie

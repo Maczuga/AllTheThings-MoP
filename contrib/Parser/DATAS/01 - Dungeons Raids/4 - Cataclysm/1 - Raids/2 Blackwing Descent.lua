@@ -51,7 +51,6 @@ _.Instances =
 									ach(5307, {	-- Achieve-a-tron
 										["description"] = "Achievement can be completed on Normal or Heroic mode."
 									}),
-									i(152966),	-- Rought-Hewn Remote (PET!)
 									i( 59122),	-- Organic Lifeform Inverter
 									i( 59219),	-- Power Generator Hood
 									i( 59218),	-- Passive Resistor Spaulders
@@ -72,7 +71,6 @@ _.Instances =
 									ach(5310, {	-- Aberrant Behavior
 										["description"] = "Achievement can be completed on Normal or Heroic mode."
 									}),
-									i(152967),	-- Experiment-In-A-Jar (PET!)
 									i( 59347),	-- Mace of Acrid Death
 									i( 59344),	-- Dragon Bone Warhelm
 									i( 59348),	-- Cloak of Biting Chill
@@ -158,8 +156,6 @@ _.Instances =
 										i(60351),	-- Magma Plated Faceguard
 										i(60243),	-- Firelord's Hood
 									}),
-									i(138802),	-- Illusion: Power Torrent
-									i(152968),	-- Shadowy Pile of Bones (PET!)
 									i( 63679),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
 									i( 59459),	-- Andoros, Fist of the Dragon King
 									i( 59443),	-- Crul'korak, the Lightning's Arc
@@ -173,7 +169,6 @@ _.Instances =
 									i( 59450),	-- Belt of the Blackhand
 									i( 59321),	-- Belt of the Nightmare
 									i( 59441),	-- Prestor's Talisman of Machination
-									i(122195),	-- Music Roll: Legends of Azeroth		
 								},
 								["creatureID"] = 41376,
 							}),
@@ -234,7 +229,6 @@ _.Instances =
 									ach(5307, {	-- Achieve-a-tron
 										["description"] = "Achievement can be completed on Normal or Heroic mode."
 									}),
-									i(152966),	-- Rought-Hewn Remote (PET!)
 									i( 65081),	-- Organic Lifeform Inverter
 									i( 65077),	-- Power Generator Hood
 									i( 65078),	-- Passive Resistor Spaulders
@@ -256,7 +250,6 @@ _.Instances =
 									ach(5310, {	-- Aberrant Behavior
 										["description"] = "Achievement can be completed on Normal or Heroic mode."
 									}),
-									i(152967),	-- Experiment-In-A-Jar (PET!)
 									i( 67428, {	-- Leggings of the Forlorn Conqueror
 										i(65261),	-- Shadowflame Leggings
 										i(65217),	-- Reinforced Sapphirium Legplates
@@ -372,8 +365,6 @@ _.Instances =
 										i(65186),	-- Magma Plated Faceguard
 										i(65210)	-- Firelord's Hood
 									}),
-									i(138802),	-- Illusion: Power Torrent
-									i(152968),	-- Shadowy Pile of Bones (PET!)
 									i( 65003),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
 									i( 65017),	-- Andoros, Fist of the Dragon King
 									i( 65024),	-- Crul'korak, the Lightning's Arc
@@ -387,7 +378,6 @@ _.Instances =
 									i( 65022),	-- Belt of the Blackhand
 									i( 65057),	-- Belt of the Nightmare
 									i( 65026),	-- Prestor's Talisman of Machination
-									i(122195),	-- Music Roll: Legends of Azeroth
 								},
 								["creatureID"] = 41376,
 							}),

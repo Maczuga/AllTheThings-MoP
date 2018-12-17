@@ -66,7 +66,6 @@ _.Zones =
 							i(24108),	-- Ravager Hide Leggings
 							i(24107),	-- Ravager Chitin Tunic
 							i(24109),	-- Thick Ravager Belt
-							i(131257),	-- Ravager Scale Pants
 						},
 						["qg"] = 17442,	-- Moordo
 						["coord"] = { 44.8, 23.8 },
@@ -127,7 +126,6 @@ _.Zones =
 							i(24440),	-- Heavy Plate Leggings
 							i(24439),	-- Savage Leggings
 							i(24438),	-- Fur Covered Robe
-							i(131258),	-- Fierce Britches
 						},
 						["qg"] = 17475,	-- Murgurgula
 						["coords"] = {	-- Pats up and down
@@ -258,7 +256,6 @@ _.Zones =
 						["groups"] = {
 							i(24112),	-- Kurkenstoks
 							i(24111),	-- Kurken Hide Jerkin
-							i(131259),	-- Kurken Padded Chainmail
 						},
 						["qg"] = 17443,	-- Kurz the Revelator
 						["coord"] = { 46.8, 22.2 },

@@ -117,7 +117,6 @@ _.Instances =
 					cr(74435, e(1143, {	-- Mushlump
 						i( 10772),	-- Glutton's Cleaver
 						i( 10774),	-- Fleshhide Shoulders
-						i(151453),	-- Grungy Necromantic Ring
 					})),
 					cr(74875, e(1146, {	-- Death Speaker Blackthorn
 						i( 10758),	-- X'caliboar
@@ -125,7 +124,6 @@ _.Instances =
 						i( 10767),	-- Savage Boar's Guard
 						i( 10760),	-- Swine Fists
 						i( 10768),	-- Boar Champion's Belt
-						i(151454),	-- Splinterbone Sabatons
 					})),
 					cr(74434, e(1141, {	-- Amnennar the Coldbringer
 						ach(636),	-- Razorfen Downs

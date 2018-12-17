@@ -110,7 +110,6 @@ _.Instances =
 							i(37682),	-- Bindings of Dark Will
 							i(37088),	-- Spiked Metal Cilice
 							i(37095),	-- Waistband of the Thuzadin
-							i(157563), 	-- Freshly Sewn Leggings
 						})),
 						cr(26532, e(613, {	-- Chrono-Lord Epoch
 							i(37099),	-- Sempiternal Staff
@@ -165,7 +164,6 @@ _.Instances =
 								i(37682),	-- Bindings of Dark Will
 								i(37088),	-- Spiked Metal Cilice
 								i(37095),	-- Waistband of the Thuzadin
-								i(157563), 	-- Freshly Sewn Leggings
 							})),
 							cr(26532, e(613, {	-- Chrono-Lord Epoch
 								i(37099),	-- Sempiternal Staff

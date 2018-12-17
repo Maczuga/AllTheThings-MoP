@@ -1434,7 +1434,6 @@ _.Instances =
 					}),
 					d(  3, {	-- 10-Player (Normal)
 						cr(36612, e(1624, {	-- Lord Marrowgar
-							i(142094),	-- Fragment of Frozen Bone (PET!)
 							i( 50761),	-- Citadel Enforcer's Claymore
 							i( 50759),	-- Bone Warden's Splitter
 							i( 50760),	-- Bonebreaker Scepter
@@ -1483,7 +1482,6 @@ _.Instances =
 							},
 						}),
 						cr(37813, e(1628, {	-- Deathbringer Saurfang
-							i(142095),	-- Remains of a Blood Beast (PET!)
 							i( 50805),	-- Mag'hari Chieftain's Staff
 							i( 50798),	-- Ramaladni's Blade of Culling
 							i( 50807),	-- Thaumaturge's Crackling Cowl
@@ -1535,7 +1533,6 @@ _.Instances =
 							i(51001),	-- Rotface's Rupturing Ring
 						})),
 						cr(36678, e(1631, {	-- Professor Putricide
-							i(142096),	-- Putricide's Alchemy Supplies (PET!)
 							i( 51011),	-- Flesh-Carving Scalpel
 							i( 51010),	-- The Facelifter
 							i( 51013),	-- Discarded Bag of Entrails
@@ -1592,7 +1589,6 @@ _.Instances =
 							i(51566),	-- Legguards of the Twisted Dream
 						})),
 						cr(36853, e(1635, {	-- Sindragosa
-							i(142097),	-- Skull of a Frozen Whelp (PET!)
 							i( 51788),	-- Bleak Coldarra Carver
 							i( 51784),	-- Splintershard
 							i( 51791),	-- Lost Pavise of the Blue Flight
@@ -1607,8 +1603,6 @@ _.Instances =
 							i( 51785),	-- Wyrmwing Treads
 						})),
 						cr(36597, e(1636, {	-- The Lich King
-							i(142098),	-- Drudge Remains (PET!)
-							i(138955),	-- Illusion: Rune of Razorice
 							i( 51799),	-- Halion, Staff of Forgotten Love
 							i( 51797),	-- Tainted Twig of Nordrassil
 							i( 51796),	-- Warmace of Menethil
@@ -1618,7 +1612,6 @@ _.Instances =
 							i( 51795),	-- Troggbane, Axe of the Frostborne King
 							i( 51798),	-- Valius, Gavel of the Lightbringer
 							i( 51802),	-- Windrunner's Heartseeker
-							i(122229),	-- Music Roll: Invincible
 						})),
 					}),
 					d(  5, {	-- 10-Player (Heroic)
@@ -1735,7 +1728,6 @@ _.Instances =
 							},
 						}),
 						cr(36612, e(1624, {	-- Lord Marrowgar
-							i(142094),	-- Fragment of Frozen Bone (PET!)
 							i( 51936),	-- Citadel Enforcer's Claymore
 							i( 51938),	-- Bone Warden's Splitter
 							i( 51937),	-- Bonebreaker Scepter
@@ -1787,7 +1779,6 @@ _.Instances =
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142095),	-- Remains of a Blood Beast (PET!)
 							i( 51898),	-- Mag'hari Chieftain's Staff
 							i( 51905),	-- Ramaladni's Blade of Culling
 							i( 51896),	-- Thaumaturge's Crackling Cowl
@@ -1842,7 +1833,6 @@ _.Instances =
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142096),	-- Putricide's Alchemy Supplies (PET!)
 							i( 51868),	-- Flesh-Carving Scalpel
 							i( 51869),	-- The Facelifter
 							i( 51866),	-- Discarded Bag of Entrails
@@ -1905,7 +1895,6 @@ _.Instances =
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142097),	-- Skull of a Frozen Whelp (PET!)
 							i( 51815),	-- Bleak Coldarra Carver
 							i( 51819),	-- Splintershard
 							i( 51812),	-- Lost Pavise of the Blue Flight
@@ -1924,8 +1913,6 @@ _.Instances =
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142099),	-- Call of the Frozen Blade (PET!)
-							i(138955),	-- Illusion: Rune of Razorice
 							i( 51943),	-- Halion, Staff of Forgotten Love
 							i( 51945),	-- Tainted Twig of Nordrassil
 							i( 51946),	-- Warmace of Menethil
@@ -1935,7 +1922,6 @@ _.Instances =
 							i( 51947),	-- Troggbane, Axe of the Frostborne King
 							i( 51944),	-- Valius, Gavel of the Lightbringer
 							i( 51940),	-- Windrunner's Heartseeker
-							i(122229),	-- Music Roll: Invincible
 						})),
 					}),
 					d(  4, {	-- 25-Player (Normal)
@@ -2052,7 +2038,6 @@ _.Instances =
 							},
 						}),
 						cr(36612, e(1624, {	-- Lord Marrowgar
-							i(142094),	-- Fragment of Frozen Bone (PET!)
 							i( 50415),	-- Bryntroll, the Bone Arbiter
 							i( 49968),	-- Frozen Bonespike
 							i( 49976),	-- Bulwark of Smouldering Steel
@@ -2113,7 +2098,6 @@ _.Instances =
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142095),	-- Remains of a Blood Beast (PET!)
 							i( 50412),	-- Bloodvenom Blade
 							i( 50014),	-- Greatcloak of the Turned Champion
 							i( 50333),	-- Toskk's Maximized Wristguards
@@ -2181,7 +2165,6 @@ _.Instances =
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142096),	-- Putricide's Alchemy Supplies (PET!)
 							i( 50179),	-- Last Word
 							i( 50068),	-- Rigormortis
 							i( 50067),	-- Astrylian's Sutured Cinch
@@ -2217,7 +2200,6 @@ _.Instances =
 							i(50354),	-- Bauble of True Blood
 						})),
 						cr(36789, e(1634, {	-- Valithria Dreamwalker
-							i(138832),	-- Illusion: Earthliving
 							i( 50183),	-- Lungbreaker
 							i( 50472),	-- Nightmare Ender
 							i( 50202),	-- Snowstorm Helm
@@ -2236,7 +2218,6 @@ _.Instances =
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142097),	-- Skull of a Frozen Whelp (PET!)
 							i( 50423),	-- Sundial of Eternal Dusk
 							i( 50421),	-- Sindragosa's Cruel Claw
 							i( 50424),	-- Memory of Malygos
@@ -2248,8 +2229,6 @@ _.Instances =
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142098),	-- Drudge Remains (PET!)
-							i(138955),	-- Illusion: Rune of Razorice
 							i( 50429),	-- Archus, Greatstaff of Antonidas
 							i( 50070),	-- Glorenzelg, High-Blade of the Silver Hand
 							i( 50425),	-- Oathbinder, Charge of the Ranger-General
@@ -2259,7 +2238,6 @@ _.Instances =
 							i( 49997),	-- Mithrios, Bronzebeard's Legacy
 							i( 50428),	-- Royal Scepter of Terenas II
 							i( 49981),	-- Fal'inrush, Defender of Quel'thalas
-							i(122229),	-- Music Roll: Invincible
 						})),
 					}),
 					d(  6, {	-- 25-Player (Heroic)
@@ -2477,7 +2455,6 @@ _.Instances =
 							},
 						}),
 						cr(36612, e(1624, {	-- Lord Marrowgar
-							i(142094),	-- Fragment of Frozen Bone (PET!)
 							i( 50709),	-- Bryntroll, the Bone Arbiter
 							i( 50608),	-- Frozen Bonespike
 							i( 50616),	-- Bulwark of Smouldering Steel
@@ -2541,7 +2518,6 @@ _.Instances =
 							i( 52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
 							i( 52028),	-- Vanquisher's Mark of Sanctification (Heroic) 
-							i(142095),	-- Remains of a Blood Beast (PET!)
 							i( 50672),	-- Bloodvenom Blade
 							i( 50668),	-- Greatcloak of the Turned Champion
 							i( 50670),	-- Toskk's Maximized Wristguards
@@ -2612,7 +2588,6 @@ _.Instances =
 							i( 52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
 							i( 52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i(142096),	-- Putricide's Alchemy Supplies (PET!)
 							i( 50708),	-- Last Word
 							i( 50704),	-- Rigormortis
 							i( 50707),	-- Astrylian's Sutured Cinch
@@ -2651,7 +2626,6 @@ _.Instances =
 							i(50726),	-- Bauble of True Blood
 						})),
 						cr(36789, e(1634, {	-- Valithria Dreamwalker
-							i(138832),	-- Illusion: Earthliving
 							i( 50621),	-- Lungbreaker
 							i( 50631),	-- Nightmare Ender
 							i( 50626),	-- Snowstorm Helm
@@ -2675,7 +2649,6 @@ _.Instances =
 							i( 52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
 							i( 52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i(142097),	-- Skull of a Frozen Whelp (PET!)
 							i( 50635),	-- Sundial of Eternal Dusk
 							i( 50633),	-- Sindragosa's Cruel Claw
 							i( 50636),	-- Memory of Malygos
@@ -2691,8 +2664,6 @@ _.Instances =
 							i( 52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
 							i( 52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i(142099),	-- Call of the Frozen Blade (PET!)
-							i(138955),	-- Illusion: Rune of Razorice
 							i( 50731),	-- Archus, Greatstaff of Antonidas
 							i( 50730),	-- Glorenzelg, High-Blade of the Silver Hand
 							i( 50735),	-- Oathbinder, Charge of the Ranger-General
@@ -2702,7 +2673,6 @@ _.Instances =
 							i( 50738),	-- Mithrios, Bronzebeard's Legacy
 							i( 50734),	-- Royal Scepter of Terenas II
 							i( 50733),	-- Fal'inrush, Defender of Quel'thalas
-							i(122229),	-- Music Roll: Invincible
 						})),
 					}),
 				},

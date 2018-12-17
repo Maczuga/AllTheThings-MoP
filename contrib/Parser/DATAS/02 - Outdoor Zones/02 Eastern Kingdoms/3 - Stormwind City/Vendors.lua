@@ -2035,33 +2035,6 @@ _.Zones =
 									i(8489),	-- Cat Carrier (White Kitten)
 								},
 							},
-							{	-- Liliana Emberfrost <Honor Heirlooms>
-								["npcID"] = 52030,	-- Liliana Emberfrost <Honor Heirlooms>
-								["coord"] = { 74.41, 67.59 },
-								["g"] = {
-									-- Weapons
-									i(122369),	-- Battleworn Thrash Blade
-									i(122368),	-- Grand Staff of Jordan
-									i(122365),	-- Reforged Truesilver Champion
-									i(122364),	-- Sharpened Scarlet Kris
-									i(122367),	-- The Blessed Hammer of Grace
-									i(122366),	-- Upgraded Dwarven Hand Cannon
-									-- Shoulders
-									i(122375),	-- Aged Paundrons of The Five Thunders
-									i(122376),	-- Exceptional Stormshroud Shoulders
-									i(122378),	-- Exquisite Sunderseer Mantle
-									i(122377),	-- Lasting Feralheart Spaulders
-									i(122373),	-- Pristine Lightforge Spaulders
-									i(122374),	-- Prized Beastmaster's Mantle
-									i(122372),	-- Strengthened Stockade Pauldrons
-									-- Trinkets
-									i(122371),	-- Inherited Insignia of the Alliance
-									i(122530),	-- Inherited Mark of Tyranny
-									-- Consumable
-									i(122338),	-- Ancient Heirloom Armor Casing
-									i(122339),	-- Ancient Heirloom Scabbard
-								},
-							},
 							{	-- Lisbeth Schneider <Clothier>
 								["npcID"] = 1299,	-- Lisbeth Schneider <Clothier>
 								["coord"] = { 58.18, 66.96 },
@@ -2361,14 +2334,7 @@ _.Zones =
 									i(103533, {	-- Vicious Saddle
 										i(70909),	-- Reins of the Vicious War Steed
 										i(102514),	-- Reins of the Vicious Warsaber
-										i(140353),	-- Vicious Gilnean Warhorse
-										i(142234),	-- Vicious War Bear
-										i(140350),	-- Vicious War Elekk
-										i(152870),	-- Vicious War Fox
-										i(142237),	-- Vicious War Lion
-										i(124089),	-- Vicious War Mechanostrider
 										i(116777),	-- Vicious War Ram
-										i(143648),	-- Vicious War Turtle
 									}),
 								}),
 							},
@@ -2797,37 +2763,13 @@ _.Zones =
 												},
 											})),
 											]]--
-											ach(6626, {	-- Working Better as a Team
-												["collectible"] = false,
-												["groups"] = {
-													i(127011),	-- Pristine Lightforged Legplates - Honored
-													i(122252),	-- Tarnished Leggings of Destruction - Honored
-													i(122251),	-- Polished Legplates of Valor - Honored
-													i(122254),	-- Stained Shadowcraft Pants - Honored
-													i(122253),	-- Mystical Kilt of Elements - Honored
-													i(122256),	-- Tattered Dreadmist Leggings - Honored
-													i(122255),	-- Preened Wildfeather Leggings - Honored
-													i(122264),	-- Burnished Legplates of Might - Honored
-												},
-											}),
 											--h(i(67107)),	-- Reins of the Kor'kron Annihilator - Exalted
 											a(i(62298)),	-- Reins of the Golden King - Exalted
 											i(69209),	-- Illustrious Guild Tabard - Friendly
 											i(69210),	-- Renowned Guild Tabard - Honored
 											a(i(63206)),	-- Wrap of Unity - Honored
 											--h(i(63207)),	-- Wrap of Unity - Honored
-											i(122266),	-- Ripped Sandstorm Cloak - Friendly
-											i(122260),	-- Worn Stoneskin Gargoyle Cape - Friendly
-											i(122261),	-- Inherited Cape of the Black Baron - Friendly
-											i(122262),	-- Ancient Bloodmoon Cloak - Friendly
-											i(122263),	-- Burnished Helm of Might - Friendly
-											i(122250),	-- Tattered Dreadmist Mask - Friendly
-											i(122249),	-- Preened Tribal War Feathers - Friendly
-											i(122248),	-- Stained Shadowcraft Cap - Friendly 
-											i(122247),	-- Mystical Coif of Elements - Friendly
-											i(122246),	-- Tarnished Raging Berserker's Helm - Friendly
-											i(127012),	-- Pristine Lightforged Helm - Friendly
-											i(122245),	-- Polished Helm of Valor - Friendly
+
 										},
 									}),
 								},

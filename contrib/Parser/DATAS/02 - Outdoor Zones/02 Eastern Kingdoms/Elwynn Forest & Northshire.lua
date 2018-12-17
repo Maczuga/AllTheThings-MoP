@@ -70,8 +70,6 @@ _.Zones =
 							i(1158),
 							i(57248),
 							i(57521),
-							i(156980), -- Solid Wooden Club
-							i(156981), -- Field Tested Spear 
 						}),
 						qa(26152),	-- Wanted: James Clark
 					}),
@@ -79,7 +77,6 @@ _.Zones =
 						i(1171),
 						i(2237),
 						i(57520),
-						i(131194),
 					})),
 --[[					
 					qg(620, q(3861)),	-- CLUCK!
@@ -95,7 +92,6 @@ _.Zones =
 						i(983),
 						i(57405),
 						i(57406),
-						i(131195),
 						i(2575),
 					})),
 --[[					
@@ -118,7 +114,6 @@ _.Zones =
 						i(1183),	-- Elastic Wristguards
 						i(57522),	-- McCree's Sparring Gloves
 						i(1360),	-- Stormwind Plate Gloves
-						i(131198),	-- Wrangling Grips
 						i(57251),	-- "Collecting" Bag
 					})),
 --[[					
@@ -132,7 +127,6 @@ _.Zones =
 						i(57523),
 						i(57524),
 						i(57525),
-						i(131193),
 					})),
 --[[					
 					o(56, {	-- Rolf's corpse
@@ -143,7 +137,6 @@ _.Zones =
 						i(57527),
 						i(2238),
 						i(57526),
-						i(131192),
 						un(2, i(2249)),	-- Militia Buckler
 					})),
 --[[					
@@ -171,7 +164,6 @@ _.Zones =
 							i(  6085),	-- Footman Tunic
 							i(  6084),	-- Stormwind Guard Leggings
 							i( 60219),	-- Balanced Spell Staff
-							i(131199),	-- Lion Guard Chainmail
 							un(2, i(6215)),	-- Balanced Fighting Stick
 						}),
 					}),
@@ -332,22 +324,6 @@ _.Zones =
 						i(6325),	-- Recipe: Brilliant Smallfish
 						i(6328),	-- Recipe: Longjaw Mud Snapper
 					})),
-				}),
-				n(-74, {	-- Zone Wide
-					sz(776,8, { -- Eastvale Logging Camp
-						{	-- The Battle For Broken Shore
-							["questID"] = 42740,
-							["groups"] = {
-								i(139389, { -- Charred Locket
-									["groups"] = {
-										i(139391), -- Alaina's Bonnet
-									},
-									["description"] = "In order to get this you must do the scenario 'Battle for Broken Shore' and on Stage 6 search for a pile of ash titled 'Ashes of a Fallen Crusader' to retrieve the item.  You will then go to 85, 67 in Elywnn Forest located at the Eastvale Logging Camp.  From there you will go to the bedroom on the second floor to talk to Alaina.  After talking to her leave (log or swap zones) and then come back to her to retrieve the item."
-								}),
-							},
-							["races"] = ALLIANCE_ONLY,
-						},
-					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

@@ -181,7 +181,6 @@ _.Zones =
 										i( 63176),	-- Well Cushioned Boots
 										i( 63175),	-- Hieronymus' Belt
 										i( 63174),	-- Watcher's Spear
-										i(157008),	-- Blam-Hatchet
 									},
 									["sourceQuests"] = { 27912 },	-- The Titans' Trove
 								}),
@@ -313,8 +312,6 @@ _.Zones =
 									i( 63193),	-- Theldurin's Fist
 									i( 63192),  -- Tosselwrench's Shrinker
 									i( 63191),	-- Martek's Knife
-									i(156961),	-- Martek's Stick of Truthiness
-									i(156962),	-- Genuine Deathwing Fang
 								},
 								["qg"] = 4618,	-- Martek the Exiled
 								["sourceQuests"] = { 27714 },	-- The Day that Deathwing Came: The Real Story

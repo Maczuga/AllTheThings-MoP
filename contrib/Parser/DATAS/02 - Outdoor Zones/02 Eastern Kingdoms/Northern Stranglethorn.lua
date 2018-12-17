@@ -734,8 +734,6 @@ _.Zones =
 						i(61064),	-- Electrostatic Legguards
 						i(61063),	-- Discarded Troll Leggings
 						i(61062),	-- Juju Belt
-						i(131595),	-- Discarded Troll Greaves
-						i(156989),	-- Gan'zulah's Headchopper
 					})),
 --[[
 					qg(53151, qa(29155)),	-- A Shiny Reward (add'l QG 2496)
@@ -747,13 +745,11 @@ _.Zones =
 						i(61093),	-- Junglewalker Boots
 						i(61092),	-- Monnions of Raw Power
 						i(61091),	-- Blade of Exotic Magic
-						i(131255),	-- Shouldersguards of Raw Power
 					})),
 					qg(739, qa(26732, { -- Bad Medicine
 						i(61054),	-- Nimetz's Pauldrons
 						i(61053),	-- Cord of the Ascetic
 						i(61052),	-- Missionary's Leggings
-						i(131591),	-- Cinch of the Ascetic
 					})),
 --[[
 					qg(52234, qa(29151)),	-- Bad Supplies
@@ -763,20 +759,17 @@ _.Zones =
 						i(61079),	-- Belt of the High Shaman
 						i(61078),	-- Thaalia's Slippers
 						i(61077),	-- Jingle Spirits' Embrace
-						i(131599),	-- Waistguard of the High Shaman
 					})),
 					qg(42812, qh(26362, { -- Be Raptor
 						i(61122),	-- Belt of the High Shaman
 						i(61121),	-- Hu'rula's Slippers
 						i(61120),	-- Jungle Spirits' Embrace
-						i(131515),	-- Waistguard of the High Shaman
 					})),
 					qg(715, q(208, { -- Big Game Hunter
 						i(61127),	-- Gloves of the Jungle King
 						i(61126),	-- Mantle of the White Tiger
 						i(61125),	-- Nesingwary's Sash
 						i(61124),	-- Bangalash's Claw
-						i(131202),	-- Monnion of the White Tiger
 						un(2, i(17686)),	-- Master Hunter's Bow
 						i(17687),	-- Master Hunter's Rifle
 					})),
@@ -795,14 +788,12 @@ _.Zones =
 						i(61066),	-- Well Crafted Leather Britches
 						i(61065),	-- Soft Cotton Armbands
 						i(61067),	-- Rebel Breastplate
-						i(131594),	-- Well Crafted Chain Britches
 					})),
 --[[
 					qg(52996, qh(29235)),	-- Defend Grom'gol
 					qg(52410, qa(29131)),	-- Defend the Rebel Camp
 --]]
 					qg(2495, q(26345, { -- Excelsior
-						i(131892),	-- Excelsior Footwear
 						i(61106),	-- Excelsior Waders
 					})),
 					qg(44018, qa(26944)),	-- Exploring Gnomeregan (mutually exclusive with 26943 "Home Sweet Gnome")
@@ -819,7 +810,6 @@ _.Zones =
 						i(61090),	-- Head Inspector's Gloves
 						i(61089),	-- Palm Frond Shoulderpads
 						i(61088),	-- Junglestrider Sandals
-						i(131506),	-- Palm Frond Pauldrons
 					})),
 --[[
 					qg(52234, qa(29213)),	-- How's the Hunter Holding Up?
@@ -870,7 +860,6 @@ _.Zones =
 					qg(715, q(197, { -- Raptor Mastery
 						i(61111),	-- Belt of the Raptor
 						i(61110),	-- Tethis' Skull
-						i(131201),	-- Scale-Cord of the Raptor
 						un(2, i(4119)),	-- Raptor Hunter Tunic
 					})),
 --[[
@@ -884,13 +873,11 @@ _.Zones =
 						i(61058),	-- Tsul'kalu's Strikers
 						i(61057),	-- Mahamba's Caress
 						i(61056),	-- Bloodscalp Sandals
-						i(131593),	-- Mahamba's Pauldrons
 					})),
 					qg(2519, qh(26305, { -- Saving Yenniku
 						i(61102),	-- Nimboya's Legguards
 						i(61101),	-- Weavers of the Unending Tale
 						i(61100),	-- Stone Etcher
-						i(131508),	-- Linkers of the Unending Tale
 					})),
 --[[
 					qg(42812, qh(26359)),	-- See Raptor
@@ -914,14 +901,11 @@ _.Zones =
 							i(61099),	-- Slaver's Plate
 							i(61098),	-- Balia'mah Leggings
 							i(61097),	-- Ziata'jai Bracers
-							i(131507),	-- Balia'mah Chain Pants
 						}),
 						qh(26330, { -- Who's a Big Troll
 							i(61096),	-- Electrostatic Legguards
 							i(61095),	-- Discarded Troll Leggings
 							i(61094),	-- Juju Belt
-							i(131513),	-- Discarded Troll Greaves
-							i(156989), -- Gan'zulah's Headchopper
 						}),
 					}),
 --[[
@@ -931,7 +915,6 @@ _.Zones =
 					qg(469, qa(26737, { -- Stopping Kurzen's Legacy
 						i(61051),	-- Guerilla Breastplate
 						i(61050),	-- Expedition Scouting Gear
-						i(131592),	-- Expedition Scout's Hauberk
 					})),
 --[[
 					qg(2495, q(26343)),	-- Supply and Demand
@@ -941,20 +924,17 @@ _.Zones =
 						i(61061),	-- Junglewalker Boots
 						i(61060),	-- Salt-Cured Monnions
 						i(61059),	-- Emerine's Blade
-						i(131590),	-- Salt-Cured Mantle
 					})),
 --					qg(2464, qh(26280)),	-- The Defense of Grom'gol: Murloc Menace
 					qg(2464, qh(26279, { -- The Defense of Grom'gol: Ogre Oppression
 						i(61083),	-- Smashing Breastplate
 						i(61082),	-- Mizjah Vest
-						i(131499),	-- Mizjah Hauberk
 					})),
 --					qg(2464, qh(26278)),	-- The Defense of Grom'gol: Raptor Risk
 					qg(2464, qh(26281, { -- The Defense of Grom'gol: Trollish Thievery
 						i(61086),	-- Pitiless Pauldrons
 						i(61085),	-- Bal'lal Belt
 						i(61084),	-- Unforgiving Pantaloons
-						i(131500),	-- Bal'lal Waistguard
 					})),
 --[[
 					qg(469, qa(26735)),	-- The Fate of Kurzen
@@ -967,7 +947,6 @@ _.Zones =
 						i(61070),	-- Fort Livingston Legguards
 						i(61069),	-- Eye-Plucker Gloves
 						i(61068),	-- Wand of Imagination
-						i(131603),	-- Eye-Plucker Grips
 					})),
 --[[
 					qg(2519, qh(26303)),	-- The Mind's Eye
@@ -984,7 +963,6 @@ _.Zones =
 						i(61115),	-- Paws of Sin'Dall
 						i(61114),	-- Cat Lover's Vest
 						i(61113),	-- Sin'Dall's Femur
-						i(131200),	-- Footpads of Sin'Dall
 						un(2, i(4107)),	-- Tiger Hunter Gloves
 					})),
 --[[
@@ -1001,16 +979,11 @@ _.Zones =
 						i(61073),	-- Spare Metal Pauldrons
 						i(61072),	-- Bartered Bracers
 						i(61071),	-- Krazek's Oven Mitts
-						i(131598),	-- Bartered Wristguards
-						i(156990),	-- Crystal-Chipping Mallet
-						i(156991),	-- Shredder Arm Extension
 					})),
 					qg(42814, qh(26403, { -- Venture Company Mining
 						i(61105),	-- Scrap Metal Pauldrons
 						i(61104),	-- Skeezy Bracers
 						i(61103),	-- Junglepicker Gloves
-						i(131521),	-- Skeezy Wraps
-						i(156990),	-- Crystal-Chipping Mallet
 					})),
 --[[
 					qg(52234, qa(29150)),	-- Voodoo Zombies
@@ -1025,15 +998,11 @@ _.Zones =
 						i(61076),	-- Pauldrons of the Wayward Tribe
 						i(61075),	-- Breastplate of Zul'Mamwe
 						i(61074),	-- Irradiated Faux Croc' Bracers
-						i(131601),	-- Hauberk of Zul'Mamwe
-						i(131602),	-- Irradiated Faux Croc' Wristguards
 					})),
 					qg(42811, qh(26405, { -- Zul'Mamwe Mambo
 						i(61119),	-- Pauldrons of the Wayward Tribe
 						i(61118),	-- Breastplate of Zul'Mamwe
 						i(61117),	-- Irradiated Faux Croc' Bracers
-						i(131522),	-- Hauberk of Zul'Mamwe
-						i(131523),	-- Irradiated Faux Croc' Wristguards
 					})),
 				}),
 				n(-16,  {	-- Rares

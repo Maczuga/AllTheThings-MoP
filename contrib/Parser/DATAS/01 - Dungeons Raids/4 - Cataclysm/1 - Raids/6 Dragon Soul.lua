@@ -264,7 +264,6 @@ _.Instances =
 										i(77969),	-- Seal of the Signs [Dropped for Lucetia]
 									})),
 									cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-										i(152979),	-- Puddle of Black Liquid (PET!)
 										i(78409),	-- Experimental Specimen Slicer
 										i(78407),	-- Spire of Coagulated Globules
 										i(78410),	-- Scalpel of Unrelenting Agony (not listed on drop table on wowhead)
@@ -314,7 +313,6 @@ _.Instances =
 										i(77973),	-- Starcatcher Compass
 									})),
 									cr(53879, e(318, {	-- Spine of Deathwing
-										i(152980),	-- Elementium Back Plate (PET!)
 										i(78470),	-- Backbreaker Spaulders
 										i(78466),	-- Gloves of Liquid Smoke
 										i(78469),	-- Gauntlets of the Golden Thorn
@@ -325,10 +323,8 @@ _.Instances =
 										i(77978),	-- Resolve of Undying
 										i(77975),	-- Will of Unbinding
 										i(77974),	-- Wrath of Unchaining
-										i(122198),	-- Music Roll: The Shattering [Note: Crieve got on stream]
 									})),
 									cr(56173, e(333, {	-- Madness of Deathwing
-										i(152981),	-- Severed Tentacle (PET!)
 										i(78482),	-- Kiril, Fury of Beasts
 										i(78487),	-- Gurthalak, Voice of the Deeps
 										i(78483),	-- Blade of the Unmaker
@@ -633,7 +629,6 @@ _.Instances =
 									i(76214),	-- Time Lord's Leggings
 									i(77026),	-- Blackfang Battleweave Legguards
 								}),
-								i(152979),	-- Puddle of Black Liquid (PET!)
 								i(77217),	-- Experimental Specimen Slicer
 								i(77218),	-- Spire of Coagulated Globules
 								i(77219),	-- Scalpel of Unrelenting Agony
@@ -752,7 +747,6 @@ _.Instances =
 								i(77202),	-- Starcatcher Compass
 							})),
 							cr(53879, e(318, {	-- Spine of Deathwing
-								i(152980),	-- Elementium Back Plate (PET!)
 								i(77236),	-- Backbreaker Spaulders
 								i(77235),	-- Gauntlets of the Golden Thorn
 								i(78357),	-- Gloves of Liquid Smoke
@@ -766,7 +760,6 @@ _.Instances =
 							})),
 							cr(56173, e(333, {	-- Madness of Deathwing
 								i(77067),	-- Reins of the Blazing Drake (MOUNT!)
-								i(152981),	-- Severed Tentacle (PET)!
 								i(77191),	-- Gurthalak, Voice of the Deeps
 								i(77194),	-- Kiril, Fury of Beasts
 								i(77190),	-- Ti'tahk, the Steps of Time
@@ -776,7 +769,6 @@ _.Instances =
 								i(77195),	-- Rathrak, the Poisonous Mind
 								i(77193),	-- Souldrinker
 								i(78359),	-- Vishanka, Jaws of the Earth
-								i(122198),	-- Music Roll: The Shattering
 							})),
 						},
 					}),
@@ -1077,7 +1069,6 @@ _.Instances =
 									i(78720),	-- Time Lord's Leggings
 									i(78708),	-- Blackfang Battleweave Legguards
 								}),
-								i(152979),	-- Puddle of Black Liquid (PET!)
 								i(78403),	-- Experimental Specimen Slicer
 								i(78401),	-- Spire of Coagulated Globules
 								i(78404),	-- Scalpel of Unrelenting Agony
@@ -1196,7 +1187,6 @@ _.Instances =
 								i(77993),	-- Starcatcher Compass
 							})),
 							cr(53879, e(318, {	-- Spine of Deathwing
-								i(152980),	-- Elementium Back Plate (PET!)
 								i(78465),	-- Backbreaker Spaulders
 								i(78464),	-- Gauntlets of the Golden Thorn
 								i(78461),	-- Gloves of Liquid Smoke
@@ -1211,7 +1201,6 @@ _.Instances =
 							cr(56173, e(333, {	-- Madness of Deathwing
 								i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
 								i(77067),	-- Reins of the Blazing Drake (MOUNT!)
-								i(152981),	-- Severed Tentacle (PET!)
 								i(78478),	-- Gurthalak, Voice of the Deeps
 								i(78473),	-- Kiril, Fury of Beasts
 								i(78477),	-- Ti'tahk, the Steps of Time
@@ -1221,7 +1210,6 @@ _.Instances =
 								i(78475),	-- Rathrak, the Poisonous Mind
 								i(78479),	-- Souldrinker
 								i(78471),	-- Vishanka, Jaws of the Earth
-								i(122198),	-- Music Roll: The Shattering
 							})),
 						},
 					}),

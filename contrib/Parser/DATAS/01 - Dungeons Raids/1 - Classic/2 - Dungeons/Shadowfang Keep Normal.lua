@@ -34,8 +34,6 @@ _.Instances =
 									i( 65960), 	-- Shadowfang Shoulderpads
 									i( 65936), 	-- Sandals of Sacrifice
 									i( 65910), 	-- Godfrey's Britches
-									i(131684), 	-- Packleader's Chain Spaulders
-									i(131685), 	-- Boots of Painful Cost
 								},
 								["qg"] = 47706,	-- Packleader Ivar Bloodfang
 								["sourceQuests"] = { 27921 },	-- Fighting Tooth and Claw
@@ -64,8 +62,6 @@ _.Instances =
 									i( 66029), 	-- Shadowfanger Shoulderpads
 									i( 66020), 	-- Sandals of Sacrifice
 									i( 66011), 	-- Godfrey's Britches
-									i(131686),	-- Packleader's Chain Spaulders
-									i(131687), 	-- Boots of Painful Cost
 								},
 								["qg"] = 47293,	-- Deathstalker Commander Belmont
 								["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
@@ -246,19 +242,13 @@ _.Instances =
 						}),
 						cr( 3887, e( 97, { 	-- Baron Silverlaine
 							i(  5254),	-- Rugged Spaulders
-							i(132568),	-- Shadowfang Pauldrons
 							i(  5943),	-- Rift Bracers
-							i(132567),	-- Blindwatcher's Chain
 							i(  6319),	-- Girdle of the Blindwatcher
 							i(  6321),	-- Silverlaine's Family Seal
 						})),
 						cr( 4278, e( 98, { 	-- Commander Springvale
 							i(  3191),	-- Arced War Axe
 							i(  6320),	-- Commander's Crest
-							i(151069),	-- Breastplate of the Stilled Heart
-							i(151070),	-- Gloves of the Greymane Wall
-							i(151067),	-- Boots of Lingering Sorrow
-							i(151068),	-- Boots of the Predator
 						})),
 						n(  3872, { 		-- Deathsworn Captain
 							["groups"] = {
@@ -272,17 +262,13 @@ _.Instances =
 							i(  6341), 	-- Eerie Stable Lantern
 							i(  6642),	-- Phantom Armor
 							i(  3230),	-- Black Wolf Bracers
-							i(132566),	-- Dark Lupine Wraps
 						})),
 						cr(46964, e(100, { 	-- Lord Godfrey
 							ach(631),	-- Shadowfang Keep
 							i(  6641),	-- Haunting Blade
 							i(  6318),	-- Odo's Ley Staff
 							i(  6220),	-- Meteor Shard
-							i(151072),	-- Worgen Hunter's Helm
 							i(  3748),	-- Feline Mantle
-							i(151071),	-- Gloves of the Uplifted Cup
-							i(151073),	-- Greaves of the Misguided
 						})),
 					}),
 					n(-40, { 	-- Legacy

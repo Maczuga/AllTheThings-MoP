@@ -318,7 +318,6 @@ _.Instances =
 							}),
 							e(192, {	-- Beth'tilac		
 								["groups"] = {		
-									i(152976),	-- Cinderweb Egg (PET!)
 									i(71039),	-- Funeral Pyre
 									i(70922),	-- Mandible of Beth'tilac
 									i(71038),	-- Ward of the Red Widow
@@ -376,7 +375,6 @@ _.Instances =
 							}),			
 							e(195, {	-- Shannox		
 								["groups"] = {
-									i(152975),	-- Smoldering Treat (PET!)
 									i(71014),	-- Skullstealer Greataxe
 									i(71013),	-- Feeding Frenzy
 									i(71022),	-- Goblet of Anger
@@ -396,7 +394,6 @@ _.Instances =
 							}),			
 							e(196, {	-- Baleroc, the Gatekeeper		
 								["groups"] = {
-									i(152977),	-- Vibrating Stone (PET!)
 									i(71312),	-- Gatecrasher
 									i(70915),	-- Shard of Torment
 									i(71323),	-- Molten Scream
@@ -415,8 +412,6 @@ _.Instances =
 							}),			
 							e(197, {	-- Majordomo Staghelm		
 								["groups"] = {		
-									i(152978),	-- Fandral's Pet Carrier (PET!)
-									i(122304),	-- Fandral's Seed Pouch (TOY!)
 									i(71681, {	-- Mantle of the Fiery Conqueror		
 										i(71275),	-- Mantle of the Cleansing Flame	
 										i(71280),	-- Shoulderwraps of the Cleansing Flame	
@@ -588,7 +583,6 @@ _.Instances =
 							}),
 							e(192, {	-- Beth'tilac		
 								["groups"] = {		
-									i(152976),	-- Cinderweb Egg (PET!)
 									i(71409),	-- Funeral Pyre
 									i(71406),	-- Mandible of Beth'tilac
 									i(71408),	-- Ward of the Red Widow
@@ -696,7 +690,6 @@ _.Instances =
 										i(71479),	-- Elementium Deathplate Greaves
 										i(71484),	-- Elementium Deathplate Legguards
 									}),
-									i(152975),	-- Smoldering Treat (PET!)
 									i(71445),	-- Skullstealer Greataxe
 									i(71441),	-- Feeding Frenzy
 									i(71448),	-- Goblet of Anger
@@ -741,7 +734,6 @@ _.Instances =
 										i(71482),	-- Elementium Deathplate Handguards
 										i(71477),	-- Elementium Deathplate Gauntlets
 									}),
-									i(152977),	-- Vibrating Stone (PET!)
 									i(71454),	-- Gatecrasher
 									i(71460),	-- Shard of Torment
 									i(71462),	-- Molten Scream
@@ -760,8 +752,6 @@ _.Instances =
 							}),			
 							e(197, {	-- Majordomo Staghelm		
 								["groups"] = {
-									i(152978),	-- Fandral's Pet Carrier (PET!)
-									i(122304),	-- Fandral's Seed Pouch (TOY!)
 									i(71680, {	-- Shoulders of the Fiery Conqueror	
 										i(71531),	-- Mantle of the Cleansing Flame
 										i(71536),	-- Shoulderwraps of the Cleansing Flame

@@ -366,8 +366,6 @@ _.WorldDrops =
 					i(10328),	-- Scarlet Chestpiece
 					i(10581),	-- Death's Head Vestment
 					i(10583),	-- Quillward Harness
-					i(120166),	-- Gorestained Garb
-					desc(un(7, i(120952)), "Added in WOD only to Big Crate of Salvage"),	-- Slarkhide
 					un(7, i(1211)), -- Gnoll War Harness
 					i(12542),	-- Funeral Pyre Vestment
 					i(1297),	-- Robes of the Shadowcaster
@@ -423,7 +421,6 @@ _.WorldDrops =
 				}),
 				n(-324, { -- Shirt
 					un(7, i(127)), -- Trapper's Shirt (Former starter shirt Orc, Tauren, Troll Hunters)
-					i(138385),	-- Lucky Shirt
 					un(7, i(148)), -- Rugged Trapper's Shirt (Former starter shirt Dwarf, NE Hunters)
 					un(7, i(154)), -- Primitive Mantle (Former starter shirt Orc, Tauren Shaman)
 					i(16059),	-- Common Brown Shirt
@@ -526,7 +523,6 @@ _.WorldDrops =
 					i(13072),	-- Stonegrip Gauntlets
 					i(13126),	-- Battlecaller Gauntlets
 					un(7, i(1314)), -- Ghoul Fingers
-					i(132743),	-- Slither-Scale Gauntlets
 					i(14551),	-- Edgemaster's Handguards
 					i(1659),	-- Engineering Gloves
 					un(7, i(16672)),	-- Gauntlets of Elements
@@ -670,7 +666,6 @@ _.WorldDrops =
 					i(13111),	-- Sandals of the Insurgent
 					i(13124),	-- Ravasaur Scale Boots
 					i(13125),	-- Elven Chain Boots
-					i(132548),	-- Shamanic Treads
 					i(13260),	-- Wind Dancer Boots
 					i(14549),	-- Boots of Avoidance
 					un(7, i(1560)),	-- Bluegill Sandals

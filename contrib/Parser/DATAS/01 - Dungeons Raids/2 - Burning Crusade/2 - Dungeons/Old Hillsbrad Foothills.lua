@@ -102,12 +102,6 @@ _.Instances =
 						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
-							n( 28132, {	-- Don Carlos
-								["groups"] = {	
-									i(134019),	-- Don Carlos' Famous Hat (TOY!)
-								},
-								["description"] = "This is a neutral mob that wanders the road.",
-							}),
 							cr(17848, e(538, {	-- Lieutenant Drake
 								i(28210),	-- Bloodskull Destroyer
 								i(28213),	-- Lordaeron Medical Guide

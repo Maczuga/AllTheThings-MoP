@@ -13,51 +13,6 @@ _.Zones =
 						["npcID"] = -17,	-- Quests
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							qa(52946, {	-- A Dying World
-								["qg"] = 142930, -- Halford Wyrmbane
-								["sourceQuests"] = { 51795 }, -- The Battle for Lordaeron
-								["coord"] = { 27.7, 21.5 },
-							}),
-							qa(49976, {	-- Gifts of the Fallen
-								["qg"] = 132255, -- Master Mathias Shawa
-								["sourceQuests"] = { 50371 } , -- Summons to Stormwind
-							}),
-							qa(53370, {	-- Hour of Reckoning
-								["qg"] = 144095, -- Master Mathias Shaw
-								["coord"] = { 22.3, 32.3 },
-								["groups"] = {		
-									i(163542), -- Footman's Warmace
-									i(163541), -- Longbow of the Hunt
-									i(163539), -- Spear of the Hunt
-									i(163537), -- Footman's Warhammer
-									i(163534), -- Warmage's Spellblade
-									i(163526), -- Footman's Handaxe
-									i(163540), -- Footman's Boot Knife
-									i(163538), -- Footman's Gladius
-									i(163536), -- Warmage's Spire
-									i(163533), -- Footman's Cleaver
-								},
-							}),
-							qa(50371),	-- Summons to Stormwind
-							qa(51795, {	-- The Battle for Lordaeron
-								["qg"] = 144095, -- Master Mathias Shaw
-								["sourceQuests"] = { 53370 }, -- Hour of Reckoning
-								["coord"] = { 22.3, 32.3 },
-							}),
-							qa(46728, { -- The Nation of Kul Tiras
-								["qg"] = 120756, -- Anduin Wyrnn
-								["sourceQuests"] = { 46727 }, -- Tides of War
-								["coord"] = { 85.2, 32.1 },
-							}),
-							qa(46727, { -- Tides of War
-								["qg"] = 142930, -- Halford Wyrmbane
-								["sourceQuests"] = { 51403 }, -- The Speaker's Imperative
-								["coord"] = { 27.6, 21.2 },
-							}),
-							qa(49981, {	-- Witness to the Wound
-								["qg"] = 132255, -- Master Mathias Shawa
-								["sourceQuests"] = { 49976 } , -- Gifts of the Fallen
-							}),	
 							qa(27355, {	-- A Boon for the Powerful
 								["groups"] = {
 									i(65496),	-- Staff of Justified Sins
@@ -363,21 +318,7 @@ _.Zones =
 							qg(, qa(28292)),	-- That's No Pyramid!
 							qg(, qa(43806)),	-- The Battle for Broken Shore
 		--]]
-							qg(108916, qa(42740,  {  	-- The Battle for Broken Shore
-								["groups"] = {
-									i(138767),	-- Stormwind Vanguard Battle Mace
-									i(138772),	-- Stormwind Vanguard Bonegrinder
-									i(138770),	-- Stormwind Vanguard Dagger
-									i(138771),	-- Stormwind Vanguard Longbow
-									i(138765),	-- Stormwind Vanguard Mageblade
-									i(138769),	-- Stormwind Vanguard Polearm
-									i(138768),	-- Stormwind Vanguard Quickblade
-									i(136586),	-- Stormwind Vanguard Splitter
-									i(138766),	-- Stormwind Vanguard Stave
-									i(138764),	-- Stormwind Vanguard Waraxe
-								},
-								["description"] = "Legion expansion introduction quest.|r",
-							})),
+
 		--[[					
 							qg(, qa(27398)),	-- The Battle Is Won, The War Goes On
 							qg(, qg(45226, qa( 29439)),	-- The Call of the World-Shaman
@@ -434,14 +375,7 @@ _.Zones =
 							qg(, qa(25157)),	-- The Latest Fashion!
 							qg(, qa(40519)),	-- The Legion Returns
 		--]]					
-							q(37689, {	-- The Imposter
-								["groups"] = {
-									i(139739),	-- Chestguard of the Uncrowned
-								},
-								["qg"] = 111049, -- Master Mathias Shaw
-								["classes"] = { 4 },
-								["lvl"] = 98,
-							}),
+
 							qg(107574, qa( 7782, {		-- The Lord of Blackrock
 								i(19366),	-- Master Dragonslayer's Orb
 							})),

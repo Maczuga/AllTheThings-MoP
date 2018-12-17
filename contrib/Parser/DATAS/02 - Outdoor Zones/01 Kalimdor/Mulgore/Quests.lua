@@ -19,7 +19,6 @@ _.Zones =
 							i(57237),	-- Cairne's First Breastplate
 							i(57228),	-- Cord of Tragic Memory
 							i(57212),	-- Slippers of Mourning
-							i(131217),	-- Waistband of Tragic Memory
 						},
 						["qg"] = 3233,	-- Lorekeeper Raintotem
 						["coord"] = { 49.4, 17.2 },
@@ -92,7 +91,6 @@ _.Zones =
 							i(57211),	-- Leggings of Brown Grass
 							i(57227),	-- Hewn Kodo Gloves
 							i(57236),	-- Plainstrider Leg Armor
-							i(131212),	-- Plainstrider Handguards
 						},
 						["qg"] = 2987,	-- Eyahn Eagletalon
 						["coord"] = { 49.6, 17.4 },
@@ -199,7 +197,6 @@ _.Zones =
 							i(57229),	-- Duskwatcher's Leggings
 							i(57240),	-- Hawkeye Rifle
 							i(57213),	-- Waterbearer's Robes
-							i(131373),	-- Duskwatcher's Legguards
 						},
 						["sourceQuest"] = 24523,	-- Wildmane Totem
 					},

@@ -52,7 +52,6 @@ _.Zones =
 							i(5590),	-- Cord Bracers
 							i(54871),	-- Cloudsbreak Gloves
 							i(5593),	-- Crag Buckler
-							i(131230),	-- Cloudsbreak Grips
 						},
 						["qg"] = 3568,	-- Mist
 						["coord"] = { 34.5, 27.8 },
@@ -118,7 +117,6 @@ _.Zones =
 					qg(3519, qa(  937,  {  -- The Enchanted Glade
 						i(54872),
 						i(5591),
-						i(131229),
 					})),
 --[[					
 					o(6751, {	-- Strange Fruited Plant
@@ -159,12 +157,10 @@ _.Zones =
 --]]					
 					qa(14005, {	-- The Vengeance of Elune
 						["g"] = {
-							i(131821),	-- Uncorrupted Gloves
 							i(49546),	-- Revitalizing Wristguards
 							i(49449),	-- Britches of Turning Fortune
 							i(49448),	-- Uncorrupted Hands
 							i(49562),	-- Durable Drape
-							i(131822),	-- Trousers of Turning Fortune
 						},
 						["qg"] = 1992,	-- Tarindrella
 						["coord"] = { 42.5, 58.1 },
@@ -174,10 +170,8 @@ _.Zones =
 						["g"] = {
 							i(54873),	-- Verdigris Leggings
 							i(54874),	-- Grassy Bindings
-							i(131861),	-- Graccy Bracers
 							i(5595),	-- Thicket Hammer
 							i(5596),	-- Ashwood Bow
-							i(156992),	-- Carved Ashwood Stick
 						},
 						["qg"] = 1992,	-- Tarindrella
 						["coord"] = { 42.5, 58.1 },

@@ -221,11 +221,9 @@ _.Instances =
 						["groups"] = {
 							i(9400), -- Baelog's Shortbow
 							i(9403), -- Battered Viking Shield
-							i(151396), -- Erik's High-Performance Armbands
 							i(9394),	-- Horned Viking Helmet
 							i(9401),	-- Nordic Longshank
 							i(9404),	-- Olaf's All Purpose Shield
-							i(132734),	-- Viking Chain Boots
 							i(9398),	-- Worn Running Boots
 						},
 						["crs"] = {
@@ -235,26 +233,19 @@ _.Instances =
 						},
 					}),
 					cr( 6910, e(  467, {	-- Revelosh
-						i(132736),	-- Revelosh's Pauldrons
 						i(  9389),	-- Revelosh's Spaulders
 						i(  9388),	-- Revelosh's Armguards
 						i(  9390),	-- Revelosh's Gloves
-						i(151395),	-- Revelosh's Girdle
 						i(  9387),	-- Revelosh's Boots
 					})),
 					cr( 7228, e(  469, {	-- Ironaya
 						i(  9408),	-- Ironshod Bludgeon
-						i(151398),	-- Hood of the Idle Architect
-						i(151420),	-- Vault-Watcher's Breastplate
 						i(  9409),	-- Ironaya's Bracers
 						i(  9407),	-- Stoneweaver Leggings
 					})),
 					cr( 7206, e(  470, {	-- Ancient Stone Keeper
 						i(  9411),	-- Rockshard Pauldrons
-						i(132733),	-- Stone Keeper's Mantle
 						i(  9410),	-- Cragfists
-						i(151401),	-- Titanic Stone Legguards
-						i(151400),	-- Sand-Scoured Treads
 					})),
 					o(131979, {				-- Large Darkwood Chest
 						["groups"] = {	
@@ -277,8 +268,6 @@ _.Instances =
 					cr( 4854, e(  472, {	-- Grimlok
 						i(  9416),	-- Grimlock's Charge
 						i(  9415),	-- Grimlock's Tribal Vestments
-						i(151402),	-- Grimlock's Jagged Wristguards
-						i(132735),	-- Grimlock's Chain Chaps
 						i(  9414),	-- Oilskin Leggings
 					})),
 					cr( 2748, e(  473, {	-- Archaedas

@@ -112,7 +112,6 @@ _.Instances =
 						cr(24200, e(639, { -- Skarvald the Constructor and Dalronn the Controller
 							i( 35573),	-- Arm Blade of Augelmir
 							i( 37181),	-- Dagger of Betrayal
-							i(157555),	-- Constructor's Worklight
 							i( 37182),	-- Helmet of the Constructor
 							i( 35574),	-- Chestplate of the Northern Lights
 							i( 37184),	-- Dalronn's Jerkin
@@ -154,7 +153,6 @@ _.Instances =
 							cr(24200, e(639, { -- Skarvald the Constructor and Dalronn the Controller
 								i( 35573),	-- Arm Blade of Augelmir
 								i( 37181),	-- Dagger of Betrayal
-								i(157555),	-- Constructor's Worklight
 								i( 37182),	-- Helmet of the Constructor
 								i( 35574),	-- Chestplate of the Northern Lights
 								i( 37184),	-- Dalronn's Jerkin

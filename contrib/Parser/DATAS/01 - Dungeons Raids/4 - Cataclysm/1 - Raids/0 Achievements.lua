@@ -47,7 +47,4 @@ _.Instances = { tier(4, {	-- Cataclysm
 		ach(5305),	-- Four Play
 		i(62901),	-- Reins of the Drake of the East Wind
 		}),
-	ach(12079, { -- Raiding with Leashes V: Cuteaclysm
-		i(152963), -- Amalgam of Destruction
-	}),
 })};

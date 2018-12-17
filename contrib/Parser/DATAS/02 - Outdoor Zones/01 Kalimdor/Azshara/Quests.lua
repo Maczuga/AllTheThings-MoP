@@ -85,7 +85,6 @@ _.Zones =
 									i(53422),	-- Kaboom Leggings
 									i(53430),	-- Mortar-Slinger Belt
 									i(53437),	-- Salvoblast Tunic
-									i(131361),	-- Belt of Explosive Potential
 								},
 								["qg"] = 36746,	-- Xiz "The Eye" Salvoblast
 								["coord"] = { 29.1, 57.9 },
@@ -118,7 +117,6 @@ _.Zones =
 								["groups"] = {
 									i(53429),	-- Molotov Gloves
 									i(53432),	-- Pricey Bracers
-									i(131365),	-- Fine-Link Gauntlets
 								},
 								["qg"] = 36749,	-- Commander Molotov
 								["coord"] = { 29.4, 57.6 },
@@ -147,7 +145,6 @@ _.Zones =
 								["groups"] = {
 									i(53404),	-- Bottom-Wader Boots
 									i(53435),	-- Restored Mennaran Plate
-									i(131334),	-- Weighted Chain Boots
 								},
 								["coord"] = { 37.5, 74.5 },
 								["sourceQuest"] = 14215,	-- Memories of the Dead
@@ -184,7 +181,6 @@ _.Zones =
 								["groups"] = {
 									i(53440),	-- Sea Sister Vest
 									i(53441),	-- Serpent-Crusher Gloves
-									i(131339),	-- Scaled Gloves of the Serpent
 								},
 								["qg"] = 35657,	-- Torg Twocrush
 								["coord"] = { 50.6, 75.2 },
@@ -304,7 +300,6 @@ _.Zones =
 								["groups"] = {
 									i(53410),	-- Disposable Cloak
 									i(53419),	-- Hort's Axe
-									i(156943),	-- Hort's Motivator
 								},
 								["qg"] = 36921,	-- Sergeant Hort
 								["coord"] = { 41.3, 53.9 },
@@ -340,7 +335,6 @@ _.Zones =
 								["groups"] = {
 									i(53411),	-- Eldarath Staff
 									i(53433),	-- Quick Buck Leggings
-									i(131362),	-- Profit Boon Legguards
 								},
 								["qg"] = 36894,	-- Tora Halotrix
 								["coord"] = { 34.5, 44.6 },
@@ -371,7 +365,6 @@ _.Zones =
 									i(53428),	-- Merger Boots
 									i(53399),	-- Acquisition Bracers
 									i(53415),	-- Heart Wrapper
-									i(131364),	-- Deal Makers Bindings
 								},
 								["qg"] = 36745,	-- Captain Tork
 								["coord"] = { 34.3, 44.8 },
@@ -419,7 +412,6 @@ _.Zones =
 								["groups"] = {
 									i(53445),	-- Spongy Vest
 									i(53438),	-- Scalding Gloves
-									i(131346),	-- Ergll's Body Sieve
 								},
 								["sourceQuest"] = 14323,	-- Absorbent
 							},
@@ -451,7 +443,6 @@ _.Zones =
 									i(53439),	-- Scissor Blade
 									i(53413),	-- Glued Feather Boots
 									i(53436),	-- Robotronic Vest
-									i(131336),	-- Inter-Feather-Linked Greaves
 								},
 								["qg"] = 35648,	-- Will Robotronic
 								["coord"] = { 47.1, 21.0 },
@@ -497,7 +488,6 @@ _.Zones =
 								["groups"] = {
 									i(53406),	-- Charged Robes
 									i(53421),	-- Juicy Bracers
-									i(131340),	-- Capacitance Bands
 								},
 								["qg"] = 36334,	-- Image of Archmage Xylem
 								["coord"] = { 55.7, 14.7 },
@@ -526,7 +516,6 @@ _.Zones =
 								["groups"] = {
 									i(53420),	-- Joanna's Sash
 									i(53401),	-- Asylum Shoes
-									i(131341),	-- Asylum Boots
 								},
 								["qg"] = 36361,	-- Image of Archmage Xylem
 								["coord"] = { 55.9, 12.1 },
@@ -557,7 +546,6 @@ _.Zones =
 								["groups"] = {
 									i(53402),	-- Blue Hide Vest
 									i(53423),	-- Kalecgos' Gift
-									i(131367),	-- Azure Scale Hauberk
 								},
 								["qg"] = 35867,	-- Kalec
 								["coord"] = { 66.5, 20.3 },
@@ -615,7 +603,6 @@ _.Zones =
 								["groups"] = {
 									i(53425),	-- Low-Altitude Parachute
 									i(53412),	-- Gloves of Unmitigated Badassery
-									i(131360),	-- Grips of the Lightning Fast Assasin
 								},
 								["qg"] = 36729,	-- Slinky Sharpshiv
 								["coord"] = { 12.5, 67.4 },
@@ -804,7 +791,6 @@ _.Zones =
 							i(53447),	-- Standard Issue Airborne Belt
 							i(53405),	-- Bulldozer Vest
 							i(53427),	-- Margene Repair Gloves
-							i(131357),	-- Heavy Mechanic's Hauberk
 						},
 						["qg"] = 35088,	-- Custer Clubnik
 						["coord"] = { 29.5, 66.8 },
@@ -837,7 +823,6 @@ _.Zones =
 								["groups"] = {
 									i(53426),	-- Mage Bracers
 									i(53414),	-- Hacker's Leggings
-									i(131358),	-- Leggings of the Hack "Mage"
 								},
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 14429,	-- Arcane De-Construction
@@ -936,7 +921,6 @@ _.Zones =
 							i(53450),	-- Treaty Breaker Gloves
 							i(53409),	-- Diplomatic Belt
 							i(53431),	-- Negotiation Stompers
-							i(131359),	-- Accomodating Cinch
 						},
 						["qg"] = 8586,	-- Haggrum Bloodfist
 						["coord"] = { 42.4, 23.6 },
@@ -960,7 +944,6 @@ _.Zones =
 						["groups"] = {
 							i(53416),	-- Hill's Eye Wand
 							i(53448),	-- Stolen Talrendis Boots
-							i(131333),	-- Hill Ranger Treads
 						},
 					},
 					{	-- To Gut a Fish

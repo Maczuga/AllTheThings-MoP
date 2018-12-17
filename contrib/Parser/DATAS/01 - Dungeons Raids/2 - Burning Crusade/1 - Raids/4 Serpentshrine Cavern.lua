@@ -30,7 +30,6 @@ _.Instances =
 					}),
 					e(1567, {	-- Hydross the Unstable
 						["groups"] = {
-							i(138834),	-- Illusion: Frostbrand
 							i( 97553),	-- Tainted Core (PET!)
 							i( 30049),	-- Fathomstone
 							i( 30048),	-- Brighthelm of Justice

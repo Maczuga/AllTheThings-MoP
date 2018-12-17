@@ -43,7 +43,6 @@ _.Zones =
 								["groups"] = {
 									i(64499),	-- Hatchlings' Protector
 									i(64498),	-- Whelp Keeper's Staff
-									i(156964),	-- Clutch Rearrangement Tool
 								},
 								["qg"] = 47779,	-- Mouton Flamestar
 							}),
@@ -64,8 +63,6 @@ _.Zones =
 							qa(28177, {	-- Stocking Up
 								["groups"] = {
 									i( 64501),	-- Sharp Scorpid Barb
-									i(156965),	-- Enchanted Scorpid Tail 
-									i(157011),	-- Envenomed Scorpid Tail
 								},
 								["qg"] = 47811,	-- John J. Keeshan
 								["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance
@@ -73,7 +70,6 @@ _.Zones =
 							qh(28419, {	-- Stocking Up
 								["groups"] = {
 									i(64502),	-- Sharp Scorpid Barb
-									i(156965),	-- Enchanted Scorpid Tail
 								},
 								["qg"] = 48559,	-- Ariok
 								["sourceQuests"] = { 28418 },	-- Burning Vengeance
@@ -546,7 +542,6 @@ _.Zones =
 							}),
 							q(44927, { -- Worth Its Weight in Steel
 								["groups"] = {
-									i(142346), -- Plans: Bleakwood Hew
 								},
 								["qg"] = 115805, -- Hoddruc Bladebender
 								["sourceQuests"] = { 44926 }, -- A Familiar Axe to Grind
@@ -1055,7 +1050,6 @@ _.Zones =
 				n(-2,  {	-- Vendors
 					n(115805, {	-- Hoddruc Bladebender
 						["groups"]	= {
-							i(142346),	-- Plans: Bleakwood Hew
 						},
 						["description"]	= "Vendor only sells the recipe to those who have completed the quest 'Worth Its Weight in Steel'|r",
 					}),

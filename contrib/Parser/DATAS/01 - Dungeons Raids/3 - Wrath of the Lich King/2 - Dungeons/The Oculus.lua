@@ -79,7 +79,6 @@ _.Instances =
 							}),
 						}),
 						cr(27654, e(622, {	-- Drakos the Interrogator
-							i(157562),	-- Rod of Aggressive Questioning
 							i( 36944),	-- Lifeblade of Belgaristrasz
 							i( 37255),	-- The Interrogator
 							i( 36943),	-- Timeless Beads of Eternos
@@ -171,7 +170,6 @@ _.Instances =
 								}),
 							}),
 							cr(27654, e(622, {	-- Drakos the Interrogator
-								i(157562),	-- Rod of Aggressive Questioning
 								i( 36944),	-- Lifeblade of Belgaristrasz
 								i( 37255),	-- The Interrogator
 								i( 36943),	-- Timeless Beads of Eternos

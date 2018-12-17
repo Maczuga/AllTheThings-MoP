@@ -52,7 +52,6 @@ _.Zones =
 					qh(27510, {	-- A Wolf in Bear's Clothing
 						["groups"] = {
 							i(62884),	-- "Bear" Hide Boots
-							i(131678),	-- Inconspicuous Footguards
 							i(62883),	-- Inconspicuous Pantaloons
 							i(62885),	-- Unmistakable Gloves
 						},
@@ -70,7 +69,6 @@ _.Zones =
 					qh(27601, { -- Cities in Dust
 						["groups"] = {
 							i(62897),	-- Bracers of the Most Trusted
-							i(131680),	-- Belt of Absolute Allegiance
 							i(62896),	-- Belt of Beginnings
 							i(62895),	-- Slippers of Unturned Loyalties
 						},
@@ -91,7 +89,6 @@ _.Zones =
 					qh(27094, {	-- Deeper into Darkness
 						["groups"] = {
 							i(62850),	-- Drunken Style Bracers
-							i(131640),	-- Rear Guard Bands
 							i(62851),	-- Rear Guard Britches
 							i(62849),	-- Skitterweb Glovelettes
 						},
@@ -107,7 +104,6 @@ _.Zones =
 					}),
 					qh(27575, { -- From the Belly of the Beast
 						["groups"] = {
-							i(131679),	-- Better, Stronger, Faster Bracers
 							i(62887),	-- Bracers of the Million Gold Man
 							i(62888),	-- Leg Bone Covers
 							i(62886),	-- Vest of Forsaken Necromancy
@@ -127,7 +123,6 @@ _.Zones =
 					qh(27226, {	-- Hair of the Dog
 						["groups"] = {
 							i(62846),	-- Ale-Soaked Robes
-							i(131660),	-- Cord of the Sepulcher
 							i(62847),	-- Sea Dog Belt
 							i(62848),	-- Treads of the Sepulcher
 						},
@@ -148,7 +143,6 @@ _.Zones =
 					}),
 					qh(26998, {	-- Iterating Upon Success
 						["groups"] = {
-							i(131629),	-- Maggot-Ridden Greaves
 							i(62835),	-- Maggot-Ridden Leggings
 							i(62836),	-- Muckdweller Spear
 							i(62834),	-- T'veen's Cloak
@@ -189,7 +183,6 @@ _.Zones =
 						["groups"] = {
 							i(62855),	-- Britches of Desperate Measures
 							i(62854),	-- Mace of Calculated Loss
-							i(131652),	-- Trousers of Desperate Measures
 							i(62856),	-- Underestimated Crossbow
 						},
 						["qg"] = 45228,	-- Master Forteski
@@ -267,7 +260,6 @@ _.Zones =
 							i(62841),	-- Bloodfang Vest
 							i(62840),	-- Sober Pup Wristbands
 							i(62842),	-- Steel Thunder Belt
-							i(131636),	-- Steel Thunder Chestbrace
 						},
 						["qg"] = 44916,	-- Admiral Hatcher
 						["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
@@ -298,7 +290,6 @@ _.Zones =
 							["groups"] = {
 								i(62853),	-- Blood Offering Platter
 								i(62852),	-- Sabots of Red Waters
-								i(131661),	-- Treads of Red Waters
 							},
 							["sourceQuests"] = { 27231 },	-- Reinforcements from Fenris						
 						}),
@@ -330,7 +321,6 @@ _.Zones =
 						qh(27045, { 	-- Waiting to Exsanguinate
 							["groups"] = {
 								i(62833),	-- Cloak of Courage
-								i(131634),	-- Grasps of the Survivor
 								i(62831),	-- Treads of the Survivor
 								i(62832),	-- Yorick's Bequest
 							},
@@ -818,7 +808,6 @@ _.Zones =
 								i(62862),	-- Belmont's Bracers
 								i(62861),	-- Wolfsbane Vest
 								i(62860),	-- Watched Watcher's Slippers
-								i(131665),	-- Wolfsbane Harness
 							},
 							["qg"] = 45312,	-- Deathstalker Commander Belmont
 							["coord"] = { 57.4, 18.9 },
@@ -868,7 +857,6 @@ _.Zones =
 								i(62874),	-- Treads of the True Plan
 								i(62873),	-- Godfrey's Belt
 								i(62872),	-- Cloak of Secret Purpose
-								i(131677),	-- Godfrey's Waistband
 							},
 							["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
 							["sourceQuests"] = { 27406, 27423 },	-- A Man Named Godfrey / Resistance is Futile
@@ -878,7 +866,6 @@ _.Zones =
 								i(62871),	-- War Blood Cloak
 								i(62870),	-- Rutsak Carriers
 								i(62869),	-- Submariner Killer
-								i(131667),	-- War Blood Gloves
 							},
 							["qg"] = 45389,	-- Captain Rutsak
 							["coord"] = { 65.6, 34.1 },

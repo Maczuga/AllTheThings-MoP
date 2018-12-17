@@ -213,23 +213,6 @@ _.ExpansionFeatures =
 						i(51574),	-- Titan-Forged Spaulders of Dominance
 						i(51575),	-- Titan-Forged Spaulders of Salvation
 						i(51576),	-- Titan-Forged Spaulders of Triumph
-						i(122375),	-- Aged Pauldrons of The Five Thunders
-						i(122369),	-- Battleworn Thrash Blade
-						i(122376),	-- Exceptional Stormshroud Shoulders
-						i(122378),	-- Exquisite Sunderseer Mantle
-						i(122368),	-- Grand Staff of Jordan
-						i(122370),	-- Inherited Insignia of the Horde
-						i(122530),	-- Inherited Mark of Tyranny
-						i(122377),	-- Lasting Feralheart Spaulders
-						i(122373),	-- Pristine Lightforge Spaulders
-						i(122374),	-- Prized Beastmaster's Mantle
-						i(122365),	-- Reforged Truesilver Champion
-						i(122364),	-- Sharpened Scarlet Kris
-						i(122372),	-- Strengthened Stockade Pauldrons
-						i(122367),	-- The Blessed Hammer of Grace
-						i(122366),	-- Upgraded Dwarven Hand Cannon
-						i(122338),	-- Ancient Heirloom Armor Casing
-						i(122339),	-- Ancient Heirloom Scabbard
 					},
 					["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",	
 				}),
@@ -348,23 +331,6 @@ _.ExpansionFeatures =
 						i(51574),	-- Titan-Forged Spaulders of Dominance
 						i(51575),	-- Titan-Forged Spaulders of Salvation
 						i(51576),	-- Titan-Forged Spaulders of Triumph
-						i(122375),	-- Aged Pauldrons of The Five Thunders
-						i(122369),	-- Battleworn Thrash Blade
-						i(122376),	-- Exceptional Stormshroud Shoulders
-						i(122378),	-- Exquisite Sunderseer Mantle
-						i(122368),	-- Grand Staff of Jordan
-						i(122370),	-- Inherited Insignia of the Horde
-						i(122530),	-- Inherited Mark of Tyranny
-						i(122377),	-- Lasting Feralheart Spaulders
-						i(122373),	-- Pristine Lightforge Spaulders
-						i(122374),	-- Prized Beastmaster's Mantle
-						i(122365),	-- Reforged Truesilver Champion
-						i(122364),	-- Sharpened Scarlet Kris
-						i(122372),	-- Strengthened Stockade Pauldrons
-						i(122367),	-- The Blessed Hammer of Grace
-						i(122366),	-- Upgraded Dwarven Hand Cannon
-						i(122338),	-- Ancient Heirloom Armor Casing
-						i(122339),	-- Ancient Heirloom Scabbard
 					},
 					["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",								
 				}),

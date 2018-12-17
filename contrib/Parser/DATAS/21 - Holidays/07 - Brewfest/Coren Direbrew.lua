@@ -8,9 +8,8 @@ _.Holidays = bubbleDown({["u"] = 24},
 			["groups"] = {
 				un(24, i(149752, {	-- Keg-Shaped Treasure Box [Uncommon Quality]
 					["groups"] = bubbleDown({["u"] = 24}, {
-						i(117378), 	-- Direbrew's Bloodied Shanker
-						i(150922), 	-- Terrific Tankard O'Terror
-						i(117379), 	-- Tremendous Tankard O'Terror
+						i(107217), 	-- Direbrew's Bloodied Shanker
+						i(107218), 	-- Tremendous Tankard O'Terror
 						i(37863),	-- Direbrew's Remote
 					}),
 					["lvl"] = 46,
@@ -27,13 +26,8 @@ _.Holidays = bubbleDown({["u"] = 24},
 								ach(3496),	-- A Brew-FAST Mount
 							},
 						}),
-						un(2, i(71331)), 	-- Direbrew's Bloodied Shanker [Level 85]
-						un(2, i(107217)),	-- Direbrew's Bloodied Shanker [Level 90]
-						i(117378), 	-- Direbrew's Bloodied Shanker [Level 100+]
-						i(150922), 	-- Terrific Tankard O'Terror [Level 100+]
-						un(2, i(71332)), 	-- Tremendous Tankard O'Terror [Level 85]
-						un(2, i(107218)), 	-- Tremendous Tankard O'Terror [Level 90]
-						i(117379), 	-- Tremendous Tankard O'Terror [Level 100+]
+						i(107217), 	-- Direbrew's Bloodied Shanker [Level 90]
+						i(107218), 	-- Tremendous Tankard O'Terror [Level 90]
 						i(37863),	-- Direbrew's Remote
 					}),
 					["lvl"] = 98,
@@ -59,18 +53,12 @@ _.Holidays = bubbleDown({["u"] = 24},
 				un(2, i(71335)),	-- Coren's Chilled Chromium Coaster [Level 85]
 				un(2, i(71337)),	-- Mithril Stopwatch [Level 85]
 				un(2, i(71336)),	-- Petrified Pickled Egg [Level 85]
-				un(2, i(87576)),	-- Bitterest Balebrew Charm [Level 90]
-				un(2, i(87571)),	-- Brawler's Statue [Level 90]
-				un(2, i(87575)),	-- Bubbliest Brightbrew Charm [Level 90]
-				un(2, i(87574)),	-- Coren's Cold Chromium Coaster [Level 90]
-				un(2, i(87572)),	-- Mithril Wristwatch [Level 90]
-				un(2, i(87573)),	-- Thousand-Year Pickled Egg [Level 90]
-				un(24, i(117361)),	-- Bitterest Balebrew Charm [Level 100+]
-				un(24, i(117357)),	-- Brawler's Statue [Level 100+]
-				un(24, i(117391)),	-- Bubbliest Brightbrew Charm [Level 100+]
-				un(24, i(117360)),	-- Coren's Cold Chromium Coaster [Level 100+]
-				un(24, i(117358)),	-- Mithril Wristwatch [Level 100+]
-				un(24, i(117359)),	-- Thousand-Year Pickled Egg [Level 100+]
+				un(24, i(87576)),	-- Bitterest Balebrew Charm [Level 90]
+				un(24, i(87571)),	-- Brawler's Statue [Level 90]
+				un(24, i(87575)),	-- Bubbliest Brightbrew Charm [Level 90]
+				un(24, i(87574)),	-- Coren's Cold Chromium Coaster [Level 90]
+				un(24, i(87572)),	-- Mithril Wristwatch [Level 90]
+				un(24, i(87573)),	-- Thousand-Year Pickled Egg [Level 90]
 				{
 					["itemID"] = 38280,		-- Direbrew's Dire Brew
 					["questID"] = 12491,	-- Direbrew's Dire Brew

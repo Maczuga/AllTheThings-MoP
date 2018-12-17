@@ -25,7 +25,6 @@ _.Zones =
 									i(63563),	-- Maloof's Spare Boots
 									i(63564),	-- Floating Belt
 									i(63565),	-- Bracers of Desperate Need
-									i(131431),	-- Maloof's Spare Treads
 								},
 								["qg"] = 39963,	-- Motega Firemane
 								["coord"] = { 10.5, 8.5 },
@@ -53,7 +52,6 @@ _.Zones =
 									i(63547),	-- Driver's Armbands
 									i(63548),	-- Wet Suit Leggings
 									i(63549),	-- Raceway Boots
-									i(131433),	-- Driver's Chain Bracers
 								},
 								["qg"] = 40487,	-- Razzeric
 								["coord"] = { 77.1, 74.4 },
@@ -89,7 +87,6 @@ _.Zones =
 									i(63555),	-- Pirate Sinker's Gloves
 									i(63556),	-- Bear Hug Bracers
 									i(63557),	-- Manly Pauldrons
-									i(131435),	-- Pirate Sinker's Gauntlets
 								},
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 25533,	-- Pirate Accuracy Increasing
@@ -143,8 +140,6 @@ _.Zones =
 									i(63584),	-- Ice Cream Mitts
 									i(63585),	-- Breastplate of Contained Sorrow
 									i(63586),	-- Cryocannon
-									i(157017),	-- Deep-Sea Retrieval Hook 
-									i(157018),	-- Oversized Mixing Agitator
 								},
 								["qg"] = 47383,	-- Brivelthwerp
 								["coord"] = { 69.8, 85.1 },
@@ -459,7 +454,6 @@ _.Zones =
 									i(63656),	-- Lakota's Mace
 									i(63657),	-- Well Hammered Shield
 									i(63658),	-- Bloodstained Twilight Belt
-									i(157019),	-- Lakota's Gavel 
 								},
 								["qg"] = 47580,	-- Lakota Windsong
 								["coord"] = { 30.4, 49.2 },
@@ -595,7 +589,6 @@ _.Zones =
 							i(63551),	-- Smooching Gloves
 							i(63552),	-- Pirate Sinker's Bracers
 							i(63553),	-- Dignified Pauldrons
-							i(131434),	-- Lovely Gloves
 						},
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25532,	-- Pirate Accuracy Increasing
@@ -653,7 +646,6 @@ _.Zones =
 							i(63543),	-- Driver's Armbands
 							i(63544),	-- Wet Suit Leggings
 							i(63545),	-- Raceway Boots
-							i(131432),	-- Driver's Chain Bracers
 						},
 						["qg"] = 40475,	-- Jinky Twizzlefixxit
 						["races"] = ALLIANCE_ONLY,
@@ -817,7 +809,6 @@ _.Zones =
 							i(63640),	-- Windsong Rifle
 							i(63641),	-- Mantle of Invocation
 							i(63642),	-- Wind Serpent Bracers
-							i(157025),	-- Windserpent Fang 
 						},
 						["qg"] = 45442,	-- Lakota Windsong
 						["races"] = ALLIANCE_ONLY,
