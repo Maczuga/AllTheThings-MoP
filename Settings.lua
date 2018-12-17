@@ -171,7 +171,7 @@ local function createScroll(parent)
 	UIConfig:SetSize(610, 535);
 	UIConfig:SetPoint("CENTER",0,-15);
 	
-	UIConfig.ScrollFrame = CreateFrame("ScrollFrame", nil, UIConfig, "UIPanelScrollFrameTemplate");
+	UIConfig.ScrollFrame = CreateFrame("ScrollFrame", "AllTheThingsSettingsConfigScroll", UIConfig, "UIPanelScrollFrameTemplate");
 	frame = UIConfig.ScrollFrame
 	UIConfig.ScrollFrame:SetPoint("TOPLEFT", AllTheThingsSettingsConfigDialogBG, "TOPLEFT", 4, -8);
 	UIConfig.ScrollFrame:SetPoint("BOTTOMRIGHT", AllTheThingsSettingsConfigDialogBG, "BOTTOMRIGHT", -3, 4);

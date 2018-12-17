@@ -343,13 +343,13 @@ GameTooltipModel.SetCreatureID = function(self, creatureID)
 	else
 		self.Model:SetUnit("none");
 		self.Model:SetCreature(creatureID);
-		if not self.Model:GetModelFileID() then
+		-- if not self.Model:GetModelFileID() then
 			Push(app, "SetCreatureID", function()
 				if self.lastModel == creatureID then
 					self:SetCreatureID(creatureID);
 				end
 			end);
-		end
+		-- end
 	end
 	self:Show();
 end
@@ -385,6 +385,7 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 		else
 			self.Model:SetFacing(rotation);
 			self.Model:SetCamDistanceScale(scale);
+			print(#displayInfos);
 			self.Model:SetDisplayInfo(displayInfos[1]);
 			self.Model:Show();
 		end
@@ -393,6 +394,7 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 	end
 end
 GameTooltipModel.TrySetModel = function(self, reference)
+	-- print(#reference.qgs);
 	GameTooltipModel.HideAllModels(self);
 	if GetDataMember("ShowModels") then
 		self.lastModel = reference;
@@ -6830,7 +6832,7 @@ local function RowOnEnter(self)
 			end
 			GameTooltipIcon:Show();
 		elseif reference.displayID or reference.modelID or reference.model then
-			GameTooltip:AddDoubleLine("File ID", GameTooltipModel.Model:GetModelFileID());
+			-- GameTooltip:AddDoubleLine("File ID", GameTooltipModel.Model:GetModelFileID());
 			if reference.displayID or reference.modelID then
 				GameTooltip:AddDoubleLine("Display ID", reference.displayID);
 			end
@@ -8493,7 +8495,7 @@ end):Show();
 				-- Cache that we're in the current map ID.
 				local self = app:GetWindow("CurrentInstance");
 				if self.mapID == id then return; end
-				self.mapID = id;
+				self.mapID = app.LegionToBFAMapID(id);
 				
 				-- Determine whether or not to forcibly reshow the mini list.
 				if not self:IsVisible() then
