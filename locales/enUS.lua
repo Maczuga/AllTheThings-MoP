@@ -320,8 +320,8 @@ AllTheThings.Locales.enUS = {
 	["NPC_ID_ICONS"] = {
 
 --		[-] = "Interface\\Icons\\", --
-		[0] = "Interface\\Icons\\INV_TreasureChest_FelfireCitadel", 			-- Zone Drop
-		[-1] = "Interface\\Icons\\Achievement_Garrison_Horde_PVE", 				-- Common Boss Drop
+		[0] = "Interface\\Icons\\inv_misc_lockbox_1", 							-- Zone Drop
+		[-1] = "Interface\\Icons\\inv_misc_lockboxghostiron", 					-- Common Boss Drop
 		[-2] = "Interface\\Icons\\INV_Misc_Coin_02", 							-- Vendors
 		[-3] = "Interface\\Icons\\Achievement_Halloween_Bat_01", 				-- World Event
 		[-4] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheHERO", 			-- Achievement

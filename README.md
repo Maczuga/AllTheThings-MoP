@@ -4,3 +4,6 @@ TODO:
 - item "appearances" - switch logic to having item instead of appearance by itself
 - legacy achievements are not that legacy (ulduar 10/25 from legacy to wotlk raids because it was replaced by timewalking achievements)
 - more soon
+
+FAQ:
+- I do not plan to release a version for other expansion until the server I play on switch to this expansion

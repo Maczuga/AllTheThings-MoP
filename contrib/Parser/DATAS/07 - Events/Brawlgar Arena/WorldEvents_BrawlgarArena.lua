@@ -35,11 +35,11 @@ _.WorldEvents =
 					["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
 				})),
 			}),
-			h(ach(9177, {		-- Deck Your Collection (Season 2) - According to Wowhead this achievement AND the shirt it rewards ARE still obtainable in Legion. You just have to defeat the bosses listed.
-				["groups"] = {
-					i(98543),		-- Wraps of the Blood-Soaked Brawler
-				},
-				["description"] = "This Legacy Achievement and its reward shirt are reportedly still obtainable. Good luck!|r",
+			a(ach(8340, {	-- Deck Your Collection (Season 1) (Alliance)
+				i(98543),	-- Wraps of the Blood-Soaked Brawler
+			})),
+			h(ach(8343, {	-- Deck Your Collection (Season 1) (Horde)
+				i(98543),	-- Wraps of the Blood-Soaked Brawler
 			})),
 			i(142319, {		-- Bag of Chipped Dice
 				nh(117208, {	-- a Seagull

@@ -284,6 +284,364 @@ app.GetTempDataSubMember = GetTempDataSubMember;
 	end
 end)();
 
+(function()
+	-- Map all Skill IDs to the old Skill IDs
+	local encounterMap = {
+		[1617] = "Malygos",
+		[1637] = "Flame Leviathan",
+		[1638] = "Ignis the Furnace Master",
+		[1639] = "Razorscale",
+		[1640] = "XT-002 Deconstructor",
+		[1641] = "The Assembly of Iron",
+		[1642] = "Kologarn",
+		[1643] = "Auriaya",
+		[1644] = "Hodir",
+		[1645] = "Thorim",
+		[1646] = "Freya",
+		[1647] = "Mimiron",
+		[1648] = "General Vezax",
+		[1649] = "Yogg-Saron",
+		[1650] = "Algalon the Observer",
+		[1616] = "Sartharion",
+		[1597] = "Archavon the Stone Watcher",
+		[1598] = "Emalon the Storm Watcher",
+		[1599] = "Koralon the Flame Watcher",
+		[1600] = "Toravon the Ice Watcher",
+		[1601] = "Anub'Rekhan",
+		[1602] = "Grand Widow Faerlina",
+		[1603] = "Maexxna",
+		[1604] = "Noth the Plaguebringer",
+		[1605] = "Heigan the Unclean",
+		[1606] = "Loatheb",
+		[1607] = "Instructor Razuvious",
+		[1608] = "Gothik the Harvester",
+		[1609] = "The Four Horsemen",
+		[1610] = "Patchwerk",
+		[1611] = "Grobbulus",
+		[1612] = "Gluth",
+		[1613] = "Thaddius",
+		[1614] = "Sapphiron",
+		[1615] = "Kel'Thuzad",
+		[1618] = "The Northrend Beasts",
+		[1619] = "Lord Jaraxxus",
+		[1620] = "Champions of the Alliance",
+		[1621] = "Champions of the Horde",
+		[1622] = "Twin Val'kyr",
+		[1623] = "Anub'arak",
+		[1624] = "Lord Marrowgar",
+		[1625] = "Lady Deathwhisper",
+		[1626] = "Icecrown Gunship Battle",
+		[1627] = "Icecrown Gunship Battle",
+		[1628] = "Deathbringer Saurfang",
+		[1629] = "Festergut",
+		[1630] = "Rotface",
+		[1631] = "Professor Putricide",
+		[1632] = "Blood Prince Council",
+		[1633] = "Blood-Queen Lana'thel",
+		[1634] = "Valithria Dreamwalker",
+		[1635] = "Sindragosa",
+		[1636] = "The Lich King",
+		[1652] = "Halion",
+		[1519] = "Lucifron",
+		[1520] = "Magmadar",
+		[1521] = "Gehennas",
+		[1522] = "Garr",
+		[1523] = "Shazzrah",
+		[1524] = "Baron Geddon",
+		[1525] = "Sulfuron Harbinger",
+		[1526] = "Golemagg the Incinerator",
+		[1527] = "Majordomo Executus",
+		[1528] = "Ragnaros",
+		[1537] = "Kurinnaxx",
+		[1538] = "General Rajaxx",
+		[1539] = "Moam",
+		[1540] = "Buru the Gorger",
+		[1541] = "Ayamiss the Hunter",
+		[1542] = "Ossirian the Unscarred",
+		[1651] = "Onyxia",
+		[1529] = "Razorgore the Untamed",
+		[1530] = "Vaelastrasz the Corrupt",
+		[1531] = "Broodlord Lashlayer",
+		[1532] = "Firemaw",
+		[1533] = "Ebonroc",
+		[1534] = "Flamegor",
+		[1535] = "Chromaggus",
+		[1536] = "Nefarian",
+		[1141] = "Amnennar the Coldbringer",
+		[1142] = "Aarux",
+		[1143] = "Mushlump",
+		[1146] = "Death Speaker Blackthorn",
+		[895] = "Roogug",
+		[896] = "Hunter Bonetusk",
+		[899] = "Warlord Ramtusk",
+		[900] = "Groyat, the Blind Hunter",
+		[901] = "Charlga Razorflank",
+		[1144] = "Executioner Gore",
+		[1145] = "Thruk",
+		[1543] = "The Prophet Skeram",
+		[1544] = "Battleguard Sartura",
+		[1545] = "Fankriss the Unyielding",
+		[1546] = "Princess Huhuran",
+		[1547] = "Silithid Royalty",
+		[1548] = "Viscidus",
+		[1549] = "The Twin Emperors",
+		[1550] = "Ouro",
+		[1551] = "C'thun",
+		[1577] = "Rage Winterchill",
+		[1578] = "Anetheron",
+		[1579] = "Kaz'rogal",
+		[1580] = "Azgalor",
+		[1581] = "Archimonde",
+		[1564] = "High King Maulgar",
+		[1565] = "Gruul the Dragonkiller",
+		[1566] = "Magtheridon",
+		[1567] = "Hydross the Unstable",
+		[1568] = "The Lurker Below",
+		[1569] = "Leotheras the Blind",
+		[1570] = "Fathom-Lord Karathress",
+		[1571] = "Morogrim Tidewalker",
+		[1572] = "Lady Vashj",
+		[1573] = "Al'ar",
+		[1574] = "Void Reaver",
+		[1575] = "High Astromancer Solarian",
+		[1576] = "Kael'thas Sunstrider",
+		[1591] = "Kalecgos",
+		[1592] = "Brutallus",
+		[1593] = "Felmyst",
+		[1594] = "The Eredar Twins",
+		[1595] = "M'uru",
+		[1596] = "Kil'jaeden",
+		[1582] = "High Warlord Naj'entus",
+		[1583] = "Supremus",
+		[1584] = "Shade of Akama",
+		[1585] = "Teron Gorefiend",
+		[1586] = "Gurtogg Bloodboil",
+		[1587] = "Reliquary of Souls",
+		[1588] = "Mother Shahraz",
+		[1589] = "The Illidari Council",
+		[1590] = "Illidan Stormrage",
+		[1552] = "Servant's Quarters",
+		[1553] = "Attumen the Huntsman",
+		[1554] = "Moroes",
+		[1555] = "Maiden of Virtue",
+		[1556] = "Opera Hall",
+		[1557] = "The Curator",
+		[1559] = "Shade of Aran",
+		[1560] = "Terestian Illhoof",
+		[1561] = "Netherspite",
+		[1562] = "Chess Event",
+		[1563] = "Prince Malchezaar",
+		[1764] = "Chess Event",
+	};
+
+	local encounterInstanceMap =  {
+		[760] = "Onyxia's Lair",
+		[741] = "Molten Core",
+		[742] = "Blackwing Lair",
+		[743] = "Ruins of Ahn'Qiraj",
+		[744] = "Temple of Ahn'Qiraj",
+		[745] = "Karazhan",
+		[754] = "Naxxramas",
+		[750] = "The Battle for Mount Hyjal",
+		[747] = "Magtheridon's Lair",
+		[748] = "Serpentshrine Cavern",
+		[749] = "The Eye",
+		[751] = "Black Temple",
+		[746] = "Gruul's Lair",
+		[752] = "Sunwell Plateau",
+		[759] = "Ulduar",
+		[755] = "The Obsidian Sanctum",
+		[756] = "The Eye of Eternity",
+		[753] = "Vault of Archavon",
+		[758] = "Icecrown Citadel",
+		[757] = "Trial of the Crusader",
+		[761] = "The Ruby Sanctum",
+	}
+
+	local encounterDisplayMap = {
+		[895] = 52383,
+		[896] = 52047,
+		[899] = 52515,
+		[900] = 52595,
+		[901] = 31042,
+		[1141] = 32610,
+		[1142] = 52208,
+		[1143] = 52354,
+		[1144] = 52084,
+		[1145] = 52057,
+		[1146] = 4644,
+		[1519] = 13031,
+		[1520] = 10193,
+		[1521] = 13030,
+		[1522] = 12110,
+		[1523] = 13032,
+		[1524] = 12129,
+		[1525] = 13030,
+		[1526] = 11986,
+		[1527] = 12029,
+		[1528] = 11121,
+		[1529] = 10115,
+		[1530] = 13992,
+		[1531] = 14308,
+		[1532] = 6377,
+		[1533] = 6377,
+		[1534] = 6377,
+		[1535] = 14367,
+		[1536] = 11380,
+		[1537] = 15742,
+		[1538] = 15376,
+		[1539] = 15392,
+		[1540] = 15654,
+		[1541] = 15431,
+		[1542] = 15432,
+		[1543] = 15345,
+		[1544] = 15583,
+		[1545] = 15743,
+		[1546] = 15739,
+		[1547] = 15656,
+		[1548] = 15686,
+		[1549] = 15778,
+		[1550] = 15509,
+		[1551] = 15556,
+		[1552] = 16054,
+		[1553] = 16416,
+		[1554] = 16540,
+		[1555] = 16198,
+		[1556] = 17053,
+		[1557] = 16958,
+		[1559] = 16621,
+		[1560] = 11343,
+		[1561] = 15363,
+		[1562] = 18720,
+		[1563] = 19274,
+		[1564] = 18649,
+		[1565] = 18698,
+		[1566] = 18527,
+		[1567] = 20162,
+		[1568] = 20216,
+		[1569] = 20514,
+		[1570] = 20662,
+		[1571] = 20739,
+		[1572] = 20748,
+		[1573] = 18945,
+		[1574] = 18951,
+		[1575] = 18239,
+		[1576] = 20023,
+		[1577] = 17444,
+		[1578] = 21069,
+		[1579] = 17886,
+		[1580] = 18526,
+		[1581] = 20939,
+		[1582] = 21174,
+		[1583] = 21145,
+		[1584] = 21357,
+		[1585] = 21262,
+		[1586] = 21443,
+		[1587] = 21483,
+		[1588] = 21252,
+		[1589] = 21416,
+		[1590] = 21135,
+		[1591] = 23345,
+		[1592] = 22711,
+		[1593] = 22838,
+		[1594] = 23334,
+		[1595] = 23404,
+		[1596] = 23200,
+		[1597] = 26967,
+		[1598] = 27108,
+		[1599] = 29524,
+		[1600] = 31089,
+		[1601] = 15931,
+		[1602] = 15940,
+		[1603] = 15928,
+		[1604] = 16590,
+		[1605] = 16309,
+		[1606] = 16110,
+		[1607] = 16582,
+		[1608] = 16279,
+		[1609] = 10729,
+		[1610] = 16174,
+		[1611] = 16035,
+		[1612] = 16064,
+		[1613] = 16137,
+		[1614] = 16033,
+		[1615] = 15945,
+		[1616] = 27035,
+		[1617] = 26752,
+		[1618] = 29614,
+		[1619] = 29615,
+		[1620] = 29770,
+		[1621] = 29781,
+		[1622] = 29240,
+		[1623] = 29268,
+		[1624] = 31119,
+		[1625] = 30893,
+		[1626] = 30416,
+		[1627] = 30508,
+		[1628] = 30790,
+		[1629] = 31006,
+		[1630] = 31005,
+		[1631] = 30881,
+		[1632] = 30858,
+		[1633] = 31165,
+		[1634] = 30318,
+		[1635] = 30362,
+		[1636] = 30721,
+		[1637] = 28875,
+		[1638] = 29185,
+		[1639] = 28787,
+		[1640] = 28611,
+		[1641] = 28344,
+		[1642] = 28638,
+		[1643] = 28651,
+		[1644] = 28743,
+		[1645] = 28977,
+		[1646] = 28777,
+		[1647] = 28578,
+		[1648] = 28548,
+		[1649] = 28817,
+		[1650] = 28641,
+		[1651] = 8570,
+		[1652] = 31952,
+		[1764] = 18720,
+	}
+	
+	app.GetEncounterName = function(encounterID)
+		return encounterMap[encounterID] or select(1, EJ_GetEncounterInfo(encounterID)) or "";
+	end
+
+	app.GetEncounterDescription = function(encounterID)
+		return select(2, EJ_GetEncounterInfo(encounterID)) or "";
+	end
+	
+	app.GetEncounterLink = function(encounterID)
+		return select(5, EJ_GetEncounterInfo(encounterID)) or "";
+	end
+	
+	-- Instance Map info
+	app.GetEncounterInstanceName = function(instanceID)
+		if (instanceID or 0) < 1 then
+			return select(1, EJ_GetInstanceInfo())
+		end
+		return encounterInstanceMap[instanceID] or select(1, EJ_GetInstanceInfo(instanceID)) or "";
+	end
+		
+	app.GetEncounterInstanceDescription = function(instanceID)
+		return select(2, EJ_GetInstanceInfo(instanceID)) or "";
+	end
+		
+	app.GetEncounterInstanceIcon = function(instanceID)
+		return select(6, EJ_GetInstanceInfo(instanceID)) or "";
+	end
+
+	app.GetEncouterDisplayInfo = function(index, encounterID) 
+		if encounterDisplayMap[encounterID] and index > 1 then
+			return nil;
+		end
+		return encounterDisplayMap[encounterID] or select(4, EJ_GetCreatureInfo(index, encounterID));
+	end
+	
+end)();
 -- Game Tooltip Icon
 local GameTooltipIcon = CreateFrame("FRAME", nil, GameTooltip);
 GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
@@ -370,10 +728,11 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 					model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
 					model:Show();
 				end
-			else
+			elseif count > 0 then 
 				scale = (1 + (ratio * 0.5)) * scale;
 				for i=1,count do
 					model = self.Models[i];
+					-- print(displayInfos[i]);
 					model:SetDisplayInfo(displayInfos[i]);
 					model:SetCamDistanceScale(scale);
 					model:SetFacing(rotation);
@@ -382,10 +741,9 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 					model:Show();
 				end
 			end
-		else
+		elseif count > 0 then 
 			self.Model:SetFacing(rotation);
 			self.Model:SetCamDistanceScale(scale);
-			print(#displayInfos);
 			self.Model:SetDisplayInfo(displayInfos[1]);
 			self.Model:Show();
 		end
@@ -1976,7 +2334,7 @@ local function ExportDataRecursively(group, indent)
 			EJ_SelectInstance(group.instanceID);
 			EJ_SetLootFilter(0, 0);
 			EJ_SetSlotFilter(0);
-			local str = indent .. "c(" .. group.instanceID .. "--[[" .. select(1, EJ_GetInstanceInfo()) .. "]], {\n";
+			local str = indent .. "c(" .. group.instanceID .. "--[[" .. app.GetEncounterInstanceName() .. "]], {\n";
 			for i,subgroup in ipairs(group.g) do
 				str = str .. ExportDataRecursively(subgroup, indent .. "\t");
 			end
@@ -1996,7 +2354,7 @@ local function ExportDataRecursively(group, indent)
 			EJ_SelectEncounter(group.encounterID);
 			EJ_SetLootFilter(0, 0);
 			EJ_SetSlotFilter(0);
-			local str = indent .. "e(" .. group.encounterID .. "--[[" .. select(1, EJ_GetEncounterInfo(group.encounterID)) .. "]], {\n";
+			local str = indent .. "e(" .. group.encounterID .. "--[[" .. app.GetEncounterName(group.encounterID) .. "]], {\n";
 			local numLoot = EJ_GetNumLoot();
 			for i = 1,numLoot do
 				local itemID = EJ_GetLootInfoByIndex(i);
@@ -3172,7 +3530,7 @@ app.BaseAchievementCriteria = {
 				end
 			end
 			if t.encounterID then
-				return select(1, EJ_GetEncounterInfo(t.encounterID)) or "";
+				return app.GetEncounterName(t.encounterID);
 			end
 			local m = GetAchievementNumCriteria(t.achievementID);
 			if m and t.criteriaID <= m then
@@ -3181,7 +3539,7 @@ app.BaseAchievementCriteria = {
 			return "You might need to be on the other faction to view this.";
 		elseif key == "description" then
 			if t.encounterID then
-				return select(2, EJ_GetEncounterInfo(t.encounterID)) or "";
+				return app.GetEncounterDescription(t.encounterID);
 			end
 		elseif key == "link" then
 			if t.itemID then
@@ -3196,13 +3554,13 @@ app.BaseAchievementCriteria = {
 		elseif key == "displayID" then
 			if t.encounterID then
 				-- local id, name, description, displayInfo, iconImage = EJ_GetCreatureInfo(1, t.encounterID);
-				return select(4, EJ_GetCreatureInfo(t.index, t.encounterID));
+				return app.GetEncouterDisplayInfo(t.index, t.encounterID);
 			end
 		elseif key == "displayInfo" then
 			if t.encounterID then
 				local displayInfos, displayInfo = {};
 				for i=1,MAX_CREATURES_PER_ENCOUNTER do
-					displayInfo = select(4, EJ_GetCreatureInfo(i, t.encounterID));
+					displayInfo = app.GetEncouterDisplayInfo(i, t.encounterID);
 					if displayInfo then
 						tinsert(displayInfos, displayInfo);
 					else
@@ -3445,18 +3803,18 @@ app.BaseEncounter = {
 			if t["isRaid"] then return "|cffff8000" .. t.name .. "|r"; end
 			return t.name;
 		elseif key == "name" then
-			return select(1, EJ_GetEncounterInfo(t.encounterID)) or "";
+			return app.GetEncounterName(t.encounterID);
 		elseif key == "description" then
-			return select(2, EJ_GetEncounterInfo(t.encounterID)) or "";
+			return app.GetEncounterDescription(t.encounterID);
 		elseif key == "link" then
-			return select(5, EJ_GetEncounterInfo(t.encounterID)) or "";
+			return app.GetEncounterLink(t.encounterID);
 		elseif key == "displayID" then
 			-- local id, name, description, displayInfo, iconImage = EJ_GetCreatureInfo(1, t.encounterID);
-			return select(4, EJ_GetCreatureInfo(t.index, t.encounterID));
+			return app.GetEncouterDisplayInfo(t.index, t.encounterID);
 		elseif key == "displayInfo" then
 			local displayInfos, displayInfo = {};
 			for i=1,MAX_CREATURES_PER_ENCOUNTER do
-				displayInfo = select(4, EJ_GetCreatureInfo(i, t.encounterID));
+				displayInfo = app.GetEncouterDisplayInfo(i, t.encounterID);
 				if displayInfo then
 					tinsert(displayInfos, displayInfo);
 				else
@@ -3962,11 +4320,11 @@ app.BaseInstance = {
 			if t["isRaid"] then return "|cffff8000" .. t.name .. "|r"; end
 			return t.name;
 		elseif key == "name" then
-			return select(1, EJ_GetInstanceInfo(t.instanceID)) or "";
+			return app.GetEncounterInstanceName(t.instanceID);
 		elseif key == "description" then
-			return select(2, EJ_GetInstanceInfo(t.instanceID)) or "";
+			return app.GetEncounterInstanceDescription(t.instanceID);
 		elseif key == "icon" then
-			return select(6, EJ_GetInstanceInfo(t.instanceID)) or "";
+			return app.GetEncounterInstanceIcon(t.instanceID);
 		--elseif key == "link" then
 		--	return select(8, EJ_GetInstanceInfo(t.instanceID)) or "";
 		elseif key == "saved" then
@@ -6043,7 +6401,7 @@ local function CreateMiniListForGroup(group)
 		CacheFields(newItem);
 		popout.data = {
 			["text"] = "Standalone Item",
-			["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
+			["icon"] = "Interface\\Icons\\item_elementiumkey.blp",
 			["g"] = { newItem },
 			["visible"] = true,
 			["progress"] = 0,

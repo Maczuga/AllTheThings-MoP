@@ -50,10 +50,10 @@ _.Achievements =
 						crit(12),				-- The Blind Hero
 					})),
 					a(ach(8340, {	-- Deck Your Collection (Season 1) (Alliance)
-						--i(98543),	-- Wraps of the Blood-Soaked Brawler [Only leaving in under Season 2 since you are still able to complete that as of Legion and possibly BfA]
+						i(98543),	-- Wraps of the Blood-Soaked Brawler
 					})),
 					h(ach(8343, {	-- Deck Your Collection (Season 1) (Horde)
-						--i(98543),	-- Wraps of the Blood-Soaked Brawler [Only leaving in under Season 2 since you are still able to complete that as of Legion and possibly BfA]
+						i(98543),	-- Wraps of the Blood-Soaked Brawler
 					})),
 					ach(7943),		-- I'm Your Number One Fan (Season 2)
 					a(ach(8336)),	-- I've Got the Biggest Brawls of Them All (Season 1) (Alliance)
