@@ -1249,7 +1249,7 @@ end })
 local NPCTitlesFromID = {};
 local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 	QuestHarvester:SetOwner(UIParent,"ANCHOR_NONE")
-	QuestHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id))
+	QuestHarvester:SetHyperlink(format("unit:0xF53%05X00000000",id))
 	local title = AllTheThingsQuestHarvesterTextLeft1:GetText();
 	if title and QuestHarvester:NumLines() > 2 then
 		-- title = title .. " <" .. AllTheThingsQuestHarvesterTextLeft2:GetText() .. ">";
@@ -8783,7 +8783,6 @@ end):Show();
 			local function OpenMiniList(id, show)
 				-- Determine whether or not to forcibly reshow the mini list.
 				local self = app:GetWindow("CurrentInstance");
-				id = app.LegionToBFAMapID(id);
 				if not self:IsVisible() then
 					if GetDataMember("AutoMiniList") then
 						if not self.openedOnLogin and not show then
@@ -8800,6 +8799,7 @@ end):Show();
 				
 				-- Cache that we're in the current map ID.
 				if self.mapID == id then return; end
+				id = app.LegionToBFAMapID(id);
 				self.mapID = id;
 				if show then self:Update(); end
 			end
