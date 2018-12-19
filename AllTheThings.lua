@@ -1637,25 +1637,6 @@ local function GetHolidayCache()
 										});
 									end
 								end
-								tinsert(t.times,
-								{
-									["start"] = time({
-										year=curYear,
-										month=month,
-										day=curDay,
-										hour=hour,
-										minute=minute,
-									}),
-									["end"] = time({
-										year=event.endTime.year,
-										month=event.endTime.month,
-										day=event.endTime.monthDay,
-										hour=event.endTime.hour,
-										minute=event.endTime.minute,
-									}),
-									["startTime"] = event.startTime,
-									["endTime"] = event.endTime,
-								});
 							end
 						end
 					end
@@ -4036,59 +4017,6 @@ app.CreateFilter = function(id, t)
 	return createInstance(constructor(id, t, "filterID"), app.BaseFilter);
 end
 
--- Garrison Mission Lib
-app.BaseGarrisonMission = {
-	__index = function(t, key)
-		if key == "key" then
-			return "missionID";
-		elseif key == "text" then
-			return C_Garrison.GetMissionName(t.missionID);
-		elseif key == "icon" then
-			return "Interface/ICONS/INV_Icon_Mission_Complete_Order";
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateGarrisonMission = function(id, t)
-	return createInstance(constructor(id, t, "missionID"), app.BaseGarrisonMission);
-end
-
--- Garrison Talent Lib
-app.BaseGarrisonTalent = {
-	__index = function(t, key)
-		if key == "key" then
-			return "talentID";
-		elseif key == "text" then
-			local info = t.info;
-			if info.name then return info.name; end
-		elseif key == "trackable" then
-			return true;
-		elseif key == "saved" then
-			if t.questID then return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID); end
-			local info = t.info;
-			if info.researched then return info.researched; end
-		elseif key == "icon" then
-			local info = t.info;
-			if info.icon then return info.icon; end
-			return "Interface/ICONS/INV_Icon_Mission_Complete_Order";
-		elseif key == "description" then
-			local info = t.info;
-			if info.description then return info.description; end
-		elseif key == "info" then
-			-- TODO: Add "perkSpellID"
-			return C_Garrison.GetTalent(t.talentID);
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateGarrisonTalent = function(id, t)
-	return createInstance(constructor(id, t, "talentID"), app.BaseGarrisonTalent);
-end
-
 -- Heirloom Lib
 app.BaseHeirloom = {
 	__index = function(t, key)
@@ -4174,7 +4102,7 @@ app.BaseHoliday = {
 	end
 };
 app.CreateHoliday = function(id, t)
-	return nil; -- createInstance(constructor(id, t, "holidayID"), app.BaseHoliday);
+	return createInstance(constructor(id, t, "holidayID"), app.BaseHoliday);
 end
 
 -- Gear Set Lib
@@ -4791,13 +4719,9 @@ app.BaseProfession = {
 		if key == "key" then
 			return "requireSkill";
 		elseif key == "text" then
-			return select(1, GetSpellInfo(t.requireSkill));
-			-- if t.requireSkill == 129 then return select(1, GetSpellInfo(t.spellID)); end
-			-- return C_TradeSkillUI.GetTradeSkillDisplayName(t.requireSkill);
+			return select(1, GetSpellInfo(SkillIDToSpellID[t.requireSkill]));
 		elseif key == "icon" then
-			return select(3, GetSpellInfo(t.requireSkill));
-			-- if t.requireSkill == 129 then return select(3, GetSpellInfo(t.spellID)); end
-			-- return C_TradeSkillUI.GetTradeSkillTexture(t.requireSkill);
+			return select(3, GetSpellInfo(SkillIDToSpellID[t.requireSkill]));
 		elseif key == "spellID" then
 			return SkillIDToSpellID[t.requireSkill];
 		else
@@ -10687,14 +10611,16 @@ app.events.TRADE_SKILL_CLOSE = function(...)
 	app:GetWindow("Tradeskills"):SetVisible(false);
 end
 
-app.CreateArtifact = function(id, t) return null; end
-app.CreateFollower = function(id, t) return null; end
-app.CreateGarrisonBuilding = function(id, t) return null; end
-app.CreateGearSet = function(id, t) return null; end
-app.CreateGearSetHeader = function(id, t) return null; end
-app.CreateGearSetSubHeader = function(id, t) return null; end
-app.CreateHeirloom = function(id, t) return null; end
-app.CreateIllusion = function(id, t) return null; end
-app.CreateMusicRoll = function(id, t) return null; end
-app.CreateTransmogCategory = function(id, t) return null; end
-app.CreateToy = function(id, t) return null; end
+app.CreateArtifact = function(id, t) return nil; end
+app.CreateFollower = function(id, t) return nil; end
+app.CreateGarrisonBuilding = function(id, t) return nil; end
+app.CreateGarrisonMission = function(id, t)	return nil; end
+app.CreateGarrisonTalent = function(id, t)	return nil; end
+app.CreateGearSet = function(id, t) return nil; end
+app.CreateGearSetHeader = function(id, t) return nil; end
+app.CreateGearSetSubHeader = function(id, t) return nil; end
+app.CreateHeirloom = function(id, t) return nil; end
+app.CreateIllusion = function(id, t) return nil; end
+app.CreateMusicRoll = function(id, t) return nil; end
+app.CreateTransmogCategory = function(id, t) return nil; end
+app.CreateToy = function(id, t) return nil; end

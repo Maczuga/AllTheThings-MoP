@@ -45,12 +45,12 @@ _.Zones =
 					n(-17, {
 						un(40, q(33104, { -- A Pandaren Legend
 							i(102457, { -- Timeless Essence of the Black Dragonflight
-								un(4, i(102248)), -- Fen-Yu, Fury of Xuen
-								un(4, i(102249)), -- Gon-Lu, Strength of Xuen
-								un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
-								un(4, i(102245)), -- Qian-Le, Courage of Niuzao
-								un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
-								un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+								i(102248), -- Fen-Yu, Fury of Xuen
+								i(102249), -- Gon-Lu, Strength of Xuen
+								i(102247), -- Jina-Kang, Kindness of Chi-Ji
+								i(102245), -- Qian-Le, Courage of Niuzao
+								i(102250), -- Qian-Ying, Fortitude of Niuzao
+								i(102246), -- Xing-Ho, Breath of Yu'lon
 							}),
 						})),
 					}),
@@ -69,19 +69,19 @@ _.Zones =
 				n(-2, {		-- Vendors
 					n(70436, {	-- Blacktalon Quartermaster <Supplier to the Black Prince>
 						["groups"] = {
-							un(4, i(98149)),	-- Cranewing Cloak
-							un(4, i(98150)),	-- Jadefire Drape
-							un(4, i(98335)),	-- Oxhoof Greatcloak
-							un(4, i(98146)),	-- Oxhorn Bladebreaker
-							un(4, i(98147)),	-- Tigerclaw Cape
-							un(4, i(98148)),	-- Tigerfang Wrap
+							i(98149),	-- Cranewing Cloak
+							i(98150),	-- Jadefire Drape
+							i(98335),	-- Oxhoof Greatcloak
+							i(98146),	-- Oxhorn Bladebreaker
+							i(98147),	-- Tigerclaw Cape
+							i(98148),	-- Tigerfang Wrap
 							i(102457, { -- Timeless Essence of the Black Dragonflight
-								un(4, i(102248)), -- Fen-Yu, Fury of Xuen
-								un(4, i(102249)), -- Gon-Lu, Strength of Xuen
-								un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
-								un(4, i(102245)), -- Qian-Le, Courage of Niuzao
-								un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
-								un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+								i(102248), -- Fen-Yu, Fury of Xuen
+								i(102249), -- Gon-Lu, Strength of Xuen
+								i(102247), -- Jina-Kang, Kindness of Chi-Ji
+								i(102245), -- Qian-Le, Courage of Niuzao
+								i(102250), -- Qian-Ying, Fortitude of Niuzao
+								i(102246), -- Xing-Ho, Breath of Yu'lon
 							}),
 						},
 						["description"] = "To purchase the epic cloaks you must have obtained the achievement |r |cFFFFD700'Chapter IV: Celestial Blessings'|r during Mists of Pandaria.  To purchase the legendary cloak token you must have obtained the achievement |r |cFFFFD700'Chapter V: Judgment of the Black Prince'|r during Mists of Pandaria.",
