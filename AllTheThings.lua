@@ -2845,6 +2845,8 @@ app.SetDebugMode = SetDebugMode;
 app.ToggleCompletionistMode = ToggleCompletionistMode;
 app.ToggleDebugMode = ToggleDebugMode;
 app.ToggleMainList = ToggleMainList;
+app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
+
 app.SetHideBOEItems = function(checked)
 	app.SetDataMember("RequireBindingFilter", checked);
 	if checked then
@@ -6158,7 +6160,7 @@ local function MinimapButtonOnClick(self, button)
 		if IsShiftKeyDown() then
 			RefreshCollections();
 		elseif IsAltKeyDown() or IsControlKeyDown() then
-			app:ToggleMiniListForCurrentZone();
+			app.ToggleMiniListForCurrentZone();
 		else
 			ToggleMainList();
 		end

@@ -39,13 +39,14 @@ _.NeverImplemented =
 				un(1, i(48739)),	-- Gul'dan's Shoulderpads of Conquest
 				-- Possible Unused Level 120/Lv 120 Classtrial
 			}),
+			un(1, i(6243)),		-- Green Woolen Robe
 			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
-			un(1, i(4989)),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
-			un(1, i(4990)),	-- Scorched Bands
+			un(1, i(4989)),		-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
+			un(1, i(4990)),		-- Scorched Bands
 			un(1, i(104335)),	-- Titan Rocket Boots
 			un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
 			un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
-			un(1, i(6478)),	-- Rat Stompers
+			un(1, i(6478)),		-- Rat Stompers
 			un(1, i(10010)),	-- Stormcloth Pants
 			un(1, i(10011)),	-- Stormcloth Gloves
 			un(1, i(10020)),	-- Stormcloth Vest
@@ -54,7 +55,7 @@ _.NeverImplemented =
 			un(1, i(10039)),	-- Stormcloth Boots
 			un(1, i(12107)),	-- Whispersilk Leggings
 			un(1, i(13080)),	-- Widow's Clutch
-			un(1, i(1216)),	-- Frost Bracers
+			un(1, i(1216)),		-- Frost Bracers
 			un(1, i(18341)),	-- Quel'dorei Sash
 			un(1, i(23433)),	-- Blood Robes
 			un(1, i(23434)),	-- Robes of the Shard
@@ -126,13 +127,28 @@ _.NeverImplemented =
 				un(1, i(48806)),	-- Garona's Helmet of Conquest
 				un(1, i(48807)),	-- Garona's Legplates of Conquest
 				un(1, i(48808)),	-- Garona's Pauldrons of Conquest
+				un(1, i(7950)),		-- Armor of Thero-Shan
+				un(1, i(7948)),		-- Girdle of Thero-Shan
+				un(1, i(7952)),		-- Boots of Thero-Shan
+				un(1, i(7951)),		-- Hands of Thero-Shan
+				un(1, i(7953)),		-- Mask of Thero-Shan
+				un(1, i(7949)),		-- Leggings of Thero-Shan
 				-- Possible Unused Level 120/Lv 120 Classtrial
 			}),
-			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+			un(1, i(14550)),	-- Bladebane Armguards (Leather)
+			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
+			un(1, i(5821)),		-- Darkstalker Boots (Leather)
 			un(1, i(25795)),	-- Gloves of Preservation (not added version)
-			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
 			un(1, i(56701)),	-- Jinxed Vest (never made it to live)
+			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
+			un(1, i(22273)),	-- Moonshadow Hood (Leather)
+			un(1, i(19986)),	-- Pirate's Eye Patch (Leather)
+			un(1, i(20524)),	-- Shadowhide Leggings (Leather)
+			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+			un(1, i(7187)),		-- VanCleef's Boots (Leather)
 			un(1, i(26029)),	-- Watchman's Bracers
+			un(1, i(21613)),	-- Wormhide Boots (Leather)
+			un(1, i(21614)),	-- Wormhide Protector (Leather)
 		}),
 		n(-45, { -- Mail
 			cl(7, {	-- Shaman

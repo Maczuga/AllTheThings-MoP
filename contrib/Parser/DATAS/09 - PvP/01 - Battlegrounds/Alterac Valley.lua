@@ -17,10 +17,18 @@ _.PVP =
 							["description"] = "This item was removed in Patch 1.6",
 							["u"] = 2,
 						}),
+						{	-- Frost Runed Headdress
+							["itemID"] = 19105,	-- Frost Runed Headdress
+							["u"] = 2,
+						},
 						i(19111, { -- Winteraxe Epaulets
 							["description"] = "This item was removed in Patch 1.6",
 							["u"] = 2,
 						}),
+						{	-- Yeti Hide Bracers
+							["itemID"] = 19113,	-- Yeti Hide Bracers
+							["u"] = 2,
+						},
 					},
 				}),
 				n(13256, { -- Lokholar the Ice Lord
@@ -29,10 +37,18 @@ _.PVP =
 							["description"] = "This item was removed in Patch 1.6",
 							["u"] = 2,
 						}),
+						{	-- Frost Runed Headdress
+							["itemID"] = 19105,	-- Frost Runed Headdress
+							["u"] = 2,
+						},
 						i(19111, { -- Winteraxe Epaulets
 							["description"] = "This item was removed in Patch 1.6",
 							["u"] = 2,
 						}),
+						{	-- Yeti Hide Bracers
+							["itemID"] = 19113,	-- Yeti Hide Bracers
+							["u"] = 2,
+						},
 					},
 				}),
 			},

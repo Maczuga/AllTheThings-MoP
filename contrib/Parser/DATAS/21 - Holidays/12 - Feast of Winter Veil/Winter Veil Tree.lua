@@ -167,58 +167,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 								["questID"] = 33252,
 								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
-							i(116761, { -- Winter Veil Gift
-								["groups"] = {
-									un(29, i(116763)), -- Crashin' Thrashin' Shredder Controller
-								},
-								["description"] = "Gift from 2014.",
-								["questID"] = 36617,
-								["u"] = 40, -- Legacy Quest/Quest Item
-							}),
-							i(128653, { -- Winter Veil Gift
-								["groups"] = {
-									un(29, i(108632)), -- Crashin' Thrashin' Flamer Controller
-								},
-								["description"] = "Gift from 2015.",
-								["questID"] = 39659,
-							}),
-							i(139341, { -- Winter Veil Gift
-								["groups"] = {
-									un(29, i(128636)), -- Endothermic Blaster
-								},
-								["description"] = "Gift from 2016.",
-								["questID"] = 43363,
-							}),
-							i(151350, { -- Winter Veil Gift
-								["groups"] = {
-									un(29, a(i(151349))), -- Toy Weapon Set [Alliance]
-									un(29, h(i(151348))), -- Toy Weapon Set [Horde]
-								},
-								["description"] = "Gift from 2017. You will receive only one factions Toy Weapon Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-								["questID"] = 47751,
-							}),
-							{	-- Winter Veil Gift
-								["itemID"] = 162644,	-- Winter Veil Gift
-								["u"] = 29,				-- Feast of Winter Veil Filter
-								["questID"] = 52965,
-								["description"] = "Gift from 2018. You will receive only one factions Toy Armor Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-								["g"] = {
-									{	-- At Least You're Being Careful
-										["achievementID"] = 12850,	-- At Least You're Being Careful
-										["u"] = 29,					-- Feast of Winter Veil Filter
-									},
-									{	-- Toy Armor Set [A]
-										["itemID"] = 162643,	-- Toy Armor Set [A]
-										["u"] = 29,				-- Feast of Winter Veil Filter
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Toy Armor Set [H]
-										["itemID"] = 162642,	-- Toy Armor Set [H]
-										["u"] = 29,				-- Feast of Winter Veil Filter
-										["races"] = HORDE_ONLY,
-									},
-								},
-							},
 						},
 						["lvl"] = 10,
 					}),
