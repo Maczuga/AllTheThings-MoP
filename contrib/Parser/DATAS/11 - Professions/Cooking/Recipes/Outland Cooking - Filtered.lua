@@ -4,12 +4,7 @@ profession(185, {	-- Cooking
 		{	-- Outlandish Dishes
 			["categoryID"] = 73,	-- Outlandish Dishes
 			["g"] = {
-				{	-- Everyday Cooking
-					["categoryID"] = 1024,	-- Everyday Cooking
-					["g"] = {
-						
-					},
-				},
+
 			},
 		},
 	}),

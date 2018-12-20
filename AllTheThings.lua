@@ -263,6 +263,16 @@ app.GetTempDataSubMember = GetTempDataSubMember;
 		["Mining"] = 186,	-- Mining
 		["Skinning"] = 393,	-- Skinning
 		["Tailoring"] = 197,	-- Tailoring
+		-- Cooking specific (might be needed)
+		["Way of the Grill"] = 975,
+		["Way of the Wok"] = 976,
+		["Way of the Pot"] = 977,
+		["Way of the Steamer"] = 978,
+		["Way of the Oven"] = 979,
+		["Way of the Brew"] = 980,
+	};
+	local tradeSkillCategoryMap = {
+		
 	};
 	app.GetBaseTradeSkillID = function(skillID)
 		return tradeSkillMap[skillID] or skillID;
@@ -2357,45 +2367,116 @@ local function OpenMainList()
 	app:OpenWindow("Prime");
 end
 local function OpenMiniListForCurrentProfession(manual, refresh)
-	-- TODO I tried redoing - there is no receipe into in Blizzard MoP API
-	-- if app.Categories.Professions then
-	-- 	local popout = app:GetWindow("Tradeskills");
-	-- 	local tradeSkillLine = AllTheThings.GetTradeSkillLine();
-	-- 	if tradeSkillLine and GetDataMember("AutoProfessionMiniList") and fieldCache["requireSkill"][tradeSkillLine]
-	-- 		and not (IsTradeSkillLinked()) then
+	if app.Categories.Professions then
+		local popout = app:GetWindow("Tradeskills");
+		local tradeSkillLine = AllTheThings.GetTradeSkillLine();
+		if tradeSkillLine and GetDataMember("AutoProfessionMiniList") and fieldCache["requireSkill"][tradeSkillLine]
+			and not (IsTradeSkillLinked()) then
 	-- 		-- and not (IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild()) then
-	-- 		if manual or not refresh then
-	-- 			popout:ClearAllPoints();
-	-- 			popout:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
-	-- 			popout:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
-	-- 			popout:SetVisible(true);
-	-- 		end
-	-- 	else
-	-- 		if manual then
-	-- 			app.print("You must have a profession open to open the profession mini list.");
-	-- 		end
-	-- 		popout:SetVisible(false);
-	-- 	end
+			if manual or not refresh then
+				popout:ClearAllPoints();
+				popout:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
+				popout:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+				popout:SetVisible(true);
+			end
+		else
+			if manual then
+				app.print("You must have a profession open to open the profession mini list.");
+			end
+			popout:SetVisible(false);
+		end
 		
-	-- 	if popout:IsShown() and refresh then
-	-- 		-- Cache Learned Spells
-	-- 		local skillCache = fieldCache["spellID"];
-	-- 		if skillCache then
-	-- 			local currentCategoryID, categories = -1, {};
-	-- 			local categoryIDs = { C_TradeSkillUI.GetCategories() };
-	-- 			for i = 1,#categoryIDs do
-	-- 				currentCategoryID = categoryIDs[i];
-	-- 				local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-	-- 				if categoryData then
-	-- 					if not categories[currentCategoryID] then
-	-- 						app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
-	-- 						categories[currentCategoryID] = true;
-	-- 					end
-	-- 				end
-	-- 			end
+		if popout:IsShown() and refresh then
+			-- Cache Learned Spells
+			local skillCache = fieldCache["spellID"];
+			if skillCache then
+
+				-- Clear the search box focus so the scan will have correct results.
+				local searchBox = _G.TradeSkillFrameSearchBox
+				searchBox:SetText("")
+
+				_G.TradeSkillSearch_OnTextChanged(searchBox)
+				searchBox:ClearFocus()
+				searchBox:GetScript("OnEditFocusLost")(searchBox)
+
+				headerList = {};
+				table.wipe(headerList)
+
+				-- Save the current state of the TradeSkillFrame so it can be restored after we muck with it.
+				local hasMaterials = _G.TradeSkillFrame.filterTbl.hasMaterials
+				local hasSkillUp = _G.TradeSkillFrame.filterTbl.hasSkillUp
+
+				if hasMaterials then
+					_G.TradeSkillFrame.filterTbl.hasMaterials = false
+					_G.TradeSkillOnlyShowMakeable(false)
+				end
+
+				if hasSkillUp then
+					_G.TradeSkillFrame.filterTbl.hasSkillUp = false
+					_G.TradeSkillOnlyShowSkillUps(false)
+				end
+				_G.SetTradeSkillInvSlotFilter(0, true, true)
+				_G.TradeSkillUpdateFilterBar()
+				_G.TradeSkillFrame_Update()
+
+				-- Expand all headers so we can see all the recipes there are
+				for i = 1, _G.GetNumTradeSkills() do
+					local name, tradeSkillType, _, is_expanded = _G.GetTradeSkillInfo(i)
+
+					if tradeSkillType == "header" or tradeSkillType == "subheader" then
+						if not is_expanded then
+							headerList[name] = true
+							_G.ExpandTradeSkillSubClass(i)
+						end
+					end
+				end
+
+				for categoryId,categoryName in pairs(app.TradeSkillCategoryDB[tradeSkillLine]) do
+					app.SetDataSubMember("Categories", categoryId, categoryName);
+				end
+
+				-- Cache learned recipes
+				local learned = 0;
+				for i = 1,_G.GetNumTradeSkills() do
+					local tradeName,tradeType = GetTradeSkillInfo(i)
+					local rank,maxrank = select(9,GetTradeSkillInfo(i))
+
+					if tradeName and tradeType~="header" and tradeType~="subheader" then
+						local link = GetTradeSkillRecipeLink(i)
+						if link then
+							local receipeID = tonumber(strmatch(link,"|H%w+:(%d+)"));
+
+							SetTempDataSubMember("CollectedSpells", receipeID, 1);
+							if not GetDataSubMember("CollectedSpells", receipeID) then
+								SetDataSubMember("CollectedSpells", receipeID, 1);
+								learned = learned + 1;
+							end
+							if not skillCache[receipeID] then
+								app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. receipeID .. ") in ATT Database. Please report it!");
+								skillCache[receipeID] = { {} };
+							end
+						end
+					end
+
+				end
+
+				-- Restore the state of the things we changed.
+				for i = 1, _G.GetNumTradeSkills() do
+					local name, tradeSkillType, _, is_expanded = _G.GetTradeSkillInfo(i)
+
+					if headerList[name] then
+						_G.CollapseTradeSkillSubClass(i)
+					end
+				end
+
+				_G.TradeSkillFrame.filterTbl.hasMaterials = hasMaterials
+				_G.TradeSkillOnlyShowMakeable(hasMaterials)
+				_G.TradeSkillFrame.filterTbl.hasSkillUp = hasSkillUp
+				_G.TradeSkillOnlyShowSkillUps(hasSkillUp)
+
+				_G.TradeSkillUpdateFilterBar()
+				_G.TradeSkillFrame_Update()
 				
-	-- 			-- Cache learned recipes
-	-- 			local learned = 0;
 	-- 			local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 	-- 			for i = 1,#recipeIDs do
 	-- 				if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
@@ -2421,33 +2502,33 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 	-- 				end
 	-- 			end
 				
-	-- 			-- Open the Tradeskill list for this Profession
-	-- 			local tradeSkillID = AllTheThings.GetTradeSkillLine();
-	-- 			if popout.tradeSkillID ~= tradeSkillID then
-	-- 				popout.tradeSkillID = tradeSkillID;
-	-- 				for i,group in ipairs(app.Categories.Professions) do
-	-- 					if group.requireSkill == tradeSkillID then
-	-- 						popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
-	-- 						app.BuildGroups(popout.data, popout.data.g);
-	-- 						app.UpdateGroups(popout.data, popout.data.g, 1);
-	-- 						if not popout.data.expanded then
-	-- 							popout.data.expanded = true;
-	-- 							ExpandGroupsRecursively(popout.data, true);
-	-- 						end
-	-- 						popout:SetVisible(true);
-	-- 					end
-	-- 				end
-	-- 			end
+				-- Open the Tradeskill list for this Profession
+				local tradeSkillID = AllTheThings.GetTradeSkillLine();
+				if popout.tradeSkillID ~= tradeSkillID then
+					popout.tradeSkillID = tradeSkillID;
+					for i,group in ipairs(app.Categories.Professions) do
+						if group.requireSkill == tradeSkillID then
+							popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
+							app.BuildGroups(popout.data, popout.data.g);
+							app.UpdateGroups(popout.data, popout.data.g, 1);
+							if not popout.data.expanded then
+								popout.data.expanded = true;
+								ExpandGroupsRecursively(popout.data, true);
+							end
+							popout:SetVisible(true);
+						end
+					end
+				end
 			
-	-- 			-- If something new was "learned", then refresh the data.
-	-- 			if learned > 0 then
-	-- 				app:RefreshData(false, true, true);
-	-- 				app.print("Cached " .. learned .. " known recipes!");
-	-- 				wipe(searchCache);
-	-- 			end
-	-- 		end
-	-- 	end
-	-- end
+				-- If something new was "learned", then refresh the data.
+				if learned > 0 then
+					app:RefreshData(false, true, true);
+					app.print("Cached " .. learned .. " known recipes!");
+					wipe(searchCache);
+				end
+			end
+		end
+	end
 end
 local function ToggleMainList()
 	app:ToggleWindow("Prime");
@@ -3615,7 +3696,7 @@ app.BaseCategory = {
 			if info then return info; end
 			return "Open your Professions to Cache";
 		elseif key == "icon" then
-			return "Interface/ICONS/INV_Garrison_Blueprints1";
+			return "Interface/ICONS/inv_scroll_04";
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3640,7 +3721,6 @@ local classIcons = {
 	[9] = "Interface\\Icons\\ClassIcon_Warlock",
 	[10] = "Interface\\Icons\\ClassIcon_Monk",
 	[11] = "Interface\\Icons\\ClassIcon_Druid",
-	[12] = "Interface\\Icons\\ClassIcon_DemonHunter",
 };
 app.BaseCharacterClass = {
 	__index = function(t, key)

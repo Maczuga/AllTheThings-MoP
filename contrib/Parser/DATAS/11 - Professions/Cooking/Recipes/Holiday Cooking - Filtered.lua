@@ -1,8 +1,8 @@
 -- Edited October 21, 2018.  Should be all the holiday ones at the time. - Lucetia
 profession(185, {	-- Cooking
 	filter(200, {	-- Recipes
-		{	-- Old World Recipes
-			["categoryID"] = 72,	-- Old World Recipes
+		{	-- Holiday Cooking
+			["categoryID"] = 58,	-- Holiday Cooking
 			["g"] = {
 				{	-- Holiday Cooking
 					["categoryID"] = 58,	-- Holiday Cooking

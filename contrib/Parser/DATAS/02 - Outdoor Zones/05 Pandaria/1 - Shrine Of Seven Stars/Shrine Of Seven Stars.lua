@@ -150,11 +150,9 @@ _.Zones =
 						["coords"] = {
 							{ 71.27, 50.52, 393 },
 						},
-					},
---[[					
+					},			
 					qa(31390),	-- The Klaxxi
 					qa(31386),	-- The Shado-Pan Offensive
---]]
 				}),
 				n(-2, {	-- Vendors
 					n(74021, {	-- Clarice Chapmann <Heroic Vendor>

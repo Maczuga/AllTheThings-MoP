@@ -58,10 +58,8 @@ profession(356, { 	-- Fishing
 	n(-162, { 	-- Pets
 		desc(p(174), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."),	-- Chuck
 		desc(p(193), "Can be obtained from fishing in the underbelly in Dalaran(Northrend)."),	-- Giant Sewer Rat
-		desc(p(115), "Can be bought from Nat Pagle in Garrison after becoming Good Friends for 50 Nat's Lucky Coin"), -- Land Shark
 		desc(p(132), "Can be obtained via Magical Crawdad box that is a possible reward after fishing up Mr. Pinchy."),	-- Magical Crawdad
 		desc(p(164), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."), -- Muckbreath
-		desc(p(1448), "Can be bought from Nat Pagle in Garrison after becoming Good Friends for 50 Nat's Lucky Coin"), 	-- Sea Calf
 		desc(p(340), "Can be fished from Darkmoon Island open water while the Darkmoon Faire is in town."),	-- Sea Pony
 		desc(p(173), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."), -- Snarly
 		desc(p(211), "Can be looted Bag of Fishing Treasures or Bag of Shiny Things."), 	-- Strand Crawler

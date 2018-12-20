@@ -4,12 +4,7 @@ profession(185, {	-- Cooking
 		{	-- Recipes of the Cold North
 			["categoryID"] = 74,	-- Recipes of the Cold North]
 			["g"] = {
-				{	-- Everyday Cooking
-					["categoryID"] = 1025,	-- Everyday Cooking
-					["g"] = {
-						
-					},
-				},
+
 			},
 		},
 	}),

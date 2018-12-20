@@ -243,7 +243,7 @@ AllTheThings.Locales.enUS = {
 		[32] = "Bows",						 -- GetItemSubClassInfo(2,2)
 		[33] = "Crossbows",						 -- GetItemSubClassInfo(2,18)
 		[34] = "Fist Weapons",						 -- GetItemSubClassInfo(2,13)
-		[35] = "Warglaives",						 -- GetItemSubClassInfo(2,9)
+		-- [35] = "Warglaives",						 -- GetItemSubClassInfo(2,9)
 
 		-- PADDING for extra types, if necessary
 		[50] = "Miscellaneous",						 -- GetItemSubClassInfo(2,14)
@@ -265,7 +265,7 @@ AllTheThings.Locales.enUS = {
 		[105] = "Achievements",						 -- TRACKER_FILTER_ACHIEVEMENTS
 		[106] = "Holiday",						 -- CALENDAR_FILTER_WEEKLY_HOLIDAYS
 		[107] = "Vignettes",
-
+		-- [108] = "Music Rolls",
 		[109] = "Heirlooms",						 -- HEIRLOOMS
 		[110] = "Titles", 										-- Titles
 		[111] = "Glyph",						 -- GetItemClassInfo(16)
@@ -302,7 +302,7 @@ AllTheThings.Locales.enUS = {
 		[32] = "Interface\\Icons\\inv_weapon_bow_05",						-- Bows
 		[33] = "Interface\\Icons\\inv_weapon_crossbow_01",					-- Crossbows
 		[34] = "Interface\\Icons\\inv_misc_monsterclaw_02",					-- Fist Weapons
-		[35] = "Interface\\Icons\\inv_weapon_warglaive_01",					-- Warglaives
+		-- [35] = "Interface\\Icons\\inv_weapon_warglaive_01",					-- Warglaives
 		[50] = "Interface\\Icons\\Spell_Misc_Drink",						-- Miscellaneous
 		[51] = "Interface\\Icons\\INV_Jewelry_Necklace_02",					-- Neck
 		[52] = "Interface\\Icons\\INV_Jewelry_Ring_04",						-- Finger

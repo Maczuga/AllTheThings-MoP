@@ -10,11 +10,8 @@ _.Zones =
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
 				n(-17, { 	-- Quests
---[[
 					qh(32352),	-- A Gathering Storm
 					qh(31511),	-- A Witness to History
---]]
---[[ CHALLENGE MODE DAILIES -- REMOVED?
 					qh(31528, {	-- A Worthy Challenge: Darkmaster Gandling
 						i(98134),	-- Heroic Cache of Treasures
 					}),
@@ -24,12 +21,9 @@ _.Zones =
 					qh(31527, {	-- A Worthy Challenge: Flameweaver Koegler
 						i(98134),	-- Heroic Cache of Treasures
 					}),
---]]
---[[
 					qh( 32242),	-- Buried Secrets
 					qh( 32022),	-- Candy Bucket
 					q(31279),	-- Everything I Know About Cooking
---]]					
 					qh(32901, { -- Heroic Deeds
 						["groups"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
@@ -154,13 +148,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 164, -- Blacksmithing
 					}),
---[[					
 					qh(33249),	-- Proving Grounds
 					qh(32256),	-- Rise Of An Empire
 					qh(32726),	-- So You Want to Be a Blacksmith...
 					qh(31391),	-- The Klaxxi
-					qh(31388),	-- The Shado-Pan Offensive
---]]					
+					qh(31388),	-- The Shado-Pan Offensive				
 				}),
 				nh(-2, {	-- Vendors
 					n(64067, {	-- Barleyflower <Cooking Supplies>
@@ -1301,7 +1293,7 @@ _.Zones =
 					}),
 				}),
 			},
-			["maps"] = { 392 },
+			["maps"] = { 580 },
 			["lvl"] = 78,
 			["isRaid"] = true,
 			["races"] = HORDE_ONLY,
