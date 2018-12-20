@@ -17,6 +17,7 @@ db\Presets.lua
 db\RaceDB.lua
 db\NPCDB.lua
 db\ItemDB.lua
+db\HolidayDB.lua
 db\TradeSkillCategoryDB.lua
 db\Categories.lua
 Settings.lua
