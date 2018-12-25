@@ -30,7 +30,7 @@ _.Zones =
 							["coord"] = { 42.3, 92.0 },
 							["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 							["modelScale"] = 1.5,
-							["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
+							["icon"] = "Interface\\Icons\\inv_box_02",
 							["questID"] = 31410,
 							["description"] = "On the bottom level of the ship — you will have to go down two sets of stairs.",
 						}),

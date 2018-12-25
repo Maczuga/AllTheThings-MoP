@@ -251,7 +251,7 @@ _.Zones =
 							i(6547),	-- Soldier's Gauntlets						
 						},
 						["modelScale"] = 1.5,
-						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
+						["icon"] = "Interface\\Icons\\inv_box_02",
 						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 					}),
 					n(14267, { 	-- Emogg the Crusher

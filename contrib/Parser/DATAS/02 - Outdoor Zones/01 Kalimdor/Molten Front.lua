@@ -243,7 +243,7 @@ _.Zones =
 									{ 68.5, 64.9, 338 },
 								},
 								["modelScale"] = 1.5,
-								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
+								["icon"] = "Interface\\Icons\\inv_box_02",
 								["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 							}),					
 			--[[						

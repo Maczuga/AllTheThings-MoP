@@ -354,7 +354,7 @@ _.Zones =
 							i(13051),	-- Witchfury						
 						},
 						["modelScale"] = 1.5,
-						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
+						["icon"] = "Interface\\Icons\\inv_box_02",
 						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 					}),					
 					n(8279, { 	-- Faulty War Golem

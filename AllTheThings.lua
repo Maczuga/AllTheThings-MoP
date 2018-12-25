@@ -1593,10 +1593,17 @@ local function GetHolidayCache()
 		-- local date = C_Calendar.GetDate();
 		local _, curMonth, curDay, curYear = CalendarGetDate()
 		-- C_Calendar.SetAbsMonth(date.month, date.year);
-		for month=1,12,1 do
+		for monthOffset=0,11,1 do
+			local year = curYear;
+			if curMonth + monthOffset > 12 then
+				year = tonumber(year) + 1;
+			end
+			local month = (curMonth + monthOffset) % 12;
+			if month == 0 then
+				month = 12;
+			end
 			-- C_Calendar.SetMonth(1);
 			for day=1,31,1 do
-				local monthOffset = month - curMonth;
 				local numEvents = CalendarGetNumDayEvents(monthOffset, day);
 				if numEvents > 0 then
 					for index=1,numEvents,1 do
@@ -1627,7 +1634,7 @@ local function GetHolidayCache()
 										tinsert(t.times,
 										{
 											["start"] = time({
-												year=curYear,
+												year=year,
 												month=month,
 												day=curDay,
 												hour=hour,
@@ -1638,7 +1645,7 @@ local function GetHolidayCache()
 										tinsert(t.times,
 										{
 											["end"] = time({
-												year=curYear,
+												year=year,
 												month=month,
 												day=curDay,
 												hour=hour,
@@ -1808,6 +1815,7 @@ local function GetRelativeDifficulty(group, difficultyID)
 	end
 end
 local function GetRelativeMap(group, currentMapID)
+	-- currentMapID = app.LegionToBFAMapID(currentMapID);
 	if group then
 		if group.mapID then return group.mapID; end
 		if group.maps then
@@ -2298,10 +2306,18 @@ local function AddTomTomWaypoint(group, auto)
 			end
 			if group.coords then
 				for i, coord in ipairs(group.coords) do
-					TomTom:AddWaypoint(coord[3] or defaultMapID, coord[1] / 100, coord[2] / 100, opt);
+					-- print(coord[3] or defaultMapID);
+					-- print(coord[1] / 100);
+					-- print(coord[2] / 100);
+					TomTom:AddMFWaypoint(app.BFAToLegionMapID(coord[3]) or defaultMapID, app.BFAToLegionFloor(group.coord[3]), coord[1] / 100, coord[2] / 100, opt);
 				end
 			end
-			if group.coord then TomTom:AddWaypoint(group.coord[3] or defaultMapID, group.coord[1] / 100, group.coord[2] / 100, opt); end
+			if group.coord then 
+				-- print(group.coord[3] or defaultMapID);
+				-- print(group.coord[1] / 100);
+				-- print(group.coord[2] / 100);
+				TomTom:AddMFWaypoint(app.BFAToLegionMapID(group.coord[3]) or defaultMapID, app.BFAToLegionFloor(group.coord[3]), group.coord[1] / 100, group.coord[2] / 100, opt); 
+			end
 		end
 		if group.g then
 			for i,subgroup in ipairs(group.g) do
@@ -10299,9 +10315,15 @@ app.events.VARIABLES_LOADED = function()
 	app.BFAToLegionMapID = function(uiMapID)
 		for i,values in ipairs(uiMapIDTables) do
 			if values[1] == uiMapID then
-				--print(values[1], values[2], values[3], values[4]);
-				--return values[3] > 0 and values[3] or values[2];
 				return values[2];
+			end
+		end
+		return uiMapID;
+	end
+	app.BFAToLegionFloor = function(uiMapID)
+		for i,values in ipairs(uiMapIDTables) do
+			if values[1] == uiMapID then
+				return values[3];
 			end
 		end
 		return uiMapID;

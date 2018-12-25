@@ -692,7 +692,7 @@ _.Instances =
 								},
 								["model"] = "World\\Generic\\Passivedoodads\\Furniture\\Containers\\Titanchest.mdx",
 								["modelScale"] = 2.1,
-								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",			
+								["icon"] = "Interface\\Icons\\inv_box_02",			
 							}),
 						})),
 						cr(9938, e( 386, {	-- Magmus

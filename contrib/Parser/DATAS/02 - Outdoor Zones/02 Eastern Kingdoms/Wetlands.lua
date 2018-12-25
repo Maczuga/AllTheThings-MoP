@@ -241,7 +241,7 @@ _.Zones =
 							i(13114),			-- Troll's Bane Leggings
 						},
 						["modelScale"] = 1.5,
-						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
+						["icon"] = "Interface\\Icons\\inv_box_02",
 						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 					}),
 					n(2108, { 	-- Garneg Charskull

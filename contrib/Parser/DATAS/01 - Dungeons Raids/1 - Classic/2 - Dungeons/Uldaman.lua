@@ -369,7 +369,7 @@ _.Instances =
 						["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items. Has a very large loot table far exceeding those listed.",
 						["model"] = "World\\Generic\\Passivedoodads\\Furniture\\Containers\\Titanchest.mdx",
 						["modelScale"] = 2.1,
-						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
+						["icon"] = "Interface\\Icons\\inv_box_02",
 					}),
 					n(-40, {	-- Legacy
 						["groups"] = {

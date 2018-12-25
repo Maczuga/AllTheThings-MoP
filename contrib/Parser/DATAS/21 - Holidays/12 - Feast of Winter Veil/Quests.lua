@@ -39,11 +39,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					}),
 					q(7043, { -- You're a Mean One... (Alliance)
 						["groups"] = {
-							i(149503, { -- Stolen Gift
-								["description"] = "This gift is granted to any player between levels 60-100. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
-								["lvl"] = 60,
-							}),
-							i(116762, { -- Stolen Present
+							i(93626, { -- Stolen Present
 								["groups"] = {
 									-- Battle Pets/Companions
 									un(29, p(191)),	-- Clockwork Rocket Bot
@@ -63,19 +59,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 									un(29, i(37710)),	-- Crashin' Thrashin' Racer Controller
 									un(29, i(90883)),	-- The Pigskin
 
-
-
-
-
 									un(29, i(108632)),	-- Crashin' Thrashin' Flamer Controller
 
 									un(29, i(54438)),	-- Tiny Blue Ragdoll
 									un(29, i(54437)),	-- Tiny Green Ragdoll
-									un(29, i(128776)),	-- Red Wooden Sled
 									un(29, i(44606)),	-- Toy Train Set
-									-- Illusions
-									un(29, i(128649)),	-- Illusion: Winter's Grasp
-									un(29, i(118572)),	-- Illusion: Flames of Ragnaros
 									-- Appearances
 									un(7, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
 									un(7, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
@@ -162,12 +150,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					}),
 					q(6983, { -- You're a Mean One... (Horde)
 						["groups"] = {
-							i(149503, { -- Stolen Gift
-								
-								["description"] = "This gift is granted to any player between levels 60-100. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
-								["lvl"] = 60,
-							}),
-							i(116762, { -- Stolen Present
+							i(93626, { -- Stolen Present
 								["groups"] = {
 									-- Battle Pets/Companions
 									un(29, p(191)),	-- Clockwork Rocket Bot
