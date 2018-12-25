@@ -387,6 +387,81 @@ _.Zones =
 										["itemID"] = 16392,	-- Knight-Lieutenant's Leather Boots
 										["u"] = 2,
 									},
+									-- Lieutenant Commander's Battlegear [Warrior]
+									{	-- Lieutenant Commander's Plate Helm
+										["itemID"] = 16429,	-- Lieutenant Commander's Plate Helm
+										["u"] = 2,
+									},
+									{	-- Lieutenant Commander's Plate Pauldrons
+										["itemID"] = 16432,	-- Lieutenant Commander's Plate Pauldrons
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Plate Chestguard
+										["itemID"] = 16430,	-- Knight-Captain's Plate Chestguard
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Plate Gauntlets
+										["itemID"] = 16406,	-- Knight-Lieutenant's Plate Gauntlets
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Plate Leggings
+										["itemID"] = 16431,	-- Knight-Captain's Plate Leggings
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Plate Boots
+										["itemID"] = 16405,	-- Knight-Lieutenant's Plate Boots
+										["u"] = 2,
+									},
+									-- Lieutenant Commander's Aegis [Paladin]
+									{	-- Lieutenant Commander's Lamellar Headguard
+										["itemID"] = 16434,	-- Lieutenant Commander's Lamellar Headguard
+										["u"] = 2,
+									},
+									{	-- Lieutenant Commander's Lamellar Shoulders
+										["itemID"] = 16436,	-- Lieutenant Commander's Lamellar Shoulders
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Lamellar Breastplate
+										["itemID"] = 16433,	-- Knight-Captain's Lamellar Breastplate
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Lamellar Gauntlets
+										["itemID"] = 16410,	-- Knight-Lieutenant's Lamellar Gauntlets
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Lamellar Leggings
+										["itemID"] = 16435,	-- Knight-Captain's Lamellar Leggings
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Lamellar Sabatons
+										["itemID"] = 16409,	-- Knight-Lieutenant's Lamellar Sabatons
+										["u"] = 2,
+									},
+									-- Lieutenant Commander's Pursuit [Hunter]
+									{	-- Lieutenant Commander's Chain Helmet
+										["itemID"] = 16428,	-- Lieutenant Commander's Chain Helmet
+										["u"] = 2,
+									},
+									{	-- Lieutenant Commander's Chain Pauldrons
+										["itemID"] = 16427,	-- Lieutenant Commander's Chain Pauldrons
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Chain Hauberk
+										["itemID"] = 16425,	-- Knight-Captain's Chain Hauberk
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Chain Gauntlets
+										["itemID"] = 16403,	-- Knight-Lieutenant's Chain Gauntlets
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Chain Leggings
+										["itemID"] = 16426,	-- Knight-Captain's Chain Leggings
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Chain Boots
+										["itemID"] = 16401,	-- Knight-Lieutenant's Chain Boots
+										["u"] = 2,
+									},
 								},
 							},
 							{	-- Captain Lancy Revshon <Stormwind Quartermaster>
@@ -1357,11 +1432,6 @@ _.Zones =
 											{	-- Plans: Elementium Girdle of Pain
 												["itemID"] = 66107,	-- Plans: Elementium Girdle of Pain
 											},
-											{	-- Plans: Elementium Shield Spike
-												["itemID"] = 66102,	-- Plans: Elementium Shield Spike
-												["spellID"] = 0,	-- This is available via the trainer, need to delink the unused plans from the recipe
-												["u"] = 1,
-											},
 											{	-- Plans: Hardened Elementium Girdle
 												["itemID"] = 66105,	-- Plans: Hardened Elementium Girdle
 											},
@@ -1393,38 +1463,6 @@ _.Zones =
 									},
 									{	-- Hardened Elementium Bar
 										["itemID"] = 53039,	-- Hardened Elementium Bar
-										["g"] = {
-											{	-- Plans: Ebonsteel Belt Buckle
-												["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
-											},
-											{	-- Plans: Forged Elementium Mindcrusher
-												["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
-											},
-											{	-- Plans: Pyrium Shield Spike
-												["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
-											},
-											{	-- Plans: Vicious Ornate Pyrium Breastplate
-												["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
-											},
-											{	-- Plans: Vicious Ornate Pyrium Helm
-												["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
-											},
-											{	-- Plans: Vicious Ornate Pyrium Legguards
-												["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
-											},
-											{	-- Plans: Vicious Pyrium Breastplate
-												["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
-											},
-											{	-- Plans: Vicious Pyrium Helm
-												["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
-											},
-											{	-- Plans: Vicious Pyrium Legguards
-												["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
-											},
-										},
-									},
-									{	-- Pyrium Bar
-										["itemID"] = 51950,	-- Pyrium Bar
 										["g"] = {
 											{	-- Plans: Elementium Bonesplitter
 												["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
@@ -1470,6 +1508,38 @@ _.Zones =
 											},
 											{	-- Plans: Vicious Pyrium Shoulders
 												["itemID"] = 66121,	-- Plans: Vicious Pyrium Shoulders
+											},
+										},
+									},
+									{	-- Pyrium Bar
+										["itemID"] = 51950,	-- Pyrium Bar
+										["g"] = {
+											{	-- Plans: Ebonsteel Belt Buckle
+												["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
+											},
+											{	-- Plans: Forged Elementium Mindcrusher
+												["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
+											},
+											{	-- Plans: Pyrium Shield Spike
+												["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
+											},
+											{	-- Plans: Vicious Ornate Pyrium Breastplate
+												["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
+											},
+											{	-- Plans: Vicious Ornate Pyrium Helm
+												["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
+											},
+											{	-- Plans: Vicious Ornate Pyrium Legguards
+												["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
+											},
+											{	-- Plans: Vicious Pyrium Breastplate
+												["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
+											},
+											{	-- Plans: Vicious Pyrium Helm
+												["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
+											},
+											{	-- Plans: Vicious Pyrium Legguards
+												["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
 											},
 										},
 									},
@@ -1488,11 +1558,6 @@ _.Zones =
 											{	-- Plans: Elementium Girdle of Pain
 												["itemID"] = 66107,	-- Plans: Elementium Girdle of Pain
 											},
-											{	-- Plans: Elementium Shield Spike
-												["itemID"] = 66102,	-- Plans: Elementium Shield Spike
-												["spellID"] = 0,	-- This is available via the trainer, need to delink the unused plans from the recipe
-												["u"] = 1,
-											},
 											{	-- Plans: Hardened Elementium Girdle
 												["itemID"] = 66105,	-- Plans: Hardened Elementium Girdle
 											},
@@ -1524,38 +1589,6 @@ _.Zones =
 									},
 									{	-- Hardened Elementium Bar
 										["itemID"] = 53039,	-- Hardened Elementium Bar
-										["g"] = {
-											{	-- Plans: Ebonsteel Belt Buckle
-												["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
-											},
-											{	-- Plans: Forged Elementium Mindcrusher
-												["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
-											},
-											{	-- Plans: Pyrium Shield Spike
-												["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
-											},
-											{	-- Plans: Vicious Ornate Pyrium Breastplate
-												["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
-											},
-											{	-- Plans: Vicious Ornate Pyrium Helm
-												["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
-											},
-											{	-- Plans: Vicious Ornate Pyrium Legguards
-												["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
-											},
-											{	-- Plans: Vicious Pyrium Breastplate
-												["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
-											},
-											{	-- Plans: Vicious Pyrium Helm
-												["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
-											},
-											{	-- Plans: Vicious Pyrium Legguards
-												["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
-											},
-										},
-									},
-									{	-- Pyrium Bar
-										["itemID"] = 51950,	-- Pyrium Bar
 										["g"] = {
 											{	-- Plans: Elementium Bonesplitter
 												["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
@@ -1601,6 +1634,38 @@ _.Zones =
 											},
 											{	-- Plans: Vicious Pyrium Shoulders
 												["itemID"] = 66121,	-- Plans: Vicious Pyrium Shoulders
+											},
+										},
+									},
+									{	-- Pyrium Bar
+										["itemID"] = 51950,	-- Pyrium Bar
+										["g"] = {
+											{	-- Plans: Ebonsteel Belt Buckle
+												["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
+											},
+											{	-- Plans: Forged Elementium Mindcrusher
+												["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
+											},
+											{	-- Plans: Pyrium Shield Spike
+												["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
+											},
+											{	-- Plans: Vicious Ornate Pyrium Breastplate
+												["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
+											},
+											{	-- Plans: Vicious Ornate Pyrium Helm
+												["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
+											},
+											{	-- Plans: Vicious Ornate Pyrium Legguards
+												["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
+											},
+											{	-- Plans: Vicious Pyrium Breastplate
+												["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
+											},
+											{	-- Plans: Vicious Pyrium Helm
+												["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
+											},
+											{	-- Plans: Vicious Pyrium Legguards
+												["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
 											},
 										},
 									},

@@ -21,7 +21,7 @@ _.Toys =
 		i(98136), 		-- Gastropod Shell
 		i(86584),		-- Hardened Shell
 		i(86594), 		-- Helpful Wikky's Whistle
-		i(86593),		-- Hozen Beach Ball
+		i(153182),  	-- Holy Lightsphere Toy		i(86593),		-- Hozen Beach Ball
 		i(86571),		-- Kang's Bindstone
 		i(88566), 		-- Krastinov's Bag of Horrors
 		i(63269),		-- Loaded Gnomish Dice

@@ -8,9 +8,22 @@ _.Zones =
 			["groups"] = {
 				n(-16, {	-- Rares
 					n(22060, {	-- Fenissa the Assassin
-						i(31264),	-- Silvermoon Robes
-						i(31263),	-- Silvermoon Tunic
-						i(31256),	-- Silvermoon Armor
+						["groups"] = {
+							i(31264),	-- Silvermoon Robes
+							i(31263),	-- Silvermoon Tunic
+							i(31256),	-- Silvermoon Armor
+						},
+						["coords"] = {	-- need to verify top spawn/path at vector coil
+							{ 40.1, 61.2 },	-- cryo-core
+							{ 39.5, 58.9 },
+							{ 38.8, 58.4 },
+							{ 37.8, 58.4 },
+							{ 36.6, 60.3 },
+							{ 36.3, 62.7 },
+							{ 24.3, 54.2 },	-- bottom of vector coil
+							{ 24.3, 56.5 },
+							{ 24.4, 51.5 },
+						},
 					}),
 				}),
 			},

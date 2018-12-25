@@ -50,6 +50,7 @@ _.Zones =
 									i(53241),  -- Steel-Patched Belt
 									i(53258),  -- Terrortooth Hide Bracers
 									i(53248),  -- Raptor Scrap Cloak
+									i(131371),  -- Steel-Patched Armbands
 								},
 								["qg"] = 37138,	-- Onatay
 								["coord"] = { 39.4, 20.3 },
@@ -66,6 +67,7 @@ _.Zones =
 								["groups"] = {
 									i(53239),  -- Holgom's Bracers
 									i(53231),  -- Climbing Straps
+									i(131370),  -- Holgom's Waistcord
 								},
 								["qg"] = 37153,	-- Holgom
 								["coord"] = { 37.6, 16.6 },
@@ -83,6 +85,7 @@ _.Zones =
 								["groups"] = {
 									i(53307),  -- Surveying Gloves
 									i(53308),  -- Zykes' Belt
+									i(131372),  -- Surveying Gauntlets
 								},
 								["qg"] = 37154,	-- Kilrok Gorehammer
 								["coord"] = { 39.6, 19.8 },
@@ -121,6 +124,7 @@ _.Zones =
 								["groups"] = {
 									i(53252),	-- Sabersnout's Cloak
 									i(53228),	-- Boarpocalypse Boots
+									i(131374),	-- Bristleback Challenge Treads
 								},
 								["qg"] = 11857,	-- Makaba Flathoof
 								["coord"] = { 44.2, 33.6 },
@@ -164,6 +168,9 @@ _.Zones =
 								["groups"] = {
 									i(53160),	-- Vest of the Nightmare Rift
 									i(53159),	-- Naralex's Slippers
+									i(131379),	-- Tunic of the Nightmare Rift
+									i(156997),	-- Scepter of Naralex 
+									i(156998),	-- Cudgel of Naralex
 								},
 								["qg"] = 37570,	-- Naralex
 								["coord"] = { 50.4, 40.6 },
@@ -185,6 +192,7 @@ _.Zones =
 									i(53254),	-- Sternhorn's Shield
 									i(53257),	-- Taurajo Leggings
 									i(53251),	-- Robes of the Bloody Field
+									i(131375),	-- Taurajo Greaves
 								},
 								["qg"] = 3418,	-- Kirge Sternhorn
 								["coord"] = { 41.6, 46.5 },
@@ -210,6 +218,7 @@ _.Zones =
 									i(53237),	-- Grease-Covered Boots
 									i(53238),	-- Groady Goblin Wand
 									i(53247),	-- Pewter Slab
+									i(131376),	-- Grease-Covered Footguards
 								},
 								["qg"] = 37679,	-- Warlord Bloodhilt
 								["coord"] = { 41.4, 46.8 },
@@ -251,6 +260,7 @@ _.Zones =
 									i(53259),	-- Tomusa's Sword
 									i(53233),	-- Earthbound Leggings
 									i(53234),	-- Flightmare Mantle
+									i(131382),	-- Earthbound Trousers
 								},
 								["qg"] = 37909,	-- Tomusa
 								["coord"] = { 41.0, 70.9 },
@@ -275,6 +285,7 @@ _.Zones =
 									i(53236),	-- Gloves of Desolation Hold
 									i(53242),	-- Breeches of Authority
 									i(53243),	-- Loose Cannon
+									i(131377),	-- Gauntlets of Desolation Hold
 								},
 								["coord"] = { 41.6, 69.8 },
 								["races"] = HORDE_ONLY,
@@ -307,6 +318,7 @@ _.Zones =
 									i(53229),	-- Brain-Splattered Leggings
 									i(53260),	-- Vest of Abomification
 									i(53246),	-- Neurosurgeon's Tool
+									i(131381),	-- Chestguard of Abomification
 								},
 								["qg"] = 37908,	-- Calder Gray
 								["coord"] = { 42.6, 70.2 },
@@ -319,6 +331,7 @@ _.Zones =
 									i(53226),  -- Battlescar Monnion
 									i(53232),  -- Cloak of Harvested Fear
 									i(53256),  -- Taurajo Butcher's Blade
+									i(131383),  -- Battlescar Amice
 								},
 								["qg"] = 37837,	-- Warlord Bloodhilt
 								["coord"] = { 41.6, 69.8 },
@@ -418,6 +431,7 @@ _.Zones =
 								["groups"] = {
 									i(53255),	-- Stonespire Shoulders
 									i(53253),	-- Spearhead Helm
+									i(131384),	-- Spearhead Faceguard
 								},
 								["qg"] = 38140,	-- Weezil Slipshadow
 								["coord"] = { 50.7, 86.8 },
@@ -426,156 +440,257 @@ _.Zones =
 							},
 						}),
 					})),
-					qa(25022, {	-- A Failure to Communicate
+					{	-- ...And Bury the Rest
+						["questID"] = 25183,
+						["qg"] = 39118,	-- General Twinbraid
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25174,	-- Twinbraid Needs to Know
+					},
+					{	-- A Failure to Communicate
+						["questID"] = 25022,
 						["qg"] = 38871,	-- Corporal Teegan
-					}),
-					qa(25045, {	-- A Line in the Dirt
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- A Line in the Dirt
+						["questID"] = 25045,
 						["groups"] = {
 							i(53301),	-- Taurajo Leggings
 							i(53291),	-- Robes of the Bloody Field
 							i(53275),	-- Hawthorne's Shield
+							i(131399),	-- Taurajo Greaves
 						},
 						["qg"] = 38323,	-- General Hawthorne
-					}),
-					qa(25084, {	-- A Growing Threat
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- A Growing Threat
+						["questID"] = 25084,
 						["qg"] = 37835,	-- Dorn Redearth
-					}),
-					qa(25183, {	-- ...And Bury the Rest
-						["qg"] = 39118,	-- General Twinbraid
-						["sourceQuests"] = { 25174 },	-- Twinbraid Needs to Know
-					}),
-					qa(24944, {	-- Back in the Fight
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Back in the Fight
+						["questID"] = 24944,
 						["qg"] = 38804,	-- Tolliver Houndstooth
-						["sourceQuests"] = { 24941 },	-- Langridge Shot
-					}),
-					qa(25153, {	-- Bael'dun Rescue
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 24941,	-- Langridge Shot
+					},
+					{	-- Bael'dun Rescue
+						["questID"] = 25153,
 						["groups"] = {
 							i(53264),	-- Bael'dun Plate Leggings
 							i(53306),	-- Vest of Bael'dun Keep
 							i(53300),	-- Survivor's Blade
+							i(131404),	-- Chestguard of Bael'dun Keep
 						},
 						["qg"] = 39218,	-- Bael'dun Survivor
-						["sourceQuests"] = { 25120 },	-- Marley's Final Flight
-					}),
-					qa(25080, {	-- Batteries Not Yet Included
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25120,	-- Marley's Final Flight
+					},
+					{	-- Batteries Not Yet Included
+						["questID"] = 25080,
 						["groups"] = {
 							i(53270),	-- Far-a-Day Mesh
 							i(53303),	-- Thunderhead Kid Gloves
 							i(53281),	-- Mizzy's Dungarees
 							i(53285),	-- Pistonhammer Gun
+							i(131400),	-- Mizzy's Gauntlets
 						},
 						["qg"] = 39084,	-- Mizzy Pistonhammer
-						["sourceQuests"] = { 25079 },	-- Powder Play
-					}),
-					qa(24863, {	-- Breaking the Siege
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25079,	-- Powder Play
+					},
+					{	-- Big Nasty Plunger
+						["objectID"] = 202598,
+						["groups"] = {
+							{	-- The Deed Is Done (awarded "Fort Triumph" criteria)
+								["questID"] = 25185,
+								["groups"] = {
+									i(53305),	-- Twinbraid Shoulders
+									i(53274),	-- Goblin Miner's Helmet
+									i(131406),	-- Goblin Miner's Hardhat
+								},
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 25183,	-- ...And Bury the Rest
+							},
+						},
+					},
+					{	-- Breaking the Siege
+						["questID"] = 24863,
 						["qg"] = 38378,	-- Commander Walpole
-					}),
-					qa(25081, {	-- Claim the Battlescar
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Claim the Battlescar
+						["questID"] = 25081,
 						["qg"] = 39083,	-- Commander Roberts
-					}),
-					qa(25057, {	-- Clap 'Em In Irons
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Clap 'Em In Irons
+						["questID"] = 25057,
 						["qg"] = 38323,	-- General Hawthorne
-						["sourceQuests"] = { 25045, 25043 },	-- A Line in the Dirt & Fields of Blood
-					}),
-					qa(25104, {	-- Digsite Status
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							25045,	-- A Line in the Dirt
+							25043,	-- Fields of Blood
+						},
+					},
+					{	-- Cry of the Thunderhawk
+						["questID"] = 913,
+						["groups"] = {
+							un(2, i(5302)),	-- Cobalt Buckler
+							un(2, i(5299)),	-- Gloves of the Moon
+							un(2, i(5306)),	-- Wind Rider Staff
+						},
+						["u"] = 40,
+						["qg"] = 3387,	-- Jorn Skyseer
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 907,	-- Enraged Thunder Lizards
+					},
+					{	-- Digsite Status
+						["questID"] = 25104,
 						["qg"] = 39118,	-- General Twinbraid
-					}),
-					qa(25044, {	-- Diplomacy By Another Means
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Diplomacy By Another Means
+						["questID"] = 25044,
 						["groups"] = {
 							i(53265),	-- Boarpocalypse Boots
 							i(53292),	-- Sabersnout's Cloak
+							i(131398),	-- Bristleback Challenge Treads
 						},
 						["qg"] = 38986,	-- Ambassador Gaines
-						["sourceQuests"] = { 25022 }	-- A Failure to Communicate
-					}),
-					qa(25108, {	-- Feegly the Exiled
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25022	-- A Failure to Communicate
+					},
+					{	-- Feegly the Exiled
+						["questID"] = 25108,
 						["groups"] = {
 							i(53263),	-- Bael Modan Monnion
 							i(53271),	-- Feegly's Shroud
 							i(53280),	-- Misery's End
+							i(131602),	-- Bael Modan Amice
 						},
 						["qg"] = 39155,	-- Marley Twinbraid
-						["sourceQuests"] = { 25104 },	-- Digsite Status
-					}),
-					q(26908, {	-- Feeling Thorny
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25104,	-- Digsite Status
+					},
+					{	-- Feeling Thorny
+						["questID"] = 26908,
 						["qg"] = 37812,	-- Mahka
 						["lvl"] = 30,
 						["coord"] = { 45.1, 85.4 },
-					}),
-					qa(25043, {	-- Fields of Blood
+					},
+					{	-- Fields of Blood
+						["questID"] = 25043,
 						["qg"] = 38323,	-- General Hawthorne
-					}),
-					qa(25008, {	-- Filthy Animals
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Filthy Animals
+						["questID"] = 25008,
 						["groups"] = {
 							i(53276),	-- Hecklefang Hide Belt
+							i(131395),	-- Hecklefang Links
 						},
 						["qg"] = 38873,	-- Goucho
-					}),
-					qa(25086, {	-- Firestone Point
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Firestone Point
+						["questID"] = 25086,
 						["qg"] = 39085,	-- Logan Talonstrike
-						["sourceQuests"] = { 25082 },	-- Working the Bugs Out
-					}),
-					qa(25186, {	-- Futile Resistance (awarded "Honor's Stand" criteria)
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25082,	-- Working the Bugs Out
+					},
+					{	-- Futile Resistance (awarded "Honor's Stand" criteria)
+						["questID"] = 25186,
 						["groups"] = {
 							i(53273),	-- Gloves of Honor's Stand
 							i(53295),	-- Singleton Sash
+							i(131407),	-- Singleton Gauntlets
 						},
 						["qg"] = 38380,	-- Janice Mattingly
-						["sourceQuests"] = { 24863, 24862 },	-- Breaking the Siege & Running the Gauntlet
-					}),
-					qa(25106, {	-- Hands Off Me Dig!
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							24863,	-- Breaking the Siege
+							24862,	-- Running the Gauntlet
+						},
+					},
+					{	-- Hands Off Me Dig!
+						["questID"] = 25106,
 						["qg"] = 39155,	-- Marley Twinbraid
-						["sourceQuests"] = { 25104 },	-- Digsite Status
-					}),
-					qa(25151, {	-- He Needs Ale!
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25104,	-- Digsite Status
+					},
+					{	-- He Needs Ale!
+						["questID"] = 25151,
 						["qg"] = 39188,	-- Marley Twinbraid
-						["sourceQuests"] = { 25120 },	-- Marley's Final Flight
-					}),
-					qa(25182, {	-- Kill 'em All!
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25120,	-- Marley's Final Flight
+					},
+					{	-- Kill 'em All!
+						["questID"] = 25182,
 						["qg"] = 39118,	-- General Twinbraid
-						["sourceQuests"] = { 25174 },	-- Twinbraid Needs to Know
-					}),
-					qa(24941, {	-- Langridge Shot
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25174,	-- Twinbraid Needs to Know
+					},
+					{	-- Langridge Shot
+						["questID"] = 24941,
 						["qg"] = 38620,	-- Thomas Paxton
-					}),
-					qa(24948, {	-- Lifting the Siege
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Lifting the Siege
+						["questID"] = 24948,
 						["qg"] = 38620,	-- Thomas Paxton
-						["sourceQuests"] = { 24943 },	-- Re-Take the Courtyard
-					}),
-					qa(25041, {	-- Lion's Pride
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 24943,	-- Re-Take the Courtyard
+					},
+					{	-- Lion's Pride
+						["questID"] = 25041,
 						["qg"] = 39003,	-- Sam Trawley
-					}),
-					qa(25015, {	-- Make 'em Squeal
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Make 'em Squeal
+						["questID"] = 25015,
 						["qg"] = 38871,	-- Corporal Teegan
-						["sourceQuests"] = { 25036 },	-- Teegan's Troubles
-					}),
-					qa(25085, {	-- Mangletooth
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25036,	-- Teegan's Troubles
+					},
+					{	-- Mangletooth
+						["questID"] = 25085,
 						["groups"] = {
 							i(53288),	-- Quilboar Fur Bracers
 							i(53290),	-- Redearth Staff
 							i(53279),	-- Mangled Tooth
 						},
 						["qg"] = 37835,	-- Dorn Redearth
-						["sourceQuests"] = { 25084 },	-- A Growing Threat
-					}),
-					qa(25042, {	-- Marching On Our Stomachs (awarded "Forward Command" criteria)
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25084,	-- A Growing Threat
+					},
+					{	-- Marching On Our Stomachs (awarded "Forward Command" criteria)
+						["questID"] = 25042,
 						["groups"] = {
 							i(53304),	-- Trawley's Gloves
 							i(53299),	-- Stormsnout Hide Boots
 							i(53286),	-- Pot Stirrer
 							i(53284),	-- Pewter Slab
+							i(131397),	-- Stormsnout Stompers
 						},
 						["qg"] = 39003,	-- Sam Trawley
-						["sourceQuests"] = { 25041 }	-- Lion's Pride
-					}),
-					qa(25120, {	-- Marley's Final Flight
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25041	-- Lion's Pride
+					},
+					{	-- Marley's Final Flight
+						["questID"] = 25120,
 						["qg"] = 39155,	-- Marley Twinbraid
-						["sourceQuests"] = { 25108, 25106 },	-- Feegly the Exiled & Hands Off Me Dig!
-					}),
-					qa(25074, {	-- Meet Me at Triumph
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							25108,	-- Feegly the Exiled
+							25106,	-- Hands Off Me Dig!
+						},
+					},
+					{	-- Meet Me at Triumph
+						["questID"] = 25074,
 						["qg"] = 38323,	-- General Hawthorne
-						["sourceQuests"] = { 25057 },	-- Clap 'em In Irons
-					}),
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25057,	-- Clap 'em In Irons
+					},
 					{	-- Next of Kin
 						["questID"] = 25292,
 						["qg"] = 39697,	-- Nato Raintree
@@ -584,130 +699,203 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 24747,	-- Sabotage!
 					},
-					qa(25102, {	-- No Bull
+					{	-- No Bull
+						["questID"] = 25102,
 						["groups"] = {
 							i(53298),	-- Stonesthrow Sword
 							i(53278),	-- Landquaker Leggings
 							i(53277),	-- Kodo-Repellant Shoulders
+							i(131401),	-- Landquaker Trousers
 						},
 						["qg"] = 39154,	-- Hurlston Stonesthrow
-					}),
-					qa(25075, {	-- Pick-a-Part
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Pick-a-Part
+						["questID"] = 25075,
 						["qg"] = 39084,	-- Mizzy Pistonhammer
-					}),
-					qa(25079, {	-- Powder Play
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Powder Play
+						["questID"] = 25079,
 						["qg"] = 39084,	-- Mizzy Pistonhammer
-						["sourceQuests"] = { 25075 },	-- Pick-a-Part
-					}),
-					qa(24934, {	-- Repel Boarders!
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25075,	-- Pick-a-Part
+					},
+					{	-- Repel Boarders!
+						["questID"] = 24934,
 						["qg"] = 38619,	-- Admiral Aubrey
-						["sourceQuests"] = { 24921 },	-- Report to Aubrey
-					}),
-					qa(26687, {	-- Reinforcements From Theramore (UNTESTED - unavailable on lv100 and don't have any Alliance at 35 to test)
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 24921,	-- Report to Aubrey
+					},
+					{	-- Reinforcements From Theramore (UNTESTED - unavailable on lv100 and don't have any Alliance at 35 to test)
+						["questID"] = 26687,
 						["qg"] = 39119,	-- General Twinbraid
+						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 35,
-						["sourceQuests"] = { 25182 },	-- Kill 'em All!
-					}),
-					qa(24921, {	-- Report to Aubrey
+						["sourceQuest"] = 25182,	-- Kill 'em All!
+					},
+					{	-- Report to Aubrey
+						["questID"] = 24921,
 						["qg"] = 38623,	-- Dockmaster Lewis
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
-						["sourceQuests"] = { 28551, 28550 },	-- Hero's Call: Southern Barrens! (same quest name, different IDs)
-					}),
-					qa(25087, {	-- Report to Twinbraid
+						["sourceQuests"] = {
+							28551,	-- Hero's Call: Southern Barrens!
+							28550,	-- Hero's Call: Southern Barrens!
+						},
+					},
+					{	-- Report to Twinbraid
+						["questID"] = 25087,
 						["qg"] = 39083,	-- Commander Roberts
-						["sourceQuests"] = { 25081 },	-- Claim the Battlescar
-					}),
-					qa(24943, {	-- Re-Take the Courtyard
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25081,	-- Claim the Battlescar
+					},
+					{	-- Re-Take the Courtyard
+						["questID"] = 24943,
 						["groups"] = {
 							i(53283),	-- Paxton's Belt
 							i(53297),	-- Spoils of the Courtyard
 							i(53294),	-- Seized Rangeroar Cloak
+							i(131386),	-- Seized Rageroar Belt
 						},
 						["qg"] = 38620,	-- Thomas Paxton
-						["sourceQuests"] = { 24941 },	-- Langridge Shot
-					}),
-					qa(24862, {	-- Running the Gauntlet
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 24941,	-- Langridge Shot
+					},
+					{	-- Revenge of Gann
+						["questID"] = 849,
+						["groups"] = {
+							un(2, i(5313)),	-- Totemic Clan Ring
+						},
+						["u"] = 40,
+						["qg"] = 3341,	-- Gann Stonespire
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 846,	-- Revenge of Gann
+					},
+					{	-- Running the Gauntlet
+						["questID"] = 24862,
 						["qg"] = 38378,	-- Commander Walpole
-					}),
-					qa(24939, {	-- Run Out the Guns
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Run Out the Guns
+						["questID"] = 24939,
 						["groups"] = {
 							i(53282),
 							i(53268),
+							i(131385),
 						},
 						["qg"] = 3454,	-- Cannoneer Smythe
-						["sourceQuests"] = { 24938 },	-- The Guns of Northwatch
-					}),
-					qa(25002, {	-- Scavenged
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 24938,	-- The Guns of Northwatch
+					},
+					{	-- Scavenged
+						["questID"] = 25002,
 						["qg"] = 38878,	-- Mangled Body
-					}),
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Signals in the Sky
 						["questID"] = 24515,
 						["qg"] = 37138,	-- Onatay
 						["coord"] = { 39.4, 20.3 },
 						["races"] = HORDE_ONLY,
 					},
-					qa(24956, {	-- Silencing Rageroar
+					{	-- Silencing Rageroar
+						["questID"] = 24956,
 						["groups"] = {
 							i(53266),	-- Boots of the Fallen Brother
 							i(53289),	-- Rageroar Trophy
 						},
 						["qg"] = 38804,	-- Tolliver Houndstooth
-						["sourceQuests"] = { 24944 }	-- Back in the Fight
-					}),
-					qa(25191, {	-- Survey the Destruction
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 24944	-- Back in the Fight
+					},
+					{	-- Survey the Destruction
+						["questID"] = 25191,
 						["qg"] = 38383,	-- Nibb Spindlegear
-					}),
-					qa(25000, {	-- Teegan's People
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Teegan's People
+						["questID"] = 25000,
 						["qg"] = 38621,	-- Jeffrey Long
-					}),
-					qa(25036, {	-- Teegan's Troubles
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Teegan's Troubles
+						["questID"] = 25036,
 						["qg"] = 38620,	-- Thomas Paxton
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
-						["sourceQuests"] = { 24948 },	-- Lifting the Siege
-					}),
-					qa(25197, {	-- The Admiral Won't Back Down
+						["sourceQuest"] = 24948,	-- Lifting the Siege
+					},
+					{	-- The Admiral Won't Back Down
+						["questID"] = 25197,
 						["qg"] = 39322,	-- Horton Gimbleheart
+						["races"] = ALLIANCE_ONLY,
 						["description"] = "The only way to do both this and 'Report to Aubrey' is if you do it before accepting and completing 'Repel Boarders.'",
-						["sourceQuests"] = { 25191 },	-- Survey the Destruction
-					}),
-					qa(25175, {	-- The Bad News
+						["sourceQuest"] = 25191,	-- Survey the Destruction
+					},
+					{	-- The Bad News
+						["questID"] = 25175,
 						["qg"] = 39188,	-- Marley Twinbraid
-						["sourceQuests"] = { 25151 },	-- He Needs Ale!
-					}),
-					o(202598, {	-- Big Nasty Plunger
-						qa(25185,  {  -- The Deed Is Done (awarded "Fort Triumph" criteria)
-							["groups"] = {
-								i(53305),	-- Twinbraid Shoulders
-								i(53274),	-- Goblin Miner's Helmet
-							},
-							["sourceQuests"] = { 25183 },	-- ...And Bury the Rest
-						}),
-					}),
-					qa(24938, {	-- The Guns of Northwatch
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25151,	-- He Needs Ale!
+					},
+					{	-- The Guns of Northwatch
+						["questID"] = 24938,
 						["qg"] = 38619,	-- Admiral Aubrey
-						["sourceQuests"] = { 24934 },	-- Repel Boarders!
-					}),
-					qa(25059, {	-- The Taurajo Briefs
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 24934,	-- Repel Boarders!
+					},
+					{	-- The Taurajo Briefs
+						["questID"] = 25059,
 						["qg"] = 38986,	-- Ambassador Gaines
-						["sourceQuests"] = { 25045, 25043 },	-- A Line in the Dirt & Fields of Blood
-					}),
-					qa(25034, {	-- To the Front!
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							25045,	-- A Line in the Dirt
+							25043,	-- Fields of Blood
+						},
+					},
+					{	-- To the Front!
+						["questID"] = 25034,
 						["qg"] = 38871,	-- Corporal Teegan
-						["sourceQuests"] = { 25027 },	-- You Flicked a Fine Vine to Leaf Me
-					}),
---					q( 24568),	-- To the Walls! (LEGACY)
-					qa(25028, {	-- Trouble From the Ground Up
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25027,	-- You Flicked a Fine Vine to Leaf Me
+					},
+					{	-- To the Walls!
+						["questID"] = 24568,
+						["u"] = 1,	-- beta only
+						["qg"] = 37717,	-- Winnoa Pineforest
+					},
+					{	-- Trouble From the Ground Up
+						["questID"] = 25028,
 						["qg"] = 38876,	-- Hannah Bridgewater
-						["sourceQuests"] = { 25022, 25015 }	-- A Failure to Communicate & Make 'Em Squeal
-					}),
-					qa(25174, {	-- Twinbraid Needs to Know
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							25022,	-- A Failure to Communicate
+							25015,	-- Make 'Em Squeal
+						},
+					},
+					{	-- Twinbraid Needs to Know
+						["questID"] = 25174,
 						["qg"] = 38152,	-- Weezil Slipshadow
-						["sourceQuests"] = { 25163 },	-- Who Did This?
-					}),
-					qa(25163, {	-- Who Did This?
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25163,	-- Who Did This?
+					},
+					{	-- Weapons of Choice
+						["questID"] = 893,
+						["groups"] = {
+							un(2, i(5322)),	-- Demolition Hammer
+							un(2, i(5323)),	-- Everglow Lantern
+						},
+						["u"] = 40,
+						["qg"] = 3433,	-- Tatternack Steelforge
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Who Did This?
+						["questID"] = 25163,
 						["qg"] = 39220,	-- Wounded Bael'dun Officer
-						["sourceQuests"] = { 25120 },	-- Marley's Final Flight
-					}),
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25120,	-- Marley's Final Flight
+					},
 					{	-- Winnoa Pineforest
 						["questID"] = 24807,
 						["qg"] = 37570,	-- Naralex
@@ -715,17 +903,25 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 24601,	-- The Nightmare Scar
 					},
-					qa(25082, {	-- Working the Bugs Out
+					{	-- Working the Bugs Out
+						["questID"] = 25082,
 						["qg"] = 39085,	-- Logan Talonstrike
-					}),
-					qa(25027, {	-- You Flicked a Fine Vine to Leaf Me
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- You Flicked a Fine Vine to Leaf Me
+						["questID"] = 25027,
 						["groups"] = {
 							i(53302),	-- Three-Tooth Bracers
 							i(53287),	-- Quilboar Crone Gloves
+							i(131396),	-- Three-Tooth Armguards
 						},
 						["qg"] = 38871,	-- Corporal Teegan
-						["sourceQuests"] = { 25022, 25015 }	-- A Failure to Communicate & Make 'Em Squeal
-					}),
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							25022,	-- A Failure to Communicate
+							25015,	-- Make 'Em Squeal
+						},
+					},
 				}),
 			},
 		}),

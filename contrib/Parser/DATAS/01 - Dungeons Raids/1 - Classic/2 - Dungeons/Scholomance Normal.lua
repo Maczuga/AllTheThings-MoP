@@ -170,6 +170,7 @@ _.Instances =
 								un(2, i(14024)),	-- Frightalon
 								un(2, i(13957)),	-- Gargoyle Slashers
 								un(2, i(13983)),	-- Gravestone War Axe
+								un(2, i(13960)),	-- Heart of the Fiend
 								un(2, i(13969)),	-- Loomoguard Armbraces
 								un(2, i(13955)),	-- Stoneform Shoulders
 								un(2, i(13967)),	-- Windreaver Greaves
@@ -207,6 +208,7 @@ _.Instances =
 								un(2, i(18759)),	-- Malicious Axe
 								un(2, i(18761)),	-- Oblivion's Touch
 								un(2, i(18758)),	-- Specter's Blade
+								un(2, i(18760)),	-- Necromantic Band
 							}),
 							n(10433, {	-- Marduk Blackpool
 								un(2, i(18692)),	-- Death Knight Sabatons
@@ -269,6 +271,7 @@ _.Instances =
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
 								un(9, i(14617)),	-- Sawbones Shirt
+								un(2, i(18684)),	-- Dimly Opalescent Ring
 							}),
 							n(10901, {	-- Lorekeeper Polkelt
 								un(2, i(18680)),	-- Ancient Bone Bow
@@ -296,6 +299,7 @@ _.Instances =
 								un(2, i(14632)),	-- Necropile Leggings
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
+								un(2, i(18684)),	-- Dimly Opalescent Ring
 							}),
 							n(10505, {	-- Instructor Malicia
 								un(2, i(18680)),	-- Ancient Bone Bow
@@ -324,6 +328,7 @@ _.Instances =
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
 								un(7, i(16710)),	-- Shadowcraft Bracers
+								un(2, i(18684)),	-- Dimly Opalescent Ring
 							}),
 							n(10502, {	-- Lady Illucia Barov
 								un(2, i(18680)),	-- Ancient Bone Bow
@@ -350,6 +355,7 @@ _.Instances =
 								un(2, i(14632)),	-- Necropile Leggings
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
+								un(2, i(18684)),	-- Dimly Opalescent Ring
 							}),
 							n(10504, {	-- Lord Alexi Barov
 								un(2, i(18680)),	-- Ancient Bone Bow
@@ -377,6 +383,7 @@ _.Instances =
 								un(2, i(14632)),	-- Necropile Leggings
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
+								un(2, i(18684)),	-- Dimly Opalescent Ring
 							}),
 							n(10507, {	-- The Ravenian
 								un(2, i(18680)),	-- Ancient Bone Bow
@@ -404,6 +411,7 @@ _.Instances =
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
 								un(7, i(16716)),	-- Wildheart Belt
+								un(2, i(18684)),	-- Dimly Opalescent Ring
 							}),
 							n(1853, {	-- Darkmaster Gandling
 								un(7, i(14514)),	-- Pattern: Robe of the Void
@@ -411,7 +419,9 @@ _.Instances =
 								un(2, i(13938)),	-- Bonecreeper Stylus
 								un(2, i(13398)),	-- Boots of the Shrieker
 								un(2, i(16667)),	-- Coif of Elements
+								un(2, i(13950)),	-- Detention Strap
 								un(2, i(16693)),	-- Devout Crown
+								un(2, i(22433)),	-- Don Mauricio's Band of Domination
 								un(2, i(16698)),	-- Dreadmist Mask
 								un(2, i(13937)),	-- Headmaster's Charge
 								un(2, i(16731)),	-- Helm of Valor

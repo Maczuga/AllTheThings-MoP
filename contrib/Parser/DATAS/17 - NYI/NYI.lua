@@ -37,7 +37,6 @@ _.NeverImplemented =
 				un(1, i(48737)),	-- Gul'dan's Leggings of Conquest
 				un(1, i(48738)),	-- Gul'dan's Robe of Conquest
 				un(1, i(48739)),	-- Gul'dan's Shoulderpads of Conquest
-				-- Possible Unused Level 120/Lv 120 Classtrial
 			}),
 			un(1, i(6243)),		-- Green Woolen Robe
 			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
@@ -133,7 +132,6 @@ _.NeverImplemented =
 				un(1, i(7951)),		-- Hands of Thero-Shan
 				un(1, i(7953)),		-- Mask of Thero-Shan
 				un(1, i(7949)),		-- Leggings of Thero-Shan
-				-- Possible Unused Level 120/Lv 120 Classtrial
 			}),
 			un(1, i(14550)),	-- Bladebane Armguards (Leather)
 			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
@@ -270,36 +268,38 @@ _.NeverImplemented =
 				un(1, i(48816)),	-- Windrunner's Legguards of Conquest
 				un(1, i(48817)),	-- Windrunner's Spaulders of Conquest
 				un(1, i(48818)),	-- Windrunner's Tunic of Conquest
-				-- Possible Unused Level 120/Lv 120 Classtrial
 			}),
-			un(1, i(56507)),	    -- Razorshell Helm
-			un(1, i(56514)),	    -- Windbound Helm
-			un(1, i(12615)),	    -- Savage Mail Tunic (never added to live)
-			un(1, i(12616)),	    -- Savage Boots (never added to live)
-			un(1, i(59789)),	    -- Unknown
-			un(1, i(12617)),	    -- Savage Pauldrons (never added to live)
-			un(1, i(18304)),	    -- Greenroot Mail (never added to live)
-			un(1, i(21584)),	    -- Bracers of Eternal Reckoning (never added to live)
-			un(1, i(21588)),	    -- Wristguards of Elemental Fury (never added to live)
-			un(1, i(21612)),	    -- Wormscale Stompers (never added to live)
-			un(1, i(38387)),	    -- Grizzled Hat
-			un(1, i(25794)),	    -- Bone Studded Girdle (not out of beta)
-			un(1, i(38388)),	    -- Cap of the North
-			un(1, i(107863)),	    -- Unknown
-			un(1, i(107867)),	    -- Unknown
-			un(1, i(107872)),	    -- Unknown
-			un(1, i(107875)),	    -- Unknown
-			un(1, i(107879)),	    -- Unknown
-			un(1, i(107885)),	    -- Unknown
-			un(1, i(107888)),	    -- Unknown
-			un(1, i(107892)),	    -- Unknown
-			un(1, i(38389)),	    -- Comfy Raccoonskin Hat
-			un(1, i(38390)),	    -- The Rugged Marksman
-			un(1, i(80947)),	    -- Peacebreaker's Chain Helm
-			un(1, i(80951)),	    -- Peacebreaker's Ringmail Helm
-			un(1, i(81000)),	    -- Ringmail Armor of Eminent Domain (not added version)
-			un(1, i(80996)),	    -- Chain Armor of Eminent Domain (not added version)
-			un(1, i(37454)),	    -- HF28 Mail Physical Chest4
+			un(1, i(12105)),	-- Pridemail Leggings
+			un(1, i(13090)),	-- Breastplate of the Chosen
+			un(1, i(18320)),	-- Demonheart Spaulders
+			un(1, i(56507)),	-- Razorshell Helm
+			un(1, i(56514)),	-- Windbound Helm
+			un(1, i(12615)),	-- Savage Mail Tunic (never added to live)
+			un(1, i(12616)),	-- Savage Boots (never added to live)
+			un(1, i(59789)),	-- Unknown
+			un(1, i(12617)),	-- Savage Pauldrons (never added to live)
+			un(1, i(18304)),	-- Greenroot Mail (never added to live)
+			un(1, i(21584)),	-- Bracers of Eternal Reckoning (never added to live)
+			un(1, i(21588)),	-- Wristguards of Elemental Fury (never added to live)
+			un(1, i(21612)),	-- Wormscale Stompers (never added to live)
+			un(1, i(38387)),	-- Grizzled Hat
+			un(1, i(25794)),	-- Bone Studded Girdle (not out of beta)
+			un(1, i(38388)),	-- Cap of the North
+			un(1, i(107863)),	-- Unknown
+			un(1, i(107867)),	-- Unknown
+			un(1, i(107872)),	-- Unknown
+			un(1, i(107875)),	-- Unknown
+			un(1, i(107879)),	-- Unknown
+			un(1, i(107885)),	-- Unknown
+			un(1, i(107888)),	-- Unknown
+			un(1, i(107892)),	-- Unknown
+			un(1, i(38389)),	-- Comfy Raccoonskin Hat
+			un(1, i(38390)),	-- The Rugged Marksman
+			un(1, i(80947)),	-- Peacebreaker's Chain Helm
+			un(1, i(80951)),	-- Peacebreaker's Ringmail Helm
+			un(1, i(81000)),	-- Ringmail Armor of Eminent Domain (not added version)
+			un(1, i(80996)),	-- Chain Armor of Eminent Domain (not added version)
+			un(1, i(37454)),	-- HF28 Mail Physical Chest4
 		}),
 		n(-46, { -- Plate
 			cl(6, { -- DK
@@ -313,7 +313,6 @@ _.NeverImplemented =
 				un(1, i(48892)),	-- Koltira's Handguards of Conquest
 				un(1, i(48893)),	-- Koltira's Legguards of Conquest
 				un(1, i(48894)),	-- Koltira's Pauldrons of Conquest
-				-- Possible Unused Level 120/Lv 120 Classtrial
 			}),
 			cl(2, { -- Paladin
 				un(1, i(48905)),	-- Liadrin's Tunic of Conquest
@@ -344,7 +343,10 @@ _.NeverImplemented =
 				un(1, i(48873)),	-- Hellscream's Legguards of Conquest
 				un(1, i(48874)),	-- Hellscream's Pauldrons of Conquest
 			}),
-			un(1, i(24137)), -- PH Plate Ramparts Reward
+			un(1, i(5822)),		-- Hedgeseed Gauntlets
+			un(1, i(12106)),	-- Boulderskin Breastplate
+			un(1, i(21587)),	-- Wristguards of Castigation (never made it off test)
+			un(1, i(24137)),	-- PH Plate Ramparts Reward
 			un(1, i(27965)),	-- TEST 130 Epic Paladin DPS Chest
 			un(1, i(37468)),	-- HF28 Plate Physical Boots
 			un(1, i(105393, { -- Tusks of Mannoroth [Heroic Warforged]
@@ -360,6 +362,10 @@ _.NeverImplemented =
 		}),
 		n(-322, { -- Cloaks
 			un(1, i(22230)),	-- Frightmaw Hide (Cloak)
+			un(1, i(28045)), -- Cloak of the Demon Stalker
+			un(1, i(108814)), -- 6.0 PH Cloak Agi
+			un(1, i(108822)), -- 6.0 PH Cloak STR
+			un(1, i(108823)), -- 6.0 PH Cloak Int
 		}),
 		n(-324, { -- Shirts
 			un(1, i(53869)), -- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
@@ -379,6 +385,18 @@ _.NeverImplemented =
 			un(1, i(20084)), -- Hunting Net
 			un(1, i(20525)), -- Earthen Sigil
 		}),
+		filter(51, {	-- Neck
+			un(1, i(7550)),		-- Warrior's Honor
+			un(1, i(13811)),	-- Necklace of the Dawn
+			un(1, i(18023)),	-- Blood Ruby Pendant
+		}),
+		filter(52, {	-- Finger
+			un(1, i(4988)),		-- Burning Obsidian Band
+			un(1, i(17000)),	-- Band of the Wraith
+			un(1, i(17108)),	-- Mark of Deflection
+			un(1, i(13812)),	-- Ring of the Dawn
+			un(1, i(19065)),	-- Emerald Circle
+		}),
 	}),
 	n(-494, { -- Misc
 		un(1, i(100894)),	-- Deathtoll's Reward
@@ -394,6 +412,7 @@ _.NeverImplemented =
 		un(1, i(92563)),	-- The Eye of the Storm
 		un(1, i(22233)), -- Zigris' Footlocker
 		un(1, i(35874)), -- Whizzlespark's Portable Pet Mansion
+		un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
 		un(1, i(25497)),	-- Broken Balanced Stone Dirk
 		un(1, i(28025)),	-- Video Mount
 		un(1, i(28261)),	-- Video Invis Broken Fitz's Throwing Axe
@@ -491,24 +510,6 @@ _.NeverImplemented =
 		un(1, a(model(4805, i(12325)))),	-- Reins of the Primal Leopard 			(Never added in Game)
 		un(1, a(model(6442, i(12326)))),	-- Reins of the Tawny Sabercat 			(Never added in Game)
 		un(1, a(model(9714, i(12327)))),	-- Reins of the Golden Sabercat 		(Never added in Game)
-		un(1, i(156884, {	-- Black Gladiator's Proto-Drake
-			["mountID"] = 262027,
-		})),
-		un(1, i(156880, {	-- Blue Gladiator's Proto-Drake
-			["mountID"] = 262023,
-		})),
-		un(1, i(156885, {	-- Gold Gladiator's Proto-Drake
-			["mountID"] = 262028,
-		})),
-		un(1, i(156883, {	-- Green Gladiator's Proto-Drake
-			["mountID"] = 262026,
-		})),
-		un(1, i(156882, {	-- Pale Gladiator's Proto-Drake
-			["mountID"] = 262025,
-		})),
-		un(1, i(156881, {	-- Purple Gladiator's Proto-Drake
-			["mountID"] = 262024,
-		})),
 		un(1, model(41089, i(84753))),		-- Reins of the White Riding Yak 		(Never added in Game)
 		un(1, model(43707, i(87784))),		-- Reins of the Jungle Riding Crane 	(Never added in Game)
 		un(1, model(43709, i(87786))),		-- Reins of the Black Riding Yak 		(Never added in Game)
@@ -532,13 +533,7 @@ _.NeverImplemented =
 		
 		model(36583, n(51636, {["u"] = 1,})),	-- Lizzy 					(Never added in Game)
 		model(14657, n(14629, {["u"] = 1,})), 	-- Loggerhead Snapjaw 		(Never added in Game)
-		model(36129, n(48376, {["u"] = 1,})),	-- Rumbling Rockling 		(Never added in Game)
-		model(57820, n(83592, { 	-- Sassy Sproutling 					(Never added in Game)
-			["groups"] = {	
-				p(1433),
-			},
-			["u"] = 1,
-		})), 			
+		model(36129, n(48376, {["u"] = 1,})),	-- Rumbling Rockling 		(Never added in Game)			
 		model(36130, n(48377, {["u"] = 1,})),	-- Swirling Stormling 		(Never added in Game)
 		model(36131, n(48378, {["u"] = 1,})), 	-- Whirling Waveling 		(Never added in Game)
 		model(29060, n(34031, {["u"] = 1,})), 	-- XS-001 Constructor Bot 	(Never added in Game)
@@ -549,34 +544,13 @@ _.NeverImplemented =
 			},
 			["u"] = 1,
 		})), 
-		model(74515, n(117343, { 	-- Hearthy 								(Never added in Game)
-			["groups"] = {	
-				p(2003),	
-			},
-			["u"] = 1,
-		})), 
-		model(57821, n(83589, {		-- Kelp Sproutling				 		(Never added in Game)
-			["groups"] = {	
-				p(1431),
-			},
-			["u"] = 1,
-		})),  
 		un(1, i(31665)), -- Toy RC Mortar Tank
 		un(1, i(13342)), -- Pet Fish
 		un(1, i(13343)), -- Pet Stone
 		un(1, i(82800)),  -- "Pet Cage"
-		un(1, i(62769, { 	-- Hardboiled Egg 						(Never added in Game)
-		["groups"] = {				-- /dump C_PetJournal.FindPetIDByName("Hardboiled Egg")
-			p(1758),
-		},							
-		["description"] = "|cff66ccffUnable to find species for this pet, so using Black Piglet to make it so you can see the model for this pet.|r",
-	})),
-	un(1, model(65670, i(136907, { 	-- Black Piglet	 						(Never added in Game)
-		p(1758),
-	}))),
 	}),
 	n(-38, { -- Professions
-		n(-180, { -- Alchemy
+		n(-180, { 	-- Alchemy
 			un(1, i(2556)),     -- Recipe: Elixir of Tongues
 			un(1, i(5641)),		-- Recipe: Cowardly Flight Potion
 			un(1, i(34481)),	-- Recipe: Mad Alchemist's Potion (Recipe was added to trainers instead of a usable item)
@@ -586,8 +560,23 @@ _.NeverImplemented =
 			un(1, i(71958)),	-- Recipe: Transmute Lava Coral
 			un(1, i(71959)),	-- Recipe: Transmute Shadow Spinel
 			un(1, i(71960)),	-- Recipe: Transmute Queen's Garnet
+			un(1, i(112025)),	-- Recipe: UNUSED
+			un(1, i(112032)),	-- Recipe: UNUSED
+			un(1, i(112049)),	-- Recipe: Alchemical Catalyst - Fireweed
+			un(1, i(112050)),	-- Recipe: Alchemical Catalyst - Flytrap
+			un(1, i(112051)),	-- Recipe: Alchemical Catalyst - Starflower
+			un(1, i(112052)),	-- Recipe: Alchemical Catalyst - Arrowbloom
+			un(1, i(112053)),	-- Recipe: Alchemical Catalyst - Orchid
+			un(1, i(112054)),	-- Recipe: Alchemical Catalyst - Lotus
 		}),
-		n(-192, { -- Cooking
+		n(-181, {	-- Blacksmithing
+			{    -- Plans: Elementium Shield Spike
+				["itemID"] = 66102,    -- Plans: Elementium Shield Spike
+				["spellID"] = 0,    -- This is available via the trainer, need to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+		}),
+		n(-192, { 	-- Cooking
 			un(1, i(86512)),	-- Journeyman Cookbook
 			un(1, i(86550)),	-- Apprentice Cookbook
 			un(1, i(86551)),	-- Expert Cookbook
@@ -595,11 +584,17 @@ _.NeverImplemented =
 			un(1, i(86553)),	-- Master Cookbook
 			un(1, i(86554)),	-- Grand Master Cookbook
 		}),
-		n(-185, { -- Inscription
+		n(-183, { 	-- Engineering
+
+		}),
+		n(-185, { 	-- Inscription
 			un(1, i(87830)),	-- Recipe: Tigersblood Tincture
 			un(1, i(87829)),	-- Recipe: Incarnadine Ink
 		}),
-		n(-190, { -- Tailoring
+		n(-187, {	-- Leatherworking
+			un(1, i(15780)),	-- Pattern: Onyxia Scale Breastplate [never made it out of Beta]
+		}),
+		n(-190, { 	-- Tailoring
 			un(1, i(42196)),	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
 			un(1, i(7093)),		-- Pattern: Boots of Darkness
 			un(1, i(6273)),	-- Pattern: Green Woolen Robe
@@ -637,6 +632,7 @@ _.NeverImplemented =
 			un(1, i(42189)),	-- Pattern: Wispcloak (pattern never went live, but it's learned at the trainer)
 			un(1, i(42174)),	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
 		}),
+		un(1, i(5657)),	-- Recipe: Instant Toxin
 	}),
 	n(-161, { -- Toys
 		un(1, i(38568)), 	-- Drakkari Charm Bracelet
@@ -821,7 +817,7 @@ _.NeverImplemented =
 	un(1, i(59796)), 	-- Treads of Decapod Death
 	un(1, i(59797)),	-- Abalone-Linked Robes
 	un(1, i(62061)), 	-- Irradiated Gnome Shirt
-	un(1, i(67600)), 	-- Lil' Alexstrasza										(Never added in Game)	
+	un(1, i(67600)), 	-- Lil' Alexstrasza										(
 
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --

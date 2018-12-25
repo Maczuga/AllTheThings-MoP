@@ -170,7 +170,7 @@ pet(68840, 302);	-- Landro's Lichling
 pet(67128, 285);	-- Landro's Lil' XT
 pet(69251, 307);	-- Lashtail Hatchling
 pet(48118, 235); 	-- Leaping Hatchling
-pet(69648, 308);	-- Legs
+pet(110684, 1395);	-- Leftovers (Lil' Leftovers)pet(69648, 308);	-- Legs
 pet(15996, 95); 	-- Lifelike Mechanical Toad (Lifelike Toad)
 pet(103670, 1320);	-- Lil' Bling
 pet(62540, 268);	-- Lil' Deathwing

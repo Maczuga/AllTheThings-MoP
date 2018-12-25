@@ -64,9 +64,17 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for Triage
 						["requireSkill"] = 129,	-- First Aid
 					}),
-					qg(6826, qa( 2948, {	-- Gnome Improvement
+					{	-- Gnome Improvement
+						["questID"] = 2948,	-- Gnome Improvement
+						["qg"] = 6826,	-- Talvash del Kissel
 						["sourceQuests"] = { 2947 },	-- Return of the Ring
-					})),
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- Talvash's Gold Ring
+								["itemID"] = 9538,	-- Talvash's Gold Ring
+							},
+						},
+					},
 					qa(26118, { -- Seize the Ambassador
 						["g"] = {
 							i(57583),	-- The Slaghammer
@@ -667,11 +675,6 @@ _.Zones =
 									{	-- Plans: Elementium Girdle of Pain
 										["itemID"] = 66107,	-- Plans: Elementium Girdle of Pain
 									},
-									{	-- Plans: Elementium Shield Spike
-										["itemID"] = 66102,	-- Plans: Elementium Shield Spike
-										["spellID"] = 0,	-- This is available via the trainer, need to delink the unused plans from the recipe
-										["u"] = 1,
-									},
 									{	-- Plans: Hardened Elementium Girdle
 										["itemID"] = 66105,	-- Plans: Hardened Elementium Girdle
 									},
@@ -703,38 +706,6 @@ _.Zones =
 							},
 							{	-- Hardened Elementium Bar
 								["itemID"] = 53039,	-- Hardened Elementium Bar
-								["g"] = {
-									{	-- Plans: Ebonsteel Belt Buckle
-										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
-									},
-									{	-- Plans: Forged Elementium Mindcrusher
-										["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
-									},
-									{	-- Plans: Pyrium Shield Spike
-										["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
-									},
-									{	-- Plans: Vicious Ornate Pyrium Breastplate
-										["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
-									},
-									{	-- Plans: Vicious Ornate Pyrium Helm
-										["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
-									},
-									{	-- Plans: Vicious Ornate Pyrium Legguards
-										["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
-									},
-									{	-- Plans: Vicious Pyrium Breastplate
-										["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
-									},
-									{	-- Plans: Vicious Pyrium Helm
-										["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
-									},
-									{	-- Plans: Vicious Pyrium Legguards
-										["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
-									},
-								},
-							},
-							{	-- Pyrium Bar
-								["itemID"] = 51950,	-- Pyrium Bar
 								["g"] = {
 									{	-- Plans: Elementium Bonesplitter
 										["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
@@ -780,6 +751,38 @@ _.Zones =
 									},
 									{	-- Plans: Vicious Pyrium Shoulders
 										["itemID"] = 66121,	-- Plans: Vicious Pyrium Shoulders
+									},
+								},
+							},
+							{	-- Pyrium Bar
+								["itemID"] = 51950,	-- Pyrium Bar
+								["g"] = {
+									{	-- Plans: Ebonsteel Belt Buckle
+										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
+									},
+									{	-- Plans: Forged Elementium Mindcrusher
+										["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
+									},
+									{	-- Plans: Pyrium Shield Spike
+										["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
+									},
+									{	-- Plans: Vicious Ornate Pyrium Breastplate
+										["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
+									},
+									{	-- Plans: Vicious Ornate Pyrium Helm
+										["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
+									},
+									{	-- Plans: Vicious Ornate Pyrium Legguards
+										["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
+									},
+									{	-- Plans: Vicious Pyrium Breastplate
+										["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
+									},
+									{	-- Plans: Vicious Pyrium Helm
+										["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
+									},
+									{	-- Plans: Vicious Pyrium Legguards
+										["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
 									},
 								},
 							},

@@ -19,7 +19,6 @@ _.Zones =
 			desc(q(29612), "Players who have completed Vashj'ir will receive this version of The Art of War."),	-- The Art of War
 			desc(q(29611),	"Players who have not completed Vashj'ir will receive this version of The Art of War."),	-- The Art of War
 			desc(q(34398),	"If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest."),	-- The Dark Portal
-			q(43926),	-- The Legion Returns
 			q(29157),	-- The Zandalari Menace
 			q(28493),	-- Warchief's Command: Ashenvale!
 			q(28496),	-- Warchief's Command: Azshara!

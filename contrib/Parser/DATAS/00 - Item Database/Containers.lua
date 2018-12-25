@@ -157,8 +157,6 @@ i(34597);		--[[Winterfin Clam]]
 i(43346);		--[[Large Satchel of Spoils]]
 i(43347);		--[[Satchel of Spoils]]
 
-i(112633);		--[[Frostdeep Minnow]]
-i(112623);		--[[Pack of Fishing Supplies]]
 i(34863);		--[[Bag of Fishing Treasures]]
 i(35348);		--[[Bag of Fishing Treasures]]
 i(46007);		--[[Bag of Fishing Treasures]]

@@ -1,7 +1,6 @@
 ## Author: Crieve-Sargeras,Maczuga-Evermoon
 ## Interface: 50400
-## Title: AllTheThings-MoP
-## Name: AllTheThings
+## Title: AllTheThings-MoP## Name: AllTheThings
 ## SavedVariables: AllTheThingsAD, AllTheThingsDebugData, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsPCD
 ## Notes: Addon for Tracking Collections & Account Completion
