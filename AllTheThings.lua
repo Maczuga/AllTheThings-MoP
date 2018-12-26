@@ -2337,8 +2337,7 @@ local function AddTomTomWaypoint(group, auto)
 						coordMap = app.BFAToLegionMapID(coord[3]); 
 						coordFloor =  app.BFAToLegionFloor(coord[3]);
 					end
-					print(coordMap, coordFloor, coord[1], coord[2]);
-					TomTom:AddMFWaypoint(coordMap, coordFloor, coord[1], coord[2], opt);
+					TomTom:AddMFWaypoint(coordMap, coordFloor, coord[1] / 100, coord[2] / 100, opt);
 				end
 			end
 			if group.coord then 
@@ -2350,8 +2349,7 @@ local function AddTomTomWaypoint(group, auto)
 					coordMap = app.BFAToLegionMapID(group.coord[3]); 
 					coordFloor =  app.BFAToLegionFloor(group.coord[3]);
 				end
-					print(coordMap, coordFloor, group.coord[1] / 100, group.coord[2] / 100);
-				TomTom:AddMFWaypoint(coordMap, coordFloor, group.coord[1], group.coord[2], opt); 
+				TomTom:AddMFWaypoint(coordMap, coordFloor, group.coord[1] / 100, group.coord[2] / 100, opt); 
 			end
 		end
 		if group.g then
