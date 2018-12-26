@@ -369,7 +369,6 @@ _.Instances =
 							i(46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
 						cr(33118, e(1638, {	-- Ignis the Furnace Master
-							i(142086),	-- Red-Hot Coal (PET!)
 							i( 45171),	-- Intensity
 							i( 45311),	-- Relentless Edge
 							i( 45165),	-- Worldcarver
@@ -398,7 +397,6 @@ _.Instances =
 							i( 46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
 						cr(33186, e(1639, {	-- Razorscale
-							i(142087),	-- Ironbound Collar (PET!)
 							i( 45147),	-- Guiding Star
 							i( 45298),	-- Razorscale Talon
 							i( 45142),	-- Remorse
@@ -542,7 +540,6 @@ _.Instances =
 							ach(12335, {	-- But I'm On Your Side!
 								["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
 							}),
-							i(142088),	-- Stormforged Rune (PET!)
 							i( 45234),	-- Rapture
 							i( 45233),	-- Stormrune Edge
 							i( 45331),	-- Rune-Etched Nightblade
@@ -598,7 +595,6 @@ _.Instances =
 							i(45263),	-- Wrathstone
 						})),
 						cr(33515, e(1643, {	-- Auriaya
-							i(142089),	-- Glittering Ball of Yarn (PET!)
 							i( 45437),	-- Runescribed Blade
 							i( 45315),	-- Stonerender
 							i( 45713),	-- Nurturing Touch
@@ -665,7 +661,6 @@ _.Instances =
 								i(46130),	-- Conqueror's Kirin Tor Tunic
 								i(46123),	-- Conqueror's Terrorblade Breastplate
 							}),
-							i(138800),	-- Illusion: Blade Ward
 							i( 45650, {	-- Leggings of the Wayward Conqueror
 								i(45371),	-- Valorous Aegis Greaves
 								i(45384),	-- Valorous Aegis Legguards
@@ -691,7 +686,6 @@ _.Instances =
 								i(45367),	-- Valorous Kirin Tor Leggings
 								i(45399),	-- Valorous Terrorblade Legplates
 							}),
-							i(142090),	-- Ominous Pile of Snow (PET!)
 							i( 45458),	-- Stormedge
 							i( 45872),	-- Avalanche
 							i( 45450),	-- Northern Barrier
@@ -742,7 +736,6 @@ _.Instances =
 								i(46129),	-- Conqueror's Kirin Tor Hood
 								i(46125),	-- Conqueror's Terrorblade Helmet
 							}),
-							i(138800),	-- Illusion: Blade Ward
 							i( 45659, {	-- Spaulders of the Wayward Conqueror
 								i(45385),	-- Valorous Aegis Shoulderguards
 								i(45380),	-- Valorous Aegis Shoulderplates
@@ -793,7 +786,6 @@ _.Instances =
 								i(45488),	-- Leggings of the Enslaved Idol
 								i(45946),	-- Fire Orchid Signet
 							}),
-							i(142091),	-- Blessed Seed (PET!)
 							i( 45644, {	-- Gloves of the Wayward Conqueror
 								i(45376),	-- Valorous Aegis Gauntlets
 								i(45370),	-- Valorous Aegis Gloves
@@ -819,7 +811,6 @@ _.Instances =
 								i(46131),	-- Valorous Kirin Tor Gauntlets
 								i(45397),	-- Valorous Terrorblade Gauntlets
 							}),
-							i(138800),	-- Illusion: Blade Ward
 							i( 45653, {	-- Legplates of the Wayward Conqueror
 								i(46153),	-- Conqueror's Aegis Legplates
 								i(46176),	-- Conqueror's Aegis Legguards
@@ -920,8 +911,6 @@ _.Instances =
 								i(45342),	-- 
 								i(45336),	-- 
 							}),
-							i(138800),	-- Illusion: Blade Ward
-							i(142092),	-- Overcomplicated Controller (PET!)
 							i( 45489),	-- Insanity's Grip
 							i( 45972),	-- Pulse Baton
 							i( 45492),	-- Malleable Steelweave Mantle
@@ -1041,8 +1030,6 @@ _.Instances =
 								i(46127),	-- Conqueror's Terrorblade Pauldrons
 							}),
 							i( 46348),	-- Formula: Enchant Weapon - Blood Draining
-							i(138801),	-- Illusion: Blood Draining
-							i(142093),	-- Wriggling Darkness (PET!)
 							i( 46016),	-- Abaddon
 							i( 46025),	-- Devotion
 							i( 45521),	-- Earthshaper

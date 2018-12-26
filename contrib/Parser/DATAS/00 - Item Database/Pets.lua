@@ -15,7 +15,6 @@ pet(93040, 1155); 	-- Anubisath Idol
 pet(45022, 216); 	-- Argent Gruntling
 pet(44998, 214); 	-- Argent Squire
 pet(63398, 272);	-- Armadillo Pup
-pet(23712, 1927); 	-- Ash'ana
 pet(104156, 1323); 	-- Ashleaf Spriteling
 pet(104157, 1321); 	-- Azure Crane Chick
 pet(34535, 57); 	-- Azure Whelpling
@@ -64,7 +63,6 @@ pet(37298, 180);	-- Competitor's Souvenir (Essence of Competition)
 pet(49646, 244);	-- Core Hound Pup
 pet(93035, 1150); 	-- Core of Hardened Ash (Ashstone Core)
 pet(60847, 264); 	-- Crawling Claw
-pet(110721, 1396); 	-- Crazy Carrot
 pet(71076, 321); 	-- Creepy Crate
 pet(70160, 318); 	-- Crimson Lasher
 pet(10392, 78); 	-- Crimson Snake
@@ -170,7 +168,7 @@ pet(68840, 302);	-- Landro's Lichling
 pet(67128, 285);	-- Landro's Lil' XT
 pet(69251, 307);	-- Lashtail Hatchling
 pet(48118, 235); 	-- Leaping Hatchling
-pet(110684, 1395);	-- Leftovers (Lil' Leftovers)pet(69648, 308);	-- Legs
+pet(69648, 308);	-- Legs
 pet(15996, 95); 	-- Lifelike Mechanical Toad (Lifelike Toad)
 pet(103670, 1320);	-- Lil' Bling
 pet(62540, 268);	-- Lil' Deathwing
@@ -216,7 +214,7 @@ pet(38628, 186);	-- Nether Ray Fry
 pet(97550, 1228); 	-- Netherspace Portal-Stone (Netherspace Abyssal)
 pet(25535, 131); 	-- Netherwhelp's Collar (Netherwhelp)
 pet(68841, 303);	-- Nightsaber Cub
-pet(129826, 1727); 	-- Nursery Spiderpet(44723, 198);	-- Nurtured Penguin Egg (Pengu)
+pet(44723, 198);	-- Nurtured Penguin Egg (Pengu)
 pet(71140, 323);	-- Nuts' Acorn (Nuts)
 pet(48120, 236); 	-- Obsidian Hatchling
 pet(104166, 1335); 	-- Ominous Flame

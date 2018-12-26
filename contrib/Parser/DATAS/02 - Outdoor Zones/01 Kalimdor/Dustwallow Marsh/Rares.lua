@@ -267,13 +267,6 @@ _.Zones =
 						["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",
 						["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",	
 					}),
-					n(15552, {	-- Dr. Weavil
-						["groups"] = {
-							dr(3, i(142265))	-- Big Red Raygun
-						},
-						["lvl"] = 110,
-						["coord"] = { 76.0, 18.6 },
-					}),
 					n(14231, {	-- Drogoth the Roamer
 						["groups"] = {
 							i(7446),	-- Sentinel Cloak

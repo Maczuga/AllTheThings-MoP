@@ -713,14 +713,6 @@ _.WorldEvents =
 						{ 48.36, 71.37 },
 					},
 					["g"] = {
-						{	-- Brood of Alysrazor
-							["achievementID"] = 9252,	-- Brood of Alysrazor
-							["g"] = {
-								{	-- Blazing Wings
-									["itemID"] = 116115,	-- Blazing Wings
-								},
-							},
-						},
 						{	-- Darkmoon Game Prize
 							["itemID"] = 93724,	-- Darkmoon Game Prize
 						},

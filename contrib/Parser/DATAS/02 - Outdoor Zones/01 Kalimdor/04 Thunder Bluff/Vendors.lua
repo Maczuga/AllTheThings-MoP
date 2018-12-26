@@ -878,17 +878,11 @@ _.Zones =
 									{	-- Reins of the Thundering Jade Cloud Serpent
 										["itemID"] = 85666,	-- Reins of the Thundering Jade Cloud Serpent
 									},
-									{	-- Blacksteel Battleboar
-										["itemID"] = 116666,	-- Blacksteel Battleboar
-									},
 									{	-- Armadillo Pup
 										["itemID"] = 63398,	-- Armadillo Pup
 									},
 									{	-- Dark Phoenix Hatchling
 										["itemID"] = 63138,	-- Dark Phoenix Hatchling
-									},
-									{	-- Deathwatch Hatchling
-										["itemID"] = 114968,	-- Deathwatch Hatchling
 									},
 									{	-- Guild Herald
 										["itemID"] = 65364,	-- Guild Herald

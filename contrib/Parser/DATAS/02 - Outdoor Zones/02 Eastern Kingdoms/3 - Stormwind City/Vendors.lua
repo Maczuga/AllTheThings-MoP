@@ -541,7 +541,6 @@ _.Zones =
 									i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy**
 									i(104324),	-- Foot Ball Toy**
 									un(20, i(69895)),	-- Green Balloon Toy
-									i(137663),	-- Soft Foam Sword Toy
 									i(104323),	-- The Pigskin Toy
 									i(54438),	-- Tiny Blue Ragdoll Toy**
 									i(54437),	-- Tiny Green Ragdoll Toy**
@@ -1930,7 +1929,6 @@ _.Zones =
 								["coord"] = { 72.80, 58.92 },
 								["g"] = {
 									i(97921),	-- Bom'bay's Color-Seein'Sauce
-									i(138385),	-- Lucky Shirt
 								},
 							},
 							{	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>

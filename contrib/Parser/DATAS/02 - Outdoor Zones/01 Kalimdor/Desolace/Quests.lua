@@ -883,7 +883,6 @@ _.Zones =
 						["questID"] = 1467,
 						["groups"] = {
 							un(2, i(6793)),	-- Auric Bracers
-							un(2, i(131232)),	-- Stormfire Gauntlets
 							un(2, i(6794)),	-- Tawny Gloves
 						},
 						["u"] = 40,

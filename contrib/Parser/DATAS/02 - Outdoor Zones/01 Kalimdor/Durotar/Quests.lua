@@ -95,7 +95,6 @@ _.Zones =
 						["groups"] = {
 							i(53369), -- Fizzle's Gloves
 							i(53366), -- Enforcer's Gloves
-							i(131413), -- Gor's Re-Inforced Gloves
 						},
 						["qg"] = 39379, -- Gor the Enforcer
 						["coord"] = { 44.9, 14.7 },
@@ -146,7 +145,6 @@ _.Zones =
 						["groups"] = {
 							i(53368), -- Feckless Armbands
 							i(53374), -- Heedless Treads
-							i(131410), -- Bindings of Disregard
 						},
 						["qg"] = 39379, -- Gor the Enforcer
 						["lvl"] = 8,
@@ -226,10 +224,6 @@ _.Zones =
 					{	-- Message for Saurfang
 						["questID"] = 25267,
 						["groups"] = {
-							i(118217),	-- Staff of Dubious Pacts
-							i(118219),	-- Harness of Forward Directions
-							i(131898),	-- Chestguard of Forward Directions
-							i(118218),	-- Girdle of Common Causes
 							un(34, i(67154)),	-- Staff of the Unwelcome
 							un(34, i(67157)),	-- Harness of Binding
 							un(34, i(67156)),	-- Girdle of Servitude
@@ -363,7 +357,6 @@ _.Zones =
 							i(53358), -- Blade Cultist Slippers
 							i(53387), -- Searing Bracers
 							i(53390), -- Skull Rock Belt
-							i(131414), -- Burning Armbands
 						},
 						["qg"] = 3208, -- Margoz
 						["coord"] = { 56.4, 20.0 },
@@ -383,26 +376,6 @@ _.Zones =
 						["coord"] = { 35.8, 41.3 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25194, -- Unbidden Visitors
-					},
-					{	-- The Battle for Broken Shore
-						["questID"] = 40518,
-						["groups"] = {
-							i(136582), -- Bonegrinder of the Horde Vanguard
-							i(136583), -- Longbow of the Horde Vanguard
-							i(136584), -- Dagger of the Horde Vanguard
-							i(136587), -- Poleaxe of the Horde Vanguard
-							i(136588), -- Quickblade of the Horde Vanguard
-							i(136589), -- Battle mace of the Horde Vanguard
-							i(136590), -- Staff of the Horde Vanguard
-							i(136595), -- Mageblade of the Horde Vanguard
-							i(136591), -- Waraxe of the Horde Vanguard
-							i(139292), -- Splitter of the Horde Vanguard
-						},
-						["qg"] = 113547, -- Stone Guard Mukar
-						["lvl"] = 98,
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 44281, -- To Be Prepared
-						["description"] = "Legion expansion introduction quest.|r",
 					},
 					{	-- The Burning Blade
 						["questID"] = 25232,

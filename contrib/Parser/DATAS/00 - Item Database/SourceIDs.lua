@@ -36,7 +36,6 @@ i(52487, 1, 25731);		-- Jeweler's Amber Monocle
 
 i(18044, 1, 7222); 		-- Hurley's Tankard
 i(12791, 1, 4544); 		-- Barman Shanker
-i(117378, 1, 65960); 	-- Direbrew's Bloodied Shanker
 i(71331, 1, 36595); 	-- Direbrew's Bloodied Shanker
 i(107217, 1, 57985); 	-- Direbrew's Bloodied Shanker
 i(37597, 1, 17888);		-- Direbrew's Shanker
@@ -70,15 +69,12 @@ i(4090, 1, 1614);		-- Mug O'Hurt
 
 i(19970, 1, 7884);		-- Arcanite Fishing Pole
 i(45991, 1, 22166);		-- Bone Fishing Pole
-i(116826, 1, 65558);	-- Draenic Fishing Pole
 i(84661, 1, 43159);		-- Dragon Fishing Pole
-i(118381, 1, 66541);	-- Ephemeral Fishing Pole
 i(45992, 1, 22167);		-- Jeweled Fishing Pole
 i(44050, 1, 21318);		-- Mastercraft Kalu'ak Fishing Pole
 i(19022, 1, 7546); 		-- Nat Pagle's Extreme Angler FC-5000
 i(45858, 1, 22092);		-- Nat's Lucky Fishing Pole
 i(84660, 1, 43158);		-- Pandaren Fishing Pole
-i(116825, 1, 65557);	-- Savage Fishing Pole
 i(25978, 1, 10687);		-- Seth's Graphite Fishing Pole
 i(88535, 1, 45845);		-- Sharpened Tuskarr Spear
 

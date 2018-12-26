@@ -201,9 +201,6 @@ _.Zones =
 								{	-- Tattered Guo-Lai Dynasty Cloak
 									["itemID"] = 87639,	-- Tattered Guo-Lai Dynasty Cloak
 								},
-								{	-- Bottled Tornado
-									["itemID"] = 134023,	-- Bottled Tornado
-								},
 							},
 						},
 						{	-- Kang the Soul Thief

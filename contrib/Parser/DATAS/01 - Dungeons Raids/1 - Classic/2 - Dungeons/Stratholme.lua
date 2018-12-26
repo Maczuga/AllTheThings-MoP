@@ -58,31 +58,6 @@ _.Instances =
 								i(18736),	-- Plaguehound Leggings
 								i(18745),	-- Sacred Cloth Leggings
 								i(18742),	-- Stratholme Militia Shoulderguard
-								i(142337, {	-- Plans: Blight
-									["crs"] = {
-										10438,	-- Maleki the Pallid
-										11082,	-- Stratholme Courier
-										10416,	-- Bile Spewer
-										10394,	-- Black Guard Sentry
-										10412,	-- Crypt Crawler
-										10406,	-- Ghoul Ravener
-										10405,	-- Plague Ghoul
-										10381,	-- Ravaged Cadaver
-										10425,	-- Risen Battle Mage
-										10419,	-- Risen Conjuror
-										10424,	-- Risen Gallant
-										10420,	-- Risen Initiate
-										11043,	-- Risen Monk
-										10423,	-- Risen Priest
-										10422,	-- Risen Sorceror
-										10391,	-- Skeletal Berserker
-										10390,	-- Skeletal Guardian
-										10400,	-- Thuzadin Necromancer
-										10398,	-- Thuzadin Shadowcaster
-										10417,	-- Venom Belcher
-										10464,	-- Wailing Banshee
-									},
-								}),
 							}),
 							n( 10393, {			-- Skul
 								["groups"] = {

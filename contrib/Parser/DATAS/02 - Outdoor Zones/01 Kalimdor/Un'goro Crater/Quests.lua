@@ -514,16 +514,6 @@ _.Zones =
 							["u"] = 40,
 							["qg"] = 9272,	-- Spark Nilminer
 						},
-						{	-- Saving My Head
-							["questID"] = 45057,
-							["groups"] = {
-								i(142383),	-- Plans: Darkspear
-							},
-							["qg"] = 115923,	-- Ko'Zan
-							["coord"] = { 43.6, 41.4 },
-							["sourceQuest"] = 45055,	-- A Taste of Their Own Medicine
-							["requireSkill"] = 164,	-- Blacksmithing
-						},
 						{	-- Searing Roc Feathers
 							["questID"] = 13905,
 							["qg"] = 34320,	-- Venomhide Hatchling

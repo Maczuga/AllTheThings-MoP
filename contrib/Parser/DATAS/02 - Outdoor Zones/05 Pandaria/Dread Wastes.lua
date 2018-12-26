@@ -1382,12 +1382,7 @@ _.Zones =
 				}),
 				n(0, { 	-- Zone Drops
 					["groups"] = {
-						i(120140, {	-- Tome of Polymorph: Porcupine
-							["collectible"] = false,
-							["crs"] = {
-								65118,	-- Needleback Porcupine
-							},
-						}),
+
 					},
 				}),
 			},

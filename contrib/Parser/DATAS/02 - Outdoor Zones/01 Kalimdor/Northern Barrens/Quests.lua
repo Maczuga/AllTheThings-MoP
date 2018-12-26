@@ -29,7 +29,6 @@ _.Zones =
 									i(59536),	-- Bloodeye Belt
 									i(59537),	-- Kranal's Vest
 									i(59538),	-- Caravan Escort's Gloves
-									i(131324),	-- Kranal's Chestplate
 								},
 								["qg"] = 34258,	-- Halga Bloodeye
 								["coord"] = { 67.3, 38.7 },
@@ -86,7 +85,6 @@ _.Zones =
 								["groups"] = {
 									i(59566),	-- Robe of Shame
 									i(59567),	-- Murderous Bracers
-									i(131219),	-- Murderous Cuffs
 								},
 								["qg"] = 34638,	-- Shoe
 								["coord"] = { 55.2, 78.3 },
@@ -104,7 +102,6 @@ _.Zones =
 									i(59585),	-- Lushwater Cloak
 									i(59586),	-- Gloves of Unfocused Rage
 									i(59587),	-- Fractured Belt
-									i(131220),	-- Hands of Unfocused Rage
 									un(2, i(5351)),	-- Bounty Hunter's Ring  NOTE: Old rewards, quest reused
 								},
 								["qg"] = 3389,	-- Regthar Deathgate
@@ -164,7 +161,6 @@ _.Zones =
 								["groups"] = {
 									i(59554),	-- Silver-Edged Blade
 									i(59555),	-- Silver-Trim Leggings
-									i(131331),	-- Silver-Trim Greaves
 								},
 								["sourceQuest"] = 869	-- To Track a Thief
 							},
@@ -191,7 +187,6 @@ _.Zones =
 									i(59560),	-- Bling Cane
 									i(59561),	-- Vest of Fortune
 									i(59562),	-- Dividend Leggings
-									i(131329),	-- Hauberk of Fortune
 								},
 								["qg"] = 3391,	-- Gazlowe
 								["coord"] = { 68.4, 69.0 },
@@ -232,7 +227,6 @@ _.Zones =
 										["groups"] = {
 											i(59568),	-- Painstakingly Crafted Belt
 											i(59569),	-- Clean Room Boots
-											i(131707),	-- Dusty Treads
 										},
 										["sourceQuest"] = 29023,	-- Samophlange
 									},
@@ -268,7 +262,6 @@ _.Zones =
 									i(59570),	-- Bargain Gloves
 									i(59571),	-- Irregular Belt
 									i(59572),	-- Misshapen Boots
-									i(131706),	-- Slightly Dented Belt
 								},
 								["qg"] = 34674,	-- Brak Blusterpipe
 								["coord"] = { 62.6, 17.0 },
@@ -289,7 +282,6 @@ _.Zones =
 								["groups"] = {
 									i(69217),	-- Test Pilot Britches
 									i(69223),	-- Emergency Hatchet
-									i(131709),	-- Passenger Pantaloons
 								},
 								["qg"] = 3442,	-- Sputtervalve
 								["coord"] = { 62.3, 17.3 },
@@ -351,7 +343,6 @@ _.Zones =
 								["groups"] = {
 									i(69221),	-- Mor'shan Caravaneer's Leggings
 									i(69216),	-- Wild Rider's Gloves
-									i(131710),	-- Wild Rider's Mail Gauntlets
 									i(69222),	-- Kadrak's Axe
 								},
 								["qg"] = 52207,	-- Nagala Whipshank
@@ -415,7 +406,6 @@ _.Zones =
 						["groups"] = {
 							i(59584),	-- Foolhardy Bracers
 							i(59583),	-- Marauding Belt
-							i(131221),	-- Marauding Cord
 							un(2, i(5346)),	-- Orcish Battle Bow NOTE: Old rewards, quest reused
 							un(2, i(5344)),	-- Pointed Axe NOTE: Old rewards, quest reused
 							un(2, i(5345)),	-- Stonewood Hammer NOTE: Old rewards, quest reused
@@ -436,7 +426,6 @@ _.Zones =
 							i(59539),	-- Mankrik's Old Wedding Garments
 							i(59540),	-- Quilboar Skin Gloves
 							i(59541),	-- Mankrik's Boar Slicer
-							i(131227),	-- Quilboar Linked Gauntlets
 							un(2, i(5314)),	-- Boar Hunter's Cape NOTE: Old rewards, quest reused
 							un(2, i(6477)),	-- Grassland Sash NOTE: Old rewards, quest reused
 						},
@@ -594,7 +583,6 @@ _.Zones =
 						["groups"] = {
 							i(56644),	-- Gorat's Bequest
 							i(56645),	-- Kadrak's Breastplate
-							i(131295),	-- Gorat's Spaulders of Satisfaction
 						},
 						["qg"] = 33263,	-- Dinah Halfmoon
 						["coord"] = { 42.4, 15.7 },
@@ -648,7 +636,6 @@ _.Zones =
 						["groups"] = {
 							i(59545),	-- Fuzzy Gloves
 							i(59546),	-- Ointment-Coated Bracers
-							i(131328),	-- Ointment-Coated Handwraps
 						},
 						["qg"] = 3390,	-- Apothecary Helbrim
 						["coord"] = { 48.6, 58.2 },
@@ -693,7 +680,6 @@ _.Zones =
 							i(59580),	-- Sharp Poker
 							i(59581),	-- Smart Shoes
 							i(59582),	-- Shrewd Crossbow
-							i(131223),	-- Smart Sandals
 							un(2, i(5343)),	-- Barkeeper's Cloak NOTE: Old reward, quest repurposed, original quest name was Raptor Horns
 						},
 						["qg"] = 3446,	-- Mebok Mizzyrix
@@ -711,7 +697,6 @@ _.Zones =
 							i(59551),	-- Tangled Thread Gloves
 							i(59552),	-- Belt of the Forgotten Pool
 							i(59553),	-- Highstrider Boots
-							i(131218),	-- Cord of the Forgotten Pool
 						},
 						["qg"] = 34841,	-- Telar Highstrider
 						["coord"] = { 38.0, 46.5 },
@@ -765,7 +750,6 @@ _.Zones =
 							i(59574),	-- Conspirator's Slippers
 							i(59575),	-- Uninsured Bracers
 							i(59576),	-- Mutineer's Cloak
-							i(131330),	-- Uninsured Armguards
 						},
 						["qg"] = 34749,	-- Tony Two-Tusk
 						["coord"] = { 77.2, 91.3 },
@@ -816,7 +800,6 @@ _.Zones =
 							i(56633),	-- Leggings of the Traveling Medic
 							i(56634),	-- Halfmoon Gloves
 							i(56635),	-- First Responder's Pauldrons
-							i(131294),	-- Battlefield Medic Handguards
 						},
 						["qg"] = 33263,	-- Dinah Halfmoon
 						["coord"] = { 42.4, 15.7 },
@@ -844,7 +827,6 @@ _.Zones =
 						["groups"] = {
 							i(69220),	-- Nozzlepot's Vest
 							i(69218),	-- Sludge Fen Cloak
-							i(131708),	-- Sludge Encrusted Vest
 						},
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 29087,	-- Sludge Investigation
@@ -924,7 +906,6 @@ _.Zones =
 							i(59577),	-- Sputtervalve Gun
 							i(59578),	-- Bracers of Angry Mutterings
 							i(59579),	-- Nozzlepot Leggings
-							i(131222),	-- Nozzlepot Legwraps
 							un(2, i(5326)),	-- Flaring Baton  NOTE: Old reward, quest repurposed
 							un(2, i(5327)),	-- Greasy Tinker's Pants  NOTE: Old reward, quest repurposed
 						},
@@ -939,7 +920,6 @@ _.Zones =
 							i(59542),	-- Thornweaver Leggings
 							i(59543),	-- Pigman Belt
 							i(59544),	-- Kargal's Breastplate
-							i(131224),	-- Pigman Waistband
 							un(2, i(5275)),	-- Binding Girdle NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
 							un(2, i(5328)),	-- Cinched Belt NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
 						},
@@ -968,7 +948,6 @@ _.Zones =
 							i(59533),	-- Wand of Separation
 							i(59534),	-- Boar Hunter's Shoes
 							i(59535),	-- Togrik's Legguards
-							i(131325),	-- Boar Hunter's Treads
 						},
 						["qg"] = 34513,	-- Togrik
 						["coord"] = { 56.5, 40.4 },
@@ -992,7 +971,6 @@ _.Zones =
 						["groups"] = {
 							i(59529),	-- Flame Retardant Sheet
 							i(59530),	-- Wolf Tender's Boots
-							i(131310),	-- Wolf Tender's Footwraps
 						},
 						["qg"] = 34284,	-- Dorak
 						["coord"] = { 66.6, 45.4 },
@@ -1051,8 +1029,6 @@ _.Zones =
 									i(49543),	-- Seaworthy Leggings
 									i(49548),	-- Gazlowe's Gloves
 									i(49446),	-- Retainer Vest
-									i(131225),	-- Gazlowe's Grips
-									i(131226),	-- Retainer Tunic
 								},
 							},
 						},
@@ -1063,7 +1039,6 @@ _.Zones =
 							i(59563),	-- Waptor Thwapper
 							i(59564),	-- Waptor Skin Boots
 							i(59565),	-- Waptor Scale Bweastpwate
-							i(131332),	-- Waptor Tweads
 						},
 						["qg"] = 34828,	-- Kala'ma
 						["coord"] = { 62.0, 63.2 },

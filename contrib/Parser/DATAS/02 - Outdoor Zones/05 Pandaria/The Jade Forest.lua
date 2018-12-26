@@ -3049,27 +3049,6 @@ _.Zones =
 								59772,	-- Smoky Porcupine
 							},
 						}),
-						i(120138, {	-- Tome of Polymorph: Monkey
-							["collectible"] = false,
-							["crs"] = {
-								55470,	-- Hozen Groundpounder
-								57119,	-- Hozen Ravager
-								66153,	-- Hozen Scavenger
-								66106,	-- Hozen Scavenger
-								65623,	-- Oona Tuna-Catcher
-								55195,	-- Slingtail Fishripper
-								55193,	-- Slingtail Mudseer
-								55110,	-- Slingtail Stickypaw
-								61562,	-- Slingtail Treeleaper
-							},
-						}),
-						i(120140, {	-- Tome of Polymorph: Porcupine
-							["collectible"] = false,
-							["crs"] = {
-								54896,	-- Glade Porcupine
-								59772,	-- Smoky Porcupine
-							},
-						}),
 						i(87521, {	-- Zoid's Scorched Bracers
 							["crs"] = {
 								66290,	-- Garrosh'ar Gear-Greaser

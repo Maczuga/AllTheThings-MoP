@@ -35,24 +35,6 @@ _.Zones =
 							27721,	-- Warchief's Command: Mount Hyjal!
 						},
 					},
-					{	-- Call of the Wilds
-						["questID"] = 41106,
-						["qg"] = 101064,	-- Archdruid Hamuul Runetotem
-						["lvl"] = 98,
-						["coord"] = { 56.2, 32.0 },
-						["classes"]= { 11 },	-- Druid
-						["sourceQuest"] = 40643,	-- A Summons From Moonglade
-					},
-					{	-- Dark Waters
-						["questID"] = 40962,
-						["groups"] = {
-							un(2, i(128422)),	-- Reins of the Grove Warden
-						},
-						["u"] = 40,
-						["qg"] = 102432,	-- Malfurion Stormrage
-						["lvl"] = 100,
-						["sourceQuest"] = 40904,	-- Shadow of the Defiler
-					},
 					{	-- Hope Within the Emerald Nightmare
 						["questID"] = 13074,
 						["qg"] = 11832,	-- Keeper Remulos

@@ -83,11 +83,6 @@ _.Zones =
 							}),
 							i(59254),	-- Spider Venom Leggings
 							i(59255),	-- Dark Vessel Breastplate
-							i(131544, { -- Sandrene's Invisible Hauberk
-								["groups"] = {
-								},
-								["description"] = "You will not be able to transmog this item.",
-							}),
 						},
 						["qg"] = 43156,	-- Fraggar Thundermantle
 						["sourceQuests"] = { 26523 },	-- All That Skitters
@@ -102,11 +97,6 @@ _.Zones =
 							}),
 							i(59296),	-- Spider Venom Leggings
 							i(59297),	-- Dark Vessel Breastplate
-							i(131510, { -- Sandrene's Invisible Hauberk
-								["groups"] = {
-								},
-								["description"] = "You will not be able to transmog this item.",
-							}),
 						},
 						["qg"] = 42622,	-- Eliza Darkgrin
 						["sourceQuests"] = { 26310 },	-- All That Skitters

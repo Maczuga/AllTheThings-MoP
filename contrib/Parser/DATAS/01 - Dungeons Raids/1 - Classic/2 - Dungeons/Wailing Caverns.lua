@@ -42,11 +42,6 @@ _.Instances =
 								3840,	-- Druid of the Fang
 							},
 						}),
-						i(132743, {	-- Slither-Scale Gauntlets
-							["crs"] = {
-								3840,	-- Druid of the Fang
-							},
-						}),
 					}),
 					cr(3671, e(474, { 	-- Lady Anacondra
 						i(  5404), 	-- Serpent's Shoulders

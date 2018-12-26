@@ -17,4 +17,4 @@ Useful Regex patterns:
 - Search for entries above max spell ID:
 sp\((16322[8-9]|1632[2-9]\d|163[3-9]\d\d|16[4-9]\d\d\d|1[7-9]\d\d\d\d|[2-9]\d\d\d\d\d)
 - Search for entries above pet spec ID:
-p\((138[7-9]|139\d|1[4-9]\d\d|[2-9]\d\d\d)
+(p\((138[7-9]|139\d|1[4-9]\d\d|[2-9]\d\d\d)|pet\(\d*?, (138[7-9]|139\d|1[4-9]\d\d|[2-9]\d\d\d))

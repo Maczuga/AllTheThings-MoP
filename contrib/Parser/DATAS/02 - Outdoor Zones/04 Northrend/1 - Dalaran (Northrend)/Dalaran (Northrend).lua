@@ -1876,7 +1876,6 @@ _.Zones =
 						i(95621),	-- Warbot Ignition Key Pet
 						i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
 						i(104324),	-- Foot Ball Toy
-						i(137663),	-- Small Foam Sword Toy
 						i(104323),	-- The Pigskin Toy
 						i(54438),	-- Tiny Blue Ragdoll Toy
 						i(54437),	-- Tiny Green Ragdoll Toy
