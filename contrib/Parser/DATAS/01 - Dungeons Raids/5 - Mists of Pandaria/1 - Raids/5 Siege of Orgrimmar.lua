@@ -285,7 +285,6 @@ _.Instances =
 								},
 								["groups"] = {
 									cr(72249, e(881, {	-- Galakras
-										ig(21525),	-- Green Winter Hat
 										i(112723),	-- Drakebinder Greatstaff
 										i(112710),	-- Dagryn's Discarded Longbow
 										i(112717),	-- Flameslinger's Fiery Cowl
@@ -386,7 +385,6 @@ _.Instances =
 											i(99083),	-- Chronomancer Gloves
 											i(99007),	-- Gloves of the Barbed Assassin
 										}),
-										ig(21524),	-- Red Winter Hat
 										i(112785),	-- Gar'tok, Strength of the Faithful
 										i(112787),	-- Arcweaver Spell Sword
 										i(112780),	-- Naz'grim's Gutripper
@@ -1373,7 +1371,6 @@ _.Instances =
 								i(112948),	-- Prismatic Prison of Pride
 							})),
 							cr(72249, e(881, {	-- Galakras
-								ig(21525), 	-- Green Winter Hat
 								i(112723),	-- Drakebinder Greatstaff
 								i(112710),	-- Dagryn's Discarded Longbow
 								i(112717),	-- Flameslinger's Fiery Cowl
@@ -1490,7 +1487,6 @@ _.Instances =
 									i(99160),	-- Chronomancer Gloves
 									i(99113),	-- Gloves of the Barbed Assassin
 								}),
-								ig(21524),	-- Red Winter Hat
 								i(112785),	-- Gar'tok, Strength of the Faithful
 								i(112787),	-- Arcweaver Spell Sword
 								i(112780),	-- Naz'grim's Gutripper
@@ -2460,7 +2456,6 @@ _.Instances =
 								i(112948),	-- Prismatic Prison of Pride
 							})),
 							cr(72249, e(881, {	-- Galakras
-								ig(21525), 	-- Green Winter Hat
 								i(112723),	-- Drakebinder Greatstaff
 								i(112710),	-- Dagryn's Discarded Longbow
 								i(112717),	-- Flameslinger's Fiery Cowl
@@ -2577,7 +2572,6 @@ _.Instances =
 									i(99397),	-- Chronomancer Gloves
 									i(99355),	-- Gloves of the Barbed Assassin
 								}),
-								ig(21524),	-- Red Winter Hat
 								i(112785),	-- Gar'tok, Strength of the Faithful
 								i(112787),	-- Arcweaver Spell Sword
 								i(112780),	-- Naz'grim's Gutripper
@@ -3547,7 +3541,6 @@ _.Instances =
 								i(112948),	-- Prismatic Prison of Pride
 							})),
 							cr(72249, e(881, {	-- Galakras
-								ig(21525), 	-- Green Winter Hat
 								i(112723),	-- Drakebinder Greatstaff
 								i(112710),	-- Dagryn's Discarded Longbow
 								i(112717),	-- Flameslinger's Fiery Cowl
@@ -3664,7 +3657,6 @@ _.Instances =
 									i(99575),	-- Chronomancer Gloves
 									i(99630),	-- Gloves of the Barbed Assassin
 								}),
-								ig(21524),	-- Red Winter Hat
 								i(112785),	-- Gar'tok, Strength of the Faithful
 								i(112787),	-- Arcweaver Spell Sword
 								i(112780),	-- Naz'grim's Gutripper

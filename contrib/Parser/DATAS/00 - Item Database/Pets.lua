@@ -216,7 +216,7 @@ pet(38628, 186);	-- Nether Ray Fry
 pet(97550, 1228); 	-- Netherspace Portal-Stone (Netherspace Abyssal)
 pet(25535, 131); 	-- Netherwhelp's Collar (Netherwhelp)
 pet(68841, 303);	-- Nightsaber Cub
-pet(44723, 198);	-- Nurtured Penguin Egg (Pengu)
+pet(129826, 1727); 	-- Nursery Spiderpet(44723, 198);	-- Nurtured Penguin Egg (Pengu)
 pet(71140, 323);	-- Nuts' Acorn (Nuts)
 pet(48120, 236); 	-- Obsidian Hatchling
 pet(104166, 1335); 	-- Ominous Flame

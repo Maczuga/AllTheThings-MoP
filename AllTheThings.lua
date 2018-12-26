@@ -1566,7 +1566,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					end
 					]]--
 				end
-			else -- if not group.itemID or (group.itemID and group.itemID ~= itemID) then
+			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
 				if group.collectible then
 					if group.collected or (group.trackable and group.saved) then
 						if GetDataMember("ShowCollectedItems") then
@@ -1605,7 +1605,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				
 				-- Insert into the display.
 				local o = { prefix = indent, left = group.text or RETRIEVING_DATA, right = right };
-				if o.left == RETRIEVING_DATA then o.working = true; end
+				if o.left == RETRIEVING_DATA or o.left:find("%[]") then o.working = true; end
 				if group.u then o.left = o.left .. " |T" .. L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[group.u][1]] .. ":0|t"; end
 				if group.icon then o.prefix = o.prefix .. "|T" .. group.icon .. ":0|t "; end
 				tinsert(entries, o);
@@ -1646,6 +1646,16 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 					group = subgroup;
 				end
+			end
+			
+			if not GetDataMember("IgnoreAllFilters") then
+				local regroup = {};
+				for i,j in ipairs(group) do
+					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
+						tinsert(regroup, j);
+					end
+				end
+				group = regroup;
 			end
 			
 			if group and #group > 0 and not group[1].achievementID then
@@ -1869,7 +1879,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						local searchResults = SearchForField("spellID", recipeID);
 						if searchResults then
 							for i,o in ipairs(searchResults) do
-								tinsert(group, o);
+								if not contains(group, o) then
+									tinsert(group, o);
+								end
 							end
 						end
 					end
@@ -1878,7 +1890,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						local searchResults = app.SearchForField("itemID", itemID);
 						if searchResults then
 							for i,o in ipairs(searchResults) do
-								tinsert(group, o);
+								if not contains(group, o) then
+									tinsert(group, o);
+								end
 							end
 						end
 					end
@@ -1915,22 +1929,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			if #temp > 0 then
-				local count = 0;
 				local listing = {};
 				local maximum = app.GetDataMember("Locations");
 				table.sort(temp);
 				for i,j in ipairs(temp) do
 					if not contains(listing, j) then
 						tinsert(listing, 1, j);
-						count = count + 1;
-						if count >= maximum then
-							count = #temp - count;
-							if count > 1 then
-								tinsert(listing, 1, "And " .. count .. " other sources...");
-								break;
-							end
-						end
 					end
+				end
+				local count = #listing;
+				if count > maximum + 1 then
+					for i=count,maximum + 1,-1 do
+						table.remove(listing, 1);
+					end
+					tinsert(listing, 1, "And " .. (count - maximum) .. " other sources...");
 				end
 				for i,text in ipairs(listing) do
 					local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
@@ -2013,7 +2025,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if #info > 0 then group.info = info; end
 		
 		-- Cache the result for a while depending on if there is more work to be done.
-		cache[2] = (working and 0.25) or 100000000;
+		cache[2] = (working and 0.01) or 100000000;
 		cache[3] = group;
 		return group;
 	end
@@ -8418,9 +8430,9 @@ end):Show();
 				['back'] = 1,
 				['g'] = {
 					{
-						['text'] = "Update World Quests Now",
+						['text'] = "Update Location Now",
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
+						['description'] = "If you wish to forcibly refresh the data without changing zones, click this button now!",
 						['visible'] = true,
 						['f'] = -1,
 						['key'] = "nope",

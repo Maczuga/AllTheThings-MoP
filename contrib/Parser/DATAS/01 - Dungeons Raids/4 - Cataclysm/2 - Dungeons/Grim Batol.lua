@@ -112,13 +112,6 @@ _.Instances =
 									["achievementID"] = 1693,    -- Fool For Love
 									["u"] = 18,
 								}),
-								n(-61, {    -- Feast of Winter Veil
-									["groups"] = {
-										ig(21525), 	-- Green Winter Hat
-									},
-									["achievementID"] = 1691, -- Merrymaker
-									["u"] = 29,
-								}),
 								i( 56454),	-- Windwalker Blade
 								i( 56452),	-- Earthshape Pauldrons
 								i( 56450),	-- Azureborne Cloak
