@@ -1,212 +1,170 @@
 AllTheThings.HolidayDB = {
-    [62] = {
-        ["Name"] = "Fireworks Spectacular",
-        ["Texture"] = 235457,
-        ["Type"] = 255,
-    },
-    [141] = {
-        ["Name"] = "Feast of Winter Veil",
-        ["Texture"] = 235485,
-        ["Type"] = 255,
-    },
-    [181] = {
-        ["Name"] = "Noblegarden",
-        ["Texture"] = 235477,
-        ["Type"] = 255,
-    },
-    [201] = {
-        ["Name"] = "Children's Week",
-        ["Texture"] = 235445,
-        ["Type"] = 255,
-    },
-    [283] = {
-        ["Name"] = "Call to Arms: Alterac Valley",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [284] = {
-        ["Name"] = "Call to Arms: Warsong Gulch",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [285] = {
-        ["Name"] = "Call to Arms: Arathi Basin",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [321] = {
-        ["Name"] = "Harvest Festival",
-        ["Texture"] = 235465,
-        ["Type"] = 255,
-    },
-    [324] = {
-        ["Name"] = "Hallow's End",
-        ["Texture"] = 235462,
-        ["Type"] = 255,
-    },
-    [327] = {
-        ["Name"] = "Lunar Festival",
-        ["Texture"] = 235471,
-        ["Type"] = 255,
-    },
-    [335] = {
-        ["Name"] = "Love is in the Air",
-        ["Texture"] = 235468,
-        ["Type"] = 255,
-    },
-    [341] = {
-        ["Name"] = "Midsummer Fire Festival",
-        ["Texture"] = 235474,
-        ["Type"] = 255,
-    },
-    [353] = {
-        ["Name"] = "Call to Arms: Eye of the Storm",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [372] = {
-        ["Name"] = "Brewfest",
-        ["Texture"] = 235442,
-        ["Type"] = 255,
-    },
-    [398] = {
-        ["Name"] = "Pirates' Day",
-        ["Texture"] = 235481,
-        ["Type"] = 255,
-    },
-    [400] = {
-        ["Name"] = "Call to Arms: Strand of the Ancients",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [404] = {
-        ["Name"] = "Pilgrim's Bounty",
-        ["Texture"] = 235465,
-        ["Type"] = 255,
-    },
-    [409] = {
-        ["Name"] = "Day of the Dead",
-        ["Texture"] = 307365,
-        ["Type"] = 255,
-    },
-    [420] = {
-        ["Name"] = "Call to Arms: Isle of Conquest",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [423] = {
-        ["Name"] = "Love is in the Air",
-        ["Texture"] = 235468,
-        ["Type"] = 255,
-    },
-    [424] = {
-        ["Name"] = "Kalu'ak Fishing Derby",
-        ["Texture"] = 235458,
-        ["Type"] = 0,
-    },
-    [435] = {
-        ["Name"] = "Call to Arms: The Battle for Gilneas",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [436] = {
-        ["Name"] = "Call to Arms: Twin Peaks",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [442] = {
-        ["Name"] = "Rated BG: 15v15",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [443] = {
-        ["Name"] = "Rated BG: 25v25",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [467] = {
-        ["Name"] = "WoW's 7th Anniversary",
-        ["Texture"] = 0,
-        ["Type"] = 255,
-    },
-    [479] = {
-        ["Name"] = "Darkmoon Faire",
-        ["Texture"] = 235448,
-        ["Type"] = 1,
-    },
-    [484] = {
-        ["Name"] = "WoW's 8th Anniversary",
-        ["Texture"] = 0,
-        ["Type"] = 255,
-    },
-    [488] = {
-        ["Name"] = "Call to Arms: Silvershard Mines",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [489] = {
-        ["Name"] = "Call to Arms: Temple of Kotmogu",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [490] = {
-        ["Name"] = "Call to Arms: Alterac Valley",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [491] = {
-        ["Name"] = "Call to Arms: Arathi Basin",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [492] = {
-        ["Name"] = "Call to Arms: Eye of the Storm",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [493] = {
-        ["Name"] = "Call to Arms: Isle of Conquest",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [494] = {
-        ["Name"] = "Call to Arms: Silvershard Mines",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [495] = {
-        ["Name"] = "Call to Arms: Strand of the Ancients",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [496] = {
-        ["Name"] = "Call to Arms: Temple of Kotmogu",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [497] = {
-        ["Name"] = "Call to Arms: The Battle for Gilneas",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [498] = {
-        ["Name"] = "Call to Arms: Twin Peaks",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [499] = {
-        ["Name"] = "Call to Arms: Warsong Gulch",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    },
-    [509] = {
-        ["Name"] = "WoW's 9th Anniversary",
-        ["Texture"] = 0,
-        ["Type"] = 255,
-    },
-    [515] = {
-        ["Name"] = "Call to Arms: Deepwind Gorge",
-        ["Texture"] = 0,
-        ["Type"] = 2,
-    }
+	["Fireworks Spectacular"] = {
+		["ID"] = 62,
+		["Texture"] = 235457,
+	},
+	["Feast of Winter Veil"] = {
+		["ID"] = 141,
+		["Texture"] = 235485,
+	},
+	["Noblegarden"] = {
+		["ID"] = 181,
+		["Texture"] = 235477,
+	},
+	["Children's Week"] = {
+		["ID"] = 201,
+		["Texture"] = 235445,
+	},
+	["Call to Arms: Alterac Valley"] = {
+		["ID"] = 283,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Warsong Gulch"] = {
+		["ID"] = 284,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Arathi Basin"] = {
+		["ID"] = 285,
+		["Texture"] = 0,
+	},
+	["Harvest Festival"] = {
+		["ID"] = 321,
+		["Texture"] = 235465,
+	},
+	["Hallow's End"] = {
+		["ID"] = 324,
+		["Texture"] = 235462,
+	},
+	["Lunar Festival"] = {
+		["ID"] = 327,
+		["Texture"] = 235471,
+	},
+	["Love is in the Air"] = {
+		["ID"] = 335,
+		["Texture"] = 235468,
+	},
+	["Midsummer Fire Festival"] = {
+		["ID"] = 341,
+		["Texture"] = 235474,
+	},
+	["Call to Arms: Eye of the Storm"] = {
+		["ID"] = 353,
+		["Texture"] = 0,
+	},
+	["Brewfest"] = {
+		["ID"] = 372,
+		["Texture"] = 235442,
+	},
+	["Pirates' Day"] = {
+		["ID"] = 398,
+		["Texture"] = 235481,
+	},
+	["Call to Arms: Strand of the Ancients"] = {
+		["ID"] = 400,
+		["Texture"] = 0,
+	},
+	["Pilgrim's Bounty"] = {
+		["ID"] = 404,
+		["Texture"] = 235465,
+	},
+	["Day of the Dead"] = {
+		["ID"] = 409,
+		["Texture"] = 307365,
+	},
+	["Call to Arms: Isle of Conquest"] = {
+		["ID"] = 420,
+		["Texture"] = 0,
+	},
+	["Love is in the Air"] = {
+		["ID"] = 423,
+		["Texture"] = 235468,
+	},
+	["Kalu'ak Fishing Derby"] = {
+		["ID"] = 424,
+		["Texture"] = 235458,
+	},
+	["Call to Arms: The Battle for Gilneas"] = {
+		["ID"] = 435,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Twin Peaks"] = {
+		["ID"] = 436,
+		["Texture"] = 0,
+	},
+	["Rated BG: 15v15"] = {
+		["ID"] = 442,
+		["Texture"] = 0,
+	},
+	["Rated BG: 25v25"] = {
+		["ID"] = 443,
+		["Texture"] = 0,
+	},
+	["WoW's 7th Anniversary"] = {
+		["ID"] = 467,
+		["Texture"] = 0,
+	},
+	["Darkmoon Faire"] = {
+		["ID"] = 479,
+		["Texture"] = 235448,
+	},
+	["WoW's 8th Anniversary"] = {
+		["ID"] = 484,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Silvershard Mines"] = {
+		["ID"] = 488,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Temple of Kotmogu"] = {
+		["ID"] = 489,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Alterac Valley"] = {
+		["ID"] = 490,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Arathi Basin"] = {
+		["ID"] = 491,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Eye of the Storm"] = {
+		["ID"] = 492,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Isle of Conquest"] = {
+		["ID"] = 493,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Silvershard Mines"] = {
+		["ID"] = 494,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Strand of the Ancients"] = {
+		["ID"] = 495,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Temple of Kotmogu"] = {
+		["ID"] = 496,
+		["Texture"] = 0,
+	},
+	["Call to Arms: The Battle for Gilneas"] = {
+		["ID"] = 497,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Twin Peaks"] = {
+		["ID"] = 498,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Warsong Gulch"] = {
+		["ID"] = 499,
+		["Texture"] = 0,
+	},
+	["WoW's 9th Anniversary"] = {
+		["ID"] = 509,
+		["Texture"] = 0,
+	},
+	["Call to Arms: Deepwind Gorge"] = {
+		["ID"] = 515,
+		["Texture"] = 0,
+	}
 };

@@ -4,6 +4,7 @@
 _.Holidays = bubbleDown({["u"] = 23}, 
 {
 	holiday(235481, { -- Pirate's Day
+		["icon"] = "Interface\\Calendar\\Holidays\\Calendar_PiratesDay",
 		["groups"] = {
 			-- Note!! No bubbleDown needed since this has been fully redone
 			n(-4, { -- Achievements *UCN18
@@ -51,18 +52,6 @@ _.Holidays = bubbleDown({["u"] = 23},
 					}),
 					["coord"] = {
 						40.01, 72.61,	-- Booty Bay Pirate Day Location
-					},
-				}),
-				n(122396, { -- Edward Techt
-					["groups"] =  {
-						i(150547, { -- Jolly Roger (Toy) *UCN18
-							["description"] = "Must have the achievement \"Avast Ye, Admiral!\" somewhere on your account.",
-							["u"] = 23,
-						}),
-					},
-					["description"] = "To purchase the toy, |cFFFFD700Jolly Roger|r, you must have the achievement, |cFFFFD700Avast Ye, Admiral|r.",
-					["coord"] = {
-						39.67, 84.29
 					},
 				}),
 			}),

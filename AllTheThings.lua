@@ -2159,7 +2159,7 @@ local function SearchForSourceIDQuickly(sourceID)
 	end
 end
 local function GetItemId(link)
-	if string.match(link, "item") then
+	if link and string.match(link, "item") then
 		-- Parse the link and get the itemID and bonus ids.
 		local itemString = string.match(link, "item[%-?%d:]+") or link;
 		if itemString then
@@ -2285,7 +2285,8 @@ local function AddTomTomWaypoint(group, auto)
 	if TomTom and group.visible then
 		if group.coords or group.coord then
 			if auto then
-				if C_Map.GetMapInfo(app.GetCurrentMapID()).mapType ~= 3 then return end -- only set waypoints if the current map is a zone
+				local inInstance, instanceType = IsInInstance()
+				if inInstance or instanceType == "pvp" or instanceType == "arena" or GetCurrentMapZone() == 0 then return end -- only set waypoints if the current map is a zone
 				local waypointFilters = GetDataMember("WaypointFilters")
 				for headerID, enabled in pairs(waypointFilters) do
 					if (UnitOnTaxi("player") and not GetDataMember("EnableTomTomWaypointsOnTaxi"))
@@ -2319,14 +2320,26 @@ local function AddTomTomWaypoint(group, auto)
 					-- print(coord[3] or defaultMapID);
 					-- print(coord[1] / 100);
 					-- print(coord[2] / 100);
-					TomTom:AddMFWaypoint(app.BFAToLegionMapID(coord[3]) or defaultMapID, app.BFAToLegionFloor(group.coord[3]), coord[1] / 100, coord[2] / 100, opt);
+					local coordMap, coordFloor = defaultMapID, 0;
+					if coord[3] then 
+						coordMap = app.BFAToLegionMapID(coord[3]); 
+						coordFloor =  app.BFAToLegionFloor(coord[3]);
+					end
+					print(coordMap, coordFloor, coord[1], coord[2]);
+					TomTom:AddMFWaypoint(coordMap, coordFloor, coord[1], coord[2], opt);
 				end
 			end
 			if group.coord then 
 				-- print(group.coord[3] or defaultMapID);
 				-- print(group.coord[1] / 100);
 				-- print(group.coord[2] / 100);
-				TomTom:AddMFWaypoint(app.BFAToLegionMapID(group.coord[3]) or defaultMapID, app.BFAToLegionFloor(group.coord[3]), group.coord[1] / 100, group.coord[2] / 100, opt); 
+				local coordMap, coordFloor = defaultMapID, 0;
+				if coord[3] then 
+					coordMap = app.BFAToLegionMapID(group.coord[3]); 
+					coordFloor =  app.BFAToLegionFloor(group.coord[3]);
+				end
+					print(coordMap, coordFloor, group.coord[1] / 100, group.coord[2] / 100);
+				TomTom:AddMFWaypoint(coordMap, coordFloor, group.coord[1], group.coord[2], opt); 
 			end
 		end
 		if group.g then
@@ -2458,6 +2471,7 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 				end
 
 				for categoryId,categoryName in pairs(app.TradeSkillCategoryDB[tradeSkillLine]) do
+					print(categoryId, categoryName);
 					app.SetDataSubMember("Categories", categoryId, categoryName);
 				end
 
@@ -2487,14 +2501,16 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 							for j=1,GetTradeSkillNumReagents(i) do
 								local reagentName, reagentTexture, reagentCount, playerCount = GetTradeSkillReagentInfo(i, j);
 								local itemID = GetItemId(GetTradeSkillReagentItemLink(i, j));
-								--print(receipeID, itemID, "=>", craftedItemID);
-								
-								-- Make sure a cache table exists for this item.
-								-- Index 1: The Recipe Skill IDs
-								-- Index 2: The Crafted Item IDs
-								if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-								reagentCache[itemID][1][receipeID] = reagentCount;
-								if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+								if itemID > 0 then
+									--print(receipeID, itemID, "=>", craftedItemID);
+									
+									-- Make sure a cache table exists for this item.
+									-- Index 1: The Recipe Skill IDs
+									-- Index 2: The Crafted Item IDs
+									if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+									reagentCache[itemID][1][receipeID] = reagentCount;
+									if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+								end
 							end
 						end
 					end
@@ -2518,29 +2534,29 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 				_G.TradeSkillUpdateFilterBar()
 				_G.TradeSkillFrame_Update()
 				
-				-- Open the Tradeskill list for this Profession
-				local tradeSkillID = AllTheThings.GetTradeSkillLine();
-				if popout.tradeSkillID ~= tradeSkillID then
-					popout.tradeSkillID = tradeSkillID;
-					for i,group in ipairs(app.Categories.Professions) do
-						if group.requireSkill == tradeSkillID then
-							popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
-							app.BuildGroups(popout.data, popout.data.g);
-							app.UpdateGroups(popout.data, popout.data.g);
-							if not popout.data.expanded then
-								popout.data.expanded = true;
-								ExpandGroupsRecursively(popout.data, true);
-							end
-							popout:SetVisible(true);
-						end
-					end
-				end
-			
 				-- If something new was "learned", then refresh the data.
 				if learned > 0 then
 					app:RefreshData(false, true, true);
 					app.print("Cached " .. learned .. " known recipes!");
 					wipe(searchCache);
+				end
+			end
+		end
+		
+		-- Open the Tradeskill list for this Profession
+		local tradeSkillID = AllTheThings.GetTradeSkillLine();
+		if popout.tradeSkillID ~= tradeSkillID then
+			popout.tradeSkillID = tradeSkillID;
+			for i,group in ipairs(app.Categories.Professions) do
+				if group.requireSkill == tradeSkillID then
+					popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
+					app.BuildGroups(popout.data, popout.data.g);
+					app.UpdateGroups(popout.data, popout.data.g);
+					if not popout.data.expanded then
+						popout.data.expanded = true;
+						ExpandGroupsRecursively(popout.data, true);
+					end
+					popout:SetVisible(true);
 				end
 			end
 		end
@@ -3930,10 +3946,10 @@ local function GetHolidayCache()
 		cache = {};
 		SetTempDataMember("HOLIDAY_CACHE", cache);
 		SetDataMember("HOLIDAY_CACHE", cache);
-		-- local date = C_Calendar.GetDate();
 		local _, curMonth, curDay, curYear = CalendarGetDate()
-		-- C_Calendar.SetAbsMonth(date.month, date.year);
-		for monthOffset=0,11,1 do
+		CalendarSetAbsMonth(curMonth, curYear);
+		-- 13 iterations, 1 year + current month is available via API right now
+		for monthOffset=0,12,1 do
 			local year = curYear;
 			if curMonth + monthOffset > 12 then
 				year = tonumber(year) + 1;
@@ -3942,20 +3958,21 @@ local function GetHolidayCache()
 			if month == 0 then
 				month = 12;
 			end
-			-- C_Calendar.SetMonth(1);
 			for day=1,31,1 do
-				local numEvents = CalendarGetNumDayEvents(monthOffset, day);
+				local numEvents = CalendarGetNumDayEvents(0, day);
 				if numEvents > 0 then
 					for index=1,numEvents,1 do
-						local title, hour, minute, calendarType, sequenceType, eventType, texture, modStatus, inviteStatus, invitedBy, difficulty, inviteType, sequenceIndex, numSequenceDayss = CalendarGetDayEvent(monthOffset, day, index)
-						-- local event = C_Calendar.GetDayEvent(0, day, index)
+						local title, hour, minute, calendarType, sequenceType, _, icon = CalendarGetDayEvent(0, day, index)
+						local texture;
 						if calendarType and calendarType == "HOLIDAY" then
+							local holidayInfo = app.HolidayDB[title];
+							if holidayInfo then texture = holidayInfo["Texture"]; end
 							if texture then
 								local t = cache[texture];
 								if not t then
 									t = {
 										["name"] = title,
-										["icon"] = texture,
+										["icon"] = icon,
 										["times"] = {},
 									};
 									cache[texture] = t;
@@ -3963,7 +3980,7 @@ local function GetHolidayCache()
 									-- Harvest Festival and Pilgrims Bounty use the same icon...
 									t = {
 										["name"] = title,
-										["icon"] = texture,
+										["icon"] = icon,
 										["times"] = {},
 									};
 									cache[235466] = t;
@@ -3999,18 +4016,22 @@ local function GetHolidayCache()
 					end
 				end
 			end
+			CalendarSetMonth(1);
 		end
-		-- C_Calendar.SetAbsMonth(date.month, date.year);
+		CalendarSetAbsMonth(curMonth, curYear);
 	end
 	return cache;
 end
+
 app.BaseHoliday = {
 	__index = function(t, key)
 		if key == "key" then
 			return "holidayID";
 		elseif key == "icon" then
-			if t.holidayID == 235466 then return 235465; end
-			return t.holidayID;
+			if t.info and t.info.icon then
+				return "Interface\\Calendar\\Holidays\\" .. t.info.icon .. "Start";
+			end
+			return "Interface\\Icons\\INV_Misc_QuestionMark";
 		elseif key == "text" then
 			return t.info and t.info.name;
 		elseif key == "eventType" then
@@ -4888,9 +4909,9 @@ end
 	local tierLevel = {
 		1, 		-- Classic
 		57,		-- Burning Crusade
-		57,		-- Wrath
-		77,		-- Cata
-		77,		-- Mists
+		67,		-- Wrath
+		79,		-- Cata
+		84,		-- Mists
 		90,		-- WoD
 		98,		-- Legion
 		108,	-- Battle For Azeroth
@@ -8047,18 +8068,9 @@ function app:GetWindow(suffix, parent, onUpdate)
 			local mapInfo;
 			local mapID = app.GetCurrentMapID();
 			if mapID then
-				local pos = C_Map.GetPlayerMapPosition(mapID, "player");
-				if pos then
-					local px, py = pos:GetXY();
-					info.coord = { px * 100, py * 100 };
-				end
-				repeat
-					mapInfo = C_Map.GetMapInfo(mapID);
-					if mapInfo then
-						info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
-						mapID = mapInfo.parentMapID
-					end
-				until not mapInfo or not mapID;
+				local px, py = GetPlayerMapPosition("player");
+				info = { ["mapID"] = mapID, ["g"] = { info } };
+				info.coord = { px * 100, py * 100 };
 			end
 			
 			MergeObject(self.data.g, CreateObject(info));
@@ -10200,7 +10212,7 @@ app.events.VARIABLES_LOADED = function()
 	app.BFAToLegionFloor = function(uiMapID)
 		for i,values in ipairs(uiMapIDTables) do
 			if values[1] == uiMapID then
-				return values[3];
+				return values[4];
 			end
 		end
 		return uiMapID;
@@ -10583,7 +10595,8 @@ app.events.QUEST_COMPLETE = function()
 	end
 	wipe(DirtyQuests);
 end
-app.events.QUEST_LOG_UPDATE = app.events.QUEST_COMPLETE;app.events.TRADE_SKILL_LIST_UPDATE = function(...)
+app.events.QUEST_LOG_UPDATE = app.events.QUEST_COMPLETE;
+app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 	OpenMiniListForCurrentProfession(false, true);
 end
 app.events.TRADE_SKILL_SHOW = function(...)
