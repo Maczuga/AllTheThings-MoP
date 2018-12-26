@@ -8,8 +8,8 @@ _.Mounts =
 		i(45725),		-- Argent Hippogryph
 		i(47180),		-- Argent Warhorse
 		i(44690),		-- Armored Blue Wind Rider
-		i(44225),		-- Armored Brown Bear (Alliance)
-		i(44226),		-- Armored Brown Bear (Horde)
+		a(i(44225)),		-- Armored Brown Bear (Alliance)
+		h(i(44226)),		-- Armored Brown Bear (Horde)
 		i(44689),		-- Armored Snowy Gryphon
 		i(87781),		-- Azure Riding Crane
 		i(81354),		-- Azure Water Strider
@@ -28,8 +28,8 @@ _.Mounts =
 		i(2411),		-- Black Stallion
 		i(35906),		-- Black War Elekk
 		i(29466),		-- Black War Kodo
-		i(43956),		-- Black War Mammoth (Alliance)
-		i(44077),		-- Black War Mammoth (Horde)
+		a(i(43956)),		-- Black War Mammoth (Alliance)
+		h(i(44077)),		-- Black War Mammoth (Horde)
 		i(29467),		-- Black War Ram
 		i(29472),		-- Black War Raptor
 		i(29468),		-- Black War Steed
@@ -69,20 +69,19 @@ _.Mounts =
 		i(5668),		-- Brown Wolf
 		i(33999),		-- Cenarion War Hippogryph
 		i(5655),		-- Chestnut Mare
-		i(31830),		-- Cobalt Riding Talbuk (Alliance)
-		i(31829),		-- Cobalt Riding Talbuk (Horde)
-		i(29227),		-- Cobalt War Talbuk (Alliance)
-		i(29102),		-- Cobalt War Talbuk (Horde)
+		a(i(31830)),		-- Cobalt Riding Talbuk (Alliance)
+		h(i(31829)),		-- Cobalt Riding Talbuk (Horde)
+		a(i(29227)),		-- Cobalt War Talbuk (Alliance)
+		h(i(29102)),		-- Cobalt War Talbuk (Horde)
 		i(95565),		-- Crimson Primal Direhorn
-		i(87791),		-- Crimson Water Strider
 		i(63125),		-- Dark Phoenix
 		i(28915),		-- Dark Riding Talbuk
 		i(29228),		-- Dark War Talbuk
 		i(45593),		-- Darkspear Raptor
 		i(45591),		-- Darnassian Nightsaber
 		i(5665),		-- Dire Wolf
-		i(63039),		-- Drake of the West Wind (Alliance)
-		i(65356),		-- Drake of the West Wind (Horde)
+		a(i(63039)),		-- Drake of the West Wind (Alliance)
+		h(i(65356)),		-- Drake of the West Wind (Horde)
 		i(25472),		-- Ebon Gryphon
 		i(8588),		-- Emerald Raptor
 		i(45590),		-- Exodar Elekk
@@ -99,7 +98,7 @@ _.Mounts =
 		i(93169),		-- Grand Armored Wyvern
 		i(84101),		-- Grand Expedition Yak
 		i(43961),		-- Grand Ice Mammoth (Alliance)
-		i(44086),		-- Grand Ice Mammoth (Horde)
+		h(i(44086)),		-- Grand Ice Mammoth (Horde)
 		i(29744),		-- Gray Elekk
 		i(15277),		-- Gray Kodo
 		i(5864),		-- Gray Ram
@@ -175,7 +174,7 @@ _.Mounts =
 		i(87788),		-- Grey Riding Yak
 		i(87774),		-- Heavenly Golden Cloud Serpent
 		i(43958),		-- Ice Mammoth (Alliance)
-		i(44080),		-- Ice Mammoth (Horde)
+		h(i(44080)),		-- Ice Mammoth (Horde)
 		i(45586),		-- Ironforge Ram
 		i(67107),		-- Kor'kron Annihilator
 		i(73838),		-- Mountain Horse
@@ -215,13 +214,13 @@ _.Mounts =
 		i(46813),		-- Silver Covenant Hippogryph
 		i(32318),		-- Silver Riding Nether Ray
 		i(31832),		-- Silver Riding Talbuk (Alliance)
-		i(31831),		-- Silver Riding Talbuk (Horde)
+		h(i(31831)),		-- Silver Riding Talbuk (Horde)
 		i(29229),		-- Silver War Talbuk (Alliance)
-		i(29104),		-- Silver War Talbuk (Horde)
+		h(i(29104)),		-- Silver War Talbuk (Horde)
 		i(45596),		-- Silvermoon Hawkstrider
 		i(25472),		-- Snowy Gryphon
-		i(64998),		-- Spectral Steed (Alliance)
-		i(64999),		-- Spectral Wolf (Horde)
+		a(i(64998)),		-- Spectral Steed (Alliance)
+		h(i(64999)),		-- Spectral Wolf (Horde)
 		i(8632),		-- Spotted Frostsaber
 		i(19030),		-- Stormpike Battle Charger
 		i(45125),		-- Stormwind Steed
@@ -268,17 +267,17 @@ _.Mounts =
 		i(18774),		-- Swift Yellow Mechanostrider
 		i(25532),		-- Swift Yellow Wind Rider
 		i(63045),		-- Tan Riding Camel
-		i(31834),		-- Tan Riding Talbuk (Alliance)
-		i(31833),		-- Tan Riding Talbuk (Horde)
-		i(29230),		-- Tan War Talbuk (Alliance)
-		i(29105),		-- Tan War Talbuk (Horde)
+		a(i(31834)),		-- Tan Riding Talbuk (Alliance)
+		h(i(31833)),		-- Tan Riding Talbuk (Horde)
+		a(i(29230)),		-- Tan War Talbuk (Alliance)
+		h(i(29105)),		-- Tan War Talbuk (Horde)
 		i(25474),		-- Tawny Wind Rider
 		i(45592),		-- Thunder Bluff Kodo
 		i(89304),		-- Thundering August Cloud Serpent
 		i(85666),		-- Thundering Jade Cloud Serpent
 		i(1132),		-- Timber Wolf
-		i(44235),		-- Traveler's Tundra Mammoth (Alliance)
-		i(44234),		-- Traveler's Tundra Mammoth (Horde)
+		a(i(44235)),		-- Traveler's Tundra Mammoth (Alliance)
+		h(i(44234)),		-- Traveler's Tundra Mammoth (Horde)
 		i(46747),		-- Turbostrider
 		i(8591),		-- Turquoise Raptor
 		i(13322),		-- Unpainted Mechanostrider
@@ -286,16 +285,16 @@ _.Mounts =
 		i(46100),		-- White Kodo
 		i(5873),		-- White Ram
 		i(89390),		-- White Riding Goat
-		i(31836),		-- White Riding Talbuk (Alliance)
-		i(31835),		-- White Riding Talbuk (Horde)
+		a(i(31836)),		-- White Riding Talbuk (Alliance)
+		h(i(31835)),		-- White Riding Talbuk (Horde)
 		i(46746),		-- White Skeletal Warhorse
-		i(29231),		-- White War Talbuk (Alliance)
-		i(29103),		-- White War Talbuk (Horde)
+		a(i(29231)),		-- White War Talbuk (Alliance)
+		h(i(29103)),		-- White War Talbuk (Horde)
 		{
 			["itemID"] = 40775,	-- Winged Steed of the Ebon Blade
 			["classes"] = {6},
 		},
-		i(44230),		-- Wooly Mammoth (Alliance)
-		i(44231),		-- Wooly Mammoth (Horde)
+		a(i(44230)),		-- Wooly Mammoth (Alliance)
+		h(i(44231)),		-- Wooly Mammoth (Horde)
 	}),
 };
