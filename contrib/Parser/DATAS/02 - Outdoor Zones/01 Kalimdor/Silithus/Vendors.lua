@@ -20,6 +20,9 @@ _.Zones =
 							i(20507),	-- Pattern: Spitfire Gauntlets
 							i(20508),	-- Pattern: Spitfire Breastplate							
 						},
+						["coords"] = {
+							{ 64.71, 45.89, 81 },	-- Southwind Village - Silithus
+						},
 						["description"] = "Vendor is located upstairs in the northern building in Southwind Village.|r",
 					}),
 					n(15174, {	-- Calandrath <Innkeeper>
@@ -177,8 +180,13 @@ _.Zones =
 						i(22214),	-- Plans: Light Obsidian Belt
 					}),
 					n(12956, {	-- Zannok Hidepiercer <Leatherworking Supplies>
-						i(15724),	-- Pattern: Heavy Scorpid Bracers
-						i(15762),	-- Pattern: Heavy Scorpid Helm						
+						["groups"] = {
+							i(15724),	-- Pattern: Heavy Scorpid Bracers
+							i(15762),	-- Pattern: Heavy Scorpid Helm		
+						},	
+						["coords"] = {
+							{ 81.36, 18.39, 81 },	-- Valor's Rest - Silithus
+						},		
 					}),
 				}),
 			},

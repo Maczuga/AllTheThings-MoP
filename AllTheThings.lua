@@ -2329,9 +2329,6 @@ local function AddTomTomWaypoint(group, auto)
 			end
 			if group.coords then
 				for i, coord in ipairs(group.coords) do
-					-- print(coord[3] or defaultMapID);
-					-- print(coord[1] / 100);
-					-- print(coord[2] / 100);
 					local coordMap, coordFloor = defaultMapID, 0;
 					if coord[3] then 
 						coordMap = app.BFAToLegionMapID(coord[3]); 
@@ -2341,9 +2338,6 @@ local function AddTomTomWaypoint(group, auto)
 				end
 			end
 			if group.coord then 
-				-- print(group.coord[3] or defaultMapID);
-				-- print(group.coord[1] / 100);
-				-- print(group.coord[2] / 100);
 				local coordMap, coordFloor = defaultMapID, 0;
 				if coord[3] then 
 					coordMap = app.BFAToLegionMapID(group.coord[3]); 
@@ -2481,7 +2475,6 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 				end
 
 				for categoryId,categoryName in pairs(app.TradeSkillCategoryDB[tradeSkillLine]) do
-					print(categoryId, categoryName);
 					app.SetDataSubMember("Categories", categoryId, categoryName);
 				end
 
@@ -9247,7 +9240,6 @@ end
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
-app:RegisterEvent("TOYS_UPDATED");
 app:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 app:RegisterEvent("TRADE_SKILL_SHOW");
 app:RegisterEvent("TRADE_SKILL_CLOSE");

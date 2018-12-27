@@ -92,12 +92,12 @@ _.Mounts =
 		i(62462),		-- Goblin Turbo-Trike
 		i(25470),		-- Golden Gryphon
 		i(62298),		-- Golden King
-		i(95564),		-- Golden Primal Direhorn
+		a(i(95564)),		-- Golden Primal Direhorn
 		i(87782),		-- Golden Riding Crane
 		i(93168),		-- Grand Armored Gryphon
 		i(93169),		-- Grand Armored Wyvern
 		i(84101),		-- Grand Expedition Yak
-		i(43961),		-- Grand Ice Mammoth (Alliance)
+		a(i(43961)),		-- Grand Ice Mammoth (Alliance)
 		h(i(44086)),		-- Grand Ice Mammoth (Horde)
 		i(29744),		-- Gray Elekk
 		i(15277),		-- Gray Kodo
@@ -173,7 +173,7 @@ _.Mounts =
 		i(25476),		-- Green Wind Rider
 		i(87788),		-- Grey Riding Yak
 		i(87774),		-- Heavenly Golden Cloud Serpent
-		i(43958),		-- Ice Mammoth (Alliance)
+		a(i(43958)),		-- Ice Mammoth (Alliance)
 		h(i(44080)),		-- Ice Mammoth (Horde)
 		i(45586),		-- Ironforge Ram
 		i(67107),		-- Kor'kron Annihilator
@@ -213,9 +213,9 @@ _.Mounts =
 		i(87783),		-- Regal Riding Crane
 		i(46813),		-- Silver Covenant Hippogryph
 		i(32318),		-- Silver Riding Nether Ray
-		i(31832),		-- Silver Riding Talbuk (Alliance)
+		a(i(31832)),		-- Silver Riding Talbuk (Alliance)
 		h(i(31831)),		-- Silver Riding Talbuk (Horde)
-		i(29229),		-- Silver War Talbuk (Alliance)
+		a(i(29229)),		-- Silver War Talbuk (Alliance)
 		h(i(29104)),		-- Silver War Talbuk (Horde)
 		i(45596),		-- Silvermoon Hawkstrider
 		i(25472),		-- Snowy Gryphon
