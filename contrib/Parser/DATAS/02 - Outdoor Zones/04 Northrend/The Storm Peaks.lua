@@ -816,6 +816,9 @@ _.Zones =
 						["groups"] = {
 							i(43962),
 						},	
+						["coords"] = {
+							{ 50.89, 65.57 },
+						},
 						["description"] = "Reward from one of four random dailies.",	
 					}),
 				}),	
