@@ -9,7 +9,6 @@ _.Instances =
 			inst(745, { 	-- Karazhan (Raid)
 				["groups"] = {
 					ach(960),	-- The Violet Eye
-					un(3, ach(2456)),	-- Vampire Hunter
 					n(-2, {	-- Vendors
 						n(16388, { 	-- Koren
 							["groups"] = {	
@@ -39,11 +38,11 @@ _.Instances =
 						}),
 						i(30642),	-- Drape of the Righteous
 						i(30668),	-- Grasp of the Dead
-						i(30673),	-- Inferno Waist Cord
 						i(30644),	-- Grips of Deftness
-						i(30674),	-- Zierhut's Lost Treads
 						i(30643),	-- Belt of the Tracker
+						i(30673),	-- Inferno Waist Cord
 						i(30641),	-- Boots of Elusion
+						i(30674),	-- Zierhut's Lost Treads
 					}),
 					e(  1552, {			-- Servant's Quarters
 						n(16181, {	-- Rokad the Ravager

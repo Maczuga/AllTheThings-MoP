@@ -9,6 +9,7 @@ _.Mounts =
 		i(106246),		-- Emerald Hippogryph
 		i(98618),		-- Hearthsteed
 		un(6, i(85870)),	-- Imperial Quilen
+		i(164571),	-- Meat Wagon
 		i(83086),		-- Obsidian Nightwing
 		un(3, i(76889)),	-- Spectral Gryphon
 		un(3, i(76902)),	-- Spectral Wind Rider

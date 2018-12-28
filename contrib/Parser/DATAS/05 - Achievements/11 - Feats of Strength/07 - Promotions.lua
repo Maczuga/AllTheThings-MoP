@@ -34,6 +34,8 @@ _.Achievements =
 					ach(8345, {				-- Hearthstoned
 						i(98618),				-- Hearthsteed
 					}),
+					ach(9926),				-- Hero of the Storm
+
 					un(16, ach(6185)),		-- Murkablo
 					un(16, ach(8793)),		-- Murkalot
 					un(16, ach(411)),		-- Murky

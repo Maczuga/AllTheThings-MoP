@@ -4,13 +4,10 @@
 --               Copyright 2017 Dylan Fortune (Crieve-Sargeras)               --
 --------------------------------------------------------------------------------
 local app = AllTheThings;	-- Create a local (non global) reference
-local backdrop = {
-	bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-	tile = true, tileSize = 16, edgeSize = 16, 
-	insets = { left = 4, right = 4, top = 4, bottom = 4 }
-};
-
+local function L(name, ...)
+	return name and app.LL and app.LL[name];
+end
+app.L = L;
 
 -- Performance Cache 
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
@@ -44,7 +41,6 @@ local PlayerHasToy = _G["PlayerHasToy"];
 local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
-local spellRecipeInfo = {};
 local DESCRIPTION_SEPARATOR = "`";
 
 -- Coroutine Helper Functions
@@ -324,6 +320,13 @@ app.GetTempDataSubMember = GetTempDataSubMember;
 		return cache;
 	end
 end)();
+
+local backdrop = {
+	bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
+	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
+	tile = true, tileSize = 16, edgeSize = 16, 
+	insets = { left = 4, right = 4, top = 4, bottom = 4 }
+};
 
 (function()
 	-- Map all Skill IDs to the old Skill IDs
@@ -909,7 +912,6 @@ GameTooltipModel.TrySetModel = function(self, reference)
 end
 GameTooltipModel:Hide();
 
--- Localization Lib
 app.yell = function(msg)
 	UIErrorsFrame:AddMessage(msg or "nil", 1, 0, 0);
 	app:PlayRemoveSound();
@@ -917,10 +919,6 @@ end
 app.print = function(msg, ...)
 	DEFAULT_CHAT_FRAME:AddMessage(app.DisplayName .. ": " .. (msg or "nil"), ...);
 end
-local function L(name, ...)
-	return name and app.LL and app.LL[name];
-end
-app.L = L
 
 local function SetLocale(loc)
 	loc = loc or app.Locale or "enUS";
@@ -1418,9 +1416,7 @@ local function CreateObject(t)
 	else
 		if t.key == "criteriaID" then s.achievementID = t.achievementID; end
 		for key,value in pairs(t) do
-			--if key ~= "parent" then
-				s[key] = value;
-			--end
+			s[key] = value;
 		end
 		if t.g then
 			s.g = {};
@@ -1469,6 +1465,8 @@ local function CreateObject(t)
 				else
 					t = app.CreateItem(t.itemID, t);
 				end
+			elseif t.classID then
+				t = app.CreateCharacterClass(t.classID, t);
 			elseif t.npcID or t.creatureID then
 				t = app.CreateNPC(t.npcID or t.creatureID, t);
 			elseif t.questID then
@@ -1512,6 +1510,8 @@ local function MergeObject(g, t, index)
 			key = "itemID";
 		elseif t.professionID then
 			key = "professionID";
+		elseif t.classID then
+			key = "classID";
 		elseif t.npcID then
 			key = "npcID";
 		elseif t.creatureID then
@@ -1611,7 +1611,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
-				if group.g and layer < 2 and not group.achievementID then
+				if group.g and layer < 2 and (not group.achievementID or paramA == "creatureID") then
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
 				end
 			end
@@ -1951,16 +1951,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		
-		-- Show relevant descriptive text.
-		if GetDataMember("ShowDescriptions") then
-			for i,j in ipairs(group) do
-				if j.description and j[paramA] and j[paramA] == paramB then
-					tinsert(info, { "|cff66ccff" .. j.description .. "|r" });
-					break;
-				end
-			end
-		end
-		
 		-- Create an unlinked version of the object.
 		if not group.g then
 			local merged = {};
@@ -1978,25 +1968,38 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			group.total = 0;
 			app.UpdateGroups(group, group.g);
 		end
-		-- print(paramA, paramB, group.text, group.key, group[group.key]);
-		if group.g and #group.g > 0 and GetDataMember("ShowContents") then
-			local entries = {};
-			BuildContainsInfo(group.g, entries, paramA, paramB, "  ", 1);
-			if #entries > 0 then
-				tinsert(info, { left = "Contains:" });
-				if #entries < 25 then
-					for i,item in ipairs(entries) do
-						tinsert(info, { left = item.prefix .. item.left, right = item.right });
-						if item.working then working = true; end
+		
+		if group.description and GetDataMember("ShowDescriptions") and not group.encounterID then
+			tinsert(info, 1, { left = "|cff66ccff" .. group.description .. "|r", wrap = true });
+		end
+		
+		if group.g and #group.g > 0 then
+			if GetDataMember("ShowDescriptions") and not group.encounterID then
+				for i,j in ipairs(group.g) do
+					if j.description and j[paramA] and j[paramA] == paramB then
+						tinsert(info, 1, { left = "|cff66ccff" .. j.description .. "|r", wrap = true });
 					end
-				else
-					for i=1,math.min(25, #entries) do
-						local item = entries[i];
-						tinsert(info, { left = item.prefix .. item.left, right = item.right });
-						if item.working then working = true; end
+				end
+			end
+			if GetDataMember("ShowContents") then
+				local entries = {};
+				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", 1);
+				if #entries > 0 then
+					tinsert(info, { left = "Contains:" });
+					if #entries < 25 then
+						for i,item in ipairs(entries) do
+							tinsert(info, { left = item.prefix .. item.left, right = item.right });
+							if item.working then working = true; end
+						end
+					else
+						for i=1,math.min(25, #entries) do
+							local item = entries[i];
+							tinsert(info, { left = item.prefix .. item.left, right = item.right });
+							if item.working then working = true; end
+						end
+						local more = #entries - 25;
+						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
 					end
-					local more = #entries - 25;
-					if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
 				end
 			end
 		end
@@ -7206,24 +7209,8 @@ local function UpdateWindow(self, force, got)
 	if self.data and (force or self:IsVisible()) then
 		self.data.expanded = true;
 		if self.data.baseIndent and self.data.g then
-			-- This is Mini Listed Data
-			local count = 0;
 			for i, data in ipairs(self.data.g) do
-				if data.visible then
-					count = count + 1;
-				end
-			end
-			if count > 1 then
-				--tinsert(self.rowData, 1, self.data);
-				for i, data in ipairs(self.data.g) do
-					ProcessGroup(self.rowData, data, 0, self.data.back or 0);
-				end
-			else
-				for i, data in ipairs(self.data.g) do
-					if data.visible then
-						ProcessGroup(self.rowData, data, 0, self.data.back or 0);
-					end
-				end
+				ProcessGroup(self.rowData, data, 0, self.data.back or 0);
 			end
 		else
 			ProcessGroup(self.rowData, self.data, 0, self.data.back or 0);
@@ -8407,7 +8394,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 end):Show();
 --]]--
 (function()
-	app:GetWindow("CurrentInstance", UIParent, function(self)
+	app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		if not self.initialized then
 			self.initialized = true;
 			self.openedOnLogin = false;
@@ -8447,11 +8434,12 @@ end):Show();
 						app.MiniListHeader = nil;
 					else
 						-- A couple of objects matched, let's make a header.
-						local header = app.CreateMap(self.mapID, { g = {}, back = 1, expanded = true, visible = true, description = "Auto Mini List for mapID #" .. self.mapID, total = 0, progress = 0 });
+						local header = app.CreateMap(self.mapID, { g = {}, back = 1, expanded = true, visible = true, total = 0, progress = 0 });
 						app.MiniListHeader = header;
 						table.wipe(app.HolidayHeader.g);
 						app.HolidayHeader.progress = 0;
 						app.HolidayHeader.total = 0;
+						--[[
 						table.sort(results, function(a, b)
 							if a then
 								if b then
@@ -8459,6 +8447,7 @@ end):Show();
 								end
 							end
 						end);
+						]]--
 						for i, group in ipairs(results) do
 							local clone = {};
 							for key,value in pairs(group) do
@@ -8493,8 +8482,15 @@ end):Show();
 								setmetatable(header, app.BaseInstance);
 								MergeObject(temp, group);
 								if #temp > 1 then MergeObject(header.g, group); end
+							elseif group.classID and not header.instanceID then
+								local temp = { header };
+								header.classID = group.classID;
+								setmetatable(header, app.BaseCharacterClass);
+								MergeObject(temp, group);
+								if #temp > 1 then MergeObject(header.g, group); end
 							elseif group.mapID and not header.instanceID then
 								local temp = { header };
+								group.mapID = header.mapID;
 								MergeObject(temp, group);
 								if #temp > 1 then MergeObject(header.g, group); end
 							elseif group.achievementID then
@@ -8531,8 +8527,8 @@ end):Show();
 							app.HolidayHeader.visible = false;
 						end
 						
+						header.u = nil;
 						if #results > 1 and not header.mapID then
-							header.u = nil;
 							header.visible = true;
 							setmetatable(header,
 								header.instanceID and app.BaseInstance
@@ -8554,6 +8550,7 @@ end):Show();
 					
 					-- If we have determined that we want to expand this section, then do it
 					if results.g then
+						--[[
 						table.sort(results.g, function(a, b)
 							if a and b then
 								if a.difficultyID then
@@ -8570,6 +8567,25 @@ end):Show();
 								return a.isRaid and not b.isRaid;
 							end
 						end);
+						]]--
+						local bottom = {};
+						local top = {};
+						for i=#results.g,1,-1 do
+							local o = results.g[i];
+							if o.difficultyID then
+								table.remove(results.g, i);
+								table.insert(bottom, 1, o);
+							elseif o.isRaid then
+								table.remove(results.g, i);
+								table.insert(top, o);
+							end
+						end
+						for i,o in ipairs(top) do
+							table.insert(results.g, 1, o);
+						end
+						for i,o in ipairs(bottom) do
+							table.insert(results.g, o);
+						end
 						
 						if self.data then
 							ExpandGroupsRecursively(self.data, false);
@@ -8738,7 +8754,7 @@ end):Show();
 		self.data.total = 0;
 		self.data.back = 1;
 		UpdateGroups(self.data, self.data.g);
-		UpdateWindow(self, true);
+		UpdateWindow(self, true, got);
 	end);
 end)();
 app:GetWindow("RaidAssistant", UIParent, function(self)

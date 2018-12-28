@@ -1142,6 +1142,8 @@ AllTheThings.Locales.enUS = {
 		[-237] = "Warfront: The Battle for Darkshore [Alliance]",						 -- GetSpellInfo(290253)
 		[-238] = "Warfront: The Battle for Darkshore [Horde]",						 -- GetSpellInfo(290228)
 		[-239] = "Assault [8.1 Assaults]",						 -- GetSpellInfo(208246)
+		[-240] = PVP_TAB_CONQUEST,												-- Rated
+		[-241] = PVP_SEASON_REWARD,												-- Season Reward
 		
 -- Other
 		[-294] = "Killed First",
@@ -1266,7 +1268,7 @@ AllTheThings.Locales.enUS = {
 		[-549] = "Korea Only",
 		[-550] = "Starcraft Collector's Edition",
 		[-551] = "Diablo Collector's Edition",
-
+		[-552] = "Warcraft 3 Spoils of War Edition",
 		[-553] = "2006 ICoke Promotion",
 		[-554] = "EU Fansite Promotion",
 		[-555] = "Korean Promotional Event",

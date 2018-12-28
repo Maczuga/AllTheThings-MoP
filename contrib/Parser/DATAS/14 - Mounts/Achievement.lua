@@ -30,6 +30,7 @@ _.Mounts =
 		i(104208),	-- Spawn of Galakras
 		i(77068),	-- Twilight Harbinger
 		i(102533),	-- Vicious Skeletal Warhorse*
+
 		i(102514),	-- Vicious Warsaber*
 		i(70909),	-- Vicious War Steed*
 		i(70910),	-- Vicious War Wolf*

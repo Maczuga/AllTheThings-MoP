@@ -143,6 +143,7 @@ _.NeverImplemented =
 			un(1, i(19986)),	-- Pirate's Eye Patch (Leather)
 			un(1, i(20524)),	-- Shadowhide Leggings (Leather)
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+			un(1, i(28145)),	-- Tranquillien Wraps (Leather)
 			un(1, i(7187)),		-- VanCleef's Boots (Leather)
 			un(1, i(26029)),	-- Watchman's Bracers
 			un(1, i(21613)),	-- Wormhide Boots (Leather)
@@ -343,8 +344,11 @@ _.NeverImplemented =
 				un(1, i(48873)),	-- Hellscream's Legguards of Conquest
 				un(1, i(48874)),	-- Hellscream's Pauldrons of Conquest
 			}),
-			un(1, i(5822)),		-- Hedgeseed Gauntlets
+			un(1, i(27718)),	-- Aldor Defender's Legplates
 			un(1, i(12106)),	-- Boulderskin Breastplate
+			un(1, i(25797)),	-- Crushing Grasp
+			un(1, i(5822)),		-- Hedgeseed Gauntlets
+			un(1, i(26041)),	-- Vigilant Vambraces
 			un(1, i(21587)),	-- Wristguards of Castigation (never made it off test)
 			un(1, i(24137)),	-- PH Plate Ramparts Reward
 			un(1, i(27965)),	-- TEST 130 Epic Paladin DPS Chest
@@ -524,6 +528,7 @@ _.NeverImplemented =
 		un(1, i(84728)),	-- Reins of the Crimson Riding Crane
 		un(1, i(87785)),	-- Reins of the Albino Riding Crane
 		un(1, i(87794)),	-- Reins of the Golden Water Strider
+
 		
 	}),
 	n(-162, { -- Pets
@@ -818,6 +823,7 @@ _.NeverImplemented =
 	un(1, i(59797)),	-- Abalone-Linked Robes
 	un(1, i(62061)), 	-- Irradiated Gnome Shirt
 	un(1, i(67600)), 	-- Lil' Alexstrasza										(
+
 
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --
