@@ -7,12 +7,6 @@ _.Zones =
 		m(1, {	-- Durotar
 			["groups"] = {
 				n(-17, {	-- Quests
-					{	-- A Weapon of the Horde
-						["questID"] = 41002,
-						["qg"] = 101035, -- Lady Sylvanas Windrunner
-						["races"] = HORDE_ONLY,
-						["classes"]= { 12 },	-- Demon Hunter
-					},
 					{	-- Arnak Fireblade
 						["questID"] = 25263,
 						["qg"] = 3208, -- Margoz
@@ -166,12 +160,6 @@ _.Zones =
 						["coord"] = { 45.6, 12.6 },
 						["races"] = { 24 },	-- Pandaren (Neutral)
 					},
-					{	-- Keep Your Friends Close
-						["questID"] = 40605,
-						["qg"] = 101035, -- Lady Sylvanas Windrunner
-						["races"] = HORDE_ONLY,
-						["classes"] = { 12 },	-- Demon Hunter
-					},
 					{	-- Learn To Ride
 						["questID"] = 32671,
 						["lvl"] = 20,
@@ -311,12 +299,6 @@ _.Zones =
 							},
 						},
 					},
-					{	-- Second Sight
-						["questID"] = 40982,
-						["qg"] = 100873, -- Allari the Souleater
-						["races"] = HORDE_ONLY,
-						["classes"] = { 12 },	-- Demon Hunter
-					},
 					{	-- Securing the Lines
 						["questID"] = 835,
 						["qg"] = 3293, -- Rezlak
@@ -400,11 +382,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25232, -- The Burning Blade
 					},
-					{	-- The Firstborn Rises
-						["questID"] = 42484,
-						["qg"] = 107554, -- Thassarian
-						["classes"] = { 6 },	-- Death Knight
-					},
 					{	-- The War of Northwatch Aggression
 						["questID"] = 25169,
 						["qg"] = 3140, -- Lar Prowltusk
@@ -433,13 +410,6 @@ _.Zones =
 						["coord"] = { 44.9, 14.7 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25196, -- The Dranosh'ar Blockade
-					},
-					{	-- To Be Prepared
-						["questID"] = 44281,
-						["qg"] = 4311, -- Holgar Stormaxe
-						["lvl"] = 98,
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 43926 -- The Legion Returns
 					},
 					{	-- Unbidden Visitors
 						["questID"] = 25194,

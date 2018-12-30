@@ -428,11 +428,6 @@ Legacy				q( 1436),	-- Alliance Relations
 						["qg"] = 88705,	-- Kranosh
 						["classes"] = { 9 },	-- Warlock
 					}),
-					q(50303, {	-- Stranger in a Strange Land
-						["qg"] = 133407,	-- Ambassador Blackguard
-						["coord"] = { 39.4, 79.5 },
-						["races"] = { 27 },	-- Nightborne
-					}),
 					q(27397, {	-- Terga's Task
 						["groups"] = {
 							i(65490),	-- Battleaxe of the Speaker

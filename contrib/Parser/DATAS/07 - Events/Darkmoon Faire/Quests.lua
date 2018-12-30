@@ -858,21 +858,6 @@ _.WorldEvents =
 						--]]
 					},
 				},
-				{	-- Ring of Promises
-					["itemID"] = 116068,	-- Ring of Promises
-					["questID"] = 36477,	-- Ring of Promises
-					["qg"] = 85531,			-- Erinys
-					["coords"] = {
-						{ 74.84, 33.49 },	-- Entrance
-						{ 74.26, 44.29 },	-- Enrinys
-						{ 51.21, 75.01 },	-- Chester [Turn-In]
-					},
-					["g"] = {
-						{	-- Ring of Broken Promises
-							["itemID"] = 116067,	-- Ring of Broken Promises
-						},
-					},
-				},
 				{	-- Target: Turtle [Token Game]
 					["questID"] = 29455,	-- Target: Turtle
 					["isDaily"] = true,
@@ -885,14 +870,6 @@ _.WorldEvents =
 						{	-- Ring Toss
 							["achievementID"] = 6020,	-- Step Right Up
 							["criteriaID"] = 3,			-- Ring Toss
-						},
-						{	-- Triumphant Turtle Tossing
-							["achievementID"] = 9894,	-- Triumphant Turtle Tossing
-							["g"] = {
-								{	-- Darkmoon Ring-Flinger
-									["itemID"] = 122123,	-- Darkmoon Ring-Flinger
-								},
-							},
 						},
 						{	-- Darkmoon Game Prize
 							["itemID"] = 93724,	-- Darkmoon Game Prize
@@ -946,9 +923,6 @@ _.WorldEvents =
 								90148,	-- Racing Strider
 							},
 							["g"] = {
-								{	-- Fire-Eater Vial
-									["itemID"] = 122129,	-- Fire-Eater Vial
-								},
 								{	-- Darkmoon Racer Leadfoot [Real Race -- S15]
 									["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
 								},
@@ -966,9 +940,6 @@ _.WorldEvents =
 								89732,	-- Powermonger
 							},
 							["g"] = {
-								{	-- Gaze of the Darkmoon
-									["itemID"] = 122120,	-- Gaze of the Darkmoon
-								},
 								{	-- Powermonger: Silver [Real Race -- P15]
 									["achievementID"] = 9783,	-- Powermonger: Silver
 								},
@@ -986,9 +957,6 @@ _.WorldEvents =
 								89734,	-- Rocketeer
 							},
 							["g"] = {
-								{	-- Everlasting Darkmoon Firework
-									["itemID"] = 122119,	-- Everlasting Darkmoon Firework
-								},
 								{	-- Rocketeer: Silver [Real Race -- R15]
 									["achievementID"] = 9766,	-- Rocketeer: Silver
 								},
@@ -1006,9 +974,6 @@ _.WorldEvents =
 								89736,	-- Wanderluster
 							},
 							["g"] = {
-								{	-- Attraction Sign
-									["itemID"] = 122126,	-- Attraction Sign
-								},
 								{	-- Darkmoon Like the Wind
 									["achievementID"] = 9819,	-- Darkmoon Like the Wind
 								},
@@ -1028,109 +993,6 @@ _.WorldEvents =
 						},
 					},
 				},
-				{	-- The Real Big Race
-					["questID"] = 37911,	-- The Real Big Race
-					["qg"] = 90473,			-- Patti Earnhard
-					["isDaily"] = true,
-					["repeatable"] = true,
-					["sourceQuests"] = {
-						37819,	-- Welcome to the Darkmoon Races
-					},
-					["coords"] = {
-						{ 53.25, 87.6 },
-					},
-					["g"] = {
-						{	-- Big Powermonger: Gold [Real Big Race -- S20]*
-							["achievementID"] = 9817,	-- Big Powermonger: Gold
-							["crs"] = {
-								89732,	-- Powermonger
-							},
-							["g"] = {
-								{	-- Darkmoon Cannon
-									["itemID"] = 122124,	-- Darkmoon Cannon
-								},
-								{	-- Big Powermonger: Silver [Real Big Race -- S25]*
-									["achievementID"] = 9815,	-- Big Powermonger: Gold
-								},
-								{	-- Big Powermonger: Bronze [Real Big Race -- S30]*
-									["achievementID"] = 9813,	-- Big Powermonger: Gold
-								},
-								{	-- Goal-Oriented [Real Big Race -- S40]*
-									["achievementID"] = 9812,	-- Big Powermonger: Gold
-								},
-							},
-						},
-						{	-- Big Race Roadhog [Real Big Race -- S20]*
-							["achievementID"] = 9799,
-							["crs"] = {
-								90148,	-- Racing Strider
-							},
-							["g"] = {
-								{	-- Checkered Flag
-									["itemID"] = 122128,	-- Checkered Flag
-								},
-								{	-- Big Race Leadfoot [Real Big Race -- S25]
-									["achievementID"] = 9797,	-- Big Race Leadfoot
-								},
-								{	-- Big Race Jockey [Real Big Race -- S30]
-									["achievementID"] = 9795,	-- Big Race Jockey
-								},
-								{	-- Big Race Novice [Real Big Race -- S35]
-									["achievementID"] = 9794,	-- Big Race Novice
-								},
-								{	-- Big Race Enthusiast [Real Big Race -- S40]
-									["achievementID"] = 9793,	-- Big Race Enthusiast
-								},
-							},
-						},
-						{	-- Big Rocketeer: Gold [Real Big Race -- R20]*
-							["achievementID"] = 9805,	-- Big Rocketeer: Gold
-							["crs"] = {
-								89734,	-- Rocketeer
-							},
-							["g"] = {
-								{	-- Race MiniZep
-									["itemID"] = 122125,	-- Race MiniZep
-								},
-								{	-- Big Rocketeer: Silver [Real Big Race -- R25]
-									["achievementID"] = 9803,	-- Big Rocketeer: Gold
-								},
-								{	-- Big Rocketeer: Bronze [Real Big Race -- R30]
-									["achievementID"] = 9801,	-- Big Rocketeer: Gold
-								},
-								{	-- Rocket Man [Real Big Race -- R40]
-									["achievementID"] = 9800,	-- Rocket Man
-								},
-							},
-						},
-						{	-- Big Wanderluster: Gold [Real Big Race -- R20]*
-							["achievementID"] = 9811,	-- Big Wanderluster: Gold
-							["crs"] = {
-								89736,	-- Wanderluster
-							},
-							["g"] = {
-								{	-- Darkmoon Gazer
-									["itemID"] = 122121,	-- Darkmoon Gazer
-								},
-								{	-- Big Wanderluster: Silver [Real Big Race -- R25]
-									["achievementID"] = 9809,	-- Big Wanderluster: Gold [Real Big Race -- R25]
-								},
-								{	-- Vagabond [Real Big Race -- R40]
-									["achievementID"] = 9807,	-- Big Wanderluster: Gold [Real Big Race -- R40]
-								},
-								{	-- Big Wanderluster: Bronze [Real Big Race -- R30]
-									["achievementID"] = 9806,	-- Big Wanderluster: Gold [Real Big Race -- R30]
-								},
-								{	-- Darkmoon Like the Wind
-									["achievementID"] = 9819,	-- Darkmoon Like the Wind
-								},
-							},
-						},
-						{	-- Darkmoon Game Prize
-							["itemID"] = 93724,	-- Darkmoon Game Prize
-						},
-					},
-				},
 				{	-- Tonk Commander [Token Game]
 					["questID"] = 29434,	-- Tonk Commander
 					["isDaily"] = true,
@@ -1140,14 +1002,6 @@ _.WorldEvents =
 						{ 50.71, 65.17 },
 					},
 					["g"] = {
-						{	-- Ace Tonk Commander
-							["achievementID"] = 9885,	-- Ace Tonk Commander
-							["g"] = {
-								{	-- Darkmoon Tonk Controller
-									["itemID"] = 122122,
-								},
-							},
-						},
 						{	-- Tonk Battle
 							["achievementID"] = 6020,	-- Step Right Up
 							["criteriaID"] = 4,			-- Tonk Battle

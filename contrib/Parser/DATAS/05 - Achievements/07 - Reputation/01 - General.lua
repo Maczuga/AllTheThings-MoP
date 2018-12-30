@@ -2,15 +2,7 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
-_.Achievements = 
+_.Achievements =
 {
 	n(-9961, { -- Reputation
 		["groups"] = {
@@ -72,8 +64,8 @@ _.Achievements =
 									faction(68), 	-- Undercity
 								}),
 								n(-304, { 	-- Battlegrounds
-									faction(729), 	-- Frostwolf Clan	
-									faction(510), 	-- The Defilers	
+									faction(729), 	-- Frostwolf Clan
+									faction(510), 	-- The Defilers
 									faction(889), 	-- Warsong Outriders
 								}),
 								tier(1, { 	-- Classic
@@ -81,9 +73,9 @@ _.Achievements =
 									faction(93), 	-- Magram Kolkar
 								}),
 								tier(2, { 	-- The Burning Crusade
-									faction(941), 	-- The Mag'har	
-									faction(947), 	-- Thrallmar	
-									faction(922), 	-- Tranquillen	
+									faction(941), 	-- The Mag'har
+									faction(947), 	-- Thrallmar
+									faction(922), 	-- Tranquillen
 								}),
 								tier(3, { 	-- Wrath of the Lich King
 									faction(1052), 	-- Horde Expedition

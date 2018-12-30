@@ -8,6 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-2,  {	-- Vendors
 					n(15293, {	-- Aendel Windspear
+						["coord"] = { 64.6, 45.8 },
 						["groups"] = {
 							i(22769),	-- Pattern: Bramblewood Belt
 							i(22770),	-- Pattern: Bramblewood Boots
@@ -21,16 +22,20 @@ _.Zones =
 							i(20508),	-- Pattern: Spitfire Breastplate							
 						},
 						["coords"] = {
-							{ 64.71, 45.89, 81 },	-- Southwind Village - Silithus
+							{ 64.71, 45.89 },	-- Southwind Village - Silithus
 						},
 						["description"] = "Vendor is located upstairs in the northern building in Southwind Village.|r",
 					}),
 					n(15174, {	-- Calandrath <Innkeeper>
-						i(13496),	-- Recipe: Greater Nature Protection Potion
+						["coord"] = { 55.4, 36.6 },
+						["groups"] = {
+							i(13496),	-- Recipe: Greater Nature Protection Potion
+						},
 					}),
 					{	-- Hagras Wartaker <Blacksmith> (Silithus)
 						["npcID"] = 132139, -- Hagras Wartaker <Blacksmith> (Silithus)
-						["g"] = {
+						["coord"] = { 66.2, 55.2 },
+						["groups"] = {
 							{	-- Plans: Hardened Iron Shortsword
 								["itemID"] = 12162,	-- Plans: Hardened Iron Shortsword
 							},
@@ -71,7 +76,7 @@ _.Zones =
 							},
 							{	-- Hardened Elementium Bar
 								["itemID"] = 53039,	-- Hardened Elementium Bar
-								["g"] = {
+								["groups"] = {
 									{	-- Plans: Elementium Bonesplitter
 										["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
 									},
@@ -121,7 +126,7 @@ _.Zones =
 							},
 							{	-- Pyrium Bar
 								["itemID"] = 51950,	-- Pyrium Bar
-								["g"] = {
+								["groups"] = {
 									{	-- Plans: Ebonsteel Belt Buckle
 										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
 									},
@@ -155,38 +160,45 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					},
 					n(15419, {	-- Kania <Enchanting Supplies>
-						i(20754),	-- Formula: Lesser Mana Oil
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(20755),	-- Formula: Wizard Oil
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-						i(22308),	-- Pattern: Enchanted Runecloth Bag
+						["coord"] = { 55.6, 37.2 },
+						["groups"] = {
+							i(20754),	-- Formula: Lesser Mana Oil
+							i(20753),	-- Formula: Lesser Wizard Oil
+							i(20752),	-- Formula: Minor Mana Oil
+							i(20758),	-- Formula: Minor Wizard Oil
+							i(20755),	-- Formula: Wizard Oil
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+							i(22308),	-- Pattern: Enchanted Runecloth Bag
+						},
 					}),
 					n(15179, {	-- Mishta <Trade Supplies>
-						i(21952), 	-- Design: Emerald Crown of Destruction
-						i(22310),	-- Pattern: Cenarion Herb Bag
-						i(22683),	-- Pattern: Gaea's Embrace
-						i(22312),	-- Pattern: Satchel of Cenarius
-						i(22773),	-- Pattern: Sylvan Crown
-						i(22772),	-- Pattern: Sylvan Shoulders
-						i(22774),	-- Pattern: Sylvan Vest
+						["coord"] = { 53.8, 34.4 },
+						["groups"] = {
+							i(21952), 	-- Design: Emerald Crown of Destruction
+							i(22310),	-- Pattern: Cenarion Herb Bag
+							i(22683),	-- Pattern: Gaea's Embrace
+							i(22312),	-- Pattern: Satchel of Cenarius
+							i(22773),	-- Pattern: Sylvan Crown
+							i(22772),	-- Pattern: Sylvan Shoulders
+							i(22774),	-- Pattern: Sylvan Vest
+						},
 					}),
 					n(15176, {	-- Vargus <Blacksmith>
-						i(22766),	-- Plans: Ironvine Breastplate
-						i(22767),	-- Plans: Ironvine Gloves
-						i(22768),	-- Plans: Ironvine Belt
-						i(22209),	-- Plans: Heavy Obsidian Belt
-						i(22214),	-- Plans: Light Obsidian Belt
+						["coord"] = { 55.0, 36.5 },
+						["groups"] = {
+							i(22766),	-- Plans: Ironvine Breastplate
+							i(22767),	-- Plans: Ironvine Gloves
+							i(22768),	-- Plans: Ironvine Belt
+							i(22209),	-- Plans: Heavy Obsidian Belt
+							i(22214),	-- Plans: Light Obsidian Belt
+						},
 					}),
 					n(12956, {	-- Zannok Hidepiercer <Leatherworking Supplies>
+						["coord"] = { 81.2, 18.6 },
 						["groups"] = {
 							i(15724),	-- Pattern: Heavy Scorpid Bracers
-							i(15762),	-- Pattern: Heavy Scorpid Helm		
-						},	
-						["coords"] = {
-							{ 81.36, 18.39, 81 },	-- Valor's Rest - Silithus
-						},		
+							i(15762),	-- Pattern: Heavy Scorpid Helm
+						},
 					}),
 				}),
 			},

@@ -338,6 +338,7 @@ _.Zones =
 							i( 30019),	-- Area 52 Defender's Pants
 							i( 30016),	-- X-52 Technician's Helm
 							i( 30014),	-- X-52 Pilot's Leggings
+
 						},
 						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["sourceQuests"] = { 10248 },	-- You, Robot

@@ -45,12 +45,7 @@ _.Zones =
 					qg(114550, qa(40717)),	-- Calling of the Council
 					qg(114631, qa(44684)),	-- Corruption Runs Deep
 					]]--
-					a({
-						["questID"] = 44764,	-- Demon in Disguise
-						["sourceQuest"] = 44686,	-- Thought Collection
-						["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
-						["lvl"] = 110,
-					}),
+
 					--[[
 					qart(qg(100729, q(40604, {	-- Disturbing the Past
 						["classes"] = {9},
@@ -72,15 +67,6 @@ _.Zones =
 						["classes"] = {11},
 					}))),
 					]]--
-					{
-						["questID"] = 44734,	-- Fragments of the Past
-						["sourceQuest"] = 44733,	-- The Power of Corruption
-						["qg"] = 114310,	-- Archmage Khadgar
-						["lvl"] = 110,
-						["groups"] = {
-							i(142460),	-- Violet Seal of the Archmage
-						},
-					},
 					--[[
 					qg(101547, q(40755)),	-- Hiding in the Stacks
 					qg(114310, q(44683)),	-- Holding the Lines
@@ -95,51 +81,7 @@ _.Zones =
 					qg(114310, q(44685)),	-- Reclaiming the Ramparts
 					qg(18253, q(11034)),	-- Restorer No More
 					]]--
-					{
-						["questID"] = 45291,	-- Return to Karazhan: Book Wyrms
-						["sourceQuests"] = {
-							44734,	-- Fragments of the Past
-							44735,	-- Return to Karazhan: In the Eye of the Beholder
-						},
-						["qg"] = 18255,	-- Mage Darius
-						["lvl"] = 110,
-					},
-					{
-						["questID"] = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs
-						["sourceQuest"] = 45294,	-- Return to Karazhan: High Stress Hiatus
-						["qg"] = 18255,	-- Mage Darius
-						["lvl"] = 110,
-					},
-					{
-						["questID"] = 45294,	-- Return to Karazhan: High Stress Hiatus
-						["sourceQuest"] = 45293,	-- Return to Karazhan: New Shoes
-						["qg"] = 18255,	-- Mage Darius
-						["lvl"] = 110,
-						["groups"] = {
-							i(142468),	-- Violet Seal of the Archmage
-						},
-					},
-					{
-						["questID"] = 45293,	-- Return to Karazhan: New Shoes
-						["sourceQuest"] = 45292,	-- Return to Karazhan: Rebooting the Cleaner
-						["qg"] = 18255,	-- Mage Darius
-						["lvl"] = 110,
-					},
-					{
-						["questID"] = 45292,	-- Return to Karazhan: Rebooting the Cleaner
-						["sourceQuest"] = 45291,	-- Return to Karazhan: Book Wyrms
-						["qg"] = 18255,	-- Mage Darius
-						["lvl"] = 110,
-						["groups"] = {
-							i(142461),	-- Violet Seal of the Archmage
-						},
-					},
-					{
-						["questID"] = 44735,	-- Return to Karazhan: In the Eye of the Beholder
-						["sourceQuest"] = 44733,	-- The Power of Corruption
-						["qg"] = 114310,	-- Archmage Khadgar
-						["lvl"] = 110,
-					},
+
 					--[[
 					qart(qg(101282, q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)
 						["classes"] = {11},
@@ -183,35 +125,6 @@ _.Zones =
 						})),
 					}),
 					]]--
-					a({
-						["questID"] = 44686,	-- Thought Collection
-						["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
-						["lvl"] = 110,
-					}),
-					{
-						["questID"] = 44733,	-- The Power of Corruption
-						["sourceQuest"] = 44764,	-- Demon in Disguise
-						["qg"] = 114310,	-- Archmage Khadgar
-						["lvl"] = 110,
-					},
-					q(40712, {	-- The Power Possessed
-						["qg"] = 101282, -- Revil Kost
-						["classes"] = { 9 },
-						["sourceQuests"] = {
-							40623,	-- The Dark Riders
-							41155,	-- The Dark Riders
-							42168,	-- Looking into the Darkness
-						},
-					}),
-					q(41156, {	-- The Power Possessed
-						["qg"] = 101282, -- Revil Kost
-						["classes"] = { 9 },
-						["sourceQuests"] = {
-							40623,	-- The Dark Riders
-							41155,	-- The Dark Riders
-							42168,	-- Looking into the Darkness
-						},
-					}),
 					ql(q(30113, {	-- Victory in the Depths
 						["groups"] = {
 							i(77947),	-- The Sleeper

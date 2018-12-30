@@ -764,10 +764,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14431,	-- The Blackmaw Scar
 					},
-					qart(q(46177, {	-- A Portal Away -- possibly legacy now that mage tower is unavailable?
-						["qg"] = 116048,	-- Joanna
-						["coord"] = { 25.2, 38.0 },
-					})),
 					{	-- A Quota to Meet
 						["questID"] = 14197,
 						["qg"] = 35085,	-- Foreman Fisk
@@ -829,10 +825,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14202,	-- Survey the Lakeshore
 					},
-					qart(q(45570, {	-- In Safer Hands -- possibly legacy now that mage tower is unavailable?
-						["qg"] = 117252,	-- Archmage Xylem
-						["coord"] = { 25.2, 38.0 },
-					})),
 					{	-- Lower Scrying Stone
 						["objectID"] = 196833,
 						["coord"] = { 52.9, 29.0 },
@@ -856,18 +848,6 @@ _.Zones =
 						["sourceQuest"] = 14423,	-- Dozercism
 						["isBreadcrumb"] = true,
 					},
-					qart(q(44920, {	-- Order of Incantations
-						["qg"] = 115791,	-- Joanna
-						["classes"] = {
-							1,	-- Warrior
-							3,	-- Hunter
-							4,	-- Rogue
-							6,	-- Death Knight
-							12,	-- Demon Hunter
-						},
-						["coord"] = { 25.0, 38.6 },
-						["sourceQuest"] = 44915,	-- Professionally Good looking
-					})),
 					{	-- Probing into Ashenvale
 						["questID"] = 24463,
 						["qg"] = 36728,	-- Kroum
@@ -876,24 +856,6 @@ _.Zones =
 						["sourceQuest"] = 24439,	-- The Conquest of Azshara
 						["isBreadcrumb"] = true,
 					},
-					qart(q(44915, {	-- Professionally Good Looking
-						["qg"] = 115791,	-- Joanna
-						["classes"] = {
-							1,	-- Warrior
-							3,	-- Hunter
-							4,	-- Rogue
-							6,	-- Death Knight
-							12,	-- Demon Hunter
-						},
-						["coord"] = { 25.0, 38.6 },
-						["sourceQuests"] = {
-							44914,	-- Arms: The Thieving Apprentice
-							47046,	-- Frost: The Thieving Apprentice
-							47043,	-- Havoc: The Thieving Apprentice
-							47048,	-- Subtlety: The Thieving Apprentice
-							47047,	-- Survival: The Thieving Apprentice
-						},
-					})),
 					{	-- Report to Horzak
 						["questID"] = 14162,
 						["qg"] = 35086,	-- Labor Captain Grabbit

@@ -370,6 +370,7 @@ _.NeverImplemented =
 			un(1, i(108814)), -- 6.0 PH Cloak Agi
 			un(1, i(108822)), -- 6.0 PH Cloak STR
 			un(1, i(108823)), -- 6.0 PH Cloak Int
+
 		}),
 		n(-324, { -- Shirts
 			un(1, i(53869)), -- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
@@ -502,6 +503,7 @@ _.NeverImplemented =
 			},
 			["u"] = 1,
 		}))),
+		un(1, spell(215545)),	-- Fel Bat (Test) (Actual name of the Item)
 		un(1, model(17890, i(25596))), 	-- Peep's Whistle	 					(Never added in Game)
 		un(1, i(8627)),	-- Reins of the Nightsaber								(Never added in Game)
 		un(1, a(model(6447, i(8628)))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
@@ -705,6 +707,7 @@ _.NeverImplemented =
 			un(1, i(109445)),   -- 6.0 QA Combat Test Strength 1h Sword
 			un(1, i(109448)),   -- 7.0 QA Combat Test Caster DPS Sword
 			un(1, i(109458)),   -- 6.0 QA Combat Test Agility 1h Sword
+			un(1, i(165273)),	-- Unknown - was under Legion>1Handed Swords
 		}),
 		n(-342, { -- Staves
 			un(1, i(108800)),	-- Unknown - was under Legion>Staves
@@ -719,12 +722,20 @@ _.NeverImplemented =
 			un(1, i(109532)),	-- Unknown - was under Legion>Staves
 			un(1, i(32185)),    -- Chancellor's War Staff
 			un(1, i(102595)),	-- Prideful Gladiator's Staff
+			un(1, i(136858)),	-- Wierd Testing Stuff for Artefact Weapons
+			un(1, i(139275)),	-- Wierd Testing Stuff for Artefact Weapons
+			un(1, i(139891)),	-- Wierd Testing Stuff for Artefact Weapons
 		}),
 		n(-335, { -- Two Handed Axes
 			un(1, i(108782)),	-- Unknown
 			un(1, i(109519)),	-- Unknown
 		}),
 		n(-339, { -- Two Handed Swords
+			un(1, i(140687)),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
+			un(1, i(140714)),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
+			un(1, i(150582)),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
+			un(1, i(150609)),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
+			un(1, i(153717)),	-- Heart-Lession Greatsword (You get the Runeblade)
 			un(1, i(33475)),	-- Artefact Frostmourne
 			un(1, i(108806)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(109373)),	-- 6.0 QA Combat Test Strength 2h Sword

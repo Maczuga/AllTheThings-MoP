@@ -6,7 +6,6 @@ local pet = function(itemID, speciesID)
 end
 
 pet(19450, 106); 	-- A Jubling's Tiny Home (Jubling)
-pet(166491, 2555);	-- Albino Duskwatcher
 pet(44822, 74); 	-- Albino Snake
 pet(72042, 331); 	-- Alliance Balloon
 pet(106240, 1363);	-- Alterac Brandy (Alterac Brew-Pup)
@@ -66,7 +65,6 @@ pet(93035, 1150); 	-- Core of Hardened Ash (Ashstone Core)
 pet(60847, 264); 	-- Crawling Claw
 pet(71076, 321); 	-- Creepy Crate
 pet(70160, 318); 	-- Crimson Lasher
-pet(166500, 2562);	-- Crimson Octopode
 pet(10392, 78); 	-- Crimson Snake
 pet(97556, 1234); 	-- Crystal of the Void (Lesser Voidcaller)
 pet(46545, 225); 	-- Curious Oracle Hatchling
@@ -85,7 +83,6 @@ pet(80008, 848); 	-- Darkmoon Rabbit
 pet(73903, 338); 	-- Darkmoon Tonk
 pet(73765, 335); 	-- Darkmoon Turtle
 pet(73905, 339); 	-- Darkmoon Zeppelin
-pet(166449, 2544);	-- Darkshore Sentinel
 pet(48112, 232); 	-- Darting Hatchling
 pet(104161, 1330); 	-- Death Adder Hatchling
 pet(48114, 233); 	-- Deviate Hatchling
@@ -144,7 +141,6 @@ pet(65362, 281);	-- Guild Page (Horde)
 pet(104169, 1338); 	-- Gulp Froglet
 pet(48116, 234); 	-- Gundrak Hatchling
 pet(93669, 1174);	-- Gusting Grimoire
-pet(166448, 2545);	-- Gust of Cyclarus
 pet(97961, 1245);	-- Half-Empty Food Container (Filthling)
 pet(104295, 1346);	-- Harmonious Porcupette
 pet(8501, 67); 		-- Hawk Owl
@@ -255,7 +251,6 @@ pet(97959, 1243); 	-- Quivering Blob (Living Fluid)
 pet(8497, 72);		-- Rabbit Crate (Snowshoe) - (Snowshoe Rabbit)
 pet(100905, 1256); 	-- Rascal-Bot
 pet(23015, 127); 	-- Rat Cage (Whiskers the Rat)
-pet(166451, 2546);	-- Rattling Bones (Detective Ray)
 pet(48122, 237); 	-- Ravasaur Hatchling
 pet(48124, 238); 	-- Razormaw Hatchling
 pet(48126, 239); 	-- Razzashi Hatchling
@@ -332,7 +327,6 @@ pet(33816, 163); 	-- Toothy's Bucket (Toothy)
 pet(50446, 251); 	-- Toxic Wasteling
 pet(21277, 116); 	-- Tranquil Mechanical Yeti
 pet(106256, 1365);	-- Treasure Goblin's Pack (Treasure Goblin)
-pet(166346, 2539);	-- Trecker's Cage (Trecker)
 pet(11026, 65); 	-- Tree Frog Box (Tree Frog)
 pet(22235, 122); 	-- Truesilver Shafted Arrow (Peddlefeet)
 pet(44810, 201); 	-- Turkey Cage (Plump Turkey)

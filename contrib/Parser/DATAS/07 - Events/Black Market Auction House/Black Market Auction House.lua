@@ -240,7 +240,7 @@ _.WorldEvents =
 			i(110678, { -- Darkmoon Ticket Fanny Pack
 				["description"] = "Contains 250-500 Darkmoon Faire Tickets",
 			}),
-			i(128312),	-- Elixir of the Rapid Mind			un(9, i(45037)),	-- Epic Purple Shirt
+			un(9, i(45037)),	-- Epic Purple Shirt
 			un(9, i(90176)),	-- Flintlocke's Blasthammer
 			desc(un(1, i(110591)), "Russ Petersen@nite_moogle\nNov 10\n\n@AskMrRobot it won't be available in 6.0. we made an updated version and decided not to use it.\n\nPlease make this item use the same source ID.\n - Crieve"), 	-- Flintlocke's Blasthammer
 			{	-- Grimoire of the Four Winds
@@ -271,7 +271,7 @@ _.WorldEvents =
 			},
 			i(14617),	-- Sawbones Shirt
 			un(9, i(44924)),	-- Sun-Lute of the Phoenix King
-			i(141995, { --  Unclaimed Black Market Container
+			i(102137, { --  Unclaimed Black Market Container
 				["groups"] = {
 					n(-160, { -- Mounts **
 						i(32458),	-- Ashes of Alar **

@@ -181,7 +181,6 @@ profession(333, { -- Enchanting
 		i(68789),	-- Formula: Enchant Bracer - Mighty Intellect [Random Drop - https://www.wowhead.com/item=68789/formula-enchant-bracer-mighty-intellect?ilvl=85]
 		-- h(i(67308)),	-- Formula: Enchanted Lantern [World Vendors]
 		
-		-- i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan [From 1 Vendor - Done]
 		-- i(84561),	-- Formula: Enchant Bracer - Exceptional Strength [From 2 Vendors - Done]
 		-- i(84557),	-- Formula: Enchant Bracer - Greater Agility [From 2 Vendors - Done]
 		-- i(84559),	-- Formula: Enchant Bracer - Super Intellect [From 2 Vendors - Done]

@@ -1549,6 +1549,19 @@ local function MergeObject(g, t, index)
 	end
 	return t;
 end
+local function ReapplyExpand(g, g2)
+	for i,o in ipairs(g2) do
+		local key = o.key;
+		local id = o[key];
+		for j,p in ipairs(g) do
+			if p[key] == id then
+				o.expanded = p.expanded;
+				if o.g and p.g then ReapplyExpand(o.g, p.g); end
+				break;
+			end
+		end
+	end
+end
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	for i,group in ipairs(groups) do
 		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
@@ -1556,15 +1569,6 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
 				if (group.progress / group.total) < 1 or GetDataMember("ShowCompletedGroups") then
 					right = GetProgressColorText(group.progress, group.total);
-					--[[
-					if group.itemID and group.itemID ~= itemID  then
-						if group.total > 1 or not group.collectible then
-							right = GetProgressColorText(group.progress, group.total);
-						end
-					else
-						right = GetProgressColorText(group.progress, group.total);
-					end
-					]]--
 				end
 			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
 				if group.collectible then
@@ -1611,7 +1615,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
-				if group.g and layer < 2 and (not group.achievementID or paramA == "creatureID") then
+				if group.g and layer < 2 and (not group.achievementID or paramA == "creatureID") and not group.parent.difficultyID then
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
 				end
 			end
@@ -1658,14 +1662,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group = regroup;
 			end
 			
-			if group and #group > 0 and not group[1].achievementID then
-				-- Push up one level.
+			if group and #group > 0 then
+				if GetDataMember("ShowDescriptions") and paramA ~= "encounterID" then
+					for i,j in ipairs(group) do
+						if j.description and j[paramA] and j[paramA] == paramB then
+							tinsert(info, 1, { left = "|cff66ccff" .. j.description .. "|r", wrap = true });
+						end
+					end
+				end
 				local subgroup = {};
 				table.sort(group, function(a, b)
 					return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
 				end);
 				for i,j in ipairs(group) do
-					if j.g then
+					if j.g and not (j.achievementID and j.parent.difficultyID) and j.npcID ~= 0 then
 						for k,l in ipairs(j.g) do
 							tinsert(subgroup, l);
 						end
@@ -1974,9 +1984,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		if group.g and #group.g > 0 then
-			if GetDataMember("ShowDescriptions") and not group.encounterID then
+			if GetDataMember("ShowDescriptions") then
 				for i,j in ipairs(group.g) do
-					if j.description and j[paramA] and j[paramA] == paramB then
+					if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
 						tinsert(info, 1, { left = "|cff66ccff" .. j.description .. "|r", wrap = true });
 					end
 				end
@@ -8439,15 +8449,6 @@ end):Show();
 						table.wipe(app.HolidayHeader.g);
 						app.HolidayHeader.progress = 0;
 						app.HolidayHeader.total = 0;
-						--[[
-						table.sort(results, function(a, b)
-							if a then
-								if b then
-									return (a.instanceID and not b.instanceID) or (a.mapID and not b.mapID) or (a.isRaid and not b.isRaid) or (a.maps and not b.maps);
-								end
-							end
-						end);
-						]]--
 						for i, group in ipairs(results) do
 							local clone = {};
 							for key,value in pairs(group) do
@@ -8550,24 +8551,6 @@ end):Show();
 					
 					-- If we have determined that we want to expand this section, then do it
 					if results.g then
-						--[[
-						table.sort(results.g, function(a, b)
-							if a and b then
-								if a.difficultyID then
-									if b.difficultyID then
-										return a.difficultyID < b.difficultyID;
-									else
-										return false;
-									end
-								else
-									if b.difficultyID then
-										return true;
-									end
-								end
-								return a.isRaid and not b.isRaid;
-							end
-						end);
-						]]--
 						local bottom = {};
 						local top = {};
 						for i=#results.g,1,-1 do
@@ -8587,75 +8570,26 @@ end):Show();
 							table.insert(results.g, o);
 						end
 						
-						if self.data then
-							ExpandGroupsRecursively(self.data, false);
+						if self.data and self.data.key == results.key and self.data[self.data.key] == results[self.data.key] then
+							ReapplyExpand(self.data.g, results.g);
+						else
+							ExpandGroupsRecursively(results, true);
 						end
 						
 						-- if enabled minimize rows based on difficulty 
 						if GetDataMember("AutoMinimize",true) then
-							ExpandGroupsRecursively(results, false);
-							
-							local found = false;
-							local diffs = {};
 							local difficultyID = select(3, GetInstanceInfo());
 							if difficultyID and difficultyID > 0 and results.g then
 								for _, row in ipairs(results.g) do
 									if row.difficultyID or row.difficulties then
-										tinsert(diffs, row);
 										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											ExpandGroupsRecursively(row, true);
-											found = true;
-										end
-									else
-										ExpandGroupsRecursively(row, true);
-									end
-								end
-							end
-							if #diffs > 0 then
-								if not found then
-									difficultyID = GetDungeonDifficultyID();
-									for _, row in ipairs(diffs) do
-										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											ExpandGroupsRecursively(row, true);
-											found = true;
-										end
-									end
-								end
-								if not found then
-									difficultyID = GetRaidDifficultyID();
-									for _, row in ipairs(diffs) do
-										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											ExpandGroupsRecursively(row, true);
-											found = true;
+											if not row.expanded then ExpandGroupsRecursively(row, true); end
+										elseif row.expanded then 
+											ExpandGroupsRecursively(row, false);
 										end
 									end
 								end
 							end
-							if not found then
-								-- difficultyID = GetLegacyRaidDifficultyID();
-								-- for _, row in ipairs(results.g) do
-								-- 	if (row.difficultyID and row.difficultyID == difficultyID)
-								-- 		or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-
-							-- 			ExpandGroupsRecursively(row, true);
-							-- 			found = true;
-
-								-- 	end
-								-- end
-								
-								-- Expand them all!
-								if not found then
-									ExpandGroupsRecursively(results, true);
-									if results.instanceID and app.GetDataMember("WarnOnClearedDifficulty", false) then
-										AllTheThings.yell("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
-										AllTheThings.print("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
-									end
-								end
-							else
-								ExpandGroupsRecursively(results, true);
-							end
-						else
-							ExpandGroupsRecursively(results, true);
 						end
 					end
 					
@@ -8754,6 +8688,7 @@ end):Show();
 		self.data.total = 0;
 		self.data.back = 1;
 		UpdateGroups(self.data, self.data.g);
+		self.data.visible = true;
 		UpdateWindow(self, true, got);
 	end);
 end)();
@@ -9104,7 +9039,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	
 	-- Update the window and all of its row data
 	app.DungeonDifficulty = GetDungeonDifficultyID() or 1;
-	app.RaidDifficulty = GetRaidDifficultyID() or 14;
+	app.RaidDifficulty = GetRaidDifficultyID() or 1;
 	app.Spec = GetLootSpecialization();
 	wipe(app.searchCache);
 	if not app.Spec or app.Spec == 0 then

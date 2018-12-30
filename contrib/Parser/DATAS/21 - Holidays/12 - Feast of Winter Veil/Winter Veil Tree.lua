@@ -65,54 +65,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 								["description"] = "Gift from 2014 and was given to spell casters.",
 								["questID"] = 8788,
 							}),
-							i(128652, { -- Gently Shaken Gift
-								["groups"] = {
-									un(29, i(116692)), -- Fuzzy Green Lounge Cushion
-									un(29, i(116689)), -- Pineapple Lounge Cushion
-									un(29, i(128776)), -- Red Wooden Sled
-									un(29, i(116690)), -- Safarai Lounge Cushion
-									un(29, i(116691)), -- Zhevra Lounge Cusion
-									un(29, i(128768)), -- Candy Cane
-								},
-								["description"] = "Gift from 2015.",
-								
-								["questID"] = 39658,
-							}),
-							i(139343, { -- Gently Shaken Gift
-								["groups"] = {
-									un(29, i(139337)), -- Disposable Winter Veil Suits
-									un(29, i(116692)), -- Fuzzy Green Lounge Cushion
-									un(29, i(116689)), -- Pineapple Lounge Cushion
-									un(29, i(128776)), -- Red Wooden Sled
-									un(29, i(116690)), -- Safarai Lounge Cushion
-									un(29, i(116691)), -- Zhevra Lounge Cusion
-									un(29, i(128768)), -- Candy Cane
-								},
-								["description"] = "Gift from 2016.",
-								
-								["questID"] = 43364,
-							}),
-							i(151345, { -- Gently Shaken Gift
-								["groups"] = {
-									un(29, h(i(151344))), -- Hearthstation [Horde]
-									un(29, a(i(151343))), -- Hearthstation [Alliance]
-									un(29, i(128768)), -- Candy Cane
-								},
-								["description"] = "Gift from 2017.  You will receive only one factions Hearthstation.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-								["questID"] = 43364,
-							}),
-							{	-- Gently Shaken Gift
-								["itemID"] = 162974,	-- Gently Shaken Gift
-								["u"] = 29,				-- Winter Veil Filter
-								["questID"] = 53011,
-								["description"] = "Gift from 2018.",
-								["g"] = {
-									{	-- Greatfather Winter's Hearthstone
-										["itemID"] = 162973,	-- Greatfather Winter's Hearthstone
-									},
-									un(29, i(128768)), -- Candy Cane
-								},
-							},
 						},
 						["lvl"] = 10,
 					}),

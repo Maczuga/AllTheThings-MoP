@@ -171,23 +171,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["itemID"] = 88166,	-- Wicked Witch's Signet
 						["u"] = 2,			-- Removed BoP Filter
 					},
-					-- Warlords of Draenor Rings
-					{	-- Band of the Petrified Pumpkin (i600 // i136 // L100)
-						["itemID"] = 117363,	-- Band of the Petrified Pumpkin
-						["u"] = 2,			-- Removed BoP Filter
-					},
-					{	-- Seal of Ghoulish Glee (i600 // i136 // L100)
-						["itemID"] = 117364,	-- Seal of Ghoulish Glee
-						["u"] = 2,			-- Removed BoP Filter
-					},
-					{	-- The Horseman's Ring  (i600 // i136 // L100)
-						["itemID"] = 117365,	-- The Horseman's Ring
-						["u"] = 2,			-- Removed BoP Filter
-					},
-					{	-- Wicked Witch's Signet  (i600 // i136 // L100)
-						["itemID"] = 117362,	-- Wicked Witch's Signet
-						["u"] = 2,			-- Removed BoP Filter
-					},
 					-- Candy
 					{	-- Chewy Fel Taffy
 						["itemID"] = 37585,	-- Chewy Fel Taffy

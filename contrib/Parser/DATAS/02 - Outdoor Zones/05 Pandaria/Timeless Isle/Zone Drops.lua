@@ -116,7 +116,7 @@ _.Zones =
 										{
 											["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 											["criteriaID"] = 1,		-- Cursed Swabby Helmet [Criteria]
-											["itemID"] = 134024,	-- Cursed Swabby Helmet [Item]
+											["itemID"] = 104038,	-- Cursed Swabby Helmet [Item]
 											["dr"] = 100,
 										},
 									},
