@@ -1,6 +1,6 @@
 profession(129, { -- First Aid
 	["groups"] =  {
-		un(2, ach(10599, {	-- Legion Medic (800) *
+		un(2, ach(6838, {	-- Zen Master Medic (600)
 			["groups"] = {
 				un(2, ach(131)),	-- Journeyman Medic (150)
 				un(2, ach(132)),	-- Expert Medic (225)
@@ -8,8 +8,6 @@ profession(129, { -- First Aid
 				un(2, ach(134)),	-- Master Medic (375)
 				un(2, ach(135)),	-- Grand Master Medic (450)
 				un(2, ach(4918)),	-- Illustrious Grand Master Medic (525)
-				un(2, ach(6838)),	-- Zen Master Medic (600)
-				un(2, ach(9505)),	-- Draenor Medic (700)
 			},
 		})),
 		un(2, ach(137)),	-- Stocking Up
@@ -78,22 +76,6 @@ profession(129, { -- First Aid
 			-- MoP
 			un(2, recipe(102697)),	-- Windwool Bandage
 			un(2, recipe(102698)),	-- Heavy Windwool Bandage
-			
-			-- WoD
-			un(2, recipe(172539)),	-- Antiseptic Bandage
-			un(2, recipe(172541)),	-- Blackwater Anti-Venom
-			un(2, recipe(172542)),	-- Fire Ammonite Oil
-			un(2, recipe(172540)),	-- Healing Tonic
-			
-			-- Legion
-			un(2, recipe(202853)),	-- Silkweave Bandage
-			un(2, recipe(202854)),	-- Silkweave Splint
-			un(2, recipe(230047)),	-- Feathered Luffa
-			un(2, recipe(211926)),	-- Set Bonue
-			un(2, recipe(211696)),	-- Stabilize
-			un(2, recipe(221690)),	-- Silvery Salve
-			un(2, recipe(212067)),	-- Treat Burns
-			un(2, recipe(211353)),	-- Treat Fever
 		}),
 	},
 	["u"] = 2,

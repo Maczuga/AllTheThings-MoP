@@ -178,9 +178,6 @@ profession(197, {	-- Tailoring
 						}
 					}
 				},
-				{
-					["categoryID"] = 1089--[[Bandages]],
-				}
 			}
 		}
 	}),
