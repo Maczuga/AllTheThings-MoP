@@ -964,10 +964,6 @@ profession(185, {	-- Cooking
 					["recipeID"] = 2546
 				},
 				{
-					["name"] = "Fancy Darkmoon Feast",
-					["recipeID"] = 185705
-				},
-				{
 					["name"] = "Filet of Redgill",
 					["recipeID"] = 18241
 				},
@@ -1042,10 +1038,6 @@ profession(185, {	-- Cooking
 				{
 					["name"] = "Lean Wolf Steak",
 					["recipeID"] = 15853
-				},
-				{
-					["name"] = "Lemon Herb Filet",
-					["recipeID"] = 185704
 				},
 				{
 					["name"] = "Lobster Stew",
@@ -1182,10 +1174,6 @@ profession(185, {	-- Cooking
 				{
 					["name"] = "Succulent Pork Ribs",
 					["recipeID"] = 2548
-				},
-				{
-					["name"] = "Sugar-Crusted Fish Feast",
-					["recipeID"] = 185708
 				},
 				{
 					["name"] = "Tasty Lion Steak",

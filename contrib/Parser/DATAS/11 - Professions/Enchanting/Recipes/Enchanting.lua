@@ -12,14 +12,6 @@ profession(333, {	-- Enchanting
 					}
 				},
 				{
-					["categoryID"] = 706--[[Illusions]],
-					["g"] = {
-						{
-							["recipeID"] = 217637--[[Tome of Illusions: Azeroth]]
-						}
-					}
-				},
-				{
 					["categoryID"] = 701--[[Reagents]],
 					["g"] = {
 						{

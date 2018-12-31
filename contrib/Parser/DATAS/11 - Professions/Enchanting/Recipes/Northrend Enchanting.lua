@@ -4,14 +4,6 @@ profession(333, {	-- Enchanting
 			["categoryID"] = 663--[[Northrend Enchanting]],
 			["g"] = {
 				{
-					["categoryID"] = 704--[[Illusions]],
-					["g"] = {
-						{
-							["recipeID"] = 217644--[[Tome of Illusions: Northrend]]
-						}
-					}
-				},
-				{
 					["categoryID"] = 672--[[Reagents]],
 					["g"] = {
 						{

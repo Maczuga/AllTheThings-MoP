@@ -329,9 +329,6 @@ profession(164, {	-- Blacksmithing
 						{	-- Barbaric Iron Breastplate
 							["recipeID"] = 9813--[[Barbaric Iron Breastplate]]
 						},
-						{	-- Barbaric Iron Hauberk
-							["recipeID"] = 280671--[[Barbaric Iron Hauberk]]
-						},
 						{	-- Shining Silver Breastplate
 							["recipeID"] = 2675--[[Shining Silver Breastplate]]
 						},

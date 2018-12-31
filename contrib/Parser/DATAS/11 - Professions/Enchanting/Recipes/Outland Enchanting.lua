@@ -4,14 +4,6 @@ profession(333, {	-- Enchanting
 			["categoryID"] = 665--[[Outland Enchanting]],
 			["g"] = {
 				{
-					["categoryID"] = 705--[[Illusions]],
-					["g"] = {
-						{
-							["recipeID"] = 217641--[[Tome of Illusions: Outland]]
-						}
-					}
-				},
-				{
 					["categoryID"] = 680--[[Reagents]],
 					["g"] = {
 						{

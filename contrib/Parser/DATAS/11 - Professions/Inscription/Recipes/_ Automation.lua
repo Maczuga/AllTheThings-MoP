@@ -36,10 +36,6 @@ profession(773, {	-- Inscription
 							["recipeID"] = 148274
 						},
 						{
-							["name"] = "Glyph of the Sun",
-							["recipeID"] = 182158
-						},
-						{
 							["name"] = "Glyph of the Val'kyr",
 							["recipeID"] = 126696
 						}
@@ -111,10 +107,6 @@ profession(773, {	-- Inscription
 					["name"] = "Scrolls & Research",
 					["categoryID"] = 781,
 					["g"] = {
-						{
-							["name"] = "Research: Ink of Dreams",
-							["recipeID"] = 165467
-						},
 						{
 							["name"] = "Runescroll of Fortitude III",
 							["recipeID"] = 112045
@@ -289,10 +281,6 @@ profession(773, {	-- Inscription
 					["name"] = "Scrolls & Research",
 					["categoryID"] = 787,
 					["g"] = {
-						{
-							["name"] = "Research: Blackfallow Ink",
-							["recipeID"] = 165466
-						},
 						{
 							["name"] = "Runescroll of Fortitude II",
 							["recipeID"] = 85785
@@ -476,10 +464,6 @@ profession(773, {	-- Inscription
 					["categoryID"] = 795,
 					["g"] = {
 						{
-							["name"] = "Research: Ink of the Sea",
-							["recipeID"] = 165465
-						},
-						{
 							["name"] = "Runescroll of Fortitude",
 							["recipeID"] = 69385
 						},
@@ -632,10 +616,6 @@ profession(773, {	-- Inscription
 					["categoryID"] = 802,
 					["g"] = {
 						{
-							["name"] = "Research: Ethereal Ink",
-							["recipeID"] = 165464
-						},
-						{
 							["name"] = "Scroll of Agility VI",
 							["recipeID"] = 58481
 						},
@@ -673,30 +653,7 @@ profession(773, {	-- Inscription
 					["name"] = "Research",
 					["categoryID"] = 108,
 					["g"] = {
-						{
-							["name"] = "Research: Celestial Ink",
-							["recipeID"] = 165461
-						},
-						{
-							["name"] = "Research: Jadefire Ink",
-							["recipeID"] = 165460
-						},
-						{
-							["name"] = "Research: Lion's Ink",
-							["recipeID"] = 165456
-						},
-						{
-							["name"] = "Research: Midnight Ink",
-							["recipeID"] = 165304
-						},
-						{
-							["name"] = "Research: Moonglow Ink",
-							["recipeID"] = 165564
-						},
-						{
-							["name"] = "Research: Shimmering Ink",
-							["recipeID"] = 165463
-						}
+
 					}
 				},
 				{

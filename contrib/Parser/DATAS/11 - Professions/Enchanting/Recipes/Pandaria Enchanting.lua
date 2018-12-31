@@ -1,236 +1,170 @@
 profession(333, {	-- Enchanting
 	filter(200, {	-- Recipes
 		{
-			["categoryID"] = 647--[[Zandalari Enchanting]],
+			["name"] = "Pandaria Enchanting",
+			["categoryID"] = 656,
 			["g"] = {
 				{
-					["categoryID"] = 650--[[Glove Enchantments]],
+					["name"] = "Reagents",
+					["categoryID"] = 654,
 					["g"] = {
 						{
-							["recipeID"] = 267498--[[Zandalari Crafting]]
+							["name"] = "Ethereal Shard",
+							["recipeID"] = 116498
 						},
 						{
-							["recipeID"] = 267458--[[Zandalari Herbalism]]
+							["name"] = "Ethereal Shatter",
+							["recipeID"] = 118238
 						},
 						{
-							["recipeID"] = 267482--[[Zandalari Mining]]
+							["name"] = "Mysterious Diffusion",
+							["recipeID"] = 118237
 						},
 						{
-							["recipeID"] = 267486--[[Zandalari Skinning]]
+							["name"] = "Mysterious Essence",
+							["recipeID"] = 116497
 						},
 						{
-							["recipeID"] = 267490--[[Zandalari Surveying]]
+							["name"] = "Sha Crystal",
+							["recipeID"] = 116499
+						},
+						{
+							["name"] = "Sha Shatter",
+							["recipeID"] = 118239
 						}
 					}
 				},
 				{
-					["categoryID"] = 651--[[Ring Enchantments]],
+					["name"] = "Armor Enchantments",
+					["categoryID"] = 657,
 					["g"] = {
 						{
-							["recipeID"] = 255098--[[Pact of Critical Strike]]
+							["name"] = "Accuracy",
+							["recipeID"] = 104398
 						},
 						{
-							["recipeID"] = 255090--[[Pact of Critical Strike]]
+							["name"] = "Blurred Speed",
+							["recipeID"] = 104409
 						},
 						{
-							["recipeID"] = 255099--[[Pact of Haste]]
+							["name"] = "Exceptional Strength",
+							["recipeID"] = 104390
 						},
 						{
-							["recipeID"] = 255091--[[Pact of Haste]]
+							["name"] = "Glorious Stats",
+							["recipeID"] = 104395
 						},
 						{
-							["recipeID"] = 255100--[[Pact of Mastery]]
+							["name"] = "Greater Agility",
+							["recipeID"] = 104391
 						},
 						{
-							["recipeID"] = 255092--[[Pact of Mastery]]
+							["name"] = "Greater Haste",
+							["recipeID"] = 104407
 						},
 						{
-							["recipeID"] = 255093--[[Pact of Versatility]]
+							["name"] = "Greater Haste",
+							["recipeID"] = 104416
 						},
 						{
-							["recipeID"] = 255101--[[Pact of Versatility]]
+							["name"] = "Greater Precision",
+							["recipeID"] = 104408
 						},
 						{
-							["recipeID"] = 255075--[[Pact of Critical Strike]]
+							["name"] = "Greater Protection",
+							["recipeID"] = 104401
 						},
 						{
-							["recipeID"] = 255076--[[Pact of Haste]]
+							["name"] = "Major Dodge",
+							["recipeID"] = 104385
 						},
 						{
-							["recipeID"] = 255077--[[Pact of Mastery]]
+							["name"] = "Mastery",
+							["recipeID"] = 104338
 						},
 						{
-							["recipeID"] = 255078--[[Pact of Versatility]]
+							["name"] = "Mighty Versatility",
+							["recipeID"] = 104393
 						},
 						{
-							["recipeID"] = 255094--[[Seal of Critical Strike]]
+							["name"] = "Pandaren's Step",
+							["recipeID"] = 104414
 						},
 						{
-							["recipeID"] = 255095--[[Seal of Haste]]
+							["name"] = "Super Intellect",
+							["recipeID"] = 104389
 						},
 						{
-							["recipeID"] = 255096--[[Seal of Mastery]]
+							["name"] = "Super Resilience",
+							["recipeID"] = 104392
 						},
 						{
-							["recipeID"] = 255097--[[Seal of Versatility]]
+							["name"] = "Super Strength",
+							["recipeID"] = 104419
 						},
 						{
-							["recipeID"] = 255086--[[Seal of Critical Strike]]
+							["name"] = "Superior Critical Strike",
+							["recipeID"] = 104404
 						},
 						{
-							["recipeID"] = 255087--[[Seal of Haste]]
+							["name"] = "Superior Haste",
+							["recipeID"] = 104417
 						},
 						{
-							["recipeID"] = 255088--[[Seal of Mastery]]
+							["name"] = "Superior Intellect",
+							["recipeID"] = 104403
 						},
 						{
-							["recipeID"] = 255089--[[Seal of Versatility]]
+							["name"] = "Superior Mastery",
+							["recipeID"] = 104420
 						},
 						{
-							["recipeID"] = 255071--[[Seal of Critical Strike]]
-						},
-						{
-							["recipeID"] = 255072--[[Seal of Haste]]
-						},
-						{
-							["recipeID"] = 255073--[[Seal of Mastery]]
-						},
-						{
-							["recipeID"] = 255074--[[Seal of Versatility]]
+							["name"] = "Superior Stamina",
+							["recipeID"] = 104397
 						}
 					}
 				},
 				{
-					["categoryID"] = 652--[[Weapon Enchantments]],
+					["name"] = "Weapon Enchantments",
+					["categoryID"] = 658,
 					["g"] = {
 						{
-							["recipeID"] = 268908--[[Weapon Enchant - Deadly Navigation]]
+							["name"] = "Colossus",
+							["recipeID"] = 104440
 						},
 						{
-							["recipeID"] = 268909--[[Weapon Enchant - Deadly Navigation]]
+							["name"] = "Dancing Steel",
+							["recipeID"] = 104434
 						},
 						{
-							["recipeID"] = 268902--[[Weapon Enchant - Masterful Navigation]]
+							["name"] = "Elemental Force",
+							["recipeID"] = 104430
 						},
 						{
-							["recipeID"] = 268903--[[Weapon Enchant - Masterful Navigation]]
+							["name"] = "Jade Spirit",
+							["recipeID"] = 104427
 						},
 						{
-							["recipeID"] = 268897--[[Weapon Enchant - Quick Navigation]]
+							["name"] = "River's Song",
+							["recipeID"] = 104442
 						},
 						{
-							["recipeID"] = 268895--[[Weapon Enchant - Quick Navigation]]
-						},
-						{
-							["recipeID"] = 268915--[[Weapon Enchant - Stalwart Navigation]]
-						},
-						{
-							["recipeID"] = 268914--[[Weapon Enchant - Stalwart Navigation]]
-						},
-						{
-							["recipeID"] = 268879--[[Weapon Enchant - Versatile Navigation]]
-						},
-						{
-							["recipeID"] = 268878--[[Weapon Enchant - Versatile Navigation]]
-						},
-						{
-							["recipeID"] = 255105--[[Weapon Enchant - Coastal Surge]]
-						},
-						{
-							["recipeID"] = 255143--[[Weapon Enchant - Gale-Force Striking]]
-						},
-						{
-							["recipeID"] = 255112--[[Weapon Enchant - Siphoning]]
-						},
-						{
-							["recipeID"] = 255131--[[Weapon Enchant - Torrent of Elements]]
-						},
-						{
-							["recipeID"] = 255104--[[Weapon Enchant - Coastal Surge]]
-						},
-						{
-							["recipeID"] = 255142--[[Weapon Enchant - Gale-Force Striking]]
-						},
-						{
-							["recipeID"] = 255111--[[Weapon Enchant - Siphoning]]
-						},
-						{
-							["recipeID"] = 255130--[[Weapon Enchant - Torrent of Elements]]
-						},
-						{
-							["recipeID"] = 268907--[[Weapon Enchant - Deadly Navigation]]
-						},
-						{
-							["recipeID"] = 268901--[[Weapon Enchant - Masterful Navigation]]
-						},
-						{
-							["recipeID"] = 268894--[[Weapon Enchant - Quick Navigation]]
-						},
-						{
-							["recipeID"] = 268913--[[Weapon Enchant - Stalwart Navigation]]
-						},
-						{
-							["recipeID"] = 268852--[[Weapon Enchant - Versatile Navigation]]
-						},
-						{
-							["recipeID"] = 255103--[[Weapon Enchant - Coastal Surge]]
-						},
-						{
-							["recipeID"] = 255141--[[Weapon Enchant - Gale-Force Striking]]
-						},
-						{
-							["recipeID"] = 255110--[[Weapon Enchant - Siphoning]]
-						},
-						{
-							["recipeID"] = 255129--[[Weapon Enchant - Torrent of Elements]]
+							["name"] = "Windsong",
+							["recipeID"] = 104425
 						}
 					}
 				},
 				{
-					["categoryID"] = 1098--[[Wrist Enchantments]],
+					["name"] = "Shield and Off-Hand Enchantments",
+					["categoryID"] = 659,
 					["g"] = {
 						{
-							["recipeID"] = 271433--[[Cooled Hearthing]]
+							["name"] = "Greater Parry",
+							["recipeID"] = 130758
 						},
 						{
-							["recipeID"] = 271366--[[Safe Hearthing]]
-						},
-						{
-							["recipeID"] = 267495--[[Swift Hearthing]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 1097--[[Wands]],
-					["g"] = {
-						{
-							["recipeID"] = 265110--[[Enchanter's Sorcerous Scepter]]
-						},
-						{
-							["recipeID"] = 265111--[[Enchanter's Sorcerous Scepter]]
-						},
-						{
-							["recipeID"] = 265112--[[Enchanter's Sorcerous Scepter]]
-						},
-						{
-							["recipeID"] = 269719--[[Honorable Combatant's Sorcerous Scepter]]
-						},
-						{
-							["recipeID"] = 269716--[[Honorable Combatant's Sorcerous Scepter]]
-						},
-						{
-							["recipeID"] = 269715--[[Honorable Combatant's Sorcerous Scepter]]
-						},
-						{
-							["recipeID"] = 265106--[[Enchanter's Umbral Wand]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 1232--[[Follower Equipment]],
-					["g"] = {
-						{
-							["recipeID"] = 278418--[[Disenchanting Rod]]
+							["name"] = "Major Intellect",
+							["recipeID"] = 104445
 						}
 					}
 				}

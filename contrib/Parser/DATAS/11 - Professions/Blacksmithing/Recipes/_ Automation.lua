@@ -2598,10 +2598,6 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 9813
 						},
 						{
-							["name"] = "Barbaric Iron Hauberk",
-							["recipeID"] = 280671
-						},
-						{
 							["name"] = "Bloodsoul Breastplate",
 							["recipeID"] = 24136
 						},

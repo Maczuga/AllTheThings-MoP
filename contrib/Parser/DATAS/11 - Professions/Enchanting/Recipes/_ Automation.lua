@@ -10,20 +10,6 @@ profession(333, {	-- Enchanting
 			["categoryID"] = 656,
 			["g"] = {
 				{
-					["name"] = "Illusions",
-					["categoryID"] = 702,
-					["g"] = {
-						{
-							["name"] = "Tome of Illusions: Pandaria",
-							["recipeID"] = 217650
-						},
-						{
-							["name"] = "Tome of Illusions: Secrets of the Shado-Pan",
-							["recipeID"] = 217651
-						}
-					}
-				},
-				{
 					["name"] = "Reagents",
 					["categoryID"] = 654,
 					["g"] = {
@@ -193,20 +179,6 @@ profession(333, {	-- Enchanting
 			["name"] = "Cataclysm Enchanting",
 			["categoryID"] = 661,
 			["g"] = {
-				{
-					["name"] = "Illusions",
-					["categoryID"] = 703,
-					["g"] = {
-						{
-							["name"] = "Tome of Illusions: Cataclysm",
-							["recipeID"] = 217645
-						},
-						{
-							["name"] = "Tome of Illusions: Elemental Lords",
-							["recipeID"] = 217649
-						}
-					}
-				},
 				{
 					["name"] = "Reagents",
 					["categoryID"] = 707,
@@ -447,16 +419,6 @@ profession(333, {	-- Enchanting
 			["name"] = "Northrend Enchanting",
 			["categoryID"] = 663,
 			["g"] = {
-				{
-					["name"] = "Illusions",
-					["categoryID"] = 704,
-					["g"] = {
-						{
-							["name"] = "Tome of Illusions: Northrend",
-							["recipeID"] = 217644
-						}
-					}
-				},
 				{
 					["name"] = "Reagents",
 					["categoryID"] = 672,
@@ -779,16 +741,6 @@ profession(333, {	-- Enchanting
 			["name"] = "Outland Enchanting",
 			["categoryID"] = 665,
 			["g"] = {
-				{
-					["name"] = "Illusions",
-					["categoryID"] = 705,
-					["g"] = {
-						{
-							["name"] = "Tome of Illusions: Outland",
-							["recipeID"] = 217641
-						}
-					}
-				},
 				{
 					["name"] = "Reagents",
 					["categoryID"] = 680,
@@ -1118,16 +1070,6 @@ profession(333, {	-- Enchanting
 						{
 							["name"] = "Runed Copper Rod",
 							["recipeID"] = 7421
-						}
-					}
-				},
-				{
-					["name"] = "Illusions",
-					["categoryID"] = 706,
-					["g"] = {
-						{
-							["name"] = "Tome of Illusions: Azeroth",
-							["recipeID"] = 217637
 						}
 					}
 				},

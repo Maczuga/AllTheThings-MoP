@@ -47,9 +47,6 @@ profession(773, {	-- Inscription
 				{	-- Scrolls & Research
 					["categoryID"] = 787--[[Scrolls & Research]],
 					["g"] = {
-						{	-- Research: Blackfallow Ink
-							["recipeID"] = 165466--[[Research: Blackfallow Ink]]
-						},
 						{	-- Runescroll of Fortitude II
 							["recipeID"] = 85785--[[Runescroll of Fortitude II]]
 						},

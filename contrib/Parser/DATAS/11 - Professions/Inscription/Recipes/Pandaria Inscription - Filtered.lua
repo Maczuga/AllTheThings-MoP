@@ -29,9 +29,6 @@ profession(773, {	-- Inscription
 						},
 						{	-- Glyph of the Val'kyr
 							["recipeID"] = 126696--[[Glyph of the Val'kyr]]
-						},
-						{	-- Glyph of the Sun
-							["recipeID"] = 182158--[[Glyph of the Sun]]
 						}
 					}
 				},
@@ -92,9 +89,6 @@ profession(773, {	-- Inscription
 						},
 						{	-- Scroll of Wisdom
 							["recipeID"] = 112996--[[Scroll of Wisdom]]
-						},
-						{	-- Research: Ink of Dreams
-							["recipeID"] = 165467--[[Research: Ink of Dreams]]
 						}
 					}
 				},

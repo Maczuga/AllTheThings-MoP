@@ -38,9 +38,6 @@ profession(773, {	-- Inscription
 						{	-- Runescroll of Fortitude
 							["recipeID"] = 69385--[[Runescroll of Fortitude]]
 						},
-						{	-- Research: Ink of the Sea
-							["recipeID"] = 165465--[[Research: Ink of the Sea]]
-						},
 						{	-- Scroll of Agility VIII
 							["recipeID"] = 58483--[[Scroll of Agility VIII]]
 						},

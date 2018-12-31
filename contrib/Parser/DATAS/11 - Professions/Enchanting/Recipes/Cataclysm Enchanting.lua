@@ -4,17 +4,6 @@ profession(333, {	-- Enchanting
 			["categoryID"] = 661--[[Cataclysm Enchanting]],
 			["g"] = {
 				{
-					["categoryID"] = 703--[[Illusions]],
-					["g"] = {
-						{
-							["recipeID"] = 217645--[[Tome of Illusions: Cataclysm]]
-						},
-						{
-							["recipeID"] = 217649--[[Tome of Illusions: Elemental Lords]]
-						}
-					}
-				},
-				{
 					["categoryID"] = 707--[[Reagents]],
 					["g"] = {
 						{

@@ -2509,7 +2509,7 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 								learned = learned + 1;
 							end
 							if not skillCache[receipeID] then
-								app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. receipeID .. ") in ATT Database. Please report it!");
+								app.print("Missing [??] (Spell ID #" .. receipeID .. ") in ATT Database. Please report it!");
 								skillCache[receipeID] = { {} };
 							end
 							

@@ -7,24 +7,7 @@ profession(773, {	-- Inscription
 				{	-- Research
 					["categoryID"] = 108--[[Research]],
 					["g"] = {
-						{	-- Research: Celestial Ink
-							["recipeID"] = 165461--[[Research: Celestial Ink]]
-						},
-						{	-- Research: Jadefire Ink
-							["recipeID"] = 165460--[[Research: Jadefire Ink]]
-						},
-						{	-- Research: Lion's Ink
-							["recipeID"] = 165456--[[Research: Lion's Ink]]
-						},
-						{	-- Research: Shimmering Ink
-							["recipeID"] = 165463--[[Research: Shimmering Ink]]
-						},
-						{	-- Research: Midnight Ink
-							["recipeID"] = 165304--[[Research: Midnight Ink]]
-						},
-						{	-- Research: Moonglow Ink
-							["recipeID"] = 165564--[[Research: Moonglow Ink]]
-						}
+
 					}
 				},
 				{	-- Ink

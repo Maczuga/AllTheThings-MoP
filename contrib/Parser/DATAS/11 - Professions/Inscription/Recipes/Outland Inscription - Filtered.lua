@@ -37,9 +37,6 @@ profession(773, {	-- Inscription
 				{	-- Scrolls & Research
 					["categoryID"] = 802--[[Scrolls & Research]],
 					["g"] = {
-						{	-- Research: Ethereal Ink
-							["recipeID"] = 165464--[[Research: Ethereal Ink]]
-						},
 						{	-- Scroll of Agility VI
 							["recipeID"] = 58481--[[Scroll of Agility VI]]
 						},
