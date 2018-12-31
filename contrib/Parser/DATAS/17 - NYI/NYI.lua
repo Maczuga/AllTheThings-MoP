@@ -401,9 +401,17 @@ _.NeverImplemented =
 			un(1, i(17108)),	-- Mark of Deflection
 			un(1, i(13812)),	-- Ring of the Dawn
 			un(1, i(19065)),	-- Emerald Circle
+			un(1, i(62035)), 	-- Antique Myrmidon's Signet
+			un(1, i(62036)), 	-- Ornate Band of Accuria
+			un(1, i(62037)), 	-- Gleaming seal of the archmagus
+			un(1, i(69891)), 	-- Burnished Dark Iron Ring
+			un(1, i(103825)), 	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
 		}),
 	}),
 	n(-494, { -- Misc
+		un(1, i(164258)),	-- Cache of Uldir Treasures
+		un(1, i(164259)),	-- Cache of Uldir Treasures
+		un(1, i(164260)),	-- Cache of Uldir Treasures
 		un(1, i(100894)),	-- Deathtoll's Reward
 		un(1, i(100897)),	-- Skel'tik the Baleful's Reward
 		un(1, i(100898)),	-- Kull Bloodseeker's Reward
@@ -725,6 +733,10 @@ _.NeverImplemented =
 			un(1, i(136858)),	-- Wierd Testing Stuff for Artefact Weapons
 			un(1, i(139275)),	-- Wierd Testing Stuff for Artefact Weapons
 			un(1, i(139891)),	-- Wierd Testing Stuff for Artefact Weapons
+		}),
+		n(-387,	{	-- Relics
+			un(1, i(132252)),	-- Owen Test Relic
+			un(1, i(130162)),    -- Val-Sharah Artifact Gem #1
 		}),
 		n(-335, { -- Two Handed Axes
 			un(1, i(108782)),	-- Unknown

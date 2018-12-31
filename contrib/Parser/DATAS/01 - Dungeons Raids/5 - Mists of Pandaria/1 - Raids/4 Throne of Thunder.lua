@@ -148,15 +148,17 @@ _.Instances =
 								i(96341),	-- Necklace of the Terra-Cotta Mender
 								i(96352),	-- Necklace of the Terra-Cotta Protector
 								i(96349),	-- Necklace of the Terra-Cotta Vanquisher
+								i(96344),	-- Abandoned Zandalari Arrowlinks
+								i(96348),	-- Abandoned Zandalari Bucklebreaker
 								i(96333),	-- Abandoned Zandalari Firecord
+								i(96347),	-- Abandoned Zandalari Goreplate
+								i(96346),	-- Abandoned Zandalari Greatbelt
 								i(96343),	-- Abandoned Zandalari Moonstrap
 								i(96334),	-- Abandoned Zandalari Shadowgirdle
 								i(96342),	-- Abandoned Zandalari Silentbelt
 								i(96345),	-- Abandoned Zandalari Waterchain
 								i(96351),	-- Columnbreaker Stompers
 								i(96338),	-- Deeproot Treads
-								i(96347),	-- Abandoned Zandalari Goreplate
-								i(96346),	-- Abandoned Zandalari Greatbelt
 								i(96337),	-- Home-Warding Slippers
 								i(96350),	-- Locksmasher Greaves
 								i(96332),	-- Scalehide Spurs
@@ -2281,15 +2283,15 @@ _.Instances =
 				["isRaid"] = true,
 				["sharedLockout"] = 1,
 				["lvl"] = 90,
-				["mapID"] = 508,
 				["maps"] = {
-					509,
-					510,
-					511,
-					512,
-					513,
-					514,
-					515,
+					508,	-- Overgrown Statuary
+					509,	-- Royal Amphitheater
+					510,	-- Forgotten Depths
+					511,	-- Roost of Ji-Kun
+					512,	-- Halls of Flesh-Shaping
+					513,	-- Hall of Kings
+					514,	-- Pinnacle of Storms
+					515,	-- Hidden Cell
 				},
 			}),
 		},					

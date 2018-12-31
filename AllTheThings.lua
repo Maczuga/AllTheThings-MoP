@@ -1380,6 +1380,7 @@ end })
 local searchCache = {};
 local function SetNote(key, id, note)
 	wipe(searchCache);
+	collectgarbage();
 	SetDataSubSubMember("Notes", key, id, note);
 end
 local function GetNoteForGroup(group)
@@ -1437,6 +1438,8 @@ local function CreateObject(t)
 				t = app.CreateItemSource(t.s, t.itemID, t);
 			elseif t.encounterID then
 				t = app.CreateEncounter(t.encounterID, t);
+			elseif t.instanceID then
+				t = app.CreateInstance(t.instanceID, t);
 			elseif t.currencyID then
 				t = app.CreateCurrencyClass(t.currencyID, t);
 			elseif t.speciesID then
@@ -1492,6 +1495,10 @@ local function MergeObject(g, t, index)
 			key = "objectID";
 		elseif t.followerID then
 			key = "followerID";
+		elseif t.encounterID then
+			key = "encounterID";
+		elseif t.instanceID then
+			key = "instanceID";
 		elseif t.illusionID then
 			key = "illusionID";
 		elseif t.speciesID then
@@ -7399,7 +7406,7 @@ function app:GetDataCache()
 		-- Pet Battles
 		if app.Categories.PetBattles then
 			db = app.CreateAchievement(6559, app.Categories.PetBattles); -- Traveling Pet Mauler
-			db.f = 0;
+			db.f = 101;
 			db.lvl = 5; -- Must be 5 to train
 			db.expanded = false;
 			db.text = "Pet Battles"; -- Pet Battles
@@ -7490,7 +7497,7 @@ function app:GetDataCache()
 		-- Pet Journal
 		if app.Categories.PetJournal then
 			db = app.CreateAchievement(7501, app.Categories.PetJournal);
-			db.f = 100;
+			db.f = 101;
 			db.expanded = false;
 			db.text = "Pet Journal";
 			db.icon = "Interface\\ICONS\\INV_Pet_BattlePetTraining";
@@ -8023,6 +8030,7 @@ function app:RefreshData(lazy, safely, got)
 			app:UpdateWindows(nil, got);
 		end
 		wipe(searchCache);
+		collectgarbage();
 	end);
 end
 function app:GetWindow(suffix, parent, onUpdate)
@@ -9052,6 +9060,458 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	end
 	UpdateWindow(self, true);
 end);
+(function()
+	app:GetWindow("Random", UIParent, function(self)
+		if not self.initialized then
+			self.initialized = true;
+			local function SearchRecursively(group, field, temp)
+				if group.visible and not group.saved then
+					if group.g then
+						for i, subgroup in ipairs(group.g) do
+							SearchRecursively(subgroup, field, temp);
+						end
+					end
+					if group[field] then tinsert(temp, group); end
+				end
+			end
+			local function SearchRecursivelyForEverything(group, temp)
+				if group.visible and not group.saved then
+					if group.g then
+						for i, subgroup in ipairs(group.g) do
+							SearchRecursivelyForEverything(subgroup, temp);
+						end
+					end
+					tinsert(temp, group);
+				end
+			end
+			local function SearchRecursivelyForValue(group, field, value, temp)
+				if group.visible and not group.saved then
+					if group.g then
+						for i, subgroup in ipairs(group.g) do
+							SearchRecursivelyForValue(subgroup, field, value, temp);
+						end
+					end
+					if group[field] and group[field] == value then tinsert(temp, group); end
+				end
+			end
+			function self:SelectAllTheThings()
+				if searchCache["randomatt"] then
+					return searchCache["randomatt"];
+				else
+					local searchResults = {};
+					for i, subgroup in ipairs(app:GetWindow("Prime").data.g) do
+						SearchRecursivelyForEverything(subgroup, searchResults);
+					end
+					searchCache["randomatt"] = searchResults;
+					return searchResults;
+				end
+			end
+			function self:SelectAchievement()
+				if searchCache["randomachievement"] then
+					return searchCache["randomachievement"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "achievementID", searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) and not o.saved and o.collectible and not o.mapID then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomachievement"] = temp;
+					return temp;
+				end
+			end
+			function self:SelectItem()
+				if searchCache["randomitem"] then
+					return searchCache["randomitem"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "itemID", searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) and o.collectible then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomitem"] = temp;
+					return temp;
+				end
+			end
+			function self:SelectInstance()
+				if searchCache["randominstance"] then
+					return searchCache["randominstance"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) and (((o.total or 0) - (o.progress or 0)) > 0) then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randominstance"] = temp;
+					return temp;
+				end
+			end
+			function self:SelectDungeon()
+				if searchCache["randomdungeon"] then
+					return searchCache["randomdungeon"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) and not o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0) then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomdungeon"] = temp;
+					return temp;
+				end
+			end
+			function self:SelectRaid()
+				if searchCache["randomraid"] then
+					return searchCache["randomraid"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) and o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0) then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomraid"] = temp;
+					return temp;
+				end
+			end
+			function self:SelectMount()
+				if searchCache["randommount"] then
+					return searchCache["randommount"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursivelyForValue(app:GetWindow("Prime").data, "f", 100, searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) and o.collectible and (not o.achievementID or o.itemID) then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randommount"] = temp;
+					return temp;
+				end
+			end
+			function self:SelectPet()
+				if searchCache["randompet"] then
+					return searchCache["randompet"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "speciesID", searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) and o.collectible then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randompet"] = temp;
+					return temp;
+				end
+			end
+			function self:SelectToy()
+				if searchCache["randomtoy"] then
+					return searchCache["randomtoy"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "isToy", searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) and o.collectible then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomtoy"] = temp;
+					return temp;
+				end
+			end
+			local excludedZones = {
+				12,	-- Kalimdor
+				13, -- Eastern Kingdoms
+				101,	-- Outland
+				113,	-- Northrend
+				424,	-- Pandaria
+				948,	-- The Maelstrom
+			};
+			function self:SelectZone()
+				if searchCache["randomzone"] then
+					return searchCache["randomzone"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "mapID", searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) and (((o.total or 0) - (o.progress or 0)) > 0) and not o.instanceID and not contains(excludedZones, o.mapID) then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomzone"] = temp;
+					return temp;
+				end
+			end
+			local mainHeader, filterHeader;
+			local rerollOption = {
+				['text'] = "Reroll",
+				['icon'] = "Interface\\Icons\\ability_monk_roll",
+				['description'] = "Click this button to reroll using the active filter.",
+				['visible'] = true,
+				['f'] = -1,
+				['key'] = "nope",
+				['OnClick'] = function(row, button)
+					self:Reroll();
+					return true;
+				end,
+				['back'] = 0.5,
+			};
+			filterHeader = {
+				['text'] = "Apply a Search Filter",
+				['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp", 
+				["description"] = "Please select a search filter option.",
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {
+					setmetatable({
+						['description'] = "Click this button to search... EVERYTHING.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "AllTheThings");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					}, { __index = function(t, key)
+						if key == "text" or key == "icon" or key == "preview" then
+							return app:GetWindow("Prime").data[key];
+						end
+					end}),
+					{
+						['text'] = "Achievement",
+						['icon'] = "Interface\\Icons\\Achievement_FeatsOfStrength_Gladiator_10",
+						['description'] = "Click this button to select a random achievement based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "Achievement");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Item",
+						['icon'] = "Interface\\Icons\\INV_Box_02",
+						['description'] = "Click this button to select a random item based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "Item");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Instance",
+						['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
+						['description'] = "Click this button to select a random instance based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "Instance");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Dungeon",
+						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheHERO",
+						['description'] = "Click this button to select a random dungeon based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "Dungeon");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Raid",
+						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider",
+						['description'] = "Click this button to select a random raid based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "Raid");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Mount",
+						['icon'] = "Interface\\Icons\\Ability_Mount_AlliancePVPMount",
+						['description'] = "Click this button to select a random mount based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "Mount");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Pet",
+						['icon'] = "Interface\\Icons\\INV_Box_02",
+						['description'] = "Click this button to select a random pet based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "Pet");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					-- {
+					-- 	['text'] = "Toy",
+					-- 	['icon'] = "Interface\\Icons\\INV_Misc_Toy_10",
+					-- 	['description'] = "Click this button to select a random toy based on what you're missing.",
+					-- 	['visible'] = true,
+					-- 	['f'] = -1,
+					-- 	['key'] = "nope",
+					-- 	['OnClick'] = function(row, button)
+					-- 		app.SetDataMember("RandomSearchFilter", "Toy");
+					-- 		self.data = mainHeader;
+					-- 		self:Reroll();
+					-- 		return true;
+					-- 	end,
+					-- 	['back'] = 0.5,
+					-- },
+					{
+						['text'] = "Zone",
+						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
+						['description'] = "Click this button to select a random zone based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "Zone");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+				},
+			};
+			mainHeader = {
+				['text'] = "Random - Go Get 'Em!",
+				['icon'] = "Interface\\Icons\\inv_misc_dice_02.blp", 
+				["description"] = "This window allows you to randomly select a place or item to get. Go get 'em!",
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['options'] = {
+					{
+						['text'] = "Change Search Filter",
+						['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp", 
+						["description"] = "Click this to change your search filter.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							self.data = filterHeader;
+							UpdateWindow(self, true);
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					rerollOption,
+				},
+				['g'] = { },
+			};
+			self.data = mainHeader;
+			self.Rebuild = function(self, no)
+				-- Rebuild all the datas
+				wipe(self.data.g);
+				
+				-- Call to our method and build a list to draw from
+				local method = app.GetDataMember("RandomSearchFilter", "Instance");
+				if method then
+					rerollOption.text = "Reroll: " .. method;
+					method = "Select" .. method;
+					local temp = self[method]() or {};
+					local totalWeight = 0;
+					for i,o in ipairs(temp) do
+						totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
+					end
+					if totalWeight > 0 and #temp > 0 then
+						local weight, selected = math.random(totalWeight), nil;
+						totalWeight = 0;
+						for i,o in ipairs(temp) do
+							totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
+							if weight <= totalWeight then
+								selected = o;
+								break;
+							end
+						end
+						if not selected then selected = temp[#temp - 1]; end
+						if selected then
+							MergeObject(self.data.g, selected);
+						else
+							app.print("There was nothing to randomly select from.");
+						end
+					else
+						app.print("There was nothing to randomly select from.");
+					end
+				else
+					app.print("No search method specified.");
+				end
+				for i=#self.data.options,1,-1 do
+					tinsert(self.data.g, 1, self.data.options[i]);
+				end
+				if not no then self:Update(); end
+			end
+			self.Reroll = function(self)
+				Push(self, "Rebuild", self.Rebuild);
+			end
+			for i,o in ipairs(self.data.options) do
+				tinsert(self.data.g, o);
+			end
+			self:RegisterEvent("PLAYER_LOGIN");
+			self:SetScript("OnEvent", function(self, e, ...) 
+				rerollOption.text = "Reroll: " .. app.GetDataMember("RandomSearchFilter", "Instance");
+			end);
+		end
+		
+		-- Update the window and all of its row data
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g);
+		UpdateWindow(self, true);
+	end);
+end)();
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
@@ -9093,6 +9553,8 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		app:ToggleMiniListForCurrentZone();
 	elseif cmd == "ra" then
 		app:GetWindow("RaidAssistant"):Toggle();
+	elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
+		app:GetWindow("Random"):Toggle();
 	elseif cmd == "wq" then
 		app:GetWindow("WorldQuests"):Toggle();
 	elseif cmd == "unsorted" then
@@ -9138,6 +9600,12 @@ end
 SLASH_AllTheThingsRA1 = "/attra";
 SlashCmdList["AllTheThingsRA"] = function(cmd)
 	app:GetWindow("RaidAssistant"):Toggle();
+end
+
+SLASH_AllTheThingsRAN1 = "/attran";
+SLASH_AllTheThingsRAN2 = "/attrandom";
+SlashCmdList["AllTheThingsRAN"] = function(cmd)
+	app:GetWindow("Random"):Toggle();
 end
 
 SLASH_AllTheThingsWQ1 = "/attwq";
@@ -10167,6 +10635,8 @@ app.events.VARIABLES_LOADED = function()
 	BINDING_NAME_ALLTHETHINGS_OPEN_RAID_ASSISTANT = L("OPEN_RAID_ASSISTANT");
 	BINDING_NAME_ALLTHETHINGS_TOGGLE_RAID_ASSISTANT = L("TOGGLE_RAID_ASSISTANT");
 	BINDING_NAME_ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST = L("TOGGLE_WORLD_QUESTS_LIST");
+	BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L("TOGGLE_RANDOM");
+	BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L("REROLL_RANDOM");
 	
 	-- Cache information about the player.
 	local _, class, classIndex = UnitClass("player");
@@ -10486,6 +10956,7 @@ app.events.NEW_PET_ADDED = function(petID)
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
 		wipe(searchCache);
+		collectgarbage();
 	end
 end
 app.events.PET_JOURNAL_PET_DELETED = function(petID)
