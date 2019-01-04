@@ -157,6 +157,9 @@ _.WorldDrops =
 					i(24211),	-- Design: Timeless Nightseye
 					i(31878),	-- Design: Veiled Nightseye
 				}),
+				n(-350, {	-- Spell Book
+					i(22153),	-- Tome of Arcane Brilliance Rank 2 -- Only drops from Elites, irrelevant information for live as its a grey item.
+				}),
 				n(-190, {	-- Tailoring
 					i(24298),	-- Pattern: Blackstrike Bracers
 					i(24304),	-- Pattern: Black Belt of Knowledge

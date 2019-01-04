@@ -63,6 +63,10 @@ _.Instances =
 					}),
 					d(  1, {	-- Normal
 						cr(26731, e(618, { 	-- Grand Magus Telestra
+							{	-- The Nexus: Grand Magus Telestra
+								["achievementID"] = 478,	-- The Nexus
+								["criteriaID"] = 1,	-- Grand Magus Telestra
+							},
 							i( 35617),	-- Wand of Shimmering Scales
 							i( 37134),	-- Telestra's Journal
 							i( 37135),	-- Arcane-Shielded Helm
@@ -72,6 +76,10 @@ _.Instances =
 							i( 35605),	-- Belt of Draconic Runes
 						})),
 						cr(26763, e(619, {	-- Anomalus
+							{	-- The Nexus: Anomalus
+								["achievementID"] = 478,	-- The Nexus
+								["criteriaID"] = 2,	-- Anomalus
+							},
 							i(35598),	--	 Tome of the Lore Keepers
 							i(37149),	-- Helm of Anomalus
 							i(37141),	-- Amulet of Dazzling Light
@@ -81,6 +89,10 @@ _.Instances =
 							i(37150),	-- Rift Striders
 						})),
 						cr(26794, e(620, { 	-- Ormorok the Tree-Shaper
+							{	-- The Nexus: Ormorok the Tree-Shaper
+								["achievementID"] = 478,	-- The Nexus
+								["criteriaID"] = 3,	-- Ormorok the Tree-Shaper
+							},
 							i( 35601),	-- Drakonid Arm Blade
 							i( 35602),	-- Chiseled Stalagmite Pauldrons
 							i( 37153),	-- Gloves of the Crystal Gardener
@@ -90,6 +102,10 @@ _.Instances =
 							i( 37151),	-- Band of Frosted Thorns
 						})),
 						cr(26723, e(621, {	-- Keristrasza
+							{	-- The Nexus: Keristrasza
+								["achievementID"] = 478,	-- The Nexus
+								["criteriaID"] = 4,	-- Keristrasza
+							},
 							i( 35595),	-- Glacier Sharpened Vileblade
 							i( 37169),	-- War Mace of Unrequited Love
 							i( 37162),	-- Bulwark of the Noble Protector
@@ -119,6 +135,13 @@ _.Instances =
 								i(37730),	-- Cleric's Linen Shoes
 							}))),
 							cr(26731, e(618, { 	-- Grand Magus Telestra
+								{	-- Heroic: The Nexus: Grand Magus Telestra
+									["achievementID"] = 490,	-- Heroic: The Nexus
+									["criteriaID"] = 1,	-- Grand Magus Telestra
+								},
+								{	-- Split Personality
+									["achievementID"] = 2150,	-- Split Personality
+								},
 								i(35617),	-- Wand of Shimmering Scales
 								i(37134),	-- Telestra's Journal
 								i(37135),	-- Arcane-Shielded Helm
@@ -128,6 +151,13 @@ _.Instances =
 								i(35605),	-- Belt of Draconic Runes
 							})),
 							cr(26763, e(619, {	-- Anomalus
+								{	-- Chaos Theory
+									["achievementID"] = 2037,	-- Chaos Theory
+								},
+								{	-- Heroic: The Nexus: Anomalus
+									["achievementID"] = 490,	-- Heroic: The Nexus
+									["criteriaID"] = 2,	-- Anomalus
+								},
 								i(35598),	-- Tome of the Lore Keepers
 								i(37149),	-- Helm of Anomalus
 								i(37141),	-- Amulet of Dazzling Light
@@ -137,6 +167,10 @@ _.Instances =
 								i(37150),	-- Rift Striders
 							})),
 							cr(26794, e(620, { 	-- Ormorok the Tree-Shaper
+								{	-- Heroic: The Nexus: Ormorok the Tree-Shaper
+									["achievementID"] = 490,	-- Heroic: The Nexus
+									["criteriaID"] = 3,	-- Ormorok the Tree-Shaper
+								},
 								i( 35601),	-- Drakonid Arm Blade
 								i( 35602),	-- Chiseled Stalagmite Pauldrons
 								i( 37153),	-- Gloves of the Crystal Gardener
@@ -146,9 +180,16 @@ _.Instances =
 								i( 37151),	-- Band of Frosted Thorns
 							})),
 							cr(26723, e(621, {	-- Keristrasza
-								{
+								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 6,			-- Keristrasza slain
+								},
+								{	-- Heroic: The Nexus: Keristrasza
+									["achievementID"] = 490,	-- Heroic: The Nexus
+									["criteriaID"] = 4,	-- Keristrasza
+								},
+								{	-- Intense Cold
+									["achievementID"] = 2036,	-- Intense Cold
 								},
 								i( 35595),	-- Glacier Sharpened Vileblade
 								i( 37169),	-- War Mace of Unrequited Love

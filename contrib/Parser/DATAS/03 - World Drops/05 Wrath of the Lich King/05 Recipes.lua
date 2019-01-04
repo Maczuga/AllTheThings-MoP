@@ -41,6 +41,9 @@ _.WorldDrops =
 					i(41784),	-- Design: Sovereign Twilight Opal
 					i(41787),	-- Design: Thundering Skyflare Diamond
 				}),
+				n(-350, {	-- Spell Book
+					i(22153),	-- Tome of Arcane Brilliance Rank 2 -- Only drops from Elites, irrelevant information for live as its a grey item.
+				}),
 				n(-190, {	-- Tailoring
 					i(43876),	-- A Guide to Northern Cloth Scavenging
 					i(42173),	-- Pattern: Blue Lumberjack Shirt

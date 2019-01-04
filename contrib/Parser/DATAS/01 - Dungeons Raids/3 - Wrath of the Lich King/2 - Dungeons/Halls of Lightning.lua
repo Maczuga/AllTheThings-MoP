@@ -72,6 +72,10 @@ _.Instances =
 							}),
 						}),
 						cr(28586, e(597, {	-- General Bjarngrim
+							{	-- Halls of Lightning: General Bjarngrim
+								["achievementID"] = 486,	-- Halls of Lightning
+								["criteriaID"] = 1,			-- General Bjarngrim
+							},
 							i( 36980),	-- Hewn Sparring Quarterstaff
 							i( 37814),	-- Iron Dwarf Smith Pauldrons
 							i( 36982),	-- Mantle of Electrical Charges
@@ -81,6 +85,10 @@ _.Instances =
 							i( 36979),	-- Bjarngrim Family Signet
 						})),
 						cr(28587, e(598, {	-- Volkhan
+							{	-- Halls of Lightning: Volkhan
+								["achievementID"] = 486,	-- Halls of Lightning
+								["criteriaID"] = 3,			-- Volkhan
+							},
 							i( 36984),	-- Eternally Folded Blade
 							i( 36985),	-- Volkhan's Hood
 							i( 36983),	-- Cape of Seething Steam
@@ -91,6 +99,10 @@ _.Instances =
 							i( 37841),	-- Slag Footguards
 						})),
 						cr(28546, e(599, {	-- Ionar
+							{	-- Halls of Lightning: Ionar
+								["achievementID"] = 486,	-- Halls of Lightning
+								["criteriaID"] = 2,			-- Ionar
+							},
 							i(39534),	-- Pauldrons of the Lightning Revenant
 							i(39657),	-- Tornado Cuffs
 							i(37846),	-- Charged-Bolt Grips
@@ -101,6 +113,10 @@ _.Instances =
 							i(37844),	-- Winged Talisman
 						})),
 						cr(28923, e(600, {	-- Loken
+							{	-- Halls of Lightning: Loken
+								["achievementID"] = 486,	-- Halls of Lightning
+								["criteriaID"] = 4,			-- Loken
+							},
 							i(41799),	-- Design: Eternal Earthsiege Diamond
 							i( 37848),	-- Lightning Giant Staff
 							i( 37852),	-- Colossal Skull-Clad Cleaver
@@ -169,6 +185,13 @@ _.Instances =
 								}),
 							}),
 							cr(28586, e(597, {	-- General Bjarngrim
+								{	-- Heroic: Halls of Lightning: General Bjarngrim
+									["achievementID"] = 497,	-- Heroic: Halls of Lightning
+									["criteriaID"] = 1,			-- General Bjarngrim
+								},
+								{	-- Lightning Struck
+									["achievementID"] = 1834,	-- Lightning Struck
+								},
 								i( 36980),	-- Hewn Sparring Quarterstaff
 								i( 37814),	-- Iron Dwarf Smith Pauldrons
 								i( 36982),	-- Mantle of Electrical Charges
@@ -178,6 +201,13 @@ _.Instances =
 								i( 36979),	-- Bjarngrim Family Signet
 							})),
 							cr(28587, e(598, {	-- Volkhan
+								{	-- Heroic: Halls of Lightning: Volkhan
+									["achievementID"] = 497,	-- Heroic: Halls of Lightning
+									["criteriaID"] = 3,			-- Volkhan
+								},
+								{	-- Shatter Resistant
+									["achievementID"] = 2042,	-- Shatter Resistant
+								},
 								i( 36984),	-- Eternally Folded Blade
 								i( 36985),	-- Volkhan's Hood
 								i( 36983),	-- Cape of Seething Steam
@@ -188,6 +218,10 @@ _.Instances =
 								i( 37841),	-- Slag Footguards
 							})),
 							cr(28546, e(599, {	-- Ionar
+								{	-- Heroic: Halls of Lightning: Ionar
+									["achievementID"] = 497,	-- Heroic: Halls of Lightning
+									["criteriaID"] = 2,			-- Ionar
+								},
 								i(39534),	-- Pauldrons of the Lightning Revenant
 								i(39657),	-- Tornado Cuffs
 								i(37846),	-- Charged-Bolt Grips
@@ -201,6 +235,13 @@ _.Instances =
 								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 8,			-- Loken slain
+								},
+								{	-- Heroic: Halls of Lightning: Loken
+									["achievementID"] = 497,	-- Heroic: Halls of Lightning
+									["criteriaID"] = 4,			-- Loken
+								},
+								{	-- Timely Death
+									["achievementID"] = 1867,	-- Timely Death
 								},
 								i(41799),	-- Design: Eternal Earthsiege Diamond
 								i( 37848),	-- Lightning Giant Staff
