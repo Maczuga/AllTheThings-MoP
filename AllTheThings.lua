@@ -3472,7 +3472,7 @@ app.BaseTransmogCategory = {
     if key == "text" then
       if t.itemSubClass < 20 then
         return "FIXME - GetItemSubClassInfo(2, t.itemSubClass)";
-      elseif t.itemSubClass == 21 then return "FIXME - GetItemSubClassInfo(4,6)";
+      elseif t.itemSubClass == 21 then return "Shield";
       elseif t.itemSubClass <21 then
         return transmogArmorSlots[t.itemSubClass - 20]
       end
