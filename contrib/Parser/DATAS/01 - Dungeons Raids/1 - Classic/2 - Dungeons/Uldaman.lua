@@ -232,11 +232,17 @@ _.Instances =
 							6907, -- Eric "The Swift"
 						},
 					}),
+					o(123329, { -- Baelog's Chest
+						["groups"] = {
+							i(7740),	-- Gni'kiv Medallion
+						},
+					}),
 					cr( 6910, e(  467, {	-- Revelosh
 						i(  9389),	-- Revelosh's Spaulders
 						i(  9388),	-- Revelosh's Armguards
 						i(  9390),	-- Revelosh's Gloves
 						i(  9387),	-- Revelosh's Boots
+						i(7741),	-- The Shaft of Tsol
 					})),
 					cr( 7228, e(  469, {	-- Ironaya
 						i(  9408),	-- Ironshod Bludgeon

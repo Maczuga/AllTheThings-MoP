@@ -271,6 +271,9 @@ _.NeverImplemented =
 				un(1, i(48818)),	-- Windrunner's Tunic of Conquest
 			}),
 			un(1, i(12105)),	-- Pridemail Leggings
+			un(1, i(37420)),	-- Sharkproof Boots
+			un(1, i(37433)),	-- Layered Scale Boots
+			un(1, i(37444)),	-- Wavekeeper's Helm
 			un(1, i(13090)),	-- Breastplate of the Chosen
 			un(1, i(18320)),	-- Demonheart Spaulders
 			un(1, i(56507)),	-- Razorshell Helm
@@ -389,11 +392,14 @@ _.NeverImplemented =
 			un(1, i(18438)), -- Sergeant's Mark
 			un(1, i(20084)), -- Hunting Net
 			un(1, i(20525)), -- Earthen Sigil
+			un(1, i(157761)),	-- Unknown
 		}),
 		filter(51, {	-- Neck
 			un(1, i(7550)),		-- Warrior's Honor
 			un(1, i(13811)),	-- Necklace of the Dawn
 			un(1, i(18023)),	-- Blood Ruby Pendant
+			un(1, i(23058)),	-- Life Channeling Necklace
+			un(1, i(28043)),	-- Demon Stalker Pendant
 		}),
 		filter(52, {	-- Finger
 			un(1, i(4988)),		-- Burning Obsidian Band
@@ -406,6 +412,10 @@ _.NeverImplemented =
 			un(1, i(62037)), 	-- Gleaming seal of the archmagus
 			un(1, i(69891)), 	-- Burnished Dark Iron Ring
 			un(1, i(103825)), 	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
+			un(1, i(25988)),	-- Glowing Alabaster Ring Beta only
+			un(1, i(28044)),	-- Band of the Demon Stalker
+			un(1, i(25991)),	-- Seamless Stone Band
+			un(1, i(25990)),	-- Smooth soapstone band
 		}),
 	}),
 	n(-494, { -- Misc
