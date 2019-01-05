@@ -65,6 +65,25 @@ i(94223, 1270, true);		-- Stolen Shado-Pan Insignia
 -- Classic
 i(21229, 910);		-- Qiraji Lord's Insignia [Brood of Nozdormu]
 i(21230, 910);		-- Ancient Qiraji Artifact [Brood of Nozdormu]
+i(19708, 270);		-- Blue Hakkari Bijou [Zandalar Tribe]
+i(19713, 270);		-- Bronze Hakkari Bijou [Zandalar Tribe]
+i(19715, 270);		-- Golden Hakkari Bijou [Zandalar Tribe]
+i(19711, 270);		-- Green Hakkari Bijou [Zandalar Tribe]
+i(19710, 270);		-- Orange Hakkari Bijou [Zandalar Tribe]
+i(19712, 270);		-- Purple Hakkari Bijou [Zandalar Tribe]
+i(19707, 270);		-- Red Hakkari Bijou [Zandalar Tribe]
+i(19714, 270);		-- Silver Hakkari Bijou [Zandalar Tribe]
+i(19709, 270);		-- Yellow Hakkari Bijou [Zandalar Tribe]
+i(19706, 270);		-- Bloodscalp Coin [Zandalar Tribe]
+i(19701, 270);		-- Gurubashi Coin [Zandalar Tribe]
+i(19700, 270);		-- Hakkari Coin [Zandalar Tribe]
+i(19699, 270);		-- Razzashi Coin [Zandalar Tribe]
+i(19704, 270);		-- Sandfury Coin [Zandalar Tribe]
+i(19705, 270);		-- Skullsplitter Coin [Zandalar Tribe]
+i(19702, 270);		-- Vilebranch Coin [Zandalar Tribe]
+i(19703, 270);		-- Witherbark Coin [Zandalar Tribe]
+i(19698, 270);		-- Zulian Coin [Zandalar Tribe]
+
 
 -- Burning Crusade
 i(24291, 970);		-- Bog Lord Tendrils [Sporeggar]

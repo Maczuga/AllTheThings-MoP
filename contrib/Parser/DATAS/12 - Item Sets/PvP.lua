@@ -178,11 +178,8 @@ _.GearSets =
 							i(27708),	-- Gladiator's Satin Hood
 							i(27710),	-- Gladiator's Satin Mantle
 							i(27711),	-- Gladiator's Satin Robe
-							i(147771),	-- General's Satin Cuffs
 							i(27707),	-- Gladiator's Satin Gloves
-							i(147613),	-- General's Satin Cord
 							i(27709),	-- Gladiator's Satin Leggings
-							i(147614),	-- General's Satin Slippers
 						}),
 						n(-9917, {	-- Shadow Priest
 							i(31410),	-- Gladiator's Mooncloth Hood
@@ -214,11 +211,8 @@ _.GearSets =
 						i(30187),	-- Gladiator's Felweave Cowl
 						i(30186),	-- Gladiator's Felweave Amice
 						i(30200),	-- Gladiator's Felweave Raiment
-						i(147772),	-- General's Felweave Cuffs
 						i(30188),	-- Gladiator's Felweave Handguards
-						i(147615),	-- General's Felweave Belt
 						i(30201),	-- Gladiator's Felweave Trousers
-						i(147616),	-- General's Felweave Boots
 					},
 					["classes"] = { 9 },
 				}),		
@@ -369,7 +363,6 @@ _.GearSets =
 							i(32015),	-- Merciless Gladiator's Mooncloth Gloves
 							i(32979),	-- Veteran's Mooncloth Belt
 							i(32017),	-- Merciless Gladiator's Mooncloth Leggings
-							i(147609),	-- Veteran's Mooncloth Slippers
 						}),
 						n(-9917, {	-- Shadow Priest
 							i(32035),	-- Merciless Gladiator's Satin Hood
@@ -379,7 +372,6 @@ _.GearSets =
 							i(32034),	-- Merciless Gladiator's Satin Gloves
 							i(32979),	-- Veteran's Mooncloth Belt
 							i(32036),	-- Merciless Gladiator's Satin Leggings
-							i(147609),	-- Veteran's Satin Slippers
 						}),
 					},		
 					["classes"] = { 5 },		
@@ -450,11 +442,8 @@ _.GearSets =
 						i(31999),	-- Merciless Gladiator's Leather Helm
 						i(32001),	-- Merciless Gladiator's Leather Spaulders
 						i(32002),	-- Merciless Gladiator's Leather Tunic
-						i(147612),	-- Veteran's Leather Wristguards
 						i(31998),	-- Merciless Gladiator's Leather Gloves
-						i(147610),	-- Veteran's Leather Belt
 						i(32000),	-- Merciless Gladiator's Leather Legguards
-						i(147611),	-- Veteran's Leather Boots
 					},		
 					["classes"] = { 4 },		
 				}),			
@@ -616,7 +605,6 @@ _.GearSets =
 						i(33701),	-- Vengeful Gladiator's Leather Helm
 						i(33703),	-- Vengeful Gladiator's Leather Spaulders
 						i(33704),	-- Vengeful Gladiator's Leather Tunic
-						i(147670),	-- Vindicator's Leather Wristguards
 						i(33700),	-- Vengeful Gladiator's Leather Gloves
 						i(33891),	-- Vindicator's Leather Belt
 						i(33702),	-- Vengeful Gladiator's Leather Legguards
@@ -1081,11 +1069,8 @@ _.GearSets =
 								i(41991),	-- Hateful Gladiator's Felweave Cowl		
 								i(42009),	-- Hateful Gladiator's Felweave Amice		
 								i(42001),	-- Hateful Gladiator's Felweave Raiment		
-								i(147586),	-- Hateful Gladiator's Cuffs of Ascendancy
 								i(42015),	-- Hateful Gladiator's Felweave Handguards		
-								i(147587),	-- Hateful Gladiator's Cord of Ascendancy
 								i(42003),	-- Hateful Gladiator's Felweave Trousers		
-								i(147588),	-- Hateful Gladiator's Slippers of Ascendancy
 							},				
 							["classes"] = { 9 }, -- Warlock				
 						}),					
@@ -1228,11 +1213,8 @@ _.GearSets =
 								i(40820),	-- Hateful Gladiator's Dreadplate Helm		
 								i(40860),	-- Hateful Gladiator's Dreadplate Shoulders		
 								i(40781),	-- Hateful Gladiator's Dreadplate Chestpiece		
-								i(147583),	-- Hateful Gladiator's Bracers of Victory
 								i(40803),	-- Hateful Gladiator's Dreadplate 		
-								i(147584),	-- Hateful Gladiator's Girdle of Victory
 								i(40841),	-- Hateful Gladiator's Dreadplate 		
-								i(147585),	-- Hateful Gladiator's Greaves of Victory
 							},				
 							["classes"] = { 6 }, -- Death Knight				
 						}),					
@@ -1328,7 +1310,6 @@ _.GearSets =
 					i(40811),	-- Relentless Gladiator's Dreadplate Gauntlets
 					i(40883),	-- Relentless Gladiator's Girlde of Triumph
 					i(40851),	-- Relentless Gladiator's Dreadplate Legguards
-					i(147601),	-- Relentless Gladiator's Greaves of Victory
 				}),
 			},
 			["achievementID"] = 11712,	-- Relentlessly Good Looking

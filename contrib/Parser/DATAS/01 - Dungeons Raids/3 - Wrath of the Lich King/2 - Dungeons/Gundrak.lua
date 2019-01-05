@@ -115,6 +115,10 @@ _.Instances =
 							}),
 						}),
 						cr(29304, e(592, { 	-- Slad'ran
+							{	-- Gundrak: Slad'ran
+								["achievementID"] = 484,	-- Gundrak
+								["criteriaID"] = 1,	-- Slad'ran
+							},
 							i( 35583),	-- Witch Doctor's Wildstaff
 							i( 37626),	-- Wand of Sseratus
 							i( 37627),	-- Snake Den Spaulders
@@ -124,6 +128,10 @@ _.Instances =
 							i( 37629),	-- Slithering Slippers
 						})),
 						cr(29307, e(593, {	-- Drakkari Colossus
+							{	-- Gundrak: Drakkari Colossus
+								["achievementID"] = 484,	-- Gundrak
+								["criteriaID"] = 3,	-- Drakkari Colossus
+							},
 							i(35590),	-- Drakkari Hunting Bow
 							i(37636),	-- Helm of Cheated Fate
 							i(37635),	-- Pauldrons of the Colossus
@@ -133,6 +141,10 @@ _.Instances =
 							i(37637),	-- Living Mojo Belt
 						})),
 						cr(29305, e(594, { 	-- Moorabi
+							{	-- Gundrak: Moorabi
+								["achievementID"] = 484,	-- Gundrak
+								["criteriaID"] = 2,	-- Moorabi
+							},
 							i( 37631),	-- Fist of the Deity
 							i( 35587),	-- Frozen Scepter of Necromancy
 							i( 37633),	-- Ground Tremor Helm
@@ -142,6 +154,10 @@ _.Instances =
 							i( 35589),	-- Arcane Focal Signet
 						})),
 						cr(29306, e(596, {	-- Gal'darah
+							{	-- Gundrak: Gal'darah
+								["achievementID"] = 484,	-- Gundrak
+								["criteriaID"] = 4,	-- Gal'darah
+							},
 							i(43309),	-- Amulet of the Stampede
 							i(43305),	-- Shroud of Akali
 							i(37641),	-- Arcane Flame Altar-Garb
@@ -201,6 +217,13 @@ _.Instances =
 								}),
 							}),
 							cr(29304, e(592, { 	-- Slad'ran
+								{	-- Heroic: Gundrak: Slad'ran
+									["achievementID"] = 495,	-- Heroic: Gundrak
+									["criteriaID"] = 1,	-- Slad'ran
+								},
+								{	-- Snakes. Why'd It Have To Be Snakes?
+									["achievementID"] = 2058,	-- Snakes. Why'd It Have To Be Snakes?
+								},
 								i( 35583),	-- Witch Doctor's Wildstaff
 								i( 37626),	-- Wand of Sseratus
 								i( 37627),	-- Snake Den Spaulders
@@ -210,6 +233,10 @@ _.Instances =
 								i( 37629),	-- Slithering Slippers
 							})),
 							cr(29307, e(593, {	-- Drakkari Colossus
+								{	-- Heroic: Gundrak: Drakkari Colossus
+									["achievementID"] = 495,	-- Heroic: Gundrak
+									["criteriaID"] = 3,	-- Drakkari Colossus
+								},
 								i(35590),	-- Drakkari Hunting Bow
 								i(37636),	-- Helm of Cheated Fate
 								i(37635),	-- Pauldrons of the Colossus
@@ -219,6 +246,13 @@ _.Instances =
 								i(37637),	-- Living Mojo Belt
 							})),
 							cr(29305, e(594, { 	-- Moorabi
+								{	-- Less-rabi
+									["achievementID"] = 2040,	-- Less-rabi
+								},
+								{	-- Heroic: Gundrak: Moorabi
+									["achievementID"] = 495,	-- Heroic: Gundrak
+									["criteriaID"] = 2,	-- Moorabi
+								},
 								i( 37631),	-- Fist of the Deity
 								i( 35587),	-- Frozen Scepter of Necromancy
 								i( 37633),	-- Ground Tremor Helm
@@ -228,15 +262,29 @@ _.Instances =
 								i( 35589),	-- Arcane Focal Signet
 							})),
 							cr(29932, e(595, {	-- Eck the Ferocious
+								{	-- Heroic: Gundrak: Eck the Ferocious
+									["achievementID"] = 495,	-- Heroic: Gundrak
+									["criteriaID"] = 5,	-- Eck the Ferocious
+								},
 								i(43311),	-- Helmet of the Shrine
 								i(43310),	-- Engraved Chestplate of Eck
 								i(43313),	-- Leggings of the Ruins Dweller
 								i(43312),	-- Gorloc Muddy Footwraps
 							})),
 							cr(29306, e(596, {	-- Gal'darah
-								{
+								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 15,		-- Gal'darah slain
+								},
+								{	-- Heroic: Gundrak: Gal'darah
+									["achievementID"] = 495,	-- Heroic: Gundrak
+									["criteriaID"] = 4,	-- Gal'darah
+								},
+								{	-- Share The Love
+									["achievementID"] = 2152,	-- Share The Love
+								},
+								{	-- What the Eck?
+									["achievementID"] = 1864,	-- What the Eck?
 								},
 								i(43309),	-- Amulet of the Stampede
 								i(43305),	-- Shroud of Akali

@@ -379,6 +379,7 @@ _.NeverImplemented =
 			un(1, i(53869)), -- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
 			un(1, i(60619)), -- No Shirt
 			un(1, i(63074)), -- "Behind You!" Shirt
+			un(1, i(62061)), 	-- Irradiated Gnome Shirt
 			un(1, i(52548)),	-- Initiate's Tunic
 			un(1, i(53879)), 	-- Rugged Work Shirt
 			un(1, i(53880)), 	-- Super Girly Shirt
@@ -392,7 +393,6 @@ _.NeverImplemented =
 			un(1, i(18438)), -- Sergeant's Mark
 			un(1, i(20084)), -- Hunting Net
 			un(1, i(20525)), -- Earthen Sigil
-			un(1, i(157761)),	-- Unknown
 		}),
 		filter(51, {	-- Neck
 			un(1, i(7550)),		-- Warrior's Honor
@@ -419,9 +419,6 @@ _.NeverImplemented =
 		}),
 	}),
 	n(-494, { -- Misc
-		un(1, i(164258)),	-- Cache of Uldir Treasures
-		un(1, i(164259)),	-- Cache of Uldir Treasures
-		un(1, i(164260)),	-- Cache of Uldir Treasures
 		un(1, i(100894)),	-- Deathtoll's Reward
 		un(1, i(100897)),	-- Skel'tik the Baleful's Reward
 		un(1, i(100898)),	-- Kull Bloodseeker's Reward
@@ -725,7 +722,6 @@ _.NeverImplemented =
 			un(1, i(109445)),   -- 6.0 QA Combat Test Strength 1h Sword
 			un(1, i(109448)),   -- 7.0 QA Combat Test Caster DPS Sword
 			un(1, i(109458)),   -- 6.0 QA Combat Test Agility 1h Sword
-			un(1, i(165273)),	-- Unknown - was under Legion>1Handed Swords
 		}),
 		n(-342, { -- Staves
 			un(1, i(108800)),	-- Unknown - was under Legion>Staves
@@ -740,24 +736,15 @@ _.NeverImplemented =
 			un(1, i(109532)),	-- Unknown - was under Legion>Staves
 			un(1, i(32185)),    -- Chancellor's War Staff
 			un(1, i(102595)),	-- Prideful Gladiator's Staff
-			un(1, i(136858)),	-- Wierd Testing Stuff for Artefact Weapons
-			un(1, i(139275)),	-- Wierd Testing Stuff for Artefact Weapons
-			un(1, i(139891)),	-- Wierd Testing Stuff for Artefact Weapons
-		}),
-		n(-387,	{	-- Relics
-			un(1, i(132252)),	-- Owen Test Relic
-			un(1, i(130162)),    -- Val-Sharah Artifact Gem #1
 		}),
 		n(-335, { -- Two Handed Axes
 			un(1, i(108782)),	-- Unknown
 			un(1, i(109519)),	-- Unknown
 		}),
+		n(-337, { -- Two Handed Swords
+		
+		}),
 		n(-339, { -- Two Handed Swords
-			un(1, i(140687)),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
-			un(1, i(140714)),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
-			un(1, i(150582)),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
-			un(1, i(150609)),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
-			un(1, i(153717)),	-- Heart-Lession Greatsword (You get the Runeblade)
 			un(1, i(33475)),	-- Artefact Frostmourne
 			un(1, i(108806)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(109373)),	-- 6.0 QA Combat Test Strength 2h Sword
@@ -854,8 +841,7 @@ _.NeverImplemented =
 	un(1, i(59795)),	-- Harp Shell Shoulderplates
 	un(1, i(59796)), 	-- Treads of Decapod Death
 	un(1, i(59797)),	-- Abalone-Linked Robes
-	un(1, i(62061)), 	-- Irradiated Gnome Shirt
-	un(1, i(67600)), 	-- Lil' Alexstrasza										(
+	un(1, i(67600)), 	-- Lil' Alexstrasza										(Never added in Game)	
 
 
 ------------------------------------------------------------

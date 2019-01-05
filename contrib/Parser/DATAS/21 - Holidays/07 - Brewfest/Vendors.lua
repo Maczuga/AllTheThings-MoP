@@ -18,14 +18,14 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(34065),	-- Spiced Onion Cheese
 					}),
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 24 },
+					["maps"] = { 27 },
 				}),
 				n(23522, {	-- Arlen Lochlan
 					["groups"] = bubbleDown({["u"] = 24}, {
 						i(33043),	-- The Essential Brewfest Pretzel
 					}),
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 24 },
+					["maps"] = { 27 },
 				}),
 				n(23482, {	-- Barleybrew Apprentice
 					["groups"] = bubbleDown({["u"] = 24}, {
@@ -36,7 +36,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					}),
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 37829,	-- Brewfest Prize Token
-					["maps"] = { 24 },
+					["maps"] = { 27 },
 				}),
 				n(23710, {	-- Belbi Quikswitch
 					["groups"] = bubbleDown({["u"] = 24}, {
@@ -72,7 +72,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["description"] = "|cff66ccffLarkin Thunderbrew <Brew of the Month Club> in Ironforge also sells these items.|r",
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 37829,	-- Brewfest Prize Token
-					["maps"] = { 24 },
+					["maps"] = { 27 },
 				}),
 				n(23605, {	-- Bron
 					["groups"] = bubbleDown({["u"] = 24}, {
@@ -141,7 +141,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(33036),	-- Mudder's Milk
 						i(33035),	-- Ogre Mead
 					}),
-					["maps"] = { 24, 1 },
+					["maps"] = { 27, 1 },
 				}),
 				n(23481, {	-- Keiran Donoghue
 					["groups"] = bubbleDown({["u"] = 24}, {
@@ -153,7 +153,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(33026),	-- The Golden Link
 					}),
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 24 },
+					["maps"] = { 27 },
 				}),
 				n(23533, {	-- T'chali's Voodoo Brewery Apprentice
 					["groups"] = bubbleDown({["u"] = 24}, {
@@ -173,7 +173,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(33033),	-- Thunderbrew Stout
 					}),
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 24 },
+					["maps"] = { 27 },
 				}),
 				n(23603, {	-- Uta Roughdough
 					["groups"] = bubbleDown({["u"] = 24}, {
