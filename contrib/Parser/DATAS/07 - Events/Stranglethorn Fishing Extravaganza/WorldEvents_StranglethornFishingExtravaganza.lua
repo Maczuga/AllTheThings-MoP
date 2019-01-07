@@ -19,7 +19,7 @@ _.WorldEvents =
 						["groups"] = {
 							un(30, i(19970)),	-- Arcanite Fishing Pole
 							un(30, i(50287)),	-- Boots of the Bay
-							un(30, i(122529)),	-- Dread Pirate Ring
+							un(30, i(50255)),	-- Dread Pirate Ring
 							un(30, i(19979)),	-- Hook of the Master Angler
 							un(30, i(19971)),	-- High Test Eternium Fishing Line
 						},
@@ -31,7 +31,7 @@ _.WorldEvents =
 						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
 						["groups"] = {
 							un(30, i(50287)),	-- Boots of the Bay
-							un(30, i(122529)),	-- Dread Pirate Ring
+							un(30, i(50255)),	-- Dread Pirate Ring
 							un(30, i(19971)),	-- High Test Eternium Fishing Line
 						},
 					}),
@@ -49,7 +49,7 @@ _.WorldEvents =
 						["groups"] = {
 							un(30, i(19970)),	-- Arcanite Fishing Pole
 							un(30, i(50287)),	-- Boots of the Bay
-							un(30, i(122529)),	-- Dread Pirate Ring
+							un(30, i(50255)),	-- Dread Pirate Ring
 							un(30, i(19979)),	-- Hook of the Master Angler
 							un(30, i(19971)),	-- High Test Eternium Fishing Line
 						},

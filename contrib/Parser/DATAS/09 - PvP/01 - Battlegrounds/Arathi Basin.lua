@@ -27,7 +27,7 @@ _.PVP =
 					["groups"] = {
 						ach(710), 	-- The Defiler
 						nh(15126, {	-- Rutherford Twing
-							["itemID"] = 137642,	-- Mark of Honor
+							["currencyID"] = 392,	-- Honor Points
 							["groups"] = {
 								i(20176),	-- Defiler's Epaulets
 								i(20163),	-- Defiler's Cloth Girdle
@@ -109,7 +109,7 @@ _.PVP =
 					["groups"] = {
 						ach(711), 	-- Knight of Arathor
 						na(15127, {	-- Samual Hawke
-							["itemID"] = 137642,	-- Mark of Honor
+							["currencyID"] = 392,	-- Honor Points
 							["groups"] = {
 								i(20061),	-- Highlander's Epaulets
 								i(20047),	-- Highlander's Cloth Girdle

@@ -1299,9 +1299,9 @@ _.Zones =
 					{	-- Jorek Ironside <Frostwolf Supply Officer>
 						["npcID"] = 13219,	-- Jorek Ironside <Frostwolf Supply Officer>
 						["races"] = HORDE_ONLY,
-						--["itemID"] = 137642,	-- Mark of Honor
+						--["currencyID"] = 392,	-- Honor Points
 						["g"] = {
-							i(137642, {	-- Marks of Honor
+							currency(392, {	-- Honor Points
 								i(19029),	-- Horn of the Frostwolf Howler Mount
 								i(19031),	-- Frostwolf Battle Tabard
 								i(19046),	-- Frostwolf Battle Standard
@@ -1360,7 +1360,7 @@ _.Zones =
 						},
 					}),
 					a(n(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
-						["itemID"] = 137642,	-- Mark of Honor
+						["currencyID"] = 392,	-- Honor Points
 						["groups"] = {
 							i(19030),	-- Stormpike Battle Charger Mount
 							i(19032),	-- Stormpike Battle Tabard

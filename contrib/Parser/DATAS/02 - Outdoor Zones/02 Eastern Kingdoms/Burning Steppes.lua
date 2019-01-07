@@ -525,29 +525,8 @@ _.Zones =
 						}),
 						-- sz(775, 6, { -- Black Tooth Hovel
 						-- }),
-						sz(775, 7, { -- Blackrock Stronghold
-							i(142344, { -- Broken Axe Blade
-								["groups"] = {
-									q(44926, { -- A Familiar Axe to Grind
-										["qgs"] = {
-											48201,	-- Blackrock Sergeant
-											7027,	-- Blackrock Slayer
-											7025,	-- Blackrock Soldier
-											48120,	-- Firegut Reaver
-											48118,	-- Smolderthorn Shaman
-										},
-									}),
-								},
-								["requireSkill"] = 164, -- Classic Blacksmithing
-							}),
-							q(44927, { -- Worth Its Weight in Steel
-								["groups"] = {
-								},
-								["qg"] = 115805, -- Hoddruc Bladebender
-								["sourceQuests"] = { 44926 }, -- A Familiar Axe to Grind
-								["requireSkill"] = 164, -- Classic Blacksmithing
-							}),
-						}),
+						-- sz(775, 7, { -- Blackrock Stronghold
+						-- }),
 						-- sz(775, 8, { -- The Whelping Downs
 						-- }),
 						-- sz(775, 9, { -- Altar of Storms

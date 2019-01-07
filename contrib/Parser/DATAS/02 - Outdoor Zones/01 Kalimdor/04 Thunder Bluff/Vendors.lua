@@ -1160,8 +1160,8 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Mark of Honor
-										["itemID"] = 137642,	-- Mark of Honor
+									{	-- Honor Points
+										["currencyID"] = 392,	-- Honor Points
 										["g"] = {
 											{	-- Frostwolf Battle Tabard
 												["itemID"] = 19031,	-- Frostwolf Battle Tabard

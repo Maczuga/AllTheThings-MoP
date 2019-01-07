@@ -196,7 +196,7 @@ _.Zones =
 						["coords"] = {
 							{ 51.56, 28.01, 71 },
 						},
-						["itemID"] = 137642,  -- Marks of Honor
+						["currencyID"] = 392,	-- Honor Points
 						["groups"] = {
 							i(61360),	-- Vicious Gladiator's Barrier
 							i(61351),	-- Vicious Gladiator's Baton of Light
@@ -235,7 +235,7 @@ _.Zones =
 						["coords"] = {
 							{ 51.51, 28.04, 71 },
 						},
-						["itemID"] = 137642,  -- Marks of Honor
+						["currencyID"] = 392,	-- Honor Points
 						["groups"] = {
 							i(73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
 							i(73479),	-- Cataclysmic Gladiator's Plate Legguards
@@ -444,7 +444,7 @@ _.Zones =
 						["coord"] = { 52.6, 27.0 },
 					}),
 					n(69323, {	-- Tiny Tayger <Ruthless Gladiator>
-						["itemID"] = 137642,  -- Marks of Honor
+						["currencyID"] = 392,	-- Honor Points
 						["coords"] = {
 							{ 51.53, 28.02, 71 },
 						},
@@ -618,7 +618,7 @@ _.Zones =
 						["coords"] = {
 							{ 51.61, 28.01, 71 },
 						},
-						["itemID"] = 137642,  -- Marks of Honor
+						["currencyID"] = 392,	-- Honor Points
 						["groups"] = {
 							i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
 							i(64681),	-- Bloodthirsty Gladiator's Armbands of Meditation

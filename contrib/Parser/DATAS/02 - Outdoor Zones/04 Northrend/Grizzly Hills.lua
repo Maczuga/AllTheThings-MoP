@@ -956,7 +956,7 @@ _.Zones =
 				n(-2, {		-- Vendors
 					a(n(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
 						["groups"] = {
-							i(137642, {	-- Mark of Honor
+							currency(392, {	-- Honor Points
 								i(38356),	-- Venture Battle Wand
 								i(38354),	-- Oil-Stained Tarp
 								i(38355),	-- Thick Goblin Back Protector
@@ -977,7 +977,7 @@ _.Zones =
 					}),
 					h(n(27730, {	-- Purkom <Venture Coin Vendor>
 						["groups"] = {
-							i(137642, {	-- Mark of Honor
+							currency(392, {	-- Honor Points
 								i(38356),	-- Venture Battle Wand
 								i(38354),	-- Oil-Stained Tarp
 								i(38355),	-- Thick Goblin Back Protector

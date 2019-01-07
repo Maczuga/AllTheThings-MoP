@@ -416,7 +416,6 @@ _.NeverImplemented =
 			un(1, i(18438)), -- Sergeant's Mark
 			un(1, i(20084)), -- Hunting Net
 			un(1, i(20525)), -- Earthen Sigil
-			un(1, i(157761)),	-- Unknown
 		}),
 	}),
 	n(-494, { -- Misc
@@ -679,7 +678,6 @@ _.NeverImplemented =
 			un(1, i(103375)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(102613)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)	
 			un(1, i(102810)),    -- Grievous Gladiator's Heavy Crossbow (they ditched those items)
-			un(1, i(158503)),	-- Scalawag's Bolt Thrower
 		}),
 		n(-333, { -- Daggers
 			un(1, i(32179)),    -- Chancellor's Shiv
@@ -699,8 +697,6 @@ _.NeverImplemented =
 		n(-345, { -- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
 			un(1, i(38246)),	-- Skull-Forged Blunderbuss
-			un(1, i(161296)),	-- Autumnvale Hunting Rifle (they added a different version)
-			un(1, i(164933)),	-- Sem'jin Beakblade Longrifle
 			
 		}),
 		n(-331, { -- Held in Offhand
@@ -717,10 +713,6 @@ _.NeverImplemented =
 			un(1, i(108779)),	-- Unknown
 			un(1, i(108780)),	-- Unknown
 			un(1, i(108781)),	-- Unknown
-			un(1, i(159483)),	--Unknown
-			un(1, i(159484)),	--Unknown
-			un(1, i(164967)),	--Unknown
-			un(1, i(165264)),	--Unknown
 			un(1, i(109319)),	-- 6.0 QA Combat Test Agility 1h Axe 2
 			un(1, i(109502)),	-- 6.0 QA Combat Test Agility 1h Axe
 			un(1, i(109536)),	-- 6.0 QA Combat Test Offhand Agility Axe 2
@@ -737,8 +729,6 @@ _.NeverImplemented =
 			un(1, i(109458)),   -- 6.0 QA Combat Test Agility 1h Sword
 		}),
 		n(-343,	{ -- Polearms
-			un(1, i(158504)),	-- Whaler's Pike
-			un(1, i(158563)),	-- Tomb-Rustler's Polearm
 		}),
 		n(-342, { -- Staves
 			un(1, i(108800)),	-- Unknown - was under Legion>Staves
@@ -753,12 +743,10 @@ _.NeverImplemented =
 			un(1, i(109532)),	-- Unknown - was under Legion>Staves
 			un(1, i(32185)),    -- Chancellor's War Staff
 			un(1, i(102595)),	-- Prideful Gladiator's Staff
-			un(1, i(165272)),	--
 		}),
 		n(-335, { -- Two Handed Axes
 			un(1, i(108782)),	-- Unknown
 			un(1, i(109519)),	-- Unknown
-			un(1, i(165265)),	-- Unknown
 		}),
 		n(-337, { -- Two Handed Swords
 		

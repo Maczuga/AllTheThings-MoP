@@ -88,7 +88,7 @@ t(86575);	-- Chalice of Secrets
 t(64373);	-- Chalice of the Mountain Kings
 t(143727);	-- Champion's Salute
 t(130254);	-- Chatterstone
-t(134020);	-- Chef's Hat
+t(46349);	-- Chef's Hat
 t(89222);	-- Cloud Ring
 t(128807);	-- Coin of Many Faces
 t(163744);	-- Coldrage's Cooler

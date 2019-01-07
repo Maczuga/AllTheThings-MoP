@@ -718,7 +718,7 @@ _.Zones =
 						}),
 						na(31032, { -- Derek Odds <Cooking Supplies>
 							currency(81, {	-- Epicurean's Award
-								i(134020), 	-- Chef's Hat
+								i(46349), 	-- Chef's Hat
 								i(43035),	-- Recipe: Blackened Dragonfin
 								i(43032),	-- Recipe: Blackened Worg Steak
 								i(43029),	-- Recipe: Critter Bites
@@ -1498,7 +1498,7 @@ _.Zones =
 						}),
 						nh(31031, { -- Misensi <Cooking Supplies>
 							currency(81, {	-- Epicurean's Award
-								i(134020), 	-- Chef's Hat
+								i(46349), 	-- Chef's Hat
 								i(43035),	-- Recipe: Blackened Dragonfin
 								i(43032),	-- Recipe: Blackened Worg Steak
 								i(43029),	-- Recipe: Critter Bites
@@ -3707,7 +3707,7 @@ _.Zones =
 								i(41314),	-- Hateful Gladiator's Wyrmhide Robes
 								i(41279),	-- Hateful Gladiator's Wyrmhide Spaulders
 							},
-							["itemID"] = 137642,  -- Marks of Honor
+							["currencyID"] = 392,	-- Honor Points
 						}),
 						n(29537, { 	-- Darahir <Reagents & Magical Goods>
 							i(39973),	-- Ghostly Skull
@@ -3870,7 +3870,7 @@ _.Zones =
 								i(42067),	-- Deadly Gladiator's Cloak of Triumph
 								i(42068),	-- Deadly Gladiator's Cloak of Victory
 							},
-							["itemID"] = 137642,  -- Marks of Honor
+							["currencyID"] = 392,	-- Honor Points
 						}),
 						n(29538, {  -- Hexil Garrot <Tools of the Trade>
 							i(50995),	-- Vengeful Noose
@@ -4054,7 +4054,7 @@ _.Zones =
 								i(40882),	-- Furious Gladiator's Greaves of Triumph
 								i(40881),	-- Furious Gladiator's Girdle of Triumph
 							},
-							["itemID"] = 137642,  -- Marks of Honor
+							["currencyID"] = 392,	-- Honor Points
 						}),
 						n(33921, {  -- Nargle Lashcord <Veteran Arena Vendor>
 							["groups"] = {
@@ -4340,7 +4340,7 @@ _.Zones =
 								i(42008),	-- Savage Gladiator's Felweave Amice
 								i(42014),	-- Savage Gladiator's Felweave Handguards
 							},
-							["itemID"] = 137642,  -- Marks of Honor
+							["currencyID"] = 392,	-- Honor Points
 						}),
 						n(69971, {  -- Xazi Smolderpipe <Wrathful Gladiator>
 							["groups"] = {
@@ -4505,7 +4505,7 @@ _.Zones =
 								i(51362),	-- Wrathful Gladiator's Girdle of Triumph
 								i(51363),	-- Wrathful Gladiator's Greaves of Triumph
 							},
-							["itemID"] = 137642,  -- Marks of Honor
+							["currencyID"] = 392,	-- Honor Points
 						}),
 						n(69973, {  -- Zom Bocom <Relentless Gladiator>
 							["groups"] = {
@@ -4673,7 +4673,7 @@ _.Zones =
 								i(41061),	-- Relentless Gladiator's Wristguards of Salvation
 								i(41226),	-- Relentless Gladiator's Wristguards of Triumph
 							},
-							["itemID"] = 137642,  -- Marks of Honor
+							["currencyID"] = 392,	-- Honor Points
 						}),
 						n(54651, {	-- Zom Bocom (Same name, different npc)
 							["groups"] = {

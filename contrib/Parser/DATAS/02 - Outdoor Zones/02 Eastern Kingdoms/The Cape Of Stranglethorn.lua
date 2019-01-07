@@ -643,10 +643,7 @@ _.Zones =
 								["questID"] = 7810,	-- Arena Master
 								["groups"] = {
 									ach(396, {		-- Arena Grandmaster
-										["groups"] = {
-											i(126948)		-- Defending Champion (BoA Trinket)
-										},
-										["description"] = "You must gather 12x Arena Master trinkets on ONE character. Once you have the achievement, the next time you open the chest on any character you can get the Defending Champion in addition to the other spoils.",
+										["description"] = "You must gather 12x Arena Master trinkets on ONE character.",
 									}),
 								},
 							}),
