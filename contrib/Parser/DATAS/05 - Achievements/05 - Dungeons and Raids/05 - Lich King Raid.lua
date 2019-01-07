@@ -2,22 +2,18 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
 _.Achievements = 
 {
 	n(-9959, { -- Dungeons & Raids
 		["groups"] = {
 			n(-10005, { -- Lich King Raid
 				["groups"] = {
-					ach(1869),		-- A Poke in the Eye (10 player)
-					ach(1870),		-- A Poke in the Eye (25 player)
+					{	-- A Poke in the Eye (10 player)
+						["achievementID"] = 1869,	-- A Poke in the Eye (10 player)
+					},
+					{	-- A Poke in the Eye (25 player)
+						["achievementID"] = 1870,	-- A Poke in the Eye (25 player)
+					},
 					ach(12321),		-- A Quick Shave
 					ach(4580),		-- All You Can Eat (10 player)
 					ach(4620),		-- All You Can Eat (25 player)
@@ -38,39 +34,115 @@ _.Achievements =
 					}),
 					ach(4601),		-- Been Waiting a Long Time for This (10 player)
 					ach(4621),		-- Been Waiting a Long Time for This (25 player)
-					ach(1876),		-- Besting the Black Dragonflight (10 player)
-					ach(625),		-- Besting the Black Dragonflight (25 player)
+					{	-- Besting the Black Dragonflight (10 player)
+						["achievementID"] = 1876,	-- Besting the Black Dragonflight (10 player)
+					},
+					{	-- Besting the Black Dragonflight (25 player)
+						["achievementID"] = 625,	-- Besting the Black Dragonflight (25 player)
+					},
 					ach(4534),		-- Boned (10 player)
 					ach(4610),		-- Boned (25 player)
 					ach(12335),		-- But I'm On Your Side
-					ach(3918, {		-- Call of the Grand Crusade (10 player)
-						crit(1),		-- Defeat the Beasts of Northrend
-						crit(2),		-- Defeat Lord Jaraxxus
-						crit(3),		-- Defeat the Faction Champions
-						crit(4),		-- Defeat the Twin Val'kyr
-						crit(5),		-- Complete the Trial of the Grand Crusader
-						ach(3917, {		-- Call of the Crusade (10 player)
-							crit(1),		-- Defeat the Beasts of Northrend
-							crit(2),		-- Defeat Lord Jaraxxus
-							crit(3),		-- Defeat the Faction Champions
-							crit(4),		-- Defeat the Twin Val'kyr
-							crit(5),		-- Complete the Trial of the Grand Crusader
-						}),
-					}),
-					ach(3812, {		-- Call of the Grand Crusade (25 player)
-						crit(1),		-- Defeat the Beasts of Northrend
-						crit(2),		-- Defeat Lord Jaraxxus
-						crit(3),		-- Defeat the Faction Champions
-						crit(4),		-- Defeat the Twin Val'kyr
-						crit(5),		-- Complete the Trial of the Grand Crusader
-						ach(3916, {		-- Call of the Crusade (25 player)
-							crit(1),		-- Defeat the Beasts of Northrend
-							crit(2),		-- Defeat Lord Jaraxxus
-							crit(3),		-- Defeat the Faction Champions
-							crit(4),		-- Defeat the Twin Val'kyr
-							crit(5),		-- Complete the Trial of the Grand Crusader
-						}),
-					}),
+					{	-- Call of the Grand Crusade (10 player)
+						["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+						["g"] = {
+							{	-- Call of the Grand Crusade (10 player): Defeat the Beasts of Northrend
+								["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+								["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+							},
+							{	-- Call of the Grand Crusade (10 player): Defeat Lord Jaraxxus
+								["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+								["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+							},
+							{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
+								["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+								["criteriaID"] = 3,	-- Defeat the Faction Champions
+							},
+							{	-- Call of the Grand Crusade (10 player): Defeat the Twin Val'kyr
+								["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+								["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+							},
+							{	-- Call of the Grand Crusade (10 player): Complete the Trial of the Grand Crusader
+								["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+								["criteriaID"] = 5,	-- Complete the Trial of the Grand Crusader
+							},
+							{	-- Call of the Crusade (10 player)
+								["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+								["g"] = {
+									{	-- Call of the Crusade (10 player): Defeat the Beasts of Northrend
+										["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+										["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+									},
+									{	-- Call of the Crusade (10 player): Defeat Lord Jaraxxus
+										["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+										["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+									},
+									{	-- Call of the Crusade (10 player): Defeat the Faction Champions
+										["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+										["criteriaID"] = 3,	-- Defeat the Faction Champions
+									},
+									{	-- Call of the Crusade (10 player): Defeat the Twin Val'kyr
+										["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+										["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+									},
+									{	-- Call of the Crusade (10 player): Complete the Trial of the Crusader
+										["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+										["criteriaID"] = 5,	-- Complete the Trial of the Crusader
+									},
+								},
+							},
+						},
+					},
+					{	-- Call of the Grand Crusade (25 player)
+						["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+						["g"] = {
+							{	-- Call of the Grand Crusade (25 player): Defeat the Beasts of Northrend
+								["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+								["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+							},
+							{	-- Call of the Grand Crusade (25 player): Defeat Lord Jaraxxus
+								["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+								["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+							},
+							{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
+								["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+								["criteriaID"] = 3,	-- Defeat the Faction Champions
+							},
+							{	-- Call of the Grand Crusade (25 player): Defeat the Twin Val'kyr
+								["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+								["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+							},
+							{	-- Call of the Grand Crusade (25 player): Complete the Trial of the Grand Crusader
+								["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+								["criteriaID"] = 5,	-- Complete the Trial of the Grand Crusader
+							},
+							{	-- Call of the Crusade (25 player)
+								["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+								["g"] = {
+									{	-- Call of the Crusade (25 player): Defeat the Beasts of Northrend
+										["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+										["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+									},
+									{	-- Call of the Crusade (25 player): Defeat Lord Jaraxxus
+										["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+										["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+									},
+									{	-- Call of the Crusade (25 player): Defeat the Faction Champions
+										["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+										["criteriaID"] = 3,	-- Defeat the Faction Champions
+									},
+									{	-- Call of the Crusade (25 player): Defeat the Twin Val'kyr
+										["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+										["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+									},
+									{	-- Call of the Crusade (25 player): Complete the Trial of the Crusader
+										["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+										["criteriaID"] = 5,	-- Complete the Trial of the Crusader
+									},
+								},
+							},
+						},
+					},
 					ach(12336),		-- Can't Do That While Stunned
 					ach(12343),		-- Cheese the Freeze
 					ach(12361),		-- Con-speed-atory
@@ -78,14 +150,22 @@ _.Achievements =
 					ach(4538),		-- Dances with Oozes (10 player)
 					ach(4614),		-- Dances with Oozes (25 player)
 					ach(12362),		-- Deforestation
-					ach(2148),		-- Denyin' the Scion (10 player)
-					ach(2149),		-- Denyin' the Scion (25 player)
+					{	-- Denyin' the Scion (10 player)
+						["achievementID"] = 2148,	-- Denyin' the Scion (10 player)
+					},
+					{	-- Denyin' the Scion (25 player)
+						["achievementID"] = 2149,	-- Denyin' the Scion (25 player)
+					},
 					ach(12338),		-- Disarmed
 					ach(12348),		-- Don't Stand in the Lightning
 					ach(12395),		-- Drive Me Crazy
 					ach(12312),		-- Dwarfageddon
-					ach(4016),		-- Earth, Wind & Fire (10 player)
-					ach(4017),		-- Earth, Wind & Fire (25 player)
+					{	-- Earth, Wind & Fire (10 player)
+						["achievementID"] = 4016,	-- Earth, Wind & Fire (10 player)
+					},
+					{	-- Earth, Wind & Fire (25 player)
+						["achievementID"] = 4017,	-- Earth, Wind & Fire (25 player)
+					},
 					ach(12369),		-- Firefighter
 					ach(4577),		-- Flu Shot Shortage (10 player)
 					ach(4615),		-- Flu Shot Shortage (25 player)
@@ -93,8 +173,12 @@ _.Achievements =
 					ach(4611),		-- Full House (25 player)
 					ach(12363),		-- Getting Back to Nature
 					ach(12345),		-- Getting Cold in Here
-					ach(2047),		-- Gonna Go When the Volcano Blows (10 player)
-					ach(2048),		-- Gonna Go When the Volcano Blows (25 player)
+					{	-- Gonna Go When the Volcano Blows (10 player)
+						["achievementID"] = 2047,	-- Gonna Go When the Volcano Blows (10 player)
+					},
+					{	-- Gonna Go When the Volcano Blows (25 player)
+						["achievementID"] = 2048,	-- Gonna Go When the Volcano Blows (25 player)
+					},
 					ach(12396),		-- He's Not Getting Any Older
 					ach(12330),		-- Heartbreaker
 					ach(4636, {		-- Heroic: Fall of the Lich King (10 player)
@@ -201,12 +285,22 @@ _.Achievements =
 							crit(3),		-- Professor Putricide
 						}),
 					}),
-					ach(4818, {		-- Heroic: The Twilight Destroyer (10 player)
-						ach(4817),		-- The Twilight Destroyer (10 player)
-					}),
-					ach(4816, {		-- Heroic: The Twilight Destroyer (25 player)
-						ach(4815),		-- The Twilight Destroyer (25 player)
-					}),
+					{	-- Heroic: The Twilight Destroyer (10 player)
+						["achievementID"] = 4818,	-- Heroic: The Twilight Destroyer (10 player)
+						["g"] = {
+							{	-- The Twilight Destroyer (10 player)
+								["achievementID"] = 4817,	-- The Twilight Destroyer (10 player)
+							},
+						},
+					},
+					{	-- Heroic: The Twilight Destroyer (25 player)
+						["achievementID"] = 4816,	-- Heroic: The Twilight Destroyer (25 player)
+						["g"] = {
+							{	-- The Twilight Destroyer (25 player)
+								["achievementID"] = 4815,	-- The Twilight Destroyer (25 player)
+							},
+						},
+					},
 					ach(12324),		-- Hot Pocket
 					ach(12332),		-- I Choose You, Runemaster Molgeim
 					ach(12334),		-- I Choose You, Steelbreaker
@@ -239,12 +333,48 @@ _.Achievements =
 						ach(12365),		-- Knock, Knock on Wood
 						ach(12364),		-- Knock on Wood
 					}),
-					ach(624, {		-- Less Is More (10 player)
-						crit(1),		-- Vesperon
-						crit(2),		-- Tenebron
-						crit(3),		-- Shadron
-						crit(4),		-- Sartharion
-					}),
+					{	-- Less Is More (10 player)
+						["achievementID"] = 624,	-- Less Is More (10 player)
+						["g"] = {
+							{	-- Less Is More (10 player): Vesperon
+								["achievementID"] = 624,	-- Less Is More (10 player)
+								["criteriaID"] = 1,	-- Vesperon
+							},
+							{	-- Less Is More (10 player): Tenebron
+								["achievementID"] = 624,	-- Less Is More (10 player)
+								["criteriaID"] = 2,	-- Tenebron
+							},
+							{	-- Less Is More (10 player): Shadron
+								["achievementID"] = 624,	-- Less Is More (10 player)
+								["criteriaID"] = 3,	-- Shadron
+							},
+							{	-- Less Is More (10 player): Sartharion
+								["achievementID"] = 624,	-- Less Is More (10 player)
+								["criteriaID"] = 4,	-- Sartharion
+							},
+						},
+					},
+					{	-- Less Is More (25 player)
+						["achievementID"] = 1877,	-- Less Is More (25 player)
+						["g"] = {
+							{	-- Less Is More (25 player): Vesperon
+								["achievementID"] = 1877,	-- Less Is More (25 player)
+								["criteriaID"] = 1,	-- Vesperon
+							},
+							{	-- Less Is More (25 player): Tenebron
+								["achievementID"] = 1877,	-- Less Is More (25 player)
+								["criteriaID"] = 2,	-- Tenebron
+							},
+							{	-- Less Is More (25 player): Shadron
+								["achievementID"] = 1877,	-- Less Is More (25 player)
+								["criteriaID"] = 3,	-- Shadron
+							},
+							{	-- Less Is More (25 player): Sartharion
+								["achievementID"] = 1877,	-- Less Is More (25 player)
+								["criteriaID"] = 4,	-- Sartharion
+							},
+						},
+					},
 					ach(1877, {		-- Less Is More (25 player)
 						crit(1),		-- Vesperon
 						crit(2),		-- Tenebron
@@ -255,12 +385,20 @@ _.Achievements =
 					ach(12360),		-- Lumberjacked
 					ach(1856),		-- Make Quick Werk of Him (10 player)
 					ach(1857),		-- Make Quick Werk of Him (25 player)
-					ach(4403),		-- Many Whelps! Handle It! (10 player)
-					ach(4406),		-- Many Whelps! Handle It! (25 player)
+					{	-- Many Whelps! Handle It! (10 player)
+						["achievementID"] = 4403,	-- Many Whelps! Handle It! (10 player)
+					},
+					{	-- Many Whelps! Handle It! (25 player)
+						["achievementID"] = 4406,	-- Many Whelps! Handle It! (25 player)
+					},
 					ach(1997),		-- Momma Said Knock You Out (10 player)
 					ach(2140),		-- Momma Said Knock You Out (25 player)
-					ach(4402),		-- More Dots! (10 player)
-					ach(4405),		-- More Dots! (25 player)
+					{	-- More Dots! (10 player)
+						["achievementID"] = 4402,	-- More Dots! (10 player)
+					},
+					{	-- More Dots! (25 player)
+						["achievementID"] = 4405,	-- More Dots! (25 player)
+					},
 					ach(12329),		-- Must Deconstruct Faster
 					ach(4578),		-- Nausea, Heartburn, Indigestion... (10 player)
 					ach(4616),		-- Nausea, Heartburn, Indigestion... (25 player)
@@ -270,8 +408,12 @@ _.Achievements =
 					ach(12328),		-- Nerf Gravity Bombs
 					ach(12327),		-- Nerf Scrapbots
 					ach(12342),		-- Nine Lives
-					ach(3936),		-- Not One, But Two Jormungars (10 player)
-					ach(3937),		-- Not One, But Two Jormungars (25 player)
+					{	-- Not One, But Two Jormungars (10 player)
+						["achievementID"] = 3936,	-- Not One, But Two Jormungars (10 player)
+					},
+					{	-- Not One, But Two Jormungars (25 player)
+						["achievementID"] = 3937,	-- Not One, But Two Jormungars (25 player)
+					},
 					ach(12368),		-- Not-So-Friendly Fire
 					ach(12399, {	-- Observed
 						title(129),		-- Starcaller
@@ -285,8 +427,12 @@ _.Achievements =
 						crit(1),		-- Defeat Blood-Queen Lana'thel without becoming a vampire
 						crit(2),		-- Defeat Blood-Queen Lana'thel while a vampire
 					}),
-					ach(4396),		-- Onyxia's Lair (10 player)
-					ach(4397),		-- Onyxia's Lair (25 player)
+					{	-- Onyxia's Lair (10 player)
+						["achievementID"] = 4396,	-- Onyxia's Lair (10 player)
+					},
+					{	-- Onyxia's Lair (25 player)
+						["achievementID"] = 4397,	-- Onyxia's Lair (25 player)
+					},
 					ach(12320, {	-- Orbit-uary
 						ach(12319),		-- Nuked from Orbit
 						ach(12318),		-- Orbital Devastation
@@ -294,10 +440,16 @@ _.Achievements =
 					}),
 					ach(4579),		-- Portal Jockey (10 player)
 					ach(4619),		-- Portal Jockey (25 player)
-					ach(3798),		-- Resilience Will Fix It (10 player)
+					{	-- Resilience Will Fix It (10 player)
+						["achievementID"] = 3798,	-- Resilience Will Fix It (10 player)
+					},
 					ach(12340),		-- Rubble and Roll
-					ach(3799),		-- Salt and Pepper (10 player)
-					ach(3815),		-- Salt and Pepper (25 player)
+					{	-- Salt and Pepper (10 player)
+						["achievementID"] = 3799,	-- Salt and Pepper (10 player)
+					},
+					{	-- Salt and Pepper (25 player)
+						["achievementID"] = 3815,	-- Salt and Pepper (25 player)
+					},
 					ach(572),		-- Sapphiron's Demise (10 player)
 					ach(573),		-- Sapphiron's Demise (25 player)
 					ach(12367, {	-- Set Up Us the Bomb
@@ -307,8 +459,12 @@ _.Achievements =
 					}),
 					ach(12372),		-- Shadowdodger
 					ach(12323),		-- Shattered
-					ach(4404),		-- She Deep Breaths More (10 player)
-					ach(4407),		-- She Deep Breaths More (25 player)
+					{	-- She Deep Breaths More (10 player)
+						["achievementID"] = 4404,	-- She Deep Breaths More (10 player)
+					},
+					{	-- She Deep Breaths More (25 player)
+						["achievementID"] = 4407,	-- She Deep Breaths More (25 player)
+					},
 					ach(2178),		-- Shocking! (10 player)
 					ach(2179),		-- Shocking! (25 player)
 					ach(12316),		-- Shutout
@@ -351,58 +507,190 @@ _.Achievements =
 						crit(3),		-- Gluth
 						crit(4),		-- Thaddius
 					}),
-					ach(578, {		-- The Dedicated Few (10 player)
-						crit(1),		-- Kel'Thuzad
-						crit(2),		-- Gothik the Harvester
-						crit(3),		-- Anub'Rekhan
-						crit(4),		-- Grobbulus
-						crit(5),		-- Heigan the Unclean
-						crit(6),		-- Grand Widow Faerlina
-						crit(7),		-- Maexxna
-						crit(8),		-- Sapphiron
-						crit(9),		-- Loatheb
-						crit(10),		-- Gluth
-						crit(11),		-- Thaddius
-						crit(12),		-- Patchwerk
-						crit(13),		-- Instructor Razuvious
-						crit(14),		-- Noth the Plaguebringer
-					}),
-					ach(579, {		-- The Dedicated Few (25 player)
-						crit(1),		-- Anub'Rekhan
-						crit(2),		-- Heigan the Unclean
-						crit(3),		-- Grobbulus
-						crit(4),		-- Gothik the Harvester
-						crit(5),		-- Grand Widow Faerlina
-						crit(6),		-- Kel'Thuzad
-						crit(7),		-- Maexxna
-						crit(8),		-- Sapphiron
-						crit(9),		-- Loatheb
-						crit(10),		-- Gluth
-						crit(11),		-- Patchwerk
-						crit(12),		-- Thaddius
-						crit(13),		-- Instructor Razuvious
-						crit(14),		-- Noth the Plaguebringer
-					}),
+					{	-- The Dedicated Few (10 player): Kel'Thuzad
+						["achievementID"] = 578,	-- The Dedicated Few (10 player)
+						["g"] = {
+							{	-- The Dedicated Few (10 player): Anub'Rekhan
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 3,			-- Anub'Rekhan slain
+							},
+							{	-- The Dedicated Few (10 player): Gluth
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 10,		-- Gluth slain
+							},
+							{	-- The Dedicated Few (10 player): Gothik the Harvester
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 2,			-- Gothik the Harvester slain
+							},
+							{	-- The Dedicated Few (10 player): Grand Widow Faerlina
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 6,			-- Grand Widow Faerlina slain
+							},
+							{	-- The Dedicated Few (10 player): Grobbulus
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 4,			-- Grobbulus slain
+							},
+							{	-- The Dedicated Few (10 player): Heigan the Unclean
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 5,			-- Heigan the Unclean slain
+							},
+							{	-- The Dedicated Few (10 player): Instructor Razuvious
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 13,		-- Instructor Razuvious slain
+							},
+							{	-- The Dedicated Few (10 player): Kel'Thuzad
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 1,			-- Kel'Thuzad slain
+							},
+							{	-- The Dedicated Few (10 player): Loatheb
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 9,			-- Loatheb slain
+							},
+							{	-- The Dedicated Few (10 player): Maexxna
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 7,			-- Maexxna slain
+							},
+							{	-- The Dedicated Few (10 player): Noth the Plaguebringer
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 14,		-- Noth the Plaguebringer slain
+							},
+							{	-- The Dedicated Few (10 player): Patchwerk
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 12,		-- Patchwerk slain
+							},
+							{	-- The Dedicated Few (10 player): Sapphiron
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 8,			-- Sapphiron slain
+							},
+							{	-- The Dedicated Few (10 player): Thaddius
+								["achievementID"] = 578,	-- The Dedicated Few (10 player)
+								["criteriaID"] = 11,		-- Thaddius slain
+							},
+						},
+					},
+					{	-- The Dedicated Few (25 player): Kel'Thuzad
+						["achievementID"] = 579,	-- The Dedicated Few (25 player)
+						["g"] = {
+							{	-- The Dedicated Few (25 player): Anub'Rekhan
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 1,			-- Anub'Rekhan slain
+							},
+							{	-- The Dedicated Few (25 player): Gluth
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 10,		-- Gluth slain
+							},
+							{	-- The Dedicated Few (25 player): Gothik the Harvester
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 4,			-- Gothik the Harvester slain
+							},
+							{	-- The Dedicated Few (25 player): Grand Widow Faerlina
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 5,			-- Grand Widow Faerlina slain
+							},
+							{	-- The Dedicated Few (25 player): Grobbulus
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 3,			-- Grobbulus slain
+							},
+							{	-- The Dedicated Few (25 player): Heigan the Unclean
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 2,			-- Heigan the Unclean slain
+							},
+							{	-- The Dedicated Few (25 player): Instructor Razuvious
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 13,		-- Instructor Razuvious slain
+							},
+							{	-- The Dedicated Few (25 player): Kel'Thuzad
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 6,			-- Kel'Thuzad slain
+							},
+							{	-- The Dedicated Few (25 player): Loatheb
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 9,			-- Loatheb slain
+							},
+							{	-- The Dedicated Few (25 player): Maexxna
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 7,			-- Maexxna slain
+							},
+							{	-- The Dedicated Few (25 player): Noth the Plaguebringer
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 14,		-- Noth the Plaguebringer slain
+							},
+							{	-- The Dedicated Few (25 player): Patchwerk
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 11,		-- Patchwerk slain
+							},
+							{	-- The Dedicated Few (25 player): Sapphiron
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 8,			-- Sapphiron slain
+							},
+							{	-- The Dedicated Few (25 player): Thaddius
+								["achievementID"] = 579,	-- The Dedicated Few (25 player)
+								["criteriaID"] = 12,		-- Thaddius slain
+							},
+						},
+					},
 					ach(12310, {	-- The Descent into Madness
 						crit(1),		-- General Vezax
 						crit(2),		-- Yogg-Saron
 					}),
-					ach(576, {		-- The Fall of Naxxramas (10 player)
-						crit(1),		-- The Arachnid Quarter (10 player)
-						crit(2),		-- The Construct Quarter (10 player)
-						crit(3),		-- The Plague Quarter (10 player)
-						crit(4),		-- The Military Quarter (10 player)
-						crit(5),		-- Sapphiron's Demise (10 player)
-						crit(6),		-- Kel'Thuzad's Defeat (10 player)
-					}),
-					ach(577, {		-- The Fall of Naxxramas (25 player)
-						crit(1),		-- The Arachnid Quarter (25 player)
-						crit(2),		-- The Construct Quarter (25 player)
-						crit(3),		-- The Plague Quarter (25 player)
-						crit(4),		-- The Military Quarter (25 player)
-						crit(5),		-- Sapphiron's Demise (25 player)
-						crit(6),		-- Kel'Thuzad's Defeat (25 player)
-					}),
+					{	-- The Fall of Naxxramas (10 player)
+						["achievementID"] = 576,	-- The Fall of Naxxramas (10 player)
+						["g"] = {
+							{	-- The Fall of Naxxramas (10 player): Kel'Thuzad's Defeat
+								["achievementID"] = 576,	-- The Fall of Naxxramas (10 player)
+								["criteriaID"] = 6,	-- Kel'Thuzad's Defeat (10 player)
+							},
+							{	-- The Fall of Naxxramas (10 player): Sapphiron's Demise
+								["achievementID"] = 576,	-- The Fall of Naxxramas (10 player)
+								["criteriaID"] = 5,	-- Sapphiron's Demise (10 player)
+							},
+							{	-- The Fall of Naxxramas (10 player): The Arachnid Quarter
+								["achievementID"] = 576,	-- The Fall of Naxxramas (10 player)
+								["criteriaID"] = 1,	-- The Arachnid Quarter (10 player)
+							},
+							{	-- The Fall of Naxxramas (10 player): The Construct Quarter
+								["achievementID"] = 576,	-- The Fall of Naxxramas (10 player)
+								["criteriaID"] = 2,	-- The Construct Quarter (10 player)
+							},
+							{	-- The Fall of Naxxramas (10 player): The Military Quarter
+								["achievementID"] = 576,	-- The Fall of Naxxramas (10 player)
+								["criteriaID"] = 4,	-- The Military Quarter (10 player)
+							},
+							{	-- The Fall of Naxxramas (10 player): The Plague Quarter
+								["achievementID"] = 576,	-- The Fall of Naxxramas (10 player)
+								["criteriaID"] = 3,	-- The Plague Quarter (10 player)
+							},
+						},
+					},
+					{	-- The Fall of Naxxramas (25 player)
+						["achievementID"] = 577,	-- The Fall of Naxxramas (25 player)
+						["g"] = {
+							{	-- The Fall of Naxxramas (25 player): Kel'Thuzad's Defeat
+								["achievementID"] = 577,	-- The Fall of Naxxramas (25 player)
+								["criteriaID"] = 6,	-- Kel'Thuzad's Defeat (25 player)
+							},
+							{	-- The Fall of Naxxramas (25 player): Sapphiron's Demise
+								["achievementID"] = 577,	-- The Fall of Naxxramas (25 player)
+								["criteriaID"] = 5,	-- Sapphiron's Demise (25 player)
+							},
+							{	-- The Fall of Naxxramas (25 player): The Arachnid Quarter
+								["achievementID"] = 577,	-- The Fall of Naxxramas (25 player)
+								["criteriaID"] = 1,	-- The Arachnid Quarter (25 player)
+							},
+							{	-- The Fall of Naxxramas (25 player): The Construct Quarter
+								["achievementID"] = 577,	-- The Fall of Naxxramas (25 player)
+								["criteriaID"] = 2,	-- The Construct Quarter (25 player)
+							},
+							{	-- The Fall of Naxxramas (25 player): The Military Quarter
+								["achievementID"] = 577,	-- The Fall of Naxxramas (25 player)
+								["criteriaID"] = 4,	-- The Military Quarter (25 player)
+							},
+							{	-- The Fall of Naxxramas (25 player): The Plague Quarter
+								["achievementID"] = 577,	-- The Fall of Naxxramas (25 player)
+								["criteriaID"] = 3,	-- The Plague Quarter (25 player)
+							},
+						},
+					},
 					ach(2146),		-- The Hundred Club (10 player)
 					ach(2147),		-- The Hundred Club (25 player)
 					ach(12309, {	-- The Keepers of Ulduar
@@ -453,15 +741,46 @@ _.Achievements =
 						crit(3),		-- Ignis the Furnace Master
 						crit(4),		-- XT-002 Deconstructor
 					}),
-					ach(622),		-- The Spellweaver's Downfall (10 player)
-					ach(623),		-- The Spellweaver's Downfall (25 player)
-					ach(3800),		-- The Traitor King (10 player)
-					ach(3816),		-- The Traitor King (25 player)
-					ach(2051, {		-- The Twilight Zone (10 player)
-						title(107),		-- of the Nightfall
-						ach(2050),		-- Twilight Duo (10 player)
-						ach(2049),		-- Twilight Assist (10 player)
-					}),
+					{	-- The Spellweaver's Downfall (10 player)
+						["achievementID"] = 622,	-- The Spellweaver's Downfall (10 player)
+					},
+					{	-- The Spellweaver's Downfall (25 player)
+						["achievementID"] = 623,	-- The Spellweaver's Downfall (25 player)
+					},
+					{	-- The Traitor King (10 player)
+						["achievementID"] = 3800,	-- The Traitor King (10 player)
+					},
+					{	-- The Traitor King (25 player)
+						["achievementID"] = 3816,	-- The Traitor King (25 player)
+					},
+					{	-- The Twilight Zone (10 player)
+						["achievementID"] = 2051,	-- The Twilight Zone (10 player)
+						["g"] = {
+							{	-- of the Nightfall
+								["titleID"] = 107,	-- of the Nightfall
+							},
+							{	-- Twilight Duo (10 player)
+								["achievementID"] = 2050, -- Twilight Duo (10 player) 
+							},
+							{	-- Twilight Assist (10 player)
+								["achievementID"] = 2049, -- Twilight Assist (10 player) 
+							},
+						},
+					},
+					{	-- The Twilight Zone (25 player)
+						["achievementID"] = 2054,	-- The Twilight Zone (25 player)
+						["g"] = {
+							{	-- Twilight Vanquisher
+								["titleID"] = 89,	-- Twilight Vanquisher
+							},
+							{	-- Twilight Duo (25 player)
+								["achievementID"] = 2053, -- Twilight Duo (25 player) 
+							},
+							{	-- Twilight Assist (25 player)
+								["achievementID"] = 2052, -- Twilight Assist (25 player) 
+							},
+						},
+					},
 					ach(2054, {		-- The Twilight Zone (25 player)
 						title(89),		-- Twilight Vanquisher
 						ach(2053),		-- Twilight Duo (25 player)
@@ -473,15 +792,27 @@ _.Achievements =
 						crit(2),		-- Salvaged Siege Engine
 						crit(3),		-- Salvaged Demolisher
 					}),
-					ach(3996),		-- Three Sixty Pain Spike (10 player)
-					ach(3997),		-- Three Sixty Pain Spike (25 player)
+					{	-- Three Sixty Pain Spike (10 player)
+						["achievementID"] = 3996,	-- Three Sixty Pain Spike (10 player)
+					},
+					{	-- Three Sixty Pain Spike (25 player)
+						["achievementID"] = 3997,	-- Three Sixty Pain Spike (25 player)
+					},
 					ach(12313),		-- Unbroken
-					ach(3797),		-- Upper Back Pain (10 player)
-					ach(3813),		-- Upper Back Pain (25 player)
+					{	-- Upper Back Pain (10 player)
+						["achievementID"] = 3797,	-- Upper Back Pain (10 player)
+					},
+					{	-- Upper Back Pain (25 player)
+						["achievementID"] = 3813,	-- Upper Back Pain (25 player)
+					},
 					ach(12350),		-- Who Needs Bloodlust?
 					ach(12337),		-- With Open Arms
-					ach(1874),		-- You Don't Have an Eternity (10 player)
-					ach(1875),		-- You Don't Have an Eternity (25 player)
+					{	-- You Don't Have an Eternity (10 player)
+						["achievementID"] = 1874,	-- You Don't Have an Eternity (10 player)
+					},
+					{	-- You Don't Have an Eternity (25 player)
+						["achievementID"] = 1875,	-- You Don't Have an Eternity (25 player)
+					},
 				},
 			}),
 		},

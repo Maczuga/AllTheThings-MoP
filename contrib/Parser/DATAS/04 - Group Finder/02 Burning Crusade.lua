@@ -8,6 +8,7 @@ _.GroupFinder =
 		["groups"] = {
 			i(52004, {	-- Satchel of Helpful Goods 60-64
 				["groups"] = {
+				   i(51995),	-- Turbulent Necklace
 				   i(51970),	-- Enumerated Gloves
 				   i(51960),	-- Vigorous Gloves
 				   i(51979),	-- Earthbound Grips
@@ -17,6 +18,7 @@ _.GroupFinder =
 			}),
 			i(52005, {	-- Satchel of Helpful Goods 65-70
 				["groups"] = {
+				   i(51991),	-- Turbulent Signet*
 				   i(51969),	-- Enumerated Shoulders
 				   i(51961),	-- Vigorous Shoulderguards
 				   i(51975),	-- Earthbound Shoulders

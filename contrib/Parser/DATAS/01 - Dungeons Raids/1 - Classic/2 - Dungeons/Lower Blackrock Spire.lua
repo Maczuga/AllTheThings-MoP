@@ -113,6 +113,9 @@ _.Instances =
 						i(13170),	-- Skyshroud Leggings
 						i(13166),	-- Slamshot Shoulders
 						i(13169),	-- Tressermane Leggings
+						i(12336, {	-- Gemstone of Spirestone
+							un(40, q(4742)),	-- Seal of Ascension
+						}),
 					})),
 					cr( 9236, e(389, {	-- Shadow Hunter Vosh'gajin
 						i( 12651),	-- Blackcrow
@@ -141,6 +144,9 @@ _.Instances =
 						un(7, i(16676)),	-- Beaststalker's Gloves
 						un(2, i(13175)),	-- Voone's Twitchbow
 						un(2, i(13173)),	-- Broken Flightblade Throwing Axe
+						i(12335, {	-- Gemstone of Smolderthorn
+							un(40, q(4742)),	-- Seal of Ascension
+						}),
 					})),
 					n(  9596, {			-- Bannok Grimaxe
 						["groups"] = {	
@@ -220,6 +226,9 @@ _.Instances =
 						un(2, i(16679)),	-- Beaststalker's Mantle
 						un(2, i(13148)), 	-- Chillpike [Disappeared sometime around 3.0]
 						un(2, i(13164)),	-- Heart of the Scale
+						i(12337, {	-- Gemstone of Bloodaxe
+							un(40, q(4742)),	-- Seal of Ascension
+						}),
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {

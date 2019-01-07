@@ -10,7 +10,7 @@ _.GroupFinder =
 				["groups"] = {
 					i(51982),	-- Earthbound Boots*
 					un(2, i(51978)),	-- Earthbound Girdle [Probably unobtainable]
-					un(2, i(51979)),	-- Earthbound Grips*
+					-- un(2, i(51979)),	-- Earthbound Grips (moved to BC satchel)
 					un(2, i(51980)),	-- Earthbound Handgrips [Probably unobtainable]
 					i(51976),	-- Earthbound Shoulderguards*
 					i(51981),	-- Earthbound Wristguards*

@@ -1150,6 +1150,7 @@ AllTheThings.Locales.enUS = {
 		[-239] = "Assault [8.1 Assaults]",						 -- GetSpellInfo(208246)
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-241] = PVP_SEASON_REWARD,												-- Season Reward
+		[-242] = "Unrated",														-- Unrated
 		
 -- Other
 		[-294] = "Killed First",
@@ -1334,8 +1335,10 @@ AllTheThings.Locales.enUS = {
 		[-601] = "Communing with Jani [Snapjaw Tail]",						 -- GetSpellInfo(262971)
 		[-650] = "Quest Items",													-- Quest Items
 		
-		[-1000] = "Sets",						 -- WARDROBE_SETS
-		[-1001] = "The Black Vault",
+-- Pet Battles
+		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
+		
+		[-1000] = "Sets",						 -- WARDROBE_SETS		[-1001] = "The Black Vault",
 
 -- Other Sets
 		[-3159] = "Tier 6.5 Sets",
@@ -1509,7 +1512,11 @@ AllTheThings.Locales.enUS = {
 		[-3317] = "Frostwind",
 		[-3318] = "Faceless Follower",
 		[-3319] = "Swarmfury",
-
+		[-3340] = "Dark Animator",
+		[-3341] = "Duskhaven",
+		
+		[-3343] = "Choking Winter",
+		[-3342] = "Fallen Runelord",
 		[-3320] = "Spiritbough",
 		[-3321] = "Tranquil Path",
 		[-3322] = "Miststalker",
@@ -1517,6 +1524,7 @@ AllTheThings.Locales.enUS = {
 		[-3324] = "Feralbark",
 		[-3325] = "Firekin",
 
+		[-3344] = "Frostsworn",
 		[-3326] = "Wild Marauder",
 		[-3327] = "Dragonrider",
 		[-3328] = "Saurok",
@@ -1526,6 +1534,7 @@ AllTheThings.Locales.enUS = {
 
 		[-3332] = "Geocrag",
 		[-3333] = "Razorfin",
+		[-3345] = "Sanctified Scourgelord",
 		[-3334] = "Tomb-Keeper",
 		[-3335] = "Bloodwake",
 		[-3336] = "Rattling Bone",
