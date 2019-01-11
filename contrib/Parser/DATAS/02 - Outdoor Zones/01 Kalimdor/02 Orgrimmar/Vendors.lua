@@ -185,13 +185,43 @@ _.Zones =
 						i(70388),	-- Ruthless Gladiator's Drape of Prowess
 						i(70389),	-- Ruthless Gladiator's Drape of Meditation
 					}),
-					n(54659, {	-- Blood Guard Zar'shi  (Same name, different npc)
+					n(54659, {	-- Blood Guard Zar'shi >S10< Elite (Same name, different npc)
 						["groups"] = {
-							un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
-							un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
-							un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
-							un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation
-							un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
+							un(2, i(70185)),	-- Ruthless Gladiator's Gavel
+									un(2, i(70201)),	-- Ruthless Gladiator's Bonecracker
+									un(2, i(70202)),	-- Ruthless Gladiator's Pummeler
+									un(2, i(70188)),	-- Ruthless Gladiator's Spellblade
+									un(2, i(70191)),	-- Ruthless Gladiator's Shiv
+									un(2, i(70203)),	-- Ruthless Gladiator's Shanker
+									un(2, i(70204)),	-- Ruthless Gladiator's Hacker
+									un(2, i(70205)),	-- Ruthless Gladiator's Cleaver
+									un(2, i(70199)),	-- Ruthless Gladiator's Quickblade
+									un(2, i(70200)),	-- Ruthless Gladiator's Slicer
+									un(2, i(70194)),	-- Ruthless Gladiator's Rifle
+									un(2, i(70192)),	-- Ruthless Gladiator's Longbow
+									un(2, i(70193)),	-- Ruthless Gladiator's Heavy Crossbow
+									un(2, i(70184)),	-- Ruthless Gladiator's Decapitator
+									un(2, i(70183)),	-- Ruthless Gladiator's Bonegrinder
+									un(2, i(70178)),	-- Ruthless Gladiator's Greatsword)
+									un(2, i(70182)),	-- Ruthless Gladiator's Pike
+									un(2, i(70179)),	-- Ruthless Gladiator's Staff
+									un(2, i(70180)),	-- Ruthless Gladiator's Energy Staff
+									un(2, i(70181)),	-- Ruthless Gladiator's Battle Staff
+									un(2, i(70186)),	-- Ruthless Gladiator's Right Render
+									un(2, i(70187)),	-- Ruthless Gladiator's Ripper
+									un(2, i(70189)),	-- Ruthless Gladiator's Slasher
+									un(2, i(70190)),	-- Ruthless Gladiator's Fleshslicer
+									un(2, i(70206)),	-- Ruthless Gladiator's Redoubt
+									un(2, i(70207)),	-- Ruthless Gladiator's Barrier
+									un(2, i(70208)),	-- Ruthless Gladiator's Shield Wall
+									un(2, i(70195)),	-- Ruthless Gladiator's Baton of Light
+									un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
+									un(2, i(70210)),	-- Ruthless Gladiator's Endgame)
+									un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. Added in S10, displayed as Vicious but is S10
+									un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. Added in S10, displayed as Vicious but is S10
+									un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. Added in S10, displayed as Vicious but is S10
+									un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation. Added in S10, displayed as Vicious but is S10
+									un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess. Added in S10, displayed as Vicious but is S10
 							},
 						["u"] = 2, -- Vendor no longer exists
 					}),
@@ -257,6 +287,40 @@ _.Zones =
 					}),
 					n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
 						i(83080),	-- Huojin Tabard
+					}),
+					n(46593, { -- Doris Volanthius >S9< Elite <Vicious Gladiator>
+						["groups"] = {
+							un(2, i(67454)),	-- Vicious Gladiator's Gavel
+							un(2, i(67470)),	-- Vicious Gladiator's Bonebracker
+							un(2, i(67471)),	-- Vicious Gladiator's Pummeler
+							un(2, i(67457)),	-- Vicious Gladiator's Spellblade
+							un(2, i(67460)),	-- Vicious Gladiator's 
+							un(2, i(67472)),	-- Vicious Gladiator's Shanker
+							un(2, i(67473)),	-- Vicious Gladiator's Hacker
+							un(2, i(67474)),	-- Vicious Gladiator's Cleaver
+							un(2, i(67468)),	-- Vicious Gladiator's Quickblade
+							un(2, i(67469)),	-- Vicious Gladiator's Slicer
+							un(2, i(67463)),	-- Vicious Gladiator's Rifle
+							un(2, i(67462)),	-- Vicious Gladiator's Heavy Crossbow
+							un(2, i(67453)),	-- Vicious Gladiator's Decapitator
+							un(2, i(67452)),	-- Vicious Gladiator's Bonegrinder
+							un(2, i(67447)),	-- Vicious Gladiator's Greatsword
+							un(2, i(67448)),	-- Vicious Gladiator's Staff
+							un(2, i(67449)),	-- Vicious Gladiator's Engery Staff
+							un(2, i(67450)),	-- Vicious Gladiator's Battle  Staff
+							un(2, i(67455)),	-- Vicious Gladiator's Right Render
+							un(2, i(67456)),	-- Vicious Gladiator's Ripper
+							un(2, i(67458)),	-- Vicious Gladiator's Slasher
+							un(2, i(67459)),	-- Vicious Gladiator's Fleshslicer
+							un(2, i(67475)),	-- Vicious Gladiator's Redoubt
+							un(2, i(67476)),	-- Vicious Gladiator's Barrier
+							un(2, i(67477)),	-- Vicious Gladiator's Shield Wall
+							un(2, i(67464)),	-- Vicious Gladiator's Baton of Light
+							un(2, i(67465)),	-- Vicious Gladiator's Touch of Defeat
+							un(2, i(67478)),	-- Vicious Gladiator's Reprieve
+							un(2, i(67479)),	-- Vicious Gladiator's Endgame
+						},
+						["u"] = 2,
 					}),
 					n(54657, {	-- Doris Volanthius <Vicious Gladiator>
 						i(61360),	-- Vicious Gladiator's Barrier

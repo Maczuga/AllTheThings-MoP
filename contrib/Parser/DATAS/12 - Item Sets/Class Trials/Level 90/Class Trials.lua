@@ -9,7 +9,7 @@ _.GearSets =
 			["icon"] = "Interface\\Icons\\achievement_level_90",
 			["lvl"] = 90,
 			["groups"] = bubbleDown({["u"] = 2}, {
-				n(-9980, { -- Mists of Pandaria. This gear was awarded if you used your boost before 6.0.1
+				n(-9980, { -- Mists of Pandaria. This gear was awarded if you used your Lv90 boost before 6.0.1
 					n(-140, { -- Communal
 						["groups"] = {
 							i(101172),	-- Communal Wand

@@ -272,6 +272,7 @@ _.NeverImplemented =
 			}),
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
+			un(1, i(68844)),	-- Unknown
 			un(1, i(37433)),	-- Layered Scale Boots
 			un(1, i(37444)),	-- Wavekeeper's Helm
 			un(1, i(13090)),	-- Breastplate of the Chosen
@@ -372,6 +373,7 @@ _.NeverImplemented =
 			un(1, i(28045)), -- Cloak of the Demon Stalker
 			un(1, i(108814)), -- 6.0 PH Cloak Agi
 			un(1, i(108822)), -- 6.0 PH Cloak STR
+			un(1, i(155384)),	-- Singed Skycaller Drape (NEver added)
 			un(1, i(108823)), -- 6.0 PH Cloak Int
 
 		}),
@@ -398,6 +400,7 @@ _.NeverImplemented =
 			un(1, i(4988)),		-- Burning Obsidian Band
 			un(1, i(17000)),	-- Band of the Wraith
 			un(1, i(17108)),	-- Mark of Deflection
+			un(1, i(132449)),	-- Phyrix's Embrace
 			un(1, i(13812)),	-- Ring of the Dawn
 			un(1, i(19065)),	-- Emerald Circle
 			un(1, i(62035)), 	-- Antique Myrmidon's Signet
@@ -416,9 +419,25 @@ _.NeverImplemented =
 			un(1, i(18438)), -- Sergeant's Mark
 			un(1, i(20084)), -- Hunting Net
 			un(1, i(20525)), -- Earthen Sigil
+			un(1, i(38383)),	-- Unknown
+			un(1, i(38526)),	-- Unknown
 		}),
 	}),
 	n(-494, { -- Misc
+
+		n(-650, {	-- Quest Item
+			un(1, i(17347)),	--
+			un(1, i(17409)),	-- Encrusted Crystal Fragment
+			un(1, i(20883)),	-- Unknown
+			un(1, i(20936)),	-- Unknown
+			un(1, i(20937)),	-- Unknown
+		}),
+		un(1, spell(5169)),	-- defias disguise
+		un(1, spell(5264)),	-- dsouth sea defias disguise
+		un(1, spell(5268)),	-- dark iron dwarf disguise
+		un(1, spell(5267)),	-- dalaran wizard disguise
+		un(1, i(9023)),		-- Codex of Shadow Proctection Rank3 (Never added)
+		un(1, i(21243)),	-- Bloated Mightfish
 		un(1, i(100894)),	-- Deathtoll's Reward
 		un(1, i(100897)),	-- Skel'tik the Baleful's Reward
 		un(1, i(100898)),	-- Kull Bloodseeker's Reward
@@ -680,7 +699,17 @@ _.NeverImplemented =
 			un(1, i(102810)),    -- Grievous Gladiator's Heavy Crossbow (they ditched those items)
 		}),
 		n(-333, { -- Daggers
+			un(1, i(108785)),	-- Unknown
+			un(1, i(108786)),	-- Unknown
+			un(1, i(109269)),	-- Unknown
+			un(1, i(109292)),	-- Unknown
+			un(1, i(109309)),	-- Unknown
+			un(1, i(109387)),	-- Unknown
+			un(1, i(109482)),	-- Unknown
 			un(1, i(32179)),    -- Chancellor's Shiv
+			un(1, i(147908)),	-- 6.0 Weapon - Knife
+			un(1, i(159534)),	-- Unknown
+			un(1, i(165268)),	-- Unknown
 			un(1, i(23458)),    -- High Warlord's Spellblade (23466 was the added version)
 		}),
 		n(-348, { -- Fist Weapons
@@ -693,10 +722,13 @@ _.NeverImplemented =
 			un(1, i(109361)),    -- Unknown
 			un(1, i(109535)),    -- Unknown
 			un(1, i(109534)),    -- Unknown
+			un(1, i(165269)),	-- Unknown
 		}),
 		n(-345, { -- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
 			un(1, i(38246)),	-- Skull-Forged Blunderbuss
+			un(1, i(165270)),	-- Unknown
+			un(1, i(165266)),	-- Unknown
 			
 		}),
 		n(-331, { -- Held in Offhand
@@ -706,8 +738,19 @@ _.NeverImplemented =
 			un(1, i(42523)),	-- Savage Gladiator's Endgame
 			un(1, i(42529)),	-- Savage Gladiator's Reprieve
 			un(1, i(42535)),	-- Savage Gladiator's Grimoire
+			un(1, i(159941)),	-- Unknown
+			un(1, i(161933)),	-- Unknown
+			un(1, i(161937)),	-- Unknown
+			un(1, i(165277)),	-- Unknown
+			un(1, i(108810)),	-- Unknown
+			un(1, i(109273)),	-- Unknown
+			un(1, i(109301)),	-- Unknown
+			un(1, i(109311)),	-- Unknown
+			un(1, i(109380)),	-- Unknown
 		}),
+		-- maces
 		n(-334, { -- One-Handed Axes
+			un(1, i(68050)),	-- Shatterscale Mightfish
 			un(1, i(49456)),	-- Will of the Earth
 			un(1, i(50251)),	-- Unknown
 			un(1, i(108779)),	-- Unknown
@@ -716,6 +759,7 @@ _.NeverImplemented =
 			un(1, i(109319)),	-- 6.0 QA Combat Test Agility 1h Axe 2
 			un(1, i(109502)),	-- 6.0 QA Combat Test Agility 1h Axe
 			un(1, i(109536)),	-- 6.0 QA Combat Test Offhand Agility Axe 2
+			un(1, i(147379)),	-- Wooden Toy Axe (H) used to apply the mog
 		}),
 		n(-338, { -- One-Handed Swords
 			un(1, i(108803)),	-- Unknown - was under Legion>1Handed Swords
@@ -729,6 +773,17 @@ _.NeverImplemented =
 			un(1, i(109458)),   -- 6.0 QA Combat Test Agility 1h Sword
 		}),
 		n(-343,	{ -- Polearms
+			un(1, i(108797)),	-- Unknown
+			un(1, i(108798)),	-- Unknown
+			un(1, i(108799)),	-- Unknown
+			un(1, i(109456)),	-- Unknown
+		}),
+		n(-387,	{	-- Relics
+			un(1, i(132252)),	-- Owen Test Relic
+			un(1, i(130162)),    -- Val-Sharah Artifact Gem #1
+			-- shield
+			un(1, i(165617)),	-- Unknown
+			un(1, i(139439)),	-- Highkeepers' Ward
 		}),
 		n(-342, { -- Staves
 			un(1, i(108800)),	-- Unknown - was under Legion>Staves
@@ -755,6 +810,7 @@ _.NeverImplemented =
 			un(1, i(33475)),	-- Artefact Frostmourne
 			un(1, i(108806)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(109373)),	-- 6.0 QA Combat Test Strength 2h Sword
+			un(1, i(165274)),	-- Unknown
 		}),
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
@@ -850,21 +906,6 @@ _.NeverImplemented =
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --
 ------------------------------------------------------------
-
---  Hiding this information here so it's not spammy in the addon, but provides additional information to the user in Zul'Gurub "Cache of Madness"
-n(52446, { -- Ancient Dwarven Artifact
-	["description"] = "This artifact is used in summoning the boss.",
-}),
-n(52450, { -- Ancient Elven Artifact
-	["description"] = "This artifact is used in summoning the boss.",
-}),
-n(52454, { -- Ancient Fossil
-	["description"] = "This artifact is used in summoning the boss.",
-}),
-n(52452, { -- Ancient Troll Artifact
-	["description"] = "This artifact is used in summoning the boss.",
-}),
-
 
 -- Here I am going to call upon maps that don't really have any data and wouldn't make since to display a mini list in
 m(465), -- Le Glas

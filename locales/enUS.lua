@@ -257,6 +257,8 @@ AllTheThings.Locales.enUS = {
 		[56] = "Reagents (Crafting, etc)",						 -- GetItemClassInfo(5)
 		[57] = "Fishing Poles",						 -- GetItemSubClassInfo(2,20)
 		[58] = "Containers (Tier Tokens, Timeless Isle BoA gear tokens, Bags of loot, etc)",						 -- AUCTION_CATEGORY_CONTAINERS
+		[59] = "Class Books",									-- Class Books (Classic Spells, Ashran Books, etc)
+		[60] = GetSpellInfo(181765),							-- S.E.L.F.I.E. Camera (For various filters)
 
 		-- "Non-Equipment Types"
 		[100] = "Mounts",						 -- GetItemSubClassInfo(15,5)
@@ -490,6 +492,7 @@ AllTheThings.Locales.enUS = {
 		[-224] = "Interface\\Icons\\ClassIcon_DemonHunter", 					-- Demon Hunter
 		[-225] = "Interface\\Icons\\spell_lightning_lightningbolt01",			-- Elemental Bonds
 		[-226] = "Interface\\ICONS\\INV_Misc_Map02",							-- World Drops
+		[-227] = "Interface\\ICONS\\spell_holy_divinepurpose",					-- Victory
 		[-228] = "Interface\\Minimap\\Tracking\\Flightmaster",					-- Flight Paths
 		[-230] = "Interface\\Icons\\achievement_legionpvp2tier3",				-- Conquest
 		[-231] = "Interface\\Icons\\Spell_Shadow_DeathScream",
@@ -497,6 +500,9 @@ AllTheThings.Locales.enUS = {
 		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",		-- Warfront: The Battle for Stromgarde
 		[-234] = "Interface\\Icons\\achievement_zone_arathihighlands_01",		-- Warfront: The Battle for Stromgarde
 		[-235] = "Interface\\Icons\\inv_scroll_05",
+		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",				-- Bounty
+		[-244] = "Interface\\Icons\\ability_racial_fireblood",					-- Dark Iron Dwarf
+		[-245] = "Interface\\Icons\\achievement_alliedrace_magharorc",			-- Mag'har Orc
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -927,7 +933,7 @@ AllTheThings.Locales.enUS = {
 		[-38] = "Professions",						 -- TRADE_SKILLS
 		[-39] = "Legacy Quest",						 -- LFG_LIST_LEGACY.." "..TRACKER_HEADER_QUESTS
 		[-40] = "Legacy",						 -- LFG_LIST_LEGACY
-		[-41] = "Cache of Madness (Requires 225 Archaeology)",
+		[-41] = "Cache of Madness",
 		[-42] = "Class Hall Missions",						 -- ORDER_HALL_MISSIONS
 -- Armor Types
 		[-43] = "Cloth",						 -- GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME
@@ -1151,7 +1157,17 @@ AllTheThings.Locales.enUS = {
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-241] = PVP_SEASON_REWARD,												-- Season Reward
 		[-242] = "Unrated",														-- Unrated
+		[-243] = "Bounty",														-- Bounty
+		[-244] = "Dark Iron Dwarf",												-- Dark Iron Dwarf
+		[-245] = "Mag'har Orc",													-- Mag'har Orc
 		
+		-- S.E.L.F.I.E. Camera Filters
+		[-246] = GetSpellInfo(258749),											-- Firelands Filter
+		[-247] = GetSpellInfo(258750),											-- Frostmourne Filter
+		[-248] = GetSpellInfo(258751),											-- Sha Filter
+		[-249] = GetSpellInfo(258752),											-- Twilight Filter
+		[-250] = GetSpellInfo(258803),											-- Argus Filter
+	
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
@@ -1774,7 +1790,6 @@ AllTheThings.Locales.enUS = {
 		[-10066] = "Legendary",						 -- BATTLE_PET_BREED_QUALITY6
 		[-10067] = "Artifact",						 -- ITEM_QUALITY6_DESC
 		[-10068] = "PLACE_HOLDER",						 -- OPTION_TOOLTIP_ANIMATION
-		[-10069] = "Mag'har Orc",
 		
 		--80000+ custom
 		[-80000] = "Dungeon Challenges",
@@ -1958,6 +1973,8 @@ AllTheThings.Locales.enUS = {
 		[202706] = "Interface\\Icons\\INV_Misc_Cauldron_Shadow",
 		[202712] = "Interface\\Icons\\INV_Misc_Book_05",
 		[202795] = "Interface\\Icons\\Garrison_Building_Storehouse",
+		[202871] = "Interface\\Icons\\INV_Crate_06",
+		[203128] = "INV_ValentineCologneBottle",
 		[203134] = "Interface\\Icons\\Archaeology_5_0_EdictsOfTheThunderKing",
 		[203186] = "Interface\\Icons\\TRADE_ARCHAEOLOGY_VRYKUL_RUNESTICK",
 		[203207] = "Interface\\Icons\\INV_Misc_Book_05",
@@ -2462,7 +2479,9 @@ AllTheThings.Locales.enUS = {
 		[202778] = "Albino Cavefish School",
 		[202779] = "Blackbelly Mudfish School",
 		[202780] = "Fathom Eel Swarm",
+		[202871] = "Sunken Crate",
 		[202975] = "Submerged Outhouse",
+		[203128] = "Broken Bottle",
 		[203134] = "Empty Pedestal",
 		[203186] = "STAY OUT!",
 		[203207] = "Codex of Shadows",
@@ -3037,7 +3056,7 @@ AllTheThings.Locales.enUS = {
 		[298963] = "Weathered Nazmani Tablet",	-- Weathered Nazmani Tablet
 		[298965] = "Cracked Tablet",	-- Cracked Tablet
 		[299073] = "Fractured Tablet",	-- Fractured Tablet
-		[279750] = "Hay Covered Chest",
+		[310709] = "Waterlogged Chest",	-- New Chest in Elywynn since 8.1
 		[311902] = "Loose Parts",	-- Loose Parts (Horde Won)
 		[311903] = "Loose Parts",	-- Loose Parts (Alliance Won)
 		[239925] = GetSpellInfo(155346),		-- Ogrish Fortitude
