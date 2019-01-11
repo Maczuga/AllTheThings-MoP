@@ -128,12 +128,9 @@ i(21307);	-- Guide: Aspect of the Hawk
 i(112154);	-- Guide: Disengage
 i(21304);	-- Guide: Multi-Shot
 i(21306);	-- Guide: Serpent Sting
-i(120327);	-- Guide: Sharpshooting
 i(21300);	-- Handbook of Backstab
 i(21302);	-- Handbook of Deadly Poison
 i(21303);	-- Handbook of Feint
-i(114843);	-- Handbook: Pick Pocket
-i(116982);	-- Handbook: Vanish
 i(11733);	-- Libram of Constitution
 i(18333);	-- Libram of Focus
 i(18334);	-- Libram of Protection
@@ -149,28 +146,14 @@ i(21298);	-- Manual of Battle Shout
 i(24102);	-- Manual of Eviscerate IX
 i(21297);	-- Manual of Heroic Strike
 i(21299);	-- Manual of Revenge
-i(114849);	-- Manual Of Spell Reflection
-i(136800);	-- Meditation Manual: Zen Flight
-i(136797);	-- Mystical Tome: Arcane Linguist
-i(136799);	-- Mystical Tome: Illusion
-i(136796);	-- Necrophile Tome: Corpse Exploder
-i(136781);	-- Pet Training Manual: Fetch
-i(136780);	-- Pet Training Manual: Play Dead
-i(113992);	-- Scribe's Research Notes
-i(114844);	-- Scroll of Touch of Death
-i(114846);	-- Sigil of Dark Simulacrum
 i(23320);	-- Tablet of Flame Shock
-i(114847);	-- Tablet of Ghost Wolf
 i(21293);	-- Tablet of Grace of Air Totem
 i(21291);	-- Tablet of Healing Wave
 i(21292);	-- Tablet of Strength of Earth Totem
-i(136783);	-- The Art of Concealment
 i(112005);	-- The Jailer's Libram
-i(111387);	-- The Joy of Draenor Cooking
 i(22153);	-- Tome of Arcane Brilliance
 i(18600);	-- Tome of Arcane Brilliance
 i(21280);	-- Tome of Arcane Missiles
-i(114845);	-- Tome of Blink
 i(71949);	-- Tome of Burning Jewels
 i(31501);	-- Tome of Conjure Food
 i(22897);	-- Tome of Conjure Food
@@ -179,27 +162,7 @@ i(44714);	-- Tome of Dalaran Brilliance
 i(21279);	-- Tome of Fireball
 i(22890);	-- Tome of Frost Ward
 i(21214);	-- Tome of Frostbolt
-i(136972);	-- Tome of Hex: Cockroach
-i(136938);	-- Tome of Hex: Compy
-i(159841);	-- Tome of Hex: Skeletal Hatchling
-i(136971);	-- Tome of Hex: Snake
-i(136969);	-- Tome of Hex: Spider
-i(162624);	-- Tome of Hex: Wicker Mongrel
-i(162623);	-- Tome of Hex: Zandalari Tendonripper
 i(44709);	-- Tome of Polymorph: Black Cat
-i(162626);	-- Tome of Polymorph: Bumblebee
-i(162625);	-- Tome of Polymorph: Direhorn
-i(120138);	-- Tome of Polymorph: Monkey
-i(120139);	-- Tome of Polymorph: Penguin
-i(120137);	-- Tome of Polymorph: Polar Bear Cub
-i(120140);	-- Tome of Polymorph: Porcupine
 i(44793);	-- Tome of Polymorph: Rabbit
 i(22739);	-- Tome of Polymorph: Turtle
-i(147580);	-- Tome of the Hybrid Beast
-i(147770);	-- Tome of the PTR Beast
-i(136795);	-- Tome of the Wilds: Charm Woodland Creature
-i(136794);	-- Tome of the Wilds: Flap
-i(136789);	-- Tome of the Wilds: Stag Form
-i(136790);	-- Tome of the Wilds: Track Beasts
-i(136787);	-- Tome of the Wilds: Treant Form
 i(16665);	-- Tome of Tranquilizing Shot

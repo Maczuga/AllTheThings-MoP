@@ -371,10 +371,6 @@ _.NeverImplemented =
 		n(-322, { -- Cloaks
 			un(1, i(22230)),	-- Frightmaw Hide (Cloak)
 			un(1, i(28045)), -- Cloak of the Demon Stalker
-			un(1, i(108814)), -- 6.0 PH Cloak Agi
-			un(1, i(108822)), -- 6.0 PH Cloak STR
-			un(1, i(155384)),	-- Singed Skycaller Drape (NEver added)
-			un(1, i(108823)), -- 6.0 PH Cloak Int
 
 		}),
 		n(-324, { -- Shirts
@@ -400,7 +396,6 @@ _.NeverImplemented =
 			un(1, i(4988)),		-- Burning Obsidian Band
 			un(1, i(17000)),	-- Band of the Wraith
 			un(1, i(17108)),	-- Mark of Deflection
-			un(1, i(132449)),	-- Phyrix's Embrace
 			un(1, i(13812)),	-- Ring of the Dawn
 			un(1, i(19065)),	-- Emerald Circle
 			un(1, i(62035)), 	-- Antique Myrmidon's Signet
@@ -707,9 +702,6 @@ _.NeverImplemented =
 			un(1, i(109387)),	-- Unknown
 			un(1, i(109482)),	-- Unknown
 			un(1, i(32179)),    -- Chancellor's Shiv
-			un(1, i(147908)),	-- 6.0 Weapon - Knife
-			un(1, i(159534)),	-- Unknown
-			un(1, i(165268)),	-- Unknown
 			un(1, i(23458)),    -- High Warlord's Spellblade (23466 was the added version)
 		}),
 		n(-348, { -- Fist Weapons
@@ -722,13 +714,10 @@ _.NeverImplemented =
 			un(1, i(109361)),    -- Unknown
 			un(1, i(109535)),    -- Unknown
 			un(1, i(109534)),    -- Unknown
-			un(1, i(165269)),	-- Unknown
 		}),
 		n(-345, { -- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
 			un(1, i(38246)),	-- Skull-Forged Blunderbuss
-			un(1, i(165270)),	-- Unknown
-			un(1, i(165266)),	-- Unknown
 			
 		}),
 		n(-331, { -- Held in Offhand
@@ -738,10 +727,6 @@ _.NeverImplemented =
 			un(1, i(42523)),	-- Savage Gladiator's Endgame
 			un(1, i(42529)),	-- Savage Gladiator's Reprieve
 			un(1, i(42535)),	-- Savage Gladiator's Grimoire
-			un(1, i(159941)),	-- Unknown
-			un(1, i(161933)),	-- Unknown
-			un(1, i(161937)),	-- Unknown
-			un(1, i(165277)),	-- Unknown
 			un(1, i(108810)),	-- Unknown
 			un(1, i(109273)),	-- Unknown
 			un(1, i(109301)),	-- Unknown
@@ -759,7 +744,6 @@ _.NeverImplemented =
 			un(1, i(109319)),	-- 6.0 QA Combat Test Agility 1h Axe 2
 			un(1, i(109502)),	-- 6.0 QA Combat Test Agility 1h Axe
 			un(1, i(109536)),	-- 6.0 QA Combat Test Offhand Agility Axe 2
-			un(1, i(147379)),	-- Wooden Toy Axe (H) used to apply the mog
 		}),
 		n(-338, { -- One-Handed Swords
 			un(1, i(108803)),	-- Unknown - was under Legion>1Handed Swords
@@ -779,11 +763,6 @@ _.NeverImplemented =
 			un(1, i(109456)),	-- Unknown
 		}),
 		n(-387,	{	-- Relics
-			un(1, i(132252)),	-- Owen Test Relic
-			un(1, i(130162)),    -- Val-Sharah Artifact Gem #1
-			-- shield
-			un(1, i(165617)),	-- Unknown
-			un(1, i(139439)),	-- Highkeepers' Ward
 		}),
 		n(-342, { -- Staves
 			un(1, i(108800)),	-- Unknown - was under Legion>Staves
@@ -810,7 +789,6 @@ _.NeverImplemented =
 			un(1, i(33475)),	-- Artefact Frostmourne
 			un(1, i(108806)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(109373)),	-- 6.0 QA Combat Test Strength 2h Sword
-			un(1, i(165274)),	-- Unknown
 		}),
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)

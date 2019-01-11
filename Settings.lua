@@ -1628,9 +1628,9 @@ local function createMiniListFrame(parent)
 	local itemFilters = app.GetPersonalDataMember("ItemFilters");
 	local last = item;
 	local x = 5
-	for i,filter in ipairs({ 113, 101, 59, 55, 999, 57, 103, 50, 100, 104, 56, 200, 60, 110, 102  }) do
+	for i,filter in ipairs({ 113, 101, 59, 55, 999, 57, 50, 100, 104, 56, 200, 110, 102  }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
-			itemFilters[filter] = self:GetChecked();
+			itemFilters[filter] = self:GetChecked() and true or false;
 			refreshUI();
 			app:RefreshData();
 		end, 
@@ -1749,7 +1749,7 @@ local function createMiniListFrame(parent)
 	x = 5
 	for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 51, 52, 53 }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
-			itemFilters[filter] = self:GetChecked();
+			itemFilters[filter] = self:GetChecked() and true or false;
 			refreshUI();
 			app:RefreshData();
 		end, 
@@ -1781,7 +1781,7 @@ local function createMiniListFrame(parent)
 	x = 5
 	for i,filter in ipairs({ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 54 }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
-			itemFilters[filter] = self:GetChecked();
+			itemFilters[filter] = self:GetChecked() and true or false;
 			refreshUI();
 			app:RefreshData();
 		end, 
