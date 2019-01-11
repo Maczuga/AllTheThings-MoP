@@ -793,34 +793,6 @@ _.WorldEvents =
 						},
 					},
 				},
-				{	-- Let's Keep Racing
-					["questID"] = 33756,	-- Let's Keep Racing
-					["qg"] = 74056,			-- Malle Earnhard
-					["isDaily"] = true,
-					["repeatable"] = true,
-					["sourceQuests"] = {
-						37910,	-- Welcome to the Darkmoon Races
-					},
-					["coords"] = {
-						{ 48.98, 88.31 },
-					},
-					["g"] = {
-						--[[	Note!! They are listed under actual daily.  So we don't need to list them twice.
-						{	-- Darkmoon Racer Novice [25 Tolls]
-							["achievementID"] = 9756,	-- Darkmoon Racer Novice
-						},
-						{	-- Darkmoon Racer Jockey [20 Tolls]
-							["achievementID"] = 9759,	-- Darkmoon Racer Jockey
-						},
-						{	-- Darkmoon Racer Leadfoot [15 Tolls]
-							["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
-						},
-						{	-- Darkmoon Racer Roadhog [11 Tolls]
-							["achievementID"] = 9761,	-- Darkmoon Racer Roadhog
-						},
-						--]]
-					},
-				},
 				{	-- Moonfang's Pelt
 					["itemID"] = 105891,	-- Moonfang's Pelt
 					["questID"] = 33354,	-- Den Mother's Demise
@@ -828,34 +800,6 @@ _.WorldEvents =
 					["repeatable"] = true,
 					["coords"] = {
 						{ 39.36, 43.68 },
-					},
-				},
-				{	-- More Big Race!
-					["questID"] = 37868,	-- More Big Racing!
-					["qg"] = 90473,			-- Patti Earnhard
-					["isDaily"] = true,
-					["repeatable"] = true,
-					["sourceQuests"] = {
-						37911,	-- The Real Big Race
-					},
-					["coords"] = {
-						{ 53.25, 87.6 },
-					},
-					["g"] = {
-						--[[	Note!! They are listed under actual daily.  So we don't need to list them twice.
-						{	-- Darkmoon Racer Novice [25 Tolls]
-							["achievementID"] = 9756,	-- Darkmoon Racer Novice
-						},
-						{	-- Darkmoon Racer Jockey [20 Tolls]
-							["achievementID"] = 9759,	-- Darkmoon Racer Jockey
-						},
-						{	-- Darkmoon Racer Leadfoot [15 Tolls]
-							["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
-						},
-						{	-- Darkmoon Racer Roadhog [11 Tolls]
-							["achievementID"] = 9761,	-- Darkmoon Racer Roadhog
-						},
-						--]]
 					},
 				},
 				{	-- Target: Turtle [Token Game]
@@ -905,94 +849,6 @@ _.WorldEvents =
 						},
 					},
 				},
-				{	-- The Real Race
-					["questID"] = 37910,	-- The Real Race
-					["qg"] = 74056,			-- Malle Earnhard
-					["isDaily"] = true,
-					["repeatable"] = true,
-					["sourceQuests"] = {
-						37819,	-- Welcome to the Darkmoon Races
-					},
-					["coords"] = {
-						{ 48.98, 88.31 },
-					},
-					["g"] = {
-						{	-- Darkmoon Racer Roadhog [Real Race -- S11]*
-							["achievementID"] = 9761,	-- Darkmoon Racer Roadhog
-							["crs"] = {
-								90148,	-- Racing Strider
-							},
-							["g"] = {
-								{	-- Darkmoon Racer Leadfoot [Real Race -- S15]
-									["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
-								},
-								{	-- Darkmoon Racer Jockey [Real Race -- S20]
-									["achievementID"] = 9759,	-- Darkmoon Racer Jockey
-								},
-								{	-- Darkmoon Racer Novice [Real Race -- S25]
-									["achievementID"] = 9756,	-- Darkmoon Racer Novice
-								},
-							},
-						},
-						{	-- Powermonger: Gold [Real Race -- P11]*
-							["achievementID"] = 9785,	-- Powermonger: Gold
-							["crs"] = {
-								89732,	-- Powermonger
-							},
-							["g"] = {
-								{	-- Powermonger: Silver [Real Race -- P15]
-									["achievementID"] = 9783,	-- Powermonger: Silver
-								},
-								{	-- Powermonger: Bronze [Real Race -- P20]
-									["achievementID"] = 9781,	-- Powermonger: Bronze
-								},
-									{	-- Go-Getter [Real Race -- P25]
-									["achievementID"] = 9780,	-- Go-Getter
-								},
-							},
-						},
-						{	-- Rocketeer: Gold [Real Race -- R11]*
-							["achievementID"] = 9764,	-- Rocketeer: Gold
-							["crs"] = {
-								89734,	-- Rocketeer
-							},
-							["g"] = {
-								{	-- Rocketeer: Silver [Real Race -- R15]
-									["achievementID"] = 9766,	-- Rocketeer: Silver
-								},
-								{	-- Rocketeer: Bronze [Real Race -- R20]
-									["achievementID"] = 9769,	-- Rocketeer: Bronze
-								},
-								{	-- Blast Off! [Real Race - R25]
-									["achievementID"] = 9770,	-- Blast Off!
-								},
-							},
-						},
-						{	-- Wanderluster: Gold [Real Race -- W11]
-							["achievementID"] = 9792,	-- Wanderluster: Gold
-							["crs"] = {
-								89736,	-- Wanderluster
-							},
-							["g"] = {
-								{	-- Darkmoon Like the Wind
-									["achievementID"] = 9819,	-- Darkmoon Like the Wind
-								},
-								{	-- Wanderluster: Silver [Real Race -- W15]
-									["achievementID"] = 9790,	-- Wanderluster: Silver
-								},
-								{	-- Wanderluster: Bronze [Real Race -- W20]
-									["achievementID"] = 9787,	-- Wanderluster: Bronze
-								},
-								{	-- Wayfarer Gold [Real Race -- W25]
-									["achievementID"] = 9786,	-- Wayfarer
-								},
-							},
-						},
-						{	-- Darkmoon Game Prize
-							["itemID"] = 93724,	-- Darkmoon Game Prize
-						},
-					},
-				},
 				{	-- Tonk Commander [Token Game]
 					["questID"] = 29434,	-- Tonk Commander
 					["isDaily"] = true,
@@ -1021,21 +877,6 @@ _.WorldEvents =
 					["g"] = {
 						{	-- Jubling
 							["itemID"] = 19450,	-- Jubling
-						},
-					},
-				},
-				{	-- Welcome to the Darkmoon Races [One Time Quest]
-					["questID"] = 37819,	-- Welcome to the Darkmoon Races
-					["qg"] = 74056,			-- Malle Earnhard
-					["coords"] = {
-						{ 48.98, 88.31 },
-					},
-					["g"] = {
-						{	-- Darkmoon Race Enthusiast
-							["achievementID"] = 9755,	-- Darkmoon Race Enthusiast
-						},
-						{	-- Darkmoon Game Prize
-							["itemID"] = 93724,	-- Darkmoon Game Prize
 						},
 					},
 				},
