@@ -39,9 +39,6 @@ profession(185, { -- Cooking
 			h(recipe(66036)),	-- Pumpkin Pie (Horde)
 			h(recipe(66037)),	-- Slow-Roasted Turkey (Horde)
 			h(recipe(66038)),	-- Spice Bread Stuffing (Horde)
-			recipe(185705),		-- Fancy Darkmoon Feast
-			recipe(185704),		-- Lemon Herb Filet
-			recipe(185708),		-- Sugar-Crusted Fish Feast
 		}),
 		--]]
 		--Note!! BC, Cata, MoP, Legion and BfA are currently commented out due to it being nothing but recipes and automation handling those.

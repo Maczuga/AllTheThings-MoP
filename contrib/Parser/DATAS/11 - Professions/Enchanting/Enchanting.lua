@@ -5,9 +5,6 @@ profession(333, { -- Enchanting
 			["spellID"] = 0,
 			["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
 			["groups"] = {
-				recipe(177043),	-- Secrets of Draenor Enchanting
-				recipe(169092),	-- Temporal Crystal
-				recipe(169091),	-- Luminous Shard
 				recipe(162948),	-- Enchanted Dust
 				recipe(158907),	-- Breath of Critical Strike [Ring]
 				recipe(158908),	-- Breath of Haste [Ring]
@@ -343,7 +340,6 @@ profession(333, { -- Enchanting
 			recipe(13659),	-- Versatility [Permanently enchant a shield to increase Versatility by 5.]
 			recipe(20016),	-- Vitality [Permanently enchant a shield to increase Versatility and Stamina by 10.]
 			recipe(21931),	-- Winter's Might [Permanently enchant a melee weapon to increase Frost spell power by 7.]
-			recipe(217637),	-- Tome of Illusions: Azeroth
 		}),
 		tier(2, {	-- Burning Crusade
 			un(1, recipe(28021)),	-- Arcane Dust (Never Implemented)
@@ -404,12 +400,10 @@ profession(333, { -- Enchanting
 			recipe(27913),	-- Versatility Prime [Permanently enchant bracers to increase Versatility by 9.]
 			recipe(33991),	-- Versatility Prime [Permanently enchant chest armor to increase Versatility by 14.]
 			recipe(27948),	-- Vitality [Permanently enchant boots to increase Versatility and Stamina by 4.]
-			recipe(217641),	-- Tome of Illusions: Outland
 			-- NOTE: STOPPED HERE
 			-- https://www.wowhead.com/enchanting#recipes:300+17+10+1
 		}),
 		tier(3, {	-- Wrath
-			recipe(217644),	-- Tome of Illusions: Northrend
 			recipe(69412),	-- Abyssal Shatter
 			recipe(59619),	-- Accuracy [Permanently enchant a melee weapon to increase critical strike by 12.]
 			recipe(71692),	-- Angler [Permanently enchant gloves to increase Fishing skill by 5.]
@@ -479,8 +473,6 @@ profession(333, { -- Enchanting
 			recipe(47899),	-- Wisdom [Permanently enchant a cloak to reduce threat slightly and increase Versatility by 5.]
 		}),
 		tier(4, {	-- Cata
-			recipe(217645),	-- Tome of Illusions: Cataclysm
-			recipe(217649),	-- Tome of Illusions: Elemental Lords
 			h(recipe(93841)),	-- Enchanted Lantern
 			a(recipe(93843)),	-- Magic Lamp
 			recipe(104698),	-- Maelstrom Shatter
@@ -533,8 +525,6 @@ profession(333, { -- Enchanting
 			recipe(74244),	-- Windwalk [Permanently enchant a weapon to sometimes increase dodge by 120 and movement speed by 10% for 10 sec when striking in melee, stacking with passive movement speed effects.]
 		}),
 		tier(5, {	-- Mists
-			recipe(217650),	-- Tome of Illusions: Pandaria
-			recipe(217651),	-- Tome of Illusions: Secrets of the Shado-Pan
 			recipe(116498),	-- Ethereal Shard
 			recipe(118238),	-- Ethereal Shatter
 			recipe(118237),	-- Mysterious Diffusion

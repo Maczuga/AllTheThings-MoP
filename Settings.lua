@@ -206,6 +206,10 @@ local function createCheckBox(text, parent, onClick, refresh, onEnter)
 	return cb
 end
 
+local function GetChecked(checkbox)
+	return checkbox:GetChecked() and true or false;
+end
+
 local function createGeneralFrame(parent)
 	local tabName = "General"
 	createTab(parent,generalTab,tabName,480)
@@ -226,7 +230,7 @@ local function createGeneralFrame(parent)
 	
 	-- debug mode
 	local debugCb = createCheckBox("|Cff15abffDebug Mode|r (Ignore All Filters)", child, function(self)
-			app.SetDebugMode(self:GetChecked());
+			app.SetDebugMode(GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("IgnoreAllFilters"));
@@ -241,7 +245,7 @@ local function createGeneralFrame(parent)
 	
 	-- completionist mode
 	local comp = createCheckBox("|CFFADD8E6Completionist Mode|r", child, function(self)
-			app.SetCompletionistMode(self:GetChecked(), true);
+			app.SetCompletionistMode(GetChecked(self), true);
 			refreshUI()
 		end, 
 		function(self) 
@@ -258,7 +262,7 @@ local function createGeneralFrame(parent)
 	
 	-- only main
 	local mainOnly = createCheckBox(app.L("I_ONLY_CARE_ABOUT_MY_MAIN"), child, function(self)
-			app.SetDataMember("MainOnly", self:GetChecked());
+			app.SetDataMember("MainOnly", GetChecked(self));
 			app.SetCompletionistMode(app.GetDataMember("CompletionistMode"));
 		end, 
 		function(self) 
@@ -293,7 +297,7 @@ local function createGeneralFrame(parent)
 	
 	-- This creates the "Notify me when I Collect Things" Checkbox --
 	local notifyMe = createCheckBox("Notify me when I Collect Things", child, function(self)
-			app.SetDataMember("ShowNotifications", self:GetChecked());
+			app.SetDataMember("ShowNotifications", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("ShowNotifications", true));
@@ -308,7 +312,7 @@ local function createGeneralFrame(parent)
 	
 	-- This creates the "Play Fanfare when I Collect Things" Checkbox --
 	local playFanfare = createCheckBox("Play Fanfare when I Collect Things", child, function(self)
-			app.SetDataMember("PlayFanfare", self:GetChecked());
+			app.SetDataMember("PlayFanfare", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("PlayFanfare", true));
@@ -323,7 +327,7 @@ local function createGeneralFrame(parent)
 
 	-- This creates the "Play Fanfare when I Collect Rare Things" Checkbox --
 	local playRareFindSound = createCheckBox("Play Fanfare when I Collect Rare Things", child, function(self)
-			app.SetDataMember("PlayRareFindSound", self:GetChecked());
+			app.SetDataMember("PlayRareFindSound", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("PlayRareFindSound", true));
@@ -338,7 +342,7 @@ local function createGeneralFrame(parent)
 	
 	-- This creates the "Play Fanfare when I complete a group" Checkbox --
 	local playCompleteSound = createCheckBox("Play Fanfare when I complete a group", child, function(self)
-			app.SetDataMember("PlayCompleteSound", self:GetChecked());
+			app.SetDataMember("PlayCompleteSound", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("PlayCompleteSound", true));
@@ -353,7 +357,7 @@ local function createGeneralFrame(parent)
 	
 	-- This creates the "Play a Warning when I Remove Things" Checkbox --
 	local playRemoveSound = createCheckBox("Play a Warning when I Remove Things", child, function(self)
-			app.SetDataMember("PlayRemoveSound", self:GetChecked());
+			app.SetDataMember("PlayRemoveSound", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("PlayRemoveSound", true));
@@ -368,7 +372,7 @@ local function createGeneralFrame(parent)
 	
 	-- This creates the "Play a Warning when I Enter a Cleared Difficulty" Checkbox --
 	local WarnOnClearedDifficulty = createCheckBox("Play a Warning when I Enter a Cleared Difficulty", child, function(self)
-			app.SetDataMember("WarnOnClearedDifficulty", self:GetChecked());
+			app.SetDataMember("WarnOnClearedDifficulty", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("WarnOnClearedDifficulty", false));
@@ -396,7 +400,7 @@ local function createGeneralFrame(parent)
 	
 	-- Show Loot Specializations
 	local showSpec = createCheckBox("Show Loot Specializations", child, function(self)
-			app.SetDataMember("ShowLootSpecializations", self:GetChecked());
+			app.SetDataMember("ShowLootSpecializations", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -407,7 +411,7 @@ local function createGeneralFrame(parent)
 	
 	-- Show Loot Specializations Requirements
 	local showSpecReq = createCheckBox("Show Loot Specialization Icons", child, function(self)
-		app.SetDataMember("ShowLootSpecializationRequirements", self:GetChecked());
+		app.SetDataMember("ShowLootSpecializationRequirements", GetChecked(self));
 		app:UpdateWindows();
 	end, 
 	function(self) 
@@ -423,8 +427,8 @@ local function createGeneralFrame(parent)
 	
 	
 	local showPersonal = createCheckBox("Only Show Personal Loot (VERY SLOW)", child, function(self)
-		app.SetDataMember("RequirePersonalLootFilter", self:GetChecked());
-		if self:GetChecked() then
+		app.SetDataMember("RequirePersonalLootFilter", GetChecked(self));
+		if GetChecked(self) then
 			app.PersonalLootFilter = app.FilterItemClass_RequirePersonalLoot;
 		else
 			app.PersonalLootFilter = app.NoFilter;
@@ -456,8 +460,8 @@ local function createGeneralFrame(parent)
 	
 	-- mini map button
 	local minimapButton = createCheckBox("Show the Minimap Button", child, function(self)
-		app.SetDataMember("ShowMinimapButton", self:GetChecked());
-		if self:GetChecked() then
+		app.SetDataMember("ShowMinimapButton", GetChecked(self));
+		if GetChecked(self) then
 				if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
 				app.Minimap:Show();
 			elseif app.Minimap then
@@ -477,8 +481,8 @@ local function createGeneralFrame(parent)
 	
 	-- show main list auto
 	local autoMainList = createCheckBox("Show the Main List Automatically", child, function(self)
-		app.SetDataMember("AutoMainList", self:GetChecked());
-		if self:GetChecked() then
+		app.SetDataMember("AutoMainList", GetChecked(self));
+		if GetChecked(self) then
 			app.OpenMainList();
 		end
 	end, 
@@ -495,8 +499,8 @@ local function createGeneralFrame(parent)
 	
 	-- show mini list auto
 	local autoMinilist = createCheckBox("Show the Mini List Automatically", child, function(self)
-		app.SetDataMember("AutoMiniList", self:GetChecked());
-		if self:GetChecked() then app:RefreshLocation(); end
+		app.SetDataMember("AutoMiniList", GetChecked(self));
+		if GetChecked(self) then app:RefreshLocation(); end
 	end, 
 	function(self) 
 		self:SetChecked(app.GetDataMember("AutoMiniList", true));
@@ -511,8 +515,8 @@ local function createGeneralFrame(parent)
 	
 	-- show profession mini list auto
 	local autoProfessionMinilist = createCheckBox("Show the Profession Mini List Automatically", child, function(self)
-		app.SetDataMember("AutoProfessionMiniList", self:GetChecked());
-		if self:GetChecked() then
+		app.SetDataMember("AutoProfessionMiniList", GetChecked(self));
+		if GetChecked(self) then
 			app:OpenMiniListForCurrentProfession(true, true);
 		else
 			app:GetWindow("Tradeskills"):SetVisible(false);
@@ -532,8 +536,8 @@ local function createGeneralFrame(parent)
 	
 	-- show raid assistant auto
 	local autoRaidAssistant = createCheckBox("Show the Raid Assistant Automatically", child, function(self)
-			app.SetDataMember("AutoRaidAssistant", self:GetChecked());
-			if self:GetChecked() then
+			app.SetDataMember("AutoRaidAssistant", GetChecked(self));
+			if GetChecked(self) then
 				app:GetWindow("RaidAssistant"):Show();
 			end
 		end, 
@@ -551,7 +555,7 @@ local function createGeneralFrame(parent)
 	
 	-- auto minimize when not applicable 
 	local autoMin = createCheckBox("Automatically Minimize Inactive Difficulties in Mini Lists", child, function(self)
-			app.SetDataMember("AutoMinimize", self:GetChecked());
+			app.SetDataMember("AutoMinimize", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("AutoMinimize", true));
@@ -579,7 +583,7 @@ local function createGeneralFrame(parent)
 	
 	-- TomTom waypoint automation
 	local autoLoadTomTomWaypoints = createCheckBox("Automatically Set TomTom Waypoints", child, function(self)
-			app.SetDataMember("AutomateTomTomWaypoints", self:GetChecked());
+			app.SetDataMember("AutomateTomTomWaypoints", GetChecked(self));
 		end,
 		function(self) 
 			self:SetChecked(app.GetDataMember("AutomateTomTomWaypoints", false));
@@ -593,7 +597,7 @@ local function createGeneralFrame(parent)
 	addObject(elm,autoLoadTomTomWaypoints);
 	
 	local setTomTomWaypointsOnTaxi = createCheckBox("Enable TomTom Waypoints While on Flightpath", child, function(self)
-			app.SetDataMember("EnableTomTomWaypointsOnTaxi", self:GetChecked());
+			app.SetDataMember("EnableTomTomWaypointsOnTaxi", GetChecked(self));
 		end,
 		function(self) 
 			self:SetChecked(app.GetDataMember("EnableTomTomWaypointsOnTaxi", false));
@@ -608,7 +612,7 @@ local function createGeneralFrame(parent)
 	addObject(elm,setTomTomWaypointsOnTaxi);
 	
 	local tomTomWaypointIgnoreCompleted = createCheckBox("Ignore Completed Objects", child, function(self)
-			app.SetDataMember("TomTomIgnoreCompletedObjects", self:GetChecked());
+			app.SetDataMember("TomTomIgnoreCompletedObjects", GetChecked(self));
 		end,
 		function(self) 
 			self:SetChecked(app.GetDataMember("TomTomIgnoreCompletedObjects", true));
@@ -633,7 +637,7 @@ local function createGeneralFrame(parent)
 	for key,value in ipairs({ -228, -17, -16, -2 }) do
 		local filter = createCheckBox(waypointFilterNames[value], child, function(self)
 			local val = app.GetDataMember("WaypointFilters")
-			val[value] = self:GetChecked();
+			val[value] = GetChecked(self);
 			app.SetDataMember("WaypointFilters", val);
 		end, 
 		function(self)
@@ -677,8 +681,8 @@ local function createAccountFrame(parent)
 	
 	-- level
 	local level = createCheckBox("Filter Groups By Level", child, function(self)
-			app.SetDataMember("FilterGroupsByLevel", self:GetChecked());
-			if self:GetChecked() then
+			app.SetDataMember("FilterGroupsByLevel", GetChecked(self));
+			if GetChecked(self) then
 				app:RegisterEvent("PLAYER_LEVEL_UP");
 				app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 			else
@@ -700,8 +704,8 @@ local function createAccountFrame(parent)
 	
 	-- Profession mode
 	local prof = createCheckBox("Filter By Known Professions", child, function(self)
-			app.SetDataMember("RequiredSkillFilter", self:GetChecked());
-			if self:GetChecked() then
+			app.SetDataMember("RequiredSkillFilter", GetChecked(self));
+			if GetChecked(self) then
 				app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
 			else
 				app.RequiredSkillFilter = app.NoFilter;
@@ -721,8 +725,8 @@ local function createAccountFrame(parent)
 	
 	-- Track Recipes Account Wide mode
 	local tracker = createCheckBox("Track Recipes Account-Wide", child, function(self)
-			app.SetDataMember("TrackRecipesAccountWide", self:GetChecked());
-			if self:GetChecked() then
+			app.SetDataMember("TrackRecipesAccountWide", GetChecked(self));
+			if GetChecked(self) then
 				app.RecipeChecker = app.GetDataSubMember;
 			else
 				app.RecipeChecker = app.GetTempDataSubMember;
@@ -742,7 +746,7 @@ local function createAccountFrame(parent)
 	
 	-- Treat Factions as Collectible
 	local treatFactionsAsCollectible = createCheckBox("Treat Factions as Collectible", child, function(self)
-			app.SetDataMember("FactionsCollectible", self:GetChecked());
+			app.SetDataMember("FactionsCollectible", GetChecked(self));
 			app:RefreshData();
 		end, 
 		function(self) 
@@ -758,7 +762,7 @@ local function createAccountFrame(parent)
 	
 	-- Track Factions Account Wide
 	local factionsAccountWide = createCheckBox("Track Factions Account-Wide", child, function(self)
-			app.SetDataMember("TrackFactionsAccountWide", self:GetChecked());
+			app.SetDataMember("TrackFactionsAccountWide", GetChecked(self));
 			app:RefreshData();
 		end, 
 		function(self) 
@@ -774,7 +778,7 @@ local function createAccountFrame(parent)
 	
 	-- Treat Flight Paths as Collectible
 	local flightPathsAsCollectible = createCheckBox("Treat Flight Paths as Collectible", child, function(self)
-			app.SetDataMember("FlightPathsCollectible", self:GetChecked());
+			app.SetDataMember("FlightPathsCollectible", GetChecked(self));
 			app:RefreshData();
 		end, 
 		function(self) 
@@ -790,7 +794,7 @@ local function createAccountFrame(parent)
 	
 	-- Track Flight Paths Account Wide mode
 	local flightPathsAccountWide = createCheckBox("Track Flight Paths Account-Wide", child, function(self)
-			app.SetDataMember("FlightPathsAccountWide", self:GetChecked());
+			app.SetDataMember("FlightPathsAccountWide", GetChecked(self));
 			app:RefreshData();
 		end, 
 		function(self) 
@@ -806,8 +810,8 @@ local function createAccountFrame(parent)
 
 	-- race
 	local race = createCheckBox("Filter Items By Race", child, function(self)
-			app.SetDataMember("FilterItemsByRace", self:GetChecked());
-			if self:GetChecked() then
+			app.SetDataMember("FilterItemsByRace", GetChecked(self));
+			if GetChecked(self) then
 				app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
 			else
 				app.RaceRequirementFilter = app.NoFilter;
@@ -822,8 +826,8 @@ local function createAccountFrame(parent)
 	
 	-- class
 	local class = createCheckBox("Filter Items By Class", child, function(self)
-			app.SetDataMember("FilterItemsByClass", self:GetChecked());
-			if self:GetChecked() then
+			app.SetDataMember("FilterItemsByClass", GetChecked(self));
+			if GetChecked(self) then
 				app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
 			else
 				app.ClassRequirementFilter = app.NoFilter;
@@ -838,7 +842,7 @@ local function createAccountFrame(parent)
 	
 	-- BOE
 	local boe = createCheckBox("Hide BoE Items", child, function(self)
-			app.SetHideBOEItems(self:GetChecked());
+			app.SetHideBOEItems(GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("RequireBindingFilter"));
@@ -848,8 +852,8 @@ local function createAccountFrame(parent)
 	
 	--ignore
 	local ignore = createCheckBox("Ignore All Filters for BoE / BoA Items", child, function(self)
-			app.SetDataMember("IgnoreFiltersOnNonBindingItems", self:GetChecked());
-			if self:GetChecked() then
+			app.SetDataMember("IgnoreFiltersOnNonBindingItems", GetChecked(self));
+			if GetChecked(self) then
 				app.ItemBindFilter = app.FilterItemBind;
 			else
 				app.ItemBindFilter = app.Filter;
@@ -880,8 +884,8 @@ local function createAccountFrame(parent)
 	
 	-- seasonal enable
 	local seasonalEnable = createCheckBox("Filter Seasonal Items", child, function(self)
-			app.SetDataMember("FilterSeasonal", self:GetChecked());
-			if self:GetChecked() then
+			app.SetDataMember("FilterSeasonal", GetChecked(self));
+			if GetChecked(self) then
 				app.SeasonalFilter = app.FilterItemClass_SeasonalItem;
 			else
 				app.SeasonalFilter = app.NoFilter;
@@ -900,7 +904,7 @@ local function createAccountFrame(parent)
 			local val = app.GetDataMember("SeasonalFilters")
 			for k,v in ipairs(app.L("UNOBTAINABLE_ITEM_REASONS")) do
 				if v[1] > 4 then
-					val[k] = not self:GetChecked()
+					val[k] = not GetChecked(self)
 				end
 			end
 			app.SetDataMember("SeasonalFilters", val);
@@ -941,7 +945,7 @@ local function createAccountFrame(parent)
 			--print(v[3] .. " " .. k)
 			local seasonalFilter = createCheckBox(v[3], child, function(self)
 					local val = app.GetDataMember("SeasonalFilters")
-					val[k]= not self:GetChecked()
+					val[k]= not GetChecked(self)
 					app.SetDataMember("SeasonalFilters", val);
 					refreshUI();
 					app:RefreshData();
@@ -988,8 +992,8 @@ local function createAccountFrame(parent)
 	
 	-- unobtainable enable
 	local unobtainableEnable = createCheckBox("Filter Unobtainable Items", child, function(self)
-			app.SetDataMember("FilterUnobtainableItems", self:GetChecked());
-			if self:GetChecked() then
+			app.SetDataMember("FilterUnobtainableItems", GetChecked(self));
+			if GetChecked(self) then
 				app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
 			else
 				app.UnobtainableItemFilter = app.NoFilter;
@@ -1008,7 +1012,7 @@ local function createAccountFrame(parent)
 			local val = app.GetDataMember("UnobtainableItemFilters")
 			for k,v in ipairs(app.L("UNOBTAINABLE_ITEM_REASONS")) do
 				if v[1] < 5 then
-					val[k] = not self:GetChecked()
+					val[k] = not GetChecked(self)
 				end
 			end
 			app.SetDataMember("UnobtainableItemFilters", val);
@@ -1051,7 +1055,7 @@ local function createAccountFrame(parent)
 			local val = app.GetDataMember("UnobtainableItemFilters")
 			for k,v in ipairs(app.L("UNOBTAINABLE_ITEM_REASONS")) do
 				if v[1] == 1 then
-					val[k] = not self:GetChecked()
+					val[k] = not GetChecked(self)
 				end
 			end
 			app.SetDataMember("UnobtainableItemFilters", val);
@@ -1087,7 +1091,7 @@ local function createAccountFrame(parent)
 			--print(v[3] .. " " .. k)
 			local filter = createCheckBox(v[3], child, function(self)
 					local val = app.GetDataMember("UnobtainableItemFilters")
-					val[k]= not self:GetChecked()
+					val[k]= not GetChecked(self)
 					app.SetDataMember("UnobtainableItemFilters", val);
 					refreshUI();
 					app:RefreshData();
@@ -1137,7 +1141,7 @@ local function createAccountFrame(parent)
 			local val = app.GetDataMember("UnobtainableItemFilters")
 			for k,v in ipairs(app.L("UNOBTAINABLE_ITEM_REASONS")) do
 				if v[1] == 2 then
-					val[k] = not self:GetChecked()
+					val[k] = not GetChecked(self)
 				end
 			end
 			app.SetDataMember("UnobtainableItemFilters", val);
@@ -1172,7 +1176,7 @@ local function createAccountFrame(parent)
 		if v[1]  == 2 then
 			local filter = createCheckBox(v[3], child, function(self)
 					local val = app.GetDataMember("UnobtainableItemFilters")
-					val[k]= not self:GetChecked()
+					val[k]= not GetChecked(self)
 					app.SetDataMember("UnobtainableItemFilters", val);
 					refreshUI();
 					app:RefreshData();
@@ -1222,7 +1226,7 @@ local function createAccountFrame(parent)
 			local val = app.GetDataMember("UnobtainableItemFilters")
 			for k,v in ipairs(app.L("UNOBTAINABLE_ITEM_REASONS")) do
 				if v[1] == 3 then
-					val[k] = not self:GetChecked()
+					val[k] = not GetChecked(self)
 				end
 			end
 			app.SetDataMember("UnobtainableItemFilters", val);
@@ -1257,7 +1261,7 @@ local function createAccountFrame(parent)
 		if v[1]  == 3 then
 			local filter = createCheckBox(v[3], child, function(self)
 					local val = app.GetDataMember("UnobtainableItemFilters")
-					val[k]= not self:GetChecked()
+					val[k]= not GetChecked(self)
 					app.SetDataMember("UnobtainableItemFilters", val);
 					refreshUI();
 					app:RefreshData();
@@ -1307,7 +1311,7 @@ local function createAccountFrame(parent)
 			local val = app.GetDataMember("UnobtainableItemFilters")
 			for k,v in ipairs(app.L("UNOBTAINABLE_ITEM_REASONS")) do
 				if v[1] == 4 then
-					val[k] = not self:GetChecked()
+					val[k] = not GetChecked(self)
 				end
 			end
 			app.SetDataMember("UnobtainableItemFilters", val);
@@ -1341,7 +1345,7 @@ local function createAccountFrame(parent)
 		if v[1]  == 4 then
 			local filter = createCheckBox(v[3], child, function(self)
 					local val = app.GetDataMember("UnobtainableItemFilters")
-					val[k]= not self:GetChecked()
+					val[k]= not GetChecked(self)
 					app.SetDataMember("UnobtainableItemFilters", val);
 					refreshUI();
 					app:RefreshData();
@@ -1513,7 +1517,7 @@ local function createMiniListFrame(parent)
 	addObject(elm,showFrame)
 	
 	local showComp = createCheckBox("Show Completed Groups", child, function(self)
-			app.SetCompletedGroups(self:GetChecked(), true);
+			app.SetCompletedGroups(GetChecked(self), true);
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("ShowCompletedGroups"));
@@ -1527,7 +1531,7 @@ local function createMiniListFrame(parent)
 	addObject(elm,showComp)
 	
 	local showCollected = createCheckBox("Show Collected Things", child, function(self)
-			app.SetCollectedThings(self:GetChecked(), true);
+			app.SetCollectedThings(GetChecked(self), true);
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("ShowCollectedItems"));
@@ -1541,8 +1545,8 @@ local function createMiniListFrame(parent)
 	addObject(elm,showCollected)
 	
 	local showIncomp = createCheckBox("Show Incomplete/Repeatable Quests", child, function(self)
-			app.SetDataMember("ShowIncompleteQuests", self:GetChecked());
-			if self:GetChecked() then
+			app.SetDataMember("ShowIncompleteQuests", GetChecked(self));
+			if GetChecked(self) then
 				app.ShowIncompleteQuests = app.FilterItemTrackable;
 			else
 				app.ShowIncompleteQuests = app.Filter;
@@ -1561,7 +1565,7 @@ local function createMiniListFrame(parent)
 	addObject(elm,showIncomp)
 
 	local achievementsAsCollectible = createCheckBox("Treat Achievements as Collectible", child, function(self)
-			app.SetDataMember("TreatAchievementsAsCollectible", self:GetChecked());
+			app.SetDataMember("TreatAchievementsAsCollectible", GetChecked(self));
 			app:RefreshData();
 		end, 
 		function(self) 
@@ -1576,7 +1580,7 @@ local function createMiniListFrame(parent)
 	addObject(elm,achievementsAsCollectible)
 
 	local showTreat = createCheckBox("Treat Quests as Collectible", child, function(self)
-			app.SetDataMember("TreatQuestsAsCollectible", self:GetChecked());
+			app.SetDataMember("TreatQuestsAsCollectible", GetChecked(self));
 			app:RefreshData();
 		end, 
 		function(self) 
@@ -1592,7 +1596,7 @@ local function createMiniListFrame(parent)
 	
 	-- Show Descriptions
 	local showDes = createCheckBox("Show Descriptions", child, function(self)
-			app.SetDataMember("ShowDescriptions", self:GetChecked());
+			app.SetDataMember("ShowDescriptions", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -1603,7 +1607,7 @@ local function createMiniListFrame(parent)
 	
 	-- Show Models
 	local showModels = createCheckBox("Show Models", child, function(self)
-			app.SetDataMember("ShowModels", self:GetChecked());
+			app.SetDataMember("ShowModels", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -1630,7 +1634,7 @@ local function createMiniListFrame(parent)
 	local x = 5
 	for i,filter in ipairs({ 113, 101, 59, 55, 999, 57, 50, 100, 104, 56, 200, 110, 102  }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
-			itemFilters[filter] = self:GetChecked() and true or false;
+			itemFilters[filter] = GetChecked(self) and true or false;
 			refreshUI();
 			app:RefreshData();
 		end, 
@@ -1672,7 +1676,7 @@ local function createMiniListFrame(parent)
 	addObject(elm,equipFrame)
 	
 	local allEquipment = createCheckBox("All Equipment", child, function(self)
-			if self:GetChecked() then
+			if GetChecked(self) then
 				-- set all equipment true
 				for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 51, 52, 53, 54 }) do
 					itemFilters[filter] = true;
@@ -1703,7 +1707,7 @@ local function createMiniListFrame(parent)
 	
 	local classDefaults = createCheckBox("Class Defaults", child, function(self)
 		local presets = app.Presets[app.Class]
-			if self:GetChecked() then
+			if GetChecked(self) then
 				-- set class items true
 				for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 51, 52, 53, 54 }) do
 					itemFilters[filter] = presets[filter]
@@ -1749,7 +1753,7 @@ local function createMiniListFrame(parent)
 	x = 5
 	for i,filter in ipairs({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 51, 52, 53 }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
-			itemFilters[filter] = self:GetChecked() and true or false;
+			itemFilters[filter] = GetChecked(self) and true or false;
 			refreshUI();
 			app:RefreshData();
 		end, 
@@ -1781,7 +1785,7 @@ local function createMiniListFrame(parent)
 	x = 5
 	for i,filter in ipairs({ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 54 }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
-			itemFilters[filter] = self:GetChecked() and true or false;
+			itemFilters[filter] = GetChecked(self) and true or false;
 			refreshUI();
 			app:RefreshData();
 		end, 
@@ -1817,7 +1821,7 @@ local function createTooltipFrame(parent)
 	
 	-- This creates the "Enable Tooltip Information" Checkbox --
 	local ttEnable = createCheckBox("|CFFADD8E6Enable Tooltip Information|r", child, function(self)
-			app.SetDataMember("EnableTooltipInformation", self:GetChecked());
+			app.SetDataMember("EnableTooltipInformation", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -1833,7 +1837,7 @@ local function createTooltipFrame(parent)
 	
 	-- This creates the "Display In Combat" Checkbox --
 	local ttCombat = createCheckBox("Display In Combat", child, function(self)
-			app.SetDataMember("DisplayTooltipsInCombat", self:GetChecked());
+			app.SetDataMember("DisplayTooltipsInCombat", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -1860,7 +1864,7 @@ local function createTooltipFrame(parent)
 	
 	-- This creates the "Show Collection Progress" Checkbox --
 	local colProg = createCheckBox("Show Collection Progress", child, function(self)
-			app.SetDataMember("ShowProgress", self:GetChecked());
+			app.SetDataMember("ShowProgress", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -1876,7 +1880,7 @@ local function createTooltipFrame(parent)
 	
 	-- This creates the "Display In Combat" Checkbox --
 	local ttCombat = createCheckBox("Summarize Contents", child, function(self)
-			app.SetDataMember("ShowContents", self:GetChecked());
+			app.SetDataMember("ShowContents", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -1903,7 +1907,7 @@ local function createTooltipFrame(parent)
 	
 	-- This creates the "Show Shared Appearances" Checkbox --
 	local sharedApp = createCheckBox("Show Shared Appearances", child, function(self)
-			app.SetDataMember("ShowSharedAppearances", self:GetChecked());
+			app.SetDataMember("ShowSharedAppearances", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -1919,7 +1923,7 @@ local function createTooltipFrame(parent)
 	
 	-- This creates the "Only Show Relevant" Checkbox --
 	local rel = createCheckBox("Only Show Relevant", child, function(self)
-			app.SetDataMember("OnlyShowRelevantSharedAppearances", self:GetChecked());
+			app.SetDataMember("OnlyShowRelevantSharedAppearances", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -1946,7 +1950,7 @@ local function createTooltipFrame(parent)
 	
 	-- This creates the "Show Database Locations" Checkbox --
 	local dataLoc = createCheckBox("Show Database Locations", child, function(self)
-			app.SetDataMember("ShowSources", self:GetChecked());
+			app.SetDataMember("ShowSources", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -1962,7 +1966,7 @@ local function createTooltipFrame(parent)
 	
 	-- This creates the "Show for Items" Checkbox --
 	local sourceTextOption = createCheckBox("Show for Items", child, function(self)
-			app.SetDataSubMember("SourceText", "itemID", self:GetChecked());
+			app.SetDataSubMember("SourceText", "itemID", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -1978,7 +1982,7 @@ local function createTooltipFrame(parent)
 	
 	-- This creates the "Show for Encounters" Checkbox --
 	local sourceTextOptionEncounters = createCheckBox("Show for Encounters", child, function(self)
-			app.SetDataSubMember("SourceText", "encounterID", self:GetChecked());
+			app.SetDataSubMember("SourceText", "encounterID", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -1994,7 +1998,7 @@ local function createTooltipFrame(parent)
 	
 	-- This creates the "Show for Creatures" Checkbox --
 	sourceTextOption = createCheckBox("Show for Creatures", child, function(self)
-			app.SetDataSubMember("SourceText", "creatureID", self:GetChecked());
+			app.SetDataSubMember("SourceText", "creatureID", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -2010,7 +2014,7 @@ local function createTooltipFrame(parent)
 	
 	-- This creates the "Show Completed Locations" Checkbox --
 	local compLoc = createCheckBox("Show Completed Locations", child, function(self)
-			app.SetDataMember("ShowCompleteSourceLocations", self:GetChecked());
+			app.SetDataMember("ShowCompleteSourceLocations", GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -2066,7 +2070,6 @@ local function createDebugFrame(parent)
 		["ShowEncounterID"] = "Show Encounter ID",
 		["ShowFactionID"] = "Show Faction ID",
 		["ShowFilterID"] = "Show Filter ID",
-		["ShowIllusionID"] = "Show Illusion ID",
 		["ShowInstanceID"] = "Show Instance ID",
 		["ShowItemID"] = "Show Item ID",
 		["ShowItemString"] = "Show Item String",
@@ -2082,9 +2085,9 @@ local function createDebugFrame(parent)
 		["ShowVisualID"] = "Show Visual ID",
 		}
 	local last;
-	for _,id in pairs ({"ShowAchievementID","ShowBonusID","ShowCreatureID","ShowCurrencyID","ShowDifficultyID","ShowEncounterID","ShowFactionID","ShowFilterID","ShowIllusionID","ShowInstanceID","ShowItemID","ShowItemString","ShowMapID","ShowModID","ShowObjectID","ShowQuestID","ShowSourceID","ShowSpeciesID","ShowSpellID","ShowTierID","ShowTitleID","ShowVisualID"}) do
+	for _,id in pairs ({"ShowAchievementID","ShowBonusID","ShowCreatureID","ShowCurrencyID","ShowDifficultyID","ShowEncounterID","ShowFactionID","ShowFilterID","ShowInstanceID","ShowItemID","ShowItemString","ShowMapID","ShowModID","ShowObjectID","ShowQuestID","ShowSourceID","ShowSpeciesID","ShowSpellID","ShowTierID","ShowTitleID","ShowVisualID"}) do
 		local filter = createCheckBox(ids[id], child, function(self)
-			app.SetDataMember(id, self:GetChecked());
+			app.SetDataMember(id, GetChecked(self));
 			wipe(app.searchCache);
 		end, 
 		function(self) 
@@ -2102,8 +2105,8 @@ local function createDebugFrame(parent)
 
 	-- This creates the "Show Uncollected Things" checkBox 
 	local uncollected = createCheckBox("Show Uncollected Things", child, function(self)
-			app.SetDataMember("ShowUncollectedThings", self:GetChecked());
-			if self:GetChecked() then
+			app.SetDataMember("ShowUncollectedThings", GetChecked(self));
+			if GetChecked(self) then
 				app.MissingItemVisibilityFilter = app.NoFilter;
 			else
 				app.MissingItemVisibilityFilter = app.Filter;
@@ -2123,7 +2126,7 @@ local function createDebugFrame(parent)
 	
 	-- This creates the "Show Coordinates in the Tooltip" checkBox 
 	local showCoordinatesInTooltip = createCheckBox("Show Coordinates In Tooltip", child, function(self)
-			app.SetDataMember("ShowCoordinatesInTooltip", self:GetChecked());
+			app.SetDataMember("ShowCoordinatesInTooltip", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("ShowCoordinatesInTooltip", false));
@@ -2138,7 +2141,7 @@ local function createDebugFrame(parent)
 	
 	-- This creates the "Show Creature List" checkBox 
 	local creatureLists = createCheckBox("Show Creature List", child, function(self)
-			app.SetDataMember("ShowCreatures", self:GetChecked());
+			app.SetDataMember("ShowCreatures", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("ShowCreatures"));
@@ -2153,7 +2156,7 @@ local function createDebugFrame(parent)
 	
 	-- This creates the "Show Quest Givers" checkBox 
 	local questGiverLists = createCheckBox("Show Quest Givers", child, function(self)
-			app.SetDataMember("ShowQuestGivers", self:GetChecked());
+			app.SetDataMember("ShowQuestGivers", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("ShowQuestGivers", true));
@@ -2168,7 +2171,7 @@ local function createDebugFrame(parent)
 	
 	-- This creates the "Show Class Requirements" checkBox 
 	local showClassRequirements = createCheckBox("Show Class Requirements", child, function(self)
-			app.SetDataMember("ShowClassRequirements", self:GetChecked());
+			app.SetDataMember("ShowClassRequirements", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("ShowClassRequirements", false));
@@ -2183,7 +2186,7 @@ local function createDebugFrame(parent)
 	
 	-- This creates the "Show Race Requirements" checkBox 
 	local showRaceRequirements = createCheckBox("Show Race Requirements", child, function(self)
-			app.SetDataMember("ShowRaceRequirements", self:GetChecked());
+			app.SetDataMember("ShowRaceRequirements", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("ShowRaceRequirements", false));
@@ -2198,7 +2201,7 @@ local function createDebugFrame(parent)
 	
 	-- This creates the "Report Completed Quests" checkBox 
 	local reportCompletedQuests = createCheckBox("Report Completed Quests", child, function(self)
-			app.SetDataMember("DebugCompletedQuests", self:GetChecked());
+			app.SetDataMember("DebugCompletedQuests", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("DebugCompletedQuests", false));
@@ -2213,7 +2216,7 @@ local function createDebugFrame(parent)
 	
 	-- This creates the "Only Report Unsorted Quests" checkBox 
 	local reportOnlyUnsortedQuests = createCheckBox("Only Report Unsorted Quests", child, function(self)
-			app.SetDataMember("OnlyReportUnsortedQuests", self:GetChecked());
+			app.SetDataMember("OnlyReportUnsortedQuests", GetChecked(self));
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("OnlyReportUnsortedQuests", false));
