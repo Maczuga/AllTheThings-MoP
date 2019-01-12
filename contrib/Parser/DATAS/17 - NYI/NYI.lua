@@ -273,6 +273,21 @@ _.NeverImplemented =
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
 			un(1, i(68844)),	-- Unknown
+			un(1, i(109265)),	-- Unknown
+			un(1, i(109270)),	-- Unknown
+			un(1, i(109280)),	-- Unknown
+			un(1, i(109313)),	-- Unknown
+			un(1, i(109314)),	-- Unknown
+			un(1, i(109315)),	-- Unknown
+			un(1, i(71570)),	-- Bracers of forked lightning
+			un(1, i(109316)),	-- Unknown
+			un(1, i(109317)),	-- Unknown
+			un(1, i(109318)),	-- Unknown
+			un(1, i(109350)),	-- Unknown
+			un(1, i(109351)),	-- Unknown
+			un(1, i(109352)),	-- Unknown
+			un(1, i(109353)),	-- Unknown
+			un(1, i(109354)),	-- Unknown
 			un(1, i(37433)),	-- Layered Scale Boots
 			un(1, i(37444)),	-- Wavekeeper's Helm
 			un(1, i(13090)),	-- Breastplate of the Chosen
@@ -416,6 +431,11 @@ _.NeverImplemented =
 			un(1, i(20525)), -- Earthen Sigil
 			un(1, i(38383)),	-- Unknown
 			un(1, i(38526)),	-- Unknown
+			un(1, i(157763)),	-- ENgine of Eradication
+			un(1, i(157764)),	-- Claw of the crystaline scropid
+			un(1, i(157765)),	-- draught of souls
+			un(1, i(157766)),	-- vial of nightmare fog
+			
 		}),
 	}),
 	n(-494, { -- Misc
@@ -688,6 +708,10 @@ _.NeverImplemented =
 		n(-346, { -- Crossbows
 			un(1, i(32187)),    -- Chancellor's Heavy Crossbow
 			un(1, i(108784)),    -- Unknown
+			un(1, i(111073)),	-- Unknown
+			un(1, i(165267)),	-- Unknown
+			un(1, i(165271)),	-- Unknown
+			un(1, i(115600)),	-- Unknown
 			un(1, i(103003)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(103375)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(102613)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)	
@@ -787,6 +811,7 @@ _.NeverImplemented =
 		}),
 		n(-339, { -- Two Handed Swords
 			un(1, i(33475)),	-- Artefact Frostmourne
+			un(1, i(49547)),	-- Unknown
 			un(1, i(108806)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(109373)),	-- 6.0 QA Combat Test Strength 2h Sword
 		}),

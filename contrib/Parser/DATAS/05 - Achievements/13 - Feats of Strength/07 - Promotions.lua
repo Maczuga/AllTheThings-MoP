@@ -10,7 +10,7 @@ _.Achievements =
 				["groups"] = {
 					un(16, ach(415)),		-- Big Blizzard Bear
 					un(6, ach(7842)),		-- Collector's Edition: Baneling
-					un(6, ach(8917)),		-- Collector's Edition: Dread Hatchling
+					un(6, ach(8915)),		-- Collector's Edition: Dread Hatchling
 					un(6, ach(7412)),		-- Collector's Edition: Fetish Shaman
 					un(6, ach(683)),		-- Collector's Edition: Frost Wyrm Whelp
 					un(6, ach(6849)),		-- Collector's Edition: Imperial Quilen
@@ -26,7 +26,6 @@ _.Achievements =
 					ach(8345, {				-- Hearthstoned
 						i(98618),				-- Hearthsteed
 					}),
-					ach(9926),				-- Hero of the Storm
 
 					un(16, ach(6185)),		-- Murkablo
 					un(16, ach(8793)),		-- Murkalot

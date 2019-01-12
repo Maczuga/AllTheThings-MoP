@@ -403,6 +403,38 @@ _.Achievements =
 						crit(22),		-- From Dusk 'til Dawn
 						crit(23),		-- A Complete Circuit
 					}),
+					ach(2957, {		-- Glory of the Ulduar Raider (10 player)
+						i(45802),		-- Reins of the Rusted Proto-Drake
+						crit(1),		-- Orbit-uary (10 player)
+						crit(2),		-- Stokin' the Furnace (10 player)
+						crit(3),		-- Iron Dwarf, Medium Rare (10 player)
+						crit(4),		-- Heartbreaker (10 player)
+						crit(5),		-- I Choose You, Steelbreaker (10 player)
+						crit(6),		-- Disarmed (10 player)
+						crit(7),		-- Crazy Cat Lady (10 player)
+						crit(8),		-- I Could Say That This Cache Was Rare (10 player)
+						crit(9),		-- Lose Your Illusion (10 player)
+						crit(10),		-- Knock, Knock, Knock on Wood (10 player)
+						crit(11),		-- Firefighter (10 player)
+						crit(12),		-- I Love the Smell of Saronite in the Morning (10 player)
+						crit(13),		-- One Light in the Darkness (10 player)
+					}),
+					ach(2958, {		-- Glory of the Ulduar Raider (25 player)
+						i(45801),		-- Reins of the Ironbound Proto-Drake
+						crit(1),		-- Orbit-uary (25 player)
+						crit(2),		-- Stokin' the Furnace (25 player)
+						crit(3),		-- Iron Dwarf, Medium Rare (25 player)
+						crit(4),		-- Heartbreaker (25 player)
+						crit(5),		-- I Choose You, Steelbreaker (25 player)
+						crit(6),		-- Disarmed (25 player)
+						crit(7),		-- Crazy Cat Lady (25 player)
+						crit(8),		-- I Could Say That This Cache Was Rare (25 player)
+						crit(9),		-- Lose Your Illusion (25 player)
+						crit(10),		-- Knock, Knock, Knock on Wood (25 player)
+						crit(11),		-- Firefighter (25 player)
+						crit(12),		-- I Love the Smell of Saronite in the Morning (25 player)
+						crit(13),		-- One Light in the Darkness (25 player)
+					}),
 					ach(4478, {		-- Looking For Multitudes
 						i(49912),		-- Perky Pug
 						ach(4477, { 	-- Looking For Many
@@ -494,19 +526,6 @@ _.Achievements =
 						crit(7),		-- Heroic: Scarlet Monastery
 						crit(8),		-- Heroic: Scholomance
 						crit(9),		-- Heroic: Siege of Niuzao Temple
-					}),
-					ach(9619, {		-- Savage Hero
-						title(300),		-- the Savage Hero
-						crit(1),		-- Gug'rokk (Bloodmaul Slag Mines)
-						crit(2),		-- Skulloc, Son of Gruul (Iron Docks)
-						crit(3),		-- Teron'gor (Auchindoun)
-						crit(4),		-- High Sage Viryx (Skyreach)
-						crit(5),		-- Yalnu (The Everbloom)
-						crit(6),		-- Skylord Tovra (Grimrail Depot)
-						crit(7),		-- Ner'zhul (Shadowmoon Burial Grounds)
-						crit(8),		-- Warlord Zaela (Upper Blackrock Spire)
-						crit(9),		-- Imperator Mar'gok (Highmaul)
-						crit(10),		-- Warlord Blackhand (Blackrock Foundry)
 					}),
 					ach(6926, {		-- Tranquil Master
 						title(203),		-- the Tranquil Master

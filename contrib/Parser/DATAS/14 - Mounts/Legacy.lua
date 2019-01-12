@@ -27,8 +27,6 @@ nld({	-- Legacy
 		un(2, ach(430, {	-- Amani War Bear
 		un(2, i(33809)),	-- Amani War Bear
 		})),
-		un(2, ach(9550, {	-- Boldly, You Sought the Power of Ragnaros
-		})),
 		{		-- Brawler's Burly Mushan Beast
 			["itemID"] = 98405,
 			["description"] = "If you completed rank 8 in Season 1 or 2 of the Brawler's Guild, you can purchase this mount from Quartermaster in Brawler's Guild.",

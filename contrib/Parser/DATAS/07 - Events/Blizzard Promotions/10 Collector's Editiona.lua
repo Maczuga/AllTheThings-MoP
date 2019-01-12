@@ -69,10 +69,10 @@ _.WorldEvents =
 						})),
 					}),
 					tier(6, {	-- Warlords of Draenor
-						un(6, ach(8917, {	-- Collector's Edition: Dread Hatchling
+						un(6, ach(8915, {	-- Collector's Edition: Dread Hatchling
 							un(6, i(109014)),	-- Dread Hatchling
 						})),
-						un(6, ach(8916, {	-- Collector's Edition: Dread Raven
+						un(6, ach(8913, {	-- Collector's Edition: Dread Raven
 							un(6, i(109013)),	-- Reins of the Dread Raven
 						})),
 					}),

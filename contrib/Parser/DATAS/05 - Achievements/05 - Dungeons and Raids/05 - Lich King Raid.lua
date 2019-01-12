@@ -14,14 +14,42 @@ _.Achievements =
 					{	-- A Poke in the Eye (25 player)
 						["achievementID"] = 1870,	-- A Poke in the Eye (25 player)
 					},
-					ach(12321),		-- A Quick Shave
+					{	-- A Quick Shave (10 player)
+						["achievementID"] = 2919,	-- A Quick Shave (10 player)
+					},
+					{	-- A Quick Shave (25 player)
+						["achievementID"] = 2921,	-- A Quick Shave (25 player)
+					},
 					ach(4580),		-- All You Can Eat (10 player)
 					ach(4620),		-- All You Can Eat (25 player)
-					ach(12388, {	-- Alone in the Darkness
-						ach(12387),		-- One Light in the Darkness
-						ach(12386),		-- Two Lights in the Darkness
-						ach(12385),		-- Three Lights in the Darkness
-					}),
+					{	-- Alone in the Darkness (10 player)
+						["achievementID"] = 3159,	-- Alone in the Darkness (10 player)
+						["g"] = {
+							{	-- One Light in the Darkness (10 player)
+								["achievementID"] = 3158,	-- One Light in the Darkness (10 player)
+							},
+							{	-- Two Lights in the Darkness (10 player)
+								["achievementID"] = 3141,	-- Two Lights in the Darkness (10 player)
+							},
+							{	-- Three Lights in the Darkness (10 player)
+								["achievementID"] = 3157,	-- Three Lights in the Darkness (10 player)
+							},
+						},
+					},
+					{	-- Alone in the Darkness (25 player)
+						["achievementID"] = 3164,	-- Alone in the Darkness (25 player)
+						["g"] = {
+							{	-- One Light in the Darkness (25 player)
+								["achievementID"] = 3163,	-- One Light in the Darkness (25 player)
+							},
+							{	-- Two Lights in the Darkness (25 player)
+								["achievementID"] = 3162,	-- Two Lights in the Darkness (25 player)
+							},
+							{	-- Three Lights in the Darkness (25 player)
+								["achievementID"] = 3161,	-- Three Lights in the Darkness (25 player)
+							},
+						},
+					},
 					ach(2176),		-- And They Would All Go Down Together (10 player)
 					ach(2177),		-- And They Would All Go Down Together (25 player)
 					ach(1858),		-- Arachnophobia (10 player)
@@ -42,7 +70,14 @@ _.Achievements =
 					},
 					ach(4534),		-- Boned (10 player)
 					ach(4610),		-- Boned (25 player)
-					ach(12335),		-- But I'm On Your Side
+					{	-- But I'm On Your Side (10 player)
+						["achievementID"] = 2945,	-- But I'm On Your Side (10 player)
+						["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
+					},
+					{	-- But I'm On Your Side (25 player)
+						["achievementID"] = 2946,	-- But I'm On Your Side (25 player)
+						["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
+					},
 					{	-- Call of the Grand Crusade (10 player)
 						["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
 						["g"] = {
@@ -143,44 +178,114 @@ _.Achievements =
 							},
 						},
 					},
-					ach(12336),		-- Can't Do That While Stunned
-					ach(12343),		-- Cheese the Freeze
-					ach(12361),		-- Con-speed-atory
-					ach(12341),		-- Crazy Cat Lady
+					{	-- Can't Do That While Stunned (10 player)
+						["achievementID"] = 2947,	-- Can't Do That While Stunned
+					},
+					{	-- Can't Do That While Stunned (25 player)
+						["achievementID"] = 2948,	-- Can't Do That While Stunned
+					},
+					{	-- Cheese the Freeze (10 player)
+						["achievementID"] = 2961,	-- Cheese the Freeze (10 player)
+					},
+					{	-- Cheese the Freeze (25 player)
+						["achievementID"] = 2962,	-- Cheese the Freeze (25 player)
+					},
+					{	-- Con-speed-atory (10 player)
+						["achievementID"] = 2980,	-- Con-speed-atory (10 player)
+					},
+					{	-- Con-speed-atory (25 player)
+						["achievementID"] = 2981,	-- Con-speed-atory (25 player)
+					},
+					{	-- Crazy Cat Lady (10 player)
+						["achievementID"] = 3006,	-- Crazy Cat Lady (10 player)
+					},
+					{	-- Crazy Cat Lady (25 player)
+						["achievementID"] = 3007,	-- Crazy Cat Lady (25 player)
+					},
 					ach(4538),		-- Dances with Oozes (10 player)
 					ach(4614),		-- Dances with Oozes (25 player)
-					ach(12362),		-- Deforestation
+					{	-- Deforestation (10 player)
+						["achievementID"] = 2985,	-- Deforestation (10 player)
+					},
+					{	-- Deforestation (25 player)
+						["achievementID"] = 2984,	-- Deforestation (25 player)
+					},
 					{	-- Denyin' the Scion (10 player)
 						["achievementID"] = 2148,	-- Denyin' the Scion (10 player)
 					},
 					{	-- Denyin' the Scion (25 player)
 						["achievementID"] = 2149,	-- Denyin' the Scion (25 player)
 					},
-					ach(12338),		-- Disarmed
-					ach(12348),		-- Don't Stand in the Lightning
-					ach(12395),		-- Drive Me Crazy
-					ach(12312),		-- Dwarfageddon
+					{	-- Disarmed (10 player)
+						["achievementID"] = 2953,	-- Disarmed (10 player)
+					},
+					{	--  Disarmed (25 player)
+						["achievementID"] = 2954,	-- Disarmed (25 player)
+					},
+					{	-- Don't Stand in the Lightning (10 player)
+						["achievementID"] = 2971,	-- Don't Stand in the Lightning (10 player)
+					},
+					{	-- Don't Stand in the Lightning (25 player)
+						["achievementID"] = 2972,	-- Don't Stand in the Lightning (25 player)
+					},
+					{	-- Drive Me Crazy (10 player)
+						["achievementID"] = 3008,	-- Drive Me Crazy (10 player)
+					},
+					{	-- Drive Me Crazy (25 player)
+						["achievementID"] = 3010,	-- Drive Me Crazy (25 player)
+					},
+					{	-- Dwarfageddon (10 player)
+						["achievementID"] = 3097,	-- Dwarfageddon (10 player)
+					},
+					{	-- Dwarfageddon (25 player)
+						["achievementID"] = 3098,	-- Dwarfageddon (10 player)
+					},
 					{	-- Earth, Wind & Fire (10 player)
 						["achievementID"] = 4016,	-- Earth, Wind & Fire (10 player)
 					},
 					{	-- Earth, Wind & Fire (25 player)
 						["achievementID"] = 4017,	-- Earth, Wind & Fire (25 player)
 					},
-					ach(12369),		-- Firefighter
+					{	-- Firefighter (10 player)
+						["achievementID"] = 3180,	-- Firefighter (10 player)
+					},
+					{	-- Firefighter (25 player)
+						["achievementID"] = 3189,	-- Firefighter (25 player)
+					},
 					ach(4577),		-- Flu Shot Shortage (10 player)
 					ach(4615),		-- Flu Shot Shortage (25 player)
 					ach(4535),		-- Full House (10 player)
 					ach(4611),		-- Full House (25 player)
-					ach(12363),		-- Getting Back to Nature
-					ach(12345),		-- Getting Cold in Here
+					{	-- Getting Back to Nature (10 player)
+						["achievementID"] = 2982,	-- Getting Back to Nature (10 player)
+					},
+					{	-- Getting Back to Nature (25 player)
+						["achievementID"] = 2983,	-- Getting Back to Nature (25 player)
+					},
+					{	-- Getting Cold in Here (10 player)
+						["achievementID"] = 2967,	-- Getting Cold in Here (10 player)
+					},
+					{	-- Getting Cold in Here (25 player)
+						["achievementID"] = 2968,	-- Getting Cold in Here (25 player)
+					},
 					{	-- Gonna Go When the Volcano Blows (10 player)
 						["achievementID"] = 2047,	-- Gonna Go When the Volcano Blows (10 player)
 					},
 					{	-- Gonna Go When the Volcano Blows (25 player)
 						["achievementID"] = 2048,	-- Gonna Go When the Volcano Blows (25 player)
 					},
-					ach(12396),		-- He's Not Getting Any Older
-					ach(12330),		-- Heartbreaker
+					{	-- He's Not Getting Any Older (10 player)
+						["achievementID"] = 3012,	-- He's Not Getting Any Older (10 player)
+					},
+					{	-- He's Not Getting Any Older (25 player)
+						["achievementID"] = 3013,	-- He's Not Getting Any Older (25 player)
+					},
+					{	-- Heartbreaker (10 player)
+						["achievementID"] = 3058,	-- Heartbreaker (10 player)
+					},
+					{	-- Heartbreaker (25 player)
+						["achievementID"] = 3059,	-- Heartbreaker (25 player)
+					},
 					ach(4636, {		-- Heroic: Fall of the Lich King (10 player)
 						crit(1),		-- Heroic: Storming the Citadel (10 player)
 						crit(2),		-- Heroic: The Plagueworks (10 player)
@@ -301,38 +406,160 @@ _.Achievements =
 							},
 						},
 					},
-					ach(12324),		-- Hot Pocket
-					ach(12332),		-- I Choose You, Runemaster Molgeim
-					ach(12334),		-- I Choose You, Steelbreaker
-					ach(12333),		-- I Choose You, Stormcaller Brundir
-					ach(12347),		-- I Could Say That This Cache Was Rare
-					ach(12344),		-- I Have the Coolest Friends
-					ach(12373),		-- I Love the Smell of Saronite in the Morning
-					ach(12349, {	-- I'll Take You All On
-						crit(1),		-- Defeat Thorim
-						crit(2),		-- Participate in slaying Runic Colossus
-						crit(3),		-- Participate in slaying Ancient Rune Giant
-					}),
+					{	-- Hot Pocket (10 player)
+						["achievementID"] = 2927,	-- Hot Pocket (10 player)
+					},
+					{	-- Hot Pocket (25 player)
+						["achievementID"] = 2928,	-- Hot Pocket (25 player)
+					},
+					{	-- I Choose You, Runemaster Molgeim (10 player)
+						["achievementID"] = 2939,	-- I Choose You, Runemaster Molgeim (10 player)
+					},
+					{	-- I Choose You, Runemaster Molgeim (25 player)
+						["achievementID"] = 2942,	-- I Choose You, Runemaster Molgeim (25 player)
+					},
+					{	-- I Choose You, Steelbreaker (10 player)
+						["achievementID"] = 2941,	-- I Choose You, Steelbreaker (10 player)
+					},
+					{	-- I Choose You, Steelbreaker (25 player)
+						["achievementID"] = 2944,	-- I Choose You, Steelbreaker (25 player)
+					},
+					{	-- I Choose You, Stormcaller Brundir (10 player)
+						["achievementID"] = 2940,	-- I Choose You, Stormcaller Brundir (10 player)
+					},
+					{	-- I Choose You, Stormcaller Brundir (25 player)
+						["achievementID"] = 2943,	-- I Choose You, Stormcaller Brundir (25 player)
+					},
+					{	-- I Could Say That This Cache Was Rare (10 player)
+						["achievementID"] = 3182,	-- I Could Say That This Cache Was Rare (10 player)
+					},
+					{	-- I Could Say That This Cache Was Rare (25 player)
+						["achievementID"] = 3184,	-- I Could Say That This Cache Was Rare (25 player)
+					},
+					{	-- I Have the Coolest Friends (10 player)
+						["achievementID"] = 2963,	-- I Have the Coolest Friends (10 player)
+					},
+					{	-- I Have the Coolest Friends (25 player)
+						["achievementID"] = 2965,	-- I Have the Coolest Friends (25 player)
+					},
+					{	-- I Love the Smell of Saronite in the Morning (10 player)
+						["achievementID"] = 3181,	-- I Love the Smell of Saronite in the Morning (10 player)
+					},
+					{	-- I Love the Smell of Saronite in the Morning (25 player)
+						["achievementID"] = 3188,	-- I Love the Smell of Saronite in the Morning (25 player)
+					},
+					{	-- I'll Take You All On (10 player)
+						["achievementID"] = 2973,	-- I'll Take You All On (10 player)
+						["g"] = {
+							{	-- Defeat Thorim
+								["criteriaID"] = 1,	-- Defeat Thorim
+							},
+							{	-- Participate in slaying Runic Colossus
+								["criteriaID"] = 2,	-- Participate in slaying Runic Colossus
+							},
+							{	-- Participate in slaying Ancient Rune Giant
+								["criteriaID"] = 3,	-- Participate in slaying Ancient Rune Giant
+							},
+						},
+					},
+					{	-- I'll Take You All On (25 player)
+						["achievementID"] = 2974,	-- I'll Take You All On (25 player)
+						["g"] = {
+							{	-- Defeat Thorim
+								["criteriaID"] = 1,	-- Defeat Thorim
+							},
+							{	-- Participate in slaying Runic Colossus
+								["criteriaID"] = 2,	-- Participate in slaying Runic Colossus
+							},
+							{	-- Participate in slaying Ancient Rune Giant
+								["criteriaID"] = 3,	-- Participate in slaying Ancient Rune Giant
+							},
+						},
+					},
 					ach(4536),		-- I'm on a Boat (10 player)
 					ach(4612),		-- I'm on a Boat (25 player)
 					ach(4537),		-- I've Gone and Made a Mess (10 player)
 					ach(4613),		-- I've Gone and Made a Mess (25 player)
-					ach(12339),		-- If Looks Could Kill
-					ach(12398, {	-- In His House He Waits Dreaming
-						crit(1),		-- The Assassination of King Llane
-						crit(2),		-- The Forging of the Demon Soul
-						crit(3),		-- The Tortured Champion
-					}),
-					ach(12322),		-- Iron Dwarf, Medium Rare
+					{	-- If Looks Could Kill (10 player)
+						["achievementID"] = 2955,	-- If Looks Could Kill (10 player)
+					},
+					{	-- If Looks Could Kill (25 player)
+						["achievementID"] = 2956,	-- If Looks Could Kill (25 player)
+					},
+					{	-- In His House He Waits Dreaming (10 player)
+						["achievementID"] = 3015,	-- In His House He Waits Dreaming (10 player)
+						["g"] = {
+							{	-- The Assassination of King Llane
+								["achievementID"] = 3015,	-- In His House He Waits Dreaming (10 player)
+								["criteriaID"] = 1,	-- The Assassination of King Llane
+							},
+							{	-- The Forging of the Demon Soul
+								["achievementID"] = 3015,	-- In His House He Waits Dreaming (10 player)
+								["criteriaID"] = 2,	-- The Forging of the Demon Soul
+							},
+							{	-- The Tortured Champion
+								["achievementID"] = 3015,	-- In His House He Waits Dreaming (10 player)
+								["criteriaID"] = 3,	-- The Tortured Champion
+							},
+						},
+					},
+					{	-- In His House He Waits Dreaming (25 player)
+						["achievementID"] = 3016,	-- In His House He Waits Dreaming (25 player)
+						["g"] = {
+							{	-- The Assassination of King Llane
+								["achievementID"] = 3016,	-- In His House He Waits Dreaming (25 player)
+								["criteriaID"] = 1,	-- The Assassination of King Llane
+							},
+							{	-- The Forging of the Demon Soul
+								["achievementID"] = 3016,	-- In His House He Waits Dreaming (25 player)
+								["criteriaID"] = 2,	-- The Forging of the Demon Soul
+							},
+							{	-- The Tortured Champion
+								["achievementID"] = 3016,	-- In His House He Waits Dreaming (25 player)
+								["criteriaID"] = 3,	-- The Tortured Champion
+							},
+						},
+					},
+					{	-- Iron Dwarf, Medium Rare (10 player)
+						["achievementID"] = 2923,	-- Iron Dwarf, Medium Rare (10 player)
+					},
+					{	-- Iron Dwarf, Medium Rare (25 player)
+						["achievementID"] = 2924,	-- Iron Dwarf, Medium Rare (25 player)
+					},
 					ach(2184),		-- Just Can't Get Enough (10 player)
 					ach(2185),		-- Just Can't Get Enough (25 player)
 					ach(574),		-- Kel'Thuzad's Defeat (10 player)
 					ach(575),		-- Kel'Thuzad's Defeat (25 player)
-					ach(12384),		-- Kiss and Make Up
-					ach(12366, {	-- Knock, Knock, Knock on Wood
-						ach(12365),		-- Knock, Knock on Wood
-						ach(12364),		-- Knock on Wood
-					}),
+					{	-- Kiss and Make Up (10 player)
+						["achievementID"] = 3009,	-- Kiss and Make Up (10 player)
+						["description"] = "During phase 2 Sara is flying above Yogg-Saron, /kiss her while she's angry.",
+					},
+					{	-- Kiss and Make Up (25 player)
+						["achievementID"] = 3011,	-- Kiss and Make Up (25 player)
+						["description"] = "During phase 2 Sara is flying above Yogg-Saron, /kiss her while she's angry.",
+					},
+					{	-- Knock, Knock, Knock on Wood (10 player)
+						["achievementID"] = 3179,	-- Knock, Knock, Knock on Wood (10 player)
+						["g"] = {
+							{	-- Knock, Knock on Wood (10 player)
+								["achievementID"] = 3178,	-- Knock, Knock on Wood (10 player)
+							},
+							{	-- Knock on Wood (10 player)
+								["achievementID"] = 3177,	-- Knock on Wood (10 player)
+							},
+						},
+					},
+					{	-- Knock, Knock, Knock on Wood (25 player)
+						["achievementID"] = 3187,	-- Knock, Knock, Knock on Wood (25 player)
+						["g"] = {
+							{	-- Knock, Knock on Wood (25 player)
+								["achievementID"] = 3186,	-- Knock, Knock on Wood (25 player)
+							},
+							{	-- Knock on Wood (25 player)
+								["achievementID"] = 3185,	-- Knock on Wood (25 player)
+							},
+						},
+					},
 					{	-- Less Is More (10 player)
 						["achievementID"] = 624,	-- Less Is More (10 player)
 						["g"] = {
@@ -381,8 +608,20 @@ _.Achievements =
 						crit(3),		-- Shadron
 						crit(4),		-- Sartharion
 					}),
-					ach(12352),		-- Lose Your Illusion
-					ach(12360),		-- Lumberjacked
+					{	-- Lose Your Illusion (10 player)
+						["achievementID"] = 3176,	-- Lose Your Illusion (10 player)
+					},
+					{	-- Lose Your Illusion (25 player)
+						["achievementID"] = 3183,	-- Lose Your Illusion (25 player)
+					},
+					{	-- Lumberjacked (10 player)
+						["achievementID"] = 2979,	-- Lumberjacked (10 player)
+						["description"] = "Must be killed before killing Freya or they will despawn.",
+					},
+					{	-- Lumberjacked (25 player)
+						["achievementID"] = 3118,	-- Lumberjacked (25 player)
+						["description"] = "Must be killed before killing Freya or they will despawn.",
+					},
 					ach(1856),		-- Make Quick Werk of Him (10 player)
 					ach(1857),		-- Make Quick Werk of Him (25 player)
 					{	-- Many Whelps! Handle It! (10 player)
@@ -399,26 +638,68 @@ _.Achievements =
 					{	-- More Dots! (25 player)
 						["achievementID"] = 4405,	-- More Dots! (25 player)
 					},
-					ach(12329),		-- Must Deconstruct Faster
+					{	-- Must Deconstruct Faster (10 player)
+						["achievementID"] = 2937,	-- Must Deconstruct Faster (10 player)
+					},
+					{	-- Must Deconstruct Faster (25 player)
+						["achievementID"] = 2938,	-- Must Deconstruct Faster (25 player)
+					},
 					ach(4578),		-- Nausea, Heartburn, Indigestion... (10 player)
 					ach(4616),		-- Nausea, Heartburn, Indigestion... (25 player)
 					ach(4581),		-- Neck-Deep in Vile (10 player)
 					ach(4622),		-- Neck-Deep in Vile (25 player)
-					ach(12326),		-- Nerf Engineering
-					ach(12328),		-- Nerf Gravity Bombs
-					ach(12327),		-- Nerf Scrapbots
-					ach(12342),		-- Nine Lives
+					{	-- Nerf Engineering (10 player)
+						["achievementID"] = 2931,	-- Nerf Engineering (10 player)
+					},
+					{	-- Nerf Engineering (25 player)
+						["achievementID"] = 2932,	-- Nerf Engineering (25 player)
+					},
+					{	-- Nerf Gravity Bombs (10 player)
+						["achievementID"] = 2934,	-- Nerf Gravity Bombs (10 player)
+					},
+					{	-- Nerf Gravity Bombs (25 player)
+						["achievementID"] = 2936,	-- Nerf Gravity Bombs (25 player)
+					},
+					{	-- Nerf Scrapbots (10 player)
+						["achievementID"] = 2933,	-- Nerf Scrapbots (10 player)
+					},
+					{	-- Nerf Scrapbots (25 player)
+						["achievementID"] = 2935,	-- Nerf Scrapbots (25 player)
+					},
+					{	-- Nine Lives (10 player)
+						["achievementID"] = 3076,	-- Nine Lives (10 player)
+					},
+					{	-- Nine Lives (25 player)
+						["achievementID"] = 3077,	-- Nine Lives (25 player)
+					},
 					{	-- Not One, But Two Jormungars (10 player)
 						["achievementID"] = 3936,	-- Not One, But Two Jormungars (10 player)
 					},
 					{	-- Not One, But Two Jormungars (25 player)
 						["achievementID"] = 3937,	-- Not One, But Two Jormungars (25 player)
 					},
-					ach(12368),		-- Not-So-Friendly Fire
-					ach(12399, {	-- Observed
-						title(129),		-- Starcaller
-						title(130),		-- the Astral Walker
-					}),
+					{	-- Not-So-Friendly Fire (10 player)
+						["achievementID"] = 3138,	-- Not-So-Friendly Fire (10 player)
+					},
+					{	-- Not-So-Friendly Fire (25 player)
+						["achievementID"] = 2995,	-- Not-So-Friendly Fire (25 player)
+					},
+					{	-- Observed (10 player)
+						["achievementID"] = 3036,	-- Observed (10 player)
+						["g"] = {
+							{	-- Starcaller
+								["titleID"] = 129,	-- Starcaller
+							},
+						},
+					},
+					{	-- Observed (25 player)
+						["achievementID"] = 3037,	-- Observed (25 player)
+						["g"] = {
+							{	-- the Astral Walker
+								["titleID"] = 130,	-- the Astral Walker
+							},
+						},
+					},
 					ach(4539, {		-- Once Bitten, Twice Shy (10 player)
 						crit(1),		-- Defeat Blood-Queen Lana'thel without becoming a vampire
 						crit(2),		-- Defeat Blood-Queen Lana'thel while a vampire
@@ -433,17 +714,45 @@ _.Achievements =
 					{	-- Onyxia's Lair (25 player)
 						["achievementID"] = 4397,	-- Onyxia's Lair (25 player)
 					},
-					ach(12320, {	-- Orbit-uary
-						ach(12319),		-- Nuked from Orbit
-						ach(12318),		-- Orbital Devastation
-						ach(12317),		-- Orbital Bombardment
-					}),
+					{	-- Orbit-uary (10 player)
+						["achievementID"] = 3056,	-- Orbit-uary (10 player)
+						["g"] = {
+							{	-- Nuked from Orbit (10 player)
+								["achievementID"] = 2915,	-- Nuked from Orbit (10 player)
+							},
+							{	-- Orbital Devastation (10 player)
+								["achievementID"] = 2914,	-- Orbital Devastation (10 player)
+							},
+							{	-- Orbital Bombardment (10 player)
+								["achievementID"] = 2913,	-- Orbital Bombardment (10 player)
+							},
+						},
+					},
+					{	-- Orbit-uary (25 player)
+						["achievementID"] = 3057,	-- Orbit-uary (25 player)
+						["g"] = {
+							{	-- Nuked from Orbit (25 player)
+								["achievementID"] = 2917,	-- Nuked from Orbit (25 player)
+							},
+							{	-- Orbital Devastation (25 player)
+								["achievementID"] = 2916,	-- Orbital Devastation (25 player)
+							},
+							{	-- Orbital Bombardment (25 player)
+								["achievementID"] = 2918,	-- Orbital Bombardment (25 player)
+							},
+						},
+					},
 					ach(4579),		-- Portal Jockey (10 player)
 					ach(4619),		-- Portal Jockey (25 player)
 					{	-- Resilience Will Fix It (10 player)
 						["achievementID"] = 3798,	-- Resilience Will Fix It (10 player)
 					},
-					ach(12340),		-- Rubble and Roll
+					{	-- Rubble and Roll (10 player)
+						["achievementID"] = 2959,	-- Rubble and Roll (10 player)
+					},
+					{	-- Rubble and Roll (25 player)
+						["achievementID"] = 2960,	-- Rubble and Roll (25 player)
+					},
 					{	-- Salt and Pepper (10 player)
 						["achievementID"] = 3799,	-- Salt and Pepper (10 player)
 					},
@@ -452,13 +761,52 @@ _.Achievements =
 					},
 					ach(572),		-- Sapphiron's Demise (10 player)
 					ach(573),		-- Sapphiron's Demise (25 player)
-					ach(12367, {	-- Set Up Us the Bomb
-						crit(1),		-- A Proximity Mine
-						crit(2),		-- A Rocket Strike
-						crit(3),		-- A Bomb Bot
-					}),
-					ach(12372),		-- Shadowdodger
-					ach(12323),		-- Shattered
+					{	-- Set Up Us the Bomb (10 player)
+						["achievementID"] = 2989,	-- Set Up Us the Bomb (10 player)
+						["g"] = {
+							{	-- A Proximity Mine
+								["achievementID"] = 2989,	-- Set Up Us the Bomb (10 player)
+								["criteriaID"] = 1,		-- A Proximity Mine
+							},
+							{	-- A Rocket Strike
+								["achievementID"] = 2989,	-- Set Up Us the Bomb (10 player)
+								["criteriaID"] = 2,		-- A Rocket Strike
+							},
+							{	-- A Bomb Bot
+								["achievementID"] = 2989,	-- Set Up Us the Bomb (10 player)
+								["criteriaID"] = 3,		-- A Bomb Bot
+							},
+						},
+					},
+					{	-- Set Up Us the Bomb (25 player)
+						["achievementID"] = 3237,	-- Set Up Us the Bomb (25 player)
+						["g"] = {
+							{	-- A Proximity Mine
+								["achievementID"] = 3237,	-- Set Up Us the Bomb (25 player)
+								["criteriaID"] = 1,		-- A Proximity Mine
+							},
+							{	-- A Rocket Strike
+								["achievementID"] = 3237,	-- Set Up Us the Bomb (25 player)
+								["criteriaID"] = 2,		-- A Rocket Strike
+							},
+							{	-- A Bomb Bot
+								["achievementID"] = 3237,	-- Set Up Us the Bomb (25 player)
+								["criteriaID"] = 3,		-- A Bomb Bot
+							},
+						},
+					},
+					{	-- Shadowdodger (10 player)
+						["achievementID"] = 2996,	-- Shadowdodger (10 player)
+					},
+					{	-- Shadowdodger (25 player)
+						["achievementID"] = 2997,	-- Shadowdodger (25 player)
+					},
+					{	-- Shattered (10 player)
+						["achievementID"] = 2925,	-- Shattered (10 player)
+					},
+					{	-- Shattered (25 player)
+						["achievementID"] = 2926,	-- Shattered (25 player)
+					},
 					{	-- She Deep Breaths More (10 player)
 						["achievementID"] = 4404,	-- She Deep Breaths More (10 player)
 					},
@@ -467,24 +815,100 @@ _.Achievements =
 					},
 					ach(2178),		-- Shocking! (10 player)
 					ach(2179),		-- Shocking! (25 player)
-					ach(12316),		-- Shutout
-					ach(12351),		-- Siffed
+					{	-- Shutout (10 player)
+						["achievementID"] = 2911,	-- Shutout (10 player)
+					},
+					{	-- Shutout (25 player)
+						["achievementID"] = 2912,	-- Shutout (25 player)
+					},
+					{	-- Siffed (10 player)
+						["achievementID"] = 2977,	-- Siffed (10 player)
+					},
+					{	-- Siffed (25 player)
+						["achievementID"] = 2978,	-- Siffed (25 player)
+					},
 					ach(2182),		-- Spore Loser (10 player)
 					ach(2183),		-- Spore Loser (25 player)
-					ach(12346),		-- Staying Buffed All Winter
-					ach(12325),		-- Stokin' the Furnace
+					{	-- Staying Buffed All Winter (10 player)
+						["achievementID"] = 2969,	-- Staying Buffed All Winter (10 player)
+					},
+					{	-- Staying Buffed All Winter (25 player)
+						["achievementID"] = 2970,	-- Staying Buffed All Winter (25 player)
+					},
+					{	-- Stokin' the Furnace (10 player)
+						["achievementID"] = 2930,	-- Stokin' the Furnace (10 player)
+					},
+					{	-- Stokin' the Furnace (25 player)
+						["achievementID"] = 2929,	-- Stokin' the Furnace (25 player)
+					},
 					ach(2180),		-- Subtraction (10 player)
 					ach(2181),		-- Subtraction (25 player)
-					ach(12400, {	-- Supermassive
-						crit(1),		-- Close 3 Black Holes within 10 seconds
-						crit(2),		-- Defeat Algalon the Observer
-					}),
-					ach(12315),		-- Take Out Those Turret
-					ach(12302, {	-- The Antechamber of Ulduar
-						crit(1),		-- Assembly of Iron
-						crit(2),		-- Kologarn
-						crit(3),		-- Auriaya
-					}),
+					{	-- Supermassive (10 player)
+						["achievementID"] = 3003,	-- Supermassive (10 player)
+						["g"] = {
+							{	-- Close 3 Black Holes within 10 seconds
+								["achievementID"] = 3003,	-- Supermassive (10 player)
+								["criteriaID"] = 1,		-- Close 3 Black Holes within 10 seconds
+							},
+							{	-- Defeat Algalon the Observer
+								["achievementID"] = 3003,	-- Supermassive (10 player)
+								["criteriaID"] = 2,		-- Defeat Algalon the Observer
+							},
+						},
+					},
+					{	-- Supermassive (25 player)
+						["achievementID"] = 3002,	-- Supermassive (25 player)
+						["g"] = {
+							{	-- Close 3 Black Holes within 10 seconds
+								["achievementID"] = 3002,	-- Supermassive (25 player)
+								["criteriaID"] = 1,		-- Close 3 Black Holes within 10 seconds
+							},
+							{	-- Defeat Algalon the Observer
+								["achievementID"] = 3002,	-- Supermassive (25 player)
+								["criteriaID"] = 2,		-- Defeat Algalon the Observer
+							},
+						},
+					},
+					{	-- Take Out Those Turret (10 player)
+						["achievementID"] = 2909,	-- Take Out Those Turret (10 player)
+					},
+					{	-- Take Out Those Turret (25 player)
+						["achievementID"] = 2910,	-- Take Out Those Turret (25 player)
+					},
+					{	-- The Antechamber of Ulduar (10 player)
+						["achievementID"] = 2888,	-- The Antechamber of Ulduar (10 player)
+						["g"] = {
+							{	-- The Antechamber of Ulduar (10 player): Assembly of Iron
+								["achievementID"] = 2888,	-- The Antechamber of Ulduar (10 player)
+								["criteriaID"] = 1,		-- Assembly of Iron
+							},
+							{	-- The Antechamber of Ulduar (10 player): Auriaya
+								["achievementID"] = 2888,	-- The Antechamber of Ulduar (10 player)
+								["criteriaID"] = 3,		-- Auriaya
+							},
+							{	-- The Antechamber of Ulduar (10 player): Kologarn
+								["achievementID"] = 2888,	-- The Antechamber of Ulduar (10 player)
+								["criteriaID"] = 2,		-- Kologarn
+							},
+						},
+					},
+					{	-- The Antechamber of Ulduar (25 player)
+						["achievementID"] = 2889,	-- The Antechamber of Ulduar (25 player)
+						["g"] = {
+							{	-- The Antechamber of Ulduar (25 player): Assembly of Iron
+								["achievementID"] = 2889,	-- The Antechamber of Ulduar (25 player)
+								["criteriaID"] = 1,		-- Assembly of Iron
+							},
+							{	-- The Antechamber of Ulduar (25 player): Auriaya
+								["achievementID"] = 2889,	-- The Antechamber of Ulduar (25 player)
+								["criteriaID"] = 3,		-- Auriaya
+							},
+							{	-- The Antechamber of Ulduar (25 player): Kologarn
+								["achievementID"] = 2889,	-- The Antechamber of Ulduar (25 player)
+								["criteriaID"] = 2,		-- Kologarn
+							},
+						},
+					},
 					ach(562, {		-- The Arachnid Quarter (10 player)
 						crit(1),		-- Anub'Rekhan
 						crit(2),		-- Grand Widow Faerlina
@@ -629,10 +1053,32 @@ _.Achievements =
 							},
 						},
 					},
-					ach(12310, {	-- The Descent into Madness
-						crit(1),		-- General Vezax
-						crit(2),		-- Yogg-Saron
-					}),
+					{	-- The Descent into Madness (10 player)
+						["achievementID"] = 2892,	-- The Descent into Madness (10 player)
+						["g"] = {
+							{	-- The Descent into Madness (10 player): General Vezax
+								["achievementID"] = 2892,	-- The Descent into Madness (10 player)
+								["criteriaID"] = 1,		-- General Vezax
+							},
+							{	-- The Descent into Madness (10 player): Yogg-Saron
+								["achievementID"] = 2892,	-- The Descent into Madness (10 player)
+								["criteriaID"] = 2,		-- Yogg-Saron
+							},
+						},
+					},
+					{	-- The Descent into Madness (25 player)
+						["achievementID"] = 2893,	-- The Descent into Madness (25 player)
+						["g"] = {
+							{	-- The Descent into Madness (25 player): General Vezax
+								["achievementID"] = 2893,	-- The Descent into Madness (25 player)
+								["criteriaID"] = 1,		-- General Vezax
+							},
+							{	-- The Descent into Madness (25 player): Yogg-Saron
+								["achievementID"] = 2893,	-- The Descent into Madness (25 player)
+								["criteriaID"] = 2,		-- Yogg-Saron
+							},
+						},
+					},
 					{	-- The Fall of Naxxramas (10 player)
 						["achievementID"] = 576,	-- The Fall of Naxxramas (10 player)
 						["g"] = {
@@ -693,12 +1139,48 @@ _.Achievements =
 					},
 					ach(2146),		-- The Hundred Club (10 player)
 					ach(2147),		-- The Hundred Club (25 player)
-					ach(12309, {	-- The Keepers of Ulduar
-						crit(1),		-- Hodir
-						crit(2),		-- Thorim
-						crit(3),		-- Freya
-						crit(4),		-- Mimiron
-					}),
+					{	-- The Keepers of Ulduar (10 player)
+						["achievementID"] = 2890,	-- The Keepers of Ulduar (10 player)
+						["g"] = {
+							{	-- The Keepers of Ulduar (10 player): Freya
+								["achievementID"] = 2890,	-- The Keepers of Ulduar (10 player)
+								["criteriaID"] = 3,		-- Freya
+							},
+							{	-- The Keepers of Ulduar (10 player): Hodir
+								["achievementID"] = 2890,	-- The Keepers of Ulduar (10 player)
+								["criteriaID"] = 1,		-- Hodir
+							},
+							{	-- The Keepers of Ulduar (10 player): Mimiron
+								["achievementID"] = 2890,	-- The Keepers of Ulduar (10 player)
+								["criteriaID"] = 4,		-- Mimiron
+							},
+							{	-- The Keepers of Ulduar (10 player): Thorim
+								["achievementID"] = 2890,	-- The Keepers of Ulduar (10 player)
+								["criteriaID"] = 2,		-- Thorim
+							},
+						},
+					},
+					{	-- The Keepers of Ulduar (25 player)
+						["achievementID"] = 2891,	-- The Keepers of Ulduar (25 player)
+						["g"] = {
+							{	-- The Keepers of Ulduar (25 player): Freya
+								["achievementID"] = 2891,	-- The Keepers of Ulduar (25 player)
+								["criteriaID"] = 3,		-- Freya
+							},
+							{	-- The Keepers of Ulduar (25 player): Hodir
+								["achievementID"] = 2891,	-- The Keepers of Ulduar (25 player)
+								["criteriaID"] = 1,		-- Hodir
+							},
+							{	-- The Keepers of Ulduar (25 player): Mimiron
+								["achievementID"] = 2891,	-- The Keepers of Ulduar (25 player)
+								["criteriaID"] = 4,		-- Mimiron
+							},
+							{	-- The Keepers of Ulduar (25 player): Thorim
+								["achievementID"] = 2891,	-- The Keepers of Ulduar (25 player)
+								["criteriaID"] = 2,		-- Thorim
+							},
+						},
+					},
 					ach(4584, {		-- The Light of Dawn
 						title(138),		-- the Light of Dawn)
 						ach(4597, {		-- The Frozen Throne (25 player)
@@ -729,18 +1211,60 @@ _.Achievements =
 					}),
 					ach(1996),		-- The Safety Dance (10 player)
 					ach(2139),		-- The Safety Dance (25 player)
-					ach(12311, {	-- The Secrets of Ulduar
-						crit(1),		-- The Siege of Ulduar
-						crit(2),		-- The Antechamber of Ulduar
-						crit(3),		-- The Keepers of Ulduar
-						crit(4),		-- The Descent into Madness
+					ach(2894, {	-- The Secrets of Ulduar (10 player)
+						crit(1),		-- The Siege of Ulduar (10 player)
+						crit(2),		-- The Antechamber of Ulduar (10 player)
+						crit(3),		-- The Keepers of Ulduar (10 player)
+						crit(4),		-- The Descent into Madness (10 player)
 					}),
-					ach(12297, {	-- The Siege of Ulduar
-						crit(1),		-- Flame Leviathan
-						crit(2),		-- Razorscale
-						crit(3),		-- Ignis the Furnace Master
-						crit(4),		-- XT-002 Deconstructor
+					ach(2895, {	-- The Secrets of Ulduar (25 player)
+						crit(1),		-- The Siege of Ulduar (25 player)
+						crit(2),		-- The Antechamber of Ulduar (25 player)
+						crit(3),		-- The Keepers of Ulduar (25 player)
+						crit(4),		-- The Descent into Madness (25 player)
 					}),
+					{	-- The Siege of Ulduar (10 player)
+						["achievementID"] = 2886,	-- The Siege of Ulduar (10 player)
+						["g"] = {
+							{	-- The Siege of Ulduar (10 player): Flame Leviathan
+								["achievementID"] = 2886,	-- The Siege of Ulduar (10 player)
+								["criteriaID"] = 1,		-- Flame Leviathan
+							},
+							{	-- The Siege of Ulduar (10 player): Ignis the Furnace Master
+								["achievementID"] = 2886,	-- The Siege of Ulduar (10 player)
+								["criteriaID"] = 3,		-- Ignis the Furnace Master
+							},
+							{	-- The Siege of Ulduar (10 player): Razorscale
+								["achievementID"] = 2886,	-- The Siege of Ulduar (10 player)
+								["criteriaID"] = 2,		-- Razorscale
+							},
+							{	-- The Siege of Ulduar (10 player): XT-002 Deconstructor
+								["achievementID"] = 2886,	-- The Siege of Ulduar (10 player)
+								["criteriaID"] = 4,		-- XT-002 Deconstructor
+							},
+						},
+					},
+					{	-- The Siege of Ulduar (25 player)
+						["achievementID"] = 2887,	-- The Siege of Ulduar (25 player)
+						["g"] = {
+							{	-- The Siege of Ulduar (25 player): Flame Leviathan
+								["achievementID"] = 2887,	-- The Siege of Ulduar (25 player)
+								["criteriaID"] = 1,		-- Flame Leviathan
+							},
+							{	-- The Siege of Ulduar (25 player): Ignis the Furnace Master
+								["achievementID"] = 2887,	-- The Siege of Ulduar (25 player)
+								["criteriaID"] = 3,		-- Ignis the Furnace Master
+							},
+							{	-- The Siege of Ulduar (25 player): Razorscale
+								["achievementID"] = 2887,	-- The Siege of Ulduar (25 player)
+								["criteriaID"] = 2,		-- Razorscale
+							},
+							{	-- The Siege of Ulduar (25 player): XT-002 Deconstructor
+								["achievementID"] = 2887,	-- The Siege of Ulduar (25 player)
+								["criteriaID"] = 4,		-- XT-002 Deconstructor
+							},
+						},
+					},
 					{	-- The Spellweaver's Downfall (10 player)
 						["achievementID"] = 622,	-- The Spellweaver's Downfall (10 player)
 					},
@@ -786,27 +1310,76 @@ _.Achievements =
 						ach(2053),		-- Twilight Duo (25 player)
 						ach(2052),		-- Twilight Assist (25 player)
 					}),
-					ach(12397),		-- They're Coming Out of the Walls
-					ach(12314, 	{	-- Three Car Garage
-						crit(1),		-- Salvaged Chopper
-						crit(2),		-- Salvaged Siege Engine
-						crit(3),		-- Salvaged Demolisher
-					}),
+					{	-- They're Coming Out of the Walls (10 player)
+						["achievementID"] = 3014,	-- They're Coming Out of the Walls (10 player)
+					},
+					{	-- They're Coming Out of the Walls (25 player)
+						["achievementID"] = 3017,	-- They're Coming Out of the Walls (25 player)
+					},
+					{	-- Three Car Garage (10 player)
+						["achievementID"] = 2907,	-- Three Car Garage (10 player)
+						["g"] = {
+							{	-- Salvaged Chopper
+								["achievementID"] = 2907,	-- Three Car Garage (10 player)
+								["criteriaID"] = 1,	-- Salvaged Chopper
+							},
+							{	-- Salvaged Siege Engine
+								["achievementID"] = 2907,	-- Three Car Garage (10 player)
+								["criteriaID"] = 2,	-- Salvaged Siege Engine
+							},
+							{	-- Salvaged Demolisher
+								["achievementID"] = 2907,	-- Three Car Garage (10 player)
+								["criteriaID"] = 3,	-- Salvaged Demolisher
+							},
+						},
+					},
+					{	-- Three Car Garage (25 player)
+						["achievementID"] = 2908,	-- Three Car Garage (25 player)
+						["g"] = {
+							{	-- Salvaged Chopper
+								["achievementID"] = 2908,	-- Three Car Garage (25 player)
+								["criteriaID"] = 1,	-- Salvaged Chopper
+							},
+							{	-- Salvaged Siege Engine
+								["achievementID"] = 2908,	-- Three Car Garage (25 player)
+								["criteriaID"] = 2,	-- Salvaged Siege Engine
+							},
+							{	-- Salvaged Demolisher
+								["achievementID"] = 2908,	-- Three Car Garage (25 player)
+								["criteriaID"] = 3,	-- Salvaged Demolisher
+							},
+						},
+					},
 					{	-- Three Sixty Pain Spike (10 player)
 						["achievementID"] = 3996,	-- Three Sixty Pain Spike (10 player)
 					},
 					{	-- Three Sixty Pain Spike (25 player)
 						["achievementID"] = 3997,	-- Three Sixty Pain Spike (25 player)
 					},
-					ach(12313),		-- Unbroken
+					{	-- Unbroken (10 player)
+						["achievementID"] = 2905,	-- Unbroken (10 player)
+					},
+					{	-- Unbroken (25 player)
+						["achievementID"] = 2906,	-- Unbroken (25 player)
+					},
 					{	-- Upper Back Pain (10 player)
 						["achievementID"] = 3797,	-- Upper Back Pain (10 player)
 					},
 					{	-- Upper Back Pain (25 player)
 						["achievementID"] = 3813,	-- Upper Back Pain (25 player)
 					},
-					ach(12350),		-- Who Needs Bloodlust?
-					ach(12337),		-- With Open Arms
+					{	-- Who Needs Bloodlust? (10 player)
+						["achievementID"] = 2975,	-- Who Needs Bloodlust? (10 player)
+					},
+					{	-- Who Needs Bloodlust? (25 player)
+						["achievementID"] = 2976,	-- Who Needs Bloodlust? (25 player)
+					},
+					{	-- With Open Arms (10 player)
+						["achievementID"] = 2951,	-- With Open Arms (10 player)
+					},
+					{	-- With Open Arms (25 player)
+						["achievementID"] = 2952,	-- With Open Arms (25 player)
+					},
 					{	-- You Don't Have an Eternity (10 player)
 						["achievementID"] = 1874,	-- You Don't Have an Eternity (10 player)
 					},

@@ -352,7 +352,6 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					["classes"] = { 1 },
 				}),
 			},
-			["achievementID"] = 11741, -- So Hot Right Now
 		}),
 		n(-3183, { -- Tier 1.5 (Zul Gurub - Zandalar Tribe Set) [Unobtainable]
 			n(-3250, { -- Confessor's Raiment
@@ -548,7 +547,6 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					["classes"] = { 1 },
 				}),		
 			},
-			["achievementID"] = 11742, -- Dress in Lairs
 		}),
 		n(-3180, { -- Tier 2.5 (Temple of Ahn'qiraj - Brood of Nozdormu Set)
 			["groups"] = {
@@ -655,7 +653,6 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					["classes"] = { 1 },
 				}),	
 			},
-			["achievementID"] = 11743, -- Accessor-Eyes
 		}),
 		n(-3179, { -- Tier 3 (Naxxramas - Vanilla)
 			["groups"] = {
@@ -750,7 +747,6 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					un(9, i(22420)),	-- Dreadnaught Sabatons
 				}),		
 			},
-			["achievementID"] = 11744, -- Drop Dead, Gorgeous
 		}),
 		n(-3178, { -- Tier 3.5 (Dungeon Set 3)
 			n(-3286, {	-- Hallowed Raiment		
@@ -1107,7 +1103,6 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					["classes"] = { 1 },		
 				}),	
 			},
-			["achievementID"] = 11746, -- Outlandish Style
 		}),
 		n(-3176, { -- Tier 5 (Serpentshrine Cavern & The Eye)
 			["groups"] = {
@@ -1307,7 +1302,6 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					["classes"] = { 1 },			
 				}),				
 			},
-			["achievementID"] = 11747, -- Merely a Set
 		}),
 		n(-3175, { -- Tier 6 (Hyjal Summit, Black Temple, and Sunwell Plateau)
 			["groups"] = {
@@ -1508,7 +1502,6 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					["classes"] = { 1 },			
 				}),				
 			},
-			["achievementID"] = 11748, -- Black is the New Black
 		}),
 		n(-3159, { -- Tier 6.5 (Sunwell Plateau)
 			["groups"] = {
@@ -1721,7 +1714,6 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					["classes"] = { 1 },			
 				}),				
 			},
-			["achievementID"] = 11749, -- Suns Out, Thori'dals Out			
 		}),
 		n(-3174, { -- Tier 7 (Naxxramas - Wrath
 			["groups"] = {
@@ -2192,7 +2184,6 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				}),
 
 			},
-			["achievementID"] = 11750, -- Undying Aesthetic
 		}),
 		n(-3172, { -- Tier 9
 			["groups"] = {
@@ -2824,7 +2815,6 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					}),
 				})),
 			},
-			["achievementID"] = 11752, -- Style of the Crusader
 		}),
 		n(-3169, { -- Tier 12							
 			["groups"] = {						
@@ -3085,7 +3075,6 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					},				
 				}),					
 			},						
-			["achievementID"] = 11755, -- Hot Couture						
 		}),							
 	}),
 };

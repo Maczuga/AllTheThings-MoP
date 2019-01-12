@@ -1,7 +1,7 @@
 TODO:
 - flight masters (ticky - lack of API methods)
 - item "appearances" - switch logic to having item instead of appearance by itself
-- legacy achievements are not that legacy (ulduar 10/25 from legacy to wotlk raids because it was replaced by timewalking achievements)
+- ulduar 10 boss loot
 - more soon
 
 FAQ:
@@ -15,5 +15,7 @@ Useful Regex patterns:
 (\[['"]qg['"]\] = (7369[2-9]|73[7-9]\d\d|7[4-9]\d\d\d|[8-9]\d\d\d\d|\d{6}))
 - Search for entries above max spell ID:
 (sp\((16322[8-9]|1632[2-9]\d|163[3-9]\d\d|16[4-9]\d\d\d|1[7-9]\d\d\d\d|[2-9]\d\d\d\d\d)|recipe\((16322[8-9]|1632[2-9]\d|163[3-9]\d\d|16[4-9]\d\d\d|1[7-9]\d\d\d\d|[2-9]\d\d\d\d\d)|\["recipeID"\] = (16322[8-9]|1632[2-9]\d|163[3-9]\d\d|16[4-9]\d\d\d|1[7-9]\d\d\d\d|[2-9]\d\d\d\d\d))
+- Search for entries above max achievement ID:
+(ach\((891[6-9]|89[2-9]\d|9\d\d\d|\d{5,})|\["achievementID"\] = (891[6-9]|89[2-9]\d|9\d\d\d|\d{5,}))
 - Search for entries above pet spec ID:
 (p\((138[7-9]|139\d|1[4-9]\d\d|[2-9]\d\d\d)|pet\(\d*?, (138[7-9]|139\d|1[4-9]\d\d|[2-9]\d\d\d))

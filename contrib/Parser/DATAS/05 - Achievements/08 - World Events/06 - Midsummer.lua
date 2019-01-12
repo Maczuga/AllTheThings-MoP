@@ -205,26 +205,12 @@ _.Achievements =
 						crit(6),		-- Vale of Eternal Blossoms
 						crit(7),		-- Valley of the Four Winds
 					})),
-					h(ach(11282, {	-- Flame Keeper of the Broken Isles (Horde)
-						crit(1),		-- Azsuna
-						crit(2),		-- Val'sharah
-						crit(3),		-- Highmountain
-						crit(4),		-- Stormheim
-						crit(5),		-- Suramar
-					})),
 					a(ach(6011, {	-- Flame Warden of Cataclysm (Alliance)
 						crit(1),		-- Uldum
 						crit(2),		-- Deepholm
 						crit(3),		-- Twilight Highlands
 						crit(4),		-- Vashj'ir
 						crit(5),		-- Hyjal
-					})),
-					a(ach(11283, {	-- Flame Warden of Draenor (Alliance)
-						crit(1),		-- Spires of Arak
-						crit(2),		-- Talador
-						crit(3),		-- Nagrand
-						crit(4),		-- Gorgrond
-						crit(5),		-- Shadowmoon Valley
 					})),
 					a(ach(1022, {	-- Flame Warden of Eastern Kingdoms (Alliance)
 						crit(1),		-- Arathi Highlands
@@ -287,13 +273,6 @@ _.Achievements =
 						crit(5),		-- Townlong Steppes
 						crit(6),		-- Vale of Eternal Blossoms
 						crit(7),		-- Valley of the Four Winds
-					})),
-					a(ach(11280, {	-- Flame Warden of the Broken Isles (Alliance)
-						crit(1),		-- Azsuna
-						crit(2),		-- Val'sharah
-						crit(3),		-- Highmountain
-						crit(4),		-- Stormheim
-						crit(5),		-- Suramar
 					})),
 					ach(263),		-- Ice the Frost Lord (Slave Pens - Ahune)
 					ach(1145),		-- King of the Fire Festival

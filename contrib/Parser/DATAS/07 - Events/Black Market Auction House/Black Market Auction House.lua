@@ -221,7 +221,6 @@ _.WorldEvents =
 						un(9, i(22420)),	-- Dreadnaught Sabatons
 					}),
 				},
-				["achievementID"] = 11744,	-- Drop Dead, Gorgeous
 			}),
 			n(-161, { -- Toy
 				i(33223),	-- Fishing Chair
@@ -490,7 +489,6 @@ _.WorldEvents =
 								un(9, i(22420)),	-- Dreadnaught Sabatons
 							}),
 						},
-						["achievementID"] = 11744,	-- Drop Dead, Gorgeous
 					}),
 					n(-161, { -- Toy **
 						i(33223),	-- Fishing Chair **

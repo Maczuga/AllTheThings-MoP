@@ -349,7 +349,6 @@ _.GearSets =
 					["classes"] = { 1 },
 				}),		
 			},
-			["achievementID"] = 11706,	-- The Original
 		}),
 		gsh(380, {	-- Season 2
 			["groups"] = {
@@ -544,7 +543,6 @@ _.GearSets =
 					["classes"] = { 1 },		
 				}),					
 			},
-			["achievementID"] = 11707,	-- No Mercy
 		}),
 		gsh(379, {	-- Season 3
 			["groups"] = {
@@ -665,7 +663,6 @@ _.GearSets =
 					["classes"] = 1,	-- Warrior	
 				}),		
 			},
-			["achievementID"] = 11708,	-- With a Vengeance
 		}),
 		gsh(378, {	-- Season 4				
 			["groups"] = {				
@@ -865,7 +862,6 @@ _.GearSets =
 					["classes"] = { 1 }, -- Warrior		
 				}),			
 			},				
-			["achievementID"] = 11709, -- Tough Threads				
 		}),					
 		gsh(377, {	-- Season 5 - PvP Rare					
 			["groups"] = {
@@ -1222,7 +1218,6 @@ _.GearSets =
 					["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple Skull
 				}),
 			},					
-			["achievementID"] = 11710, -- Lethal Looks					
 		}),						
 		-- DK Switches from Victory to Triumph S6
 		gsh(373, {	-- Season 7
@@ -1312,7 +1307,6 @@ _.GearSets =
 					i(40851),	-- Relentless Gladiator's Dreadplate Legguards
 				}),
 			},
-			["achievementID"] = 11712,	-- Relentlessly Good Looking
 		}),
 	}),
 };

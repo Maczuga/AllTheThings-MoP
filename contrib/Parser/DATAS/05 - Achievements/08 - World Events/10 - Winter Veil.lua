@@ -60,13 +60,6 @@ _.Achievements =
 					ach(1295),		-- Crashin' & Thrashin'
 					ach(1282),		-- Fa-la-la-la-Ogri'la
 					ach(1689),		-- He Knows If You've Been Naughty
-					ach(10353, {	-- Iron Armada
-						crit(1),		-- Crashin' Thrashin' Flamer Controller
-						crit(2),		-- Crashin' Thrashin' Killdozer Controller
-						crit(3),		-- Crashin' Thrashin' Mortar Controller (Tanaan Jungle - Smashum Grabb)
-						crit(4),		-- Crashin' Thrashin' Cannon Controller (Tanaan Jungle - Gondar)
-						crit(5),		-- Crashin' Thrashin' Roller Controller (Tanaan Jungle - Drakum)
-					}),
 					ach(1687, {		-- Let It Snow
 						crit(1),		-- Orc Death Knight
 						crit(2),		-- Human Warrior

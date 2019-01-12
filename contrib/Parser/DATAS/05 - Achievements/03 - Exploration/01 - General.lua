@@ -126,8 +126,6 @@ _.Achievements =
 						ach(45),		-- Northrend Explorer
 						ach(4868),		-- Cataclysm Explorer
 						ach(6974),		-- Pandaria Explorer
-						ach(8935),		-- Draenor Explorer
-						ach(11188),		-- Broken Isles Explorer
 					}),
 					ach(1244, {		-- Well Read
 						crit(1),		-- Aegwynn and the Dragon Hunt (Stormwind City, Westfall, Tirisfal Glades)

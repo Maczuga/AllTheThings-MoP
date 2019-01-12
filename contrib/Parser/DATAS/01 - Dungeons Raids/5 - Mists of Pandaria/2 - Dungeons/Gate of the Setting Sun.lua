@@ -34,7 +34,6 @@ _.Instances =
 								i(80926),	-- Leggings of the Frenzy (7.1 - Removed from Game!)
 							})),
 							cr(56877, e(649, {	-- Raigonn
-								-- ach(10010),	-- Gate of the Setting Sun
 								i(80932),	-- Carapace Breaker (7.1 - Removed from Game!)
 								i(80931),	-- Shield of the Protectorate (7.1 - Removed from Game!)
 								i(80930),	-- Swarmbringer Chestguards (7.1 - Removed from Game!)
@@ -67,7 +66,6 @@ _.Instances =
 								i(81106),	-- Leggings of the Frenzy (7.1 - Removed from Game!)
 							})),
 							cr(56877, e(649, {	-- Raigonn
-								-- ach(10010),	-- Gate of the Setting Sun
 								ach(6759),	-- Heroic: Gate of the Setting Sun
 								i(81094),	-- Carapace Breaker (7.1 - Removed from Game!)
 								i(87546),	-- Klatith, Fangs of the Swarm (7.1 - Removed from Game!)

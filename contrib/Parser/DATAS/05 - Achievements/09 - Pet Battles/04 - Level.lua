@@ -35,7 +35,6 @@ _.Achievements =
 						ach(6580),	-- Rookie Pet Crew (30)
 						ach(6579),	-- Rookie Pet Group (15)
 					}),
-					ach(9070),	-- Overstuffed
 				},
 			}),
 		},

@@ -25,9 +25,7 @@ _.Achievements =
 					ach(6946),	-- Empowered Spiritualist
 					ach(6478),	-- Glintrok N' Roll
 					ach(6471),	-- Hate Leads to Suffering
-					ach(6759, {	-- Heroic: Gate of the Setting Sun
-						ach(10010),	-- Gate of the Setting Sun
-					}),
+					ach(6759),
 					ach(6756, {	-- Heroic: Mogu'shan Palace
 						ach(6755),	-- Mogu'shan Palace
 					}),
@@ -37,9 +35,7 @@ _.Achievements =
 					ach(6470, {	-- Heroic: Shado-Pan Monastery
 						ach(6469),	-- Shado-Pan Monastery
 					}),
-					ach(6763, {	-- Heroic: Siege of Niuzao Temple
-						ach(10011),	-- Siege of Niuzao Temple
-					}),
+					ach(6763),
 					ach(6456, {	-- Heroic: Stormstout Brewery
 						ach(6457),	-- Stormstout Brewery
 					}),

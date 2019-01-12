@@ -29,7 +29,6 @@ _.Instances =
 								i(100962),	-- Breezebinder Handwraps (7.1 - Removed from Game!)
 							})),
 							cr(62205, e(727, {	-- Wing Leader Ner'onok
-								ach(10011),	-- Siege of Niuzao Temple
 								i(100973),	-- Gustwalker Staff (7.1 - Removed from Game!)
 								i(100965),	-- Ner'onok's Razor Katar (7.1 - Removed from Game!)
 								i(100966),	-- Tolakesh, Horn of the Black Ox (7.1 - Removed from Game!)
@@ -70,7 +69,6 @@ _.Instances =
 							cr(62205, e(727, {	-- Wing Leader Ner'onok
 								ach(6763),	-- Heroic: Siege of Niuzao Temple
 								ach(6822),	-- Run with the Wind
-								ach(10011),	-- Siege of Niuzao Temple
 								i(81288),	-- Gustwalker Staff (7.1 - Removed from Game!)
 								i(81286),	-- Ner'onok's Razor Katar (7.1 - Removed from Game!)
 								i(87547),	-- Tolakesh, Horn of the Black Ox (7.1 - Removed from Game!)

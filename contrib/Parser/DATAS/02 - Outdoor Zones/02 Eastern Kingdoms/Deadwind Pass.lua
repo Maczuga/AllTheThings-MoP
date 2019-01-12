@@ -134,17 +134,6 @@ _.Zones =
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 30109 },	-- Blood of the Betrayer
 					})),
-					{
-						["objectID"] = 258978,	-- Waterlogged Tome
-						["questID"] = 44487,	-- Waterlogged Tome
-						["lvl"] = 110,
-						["groups"] = {
-							{
-								["achievementID"] = 11240,	-- Harbinger
-								["criteriaID"] = 1,	-- Waterlogged Tome
-							},
-						},
-					},
 				}),
 				n(-2,  {	-- Vendors
 					n(18255, {  -- Mage Darius

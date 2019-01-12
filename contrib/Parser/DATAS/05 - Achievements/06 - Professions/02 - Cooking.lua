@@ -305,20 +305,6 @@ _.Achievements =
 						crit(42),		-- Yak Cheese Curds
 						ach(7326),		-- The Pandaren Gourmet (15)
 					}),
-					h(ach(12746, {	-- The Zandalari Menu
-						crit(1),		-- Bountiful Captain's Feast
-						crit(2),		-- Galley Banquet
-						crit(3),		-- Grilled Catfish
-						crit(4),		-- Honey-Glazed Haunches
-						crit(5),		-- Kul Tiramisu
-						crit(6),		-- Loa Loaf
-						crit(7),		-- Mon'Dazi
-						crit(8),		-- Ravenberry Tarts
-						crit(9),		-- Sailor's Pie
-						crit(10),		-- Seasoned Loins
-						crit(11),		-- Spiced Snapper
-						crit(12),		-- Swamp Fish 'n Chips
-					})),
 					ach(5779),		-- You'll Feel Right as Rain
 					ach(6365),		-- Zen Master Cook
 				},

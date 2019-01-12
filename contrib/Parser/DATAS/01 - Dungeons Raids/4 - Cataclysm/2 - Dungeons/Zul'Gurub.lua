@@ -150,7 +150,7 @@ _.Instances =
 								["g"] = {
 									{	-- Ancient Dwarven Artifact
 										["npcID"] = 52446,	-- Ancient Dwarven Artifact
-										["description"] = "|CFFFF0000This artifact is used in summoning the boss.|r",
+										["description"] = "This artifact is used in summoning the boss.",
 									},
 									{	-- Ancient Dwarven Artifact
 										["npcID"] = 52449,	-- Ancient Dwarven Artifact
@@ -158,7 +158,7 @@ _.Instances =
 									},
 									{	-- Ancient Elven Artifact
 										["npcID"] = 52450,	-- Ancient Elven Artifact
-										["description"] = "|CFFFF0000This artifact is used in summoning the boss.|r",
+										["description"] = "This artifact is used in summoning the boss.",
 									},
 									{	-- Ancient Elven Artifact
 										["npcID"] = 52451,	-- Ancient Elven Artifact
@@ -166,7 +166,7 @@ _.Instances =
 									},
 									{	-- Ancient Fossil
 										["npcID"] = 52454,	-- Ancient Fossil
-										["description"] = "|CFFFF0000This artifact is used in summoning the boss.|r",
+										["description"] = "This artifact is used in summoning the boss.",
 									},
 									{	-- Ancient Fossil
 										["npcID"] = 52455,	-- Ancient Fossil
@@ -174,7 +174,7 @@ _.Instances =
 									},
 									{	-- Ancient Troll Artifact
 										["npcID"] = 52452,	-- Ancient Troll Artifact
-										["description"] = "|CFFFF0000This artifact is used in summoning the boss.|r",
+										["description"] = "This artifact is used in summoning the boss.",
 									},
 									{	-- Ancient Troll Artifact
 										["npcID"] = 52453,	-- Ancient Troll Artifact

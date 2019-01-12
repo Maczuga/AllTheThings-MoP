@@ -21,7 +21,6 @@ _.Achievements =
 						un(2, i(104246)),		-- Reins of the Kor'kron War Wolf
 					})),
 					un(2, ach(8246)),		-- Ahead of the Curve: Grand Empress Shek'zeer
-					un(2, ach(9441)),		-- Ahead of the Curve: Imperator's Fall
 					un(2, ach(8249)),		-- Ahead of the Curve: Lei Shen
 					un(2, ach(8248)),		-- Ahead of the Curve: Sha of Fear
 					un(2, ach(6954)),		-- Ahead of the Curve: Will of the Emperor

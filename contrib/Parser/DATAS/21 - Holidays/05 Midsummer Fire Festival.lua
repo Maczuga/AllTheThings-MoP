@@ -763,99 +763,9 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					}),
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(11283, { -- Flame Warden of Draenor
-					["groups"] = bubbleDown({["achievementID"] = 11283}, { -- Flame Warden of Draenor [Achievement]
-						{
-							["criteriaID"] = 1,			-- Spires of Arak [Criteria]
-							["questID"] = 44570,		-- Honor the Flame [Spires of Arak]
-							["qg"] = 114488,			-- Spires of Arak Flame Guardian
-							["maps"] = { 542 },			-- Spires of Arak
-							["races"] = ALLIANCE_ONLY,
-						},
-						{
-							["criteriaID"] = 2,			-- Talador [Criteria]
-							["questID"] = 44571,		-- Honor the Flame [Talador]
-							["qg"] = 114489,			-- Talador Flame Guardian
-							["maps"] = { 535 },			-- Talador
-							["races"] = ALLIANCE_ONLY,
-						},
-						{
-							["criteriaID"] = 3,			-- Nagrand [Criteria]
-							["questID"] = 44572,		-- Honor the Flame [Nagrand]
-							["qg"] = 114490,			-- Nagrand Flame Guardian
-							["maps"] = { 550 },			-- Nagrand
-							["races"] = ALLIANCE_ONLY,
-						},
-						{
-							["criteriaID"] = 4,			-- Gorgrond [Criteria]
-							["questID"] = 44573,		-- Honor the Flame [Gorgrond]
-							["qg"] = 114491,			-- Gorgrond Flame Guardian
-							["maps"] = { 543 },			-- Gorgrond
-							["races"] = ALLIANCE_ONLY,
-						},
-						{
-							["criteriaID"] = 5,			-- Shadowmoon Valley [Criteria]
-							["questID"] = 44579,		-- Honor the Flame [Shadowmoon Valley]
-							["qg"] = 114500,			-- Shadowmoon Valley Flame Warden
-							["maps"] = { 539 },			-- Shadowmoon Valley
-							["races"] = ALLIANCE_ONLY,
-						},
-					}),
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(11280, { -- Flame Warden of the Broken Isles
-					["groups"] = bubbleDown({["achievementID"] = 11280}, { -- Flame Warden of the Broken Isles [Achievement]
-						{
-							["criteriaID"] = 1,			-- Azsuna [Criteria]
-							["questID"] = 44574,		-- Honor the Flame [Azsuna]
-							["qg"] = 114492,			-- Azsuna Flame Guardian
-							["maps"] = { 630 },		-- Azsuna
-							["races"] = ALLIANCE_ONLY,
-						},
-						{
-							["criteriaID"] = 2,			-- Val'sharah [Criteria]
-							["questID"] = 44575,		-- Honor the Flame [Val'sharah]
-							["qg"] = 114493,			-- Val'sharah Flame Guardian
-							["maps"] = { 641 },		-- Val'sharah
-							["races"] = ALLIANCE_ONLY,
-						},
-						{
-							["criteriaID"] = 3,			-- Highmountain [Criteria]
-							["questID"] = 44576,		-- Honor the Flame [Highmountain]
-							["qg"] = 114494,			-- Highmountain Flame Guardian
-							["maps"] = { 650 },		-- Highmountain
-							["races"] = ALLIANCE_ONLY,
-						},
-						{
-							["criteriaID"] = 4,			-- Stormheim [Criteria]
-							["questID"] = 44577,		-- Honor the Flame [Stormheim]
-							["qg"] = 114496,			-- Stormheim Flame Guardian
-							["maps"] = { 634 },		-- Stormheim
-							["races"] = ALLIANCE_ONLY,
-						},
-						{
-							["criteriaID"] = 5,			-- Suramar [Criteria]
-							["questID"] = 44613,		-- Honor the Flame [Suramar]
-							["qg"] = 114519,			-- Suramar Flame Warden
-							["maps"] = { 680 },		-- Suramar
-							["races"] = ALLIANCE_ONLY,
-						},
-					}),
-					["races"] = ALLIANCE_ONLY,
-				}),
 				ach(8042, { -- Extinguishing Pandaria
 					
 					["maps"] = { 390, }, -- Vale of Eternal Blossoms
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(11276, { -- Extinguishing Draenor
-					
-					["maps"] = { 525, }, -- Frostfire Ridge
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(11278, { -- Extinguishing the Broken Isles
-					
-					["maps"] = { 680 }, -- Suramar
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(1039, { -- The Flame Keeper
@@ -1608,99 +1518,9 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					}),
 					["races"] = HORDE_ONLY,
 				}),
-				ach(11284, { -- Flame Keeper of Draenor
-					["groups"] = bubbleDown({["achievementID"] = 11284}, { -- Flame Keeper of Draenor [Achievement]
-						{
-							["criteriaID"] = 1,			-- Spires of Arak [Criteria]
-							["questID"] = 44570,		-- Honor the Flame [Spires of Arak]
-							["qg"] = 114488,			-- Spires of Arak Flame Guardian
-							["maps"] = { 542 },			-- Spires of Arak
-							["races"] = HORDE_ONLY,
-						},
-						{
-							["criteriaID"] = 2,			-- Talador [Criteria]
-							["questID"] = 44571,		-- Honor the Flame [Talador]
-							["qg"] = 114489,			-- Talador Flame Guardian
-							["maps"] = { 535 },			-- Talador
-							["races"] = HORDE_ONLY,
-						},
-						{
-							["criteriaID"] = 3,			-- Nagrand [Criteria]
-							["questID"] = 44572,		-- Honor the Flame [Nagrand]
-							["qg"] = 114490,			-- Nagrand Flame Guardian
-							["maps"] = { 550 },			-- Nagrand
-							["races"] = HORDE_ONLY,
-						},
-						{
-							["criteriaID"] = 4,			-- Gorgrond [Criteria]
-							["questID"] = 44573,		-- Honor the Flame [Gorgrond]
-							["qg"] = 114491,			-- Gorgrond Flame Guardian
-							["maps"] = { 543 },			-- Gorgrond
-							["races"] = HORDE_ONLY,
-						},
-						{
-							["criteriaID"] = 5,			-- Frostfire Ridge [Criteria]
-							["questID"] = 44580,		-- Honor the Flame [Frostfire Ridge]
-							["qg"] = 114499,			-- Frostfire Ridge Flame Keeper
-							["maps"] = { 525 },			-- Frostfire Ridge
-							["races"] = HORDE_ONLY,
-						},
-					}),
-					["races"] = HORDE_ONLY,
-				}),
-				ach(11282, { -- Flame Keeper of the Broken Isles
-					["groups"] = bubbleDown({["achievementID"] = 11282}, { -- Flame Keeper of the Broken Isles [Achievement]
-						{
-							["criteriaID"] = 1,			-- Azsuna [Criteria]
-							["questID"] = 44574,		-- Honor the Flame [Azsuna]
-							["qg"] = 114492,			-- Azsuna Flame Guardian
-							["maps"] = { 630 },		-- Azsuna
-							["races"] = HORDE_ONLY,
-						},
-						{
-							["criteriaID"] = 2,			-- Val'sharah [Criteria]
-							["questID"] = 44575,		-- Honor the Flame [Val'sharah]
-							["qg"] = 114493,			-- Val'sharah Flame Guardian
-							["maps"] = { 641 },		-- Val'sharah
-							["races"] = HORDE_ONLY,
-						},
-						{
-							["criteriaID"] = 3,			-- Highmountain [Criteria]
-							["questID"] = 44576,		-- Honor the Flame [Highmountain]
-							["qg"] = 114494,			-- Highmountain Flame Guardian
-							["maps"] = { 650 },		-- Highmountain
-							["races"] = HORDE_ONLY,
-						},
-						{
-							["criteriaID"] = 4,			-- Stormheim [Criteria]
-							["questID"] = 44577,		-- Honor the Flame [Stormheim]
-							["qg"] = 114496,			-- Stormheim Flame Guardian
-							["maps"] = { 634 },		-- Stormheim
-							["races"] = HORDE_ONLY,
-						},
-						{
-							["criteriaID"] = 5,			-- Suramar [Criteria]
-							["questID"] = 44614,		-- Honor the Flame [Suramar]
-							["qg"] = 114518,			-- Suramar Flame Keeper
-							["maps"] = { 680 },		-- Suramar
-							["races"] = HORDE_ONLY,
-						},
-					}),
-					["races"] = HORDE_ONLY,
-				}),
 				ach(8043, { -- Extinguishing Pandaria
 					
 					["maps"] = { 390, }, -- Vale of Eternal Blossoms
-					["races"] = HORDE_ONLY,
-				}),
-				ach(11277, { -- Extinguishing Draenor
-					
-					["maps"] = { 539, }, -- Shadowmoon Valley
-					["races"] = HORDE_ONLY,
-				}),
-				ach(11279, { -- Extinguishing the Broken Isles
-					
-					["maps"] = { 680, }, -- Suramar
 					["races"] = HORDE_ONLY,
 				}),
 			}),
