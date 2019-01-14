@@ -75,7 +75,9 @@ profession(129, { -- First Aid
 			
 			-- MoP
 			recipe(102697),	-- Windwool Bandage
-			recipe(102698),	-- Heavy Windwool Bandage
+			recipe(102699, {	-- Windwool Bandage (Rank 2)
+				recipe(102698),	-- Windwool Bandage (Rank 1)
+			}),
 		}),
 	},
 	["u"] = 2,
