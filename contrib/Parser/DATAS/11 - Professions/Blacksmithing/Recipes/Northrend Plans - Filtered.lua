@@ -1,446 +1,512 @@
 profession(164, {	-- Blacksmithing
 	filter(200, {	-- Recipes
-	-- Reviewed and updated as of 12.04.2018 BfA 8.0, leaving all items from _Automation in for easier future updates
-		{	-- Northrend Plans
-			["categoryID"] = 577--[[Northrend Plans]],
-			["g"] = {
-				{	-- Equipment Mods
-					["categoryID"] = 578--[[Equipment Mods]],
-					["g"] = {
-						{	-- Titanium Plating
-							["recipeID"] = 62202--[[Titanium Plating]]
-						},
-						{	-- Titanium Shield Spike
-							["recipeID"] = 56357--[[Titanium Shield Spike]]
-						},
-						{	-- Titanium Weapon Chain
-							["recipeID"] = 55839--[[Titanium Weapon Chain]]
-						},
-						{	-- Eternal Belt Buckle
-							["recipeID"] = 55656--[[Eternal Belt Buckle]]
-						},
-						{	-- Titanium Rod	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
-							["recipeID"] = 55732--[[Titanium Rod]],
-							["u"] = 1,
-							["description"] = "These are the Titanium Rod plans. They were removed in Patch 5.0.4.",
-						},
+		tier(3, { -- Northrend Plans
+			{
+				["name"] = "Weapon Mods",
+				["categoryID"] = 216,
+				["g"] = {
+					{
+						["name"] = "Eternal Belt Buckle",
+						["recipeID"] = 55656
 					},
-				},
-				{	-- Armor
-					["categoryID"] = 579--[[Armor]],
-					["g"] = {
-						{	-- Boots of Kingly Upheaval
-							["recipeID"] = 70568--[[Boots of Kingly Upheaval]]
-						},
-						{	-- Hellfrozen Bonegrinders
-							["recipeID"] = 70566--[[Hellfrozen Bonegrinders]]
-						},
-						{	-- Legplates of Painful Death
-							["recipeID"] = 70565--[[Legplates of Painful Death]]
-						},
-						{	-- Pillars of Might
-							["recipeID"] = 70567--[[Pillars of Might]]
-						},
-						{	-- Protectors of Life
-							["recipeID"] = 70563--[[Protectors of Life]]
-						},
-						{	-- Puresteel Legplates
-							["recipeID"] = 70562--[[Puresteel Legplates]]
-						},
-						{	-- Daunting Legplates
-							["recipeID"] = 55303--[[Daunting Legplates]]
-						},
-						{	-- Helm of Command
-							["recipeID"] = 55302--[[Helm of Command]]
-						},
-						{	-- Icebane Chestguard
-							["recipeID"] = 61008--[[Icebane Chestguard]]
-						},
-						{	-- Ornate Saronite Hauberk
-							["recipeID"] = 56555--[[Ornate Saronite Hauberk]]
-						},
-						{	-- Ornate Saronite Legplates
-							["recipeID"] = 56554--[[Ornate Saronite Legplates]]
-						},
-						{	-- Ornate Saronite Skullshield
-							["recipeID"] = 56556--[[Ornate Saronite Skullshield]]
-						},
-						{	-- Righteous Greaves
-							["recipeID"] = 55304--[[Righteous Greaves]]
-						},
-						{	-- Savage Saronite Hauberk
-							["recipeID"] = 55311--[[Savage Saronite Hauberk]]
-						},
-						{	-- Savage Saronite Legplates
-							["recipeID"] = 55310--[[Savage Saronite Legplates]]
-						},
-						{	-- Savage Saronite Skullshield
-							["recipeID"] = 55312--[[Savage Saronite Skullshield]]
-						},
-						{	-- Battlelord's Plate Boots
-							["recipeID"] = 63188--[[Battlelord's Plate Boots]]
-						},
-						{	-- Belt of the Titans
-							["recipeID"] = 63187--[[Belt of the Titans]]
-						},
-						{	-- Breastplate of the White Knight [A]
-							["recipeID"] = 67091--[[Breastplate of the White Knight]],
-							["races"] = ALLIANCE_ONLY,
-						},
-						{	-- Breastplate of the White Knight [H]
-							["recipeID"] = 67130--[[Breastplate of the White Knight]],
-							["races"] = HORDE_ONLY,
-						},
-						{	-- Brilliant Titansteel Helm
-							["recipeID"] = 55374--[[Brilliant Titansteel Helm]]
-						},
-						{	-- Brilliant Titansteel Treads
-							["recipeID"] = 55377--[[Brilliant Titansteel Treads]]
-						},
-						{	-- Daunting Handguards
-							["recipeID"] = 55301--[[Daunting Handguards]]
-						},
-						{	-- Icebane Girdle
-							["recipeID"] = 61009--[[Icebane Girdle]]
-						},
-						{	-- Icebane Treads
-							["recipeID"] = 61010--[[Icebane Treads]]
-						},
-						{	-- Indestructible Plate Girdle
-							["recipeID"] = 63191--[[Indestructible Plate Girdle]]
-						},
-						{	-- Ornate Saronite Gauntlets
-							["recipeID"] = 56553--[[Ornate Saronite Gauntlets]]
-						},
-						{	-- Ornate Saronite Pauldrons
-							["recipeID"] = 56550--[[Ornate Saronite Pauldrons]]
-						},
-						{	-- Ornate Saronite Waistguard
-							["recipeID"] = 56551--[[Ornate Saronite Waistguard]]
-						},
-						{	-- Ornate Saronite Walkers
-							["recipeID"] = 56552--[[Ornate Saronite Walkers]]
-						},
-						{	-- Plate Girdle of Righteousness
-							["recipeID"] = 63189--[[Plate Girdle of Righteousness]]
-						},
-						{	-- Righteous Gauntlets
-							["recipeID"] = 55300--[[Righteous Gauntlets]]
-						},
-						{	-- Saronite Swordbreakers [A]
-							["recipeID"] = 67092--[[Saronite Swordbreakers]],
-							["races"] = ALLIANCE_ONLY,
-						},
-						{	-- Saronite Swordbreakers [H]
-							["recipeID"] = 67131--[[Saronite Swordbreakers]],
-							["races"] = HORDE_ONLY,
-						},
-						{	-- Savage Saronite Gauntlets
-							["recipeID"] = 55309--[[Savage Saronite Gauntlets]]
-						},
-						{	-- Savage Saronite Pauldrons
-							["recipeID"] = 55306--[[Savage Saronite Pauldrons]]
-						},
-						{	-- Savage Saronite Waistguard
-							["recipeID"] = 55307--[[Savage Saronite Waistguard]]
-						},
-						{	-- Savage Saronite Walkers
-							["recipeID"] = 55308--[[Savage Saronite Walkers]]
-						},
-						{	-- Spiked Deathdealers
-							["recipeID"] = 63192--[[Spiked Deathdealers]]
-						},
-						{	-- Spiked Titansteel Helm
-							["recipeID"] = 55372--[[Spiked Titansteel Helm]]
-						},
-						{	-- Spiked Titansteel Treads
-							["recipeID"] = 55375--[[Spiked Titansteel Treads]]
-						},
-						{	-- Sunforged Bracers [A]
-							["recipeID"] = 67096--[[Sunforged Bracers]],
-							["races"] = ALLIANCE_ONLY,
-						},
-						{	-- Sunforged Bracers [H]
-							["recipeID"] = 67135--[[Sunforged Bracers]],
-							["races"] = HORDE_ONLY,
-						},
-						{	-- Sunforged Breastplate [A]
-							["recipeID"] = 67095--[[Sunforged Breastplate]],
-							["races"] = ALLIANCE_ONLY,
-						},
-						{	-- Sunforged Breastplate [H]
-							["recipeID"] = 67134--[[Sunforged Breastplate]],
-							["races"] = HORDE_ONLY,
-						},
-						{	-- Tempered Titansteel Helm
-							["recipeID"] = 55373--[[Tempered Titansteel Helm]]
-						},
-						{	-- Tempered Titansteel Treads
-							["recipeID"] = 55376--[[Tempered Titansteel Treads]]
-						},
-						{	-- Titanium Razorplate [A]
-							["recipeID"] = 67093--[[Titanium Razorplate]],
-							["races"] = ALLIANCE_ONLY,
-						},
-						{	-- Titanium Razorplate [H]
-							["recipeID"] = 67132--[[Titanium Razorplate]],
-							["races"] = HORDE_ONLY,
-						},
-						{	-- Titanium Spikeguards [A]
-							["recipeID"] = 67094--[[Titanium Spikeguards]],
-							["races"] = ALLIANCE_ONLY,
-						},
-						{	-- Titanium Spikeguards [H]
-							["recipeID"] = 67133--[[Titanium Spikeguards]],
-							["races"] = HORDE_ONLY,
-						},
-						{	-- Treads of Destiny
-							["recipeID"] = 63190--[[Treads of Destiny]]
-						},
-						{	-- Ornate Saronite Bracers
-							["recipeID"] = 56549--[[Ornate Saronite Bracers]]
-						},
-						{	-- Savage Saronite Bracers
-							["recipeID"] = 55305--[[Savage Saronite Bracers]]
-						},
-						{	-- Vengeance Bindings
-							["recipeID"] = 55298--[[Vengeance Bindings]]
-						},
-						{	-- Brilliant Saronite Breastplate
-							["recipeID"] = 55058--[[Brilliant Saronite Breastplate]]
-						},
-						{	-- Brilliant Saronite Helm
-							["recipeID"] = 59441--[[Brilliant Saronite Helm]]
-						},
-						{	-- Chestplate of Conquest
-							["recipeID"] = 55186--[[Chestplate of Conquest]],
-							["u"] = 2,
-						},
-						{	-- Tempered Saronite Gauntlets
-							["recipeID"] = 55015--[[Tempered Saronite Gauntlets]]
-						},
-						{	-- Legplates of Conquest
-							["recipeID"] = 55187--[[Legplates of Conquest]],
-							["u"] = 2,
-						},
-						{	-- Tempered Saronite Bracers
-							["recipeID"] = 55017--[[Tempered Saronite Bracers]]
-						},
-						{	-- Reinforced Cobalt Chestpiece
-							["recipeID"] = 54981--[[Reinforced Cobalt Chestpiece]]
-						},
-						{	-- Brilliant Saronite Boots
-							["recipeID"] = 55057--[[Brilliant Saronite Boots]]
-						},
-						{	-- Brilliant Saronite Pauldrons
-							["recipeID"] = 59440--[[Brilliant Saronite Pauldrons]]
-						},
-						{	-- Tempered Saronite Helm
-							["recipeID"] = 54555--[[Tempered Saronite Helm]]
-						},
-						{	-- Tempered Saronite Shoulders
-							["recipeID"] = 54556--[[Tempered Saronite Shoulders]]
-						},
-						{	-- Reinforced Cobalt Legplates
-							["recipeID"] = 54980--[[Reinforced Cobalt Legplates]]
-						},
-						{	-- Brilliant Saronite Bracers
-							["recipeID"] = 59438--[[Brilliant Saronite Bracers]]
-						},
-						{	-- Brilliant Saronite Gauntlets
-							["recipeID"] = 55056--[[Brilliant Saronite Gauntlets]]
-						},
-						{	-- Tempered Saronite Boots
-							["recipeID"] = 54552--[[Tempered Saronite Boots]]
-						},
-						{	-- Tempered Saronite Breastplate
-							["recipeID"] = 54553--[[Tempered Saronite Breastplate]]
-						},
-						{	-- Horned Cobalt Helm
-							["recipeID"] = 54949--[[Horned Cobalt Helm]]
-						},
-						{	-- Reinforced Cobalt Helm
-							["recipeID"] = 54979--[[Reinforced Cobalt Helm]]
-						},
-						{	-- Spiked Cobalt Bracers
-							["recipeID"] = 54948--[[Spiked Cobalt Bracers]]
-						},
-						{	-- Brilliant Saronite Belt
-							["recipeID"] = 59436--[[Brilliant Saronite Belt]]
-						},
-						{	-- Brilliant Saronite Legplates
-							["recipeID"] = 55055--[[Brilliant Saronite Legplates]]
-						},
-						{	-- Tempered Saronite Belt
-							["recipeID"] = 54551--[[Tempered Saronite Belt]]
-						},
-						{	-- Tempered Saronite Legplates
-							["recipeID"] = 54554--[[Tempered Saronite Legplates]]
-						},
-						{	-- Spiked Cobalt Belt
-							["recipeID"] = 54946--[[Spiked Cobalt Belt]]
-						},
-						{	-- Spiked Cobalt Legplates
-							["recipeID"] = 54947--[[Spiked Cobalt Legplates]]
-						},
-						{	-- Reinforced Cobalt Shoulders
-							["recipeID"] = 54978--[[Reinforced Cobalt Shoulders]]
-						},
-						{	-- Spiked Cobalt Gauntlets
-							["recipeID"] = 54945--[[Spiked Cobalt Gauntlets]]
-						},
-						{	-- Spiked Cobalt Chestpiece
-							["recipeID"] = 54944--[[Spiked Cobalt Chestpiece]]
-						},
-						{	-- Spiked Cobalt Shoulders
-							["recipeID"] = 54941--[[Spiked Cobalt Shoulders]]
-						},
-						{	-- Spiked Cobalt Boots
-							["recipeID"] = 54918--[[Spiked Cobalt Boots]]
-						},
-						{	-- Cobalt Chestpiece
-							["recipeID"] = 52570--[[Cobalt Chestpiece]]
-						},
-						{	-- Cobalt Gauntlets
-							["recipeID"] = 55835--[[Cobalt Gauntlets]]
-						},
-						{	-- Spiked Cobalt Helm
-							["recipeID"] = 54917--[[Spiked Cobalt Helm]]
-						},
-						{	-- Cobalt Helm
-							["recipeID"] = 52571--[[Cobalt Helm]]
-						},
-						{	-- Cobalt Legplates
-							["recipeID"] = 52567--[[Cobalt Legplates]]
-						},
-						{	-- Cobalt Belt
-							["recipeID"] = 52568--[[Cobalt Belt]]
-						},
-						{	-- Cobalt Boots
-							["recipeID"] = 52569--[[Cobalt Boots]]
-						},
-						{	-- Cobalt Bracers
-							["recipeID"] = 55834--[[Cobalt Bracers]]
-						},
-						{	-- Cobalt Shoulders
-							["recipeID"] = 52572--[[Cobalt Shoulders]]
-						},
-						{	-- Socket Bracer	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
-							["recipeID"] = 55628--[[Socket Bracer]],
-							["u"] = 1,
-							["description"] = "These are the Socket Bracer plans. They were removed in Patch 5.0.4.",
-						},
-						{	-- Socket Gloves	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
-							["recipeID"] = 55641--[[Socket Gloves]],
-							["u"] = 1,
-							["description"] = "These are the Socket Gloves plans. They were removed in Patch 5.0.4.",
-						},
+					{
+						["name"] = "Titanium Plating",
+						["recipeID"] = 62202
 					},
-				},
-				{	-- Shields
-					["categoryID"] = 580--[[Shields]],
-					["g"] = {
-						{	-- Titansteel Shield Wall
-							["recipeID"] = 56400--[[Titansteel Shield Wall]]
-						},
-						{	-- Saronite Bulwark
-							["recipeID"] = 55014--[[Saronite Bulwark]]
-						},
-						{	-- Saronite Defender
-							["recipeID"] = 54557--[[Saronite Defender]]
-						},
-						{	-- Saronite Protector
-							["recipeID"] = 55013--[[Saronite Protector]]
-						},
-						{	-- Cobalt Triangle Shield
-							["recipeID"] = 54550--[[Cobalt Triangle Shield]]
-						},
+					{
+						["name"] = "Titanium Shield Spike",
+						["recipeID"] = 56357
 					},
-				},
-				{	-- Weapons
-					["categoryID"] = 581--[[Weapons]],
-					["g"] = {
-						{	-- Titansteel Bonecrusher
-							["recipeID"] = 55370--[[Titansteel Bonecrusher]]
-						},
-						{	-- Titansteel Destroyer
-							["recipeID"] = 55369--[[Titansteel Destroyer]]
-						},
-						{	-- Titansteel Guardian
-							["recipeID"] = 55371--[[Titansteel Guardian]]
-						},
-						{	-- Titansteel Shanker
-							["recipeID"] = 56234--[[Titansteel Shanker]]
-						},
-						{	-- Titansteel Spellblade
-							["recipeID"] = 63182--[[Titansteel Spellblade]]
-						},
-						{	-- Corroded Saronite Edge
-							["recipeID"] = 55183--[[Corroded Saronite Edge]],
-							["u"] = 2,
-						},
-						{	-- Corroded Saronite Woundbringer
-							["recipeID"] = 55184--[[Corroded Saronite Woundbringer]],
-							["u"] = 2,
-						},
-						{	-- Saronite Mindcrusher
-							["recipeID"] = 55185--[[Saronite Mindcrusher]]
-						},
-						{	-- Cudgel of Saronite Justice
-							["recipeID"] = 56280--[[Cudgel of Saronite Justice]]
-						},
-						{	-- Furious Saronite Beatstick
-							["recipeID"] = 55182--[[Furious Saronite Beatstick]]
-						},
-						{	-- Saronite Spellblade
-							["recipeID"] = 59442--[[Saronite Spellblade]]
-						},
-						{	-- Deadly Saronite Dirk
-							["recipeID"] = 55206--[[Deadly Saronite Dirk]]
-						},
-						{	-- Saronite Shiv
-							["recipeID"] = 55181--[[Saronite Shiv]]
-						},
-						{	-- Saronite Ambusher
-							["recipeID"] = 55179--[[Saronite Ambusher]]
-						},
-						{	-- Savage Cobalt Slicer
-							["recipeID"] = 55177--[[Savage Cobalt Slicer]]
-						},
-						{	-- Honed Cobalt Cleaver
-							["recipeID"] = 55174--[[Honed Cobalt Cleaver]]
-						},
-						{	-- Notched Cobalt War Axe
-							["recipeID"] = 55204--[[Notched Cobalt War Axe]]
-						},
-						{	-- Forged Cobalt Claymore
-							["recipeID"] = 55203--[[Forged Cobalt Claymore]]
-						},
-						{	-- Cobalt Tenderizer
-							["recipeID"] = 55201--[[Cobalt Tenderizer]]
-						},
-						{	-- Sturdy Cobalt Quickblade
-							["recipeID"] = 55200--[[Sturdy Cobalt Quickblade]]
-						},
-						{	-- Sure-Fire Shuriken	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
-							["recipeID"] = 55202--[[Sure-Fire Shuriken]],
-							["u"] = 1,
-							["description"] = "These are the Sure-Fire Shuriken plans. They were removed in Patch 5.0.4.",
-						},
+					{
+						["name"] = "Titanium Weapon Chain",
+						["recipeID"] = 55839
 					}
-				},
-				{	-- Skeleton Keys
-					["categoryID"] = 582--[[Skeleton Keys]],
-					["g"] = {
-						{	-- Titanium Skeleton Key
-							["recipeID"] = 59406--[[Titanium Skeleton Key]]
-						},
-						{	-- Cobalt Skeleton Key
-							["recipeID"] = 59405--[[Cobalt Skeleton Key]]
-						},
-					},
-				},
+				}
 			},
-		},
+			{
+				["name"] = "Armor",
+				["categoryID"] = 579,
+				["g"] = {
+					{
+						["name"] = "Battlelord's Plate Boots",
+						["recipeID"] = 63188
+					},
+					{
+						["name"] = "Belt of the Titans",
+						["recipeID"] = 63187
+					},
+					{
+						["name"] = "Boots of Kingly Upheaval",
+						["recipeID"] = 70568
+					},
+					{
+						["name"] = "Breastplate of the White Knight",
+						["recipeID"] = 67130
+					},
+					{
+						["name"] = "Brilliant Saronite Belt",
+						["recipeID"] = 59436
+					},
+					{
+						["name"] = "Brilliant Saronite Boots",
+						["recipeID"] = 55057
+					},
+					{
+						["name"] = "Brilliant Saronite Bracers",
+						["recipeID"] = 59438
+					},
+					{
+						["name"] = "Brilliant Saronite Breastplate",
+						["recipeID"] = 55058
+					},
+					{
+						["name"] = "Brilliant Saronite Gauntlets",
+						["recipeID"] = 55056
+					},
+					{
+						["name"] = "Brilliant Saronite Helm",
+						["recipeID"] = 59441
+					},
+					{
+						["name"] = "Brilliant Saronite Legplates",
+						["recipeID"] = 55055
+					},
+					{
+						["name"] = "Brilliant Saronite Pauldrons",
+						["recipeID"] = 59440
+					},
+					{
+						["name"] = "Brilliant Titansteel Helm",
+						["recipeID"] = 55374
+					},
+					{
+						["name"] = "Brilliant Titansteel Treads",
+						["recipeID"] = 55377
+					},
+					{
+						["name"] = "Chestplate of Conquest",
+						["recipeID"] = 55186
+					},
+					{
+						["name"] = "Cobalt Belt",
+						["recipeID"] = 52568
+					},
+					{
+						["name"] = "Cobalt Boots",
+						["recipeID"] = 52569
+					},
+					{
+						["name"] = "Cobalt Bracers",
+						["recipeID"] = 55834
+					},
+					{
+						["name"] = "Cobalt Chestpiece",
+						["recipeID"] = 52570
+					},
+					{
+						["name"] = "Cobalt Gauntlets",
+						["recipeID"] = 55835
+					},
+					{
+						["name"] = "Cobalt Helm",
+						["recipeID"] = 52571
+					},
+					{
+						["name"] = "Cobalt Legplates",
+						["recipeID"] = 52567
+					},
+					{
+						["name"] = "Cobalt Shoulders",
+						["recipeID"] = 52572
+					},
+					{
+						["name"] = "Daunting Handguards",
+						["recipeID"] = 55301
+					},
+					{
+						["name"] = "Daunting Legplates",
+						["recipeID"] = 55303
+					},
+					{
+						["name"] = "Hellfrozen Bonegrinders",
+						["recipeID"] = 70566
+					},
+					{
+						["name"] = "Helm of Command",
+						["recipeID"] = 55302
+					},
+					{
+						["name"] = "Horned Cobalt Helm",
+						["recipeID"] = 54949
+					},
+					{
+						["name"] = "Icebane Chestguard",
+						["recipeID"] = 61008
+					},
+					{
+						["name"] = "Icebane Girdle",
+						["recipeID"] = 61009
+					},
+					{
+						["name"] = "Icebane Treads",
+						["recipeID"] = 61010
+					},
+					{
+						["name"] = "Indestructible Plate Girdle",
+						["recipeID"] = 63191
+					},
+					{
+						["name"] = "Legplates of Conquest",
+						["recipeID"] = 55187
+					},
+					{
+						["name"] = "Legplates of Painful Death",
+						["recipeID"] = 70565
+					},
+					{
+						["name"] = "Ornate Saronite Bracers",
+						["recipeID"] = 56549
+					},
+					{
+						["name"] = "Ornate Saronite Gauntlets",
+						["recipeID"] = 56553
+					},
+					{
+						["name"] = "Ornate Saronite Hauberk",
+						["recipeID"] = 56555
+					},
+					{
+						["name"] = "Ornate Saronite Legplates",
+						["recipeID"] = 56554
+					},
+					{
+						["name"] = "Ornate Saronite Pauldrons",
+						["recipeID"] = 56550
+					},
+					{
+						["name"] = "Ornate Saronite Skullshield",
+						["recipeID"] = 56556
+					},
+					{
+						["name"] = "Ornate Saronite Waistguard",
+						["recipeID"] = 56551
+					},
+					{
+						["name"] = "Ornate Saronite Walkers",
+						["recipeID"] = 56552
+					},
+					{
+						["name"] = "Pillars of Might",
+						["recipeID"] = 70567
+					},
+					{
+						["name"] = "Plate Girdle of Righteousness",
+						["recipeID"] = 63189
+					},
+					{
+						["name"] = "Protectors of Life",
+						["recipeID"] = 70563
+					},
+					{
+						["name"] = "Puresteel Legplates",
+						["recipeID"] = 70562
+					},
+					{
+						["name"] = "Reinforced Cobalt Chestpiece",
+						["recipeID"] = 54981
+					},
+					{
+						["name"] = "Reinforced Cobalt Helm",
+						["recipeID"] = 54979
+					},
+					{
+						["name"] = "Reinforced Cobalt Legplates",
+						["recipeID"] = 54980
+					},
+					{
+						["name"] = "Reinforced Cobalt Shoulders",
+						["recipeID"] = 54978
+					},
+					{
+						["name"] = "Righteous Gauntlets",
+						["recipeID"] = 55300
+					},
+					{
+						["name"] = "Righteous Greaves",
+						["recipeID"] = 55304
+					},
+					{
+						["name"] = "Saronite Swordbreakers",
+						["recipeID"] = 67131
+					},
+					{
+						["name"] = "Savage Saronite Bracers",
+						["recipeID"] = 55305
+					},
+					{
+						["name"] = "Savage Saronite Gauntlets",
+						["recipeID"] = 55309
+					},
+					{
+						["name"] = "Savage Saronite Hauberk",
+						["recipeID"] = 55311
+					},
+					{
+						["name"] = "Savage Saronite Legplates",
+						["recipeID"] = 55310
+					},
+					{
+						["name"] = "Savage Saronite Pauldrons",
+						["recipeID"] = 55306
+					},
+					{
+						["name"] = "Savage Saronite Skullshield",
+						["recipeID"] = 55312
+					},
+					{
+						["name"] = "Savage Saronite Waistguard",
+						["recipeID"] = 55307
+					},
+					{
+						["name"] = "Savage Saronite Walkers",
+						["recipeID"] = 55308
+					},
+					{
+						["name"] = "Spiked Cobalt Belt",
+						["recipeID"] = 54946
+					},
+					{
+						["name"] = "Spiked Cobalt Boots",
+						["recipeID"] = 54918
+					},
+					{
+						["name"] = "Spiked Cobalt Bracers",
+						["recipeID"] = 54948
+					},
+					{
+						["name"] = "Spiked Cobalt Chestpiece",
+						["recipeID"] = 54944
+					},
+					{
+						["name"] = "Spiked Cobalt Gauntlets",
+						["recipeID"] = 54945
+					},
+					{
+						["name"] = "Spiked Cobalt Helm",
+						["recipeID"] = 54917
+					},
+					{
+						["name"] = "Spiked Cobalt Legplates",
+						["recipeID"] = 54947
+					},
+					{
+						["name"] = "Spiked Cobalt Shoulders",
+						["recipeID"] = 54941
+					},
+					{
+						["name"] = "Spiked Deathdealers",
+						["recipeID"] = 63192
+					},
+					{
+						["name"] = "Spiked Titansteel Helm",
+						["recipeID"] = 55372
+					},
+					{
+						["name"] = "Spiked Titansteel Treads",
+						["recipeID"] = 55375
+					},
+					{
+						["name"] = "Sunforged Bracers",
+						["recipeID"] = 67135
+					},
+					{
+						["name"] = "Sunforged Breastplate",
+						["recipeID"] = 67134
+					},
+					{
+						["name"] = "Tempered Saronite Belt",
+						["recipeID"] = 54551
+					},
+					{
+						["name"] = "Tempered Saronite Boots",
+						["recipeID"] = 54552
+					},
+					{
+						["name"] = "Tempered Saronite Bracers",
+						["recipeID"] = 55017
+					},
+					{
+						["name"] = "Tempered Saronite Breastplate",
+						["recipeID"] = 54553
+					},
+					{
+						["name"] = "Tempered Saronite Gauntlets",
+						["recipeID"] = 55015
+					},
+					{
+						["name"] = "Tempered Saronite Helm",
+						["recipeID"] = 54555
+					},
+					{
+						["name"] = "Tempered Saronite Legplates",
+						["recipeID"] = 54554
+					},
+					{
+						["name"] = "Tempered Saronite Shoulders",
+						["recipeID"] = 54556
+					},
+					{
+						["name"] = "Tempered Titansteel Helm",
+						["recipeID"] = 55373
+					},
+					{
+						["name"] = "Tempered Titansteel Treads",
+						["recipeID"] = 55376
+					},
+					{
+						["name"] = "Titanium Razorplate",
+						["recipeID"] = 67132
+					},
+					{
+						["name"] = "Titanium Spikeguards",
+						["recipeID"] = 67133
+					},
+					{
+						["name"] = "Treads of Destiny",
+						["recipeID"] = 63190
+					},
+					{
+						["name"] = "Vengeance Bindings",
+						["recipeID"] = 55298
+					}
+				}
+			},
+			{
+				["name"] = "Shields",
+				["categoryID"] = 226,
+				["g"] = {
+					{
+						["name"] = "Cobalt Triangle Shield",
+						["recipeID"] = 54550
+					},
+					{
+						["name"] = "Saronite Bulwark",
+						["recipeID"] = 55014
+					},
+					{
+						["name"] = "Saronite Defender",
+						["recipeID"] = 54557
+					},
+					{
+						["name"] = "Saronite Protector",
+						["recipeID"] = 55013
+					},
+					{
+						["name"] = "Titansteel Shield Wall",
+						["recipeID"] = 56400
+					}
+				}
+			},
+			{
+				["name"] = "Weapons",
+				["categoryID"] = 227,
+				["g"] = {
+					{
+						["name"] = "Cobalt Tenderizer",
+						["recipeID"] = 55201
+					},
+					{
+						["name"] = "Corroded Saronite Edge",
+						["recipeID"] = 55183
+					},
+					{
+						["name"] = "Corroded Saronite Woundbringer",
+						["recipeID"] = 55184
+					},
+					{
+						["name"] = "Cudgel of Saronite Justice",
+						["recipeID"] = 56280
+					},
+					{
+						["name"] = "Deadly Saronite Dirk",
+						["recipeID"] = 55206
+					},
+					{
+						["name"] = "Forged Cobalt Claymore",
+						["recipeID"] = 55203
+					},
+					{
+						["name"] = "Furious Saronite Beatstick",
+						["recipeID"] = 55182
+					},
+					{
+						["name"] = "Honed Cobalt Cleaver",
+						["recipeID"] = 55174
+					},
+					{
+						["name"] = "Notched Cobalt War Axe",
+						["recipeID"] = 55204
+					},
+					{
+						["name"] = "Saronite Ambusher",
+						["recipeID"] = 55179
+					},
+					{
+						["name"] = "Saronite Mindcrusher",
+						["recipeID"] = 55185
+					},
+					{
+						["name"] = "Saronite Shiv",
+						["recipeID"] = 55181
+					},
+					{
+						["name"] = "Saronite Spellblade",
+						["recipeID"] = 59442
+					},
+					{
+						["name"] = "Savage Cobalt Slicer",
+						["recipeID"] = 55177
+					},
+					{
+						["name"] = "Sturdy Cobalt Quickblade",
+						["recipeID"] = 55200
+					},
+					{
+						["name"] = "Titansteel Bonecrusher",
+						["recipeID"] = 55370
+					},
+					{
+						["name"] = "Titansteel Destroyer",
+						["recipeID"] = 55369
+					},
+					{
+						["name"] = "Titansteel Guardian",
+						["recipeID"] = 55371
+					},
+					{
+						["name"] = "Titansteel Shanker",
+						["recipeID"] = 56234
+					},
+					{
+						["name"] = "Titansteel Spellblade",
+						["recipeID"] = 63182
+					}
+				}
+			},
+			{
+				["name"] = "Skeleton Keys",
+				["categoryID"] = 228,
+				["g"] = {
+					{
+						["name"] = "Cobalt Skeleton Key",
+						["recipeID"] = 59405
+					},
+					{
+						["name"] = "Titanium Skeleton Key",
+						["recipeID"] = 59406
+					}
+				}
+			}
+		}),
 	}),
 });

@@ -1,121 +1,150 @@
 profession(773, {	-- Inscription
 	filter(200, {	-- Recipes
-	-- Reviewed and updated as of 11.23.2018 BfA 8.0, leaving all items from _Automation in for easier future updates
-		{	-- Northrend Inscription
-			["categoryID"] = 767--[[Northrend Inscription]],
-			["g"] = {
-				{	-- Inks
-					["categoryID"] = 793--[[Inks]],
-					["g"] = {
-						{	-- Ink of the Sea
-							["recipeID"] = 57715--[[Ink of the Sea]]
-						},
-						{	-- Snowfall Ink
-							["recipeID"] = 57716--[[Snowfall Ink]]
-						}
+		tier(3, { -- Northrend Inscription
+			{
+				["name"] = "Ink",
+				["categoryID"] = 104,
+				["g"] = {
+					{
+						["name"] = "Ink of the Sea",
+						["recipeID"] = 57715
+					},
+					{
+						["name"] = "Snowfall Ink",
+						["recipeID"] = 57716
 					}
-				},
-				{	-- Glyphs
-					["categoryID"] = 794--[[Glyphs]],
-					["g"] = {
-						{	-- Glyph of Angels
-							["recipeID"] = 148275--[[Glyph of Angels]]
-						},
-						{	-- Glyph of Fighting Pose
-							["recipeID"] = 112469--[[Glyph of Fighting Pose]]
-						},
-						{	-- Glyph of Honor
-							["recipeID"] = 112464--[[Glyph of Honor]]
-						},
-						{	-- Glyph of the Orca
-							["recipeID"] = 56948--[[Glyph of the Orca]]
-						}
+				}
+			},
+			{
+				["name"] = "Glyph",
+				["categoryID"] = 113,
+				["g"] = {
+					{
+						["name"] = "Glyph of Angels",
+						["recipeID"] = 148275
+					},
+					{
+						["name"] = "Glyph of Fighting Pose",
+						["recipeID"] = 112469
+					},
+					{
+						["name"] = "Glyph of Honor",
+						["recipeID"] = 112464
+					},
+					{
+						["name"] = "Glyph of the Orca",
+						["recipeID"] = 56948
 					}
-				},
-				{	-- Scrolls & Research
-					["categoryID"] = 795--[[Scrolls & Research]],
-					["g"] = {
-						{	-- Runescroll of Fortitude
-							["recipeID"] = 69385--[[Runescroll of Fortitude]]
-						},
-						{	-- Scroll of Agility VIII
-							["recipeID"] = 58483--[[Scroll of Agility VIII]]
-						},
-						{	-- Scroll of Strength VIII
-							["recipeID"] = 58491--[[Scroll of Strength VIII]]
-						},
-						{	-- Scroll of Intellect VIII
-							["recipeID"] = 50604--[[Scroll of Intellect VIII]]
-						},
-						{	-- Scroll of Versatility VIII
-							["recipeID"] = 50611--[[Scroll of Versatility VIII]]
-						},
-						{	-- Scroll of Stamina VIII
-							["recipeID"] = 50620--[[Scroll of Stamina VIII]]
-						},
-						{	-- Scroll of Agility VII
-							["recipeID"] = 58482--[[Scroll of Agility VII]]
-						},
-						{	-- Scroll of Intellect VII
-							["recipeID"] = 50603--[[Scroll of Intellect VII]]
-						},
-						{	-- Scroll of Recall III
-							["recipeID"] = 60337--[[Scroll of Recall III]]
-						},
-						{	-- Scroll of Stamina VII
-							["recipeID"] = 50619--[[Scroll of Stamina VII]]
-						},
-						{	-- Scroll of Strength VII
-							["recipeID"] = 58490--[[Scroll of Strength VII]]
-						},
-						{	-- Scroll of Versatility VII
-							["recipeID"] = 50610--[[Scroll of Versatility VII]]
-						}
+				}
+			},
+			{
+				["name"] = "Scrolls",
+				["categoryID"] = 107,
+				["g"] = {
+					{
+						["name"] = "Runescroll of Fortitude",
+						["recipeID"] = 69385
+					},
+					{
+						["name"] = "Scroll of Agility VII",
+						["recipeID"] = 58482
+					},
+					{
+						["name"] = "Scroll of Agility VIII",
+						["recipeID"] = 58483
+					},
+					{
+						["name"] = "Scroll of Intellect VII",
+						["recipeID"] = 50603
+					},
+					{
+						["name"] = "Scroll of Intellect VIII",
+						["recipeID"] = 50604
+					},
+					{
+						["name"] = "Scroll of Recall III",
+						["recipeID"] = 60337
+					},
+					{
+						["name"] = "Scroll of Stamina VII",
+						["recipeID"] = 50619
+					},
+					{
+						["name"] = "Scroll of Stamina VIII",
+						["recipeID"] = 50620
+					},
+					{
+						["name"] = "Scroll of Strength VII",
+						["recipeID"] = 58490
+					},
+					{
+						["name"] = "Scroll of Strength VIII",
+						["recipeID"] = 58491
+					},
+					{
+						["name"] = "Scroll of Versatility VII",
+						["recipeID"] = 50610
+					},
+					{
+						["name"] = "Scroll of Versatility VIII",
+						["recipeID"] = 50611
 					}
-				},
-				{	-- Cards
-					["categoryID"] = 796--[[Cards]],
-					["g"] = {
-						{	-- Darkmoon Card of the North
-							["recipeID"] = 59504--[[Darkmoon Card of the North]]
-						}
+				}
+			},
+			{
+				["name"] = "Card",
+				["categoryID"] = 106,
+				["g"] = {
+					{
+						["name"] = "Darkmoon Card of the North",
+						["recipeID"] = 59504
 					}
-				},
-				{	-- Off-Hands
-					["categoryID"] = 797--[[Off-Hands]],
-					["g"] = {
-						{	-- Faces of Doom
-							["recipeID"] = 59498--[[Faces of Doom]]
-						},
-						{	-- Iron-bound Tome
-							["recipeID"] = 59497--[[Iron-bound Tome]]
-						},
-						{	-- Rituals of the Moon
-							["recipeID"] = 64051--[[Rituals of the Moon]]
-						},
-						{	-- Twilight Tome
-							["recipeID"] = 64053--[[Twilight Tome]]
-						}
+				}
+			},
+			{
+				["name"] = "Off-hand",
+				["categoryID"] = 103,
+				["g"] = {
+					{
+						["name"] = "Faces of Doom",
+						["recipeID"] = 59498
+					},
+					{
+						["name"] = "Iron-bound Tome",
+						["recipeID"] = 59497
+					},
+					{
+						["name"] = "Rituals of the Moon",
+						["recipeID"] = 64051
+					},
+					{
+						["name"] = "Twilight Tome",
+						["recipeID"] = 64053
 					}
-				},
-				{	-- Shoulder Inscription
-					["categoryID"] = 798--[[Shoulder Inscription]],
-					["g"] = {
-						{	-- Master's Inscription of the Axe
-							["recipeID"] = 61117--[[Master's Inscription of the Axe]]
-						},
-						{	-- Master's Inscription of the Crag
-							["recipeID"] = 61118--[[Master's Inscription of the Crag]]
-						},
-						{	-- Master's Inscription of the Pinnacle
-							["recipeID"] = 61119--[[Master's Inscription of the Pinnacle]]
-						},
-						{	-- Master's Inscription of the Storm
-							["recipeID"] = 61120--[[Master's Inscription of the Storm]]
-						}
+				}
+			},
+			{
+				["name"] = "Shoulder Inscription",
+				["categoryID"] = 119,
+				["g"] = {
+					{
+						["name"] = "Master's Inscription of the Axe",
+						["recipeID"] = 61117
+					},
+					{
+						["name"] = "Master's Inscription of the Crag",
+						["recipeID"] = 61118
+					},
+					{
+						["name"] = "Master's Inscription of the Pinnacle",
+						["recipeID"] = 61119
+					},
+					{
+						["name"] = "Master's Inscription of the Storm",
+						["recipeID"] = 61120
 					}
 				}
 			}
-		},
+		}),
 	}),
 });
