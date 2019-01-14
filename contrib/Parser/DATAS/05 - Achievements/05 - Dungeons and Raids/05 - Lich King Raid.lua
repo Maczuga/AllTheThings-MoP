@@ -20,8 +20,12 @@ _.Achievements =
 					{	-- A Quick Shave (25 player)
 						["achievementID"] = 2921,	-- A Quick Shave (25 player)
 					},
-					ach(4580),		-- All You Can Eat (10 player)
-					ach(4620),		-- All You Can Eat (25 player)
+					{	-- All You Can Eat (10 player)
+						["achievementID"] = 4580,	-- All You Can Eat (10 player)
+					},
+					{	-- All You Can Eat (25 player)
+						["achievementID"] = 4620,	-- All You Can Eat (25 player)
+					},
 					{	-- Alone in the Darkness (10 player)
 						["achievementID"] = 3159,	-- Alone in the Darkness (10 player)
 						["g"] = {
@@ -54,22 +58,40 @@ _.Achievements =
 					ach(2177),		-- And They Would All Go Down Together (25 player)
 					ach(1858),		-- Arachnophobia (10 player)
 					ach(1859),		-- Arachnophobia (25 player)
-					ach(4583, {		-- Bane of the Fallen King
-						title(139),		-- ,Bane of the Fallen King
-						ach(4530, {		-- The Frozen Throne (10 player)
-							title(140),		-- the Kingslayer
-						}),
-					}),
-					ach(4601),		-- Been Waiting a Long Time for This (10 player)
-					ach(4621),		-- Been Waiting a Long Time for This (25 player)
+					{	-- Bane of the Fallen King
+						["achievementID"] = 4583,	-- Bane of the Fallen King
+						["g"] = {
+							{	-- ,Bane of the Fallen King
+								["titleID"] = 139,	-- ,Bane of the Fallen King
+							},
+							{	-- The Frozen Throne (10 player)
+								["achievementID"] = 4530,	-- The Frozen Throne (10 player)
+								["g"] = {
+									{	-- the Kingslayer
+										["titleID"] = 140,	-- the Kingslayer
+									},
+								},
+							},
+						},
+					},
+					{	-- Been Waiting a Long Time for This (10 player)
+						["achievementID"] = 4601,	-- Been Waiting a Long Time for This (10 player)
+					},
+					{	-- Been Waiting a Long Time for This (25 player)
+						["achievementID"] = 4621,	-- Been Waiting a Long Time for This (25 player)
+					},
 					{	-- Besting the Black Dragonflight (10 player)
 						["achievementID"] = 1876,	-- Besting the Black Dragonflight (10 player)
 					},
 					{	-- Besting the Black Dragonflight (25 player)
 						["achievementID"] = 625,	-- Besting the Black Dragonflight (25 player)
 					},
-					ach(4534),		-- Boned (10 player)
-					ach(4610),		-- Boned (25 player)
+					{	-- Boned (10 player)
+						["achievementID"] = 4534,	-- Boned (10 player)
+					},
+					{	-- Boned (25 player)
+						["achievementID"] = 4610,	-- Boned (25 player)
+					},
 					{	-- But I'm On Your Side (10 player)
 						["achievementID"] = 2945,	-- But I'm On Your Side (10 player)
 						["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
@@ -202,8 +224,12 @@ _.Achievements =
 					{	-- Crazy Cat Lady (25 player)
 						["achievementID"] = 3007,	-- Crazy Cat Lady (25 player)
 					},
-					ach(4538),		-- Dances with Oozes (10 player)
-					ach(4614),		-- Dances with Oozes (25 player)
+					{	-- Dances with Oozes (10 player)
+						["achievementID"] = 4538,	-- Dances with Oozes (10 player)
+					},
+					{	-- Dances with Oozes (25 player)
+						["achievementID"] = 4614,	-- Dances with Oozes (25 player)
+					},
 					{	-- Deforestation (10 player)
 						["achievementID"] = 2985,	-- Deforestation (10 player)
 					},
@@ -252,10 +278,18 @@ _.Achievements =
 					{	-- Firefighter (25 player)
 						["achievementID"] = 3189,	-- Firefighter (25 player)
 					},
-					ach(4577),		-- Flu Shot Shortage (10 player)
-					ach(4615),		-- Flu Shot Shortage (25 player)
-					ach(4535),		-- Full House (10 player)
-					ach(4611),		-- Full House (25 player)
+					{	-- Flu Shot Shortage (10 player)
+						["achievementID"] = 4577,	-- Flu Shot Shortage (10 player)
+					},
+					{	-- Flu Shot Shortage (25 player)
+						["achievementID"] = 4615,	-- Flu Shot Shortage (25 player)
+					},
+					{	-- Full House (10 player)
+						["achievementID"] = 4535,	-- Full House (10 player)
+					},
+					{	-- Full House (25 player)
+						["achievementID"] = 4611,	-- Full House (25 player)
+					},
 					{	-- Getting Back to Nature (10 player)
 						["achievementID"] = 2982,	-- Getting Back to Nature (10 player)
 					},
@@ -286,110 +320,362 @@ _.Achievements =
 					{	-- Heartbreaker (25 player)
 						["achievementID"] = 3059,	-- Heartbreaker (25 player)
 					},
-					ach(4636, {		-- Heroic: Fall of the Lich King (10 player)
-						crit(1),		-- Heroic: Storming the Citadel (10 player)
-						crit(2),		-- Heroic: The Plagueworks (10 player)
-						crit(3),		-- Heroic: The Crimson Hall (10 player)
-						crit(4),		-- Heroic: The Frostwing Halls (10 player)
-						crit(5),		-- Bane of the Fallen King
-						ach(4532, {		-- Fall of the Lich King (10 player)
-							crit(1),		-- Storming the Citadel (10 player)
-							crit(2),		-- The Plagueworks (10 player)
-							crit(3),		-- The Crimson Hall (10 player)
-							crit(4),		-- The Frostwing Halls (10 player)
-							crit(5),		-- The Frozen Throne (10 player)
-						}),
-					}),
-					ach(4637, {		-- Heroic: Fall of the Lich King (25 player)
-						crit(1),		-- Heroic: Storming the Citadel (25 player)
-						crit(2),		-- Heroic: The Plagueworks (25 player)
-						crit(3),		-- Heroic: The Crimson Hall (25 player)
-						crit(4),		-- Heroic: The Frostwing Halls (25 player)
-						crit(5),		-- The Light of Dawn
-						ach(4608, {		-- Fall of the Lich King (25 player)
-							crit(1),		-- Storming the Citadel (25 player)
-							crit(2),		-- The Plagueworks (25 player)
-							crit(3),		-- The Crimson Hall (25 player)
-							crit(4),		-- The Frostwing Halls (25 player)
-							crit(5),		-- The Frozen Throne (25 player)
-						}),
-					}),
-					ach(4628, {		-- Heroic: Storming the Citadel (10 player)
-						crit(1),		-- Lord Marrowgar
-						crit(2),		-- Lady Deathwhisper
-						crit(3),		-- Claim victory in the Gunship Battle
-						crit(4),		-- The Deathbringer
-						ach(4531, {		-- Storming the Citadel (10 player)
-							crit(1),		-- Lord Marrowgar
-							crit(2),		-- Lady Deathwhisper
-							crit(3),		-- Claim victory in the Gunship Battle
-							crit(4),		-- The Deathbringer
-						}),
-					}),
-					ach(4632, {		-- Heroic: Storming the Citadel (25 player)
-						crit(1),		-- Lord Marrowgar
-						crit(2),		-- Lady Deathwhisper
-						crit(3),		-- Claim victory in the Gunship Battle
-						crit(4),		-- The Deathbringer
-						ach(4604, {		-- Storming the Citadel (25 player)
-							crit(1),		-- Lord Marrowgar
-							crit(2),		-- Lady Deathwhisper
-							crit(3),		-- Claim victory in the Gunship Battle
-							crit(4),		-- The Deathbringer
-						}),
-					}),
-					ach(4630, {		-- Heroic: The Crimson Hall (10 player)
-						crit(1),		-- Defeat the Blood Prince Council
-						crit(2),		-- Defeat Blood-Queen Lana'thel
-						ach(4529, {		-- The Crimson Hall (10 player)
-							crit(1),		-- Defeat the Blood Prince Council
-							crit(2),		-- Defeat Blood-Queen Lana'thel
-						}),
-					}),
-					ach(4634, {		-- Heroic: The Crimson Hall (25 player)
-						crit(1),		-- Defeat the Blood Prince Council
-						crit(2),		-- Defeat Blood-Queen Lana'thel
-						ach(4606, {		-- The Crimson Hall (25 player)
-							crit(1),		-- Defeat the Blood Prince Council
-							crit(2),		-- Defeat Blood-Queen Lana'thel
-						}),
-					}),
-					ach(4631, {		-- Heroic: The Frostwing Halls (10 player)
-						crit(1),		-- Rescue Valithria Dreamwalker
-						crit(2),		-- Sindragosa
-						ach(4527, {		-- The Frostwing Halls (10 player)
-							crit(1),		-- Rescue Valithria Dreamwalker
-							crit(2),		-- Sindragosa
-						}),
-					}),
-					ach(4635, {		-- Heroic: The Frostwing Halls (25 player)
-						crit(1),		-- Rescue Valithria Dreamwalker
-						crit(2),		-- Sindragosa
-						ach(4607, {		-- The Frostwing Halls (25 player)
-							crit(1),		-- Rescue Valithria Dreamwalker
-							crit(2),		-- Sindragosa
-						}),
-					}),
-					ach(4629, {		-- Heroic: The Plagueworks (10 player)
-						crit(1),		-- Festergut
-						crit(2),		-- Rotface
-						crit(3),		-- Professor Putricide
-						ach(4528, {		-- The Plagueworks (10 player)
-							crit(1),		-- Festergut
-							crit(2),		-- Rotface
-							crit(3),		-- Professor Putricide
-						}),
-					}),
-					ach(4633, {		-- Heroic: The Plagueworks (25 player)
-						crit(1),		-- Festergut
-						crit(2),		-- Rotface
-						crit(3),		-- Professor Putricide
-						ach(4605, {		-- The Plagueworks (25 player)
-							crit(1),		-- Festergut
-							crit(2),		-- Rotface
-							crit(3),		-- Professor Putricide
-						}),
-					}),
+					{	-- Heroic: Fall of the Lich King (10 player)
+						["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+						["g"] = {
+							{	-- Heroic: Storming the Citadel (10 player)
+								["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+								["criteriaID"] = 1,	-- Heroic: Storming the Citadel (10 player
+							},
+							{	-- Heroic: The Plagueworks (10 player)
+								["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+								["criteriaID"] = 2,	-- Heroic: The Plagueworks (10 player
+							},
+							{	-- Heroic: The Crimson Hall (10 player)
+								["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+								["criteriaID"] = 3,	-- Heroic: The Crimson Hall (10 player
+							},
+							{	-- Heroic: The Frostwing Halls (10 player)
+								["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+								["criteriaID"] = 4,	-- Heroic: The Frostwing Halls (10 player
+							},
+							{	-- Heroic: Fall of the Lich King (10 player)
+								["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+								["criteriaID"] = 5,	-- Bane of the Fallen King
+							},
+							{	-- Fall of the Lich King (10 player)
+								["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+								["g"] = {
+									{	-- Fall of the Lich King (10 player)
+										["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+										["criteriaID"] = 1,	-- Storming the Citadel (10 player)
+									},
+									{	-- Fall of the Lich King (10 player)
+										["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+										["criteriaID"] = 2,	-- The Plagueworks (10 player)
+									},
+									{	-- Fall of the Lich King (10 player)
+										["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+										["criteriaID"] = 3,	-- The Crimson Hall (10 player)
+									},
+									{	-- Fall of the Lich King (10 player)
+										["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+										["criteriaID"] = 4,	-- The Frostwing Halls (10 player)
+									},
+									{	-- Fall of the Lich King (10 player)
+										["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+										["criteriaID"] = 5,	-- The Frozen Throne (10 player)
+									},
+								},
+							},
+						},
+					},
+					{	-- Heroic: Fall of the Lich King (25 player)
+						["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+						["g"] = {
+							{	-- Heroic: Fall of the Lich King (25 player): Storming the Citadel
+								["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+								["criteriaID"] = 1,	-- Heroic: Storming the Citadel (25 player)
+							},
+							{	-- Heroic: Fall of the Lich King (25 player): The Plagueworks
+								["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+								["criteriaID"] = 2,	-- Heroic: The Plagueworks (25 player)
+							},
+							{	-- Heroic: Fall of the Lich King (25 player): The Crimson Hall
+								["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+								["criteriaID"] = 3,	-- Heroic: The Crimson Hall (25 player)
+							},
+							{	-- Heroic: Fall of the Lich King (25 player): The Frostwing Halls
+								["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+								["criteriaID"] = 4,	-- Heroic: The Frostwing Halls (25 player)
+							},
+							{	-- Heroic: Fall of the Lich King (25 player): The Light of Dawn
+								["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+								["criteriaID"] = 5,	-- The Light of Dawn
+							},
+							{	-- Fall of the Lich King (25 player)
+								["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+								["g"] = {
+									{	-- Fall of the Lich King (25 player): Storming the Citadel
+										["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+										["criteriaID"] = 1,	-- Storming the Citadel (25 player)
+									},
+									{	-- Fall of the Lich King (25 player): The Plagueworks
+										["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+										["criteriaID"] = 2,	-- The Plagueworks (25 player)
+									},
+									{	-- Fall of the Lich King (25 player): The Crimson Hall
+										["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+										["criteriaID"] = 3,	-- The Crimson Hall (25 player)
+									},
+									{	-- Fall of the Lich King (25 player): The Frostwing Halls
+										["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+										["criteriaID"] = 4,	-- The Frostwing Halls (25 player)
+									},
+									{	-- Fall of the Lich King (25 player): The Frozen Throne
+										["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+										["criteriaID"] = 5,	-- The Frozen Throne (25 player)
+									},
+								},
+							}
+						},
+					},
+					{	-- Heroic: Storming the Citadel (10 player)
+						["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+						["g"] = {
+							{	-- Heroic: Storming the Citadel (10 player): Lord Marrowgar
+								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+								["criteriaID"] = 1,	-- Lord Marrowgar
+							},
+							{	-- Heroic: Storming the Citadel (10 player): Lady Deathwhisper
+								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+								["criteriaID"] = 2,	-- Lady Deathwhisper
+							},
+							{	-- Heroic: Storming the Citadel (10 player): Claim victory in the Gunship Battle
+								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+								["criteriaID"] = 3,	-- Claim victory in the Gunship Battle
+							},
+							{	-- Heroic: Storming the Citadel (10 player): The Deathbringer
+								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+								["criteriaID"] = 4,	-- The Deathbringer
+							},
+							{	-- Heroic: Storming the Citadel (10 player)
+								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+								["g"] = {
+									{	-- Storming the Citadel (10 player): Lord Marrowgar
+										["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+										["criteriaID"] = 1,	-- Lord Marrowgar
+									},
+									{	-- Storming the Citadel (10 player): Lady Deathwhisper
+										["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+										["criteriaID"] = 2,	-- Lady Deathwhisper
+									},
+									{	-- Storming the Citadel (10 player): Claim victory in the Gunship Battle
+										["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+										["criteriaID"] = 3,	-- Claim victory in the Gunship Battle
+									},
+									{	-- Storming the Citadel (10 player): The Deathbringer
+										["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+										["criteriaID"] = 4,	-- The Deathbringer
+									},
+								},
+							},
+						},
+					},
+					{	-- Heroic: Storming the Citadel (25 player)
+						["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+						["g"] = {
+							{	-- Heroic: Storming the Citadel (25 player): Lord Marrowgar
+								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+								["criteriaID"] = 1,	-- Lord Marrowgar
+							},
+							{	-- Heroic: Storming the Citadel (25 player): Lady Deathwhisper
+								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+								["criteriaID"] = 2,	-- Lady Deathwhisper
+							},
+							{	-- Heroic: Storming the Citadel (25 player): Claim victory in the Gunship Battle
+								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+								["criteriaID"] = 3,	-- Claim victory in the Gunship Battle
+							},
+							{	-- Heroic: Storming the Citadel (25 player): The Deathbringer
+								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+								["criteriaID"] = 4,	-- The Deathbringer
+							},
+							{	-- Storming the Citadel (25 player)
+								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+								["g"] = {
+									{	-- Storming the Citadel (25 player): Lord Marrowgar
+										["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+										["criteriaID"] = 1,	-- Lord Marrowgar
+									},
+									{	-- Storming the Citadel (25 player): Lady Deathwhisper
+										["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+										["criteriaID"] = 2,	-- Lady Deathwhisper
+									},
+									{	-- Storming the Citadel (25 player): Claim victory in the Gunship Battle
+										["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+										["criteriaID"] = 3,	-- Claim victory in the Gunship Battle
+									},
+									{	-- Storming the Citadel (25 player): The Deathbringer
+										["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+										["criteriaID"] = 4,	-- The Deathbringer
+									},
+								},
+							}
+						},
+					},
+					{	-- Heroic: The Crimson Hall (10 player)
+						["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
+						["g"] = {
+							{	-- Heroic: The Crimson Hall (10 player): Defeat the Blood Prince Council
+								["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
+								["criteriaID"] = 1,	-- Defeat the Blood Prince Council
+							},
+							{	-- Heroic: The Crimson Hall (10 player): Defeat Blood-Queen Lana'thel
+								["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
+								["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel
+							},
+							{	-- The Crimson Hall (10 player)
+								["achievementID"] = 4529,	-- The Crimson Hall (10 player)
+								["g"] = {
+									{	-- The Crimson Hall (10 player): Defeat the Blood Prince Council
+										["achievementID"] = 4529,	-- The Crimson Hall (10 player)
+										["criteriaID"] = 1,	-- Defeat the Blood Prince Council
+									},
+									{	-- The Crimson Hall (10 player): Defeat Blood-Queen Lana'thel
+										["achievementID"] = 4529,	-- The Crimson Hall (10 player)
+										["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel
+									},
+								},
+							},
+						},
+					},
+					{	-- Heroic: The Crimson Hall (25 player)
+						["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
+						["g"] = {
+							{	-- Heroic: The Crimson Hall (25 player): Defeat the Blood Prince Council
+								["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
+								["criteriaID"] = 1,	-- Defeat the Blood Prince Council
+							},
+							{	-- Heroic: The Crimson Hall (25 player): Defeat Blood-Queen Lana'thel
+								["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
+								["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel
+							},
+							{	-- The Crimson Hall (25 player)
+								["achievementID"] = 4606,	-- The Crimson Hall (25 player)
+								["g"] = {
+									{	-- The Crimson Hall (25 player): Defeat the Blood Prince Council
+										["achievementID"] = 4606,	-- The Crimson Hall (25 player)
+										["criteriaID"] = 1,	-- Defeat the Blood Prince Council
+									},
+									{	-- The Crimson Hall (25 player): Defeat Blood-Queen Lana'thel
+										["achievementID"] = 4606,	-- The Crimson Hall (25 player)
+										["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel
+									},
+								},
+							},
+						},
+					},
+					{	-- Heroic: The Frostwing Halls (10 player)
+						["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
+						["g"] = {
+							{	-- Heroic: The Frostwing Halls (10 player): Rescue Valithria Dreamwalker
+								["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
+								["criteriaID"] = 1,	-- Rescue Valithria Dreamwalker
+							},
+							{	-- Heroic: The Frostwing Halls (10 player): Sindragosa
+								["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
+								["criteriaID"] = 2,	-- Sindragosa
+							},
+							{	-- The Frostwing Halls (10 player)
+								["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
+								["g"] = {
+									{	-- The Frostwing Halls (10 player): Rescue Valithria Dreamwalker
+										["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
+										["criteriaID"] = 1,	-- Rescue Valithria Dreamwalker
+									},
+									{	-- The Frostwing Halls (10 player): Sindragosa
+										["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
+										["criteriaID"] = 2,	-- Sindragosa
+									},
+								},
+							},
+						},
+					},
+					{	-- Heroic: The Frostwing Halls (25 player)
+						["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
+						["g"] = {
+							{	-- Heroic: The Frostwing Halls (25 player): Rescue Valithria Dreamwalker
+								["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
+								["criteriaID"] = 1,	-- Rescue Valithria Dreamwalker
+							},
+							{	-- Heroic: The Frostwing Halls (25 player): Sindragosa
+								["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
+								["criteriaID"] = 2,	-- Sindragosa
+							},
+							{	-- The Frostwing Halls (25 player)
+								["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
+								["g"] = {
+									{	-- The Frostwing Halls (25 player): Rescue Valithria Dreamwalker
+										["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
+										["criteriaID"] = 1,	-- Rescue Valithria Dreamwalker
+									},
+									{	-- The Frostwing Halls (25 player): Sindragosa
+										["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
+										["criteriaID"] = 2,	-- Sindragosa
+									},
+								},
+							},
+						},
+					},
+					{	-- Heroic: The Plagueworks (10 player)
+						["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
+						["g"] = {
+							{	-- Heroic: The Plagueworks (10 player): Festergut
+								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
+								["criteriaID"] = 1,	-- Festergut
+							},
+							{	-- Heroic: The Plagueworks (10 player): Rotface
+								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
+								["criteriaID"] = 2,	-- Rotface
+							},
+							{	-- Heroic: The Plagueworks (10 player): Professor Putricide
+								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
+								["criteriaID"] = 3,	-- Professor Putricide
+							},
+							{	-- The Plagueworks (10 player)
+								["achievementID"] = 4528,	-- The Plagueworks (10 player)
+								["g"] = {
+									{	-- The Plagueworks (10 player): Festergut
+										["achievementID"] = 4528,	-- The Plagueworks (10 player)
+										["criteriaID"] = 1,	-- Festergut
+									},
+									{	-- The Plagueworks (10 player): Rotface
+										["achievementID"] = 4528,	-- The Plagueworks (10 player)
+										["criteriaID"] = 2,	-- Rotface
+									},
+									{	-- The Plagueworks (10 player): Professor Putricide
+										["achievementID"] = 4528,	-- The Plagueworks (10 player)
+										["criteriaID"] = 3,	-- Professor Putricide
+									},
+								},
+							},
+						},
+					},
+					{	-- Heroic: The Plagueworks (25 player)
+						["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
+						["g"] = {
+							{	-- Heroic: The Plagueworks (25 player): Festergut
+								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
+								["criteriaID"] = 1,	-- Festergut
+							},
+							{	-- Heroic: The Plagueworks (25 player): Rotface
+								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
+								["criteriaID"] = 2,	-- Rotface
+							},
+							{	-- Heroic: The Plagueworks (25 player): Professor Putricide
+								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
+								["criteriaID"] = 3,	-- Professor Putricide
+							},
+							{	-- The Plagueworks (25 player)
+								["achievementID"] = 4605,	-- The Plagueworks (25 player)
+								["g"] = {
+									{	-- The Plagueworks (25 player): Festergut
+										["achievementID"] = 4605,	-- The Plagueworks (25 player)
+										["criteriaID"] = 1,	-- Festergut
+									},
+									{	-- The Plagueworks (25 player): Rotface
+										["achievementID"] = 4605,	-- The Plagueworks (25 player)
+										["criteriaID"] = 2,	-- Rotface
+									},
+									{	-- The Plagueworks (25 player): Professor Putricide
+										["achievementID"] = 4605,	-- The Plagueworks (25 player)
+										["criteriaID"] = 3,	-- Professor Putricide
+									},
+								},
+							},
+						},
+					},
 					{	-- Heroic: The Twilight Destroyer (10 player)
 						["achievementID"] = 4818,	-- Heroic: The Twilight Destroyer (10 player)
 						["g"] = {
@@ -476,10 +762,18 @@ _.Achievements =
 							},
 						},
 					},
-					ach(4536),		-- I'm on a Boat (10 player)
-					ach(4612),		-- I'm on a Boat (25 player)
-					ach(4537),		-- I've Gone and Made a Mess (10 player)
-					ach(4613),		-- I've Gone and Made a Mess (25 player)
+					{	-- I'm on a Boat (10 player)
+						["achievementID"] = 4536,	-- I'm on a Boat (10 player)
+					},
+					{	-- I'm on a Boat (25 player)
+						["achievementID"] = 4612,	-- I'm on a Boat (25 player)
+					},
+					{	-- I've Gone and Made a Mess (10 player)
+						["achievementID"] = 4537,	-- I've Gone and Made a Mess (10 player)
+					},
+					{	-- I've Gone and Made a Mess (25 player)
+						["achievementID"] = 4613,	-- I've Gone and Made a Mess (25 player)
+					},
 					{	-- If Looks Could Kill (10 player)
 						["achievementID"] = 2955,	-- If Looks Could Kill (10 player)
 					},
@@ -644,10 +938,18 @@ _.Achievements =
 					{	-- Must Deconstruct Faster (25 player)
 						["achievementID"] = 2938,	-- Must Deconstruct Faster (25 player)
 					},
-					ach(4578),		-- Nausea, Heartburn, Indigestion... (10 player)
-					ach(4616),		-- Nausea, Heartburn, Indigestion... (25 player)
-					ach(4581),		-- Neck-Deep in Vile (10 player)
-					ach(4622),		-- Neck-Deep in Vile (25 player)
+					{	-- Nausea, Heartburn, Indigestion... (10 player)
+						["achievementID"] = 4578,	-- Nausea, Heartburn, Indigestion... (10 player)
+					},
+					{	-- Nausea, Heartburn, Indigestion... (25 player)
+						["achievementID"] = 4616,	-- Nausea, Heartburn, Indigestion... (25 player)
+					},
+					{	-- Neck-Deep in Vile (10 player)
+						["achievementID"] = 4581,	-- Neck-Deep in Vile (10 player)
+					},
+					{	-- Neck-Deep in Vile (25 player)
+						["achievementID"] = 4622,	-- Neck-Deep in Vile (25 player)
+					},
 					{	-- Nerf Engineering (10 player)
 						["achievementID"] = 2931,	-- Nerf Engineering (10 player)
 					},
@@ -700,14 +1002,32 @@ _.Achievements =
 							},
 						},
 					},
-					ach(4539, {		-- Once Bitten, Twice Shy (10 player)
-						crit(1),		-- Defeat Blood-Queen Lana'thel without becoming a vampire
-						crit(2),		-- Defeat Blood-Queen Lana'thel while a vampire
-					}),
-					ach(4618, {		-- Once Bitten, Twice Shy (25 player)
-						crit(1),		-- Defeat Blood-Queen Lana'thel without becoming a vampire
-						crit(2),		-- Defeat Blood-Queen Lana'thel while a vampire
-					}),
+					{	-- Once Bitten, Twice Shy (10 player)
+						["achievementID"] = 4539,	-- Once Bitten, Twice Shy (10 player)
+						["g"] = {
+							{	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+								["achievementID"] = 4539,	-- Once Bitten, Twice Shy (10 player)
+								["criteriaID"] = 1,	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+							},
+							{	-- Defeat Blood-Queen Lana'thel while a vampire
+								["achievementID"] = 4539,	-- Once Bitten, Twice Shy (10 player)
+								["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel while a vampire
+							},
+						},
+					},
+					{	-- Once Bitten, Twice Shy (25 player)
+						["achievementID"] = 4618,	-- Once Bitten, Twice Shy (25 player)
+						["g"] = {
+							{	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+								["achievementID"] = 4618,	-- Once Bitten, Twice Shy (25 player)
+								["criteriaID"] = 1,	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+							},
+							{	-- Defeat Blood-Queen Lana'thel while a vampire
+								["achievementID"] = 4618,	-- Once Bitten, Twice Shy (25 player)
+								["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel while a vampire
+							},
+						},
+					},
 					{	-- Onyxia's Lair (10 player)
 						["achievementID"] = 4396,	-- Onyxia's Lair (10 player)
 					},
@@ -742,8 +1062,12 @@ _.Achievements =
 							},
 						},
 					},
-					ach(4579),		-- Portal Jockey (10 player)
-					ach(4619),		-- Portal Jockey (25 player)
+					{	-- Portal Jockey (10 player)
+						["achievementID"] = 4579,	-- Portal Jockey (10 player)
+					},
+					{	-- Portal Jockey (25 player)
+						["achievementID"] = 4619,	-- Portal Jockey (25 player)
+					},
 					{	-- Resilience Will Fix It (10 player)
 						["achievementID"] = 3798,	-- Resilience Will Fix It (10 player)
 					},
@@ -1181,36 +1505,102 @@ _.Achievements =
 							},
 						},
 					},
-					ach(4584, {		-- The Light of Dawn
-						title(138),		-- the Light of Dawn)
-						ach(4597, {		-- The Frozen Throne (25 player)
-							title(140),		-- the Kingslayer
-						}),
-					}),
-					ach(568, {		-- The Military Quarter (10 player)
-						crit(1),		-- Instructor Razuvious
-						crit(2),		-- Gothik the Harvester
-						crit(3),		-- The Four Horsemen
-					}),
-					ach(569, {		-- The Military Quarter (25 player)
-						crit(1),		-- Instructor Razuvious
-						crit(2),		-- Gothik the Harvester
-						crit(3),		-- The Four Horsemen
-					}),
-					ach(4582),		-- The Orb Whisperer (10 player)
-					ach(4617), 		-- The Orb Whisperer (25 player)
-					ach(566, {		-- The Plague Quarter (10 player)
-						crit(1),		-- Noth the Plaguebringer
-						crit(2),		-- Heigan the Unclean
-						crit(3),		-- Loatheb
-					}),
-					ach(567, {		-- The Plague Quarter (25 player)
-						crit(1),		-- Noth the Plaguebringer
-						crit(2),		-- Heigan the Unclean
-						crit(3),		-- Loatheb
-					}),
-					ach(1996),		-- The Safety Dance (10 player)
-					ach(2139),		-- The Safety Dance (25 player)
+					{	-- The Light of Dawn
+						["achievementID"] = 4584,	-- The Light of Dawn
+						["g"] = {
+							{	-- the Light of Dawn
+								["titleID"] = 138,	-- the Light of Dawn
+							},
+							{	-- The Frozen Throne (25 player)
+								["achievementID"] = 4597,	-- The Frozen Throne (25 player)
+								["g"] = {
+									{	-- the Kingslayer
+										["titleID"] = 140,	-- the Kingslayer
+									},
+								},
+							},
+						},
+					},
+					{	-- The Military Quarter (10 player)
+						["achievementID"] = 568,	-- The Military Quarter (10 player)
+						["g"] = {
+							{	-- Instructor Razuvious
+								["achievementID"] = 568,	-- The Military Quarter (10 player)
+								["criteriaID"] = 1,	-- Instructor Razuvious
+							},
+							{	-- Gothik the Harvester
+								["achievementID"] = 568,	-- The Military Quarter (10 player)
+								["criteriaID"] = 2,	-- Gothik the Harvester
+							},
+							{	-- The Four Horsemen
+								["achievementID"] = 568,	-- The Military Quarter (10 player)
+								["criteriaID"] = 3,	-- The Four Horsemen
+							},
+						},
+					},
+					{	-- The Military Quarter (25 player)
+						["achievementID"] = 569,	-- The Military Quarter (25 player)
+						["g"] = {
+							{	-- Instructor Razuvious
+								["achievementID"] = 569,	-- The Military Quarter (25 player)
+								["criteriaID"] = 1,	-- Instructor Razuvious
+							},
+							{	-- Gothik the Harvester
+								["achievementID"] = 569,	-- The Military Quarter (25 player)
+								["criteriaID"] = 2,	-- Gothik the Harvester
+							},
+							{	-- The Four Horsemen
+								["achievementID"] = 569,	-- The Military Quarter (25 player)
+								["criteriaID"] = 3,	-- The Four Horsemen
+							},
+						},
+					},
+					{	-- The Orb Whisperer (10 player)
+						["achievementID"] = 4582,	-- The Orb Whisperer (10 player)
+					},
+					{	-- The Orb Whisperer (25 player)
+						["achievementID"] = 4617,	-- The Orb Whisperer (25 player)
+					},
+					{	-- The Plague Quarter (10 player)
+						["achievementID"] = 566,	-- The Plague Quarter (10 player)
+						["g"] = {
+							{	-- Noth the Plaguebringer
+								["achievementID"] = 566,	-- The Plague Quarter (10 player)
+								["criteriaID"] = 1,	-- Noth the Plaguebringer
+							},
+							{	-- Heigan the Unclean
+								["achievementID"] = 566,	-- The Plague Quarter (10 player)
+								["criteriaID"] = 2,	-- Heigan the Unclean
+							},
+							{	-- Loatheb
+								["achievementID"] = 566,	-- The Plague Quarter (10 player)
+								["criteriaID"] = 3,	-- Loatheb
+							},
+						},
+					},
+					{	-- The Plague Quarter (25 player)
+						["achievementID"] = 567,	-- The Plague Quarter (25 player)
+						["g"] = {
+							{	-- Noth the Plaguebringer
+								["achievementID"] = 567,	-- The Plague Quarter (25 player)
+								["criteriaID"] = 1,	-- Noth the Plaguebringer
+							},
+							{	-- Heigan the Unclean
+								["achievementID"] = 567,	-- The Plague Quarter (25 player)
+								["criteriaID"] = 2,	-- Heigan the Unclean
+							},
+							{	-- Loatheb
+								["achievementID"] = 567,	-- The Plague Quarter (25 player)
+								["criteriaID"] = 3,	-- Loatheb
+							},
+						},
+					},
+					{	-- The Safety Dance (10 player)
+						["achievementID"] = 1996,	-- The Safety Dance (10 player)
+					},
+					{	-- The Safety Dance (25 player)
+						["achievementID"] = 2139,	-- The Safety Dance (25 player)
+					},
 					ach(2894, {	-- The Secrets of Ulduar (10 player)
 						crit(1),		-- The Siege of Ulduar (10 player)
 						crit(2),		-- The Antechamber of Ulduar (10 player)

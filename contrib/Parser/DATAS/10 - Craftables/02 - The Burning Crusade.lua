@@ -5,64 +5,12 @@ _.Craftables =
 {
 	tier(2, { -- The Burning Crusade
 		n(-180, {	-- Alchemy
---[[	20.Nov.2018 - automation should handle discovery. Leaving this here incase we change our mind later
-			n(-37, {	-- Discovery
-				["description"] = "These recipes can be discovered by Transmuting Primals, Crafting Flasks or Elixirs and Potions. Although not confirmed, the type of discovery generally has a better chance to proc if you craft something of a similar type. (Primals for Primal Transmutes, Flasks for any of the missing flasks, etc)",
-				["groups"] = {
-					recipe(28590),	-- Flask of Blinding Light
-					recipe(28587),	-- Flask of Fortification
-					recipe(28588),	-- Flask of Mighty Versatility
-					recipe(28591),	-- Flask of Pure Death
-					recipe(28589),	-- Flask of Relentless Assault
-					recipe(28586),	-- Super Rejuvenation Potion
-					recipe(28585),	-- Transmute: Primal Earth to Life
-					recipe(28583),	-- Transmute: Primal Fire to Mana
-					recipe(28584),	-- Transmute: Primal Life to Earth
-					recipe(28582),	-- Transmute: Primal Mana to Fire
-					recipe(28580),	-- Transmute: Primal Shadow to Water
-					recipe(28581),	-- Transmute: Primal Water to Shadow
-				},
-			}),
-			recipe(28575, {	-- Major Arcane Protection Potion
-				["description"] = "Craft for a chance to Discover the Cauldron Recipe.",
-				["groups"] = {
-					recipe(41458),	-- Cauldron of Major Arcane Protection
-				},
-			}),
-			recipe(28562),	-- Major Dreamless Sleep Potion
-			recipe(28571, {	-- Major Fire Protection Potion
-				["description"] = "Craft for a chance to Discover the Cauldron Recipe.",
-				["groups"] = {
-					recipe(41500),	-- Cauldron of Major Fire Protection
-				},
-			}),
-			recipe(28572, {	-- Major Frost Protection Potion
-				["description"] = "Craft for a chance to Discover the Cauldron Recipe.",
-				["groups"] = {
-					recipe(41501),	-- Cauldron of Major Frost Protection
-				},
-			}),
-			recipe(28577),	-- Major Holy Protection Potion
-			recipe(28573, {	-- Major Nature Protection Potion
-				["description"] = "Craft for a chance to Discover the Cauldron Recipe.",
-				["groups"] = {
-					recipe(41502),	-- Cauldron of Major Nature Protection
-				},
-			}),
-			recipe(28576, {	-- Major Shadow Protection Potion
-				["description"] = "Craft for a chance to Discover the Cauldron Recipe.",
-				["groups"] = {
-					recipe(41503),	-- Cauldron of Major Shadow Protection
-				},
-			}),
-]]--
 			filter(53, {	-- Trinkets
-				i(13503, {	-- Alchemist Stone
-					i(35751),	-- Assassin's Alchemist Stone
-					i(35748),	-- Guardian's Alchemist Stone
-					i(35750),	-- Redeemer's Alchemist Stone
-					i(35749),	-- Sorcerer's Alchemist Stone
-				}),
+				i(13503),	-- Alchemist Stone
+				i(35751),	-- Assassin's Alchemist Stone
+				i(35748),	-- Guardian's Alchemist Stone
+				i(35750),	-- Redeemer's Alchemist Stone
+				i(35749),	-- Sorcerer's Alchemist Stone
 				i(31080),	-- Mercurial Stone
 			}),
 		}),
@@ -520,43 +468,45 @@ _.Craftables =
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
-				{	-- Greater Darkmoon Card
-					["spellID"] = 59503,	-- Greater Darkmoon Card
-					["g"] = {
-						{	-- Blessings Deck
-							["itemID"] = 31890,	-- Blessings Deck
-							["g"] = {
-								{	-- Darkmoon Card: Crusade
-									["itemID"] = 31856,	-- Darkmoon Card: Crusade
-								},
-							},
-						},
-						{	-- Furies Deck
-							["itemID"] = 31907,	-- Furies Deck
-							["g"] = {
-								{	-- Darkmoon Card: Vengeance
-									["itemID"] = 31858,	-- Darkmoon Card: Vengeance
-								},
-							},
-						},
-						{	-- Lunacy Deck
-							["itemID"] = 31914,	-- Lunacy Deck
-							["g"] = {
-								{	-- Darkmoon Card: Madness
-									["itemID"] = 31859,	-- Darkmoon Card: Madness
-								},
-							},
-						},
-						{	-- Storms Deck
-							["itemID"] = 31891,	-- Storms Deck
-							["g"] = {
-								{	-- Darkmoon Card: Wrath
-									["itemID" ] = 31857,	-- Darkmoon Card: Wrath
-								},
-							},
-						},
-					},
-				},
+				-- Blessings Deck
+				i(31882),	-- Ace of Blessings
+				i(31889),	-- Two of Blessings
+				i(31888),	-- Three of Blessings
+				i(31885),	-- Four of Blessings
+				i(31884),	-- Five of Blessings
+				i(31887),	-- Six of Blessings
+				i(31886),	-- Seven of Blessings
+				i(31883),	-- Eight of Blessings
+				
+				-- Furies Deck
+				i(31901),	-- Ace of Furies
+				i(31909),	-- Two of Furies
+				i(31908),	-- Three of Furies
+				i(31904),	-- Four of Furies
+				i(31903),	-- Five of Furies
+				i(31906),	-- Six of Furies
+				i(31905),	-- Seven of Furies
+				i(31902),	-- Eight of Furies
+				
+				-- Lunacy Deck
+				i(31910),	-- Ace of Lunacy
+				i(31918),	-- Two of Lunacy
+				i(31917),	-- Three of Lunacy
+				i(31913),	-- Four of Lunacy
+				i(31912),	-- Five of Lunacy
+				i(31916),	-- Six of Lunacy
+				i(31915),	-- Seven of Lunacy
+				i(31911),	-- Eight of Lunacy
+				
+				-- Storms Deck
+				i(31892),	-- Ace of Storms
+				i(31900),	-- Two of Storms
+				i(31899),	-- Three of Storms
+				i(31895),	-- Four of Storms
+				i(31894),	-- Five of Storms
+				i(31898),	-- Six of Storms
+				i(31896),	-- Seven of Storms
+				i(31893),	-- Eight of Storms
 			}),
 			filter(1, {	-- Off-hand
 				{	-- Book of Clever Tricks

@@ -12,6 +12,9 @@ _.WorldEvents =
 					{	-- Darkmoon Rabbit
 						["npcID"] = 58336,	-- Darkmoon Rabbit
 						["achievementID"] = 6332, -- That Rabbit's Dynamite!
+						["coords"] = {
+							{ 75.69, 78.17, 407 },
+						},
 						["g"] = {
 							{	-- That Rabbit's Dynamite!
 								["achievementID"] = 6332,	-- That Rabbit's Dynamite!
@@ -24,6 +27,9 @@ _.WorldEvents =
 					},
 					{	-- Moonfang
 						["npcID"] = 71992,	-- Moonfang
+						["coords"] = {
+							{ 39.65, 44.07, 407 },
+						},
 						["g"] = {
 							{	-- Moonfang's Pelt
 								["itemID"] = 105891,	-- Moonfang's Pelt

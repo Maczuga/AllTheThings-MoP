@@ -8,6 +8,9 @@ _.WorldEvents =
 		["g"] = {
 			n(-2, {  -- Vendors
 				n(55072, { -- Barum
+					["coords"] = {
+						{ 47.52, 66.34, 407 },
+					},
 					["groups"] = { 
 						gs(359, { -- Devout Set
 							i(78205),  -- Helm
@@ -103,6 +106,9 @@ _.WorldEvents =
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 				}),
 				n(57983, { -- Baruma
+					["coords"] = {
+						{ 47.61, 66.05, 407 },
+					},
 					["groups"] = {
 						gs(360, { -- Vestments of the Virtuous
 							i(78216), -- Virtuous Set Helm
@@ -201,7 +207,7 @@ _.WorldEvents =
 					["npcID"] = 55305,	--- Carl Goodup
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 					["coords"] = {
-						{ 49.38, 78.47 },
+						{ 49.38, 78.47, 407 },
 					},
 					["g"] = {
 						{	-- Darkmoon Balloon
@@ -213,6 +219,9 @@ _.WorldEvents =
 					},
 				},
 				n(14860, { -- Flik
+					["coords"] = {
+						{ 55.41, 70.13, 407 },
+					},
 					["groups"] = {
 						i(11026), -- Tree Frog Box
 						i(11027), -- Wood Frog Box
@@ -220,6 +229,9 @@ _.WorldEvents =
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 				}),
 				n(14828, { -- Gelvas Grimegate <Souvenir & Toy Prizes>
+					["coords"] = {
+						{ 47.76, 64.77, 407 },
+					},
 					["groups"] = {
 						i(73762), -- Darkmoon Balloon
 						i(90899), -- Darkmoon Whistle
@@ -231,6 +243,9 @@ _.WorldEvents =
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 				}),
 				n(14846, { -- Lhara
+					["coords"] = {
+						{ 48.09, 69.55, 407 },
+					},
 					["groups"] = {
 						i(73766), -- Darkmoon Dancing Bear Mount
 						i(72140), -- Swift Forest Strider Mount
@@ -249,7 +264,7 @@ _.WorldEvents =
 				{	-- Tatia Brine
 					["npcID"] = 56069,	-- Tatia Brine
 					["coords"] = {
-						{ 52.37, 88.76 },
+						{ 52.37, 88.76, 407 },
 					},
 					["g"] = {
 						{	-- Recipe: Brilliant Smallfish

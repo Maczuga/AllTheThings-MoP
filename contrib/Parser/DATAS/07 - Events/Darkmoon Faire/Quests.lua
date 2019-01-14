@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+-- //Add quests that were removed, but kept (Quests)
 _.WorldEvents =
 {
 	{	-- Darkmoon Island
@@ -38,7 +39,7 @@ _.WorldEvents =
 							["questID"] = 7907,		-- Darkmoon Beast Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 60,
@@ -48,17 +49,22 @@ _.WorldEvents =
 								},
 							},
 						},
-						{	-- Darkmoon Blessings Deck
-							["questID"] = 10938,	-- Darkmoon Blessings Deck
-							["qg"] = 14847,			-- Professor Thaddeus
-							["coords"] = {
-								{ 51.91, 60.93 },
-							},
-							["repeatable"] = true,
-							["lvl"] = 70,
+						{
+							["itemID"] = 31890,	-- Blessings Deck
 							["g"] = {
-								{	-- Darkmoon Card: Crusade
-									["itemID"] = 31856,	-- Darkmoon Card: Crusade
+								{	-- Darkmoon Blessings Deck
+									["questID"] = 10938,	-- Darkmoon Blessings Deck
+									["qg"] = 14847,			-- Professor Thaddeus
+									["coords"] = {
+										{ 51.91, 60.93, 407 },
+									},
+									["repeatable"] = true,
+									["lvl"] = 70,
+									["g"] = {
+										{	-- Darkmoon Card: Crusade
+											["itemID"] = 31856,	-- Darkmoon Card: Crusade
+										},
+									},
 								},
 							},
 						},
@@ -66,7 +72,7 @@ _.WorldEvents =
 							["questID"] = 13325,	-- Darkmoon Chaos Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 80,
@@ -80,7 +86,7 @@ _.WorldEvents =
 							["questID"] = 30449,	-- Darkmoon Crane Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 90,
@@ -94,7 +100,7 @@ _.WorldEvents =
 							["questID"] = 27667,	-- Darkmoon Earthquake Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 85,
@@ -108,7 +114,7 @@ _.WorldEvents =
 							["questID"] = 7929,		-- Darkmoon Elementals Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 60,
@@ -118,17 +124,22 @@ _.WorldEvents =
 								},
 							},
 						},
-						{	-- Darkmoon Furies Deck
-							["questID"] = 10940,	-- Darkmoon Furies Deck
-							["qg"] = 14847,			-- Professor Thaddeus
-							["coords"] = {
-								{ 51.91, 60.93 },
-							},
-							["repeatable"] = true,
-							["lvl"] = 70,
+						{	-- Furies Deck
+							["itemID"] = 31907,	-- Furies Deck
 							["g"] = {
-								{	-- Darkmoon Card: Vengeance
-									["itemID"] = 31858,	-- Darkmoon Card: Vengeance
+								{	-- Darkmoon Furies Deck
+									["questID"] = 10940,	-- Darkmoon Furies Deck
+									["qg"] = 14847,			-- Professor Thaddeus
+									["coords"] = {
+										{ 51.91, 60.93, 407 },
+									},
+									["repeatable"] = true,
+									["lvl"] = 70,
+									["g"] = {
+										{	-- Darkmoon Card: Vengeance
+											["itemID"] = 31858,	-- Darkmoon Card: Vengeance
+										},
+									},
 								},
 							},
 						},
@@ -136,7 +147,7 @@ _.WorldEvents =
 							["questID"] = 27665,	-- Darkmoon Hurricane Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 85,
@@ -149,17 +160,22 @@ _.WorldEvents =
 								},
 							},
 						},
-						{	-- Darkmoon Lunacy Deck
-							["questID"] = 10941,	-- Darkmoon Lunacy Deck
-							["qg"] = 14847,			-- Professor Thaddeus
-							["coords"] = {
-								{ 51.91, 60.93 },
-							},
-							["repeatable"] = true,
-							["lvl"] = 70,
+						{	-- Lunacy Deck
+							["itemID"] = 31914,	-- Lunacy Deck
 							["g"] = {
-								{	-- Darkmoon Card: Madness
-									["itemID"] = 31859,	-- Darkmoon Card: Madness
+								{	-- Darkmoon Lunacy Deck
+									["questID"] = 10941,	-- Darkmoon Lunacy Deck
+									["qg"] = 14847,			-- Professor Thaddeus
+									["coords"] = {
+										{ 51.91, 60.93, 407 },
+									},
+									["repeatable"] = true,
+									["lvl"] = 70,
+									["g"] = {
+										{	-- Darkmoon Card: Madness
+											["itemID"] = 31859,	-- Darkmoon Card: Madness
+										},
+									},
 								},
 							},
 						},
@@ -167,7 +183,7 @@ _.WorldEvents =
 							["questID"] = 13326,	-- Darkmoon Nobles Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 80,
@@ -190,7 +206,7 @@ _.WorldEvents =
 							["questID"] = 30450,	-- Darkmoon Ox Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 90,
@@ -204,7 +220,7 @@ _.WorldEvents =
 							["questID"] = 7927,		-- Darkmoon Portals Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 60,
@@ -218,7 +234,7 @@ _.WorldEvents =
 							["questID"] = 13324,	-- Darkmoon Prisms Deck	
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 80,
@@ -232,7 +248,7 @@ _.WorldEvents =
 							["questID"] = 30451,	-- Darkmoon Serpent Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 90,
@@ -242,17 +258,22 @@ _.WorldEvents =
 								},
 							},
 						},
-						{	-- Darkmoon Storms Deck
-							["questID"] = 10939,	-- Darkmoon Storms Deck
-							["qg"] = 14847,			-- Professor Thaddeus
-							["coords"] = {
-								{ 51.91, 60.93 },
-							},
-							["repeatable"] = true,
-							["lvl"] = 70,
+						{	-- Storms Deck
+							["itemID"] = 31891,	-- Storms Deck
 							["g"] = {
-								{	-- Darkmoon Card: Wrath
-									["itemID"] = 31857,	-- Darkmoon Card: Wrath
+								{	-- Darkmoon Storms Deck
+									["questID"] = 10939,	-- Darkmoon Storms Deck
+									["qg"] = 14847,			-- Professor Thaddeus
+									["coords"] = {
+										{ 51.91, 60.93, 407 },
+									},
+									["repeatable"] = true,
+									["lvl"] = 70,
+									["g"] = {
+										{	-- Darkmoon Card: Wrath
+											["itemID"] = 31857,	-- Darkmoon Card: Wrath
+										},
+									},
 								},
 							},
 						},
@@ -260,7 +281,7 @@ _.WorldEvents =
 							["questID"] = 30452,	-- Darkmoon Tiger Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 90,
@@ -277,7 +298,7 @@ _.WorldEvents =
 							["questID"] = 27666,	-- Darkmoon Tsunami Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 85,
@@ -291,7 +312,7 @@ _.WorldEvents =
 							["questID"] = 13327,	-- Darkmoon Undeath Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 80,
@@ -305,7 +326,7 @@ _.WorldEvents =
 							["questID"] = 27664,	-- Darkmoon Volcanic Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 85,
@@ -319,7 +340,7 @@ _.WorldEvents =
 							["questID"] = 7928,	-- Darkmoon Warlords Deck
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 60,
@@ -379,7 +400,7 @@ _.WorldEvents =
 									["questID"] = 29456,	-- A Captured Banner
 									["qg"] = 14847,			-- Professor Thaddeus
 									["coords"] = {
-										{ 51.91, 60.93 },
+										{ 51.91, 60.93, 407 },
 									},
 									["repeatable"] = true,
 									["lvl"] = 10,
@@ -389,7 +410,7 @@ _.WorldEvents =
 									["questID"] = 29457,	-- The Enemy's Insignia
 									["qg"] = 14847,			-- Professor Thaddeus
 									["coords"] = {
-										{ 51.91, 60.93 },
+										{ 51.91, 60.93, 407 },
 									},
 									["repeatable"] = true,
 									["lvl"] = 10,
@@ -399,7 +420,7 @@ _.WorldEvents =
 									["questID"] = 29458,	-- The Captured Journal
 									["qg"] = 14847,			-- Professor Thaddeus
 									["coords"] = {
-										{ 51.91, 60.93 },
+										{ 51.91, 60.93, 407 },
 									},
 									["repeatable"] = true,
 									["lvl"] = 10,
@@ -414,7 +435,7 @@ _.WorldEvents =
 									["questID"] = 29451,	-- The Master Strategist
 									["qg"] = 14847,			-- Professor Thaddeus
 									["coords"] = {
-										{ 51.91, 60.93 },
+										{ 51.91, 60.93, 407 },
 									},
 									["repeatable"] = true,
 									["lvl"] = 10,
@@ -424,7 +445,7 @@ _.WorldEvents =
 									["questID"] = 29443,	-- A Curious Crystal
 									["qg"] = 14847,			-- Professor Thaddeus
 									["coords"] = {
-										{ 51.91, 60.93 },
+										{ 51.91, 60.93, 407 },
 									},
 									["repeatable"] = true,
 									["lvl"] = 10,
@@ -434,7 +455,7 @@ _.WorldEvents =
 									["questID"] = 29444,	-- An Exotic Egg
 									["qg"] = 14829,			-- Yebb Neblegear
 									["coords"] = {
-										{ 51.11, 82.05 },
+										{ 51.11, 82.05, 407 },
 									},
 									["repeatable"] = true,
 									["lvl"] = 10,
@@ -444,7 +465,7 @@ _.WorldEvents =
 									["questID"] = 29445,	-- An Intriguing Grimoire
 									["qg"] = 14822,			-- Sayge
 									["coords"] = {
-										{ 53.25, 75.84 },
+										{ 53.25, 75.84, 407 },
 									},
 									["repeatable"] = true,
 									["lvl"] = 10,
@@ -454,7 +475,7 @@ _.WorldEvents =
 									["questID"] = 29446,	-- A Wondrous Weapon
 									["qg"] = 14847,			-- Professor Thaddeus
 									["coords"] = {
-										{ 51.91, 60.93 },
+										{ 51.91, 60.93, 407 },
 									},
 									["repeatable"] = true,
 									["lvl"] = 10,
@@ -466,7 +487,7 @@ _.WorldEvents =
 							["questID"] = 29464, 	-- Tools of Divination
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["lvl"] = 60,
@@ -480,7 +501,7 @@ _.WorldEvents =
 							["questID"] = 29506,	-- A Fizzy Fusion
 							["qg"] = 14844,			-- Sylvannia
 							["coords"] = {
-								{ 50.54, 69.57 },
+								{ 50.54, 69.57, 407 },
 							},
 							["repeatable"] = true,
 							["requireSkill"] = 171,	-- Alchemy
@@ -496,7 +517,7 @@ _.WorldEvents =
 							["questID"] = 29508,	-- Baby Needs Two Pair of Shoes
 							["qg"] = 14829,			-- Yebb Neblegear
 							["coords"] = {
-								{ 51.11, 82.05 },
+								{ 51.11, 82.05, 407 },
 							},
 							["repeatable"] = true,
 							["requireSkill"] = 164,	-- Blacksmithing
@@ -511,7 +532,7 @@ _.WorldEvents =
 							["questID"] = 29520,	-- Banners, Banners Everywhere!
 							["qg"] = 10445,			-- Selina Dourman
 							["coords"] = {
-								{ 55.56, 55.03 },
+								{ 55.56, 55.03, 407 },
 							},
 							["repeatable"] = true,
 							["requireSkill"] = 165,	-- Leatherworking
@@ -527,7 +548,7 @@ _.WorldEvents =
 							["questID"] = 29517,	-- Eyes on the Prizes
 							["qg"] = 14841,			-- Rinling
 							["coords"] = {
-								{ 49.25, 60.79 },
+								{ 49.25, 60.79, 407 },
 							},
 							["repeatable"] = true,
 							["requireSkill"] = 197,	-- Tailoring
@@ -543,7 +564,7 @@ _.WorldEvents =
 							["questID"] = 29507,	-- Fun for the Little Ones
 							["qg"] = 14847,			-- Professor Thaddeus
 							["coords"] = {
-								{ 51.91, 60.93 },
+								{ 51.91, 60.93, 407 },
 							},
 							["repeatable"] = true,
 							["requireSkill"] = 794,	-- Archaeology
@@ -560,7 +581,7 @@ _.WorldEvents =
 							["qg"] = 14833,			-- Chronos
 							["repeatable"] = true,
 							["coords"] = {
-								{ 54.99, 70.78 },
+								{ 54.99, 70.78, 407 },
 							},
 							["requireSkill"] = 182,	-- Herbalism
 							["g"] = {
@@ -575,7 +596,7 @@ _.WorldEvents =
 							["qg"] = 14833,			-- Chronos
 							["repeatable"] = true,
 							["coords"] = {
-								{ 54.99, 70.78 },
+								{ 54.99, 70.78, 407 },
 							},
 							["requireSkill"] = 755,	-- Jewelcrafting
 							["g"] = {
@@ -590,7 +611,7 @@ _.WorldEvents =
 							["qg"] = 14833,			-- Chronos
 							["repeatable"] = true,
 							["coords"] = {
-								{ 54.99, 70.78 },
+								{ 54.99, 70.78, 407 },
 							},
 							["requireSkill"] = 129,	-- First Aid
 							["u"] = 2,				-- First Aid removed in 8.0.1 BfA Prepatch
@@ -599,7 +620,7 @@ _.WorldEvents =
 							["questID"] = 29509,	-- Putting the Crunch in the Frog
 							["qg"] = 14845,			-- Stamp Thunderhorn
 							["coords"] = {
-								{ 52.89, 67.94 },
+								{ 52.89, 67.94, 407 },
 							},
 							["repeatable"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -616,7 +637,7 @@ _.WorldEvents =
 							["qg"] = 14822,			-- Sayge
 							["repeatable"] = true,
 							["coords"] = {
-								{ 53.25, 75.84 },
+								{ 53.25, 75.84, 407 },
 							},
 							["requireSkill"] = 333,	-- Enchanting
 							["g"] = {
@@ -630,7 +651,7 @@ _.WorldEvents =
 							["questID"] = 29518,	-- Rearm, Reuse, Recycle
 							["qg"] = 14841,			-- Rinling
 							["coords"] = {
-								{ 49.25, 60.79 },
+								{ 49.25, 60.79, 407 },
 							},
 							["repeatable"] = true,
 							["requireSkill"] = 186,	-- Mining
@@ -645,7 +666,7 @@ _.WorldEvents =
 							["questID"] = 29513,	-- Spoilin' for Salty Sea Dogs
 							["qg"] = 14845,			-- Stamp Thunderhorn
 							["coords"] = {
-								{ 52.89, 67.94 },
+								{ 52.89, 67.94, 407 },
 							},
 							["repeatable"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -660,7 +681,7 @@ _.WorldEvents =
 							["questID"] = 29511,	-- Talking' Tonks
 							["qg"] = 14841,			-- Rinling
 							["coords"] = {
-								{ 49.25, 60.79 },
+								{ 49.25, 60.79, 407 },
 							},
 							["repeatable"] = true,
 							["requireSkill"] = 202,	-- Engineering
@@ -676,7 +697,7 @@ _.WorldEvents =
 							["qg"] = 14833,			-- Chronos
 							["repeatable"] = true,
 							["coords"] = {
-								{ 54.99, 70.78 },
+								{ 54.99, 70.78, 407 },
 							},
 							["requireSkill"] = 393,	-- Skinning
 							["g"] = {
@@ -691,7 +712,7 @@ _.WorldEvents =
 							["qg"] = 14822,			-- Sayge
 							["repeatable"] = true,
 							["coords"] = {
-								{ 53.25, 75.84 },
+								{ 53.25, 75.84, 407 },
 							},
 							["requireSkill"] = 773,	-- Inscription
 							["description"] = "Requires |CFFFFD7005 Light Parchment|r to complete.",
@@ -710,7 +731,7 @@ _.WorldEvents =
 					["repeatable"] = true,
 					["qg"] = 85546,			-- Ziggie Sparks
 					["coords"] = {
-						{ 48.36, 71.37 },
+						{ 48.36, 71.37, 407 },
 					},
 					["g"] = {
 						{	-- Darkmoon Game Prize
@@ -722,8 +743,8 @@ _.WorldEvents =
 					["objectID"] = 209620,	-- Darkmoon Treasure Chest
 					["icon"] = "Interface\\Icons\\garrison_silverchest",
 					["coords"] = {
-						{ 46.79, 78.91 },	-- Entrance
-						{ 44.65, 78.92 },	-- Chest
+						{ 46.79, 78.91, 407 },	-- Entrance
+						{ 44.65, 78.92, 407 },	-- Chest
 					},
 					["g"] = {
 						{	-- Master Pit Fighter
@@ -734,7 +755,7 @@ _.WorldEvents =
 								29760,	-- Pit Fighter
 							},
 							["coords"] = {
-								{ 47.38, 78.92 },
+								{ 47.38, 78.92, 407 },
 							},
 							["collectible"] = false,
 						},
@@ -743,7 +764,7 @@ _.WorldEvents =
 							["questID"] = 29760,	-- Pit Fighter
 							["qg"] = 55402,			-- Korgol Crushskull
 							["coords"] = {
-								{ 47.38, 78.92 },
+								{ 47.38, 78.92, 407 },
 							},
 							["collectible"] = false,
 							["g"] = {
@@ -760,7 +781,7 @@ _.WorldEvents =
 					["repeatable"] = true,
 					["qg"] = 14841,			-- Rinling
 					["coords"] = {
-						{ 49.25, 60.79 },
+						{ 49.25, 60.79, 407 },
 					},
 					["g"] = {
 						{	-- Quick Shot
@@ -781,7 +802,7 @@ _.WorldEvents =
 					["repeatable"] = true,
 					["qg"] = 54601,			-- Mola
 					["coords"] = {
-						{ 53.28, 54.35 },
+						{ 53.28, 54.35, 407 },
 					},
 					["g"] = {
 						{	-- Whack-A-Gnoll
@@ -799,7 +820,7 @@ _.WorldEvents =
 					["qg"] = 71992,			-- Moonfang
 					["repeatable"] = true,
 					["coords"] = {
-						{ 39.36, 43.68 },
+						{ 39.36, 43.68, 407 },
 					},
 				},
 				{	-- Target: Turtle [Token Game]
@@ -808,7 +829,7 @@ _.WorldEvents =
 					["repeatable"] = true,
 					["qg"] = 29455,			-- Jessica Rogers
 					["coords"] = {
-						{ 51.51, 77.1 },
+						{ 51.51, 77.1, 407 },
 					},
 					["g"] = {
 						{	-- Ring Toss
@@ -825,7 +846,7 @@ _.WorldEvents =
 					["qg"] = 14832,			-- Kerri Hicks
 					["repeatable"] = true,
 					["coords"] = {
-						{ 47.91, 67.12 },
+						{ 47.91, 67.12, 407 },
 					},
 				},
 				{	-- The Humanoid Cannonball [Token Game]
@@ -834,7 +855,7 @@ _.WorldEvents =
 					["repeatable"] = true,
 					["qg"] = 15303,			-- Maxima Blastenheimer
 					["coords"] = {
-						{ 52.49, 56.14 },
+						{ 52.49, 56.14, 407 },
 					},
 					["g"] = {
 						{	-- Blastenheimer Bullseye
@@ -855,7 +876,7 @@ _.WorldEvents =
 					["repeatable"] = true,
 					["qg"] = 54605,			-- Finaly Coolshot
 					["coords"] = {
-						{ 50.71, 65.17 },
+						{ 50.71, 65.17, 407 },
 					},
 					["g"] = {
 						{	-- Tonk Battle
@@ -872,7 +893,7 @@ _.WorldEvents =
 					["questID"] = 7946,	-- Spawn of Jubjub
 					["qg"] = 14871,		-- Morja
 					["coords"] = {
-						{ 55.94, 70.73 },
+						{ 55.94, 70.73, 407 },
 					},
 					["g"] = {
 						{	-- Jubling

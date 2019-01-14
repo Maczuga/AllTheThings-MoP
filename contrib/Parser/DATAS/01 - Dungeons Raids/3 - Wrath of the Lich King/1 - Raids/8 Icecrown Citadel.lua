@@ -1433,7 +1433,18 @@ _.Instances =
 						}),
 					}),
 					d(  3, {	-- 10-Player (Normal)
+						{	-- Fall of the Lich King (10 player): Storming the Citadel
+								["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+								["criteriaID"] = 1,	-- Storming the Citadel (10 player)
+							},
 						cr(36612, e(1624, {	-- Lord Marrowgar
+							{	-- Boned (10 player)
+								["achievementID"] = 4534,	-- Boned (10 player)
+							},
+							{	-- Storming the Citadel (10 player): Lord Marrowgar
+								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+								["criteriaID"] = 1,	-- Lord Marrowgar
+							},
 							i( 50761),	-- Citadel Enforcer's Claymore
 							i( 50759),	-- Bone Warden's Splitter
 							i( 50760),	-- Bonebreaker Scepter
@@ -1448,6 +1459,13 @@ _.Instances =
 							i( 50339),	-- Sliver of Pure Ice
 						})),
 						cr(36855, e(1625, {	-- Lady Deathwhisper
+							{	-- Full House (10 player)
+								["achievementID"] = 4535,	-- Full House (10 player)
+							},
+							{	-- Storming the Citadel (10 player): Lady Deathwhisper
+								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+								["criteriaID"] = 2,	-- Lady Deathwhisper
+							},
 							i(50776),	-- Njordar Bone Bow
 							i(50781),	-- Scourgelord's Baton
 							i(50779),	-- Deathspeaker Zealot's Helm
@@ -1467,6 +1485,13 @@ _.Instances =
 								36948,	-- Muradin Bronzebeard
 							},
 							["groups"] = {
+								{	-- Storming the Citadel (10 player): Claim victory in the Gunship Battle
+									["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+									["criteriaID"] = 3,	-- Claim victory in the Gunship Battle
+								},
+								{	-- I'm on a Boat (10 player)
+									["achievementID"] = 4536,	-- I'm on a Boat (10 player)
+								},
 								i(50787),	-- Frost Giant's Cleaver
 								i(50793),	-- Midnight Sun
 								i(50794),	-- Neverending Winter
@@ -1482,6 +1507,13 @@ _.Instances =
 							},
 						}),
 						cr(37813, e(1628, {	-- Deathbringer Saurfang
+							{	-- Storming the Citadel (10 player): The Deathbringer
+								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+								["criteriaID"] = 4,	-- The Deathbringer
+							},
+							{	-- I've Gone and Made a Mess (10 player)
+								["achievementID"] = 4537,	-- I've Gone and Made a Mess (10 player)
+							},
 							i( 50805),	-- Mag'hari Chieftain's Staff
 							i( 50798),	-- Ramaladni's Blade of Culling
 							i( 50807),	-- Thaumaturge's Crackling Cowl
@@ -1505,7 +1537,18 @@ _.Instances =
 						n( 37217, {			-- Precious
 							dr(7, i(52019)),	-- Precious' Ribbon
 						}),
+						{	-- Fall of the Lich King (10 player): The Plagueworks
+							["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+							["criteriaID"] = 2,	-- The Plagueworks (10 player)
+						},
 						cr(36626, e(1629, {	-- Festergut
+							{	-- Flu Shot Shortage (10 player)
+								["achievementID"] = 4577,	-- Flu Shot Shortage (10 player)
+							},
+							{	-- The Plagueworks (10 player): Festergut
+								["achievementID"] = 4528,	-- The Plagueworks (10 player)
+								["criteriaID"] = 1,	-- Festergut
+							},
 							i(50966),	-- Abracadaver
 							i(50810),	-- Gutbuster
 							i(50852),	-- Precious' Putrid Collar
@@ -1520,6 +1563,10 @@ _.Instances =
 							i(50986),	-- Signet of Putrefaction
 						})),
 						cr(36627, e(1630, {	-- Rotface
+							{	-- The Plagueworks (10 player): Rotface
+								["achievementID"] = 4528,	-- The Plagueworks (10 player)
+								["criteriaID"] = 2,	-- Rotface
+							},
 							i(50998),	-- Shaft of Glacial Ice
 							i(51003),	-- Abomination Knuckles
 							i(51004),	-- Lockjaw
@@ -1533,6 +1580,13 @@ _.Instances =
 							i(51001),	-- Rotface's Rupturing Ring
 						})),
 						cr(36678, e(1631, {	-- Professor Putricide
+							{	-- The Plagueworks (10 player): Professor Putricide
+								["achievementID"] = 4528,	-- The Plagueworks (10 player)
+								["criteriaID"] = 3,	-- Professor Putricide
+							},
+							{	-- Nausea, Heartburn, Indigestion... (10 player)
+								["achievementID"] = 4578,	-- Nausea, Heartburn, Indigestion... (10 player)
+							},
 							i( 51011),	-- Flesh-Carving Scalpel
 							i( 51010),	-- The Facelifter
 							i( 51013),	-- Discarded Bag of Entrails
@@ -1546,7 +1600,18 @@ _.Instances =
 							i( 51019),	-- Rippling Flesh Kilt
 							i( 50341),	-- Unidentifiable Organ
 						})),
+						{	-- Fall of the Lich King (10 player): The Crimson Hall
+							["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+							["criteriaID"] = 3,	-- The Crimson Hall (10 player)
+						},
 						cr(37970, e(1632, {	-- Blood Prince Council
+							{	-- The Crimson Hall (10 player): Defeat the Blood Prince Council
+								["achievementID"] = 4529,	-- The Crimson Hall (10 player)
+								["criteriaID"] = 1,	-- Defeat the Blood Prince Council
+							},
+							{	-- The Orb Whisperer (10 player)
+								["achievementID"] = 4582,	-- The Orb Whisperer (10 player)
+							},
 							i(51022),	-- Hersir's Greatspear
 							i(51021),	-- Soulbreaker
 							i(51326),	-- Wand of Ruby Claret
@@ -1561,6 +1626,23 @@ _.Instances =
 							i(51024),	-- Thrice Fanged Signet
 						})),
 						cr(37955, e(1633, {	-- Blood-Queen Lana'thel
+							{	-- The Crimson Hall (10 player): Defeat Blood-Queen Lana'thel
+								["achievementID"] = 4529,	-- The Crimson Hall (10 player)
+								["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel
+							},
+							{	-- Once Bitten, Twice Shy (10 player)
+								["achievementID"] = 4539,	-- Once Bitten, Twice Shy (10 player)
+								["g"] = {
+									{	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+										["achievementID"] = 4539,	-- Once Bitten, Twice Shy (10 player)
+										["criteriaID"] = 1,	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+									},
+									{	-- Defeat Blood-Queen Lana'thel while a vampire
+										["achievementID"] = 4539,	-- Once Bitten, Twice Shy (10 player)
+										["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel while a vampire
+									},
+								},
+							},
 							i(51384),	-- Bloodsipper
 							i(51553),	-- Lana'thel's Bloody Nail
 							i(51385),	-- Stakethrower
@@ -1574,7 +1656,18 @@ _.Instances =
 							i(51550),	-- Ivory-Inlaid Leggings
 							i(51387),	-- Seal of the Twilight Queen
 						})),
+						{	-- Fall of the Lich King (10 player): The Frostwing Halls
+							["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+							["criteriaID"] = 4,	-- The Frostwing Halls (10 player)
+						},
 						cr(36789, e(1634, {	-- Valithria Dreamwalker
+							{	-- The Frostwing Halls (10 player): Rescue Valithria Dreamwalker
+								["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
+								["criteriaID"] = 1,	-- Rescue Valithria Dreamwalker
+							},
+							{	-- Portal Jockey (10 player)
+								["achievementID"] = 4579,	-- Portal Jockey (10 player)
+							},
 							i(51562),	-- Oxheart
 							i(51582),	-- Sister Svalna's Aether Staff
 							i(51561),	-- Dreamhunter's Carbine
@@ -1589,6 +1682,13 @@ _.Instances =
 							i(51566),	-- Legguards of the Twisted Dream
 						})),
 						cr(36853, e(1635, {	-- Sindragosa
+							{	-- All You Can Eat (10 player)
+								["achievementID"] = 4580,	-- All You Can Eat (10 player)
+							},
+							{	-- The Frostwing Halls (10 player): Sindragosa
+								["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
+								["criteriaID"] = 2,	-- Sindragosa
+							},
 							i( 51788),	-- Bleak Coldarra Carver
 							i( 51784),	-- Splintershard
 							i( 51791),	-- Lost Pavise of the Blue Flight
@@ -1603,6 +1703,24 @@ _.Instances =
 							i( 51785),	-- Wyrmwing Treads
 						})),
 						cr(36597, e(1636, {	-- The Lich King
+							{	-- Been Waiting a Long Time for This (10 player)
+								["achievementID"] = 4601,	-- Been Waiting a Long Time for This (10 player)
+							},
+							{	-- The Frozen Throne (10 player)
+								["achievementID"] = 4530,	-- The Frozen Throne (10 player)
+								["g"] = {
+									{	-- the Kingslayer
+										["titleID"] = 140,	-- the Kingslayer
+									},
+								},
+							},
+							{	-- Fall of the Lich King (10 player): The Frozen Throne
+								["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+								["criteriaID"] = 5,	-- The Frozen Throne (10 player)
+							},
+							{	-- Neck-Deep in Vile (10 player)
+								["achievementID"] = 4581,	-- Neck-Deep in Vile (10 player)
+							},
 							i( 51799),	-- Halion, Staff of Forgotten Love
 							i( 51797),	-- Tainted Twig of Nordrassil
 							i( 51796),	-- Warmace of Menethil
@@ -1727,7 +1845,15 @@ _.Instances =
 								36597, -- The Lich King
 							},
 						}),
+						{	-- Heroic: Storming the Citadel (10 player): Storming the Citadel
+							["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+							["criteriaID"] = 1,	-- Heroic: Storming the Citadel (10 player
+						},
 						cr(36612, e(1624, {	-- Lord Marrowgar
+							{	-- Heroic: Storming the Citadel (10 player): Lord Marrowgar
+								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+								["criteriaID"] = 1,	-- Lord Marrowgar
+							},
 							i( 51936),	-- Citadel Enforcer's Claymore
 							i( 51938),	-- Bone Warden's Splitter
 							i( 51937),	-- Bonebreaker Scepter
@@ -1742,6 +1868,10 @@ _.Instances =
 							i( 50346),	-- Sliver of Pure Ice
 						})),
 						cr(36855, e(1625, {	-- Lady Deathwhisper
+							{	-- Heroic: Storming the Citadel (10 player): Lady Deathwhisper
+								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+								["criteriaID"] = 2,	-- Lady Deathwhisper
+							},
 							i(51927),	-- Njordar Bone Bow
 							i(51922),	-- Scourgelord's Baton
 							i(51924),	-- Deathspeaker Zealot's Helm
@@ -1761,6 +1891,10 @@ _.Instances =
 								36948,	-- Muradin Bronzebeard
 							},
 							["groups"] = {
+								{	-- Heroic: Storming the Citadel (10 player): Claim victory in the Gunship Battle
+									["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+									["criteriaID"] = 3,	-- Claim victory in the Gunship Battle
+								},
 								i(51916),	-- Frost Giant's Cleaver
 								i(51910),	-- Midnight Sun
 								i(51909),	-- Neverending Winter
@@ -1776,6 +1910,13 @@ _.Instances =
 							},
 						}),
 						cr(37813, e(1628, {	-- Deathbringer Saurfang
+							{	-- Heroic: Storming the Citadel (10 player): The Deathbringer
+								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+								["criteriaID"] = 4,	-- The Deathbringer
+							},
+							{	-- I've Gone and Made a Mess (25 player)
+								["achievementID"] = 4613,	-- I've Gone and Made a Mess (25 player)
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -1802,7 +1943,15 @@ _.Instances =
 						n( 37217, {			-- Precious
 							dr(4, i(52019)),	-- Precious' Ribbon
 						}),
+						{	-- Heroic: The Plagueworks (10 player): The Plagueworks
+							["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+							["criteriaID"] = 2,	-- Heroic: The Plagueworks (10 player
+						},
 						cr(36626, e(1629, {	-- Festergut
+							{	-- Heroic: The Plagueworks (10 player): Festergut
+								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
+								["criteriaID"] = 1,	-- Festergut
+							},
 							i(51887),	-- Abracadaver
 							i(51893),	-- Gutbuster
 							i(51890),	-- Precious' Putrid Collar
@@ -1817,6 +1966,13 @@ _.Instances =
 							i(51884),	-- Signet of Putrefaction
 						})),
 						cr(36627, e(1630, {	-- Rotface
+							{	-- Dances with Oozes (10 player)
+								["achievementID"] = 4538,	-- Dances with Oozes (10 player)
+							},
+							{	-- Heroic: The Plagueworks (10 player): Rotface
+								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
+								["criteriaID"] = 2,	-- Rotface
+							},
 							i(51881),	-- Shaft of Glacial Ice
 							i(51876),	-- Abomination Knuckles
 							i(51875),	-- Lockjaw
@@ -1830,6 +1986,10 @@ _.Instances =
 							i(51878),	-- Rotface's Rupturing Ring
 						})),
 						cr(36678, e(1631, {	-- Professor Putricide
+							{	-- Heroic: The Plagueworks (10 player): Professor Putricide
+								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
+								["criteriaID"] = 3,	-- Professor Putricide
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -1846,7 +2006,15 @@ _.Instances =
 							i( 51860),	-- Rippling Flesh Kilt
 							i( 50344),	-- Unidentifiable Organ
 						})),
+						{	-- Heroic: The Crimson Hall (10 player): The Crimson Hall
+							["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+							["criteriaID"] = 3,	-- Heroic: The Crimson Hall (10 player
+						},
 						cr(37970, e(1632, {	-- Blood Prince Council
+							{	-- Heroic: The Crimson Hall (10 player): Defeat the Blood Prince Council
+								["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
+								["criteriaID"] = 1,	-- Defeat the Blood Prince Council
+							},
 							i(51857),	-- Hersir's Greatspear
 							i(51858),	-- Soulbreaker
 							i(51852),	-- Wand of Ruby Claret
@@ -1861,6 +2029,10 @@ _.Instances =
 							i(51855),	-- Thrice Fanged Signet
 						})),
 						cr(37955, e(1633, {	-- Blood-Queen Lana'thel
+							{	-- Heroic: The Crimson Hall (10 player): Defeat Blood-Queen Lana'thel
+								["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
+								["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -1877,7 +2049,15 @@ _.Instances =
 							i(51841),	-- Ivory-Inlaid Leggings
 							i(51843),	-- Seal of the Twilight Queen
 						})),
+						{	-- Heroic: The Frostwing Halls (10 player): The Frostwing Halls
+							["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+							["criteriaID"] = 4,	-- Heroic: The Frostwing Halls (10 player
+						},
 						cr(36789, e(1634, {	-- Valithria Dreamwalker
+							{	-- Heroic: The Frostwing Halls (10 player): Rescue Valithria Dreamwalker
+								["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
+								["criteriaID"] = 1,	-- Rescue Valithria Dreamwalker
+							},
 							i(51833),	-- Oxheart
 							i(51828),	-- Sister Svalna's Aether Staff
 							i(51834),	-- Dreamhunter's Carbine
@@ -1892,6 +2072,10 @@ _.Instances =
 							i(51829),	-- Legguards of the Twisted Dream
 						})),
 						cr(36853, e(1635, {	-- Sindragosa
+							{	-- Heroic: The Frostwing Halls (10 player): Sindragosa
+								["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
+								["criteriaID"] = 2,	-- Sindragosa
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -1909,7 +2093,18 @@ _.Instances =
 							i( 51818),	-- Wyrmwing Treads
 						})),
 						cr(36597, e(1636, {	-- The Lich King
-							title(139),	-- TITLE: Bane of the Fallen King
+							{	-- Bane of the Fallen King
+								["achievementID"] = 4583,	-- Bane of the Fallen King
+								["g"] = {
+									{	-- ,Bane of the Fallen King
+										["titleID"] = 139,	-- ,Bane of the Fallen King
+									},
+								},
+							},
+							{	-- Heroic: Fall of the Lich King (10 player): Bane of the Fallen King
+								["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+								["criteriaID"] = 5,	-- Bane of the Fallen King
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -2037,7 +2232,18 @@ _.Instances =
 								36597, -- The Lich King
 							},
 						}),
+						{	-- Fall of the Lich King (25 player): Storming the Citadel
+							["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+							["criteriaID"] = 1,	-- Storming the Citadel (25 player)
+						},
 						cr(36612, e(1624, {	-- Lord Marrowgar
+							{	-- Boned (25 player)
+								["achievementID"] = 4610,	-- Boned (25 player)
+							},
+							{	-- Storming the Citadel (25 player): Lord Marrowgar
+								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+								["criteriaID"] = 1,	-- Lord Marrowgar
+							},
 							i( 50415),	-- Bryntroll, the Bone Arbiter
 							i( 49968),	-- Frozen Bonespike
 							i( 49976),	-- Bulwark of Smouldering Steel
@@ -2055,6 +2261,13 @@ _.Instances =
 							i( 49967),	-- Marrowgar's Frigid Eye
 						})),
 						cr(36855, e(1625, {	-- Lady Deathwhisper
+							{	-- Full House (25 player)
+								["achievementID"] = 4611,	-- Full House (25 player)
+							},
+							{	-- Storming the Citadel (25 player): Lady Deathwhisper
+								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+								["criteriaID"] = 2,	-- Lady Deathwhisper
+							},
 							i(49992),	-- Nibelung
 							i(49982),	-- Heartpierce
 							i(50034),	-- Zod's Repeating Longbow
@@ -2077,6 +2290,13 @@ _.Instances =
 								36948,	-- Muradin Bronzebeard
 							},
 							["groups"] = {
+								{	-- Storming the Citadel (25 player): Claim victory in the Gunship Battle
+									["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+									["criteriaID"] = 3,	-- Claim victory in the Gunship Battle
+								},
+								{	-- I'm on a Boat (25 player)
+									["achievementID"] = 4612,	-- I'm on a Boat (25 player)
+								},
 								i(50411),	-- Scourgeborne Waraxe
 								i(50006),	-- Corp'rethar Ceremonial Crown
 								i(50005),	-- Amulet of the Silent Eulogy
@@ -2095,6 +2315,10 @@ _.Instances =
 							},
 						}),
 						cr(37813, e(1628, {	-- Deathbringer Saurfang
+							{	-- Storming the Citadel (25 player): The Deathbringer
+								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+								["criteriaID"] = 4,	-- The Deathbringer
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -2114,12 +2338,23 @@ _.Instances =
 						n( 37217, {			-- Precious
 							dr(12, i(52019)),	-- Precious' Ribbon
 						}),
+						{	-- Fall of the Lich King (25 player): The Plagueworks
+							["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+							["criteriaID"] = 2,	-- The Plagueworks (25 player)
+						},
 						cr(36626, e(1629, {	-- Festergut
-							{
+							{	-- Festergut's Acidic Blood / The Sacred and the Corrupt
 								["itemID"] = 50226,		-- Festergut's Acidic Blood
 								["questID"] = 24545,	-- The Sacred and the Corrupt
 								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
 								["description"] = "This can drop from Festergut on 25 man difficulty or higher.",
+							},
+							{	-- Flu Shot Shortage (25 player)
+								["achievementID"] = 4615,	-- Flu Shot Shortage (25 player)
+							},
+							{	-- The Plagueworks (25 player): Festergut
+								["achievementID"] = 4605,	-- The Plagueworks (25 player)
+								["criteriaID"] = 1,	-- Festergut
 							},
 							i(50040),	-- Distant Land
 							i(50035),	-- Black Bruise
@@ -2139,11 +2374,18 @@ _.Instances =
 							i(50414),	-- Might of Blight
 						})),
 						cr(36627, e(1630, {	-- Rotface
-							{
+							{	-- Dances with Oozes (25 player)
+								["achievementID"] = 4614,	-- Dances with Oozes (25 player)
+							},
+							{	-- The Sacred and the Corrupt / Rotface's Acidic Blood
 								["itemID"] = 50231,		-- Rotface's Acidic Blood
 								["questID"] = 24545,	-- The Sacred and the Corrupt
 								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
 								["description"] = "This can drop from Rotface on 25 man difficulty or higher.",
+							},
+							{	-- The Plagueworks (25 player): Rotface
+								["achievementID"] = 4605,	-- The Plagueworks (25 player)
+								["criteriaID"] = 2,	-- Rotface
 							},
 							i(50016),	-- Rib Spreader
 							i(50028),	-- Trauma
@@ -2162,6 +2404,13 @@ _.Instances =
 							i(50353),	-- Dislodged Foreign Object
 						})),
 						cr(36678, e(1631, {	-- Professor Putricide
+							{	-- The Plagueworks (25 player): Professor Putricide
+								["achievementID"] = 4605,	-- The Plagueworks (25 player)
+								["criteriaID"] = 3,	-- Professor Putricide
+							},
+							{	-- Nausea, Heartburn, Indigestion... (25 player)
+								["achievementID"] = 4616,	-- Nausea, Heartburn, Indigestion... (25 player)
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -2171,7 +2420,18 @@ _.Instances =
 							i( 50069),	-- Professor's Bloodied Smock
 							i( 50351),	-- Tiny Abomination in a Jar
 						})),
+						{	-- Fall of the Lich King (25 player): The Crimson Hall
+							["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+							["criteriaID"] = 3,	-- The Crimson Hall (25 player)
+						},
 						cr(37970, e(1632, {	-- Blood Prince Council
+							{	-- The Crimson Hall (25 player): Defeat the Blood Prince Council
+								["achievementID"] = 4606,	-- The Crimson Hall (25 player)
+								["criteriaID"] = 1,	-- Defeat the Blood Prince Council
+							},
+							{	-- The Orb Whisperer (25 player)
+								["achievementID"] = 4617,	-- The Orb Whisperer (25 player)
+							},
 							i(49919),	-- Cryptmaker
 							i(50184),	-- Keleseth's Seducer
 							i(50173),	-- Shadow Silk Spindle
@@ -2189,6 +2449,23 @@ _.Instances =
 							i(50170),	-- Valanar's Other Signet Ring
 						})),
 						cr(37955, e(1633, {	-- Blood-Queen Lana'thel
+							{	-- The Crimson Hall (25 player): Defeat Blood-Queen Lana'thel
+								["achievementID"] = 4606,	-- The Crimson Hall (25 player)
+								["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel
+							},
+							{	-- Once Bitten, Twice Shy (25 player)
+								["achievementID"] = 4618,	-- Once Bitten, Twice Shy (25 player)
+								["g"] = {
+									{	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+										["achievementID"] = 4618,	-- Once Bitten, Twice Shy (25 player)
+										["criteriaID"] = 1,	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+									},
+									{	-- Defeat Blood-Queen Lana'thel while a vampire
+										["achievementID"] = 4618,	-- Once Bitten, Twice Shy (25 player)
+										["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel while a vampire
+									},
+								},
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -2199,7 +2476,18 @@ _.Instances =
 							i(50180),	-- Lana'thel's Chain of Flagellation
 							i(50354),	-- Bauble of True Blood
 						})),
+						{	-- Fall of the Lich King (25 player): The Frostwing Halls
+							["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+							["criteriaID"] = 4,	-- The Frostwing Halls (25 player)
+						},
 						cr(36789, e(1634, {	-- Valithria Dreamwalker
+							{	-- The Frostwing Halls (25 player): Rescue Valithria Dreamwalker
+								["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
+								["criteriaID"] = 1,	-- Rescue Valithria Dreamwalker
+							},
+							{	-- Portal Jockey (25 player)
+								["achievementID"] = 4619,	-- Portal Jockey (25 player)
+							},
 							i( 50183),	-- Lungbreaker
 							i( 50472),	-- Nightmare Ender
 							i( 50202),	-- Snowstorm Helm
@@ -2215,6 +2503,13 @@ _.Instances =
 							i( 50190),	-- Grinning Skull Greatboots
 						})),
 						cr(36853, e(1635, {	-- Sindragosa
+							{	-- All You Can Eat (25 player)
+								["achievementID"] = 4620,	-- All You Can Eat (25 player)
+							},
+							{	-- The Frostwing Halls (25 player): Sindragosa
+								["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
+								["criteriaID"] = 2,	-- Sindragosa
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -2225,7 +2520,24 @@ _.Instances =
 							i( 50361),	-- Sindragosa's Flawless Fang
 						})),
 						cr(36597, e(1636, {	-- The Lich King
-							title(140),	-- TITLE: The Kingslayer
+							{	-- Been Waiting a Long Time for This (25 player)
+								["achievementID"] = 4621,	-- Been Waiting a Long Time for This (25 player)
+							},
+							{	-- Fall of the Lich King (25 player): The Frozen Throne
+								["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+								["criteriaID"] = 5,	-- The Frozen Throne (25 player)
+							},
+							{	-- Neck-Deep in Vile (25 player)
+								["achievementID"] = 4622,	-- Neck-Deep in Vile (25 player)
+							},
+							{	-- The Frozen Throne (25 player)
+								["achievementID"] = 4597,	-- The Frozen Throne (25 player)
+								["g"] = {
+									{	-- the Kingslayer
+										["titleID"] = 140,	-- the Kingslayer
+									},
+								},
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -2454,7 +2766,15 @@ _.Instances =
 								36597, -- The Lich King
 							},
 						}),
+						{	-- Heroic: Fall of the Lich King (25 player): Storming the Citadel
+							["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+							["criteriaID"] = 1,	-- Heroic: Storming the Citadel (25 player)
+						},
 						cr(36612, e(1624, {	-- Lord Marrowgar
+							{	-- Heroic: Storming the Citadel (25 player): Lord Marrowgar
+								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+								["criteriaID"] = 1,	-- Lord Marrowgar
+							},
 							i( 50709),	-- Bryntroll, the Bone Arbiter
 							i( 50608),	-- Frozen Bonespike
 							i( 50616),	-- Bulwark of Smouldering Steel
@@ -2472,6 +2792,10 @@ _.Instances =
 							i( 50610),	-- Marrowgar's Frigid Eye
 						})),
 						cr(36855, e(1625, {	-- Lady Deathwhisper
+							{	-- Heroic: Storming the Citadel (25 player): Lady Deathwhisper
+								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+								["criteriaID"] = 2,	-- Lady Deathwhisper
+							},
 							i(50648),	-- Nibelung
 							i(50641),	-- Heartpierce
 							i(50638),	-- Zod's Repeating Crossbow
@@ -2494,6 +2818,10 @@ _.Instances =
 								36948,	-- Muradin Bronzebeard
 							},
 							["groups"] = {
+								{	-- Heroic: Storming the Citadel (25 player): Claim victory in the Gunship Battle
+									["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+									["criteriaID"] = 3,	-- Claim victory in the Gunship Battle
+								},
 								i(50654),	-- Scourgeborne Waraxe
 								i(50661),	-- Corp'rethar Ceremonial Crown
 								i(50658),	-- Amulet of the Silent Eulogy
@@ -2512,6 +2840,10 @@ _.Instances =
 							},
 						}),
 						cr(37813, e(1628, {	-- Deathbringer Saurfang
+							{	-- Heroic: Storming the Citadel (25 player): The Deathbringer
+								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+								["criteriaID"] = 4,	-- The Deathbringer
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
@@ -2534,12 +2866,20 @@ _.Instances =
 						n( 37217, {			-- Precious
 							dr(16, i(52019)),	-- Precious' Ribbon
 						}),
+						{	-- Heroic: Fall of the Lich King (25 player): The Plagueworks
+							["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+							["criteriaID"] = 2,	-- Heroic: The Plagueworks (25 player)
+						},
 						cr(36626, e(1629, {	-- Festergut
-							{
+							{	-- The Sacred and the Corrupt / Festergut's Acidic Blood
 								["itemID"] = 50226,		-- Festergut's Acidic Blood
 								["questID"] = 24545,	-- The Sacred and the Corrupt
 								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
 								["description"] = "This can drop from Festergut on 25 man difficulty or higher.",
+							},
+							{	-- Heroic: The Plagueworks (25 player): Festergut
+								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
+								["criteriaID"] = 1,	-- Festergut
 							},
 							i(50695),	-- Distant Land
 							i(50692),	-- Black Bruise
@@ -2559,11 +2899,15 @@ _.Instances =
 							i(50693),	-- Might of Blight
 						})),
 						cr(36627, e(1630, {	-- Rotface
-							{
+							{	-- The Sacred and the Corrupt / Rotface's Acidic Blood
 								["itemID"] = 50231,		-- Rotface's Acidic Blood
 								["questID"] = 24545,	-- The Sacred and the Corrupt
 								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
 								["description"] = "This can drop from Rotface on 25 man difficulty or higher.",
+							},
+							{	-- Heroic: The Plagueworks (25 player): Rotface
+								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
+								["criteriaID"] = 2,	-- Rotface
 							},
 							i(50676),	-- Rib Spreader
 							i(50685),	-- Trauma
@@ -2582,6 +2926,10 @@ _.Instances =
 							i(50348),	-- Dislodged Foreign Object
 						})),
 						cr(36678, e(1631, {	-- Professor Putricide
+							{	-- Heroic: The Plagueworks (25 player): Professor Putricide
+								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
+								["criteriaID"] = 3,	-- Professor Putricide
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
@@ -2594,7 +2942,15 @@ _.Instances =
 							i( 50705),	-- Professor's Bloodied Smock
 							i( 50706),	-- Tiny Abomination in a Jar
 						})),
+						{	-- Heroic: Fall of the Lich King (25 player): The Crimson Hall
+							["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+							["criteriaID"] = 3,	-- Heroic: The Crimson Hall (25 player)
+						},
 						cr(37970, e(1632, {	-- Blood Prince Council
+							{	-- Heroic: The Crimson Hall (25 player): Defeat the Blood Prince Council
+								["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
+								["criteriaID"] = 1,	-- Defeat the Blood Prince Council
+							},
 							i(50603),	-- Cryptmaker
 							i(50710),	-- Keleseth's Seducer
 							i(50719),	-- Shadow Silk Spindle
@@ -2612,6 +2968,10 @@ _.Instances =
 							i(50714),	-- Valanar's Other Signet Ring
 						})),
 						cr(37955, e(1633, {	-- Blood-Queen Lana'thel
+							{	-- Heroic: The Crimson Hall (25 player): Defeat Blood-Queen Lana'thel
+								["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
+								["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
@@ -2625,7 +2985,15 @@ _.Instances =
 							i(50728),	-- Lana'thel's Chain of Flagellation
 							i(50726),	-- Bauble of True Blood
 						})),
+						{	-- Heroic: Fall of the Lich King (25 player): The Frostwing Halls
+							["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+							["criteriaID"] = 4,	-- Heroic: The Frostwing Halls (25 player)
+						},
 						cr(36789, e(1634, {	-- Valithria Dreamwalker
+							{	-- Heroic: The Frostwing Halls (25 player): Rescue Valithria Dreamwalker
+								["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
+								["criteriaID"] = 1,	-- Rescue Valithria Dreamwalker
+							},
 							i( 50621),	-- Lungbreaker
 							i( 50631),	-- Nightmare Ender
 							i( 50626),	-- Snowstorm Helm
@@ -2643,20 +3011,35 @@ _.Instances =
 							i( 50618),	-- Frostbrood Sapphire Ring
 						})),
 						cr(36853, e(1635, {	-- Sindragosa
+							{	-- Heroic: The Frostwing Halls (25 player): Sindragosa
+								["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
+								["criteriaID"] = 2,	-- Sindragosa
+							},
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
+							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i( 52029),	-- Protector's Mark of Sanctifaction (Heroic)
+							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i( 52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i( 50635),	-- Sundial of Eternal Dusk
-							i( 50633),	-- Sindragosa's Cruel Claw
-							i( 50636),	-- Memory of Malygos
-							i( 50365),	-- Phylactery of the Nameless Lich
-							i( 50364),	-- Sindragosa's Flawless Fang
+							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
+							i(50635),	-- Sundial of Eternal Dusk
+							i(50633),	-- Sindragosa's Cruel Claw
+							i(50636),	-- Memory of Malygos
+							i(50365),	-- Phylactery of the Nameless Lich
+							i(50364),	-- Sindragosa's Flawless Fang
 						})),
 						cr(36597, e(1636, {	-- The Lich King
-							title(138),	-- TITLE: The Light of Dawn
+							{	-- Heroic: Fall of the Lich King (25 player): The Light of Dawn
+								["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+								["criteriaID"] = 5,	-- The Light of Dawn
+							},
+							{	-- The Light of Dawn
+								["achievementID"] = 4584,	-- The Light of Dawn
+								["g"] = {
+									{	-- the Light of Dawn
+										["titleID"] = 138,	-- the Light of Dawn
+									},
+								},
+							},
 							i( 50818),	-- Invincible's Reins (MOUNT!)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)

@@ -2671,7 +2671,7 @@ _.Instances =
 								["achievementID"] = 3164,	-- Alone in the Darkness (25 player)
 								["g"] = {
 									{	-- Mimiron's Head (MOUNT!)
-										["itemID"] = 5693,	-- Mimiron's Head (MOUNT!)
+										["itemID"] = 45693,	-- Mimiron's Head (MOUNT!)
 									},
 									{	-- Vanquished Clutches of Yogg-Saron
 										["itemID"] = 46312,	-- Vanquished Clutches of Yogg-Saron
