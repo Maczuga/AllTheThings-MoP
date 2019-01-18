@@ -1053,31 +1053,6 @@ _.Zones =
 						["coord"] = { 11.1, 11.2 },
 						["races"] = HORDE_ONLY,
 					},
--- SHAMAN CLASS HALL QUESTS
-					{	-- Against Magatha's Will
-						["questID"] = 44800,
-						["qg"] = 120244,	-- Magatha Grimtotem
-						["lvl"] = 110,
-						["classes"] = { 7 },
-					},
-					{	-- Breaking Chains
-						["questID"] = 45725,
-						["qg"] = 120244,	-- Magatha Grimtotem
-						["lvl"] = 110,
-						["classes"] = { 7 },
-					},
-					{	-- Snakes and Stones
-						["questID"] = 45724,
-						["qg"] = 120244,	-- Magatha Grimtotem
-						["lvl"] = 110,
-						["classes"] = { 7 },
-					},
-					{	-- The Crone's Wrath
-						["questID"] = 45723,
-						["qg"] = 120244,	-- Magatha Grimtotem
-						["lvl"] = 110,
-						["classes"] = { 7 },
-					},
 				}),
 			},
 		}),

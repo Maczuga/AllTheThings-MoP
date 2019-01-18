@@ -507,7 +507,6 @@ _.WorldEvents =
 					i(110678, { -- Darkmoon Ticket Fanny Pack **
 						["description"] = "Contains 250-500 Darkmoon Faire Tickets",
 					}),
-					-- i(128312),	-- Elixir of the Rapid Mind **					
 					un(9, i(45037)),	-- Epic Purple Shirt
 					un(9, i(90176)),	-- Flintlocke's Blasthammer **
 					{	-- Grimoire of the Four Winds

@@ -19,7 +19,6 @@ pet(104156, 1323); 	-- Ashleaf Spriteling
 pet(104157, 1321); 	-- Azure Crane Chick
 pet(34535, 57); 	-- Azure Whelpling
 pet(44819, 202); 	-- Baby Blizzard Bear
-pet(148517, 2537);	-- Baby Zandalari Raptor
 pet(32588, 156); 	-- Banana Charm (Bananas)
 pet(90177, 903);	-- Baneling
 pet(10360, 75); 	-- Black Kingsnake

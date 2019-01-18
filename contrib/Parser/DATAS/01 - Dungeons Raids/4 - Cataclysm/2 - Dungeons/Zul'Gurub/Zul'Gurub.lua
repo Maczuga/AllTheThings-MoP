@@ -15,7 +15,6 @@ _.Instances =
 						["g"] = bubbleDown({["modID"] = 2}, {
 							{	-- Hive Queen
 								["npcID"] = 52442,		-- Hive Queen
-								["questID"] = 53809,	-- KillID
 								["g"] = {
 									{	-- Hive Queen Slain
 										["achievementID"] = 5744,	-- Gurubashi Headhunter
@@ -389,7 +388,6 @@ _.Instances =
 								i(69627),	-- Zulian Ward
 								i(69622),	-- The Hexxer's Mask
 								i(69623),	-- Vestments of the Soulflayer
-								h(i(122215)),	-- Music Roll: Zul'Gurub Voodoo
 							})),
 						}),
 					},

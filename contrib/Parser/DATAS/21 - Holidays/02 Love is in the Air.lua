@@ -112,7 +112,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["groups"] = {
 					i(50161, { -- Dinner Suit Box
 						["groups"] = {
-							i(151770), -- Lovely Black Dress
+							i(22279), -- Lovely Black Dress
 						},
 					}),
 				},
@@ -127,15 +127,6 @@ _.Holidays = bubbleDown({["u"] = 18},
 			}),		}),
 		n(-139, { -- Bosses
 			n(36296, { -- Apothecary Hummel
-				i(147907, { -- Heart-Shaped Carton
-					["groups"] = {
-						un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
-						un(18, dr(6.0, i(50446))),	-- Toxic Wasteling
-						un(18, dr(6.0, i(50741))),	-- Vile Fumigator's Mask
-						un(18, dr(1.0, i(50471))),	-- The Heartbreaker
-					},
-					["lvl"] = 16,
-				}),
 				i(54537, { -- Heart-Shaped Box
 					["groups"] = {
 						un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
@@ -150,7 +141,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 							},
 						}),
 					},
-					["lvl"] = 98,
+					["lvl"] = 75,
 				}),
 				
 				un(2, i(51808)),	-- Choker of the Pure Heart [Level 80]
@@ -471,7 +462,6 @@ _.Holidays = bubbleDown({["u"] = 18},
 					-- Mounts --
 					un(18, i(72146)),	-- Swift Lovebird
 					-- Useless Items --
-					un(18,	i(134860)),	-- Peddlefeet's Buffing Creme
 					un(18, i(22200)),	-- Silver Shafted Arrow
 				})),
 			}),

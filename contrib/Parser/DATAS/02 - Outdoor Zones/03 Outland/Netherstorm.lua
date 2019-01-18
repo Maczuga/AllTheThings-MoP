@@ -937,6 +937,38 @@ _.Zones =
 						i(20758),    -- Formula: Minor Wizard Oil
 						i(22307),    -- Pattern: Enchanted Mageweave Pouch
 					}),
+					n(26352, {  -- Big Zokk Torquewrench >Season 6< Elite
+						["groups"] = {
+								un(2, i(45952)),	-- Furious Gladiator's Greatstaff
+								un(2, i(45948)),	-- Furious Gladiator's Sunderer
+								un(2, i(45958)),	-- Furious Gladiator's Spike
+								un(2, i(45962)),	-- Furious Gladiator's Dirk
+								un(2, i(45967)),	-- Furious Gladiator's Eviscerator
+								un(2, i(45970)),	-- Furious Gladiator's Mageblade
+								un(2, i(45957)),	-- Furious Gladiator's Handaxe
+								un(2, i(45961)),	-- Furious Gladiator's Dicer
+								un(2, i(45966)),	-- Furious Gladiator's Splitter)
+								un(2, i(45959)),	-- Furious Gladiator's Truncheon
+								un(2, i(45964)),	-- Furious Gladiator's Punisher
+								un(2, i(45971)),	-- Furious Gladiator's Salvation)
+								un(2, i(45960)),	-- Furious Gladiator's Longblade
+								un(2, i(45965)),	-- Furious Gladiator's Swiftblade
+								un(2, i(45937)),	-- Furious Gladiator's Shotgun
+								un(2, i(45938)),	-- Furious Gladiator's Recurve
+								un(2, i(45939)),	-- Furious Gladiator's Repeater
+								un(2, i(45949)),	-- Furious Gladiator's Crusher
+								un(2, i(45950)),	-- Furious Gladiator's Claymore
+								un(2, i(45951)),	-- Furious Gladiator's Halberd
+								un(2, i(45953)),	-- Furious Gladiator's Combat Staff
+								un(2, i(45954)),	-- Furious Gladiator's Acute Staff
+								un(2, i(45955)),	-- Furious Gladiator's Skirmish Staff
+								un(2, i(45956)),	-- Furious Gladiator's Light Staff
+								un(2, i(45963)),	-- Furious Gladiator's Fleshslicer
+								un(2, i(45968)),	-- Furious Gladiator's Claw
+								un(2, i(45969)),	-- Furious Gladiator's Grasp)
+							},
+						["u"] = 43,
+					}),
 					n(54649, {	-- Big Zokk Torquewrench <Classic Weapons>
 						["groups"] = {
 							un(4, a(i(77549))),	-- Replica Grand Marshal's Demolisher
@@ -1581,6 +1613,7 @@ _.Zones =
 					}),
 					n(20242, {	-- Karaaz <Consortium Quartermaster>
 						i(31776),	-- Consortium Tabard
+						un(2, i(29118)),	-- Smuggler's Ammo Pouch
 						i(33156),	-- Design: Crimson Sun
 						i(23134),	-- Design: Delicate Blood Garnet
 						i(33305),	-- Design: Don Julio's Heart

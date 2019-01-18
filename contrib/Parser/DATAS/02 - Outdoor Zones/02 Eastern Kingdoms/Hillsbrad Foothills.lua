@@ -126,8 +126,6 @@ _.Zones =
 						["qg"] = 47681,	-- Dumass
 						["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 					}),
---					q(43296),	-- Defend (REMOVED, from Legion pre-patch)
---					q(43286),	-- Demon Commander (REMOVED, from Legion pre-patch)
 					qh(28197, { -- Discretion is Key
 						["groups"] = {
 							i(65694),	-- Clerk Whitesteed's Cloak
@@ -287,8 +285,6 @@ _.Zones =
 					qh(28603, {	-- Infiltration
 						["sourceQuests"] = { 28566 },	-- Decimation
 					}),
---					q(43285),	-- Invasion: Hillsbrad Foothills (REMOVED, from Legion pre-patch)
---					q(42805),	-- Invasion: Hillsbrad Foothills (REMOVED, from Legion pre-patch)
 					qr(q(8249, {	-- Junkboxes Needed
 						un(2, i(20086, {	-- Broken Dusksteel Throwing Knife
 							["qg"] = 7323,	-- Winstone Wolfe
@@ -419,7 +415,6 @@ _.Zones =
 							i(17690),	-- Frostwolf Insignia Rank 1
 						},
 					})),
---					q(43297),	-- Repel (REMOVED, part of Legion pre-patch)
 					qpvp(qa(7168, {	-- Rise and Be Recognized
 						["qg"] = 13841,	-- Lieutenant Haggerdin
 						["sourceQuests"] = { 7162 },	-- Proving Grounds
@@ -541,11 +536,6 @@ _.Zones =
 						},
 						["qg"] = 2437,	-- Keeper Bel'varil
 					}),
-					qart(q(40270, {	-- The Path of Atonement
-						["qg"] = 99398,	-- Archmage Modera
-						["classes"] = { 8 },	-- Mage
-						["sourceQuests"] = { 40267 },	-- An Unexpected Message
-					})),
 					qh(28375, {	-- The Road to Purgation
 						["qg"] = 48218,	-- Kingslayer Orkus
 						["sourceQuests"] = { 28354 },	-- Kasha Will Fly Again

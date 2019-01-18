@@ -342,21 +342,7 @@ _.Zones =
 						["qg"] = 15126,	-- Rutherford Twing
 --						["description"] = "To get this quest, you must be ??? with The Defilers.",
 					})),
-					
--- CLASS HALL QUESTS
-					qg(107806, q(42535, {	-- Death... and Decay
-						["classes"] = { 6 },	-- Death Knight
-					})),
-					qg(107806, q(42534, {	-- Our Oldest Enemies
-						["classes"] = { 6 },	-- Death Knight
-					})),
-					qg(108042, q(42536, {	-- Regicide
-						["classes"] = { 6 },	-- Death Knight
-					})),
-					qg(108042, q(42537, {	-- The King Rises
-						["classes"] = { 6 },	-- Death Knight
-					})),	
-					
+
 -- LEGACY QUESTS
 --[[				qpvp(qg(14986, qa(8115))),	-- Control Five Bases
 					qpvp(qg(14983, qa(8114))),	-- Control Four Bases

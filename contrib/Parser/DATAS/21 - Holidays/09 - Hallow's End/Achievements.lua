@@ -381,10 +381,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 												["criteriaID"] = 2,			-- Transformed by Hallowed Wand - Ghost
 												["u"] = 26,					-- Hallow's End Filter
 											},
-											{	-- Hallowed Wand - Ghoul
-												["itemID"] = 116850,	-- Hallowed Wand - Ghoul
-												["u"] = 26,				-- Hallow's End Filter
-											},
 											{	-- Hallowed Wand - Leper Gnome
 												["itemID"] = 20399,			-- Hallowed Wand - Leper Gnome
 												["achievementID"] = 283,	-- The Masquerade

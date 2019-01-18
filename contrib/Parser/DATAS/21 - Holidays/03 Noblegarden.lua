@@ -82,7 +82,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					i(45072, { -- Brightly Colored Egg
 						["groups"] = {
 							i(6833), -- White Tuxedo Shirt
-							i(151804), -- Black Tuxedo Pants
+							i(6835), -- Black Tuxedo Pants
 						},
 					}),
 				},
@@ -91,7 +91,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["groups"] = {
 					i(45072, { -- Brightly Colored Egg
 						["groups"] = {
-							i(151806), -- Elegant Dress
+							i(19028), -- Elegant Dress
 						},
 					}),
 				},

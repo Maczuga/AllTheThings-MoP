@@ -13,10 +13,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 					q(8744, { 	-- A Carefully Wrapped Present
 						["groups"] = {
 							i(21191, { -- Carefully Wrapped Present
-								un(29, dr(5.0, i(116451))),	-- Warm Blue Woolen Socks
-								un(29, dr(5.0, i(116450))),	-- Warm Green Woolen Socks
-								un(29, dr(5.0, i(116448))),	-- Warm Red Woolen Socks
-								un(29, i(128650)),	-- "Merry Munchkin" Costume
 								un(29, i(21254)),	-- Winter Veil Cookie
 							}),
 						},
@@ -45,22 +41,14 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["groups"] = {
 							i(21270, { -- Gently Shaken Gift
 								["groups"] = {
-									un(29, i(116692)), -- Fuzzy Green Lounge Cushion
-									un(29, i(116689)), -- Pineapple Lounge Cushion
-									un(29, i(116690)), -- Safarai Lounge Cushion
-									un(29, i(116691)), -- Zhevra Lounge Cusion
-									un(29, i(128768)), -- Candy Cane
+									un(29, i(21235)), -- Winter Veil Roast
 								},
 								["description"] = "Gift from 2014 and was given to anyone who wasn't a spell caster.",
 								["questID"] = 8767,
 							}),
 							i(21271, { -- Gently Shaken Gift
 								["groups"] = {
-									un(29, i(116692)), -- Fuzzy Green Lounge Cushion
-									un(29, i(116689)), -- Pineapple Lounge Cushion
-									un(29, i(116690)), -- Safarai Lounge Cushion
-									un(29, i(116691)), -- Zhevra Lounge Cusion
-									un(29, i(128768)), -- Candy Cane
+									un(29, i(21241)), -- Winter Veil Eggnog
 								},
 								["description"] = "Gift from 2014 and was given to spell casters.",
 								["questID"] = 8788,

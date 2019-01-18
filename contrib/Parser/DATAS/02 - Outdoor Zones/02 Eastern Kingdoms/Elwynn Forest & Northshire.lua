@@ -158,14 +158,6 @@ _.Zones =
 					qg(240, qa(   76)),	-- The Jasperlode Mine
 --]]					
 
-					qart(qa(42504, {	-- The Unseen Blade
-						["qg"] = 107979, -- Garona Halforcen
-						["classes"] = { 4 },
-					})),
-					qart(qh(42627, {	-- The Unseen Blade
-						["qg"] = 107979, -- Garona Halforcen
-						["classes"] = { 4 },
-					})),
 					o(156561, {	-- Wanted Poster (add'l object QG 68)
 						qa(  176, { -- Wanted: "Hogger"
 							i(  6085),	-- Footman Tunic

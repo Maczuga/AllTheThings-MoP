@@ -129,7 +129,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(8627, {	-- Avenger's Breastplate
-						["qg"] = 115504,	-- Vethsera
+						["qg"] = 15504,	-- Vethsera
 						["repeatable"] = true,
 						["groups"] = {
 							i(21389),	-- Avenger's Breastplate

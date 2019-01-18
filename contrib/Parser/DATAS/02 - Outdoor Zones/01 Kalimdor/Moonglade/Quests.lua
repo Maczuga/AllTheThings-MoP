@@ -53,27 +53,6 @@ _.Zones =
 						["classes"]= { 11 },	-- Druid
 						["sourceQuest"]	= 44921,	-- Lone Wolf
 					},
-					{	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
-						["questID"] = 47430,
-						["groups"] = {
-							{
-								["titleID"] = 358,	-- %s, Adventuring Instructor
-								["collectible"] = false,
-							},
-						},
-						["qg"] = 122134,	-- Makkaw <Moonkin Festival>
-						["coord"] = { 45.4, 62.0 },
-						["collectible"] = false,
-						["description"] = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
-					},
-					{	-- Nature's Advance
-						["questID"] = 45426,
-						["qg"] = 115750,	-- Goldrinn <Ancient>
-						["lvl"] = 110,
-						["coord"] = { 69.4, 47.8 },
-						["classes"]= { 11 },	-- Druid
-						["sourceQuest"] = 46924,	-- The Wolf's Tale
-					},
 					{	-- Shards of the Felvine
 						["questID"] = 5526,
 						["u"] = 40,
@@ -138,35 +117,6 @@ _.Zones =
 						["classes"]= { 11 },	-- Druid
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 27283,	-- A Journey to Moonglade
-					},
-					{	-- The Dreamway
-						["questID"] = 40644,
-						["qg"] = 101064,	-- Archdruid Hamuul Runetotem
-						["lvl"] = 98,
-						["coord"] = { 56.2, 32.0 },
-						["classes"]= { 11 },	-- Druid
-						["sourceQuest"] = 41106,	-- Call of the Wilds
-					},
-					{	-- The Wolf's Tale
-						["questID"] = 46924,
-						["qgs"] = {
-							120032,	-- Thisalee Crow
-							120041,	-- Druid of the Talon
-						},
-						["lvl"] = 110,
-						["classes"]= { 11 },	-- Druid
-						["sourceQuests"] = {
-							45498,	-- Let Sleeping Dogs Lie
-							45528,	-- The Befouled Barrows
-						},
-					},
-					{	-- To The Dreamgrove
-						["questID"] = 40645,
-						["qg"] = 103875,	-- Malfurion Stormrage
-						["lvl"] = 98,
-						["coord"] = { 66.8, 60.4 },
-						["classes"]= { 11 },	-- Druid
-						["sourceQuest"] = 40644,	-- The Dreamway
 					},
 					{	-- Tragedy and Family
 						["questID"] = 29303,

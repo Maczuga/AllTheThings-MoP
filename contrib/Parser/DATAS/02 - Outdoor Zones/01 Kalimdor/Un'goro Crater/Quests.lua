@@ -261,16 +261,6 @@ _.Zones =
 							},
 							["u"] = 43,
 						},
-						{	-- A Taste of Their Own Medicine
-							["questID"] = 45055,
-							["qg"] = 115923,	-- Ko'Zan
-							["coord"] = { 43.6, 41.4 },
-							["sourceQuests"] = {
-								45044,	-- Weapon No More
-								45051,	-- Reverse Blacksmithing (alliance-only criteria)
-							},
-							["requireSkill"] = 164,	-- Blacksmithing
-						},
 						{	-- A Wrecked Raft
 							["objectID"] = 161505,
 							["groups"] = {
@@ -496,14 +486,6 @@ _.Zones =
 									["questID"] = 24866,	-- An Abandoned Research Camp
 								},
 							},
-						},
-						{	-- Reverse Blacksmithing
-							["questID"] = 45051,
-							["qg"] = 115923,	-- Ko'Zan
-							["coord"] = { 43.6, 41.4 },
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 45044,	-- Weapon No More
-							["requireSkill"] = 164,	-- Blacksmithing
 						},
 						{	-- Roll the Bones
 							["questID"] = 3882,

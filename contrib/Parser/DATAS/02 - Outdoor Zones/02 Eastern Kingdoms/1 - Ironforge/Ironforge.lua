@@ -95,16 +95,6 @@ _.Zones =
                         ["races"] = ALLIANCE_ONLY,
                         ["requireSkill"] = 164,    -- Blacksmithing
                     },
-					qa(39956, {	-- The Legacy Passed On
-						["qg"] = 97762,	-- Bill Spearshaker <Author Extrodinaire>
-						["sourceQuests"] = { 39955 },	-- The Plot Thickens
-						["requireSkill"] = 773,	-- Inscription
-						["g"]= {
-							{	-- Steamy Romance Novel Kit
-								["recipeID"]	= 192804,	-- Steamy Romance Novel Kit
-							},
-						},
-					}),
 --[[
 					qg(6294, qa(38396)),	-- A Curious Oddity			
 					qg(23127, qa(27270, {	-- An Audience with the Farseer

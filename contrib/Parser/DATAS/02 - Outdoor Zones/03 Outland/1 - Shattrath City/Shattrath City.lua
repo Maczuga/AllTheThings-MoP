@@ -370,11 +370,6 @@ _.Zones =
 						["qg"] = 18584,	-- Sal'salabim
 						["sourceQuests"] = { 10004 },	-- Patience and Understanding *UNTESTED*
 					}),
-					q( 47523, {	-- Disturbance Detected: Black Temple (EVENT: TIMEWALKING)
-						["qg"] = 123252,	-- Vormu
-						["isWeekly"] = true,
-						["description"] = "This quest is only available during BC Timewalking.",
-					}),
 					q( 10949, {	-- Entry Into the Black Temple (UNTESTED, NEEDS CONFIRMATION)
 						["qg"] = 18481,	-- A'dal
 						["coord"] = { 54.2, 44.4 },

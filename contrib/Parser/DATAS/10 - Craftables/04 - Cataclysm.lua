@@ -332,18 +332,50 @@ _.Craftables =
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
 				sp(86615, {	-- Darkmoon Card of Destruction
+					i(61988, {["f"] = 55}),    -- Ace of embers
+					i(61989, {["f"] = 55}),    -- 2 of embers
+					i(61990, {["f"] = 55}),    -- 3 of embers
+					i(61991, {["f"] = 55}),    -- 4 of embers
+					i(61992, {["f"] = 55}),    -- 5 of embers
+					i(61993, {["f"] = 55}),    -- 6 of embers
+					i(61994, {["f"] = 55}),    -- 7 of embers
+					i(61995, {["f"] = 55}),    -- 8 of embers
+					i(62021, {	-- Volcanic Deck
+						i(62047),	-- Darkmoon Card: Volcano
+					}),
+					i(61996, {["f"] = 55}),    -- Ace of stones
+					i(61997, {["f"] = 55}),    -- 2 of stones
+					i(61998, {["f"] = 55}),    -- 3 of stones
+					i(61999, {["f"] = 55}),    -- 4 of stones
+					i(62000, {["f"] = 55}),    -- 5 of stones
+					i(62001, {["f"] = 55}),    -- 6 of stones
+					i(62002, {["f"] = 55}),    -- 7 of stones
+					i(62003, {["f"] = 55}),    -- 8 of stones
 					i(62046, {	-- Earthquake Deck
 						i(62048),	-- Darkmoon Card: Earthquake
 					}),
+					i(62004, {["f"] = 55}),    -- Ace of winds
+					i(62005, {["f"] = 55}),    -- 2 of winds
+					i(62006, {["f"] = 55}),    -- 3 of winds
+					i(62007, {["f"] = 55}),    -- 4 of winds
+					i(62008, {["f"] = 55}),    -- 5 of winds
+					i(62009, {["f"] = 55}),    -- 6 of winds
+					i(62010, {["f"] = 55}),    -- 7 of winds
+					i(62011, {["f"] = 55}),    -- 8 of winds
 					i(62045, {	-- Hurricane Deck
 						i(62049),	-- Darkmoon Card: Hurricane
 						i(62051),	-- Darkmoon Card: Hurricane
 					}),
+					i(62012, {["f"] = 55}),    -- Ace of waves
+					i(62013, {["f"] = 55}),    -- 2 of waves
+					i(62014, {["f"] = 55}),    -- 3 of waves
+					i(62015, {["f"] = 55}),    -- 4 of waves
+					i(62016, {["f"] = 55}),    -- 5 of waves
+					i(62017, {["f"] = 55}),    -- 6 of waves
+					i(62018, {["f"] = 55}),    -- 7 of waves
+					i(62019, {["f"] = 55}),    -- 8 of waves
 					i(62044, {	-- Tsunami Deck
 						i(62050),	-- Darkmoon Card: Tsunami
-					}),
-					i(62021, {	-- Volcanic Deck
-						i(62047),	-- Darkmoon Card: Volcano
 					}),
 				}),
 			}),

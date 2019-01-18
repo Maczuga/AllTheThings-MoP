@@ -29,10 +29,12 @@ _.Instances =
 										["races"] = ALLIANCE_ONLY,
 										["g"] = {
 											{	-- Black Ice
-												["itemID"] = 133997,	-- Black Ice
+												["itemID"] = 69262,			-- Black Ice
+												["collectible"] = false,	-- Yay, Blizzard gave these sourceID's
 											},
-											{	-- Golden Necklace
-												["itemID"] = 69863,		-- Golden Necklace
+											{	-- Golden Necklace			-- Golden Necklace
+												["itemID"] = 69863,			-- Golden Necklace
+												["collectible"] = false,	-- Yay, Blizzard gave these sourceID's
 											},
 										},
 									},
@@ -49,16 +51,20 @@ _.Instances =
 										["races"] = HORDE_ONLY,
 										["g"] = {
 											{	-- Black Ice
-												["itemID"] = 133997,	-- Black Ice
+												["itemID"] = 69262,			-- Black Ice
+												["collectible"] = false,	-- Yay, Blizzard gave these sourceID's
 											},
 											{	-- Golden Necklace
-												["itemID"] = 69863,		-- Golden Necklace
+												["itemID"] = 69863,			-- Golden Necklace
+												["collectible"] = false,	-- Yay, Blizzard gave these sourceID's
 											},
 											{	-- Gem-Studded Bracelets
-												["itemID"] = 69865,		-- Gem-Studded Bracelets
+												["itemID"] = 69865,			-- Gem-Studded Bracelets
+												["collectible"] = false,	-- Yay, Blizzard gave these sourceID's
 											},
 											{	-- Tarnished Crown
-												["itemID"] = 69864,		-- Tarnished Crown
+												["itemID"] = 69864,			-- Tarnished Crown
+												["collectible"] = false,	-- Yay, Blizzard gave these sourceID's
 											},
 										},
 									},

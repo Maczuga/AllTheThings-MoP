@@ -1049,10 +1049,6 @@ _.Zones =
 						["sourceQuests"] = { 29900, 29899 }, -- An Ancient Legend, Rest in Peace
 						["description"] = "Automatically given when prequisites have been fulfilled.",
 					}),
-					q(41907, { -- Appropriations
-						["qg"] = 104744, -- High Elder Cloudfall
-						["classes"] = { 10 },
-					}),
 					qh(31775, { -- Assault on the Airstrip
 						["qg"] = 65999, -- General Nazgrim
 						["sourceQuests"] = { 29804 }, -- Seein' Red
@@ -1150,11 +1146,6 @@ _.Zones =
 						["sourceQuests"] = { 29576 }, -- An Air of Worry - breadcrumb?
 						["isBreadcrumb"] = true, -- is 29576 really a breadcrumb?
 					}),
-					q(41730, { -- Desperate Strike
-						["qg"] = 104784, -- Taran Zhu
-						["sourceQuests"] = { 41728 }, -- The Defense of Tian Monastery
-						["classes"] = { 10 },
-					}),
 					q(30158, { -- Disarming the Enemy
 						["qg"] = 58228, -- Instructor Skythorn
 						["isDaily"] = true,
@@ -1243,10 +1234,6 @@ _.Zones =
 						["qg"] = 56406, -- Rivett Clutchpop
 						["sourceQuests"] = { 29941 }, -- Beyond the Horizon
 					}),
-					q(43062, { -- Further Training
-						["qg"] = 104744, -- High Elder Cloudfall
-						["classes"] = { 10 },
-					}),
 					qh(30484, { -- Gauging Our Progress
 						["qg"] = 57108, -- General Nazgrim
 						["sourceQuests"] = { 30499 }, -- Get Back Here!
@@ -1327,11 +1314,6 @@ _.Zones =
 					q(30502, { -- Jaded Heart
 						["qg"] = 59418, -- Lorewalker Cho
 						["sourceQuests"] = { 31303 }, -- The Seal is Broken
-					}),
-					q(42957, { -- Journey to the East
-						["qg"] = 109049, -- The Monkey King
-						["sourceQuests"] = { 42766, 42767, 42768 }, -- The Riddle of the Barrel, The Riddle of the Land, The Riddle of Purity
-						["classes"] = { 10 },
 					}),
 					q(30148, { -- Just a Flesh Wound
 						["qg"] = 58413, -- Jenova Longeye
@@ -1529,11 +1511,6 @@ _.Zones =
 					q(29579, { -- Rally the Survivors
 						["qg"] = 54697, -- Shao the Defiant
 					}),
-					q(41733, { -- Rebuilding the Order
-						["qg"] = 104744, -- High Elder Cloudfall
-						["sourceQuests"] = { 41732 }, -- The Hand of Keletress
-						["classes"] = { 10 },
-					}),
 					qh(29694, { -- Regroup!
 						["groups"] = {
 							i(90334), -- Cannonball-Dented Shield
@@ -1645,11 +1622,6 @@ _.Zones =
 						["qg"] = 58564, -- Elder Anli
 						["isDaily"] = true,
 					}),
-					q(41729, { -- Slowing the Spread
-						["qg"] = 104745, -- Instructor Myang
-						["sourceQuests"] = { 41728 }, -- The Defense of Tian Monastery
-						["classes"] = { 10 },
-					}),
 					q(30146, { -- Snack Time
 						["qg"] = 58413, -- Jenova Longeye
 						["isDaily"] = true,
@@ -1680,11 +1652,6 @@ _.Zones =
 					qh(31121, { -- Stay a While, and Listen
 						["qg"] = 55768, -- Lorewalker Cho
 						["sourceQuests"] = { 29822 }, -- Lay of the Land
-					}),
-					q(41731, { -- Storm, Earth, and Fire
-						["qg"] = 104784, -- Taran Zhu
-						["sourceQuests"] = { 41728 }, -- The Defense of Tian Monastery
-						["classes"] = { 10 },
 					}),
 					qh(31776, { -- Strongarm Tactics
 						["qg"] = 65999, -- General Nazgrim
@@ -1724,10 +1691,6 @@ _.Zones =
 						["qg"] = 65999, -- General Nazgrim
 						["sourceQuests"] = { 31777, 31776, 31775 }, -- Choppertunity, Strongarm Tactics, & Assault on the Airstrip
 					}),
-					q(41728, { -- The Defense of Tian Monastery
-						["qg"] = 100438, -- Iron-Body Ponshu
-						["classes"] = { 10 },
-					}),
 					q(29716, { -- The Double Hozen Dare
 						["qg"] = 55234, -- An Windfur
 						["sourceQuests"] = { 31230 }, -- Welcome to Dawn's Blossom
@@ -1739,11 +1702,6 @@ _.Zones =
 					qh(31769, { -- The Final Blow!
 						["qg"] = 66646, -- General Nazgrim
 						["sourceQuests"] = { 31767, 31768 }, -- Finish Them!, Fire is Always the Answer
-					}),
-					q(41732, { -- The Hand of Keletress
-						["qg"] = 104850, -- The Monkey King
-						["sourceQuests"] = { 41729, 41730, 41731 }, -- Slowing the Spread, Desperate Strike, Storm Earth and Fire
-						["classes"] = { 10 },
 					}),
 					q(31876, { -- The Inkmasters of the Arboretum
 						["qg"] = 64691, -- Lorewalker Huynh
@@ -1777,31 +1735,11 @@ _.Zones =
 						["qg"] = 55789, -- Rell Nightwind
 						["sourceQuests"] = { 49556, 49866 }, -- Hero's Call: Jade Forest!, To Pandaria!
 					}),
-					q(42868, { -- The Monkey King's Challenge
-						["qg"] = 109187, -- The Monkey King
-						["sourceQuests"] = { 42957 }, -- Journey to the East
-						["classes"] = { 10 },
-					}),
 					qa(31373, { -- The Order of the Cloud Serpent
 						["qg"] = 64484, -- Instructor Windspear
 					}),
 					q(29881, { -- The Perfect Color
 						["qg"] = 56064, -- Inkmaster Glenzu
-					}),
-					q(42768, { -- The Riddle of Purity
-						["qg"] = 108700, -- The Monkey King
-						["sourceQuests"] = { 42762 }, -- The Wanderer's Companion
-						["classes"] = { 10 },
-					}),
-					q(42766, { -- The Riddle of the Barrel
-						["qg"] = 108700, -- The Monkey King
-						["sourceQuests"] = { 42762 }, -- The Wanderer's Companion
-						["classes"] = { 10 },
-					}),
-					q(42767, { -- The Riddle of the Land
-						["qg"] = 108700, -- The Monkey King
-						["sourceQuests"] = { 42762 }, -- The Wanderer's Companion
-						["classes"] = { 10 },
 					}),
 					q(29999, { -- The Rider's Bind
 						["qg"] = 56784, -- Fei
@@ -1878,15 +1816,6 @@ _.Zones =
 						["qg"] = 59178, -- Lo Wanderbrew
 						["sourceQuests"] = { 31230 }, -- Welcome to Dawn's Blossom
 					}),
-					q(42765, { -- The Trial at the Temple
-						["qg"] = 109187, -- The Monkey King
-						["sourceQuests"] = { 42868 }, -- The Monkey King's Challenge
-						["classes"] = { 10 },
-					}),
-					q(42762, { -- The Wanderer's Companion
-						["qg"] = 100438, -- Iron-Body Ponshu
-						["classes"] = { 10 },
-					}),
 					q(29752, { -- The Wayward Dead
 						["qg"] = 55614, -- Pei-Zhi
 						["sourceQuests"] = { 29749 }, -- An Urgent Plea
@@ -1916,10 +1845,6 @@ _.Zones =
 					qh(31766, { -- Touching Ground
 						["qg"] = 66667, -- Rivett Clutchpop
 						["sourceQuests"] = { 31765 }, -- Paint it Red!
-					}),
-					q(41909, { -- Tracking the Tideskorn
-						["qg"] = 104744, -- High Elder Cloudfall
-						["classes"] = { 10 },
 					}),
 					q(29929, { -- Trapped!
 						["qg"] = 56347, -- Hao Mann

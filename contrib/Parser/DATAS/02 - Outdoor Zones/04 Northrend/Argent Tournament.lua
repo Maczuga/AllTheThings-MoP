@@ -573,35 +573,9 @@ _.Zones =
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
 									},
-									{	-- Music Roll: The Argent Tournament
-										["itemID"] = 122232,	-- Music Roll: The Argent Tournament
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-									},
 									-- Alliance Only Items
 									{	-- Blunderbuss of Khaz Modan
 										["itemID"] = 45130,	-- Blunderbuss of Khaz Modan
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Grapeshotter of Khaz Modan
-										["itemID"] = 164932,	-- Grapeshotter of Khaz Modan
 										["crs"] = {
 											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1831,37 +1805,6 @@ _.Zones =
 								i(47541, {	-- Argent Pony Bridle
 									ach(3736),	-- Pony Up!
 								}),
-								i(122350),	-- Balanced Heartseeker
-								i(122349),	-- Bloodied Arcanite Reaper
-								i(122389),	-- Bloodsoaked Skullforge Reaver
-								i(122363),	-- Burnished Warden Staff
-								i(122352),	-- Charmed Ancient Bone Bow
-								i(122354),	-- Devout Aurastone Hammer
-								i(122353),	-- Dignified Headmaster's Charge
-								i(122391),	-- Flamescarred Draconian Deflector
-								i(122390),	-- Musty Tome of the Lost
-								i(122386),	-- Repurposed Lava Dredger
-								i(122351),	-- Venerable Dal'Rend's Sacred Charge
-								i(122385),	-- Venerable Mass of McGowan
-								i(122392),	-- Weathered Observer's Shield
-								i(122360),	-- Tattered Dreadmist Mantle
-								i(122384),	-- Tattered Dreadmist Robe
-								i(122359),	-- Preened Ironfeather Shoulders
-								i(122382),	-- Preened Ironfeather Brestplate
-								i(122358),	-- Stained Shadowcraft Spaulders
-								i(122383),	-- Stained Shadowcraft Tunic
-								i(122356),	-- Champion Herod's Shoulders
-								i(122379),	-- Champion's Deathdealer Breastplate
-								i(122357),	-- Mystical Pauldrons of Elements
-								i(122380),	-- Mystical Vest of Elements
-								i(122388),	-- Burnished Pauldrons of Might
-								i(122387),	-- Burnished Breastplate of Might
-								i(122355),	-- Polished Spaulders of Valor
-								i(122381),	-- Polished Breastplate of Valor
-								i(122362),	-- Discerning Eye of the Beast
-								i(122361),	-- Swift Hand of Justice
-								i(122338),	-- Ancient Heirloom Armor Casing
-								i(122339),	-- Ancient Heirloom Scabbard
 							}),
 						},
 					}),
@@ -2093,7 +2036,7 @@ _.Zones =
 						["coord"] = { 72.4, 20.8 },
 						["groups"] = {
 							currency(81, {	-- Epicurean's Award
-								i(134020), 	-- Chef's Hat
+								i(46349), 	-- Chef's Hat
 								i(43035),	-- Recipe: Blackened Dragonfin
 								i(43032),	-- Recipe: Blackened Worg Steak
 								i(43029),	-- Recipe: Critter Bites

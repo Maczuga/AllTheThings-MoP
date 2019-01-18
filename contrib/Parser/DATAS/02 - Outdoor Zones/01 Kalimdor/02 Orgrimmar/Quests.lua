@@ -88,7 +88,7 @@ _.Zones =
 					}),
 --					qg(43239, q( 26557, { ["requireSkill"] = 129 })),	-- A Staggering Effort
 					q(32309, {	-- A Tale of Six Masters
-						["qg"] = 88705,	-- Kranosh
+						["qg"] = 3326,	-- Kranosh
 						["classes"] = { 9 },	-- Warlock
 					}),
 --					q( 43461),	-- A Time to Reflect (LEGACY? 2016 anniversary event)
@@ -425,7 +425,7 @@ Legacy				q( 1436),	-- Alliance Relations
 						["groups"] = {
 							i(65627),	-- Horns of the Left Hand Path
 						},
-						["qg"] = 88705,	-- Kranosh
+						["qg"] = 3326,	-- Kranosh
 						["classes"] = { 9 },	-- Warlock
 					}),
 					q(27397, {	-- Terga's Task
@@ -517,7 +517,7 @@ Legacy				q( 1436),	-- Alliance Relations
 						["groups"] = {
 							i(65497),	-- Staff of the Left Hand Path
 						},
-						["qg"] = 88705,	-- Kranosh
+						["qg"] = 3326,	-- Kranosh
 						["classes"] = { 9 },	-- Warlock
 					}),
 					{

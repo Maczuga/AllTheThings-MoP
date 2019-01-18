@@ -127,14 +127,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 										["criteriaID"] = 6,			-- Transformed by Hallowed Wand - Skeleton
 										["u"] = 26,					-- Hallow's End Filter
 									},
-									{	-- Hallowed Wand - Slime
-										["itemID"] = 116848,	-- Hallowed Wand - Slime
-										["u"] = 26,				-- Hallow's End Filter
-									},
-									{	-- Hallowed Wand - Spider
-										["itemID"] = 116854,	-- Hallowed Wand - Spider
-										["u"] = 26,				-- Hallow's End Filter
-									},
 									{	-- Hallowed Wand - Wisp
 										["itemID"] = 20414,			-- Hallowed Wand - Wisp
 										["achievementID"] = 283,	-- The Masquerade

@@ -82,7 +82,7 @@ _.Zones =
 					i(60688),	-- Parker's Yardstick
 					i(60691),	-- Unfortunate Treads
 				},
-				["qg"] = 107574, -- Anduin Wrynn <King of Stormwind> 
+				["qg"] = 29611, -- King Varian Wrynn <King of Stormwind>
 			}),
 		},
 		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",

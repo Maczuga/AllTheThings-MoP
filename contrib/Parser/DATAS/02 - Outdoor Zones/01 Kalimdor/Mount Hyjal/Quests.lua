@@ -301,13 +301,6 @@ _.Zones =
 					qg(39432, qh(25355)),	-- Lightning in a Bottle
 					qg(39433, qa(25353)),	-- Lightning in a Bottle
 --]]
-					{
-						["questID"] = 44921,	-- Lone Wolf
-						["qg"] = 115749,	-- Quest Givers: Aviana <Ancient>
-						["sourceQuest"]	= 44888,	-- Source Quest: Aviana's Grace
-						["classes"]= { 11 },	-- Druid
-						["lvl"] = 110,
-					},
 --[[
 					qg(41507, q(25881)),	-- Lost Wardens
 --]]					

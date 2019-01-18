@@ -532,6 +532,7 @@ _.Zones =
 					}),
 					n(23007, {		-- Paulsta'ats <Consortium Quartermaster>
 						i(31776),	-- Consortium Tabard
+						un(2, i(29118)),	-- Smuggler's Ammo Pouch
 						i(33156),	-- Design: Crimson Sun
 						i(23134),	-- Design: Delicate Blood Garnet
 						i(33305),	-- Design: Don Julio's Heart

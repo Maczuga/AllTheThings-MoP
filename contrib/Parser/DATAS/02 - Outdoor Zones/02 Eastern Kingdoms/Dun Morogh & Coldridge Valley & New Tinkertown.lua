@@ -91,13 +91,11 @@ _.Zones =
 						["races"] = {7},
 					})),
 --]]
---					q(43291),	-- Defend (REMOVED, pre-Legion invasions)
 					qa(26112, {	-- Demanding Answers
 						["qg"] = 41853,	-- Commander Stonebreaker
 						["coord"] = { 78.2, 20.5 },
 						["sourceQuests"] = { 26102 },	-- Grimaxe's Demise
 					}),
---					q(43283),	-- Demon Commander (REMOVED, pre-Legion invasions)
 --[[
 					qg(1373, qa(  308)),	-- Distracting Jarven
 					qg(41298, qa(25840)),	-- Eliminate the Resistance

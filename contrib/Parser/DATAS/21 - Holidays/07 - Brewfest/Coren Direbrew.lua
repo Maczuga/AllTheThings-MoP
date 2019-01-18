@@ -6,15 +6,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 	holiday(235442, {	-- Brewfest
 		n(23872, { 	-- Coren Direbrew
 			["groups"] = {
-				un(24, i(149752, {	-- Keg-Shaped Treasure Box [Uncommon Quality]
-					["groups"] = bubbleDown({["u"] = 24}, {
-						i(107217), 	-- Direbrew's Bloodied Shanker
-						i(107218), 	-- Tremendous Tankard O'Terror
-						i(37863),	-- Direbrew's Remote
-					}),
-					["lvl"] = 46,
-				})),
-				un(24, i(117393, {	-- Keg-Shaped Treasure Chest [Epic Quality]
+				un(24, i(54535, {	-- Keg-Shaped Treasure Chest [Epic Quality]
 					["groups"] = bubbleDown({["u"] = 24}, {
 						i(37828, {	-- Great Brewfest Kodo
 							["groups"] = {
@@ -30,7 +22,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(107218), 	-- Tremendous Tankard O'Terror [Level 90]
 						i(37863),	-- Direbrew's Remote
 					}),
-					["lvl"] = 98,
+					["lvl"] = 90,
 				})),
 				un(2, i(37597)),	-- Direbrew's Shanker [Level 70]
 				un(2, i(37128)),	-- Balebrew Charm [Level 70]

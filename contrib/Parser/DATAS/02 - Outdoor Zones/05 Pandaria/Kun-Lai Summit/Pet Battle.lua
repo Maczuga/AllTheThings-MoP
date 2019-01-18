@@ -23,7 +23,7 @@ _.Zones =
 								},
 							},
 							{	-- Thundering Pandaren Spirit
-								["questID"] = 93146,	-- Thundering Pandaren Spirit
+								["questID"] = 32441,	-- Thundering Pandaren Spirit
 								["isDaily"] = true,
 								["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
 								["g"] = {

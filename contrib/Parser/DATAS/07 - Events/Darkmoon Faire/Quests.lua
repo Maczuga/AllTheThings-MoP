@@ -725,20 +725,6 @@ _.WorldEvents =
 						},
 					},
 				},
-				{	-- Firebird's Challenge [Token Game]
-					["questID"] = 36481,	-- Firebird's Challenge
-					["isDaily"] = true,
-					["repeatable"] = true,
-					["qg"] = 85546,			-- Ziggie Sparks
-					["coords"] = {
-						{ 48.36, 71.37, 407 },
-					},
-					["g"] = {
-						{	-- Darkmoon Game Prize
-							["itemID"] = 93724,	-- Darkmoon Game Prize
-						},
-					},
-				},
 				{	-- Darkmoon Treasure Chest
 					["objectID"] = 209620,	-- Darkmoon Treasure Chest
 					["icon"] = "Interface\\Icons\\garrison_silverchest",

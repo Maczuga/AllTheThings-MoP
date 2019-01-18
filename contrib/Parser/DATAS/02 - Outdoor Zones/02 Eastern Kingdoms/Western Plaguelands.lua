@@ -445,44 +445,6 @@ _.Zones =
 							}),
 
 						}),
-
--- CLASS HALL QUESTS
-						qart(q(43153, {	-- An Eye for a Scepter
-							["qg"] = 109698,	-- Calydus
-							["lvl"] = 98,
-							["classes"] = { 9 },	-- Warlock
-							["sourceQuests"] = { 43100 },	-- Finding the Scepter
-						})),
-						qart(q(42774, {	-- Hope Prevails
-							["lvl"] = 98,
-							["qg"] = 108776,	-- Lord Maxwell Tyrosus
-							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	-- 
-						})),
-						qart(q(42771, {	-- Keeping the Peace
-							["qg"] = 108778,	-- Mehlar Dawnblade
-							["lvl"] = 98,
-							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	-- 
-						})),
-						qart(q(42772, {	-- Sacred Ground
-							["qg"] = 108777,	-- High Priest Thel'danis
-							["lvl"] = 98,
-							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	-- 
-						})),
-						qart(q(42770, {	-- Seeking Guidance
-							["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus (same QG, different IDs)
-							["lvl"] = 98,
-							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	-- 
-						})),
-						qart(q(42773, {	-- The Light Reveals
-							["qgs"] = { 108776 },	-- Lord Maxwell Tyrosus
-							["lvl"] = 98,
-							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	-- 
-						})),
 					}),
 				}),
 				n(-16, {	-- Rares

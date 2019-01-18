@@ -894,18 +894,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 24453,	-- Private Chat
 					},
-					qart(q(44924, {	-- The Archmage Accosted
-						["qg"] = 115791,	-- Joanna
-						["classes"] = {
-							1,	-- Warrior
-							3,	-- Hunter
-							4,	-- Rogue
-							6,	-- Death Knight
-							12,	-- Demon Hunter
-						},
-						["coord"] = { 25.0, 38.6 },
-						["sourceQuest"] = 44920,	-- Order of Incantations
-					})),
 					{	-- The Blackmaw Doublecross
 						["questID"] = 14435,
 						["groups"] = {

@@ -68,9 +68,6 @@ _.Zones =
 					o(204824, {	-- Lightforged Arch
 						qa(26722),	-- Buried Below
 					}),
-					qg(110684, q(43382, {	-- Champion: Natalie Seline
-						["classes"] = {5}, -- Priest
-					})),
 --]]					qg(276, qa(26685, { -- Classy Glass
 						i(60908),
 						i(60909),
@@ -96,26 +93,11 @@ _.Zones =
 						i(3683),	-- Recipe: Gooey Spider Cake
 					})),
 --[[
-					qg(100323, q(40834, {	-- Following the Curse
-						["classes"] = {11}, -- Druid
-					})),
-					qg(100323, q(40588, {	-- Following the Curse
-						["classes"] = {9}, -- Warlock
-					})),
-					qg(100323, q(40931, {	-- Following the Curse
-						["classes"] = {6}, -- Death Knight
-					})),
 					qg(273, qa(26661)),	-- Gather Rot Blossoms
 					qg(265, qa(26652)),	-- Ghost Hair Thread
 					qg(289, qa(26677)),	-- Ghoulish Effigy
 					qg(43731, qa(26725)),	-- Guided by the Light
 					qg(267, qa(26669)),	-- In A Dark Corner
-					qg(111041, q(43392, {	-- Into the Void
-						["classes"] = {5}, -- Priest
-					})),
-					qg(101656, q(40784, {	-- Its Rightful Place
-						["classes"] = {11}, -- Druid
-					})),
 --]]
 					qg(273, qa(26676, { -- Juice Delivery
 						i(60902),

@@ -205,7 +205,6 @@ _.Zones =
 							qg(, qa(29556)),	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
 							qg(, qa(32675)),	-- I Believe You Can Fly
 							qg(, qa(44120)),	-- Illidari Allies
-							qg(, q(44663)),	-- In the Blink of an Eye
 							qg(, qa(11964)),	-- Incense for the Summer Scorchlings
 							qg(, q(12012)),	-- Inform the Elder
 							qg(, qa(29092)),	-- Inform the Elder
@@ -335,8 +334,6 @@ _.Zones =
 		--						["sourceQuests"] = {  },	-- 
 							}),
 		--[[
-							qg(, q(34398)),	-- The Dark Portal
-							qg(, q(36881)),	-- The Dark Portal
 							qg(, qa( 7905)),	-- The Darkmoon Faire
 							qg(, qa(30095)),	-- The End Time
 							qg(, qa(28826)),	-- The Eye of the Storm
@@ -435,7 +432,6 @@ _.Zones =
 							qg(, qa(28832)),	-- Twilight Shores
 							qg(, qa(47222)),	-- Two If By Sea
 							qg(, qa(24804)),	-- Uncommon Scents
-							qg(, q(37494)),	-- Under Cover of Darkness
 							qg(, qa(31732)),	-- Unleash Hell
 							qg(, q(11886)),	-- Unusual Activity
 		--]]

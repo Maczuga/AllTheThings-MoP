@@ -37,11 +37,31 @@ _.NeverImplemented =
 				un(1, i(48737)),	-- Gul'dan's Leggings of Conquest
 				un(1, i(48738)),	-- Gul'dan's Robe of Conquest
 				un(1, i(48739)),	-- Gul'dan's Shoulderpads of Conquest
+				un(1, i(32093)),	-- Chancellor's Dreadweave Gloves
+				un(1, i(32094)),	-- Chancellor's Dreadweave Hood
+				un(1, i(32095)),	-- Chancellor's Dreadweave Legs
+				un(1, i(32096)),	-- Chancellor's Dreadweave Manthle
+				un(1, i(32097)),	-- Chancellor's Dreadweave Robe
 			}),
 			un(1, i(6243)),		-- Green Woolen Robe
 			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
 			un(1, i(4989)),		-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
 			un(1, i(4990)),		-- Scorched Bands
+			un(1, i(32098)),	-- Chancellor's Mooncloth Cowl
+			un(1, i(32099)),	-- Chancellor's Mooncloth Legs
+			un(1, i(32100)),	-- Chancellor's Mooncloth Mitts
+			un(1, i(32101)),	-- Chancellor's Mooncloth Shoulderpads
+			un(1, i(32102)),	-- Chancellor's Mooncloth Vestments
+			un(1, i(32103)),	-- Chancellor's Satin Gloves
+			un(1, i(32104)),	-- Chancellor's Satin Hood
+			un(1, i(32105)),	-- Chancellor's Satin Legs
+			un(1, i(32106)),	-- Chancellor's Satin Manthle
+			un(1, i(32107)),	-- Chancellor's Satin Robe
+			un(1, i(32108)),	-- Chancellor's Silk Amice
+			un(1, i(32109)),	-- Chancellor's Silk Cowl
+			un(1, i(32110)),	-- Chancellor's Silk Handguards
+			un(1, i(32111)),	-- Chancellor's Silk Rainment
+			un(1, i(32112)),	-- Chancellor's Silk Legs
 			un(1, i(104335)),	-- Titan Rocket Boots
 			un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
 			un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
@@ -49,6 +69,7 @@ _.NeverImplemented =
 			un(1, i(10010)),	-- Stormcloth Pants
 			un(1, i(10011)),	-- Stormcloth Gloves
 			un(1, i(10020)),	-- Stormcloth Vest
+			un(1, i(47102)),	-- Unknown
 			un(1, i(10032)),	-- Stormcloth Headband
 			un(1, i(10038)),	-- Stormcloth Shoulders (comment on wowhead says they have the pattern, but I'm pretty sure that's fake - no history of the pattern or item on UMJ)
 			un(1, i(10039)),	-- Stormcloth Boots
@@ -181,6 +202,22 @@ _.NeverImplemented =
 				un(1, i(65149)),	    -- Gladiator's Ringmail Helm
 				un(1, i(65148)),	    -- Gladiator's Ringmail Leggings
 				un(1, i(65147)),	    -- Gladiator's Ringmail Spaulders
+				-- MoP Version
+				un(1, i(88212)),	    -- Gladiator's Linked Gauntlets
+				un(1, i(88213)),	    -- Gladiator's Linked Helm
+				un(1, i(88214)),	    -- Gladiator's Linked Leggings
+				un(1, i(88215)),	    -- Gladiator's Linked Spaulders
+				un(1, i(88211)),		-- Gladiator's Linked Armor
+				un(1, i(88216)),	    -- Gladiator's Mail Armor
+				un(1, i(88217)),	    -- Gladiator's Mail Gauntlets
+				un(1, i(88218)),	    -- Gladiator's Mail Helm
+				un(1, i(88219)),	    -- Gladiator's Mail Leggings
+				un(1, i(88220)),	    -- Gladiator's Mail Sppaulders
+				un(1, i(88236)),	    -- Gladiator's Ringmail Armor
+				un(1, i(88237)),	    -- Gladiator's Ringmail Gauntlets
+				un(1, i(88238)),	    -- Gladiator's Ringmail Helm
+				un(1, i(88239)),	    -- Gladiator's Ringmail Leggings
+				un(1, i(88240)),	    -- Gladiator's Ringmail Spaulders
 				un(1, i(46293)),	    -- Worldbreaker Chestguard
 				un(1, i(46294)),	    -- Worldbreaker Faceguard
 				un(1, i(46295)),	    -- Worldbreaker Gloves
@@ -263,6 +300,11 @@ _.NeverImplemented =
 				un(1, i(32135)),	    -- Chancellor's Chain Helm
 				un(1, i(32136)),	    -- Chancellor's Chain Leggings
 				un(1, i(32137)),	    -- Chancellor's Chain Spaulders
+				un(1, i(48819)),	    -- Windrunner's Handguards
+				un(1, i(48820)),	    -- Windrunner's Headpiece
+				un(1, i(48821)),	    -- Windrunner's Legguards
+				un(1, i(48822)),	    -- Windrunner's Spaulders
+				un(1, i(48823)),	    -- Windrunner's Tunic
 				un(1, i(46274)),	    -- Scourgestalker Headpiece
 				un(1, i(48814)),	-- Windrunner's Handguards of Conquest
 				un(1, i(48815)),	-- Windrunner's Headpiece of Conquest
@@ -274,6 +316,10 @@ _.NeverImplemented =
 			un(1, i(37420)),	-- Sharkproof Boots
 			un(1, i(68844)),	-- Unknown
 			un(1, i(109265)),	-- Unknown
+			un(1, i(46273)),	-- Scourgestalker Handguards
+			un(1, i(46275)),	-- Scourgestalker legguards
+			un(1, i(46276)),	-- Scourgestalker spaulders
+			un(1, i(46277)),	-- Scourgestalker tunic
 			un(1, i(109270)),	-- Unknown
 			un(1, i(109280)),	-- Unknown
 			un(1, i(109313)),	-- Unknown
@@ -350,6 +396,16 @@ _.NeverImplemented =
 				un(1, i(48924)),	-- Liadrin's Handguards of Conquest
 				un(1, i(48925)),	-- Liadrin's Legguards of Conquest
 				un(1, i(48926)),	-- Liadrin's Shoulderguards of Conquest
+				un(1, i(32153)),	    -- Chancellor's Lamellar Chestpiece
+				un(1, i(32154)),	    -- Chancellor's Lamellar  Handguards
+				un(1, i(32155)),	    -- Chancellor's Lamellar  Headpiece
+				un(1, i(32156)),	    -- Chancellor's Lamellar  Legguards
+				un(1, i(32157)),	    -- Chancellor's Lamellar  Spaulders
+				un(1, i(32158)),	    -- Chancellor's OrnamentedChestplate
+				un(1, i(32159)),	    -- Chancellor's Ornamented Handguards
+				un(1, i(32160)),	    -- Chancellor's Ornamented Headguard
+				un(1, i(32161)),	    -- Chancellor's Ornamented Leggings
+				un(1, i(32162)),	    -- Chancellor's Ornamented Spaulders
 			}),
 			cl(1, { -- Warrior
 				un(1, i(48860)),	-- Hellscream's Battleplate of Conquest
@@ -366,6 +422,27 @@ _.NeverImplemented =
 			un(1, i(27718)),	-- Aldor Defender's Legplates
 			un(1, i(12106)),	-- Boulderskin Breastplate
 			un(1, i(25797)),	-- Crushing Grasp
+			un(1, i(38524)),	-- Carapace of the Scarlet Commander
+			un(1, i(32163)),	    -- Chancellor's PlateChestpiece
+			un(1, i(32164)),	    -- Chancellor's Plate Handguards
+			un(1, i(32165)),	    -- Chancellor's Plate Helm
+			un(1, i(32166)),	    -- Chancellor's Plate Legguards
+			un(1, i(32167)),	    -- Chancellor's Plate Shoulders
+			un(1, i(32168)),	    -- Chancellor's ScaledChestpiece
+			un(1, i(32169)),	    -- Chancellor's Scaled Handguards
+			un(1, i(32170)),	    -- Chancellor's Scaled Helm
+			un(1, i(32171)),	    -- Chancellor's Scaled shoulders
+			un(1, i(32172)),	    -- Chancellor's Scaled Spaulders
+			un(1, i(46213)),	-- Aegis Battleplate
+			un(1, i(46214)),	-- Aegis breastplate
+			un(1, i(46215)),	-- Aegis faceguard
+			un(1, i(46216)),	-- Aegis gauntlets
+			un(1, i(46217)),	-- Aegis gloves
+			un(1, i(46218)),	-- Aegis greaves
+			un(1, i(46219)),	-- Aegis handguards
+			un(1, i(46220)),	-- Aegis headpiece
+			un(1, i(46221)),	-- Aegis helm
+			un(1, i(46222)),	-- Aegis legguards
 			un(1, i(5822)),		-- Hedgeseed Gauntlets
 			un(1, i(26041)),	-- Vigilant Vambraces
 			un(1, i(21587)),	-- Wristguards of Castigation (never made it off test)
@@ -387,6 +464,7 @@ _.NeverImplemented =
 			un(1, i(22230)),	-- Frightmaw Hide (Cloak)
 			un(1, i(28045)), -- Cloak of the Demon Stalker
 
+			un(1, i(39828)),	-- Punisher's Cloak
 		}),
 		n(-324, { -- Shirts
 			un(1, i(53869)), -- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
@@ -431,28 +509,35 @@ _.NeverImplemented =
 			un(1, i(20525)), -- Earthen Sigil
 			un(1, i(38383)),	-- Unknown
 			un(1, i(38526)),	-- Unknown
-			un(1, i(157763)),	-- ENgine of Eradication
-			un(1, i(157764)),	-- Claw of the crystaline scropid
-			un(1, i(157765)),	-- draught of souls
-			un(1, i(157766)),	-- vial of nightmare fog
 			
 		}),
 	}),
 	n(-494, { -- Misc
 
 		n(-650, {	-- Quest Item
-			un(1, i(17347)),	--
+			un(1, i(17347)),	-- unknown
 			un(1, i(17409)),	-- Encrusted Crystal Fragment
 			un(1, i(20883)),	-- Unknown
 			un(1, i(20936)),	-- Unknown
 			un(1, i(20937)),	-- Unknown
 		}),
 		un(1, spell(5169)),	-- defias disguise
+		un(1, i(45818)),	-- Unknown
+		un(1, i(46056)),	-- Unknown
 		un(1, spell(5264)),	-- dsouth sea defias disguise
 		un(1, spell(5268)),	-- dark iron dwarf disguise
 		un(1, spell(5267)),	-- dalaran wizard disguise
 		un(1, i(9023)),		-- Codex of Shadow Proctection Rank3 (Never added)
 		un(1, i(21243)),	-- Bloated Mightfish
+		un(1, i(42975)),	-- Ace of Lords
+		un(1, i(42977)),	-- Two of Lords
+		un(1, i(42978)),	-- Three of Lords
+		un(1, i(42979)),	-- Four of Lords
+		un(1, i(42980)),	-- Five of Lords
+		un(1, i(42981)),	-- Six of Lords
+		un(1, i(42982)),	-- seven of Lords
+		un(1, i(42983)),	-- eight of Lords
+		un(1, i(42976)),	-- Lords Deck
 		un(1, i(100894)),	-- Deathtoll's Reward
 		un(1, i(100897)),	-- Skel'tik the Baleful's Reward
 		un(1, i(100898)),	-- Kull Bloodseeker's Reward
@@ -704,14 +789,13 @@ _.NeverImplemented =
 		n(-347, { -- Bows
 			un(1, i(108783)),    -- Unknown
 			un(1, i(109283)),    -- 6.0 QA Combat Test Hunter Bow
+			un(1, i(64783)),	-- Bloodthirsty Gladiator's Longbow(Epic BG item never made it out of beta)))
 		}),
 		n(-346, { -- Crossbows
 			un(1, i(32187)),    -- Chancellor's Heavy Crossbow
 			un(1, i(108784)),    -- Unknown
 			un(1, i(111073)),	-- Unknown
-			un(1, i(165267)),	-- Unknown
-			un(1, i(165271)),	-- Unknown
-			un(1, i(115600)),	-- Unknown
+			un(1, i(64760)),	-- Bloodthirsty Gladiator's Heavy Crossbow (Epic BG item never made it out of beta)
 			un(1, i(103003)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(103375)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(102613)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)	
@@ -720,8 +804,13 @@ _.NeverImplemented =
 		n(-333, { -- Daggers
 			un(1, i(108785)),	-- Unknown
 			un(1, i(108786)),	-- Unknown
+			un(1, i(64848)),	-- Bloodthirsty Gladiator's Shanker(Epic BG Item, never made it out of beta)
+			un(1, i(64859)),	-- Bloodthirsty Gladiator's Spellblade (Epic BG Item, never made it out of beta))
 			un(1, i(109269)),	-- Unknown
 			un(1, i(109292)),	-- Unknown
+			un(1, i(38247)),	-- Entrail Render
+			un(1, i(52969)),	-- Heartache Dagger -- 52965 got added
+			un(1, i(62329)),	-- Dire Slasher (never added)
 			un(1, i(109309)),	-- Unknown
 			un(1, i(109387)),	-- Unknown
 			un(1, i(109482)),	-- Unknown
@@ -733,15 +822,21 @@ _.NeverImplemented =
 			un(1, i(32189)),    -- Chancellor's Ripper
 			un(1, i(38243)),    -- Ravaging Steelfist
 			un(1, i(108787)),    -- Unknown
+			un(1, i(64826)),	-- Bloodthirsty Gladiator's Ripper (Epic BG Item, never made it out of beta))
 			un(1, i(108788)),    -- Unknown
 			un(1, i(108789)),    -- Unknown
 			un(1, i(109361)),    -- Unknown
 			un(1, i(109535)),    -- Unknown
 			un(1, i(109534)),    -- Unknown
+			un(1, i(64774)),	-- Bloodthirsty Gladiator's Slasher(Epic BG item never made it out of beta))
+			un(1, i(64775)),	-- Bloodthirsty Gladiator's Fleshslicer (Epic BG item never made it out of beta))
+			un(1, i(64825)),	-- Bloodthirsty Gladiator's Right Render (Epic BG item never made it out of beta))
+			un(1, i(64926)),	-- Bloodthirsty Gladiator's Ripper (Epic BG item never made it out of beta)))
 		}),
 		n(-345, { -- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
 			un(1, i(38246)),	-- Skull-Forged Blunderbuss
+			un(1, i(64824)),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta))
 			
 		}),
 		n(-331, { -- Held in Offhand
@@ -757,11 +852,17 @@ _.NeverImplemented =
 			un(1, i(109311)),	-- Unknown
 			un(1, i(109380)),	-- Unknown
 		}),
-		-- maces
+		n(-336, { 	-- One-Handed Maces
+			un(1, i(64700)),	-- Bloodthirsty Gladiator's Bonecracker (Epic BG Item, never made it out of beta)
+			un(1, i(64752)),	-- Bloodthirsty Gladiator's Gravel (Epic BG Item, never made it out of beta)
+			un(1, i(64816)),	-- Bloodthirsty Gladiator's Pummeler (Epic BG Item, never made it out of beta))
+		}),
 		n(-334, { -- One-Handed Axes
 			un(1, i(68050)),	-- Shatterscale Mightfish
 			un(1, i(49456)),	-- Will of the Earth
 			un(1, i(50251)),	-- Unknown
+			un(1, i(64717)),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
+			un(1, i(64758)),	-- Bloodthirsty Gladiator's Hacker (Epic BG Item, never made it out of beta))
 			un(1, i(108779)),	-- Unknown
 			un(1, i(108780)),	-- Unknown
 			un(1, i(108781)),	-- Unknown
@@ -783,12 +884,23 @@ _.NeverImplemented =
 		n(-343,	{ -- Polearms
 			un(1, i(108797)),	-- Unknown
 			un(1, i(108798)),	-- Unknown
+			un(1, i(54965)),	-- Unknown
+			un(1, i(64810)),	-- Bloodthirsty Gladiator's Pike (Epic BG item never made it out of beta)))
 			un(1, i(108799)),	-- Unknown
 			un(1, i(109456)),	-- Unknown
 		}),
 		n(-387,	{	-- Relics
 		}),
+		n(-332, { -- Shields
+			un(1, i(34415)),	-- Crystaline Shard Shield
+			un(1, i(54554)),	-- Bejeweled Ship's Wheel
+			un(1, i(60220)),	-- Unknown
+		}),
 		n(-342, { -- Staves
+			un(1, i(49458)),	-- Unknown
+			un(1, i(64695)),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)
+			un(1, i(64744)),	-- Bloodthirsty Gladiator's Energy Staff (Epic BG Item, never made it out of beta)
+			un(1, i(64860)),	-- Bloodthirsty Gladiator's Staff (Epic BG Item, never made it out of beta))
 			un(1, i(108800)),	-- Unknown - was under Legion>Staves
 			un(1, i(108801)),	-- Unknown - was under Legion>Staves
 			un(1, i(108802)),	-- Unknown - was under Legion>Staves
@@ -804,9 +916,15 @@ _.NeverImplemented =
 		}),
 		n(-335, { -- Two Handed Axes
 			un(1, i(108782)),	-- Unknown
+			un(1, i(69916)),	-- Trollbane (Test)
 			un(1, i(109519)),	-- Unknown
+			un(1, i(64701)),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta))
+			un(1, i(64726)),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta))
 		}),
 		n(-337, { -- Two Handed Swords
+		--	un(1, i(84717),		-- Dreadful Gladiator's Greatsword (did not make it :( )
+			un(1, i(49457)),	-- Unknown
+			un(1, i(64755)),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta))
 		
 		}),
 		n(-339, { -- Two Handed Swords

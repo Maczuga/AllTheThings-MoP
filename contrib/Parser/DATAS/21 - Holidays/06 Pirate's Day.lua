@@ -17,19 +17,6 @@ _.Holidays = bubbleDown({["u"] = 23},
 				}),
 			}),
 			n(-2, { -- Vendors *UCN18
-				n(28048, {	-- Dread Captain DeMeza <Scourge of the South Seas>
-					["groups"] = bubbleDown({["u"] = 23}, {
-						i(116392, {	-- Big Bag of Booty
-							["f"] = 55,	-- Consumable; Changed from "Toy"
-						}),
-						i(138400, {	-- Petey
-							["f"] = 55,	-- Consumable; Changed from nothing
-						}),
-					}),
-					["coord"] = {
-						40.01, 72.61,	-- Booty Bay Pirate Day Location
-					},
-				}),
 			}),
 		},
 		["maps"] = {
