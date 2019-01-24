@@ -1225,7 +1225,6 @@ _.Zones =
 						-- }),
 						--
 						--
-						-- Artifact Acquisition & Class Halls
 						q(13077, {	--  The Touch of an Aspect
 							-- This is part of the Icecrown Achiev...because Blizz
 							["qg"] = 31044,	-- Highlord Tirion Fordring

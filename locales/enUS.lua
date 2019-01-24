@@ -34,7 +34,6 @@ AllTheThings.Locales.enUS = {
 	["TOGGLE_COMPLETEDGROUPS"] = "Toggle Completed Groups";
 	["TOGGLE_COLLECTEDTHINGS"] = "Toggle Collected Things";
 	["TOGGLE_RAID_ASSISTANT"] = "Toggle Raid Assistant";
-	["TOGGLE_WORLD_QUESTS_LIST"] = "Toggle World Quests List";
 	["TOGGLE_RANDOM"] = "Toggle Random Window";
 	["REROLL_RANDOM"] = "Reroll the Random Selection";
 
@@ -66,7 +65,6 @@ AllTheThings.Locales.enUS = {
 	["ACHIEVEMENT"] = "Achievement";
 	["ACHIEVEMENT_ID"] = "Achievement ID";
 	["ARTIFACT"] = "Artifact";
-	["ARTIFACT_ID"] = "Artifact ID";
 	["CREATURE"] = "Creature";
 	["CREATURES"] = "Creatures";
 	["CREATURE_ID"] = "Creature ID";
@@ -340,7 +338,7 @@ AllTheThings.Locales.enUS = {
 		[-17] = "Interface\\Icons\\inv_misc_book_07", 							-- Quests
 		[-18] = "Interface\\Icons\\icon_scenarios",								-- Scenarios
 		[-19] = "Interface\\Icons\\achievement_scenario_arenaofannihilation", 	-- Arena of Annihilation
-		[-20] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
+
 		[-25] = "Interface\\Icons\\Tracking_WildPet", 							-- Pet Battles
 		[-26] = "Interface\\Icons\\INV_Misc_Bag_07_Green", 						-- Drop
 		[-29] = "Interface\\Icons\\Inv_misc_bag_17", 							-- Raid Finder Bag
@@ -915,11 +913,7 @@ AllTheThings.Locales.enUS = {
 		[-17] = "Quests",						 -- TRACKER_HEADER_QUESTS
 		[-18] = "Scenarios",						 -- SCENARIOS
 		[-19] = "Arena of Annihilation",						 -- DUNGEON_FLOOR_PROVINGGROUNDS1
-		[-20] = "Class Hall",						 -- GetCategoryInfo(15275)
-		[-21] = "Sanctum of Light",						 -- ORDER_HALL_PALADIN
-		[-22] = "The Hall of Shadows",						 -- ORDER_HALL_ROGUE
-		[-23] = "Acherus",						 -- ORDER_HALL_DEATHKNIGHT
-		[-24] = "Dreadscar Rift",						 -- ORDER_HALL_WARLOCK
+
 		[-25] = "Pet Battles",						 -- SHOW_PET_BATTLES_ON_MAP_TEXT
 		[-26] = "Drop",						 -- BATTLE_PET_SOURCE_1
 		[-27] = "Mythic",						 -- PLAYER_DIFFICULTY6
@@ -929,16 +923,16 @@ AllTheThings.Locales.enUS = {
 		[-31] = "Promotion",						 -- BATTLE_PET_SOURCE_8
 		[-32] = "Trading Card Game",						 -- BATTLE_PET_SOURCE_9
 		[-33] = "Fishing",						 -- PROFESSIONS_FISHING
-		[-34] = "World Quests",						 -- TRACKER_HEADER_WORLD_QUESTS
-		[-35] = "Class Hall Missions",						 -- ORDER_HALL_MISSIONS
+
+
 		[-36] = "In-Game Shop",						 -- BATTLE_PET_SOURCE_10
 		[-37] = "Discovery",						 -- BATTLE_PET_SOURCE_11
 		[-38] = "Professions",						 -- TRADE_SKILLS
 		[-39] = "Legacy Quest",						 -- LFG_LIST_LEGACY.." "..TRACKER_HEADER_QUESTS
 		[-40] = "Legacy",						 -- LFG_LIST_LEGACY
 		[-41] = "Cache of Madness",
-		[-42] = "Class Hall Missions",						 -- ORDER_HALL_MISSIONS
--- Armor Types
+
+		-- Armor Types
 		[-43] = "Cloth",						 -- GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME
 		[-44] = "Leather",						 -- GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME
 		[-45] = "Mail",						 -- GetItemSubClassInfo(4,3).." "..RESISTANCE0_NAME
@@ -1591,7 +1585,7 @@ AllTheThings.Locales.enUS = {
 -- Tier/Dungeon/Event/Holiday Sets
 	-- Artifact Strings
 		[-5200] = "Base Appearance",
-		[-5201] = "Class Hall Campaign",
+
 		[-5202] = "Balance of Power",
 		[-5203] = "Prestige Rewards",
 		[-5204] = "Challenge Appearance",
@@ -1690,7 +1684,7 @@ AllTheThings.Locales.enUS = {
 		[-9962] = "World Events",						 -- BATTLE_PET_SOURCE_7
 		[-9963] = "Pet Battles",						 -- SHOW_PET_BATTLES_ON_MAP_TEXT
 		[-9964] = "Collections",						 -- COLLECTIONS
-		[-9965] = "Class Hall",						 -- select(1,GetCategoryInfo(15281))
+
 		[-9966] = "Draenor Garrison",						 -- select(1,GetCategoryInfo(15303))
 		[-9967] = "Scenarios",						 -- SCENARIOS
 		[-9968] = "Legacy",						 -- LFG_LIST_LEGACY

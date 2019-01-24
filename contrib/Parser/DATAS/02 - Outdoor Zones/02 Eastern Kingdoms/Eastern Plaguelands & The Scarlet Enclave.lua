@@ -664,24 +664,6 @@ _.Zones =
 					qg(45400, q(27559)),	-- Vex'tul's Armbands
 					--]]
 
-					--[[
-					Class Hall Quests
-					qg(111616, q(43797, {	-- Aiding the Conclave (QG in Paladin order hall?)
-						["classes"] = {5}, -- Priest
-					})),
-					qg(110969, q(43491)),	-- Allies of the Light (in scenario?)
-					qg(90251, q(43492)),	-- Champion: Aponi Brightmane
-					qg(99997, q(43785)),	-- Champion: Arator the Redeemer
-					qg(113299, q(43933)),	-- Champion: Delas Moonfang
-					qg(99995, q(42852)),	-- Champion: Justicar Julia Celeste
-					qg(92346, q(42881)),	-- Champion: Lady Liadrin
-					qg(109105, q(43701)),	-- Champion: Lothraxion
-					qg(119545, q(46045)),	-- Champion: Nerus Moonfang
-					qg(94175, q(42851)),	-- Champion: Vindicator Boros
-					qg(90259, q(39696)),	-- Rise, Champions
-					qg(90259, q(42919)),	-- The Scion's Legacy
-					--]]
-
 --[[
 					qg(31084, qh(13189)),	-- Saurfang's Blessing
 					qg(31084, q(13166, {	-- The Battle For The Ebon Hold

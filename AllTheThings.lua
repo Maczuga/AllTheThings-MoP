@@ -9692,8 +9692,6 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		app:GetWindow("RaidAssistant"):Toggle();
 	elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
 		app:GetWindow("Random"):Toggle();
-	elseif cmd == "wq" then
-		app:GetWindow("WorldQuests"):Toggle();
 	elseif cmd == "unsorted" then
 		app:GetWindow("Unsorted"):Toggle();
 	elseif string.sub(cmd,1,string.len("load "))=="load " then
@@ -9743,11 +9741,6 @@ SLASH_AllTheThingsRAN1 = "/attran";
 SLASH_AllTheThingsRAN2 = "/attrandom";
 SlashCmdList["AllTheThingsRAN"] = function(cmd)
 	app:GetWindow("Random"):Toggle();
-end
-
-SLASH_AllTheThingsWQ1 = "/attwq";
-SlashCmdList["AllTheThingsWQ"] = function(cmd)
-	app:GetWindow("WorldQuests"):Toggle();
 end
 
 -- Register Events required at the start
@@ -10771,7 +10764,6 @@ app.events.VARIABLES_LOADED = function()
 	BINDING_NAME_ALLTHETHINGS_TOGGLEDEBUGMODE = L("TOGGLE_DEBUG_MODE");
 	BINDING_NAME_ALLTHETHINGS_OPEN_RAID_ASSISTANT = L("OPEN_RAID_ASSISTANT");
 	BINDING_NAME_ALLTHETHINGS_TOGGLE_RAID_ASSISTANT = L("TOGGLE_RAID_ASSISTANT");
-	BINDING_NAME_ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST = L("TOGGLE_WORLD_QUESTS_LIST");
 	BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L("TOGGLE_RANDOM");
 	BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L("REROLL_RANDOM");
 	
