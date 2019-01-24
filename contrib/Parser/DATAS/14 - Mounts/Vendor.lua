@@ -211,7 +211,7 @@ _.Mounts =
 		i(13331),		-- Red Skeletal Horse
 		i(29470),		-- Red Skeletal Warhorse
 		i(87783),		-- Regal Riding Crane
-		i(46813),		-- Silver Covenant Hippogryph
+		a(i(46813)),		-- Silver Covenant Hippogryph
 		i(32318),		-- Silver Riding Nether Ray
 		a(i(31832)),		-- Silver Riding Talbuk (Alliance)
 		h(i(31831)),		-- Silver Riding Talbuk (Horde)
@@ -222,7 +222,7 @@ _.Mounts =
 		a(i(64998)),		-- Spectral Steed (Alliance)
 		h(i(64999)),		-- Spectral Wolf (Horde)
 		i(8632),		-- Spotted Frostsaber
-		i(19030),		-- Stormpike Battle Charger
+		a(i(19030)),		-- Stormpike Battle Charger
 		i(45125),		-- Stormwind Steed
 		i(47100),		-- Striped Dawnsaber
 		i(8631),		-- Striped Frostsaber

@@ -15,7 +15,7 @@ _.Mounts =
 		i(69230),	-- Corrupted Fire Hawk
 		i(87769),	-- Crimson Cloud Serpent
 		i(62901),	-- Drake of the East Wind
-		i(69226),	-- Felfire Hawk
+		un(1, i(69226)),	-- Felfire Hawk
 		i(69213),	-- Flameward Hippogryph
 		i(87776),	-- Heavenly Azure Cloud Serpent
 		i(87773),	-- Heavenly Crimson Cloud Serpent

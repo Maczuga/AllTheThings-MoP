@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	h(i(155915, { -- Special Duty Assignments
+	h(o(207279, { -- Special Duty Assignments
 		["groups"] = {
 			--[[
 				Warboard quests should be listed beneath this note. [Pr3vention]
@@ -44,7 +44,7 @@ _.Zones =
 		["collectible"] = false,
 		["races"] = HORDE_ONLY,
 	})),
-	a(i(156474, { -- Special Duty Assignments
+	a(o(207320, { -- Special Duty Assignments
 		["groups"] = {
 			--[[
 				Warboard quests should be listed beneath this note. [Pr3vention]
