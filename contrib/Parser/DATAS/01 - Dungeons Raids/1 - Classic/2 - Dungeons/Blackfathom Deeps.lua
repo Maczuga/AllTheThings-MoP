@@ -209,6 +209,11 @@ _.Instances = { tier(1, {	-- Classic
 						74380,	-- Twilight Storm Mender
 					},
 				}),
+				i(4410, {	-- Schematic: Shadow Goggles
+					["crs"] = {
+						74363,	-- Twilight Shadow
+					},
+				}),
 			}),
 			cr(74446, e( 368, {	-- Ghamoo-Ra
 				i(  6907),	-- Tortoise Armor

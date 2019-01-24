@@ -154,7 +154,7 @@ _.Instances =
 								ach(5288),	-- No Static at All
 								i(56366),	-- Lightningflash
 								i(56374),	-- Lunar Halo
-								i(56376),	-- Thundercall
+								un(2, i(56376)),	-- Thundercall
 								i(56369),	-- Billowing Cape
 								i(56371),	-- Shadow of Perfect Bliss
 								i(56368),	-- Gloves of Haze

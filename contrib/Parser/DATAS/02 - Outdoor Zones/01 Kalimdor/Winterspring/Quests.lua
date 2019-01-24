@@ -386,11 +386,36 @@ _.Zones =
 					}),
 					{	-- A Yeti of Your Own
 						["questID"] = 8798,
+						["sourceQuest"] = 5163,	-- [DEPRECATED]Are We There, Yeti?
 						["groups"] = {
 							un(8, recipe(26011)),	-- Tranquil Mechanical Yeti
 						},
 						["u"] = 40,
 						["qg"] = 10305,	-- Umi Rumplesnicker
+						["requireSkill"] = 202,	-- Engineering
+					},
+					{
+						-- [DEPRECATED]Are We There, Yeti?
+						["questID"] = 3783,	-- [DEPRECATED]Are We There, Yeti?
+						["u"] = 40,
+						["qg"] = 10305,	-- Umi Rumplesnicker
+					},
+					{
+						-- [DEPRECATED]Are We There, Yeti?
+						["questID"] = 977,	-- [DEPRECATED]Are We There, Yeti?
+						["sourceQuest"] = 3783,	-- [DEPRECATED]Are We There, Yeti?
+						["u"] = 40,
+						["qg"] = 10305,	-- Umi Rumplesnicker
+					},
+					{
+						-- [DEPRECATED]Are We There, Yeti?
+						["questID"] = 5163,	-- [DEPRECATED]Are We There, Yeti?
+						["sourceQuest"] = 977,	-- [DEPRECATED]Are We There, Yeti?
+						["u"] = 40,
+						["qg"] = 10305,	-- Umi Rumplesnicker
+						["groups"] = {
+							i(15778),	-- [DEPRECATED]Are We There, Yeti?
+						},
 					},
 					{	-- Blasted Lands: The Other Side of the World
 						["questID"] = 28857,
@@ -439,12 +464,6 @@ _.Zones =
 						},
 						["u"] = 40,
 						["qg"] = 11193,	-- Seril Scourgebane
-					},
-					{	-- [DEPRECATED] Winterfall Runners
-						["questID"] = 5087,
-						["u"] = 40,
-						["qg"] = 9298,	-- Donova Snowden
-						["sourceQuest"] = 5086,	-- Toxic Horrors
 					},
 					{	-- Doin' De E'ko Magic
 						["questID"] = 28540,
@@ -783,6 +802,12 @@ _.Zones =
 						["qg"] = 10618,	-- Rivern Frostwind
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
+					},
+					{	-- [DEPRECATED] Winterfall Runners
+						["questID"] = 5087,
+						["u"] = 40,
+						["qg"] = 9298,	-- Donova Snowden
+						["sourceQuest"] = 5086,	-- Toxic Horrors
 					},
 				}),
 			},

@@ -20,6 +20,9 @@ _.WorldDrops =
 					{	-- Bejeweled Amulet
 						["itemID"] = 82225,	-- Bejeweled Amulet
 					},
+					{	-- Don Guerrero's Glorious Choker
+						["itemID"] = 90583,	-- Don Guerrero's Glorious Choker
+					},
 					{	-- Gemmed Amulet
 						["itemID"] = 82060,	-- Gemmed Amulet
 					},
@@ -156,6 +159,9 @@ _.WorldDrops =
 					i(87695),	-- Treads of Edward the Odd
 				}),
 				filter(52, {	-- Finger
+					{	-- Anaxo's Multi-Layered Seal
+						["itemID"] = 87437,	-- Anaxo's Multi-Layered Seal
+					},
 					{	-- Bejeweled Ring
 						["itemID"] = 82228,	-- Bejeweled Ring
 					},

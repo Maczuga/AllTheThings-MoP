@@ -306,6 +306,11 @@ _.NeverImplemented =
 				un(1, i(48822)),	    -- Windrunner's Spaulders
 				un(1, i(48823)),	    -- Windrunner's Tunic
 				un(1, i(46274)),	    -- Scourgestalker Headpiece
+				un(1, i(51707)),	-- Ahn'kahar Blood Hunter's tunic
+				un(1, i(51708)),	-- Ahn'kahar Blood Hunter's spaulders
+				un(1, i(51709)),	-- Ahn'kahar Blood Hunter's legguards
+				un(1, i(51710)),	-- Ahn'kahar Blood Hunter's headpiece
+				un(1, i(51711)),	-- Ahn'kahar Blood Hunter's handguards
 				un(1, i(48814)),	-- Windrunner's Handguards of Conquest
 				un(1, i(48815)),	-- Windrunner's Headpiece of Conquest
 				un(1, i(48816)),	-- Windrunner's Legguards of Conquest
@@ -315,6 +320,10 @@ _.NeverImplemented =
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
 			un(1, i(68844)),	-- Unknown
+			un(1, i(38527)),	-- Onslaught Scaemail haubberk
+			un(1, i(39440)),	-- Greaves of the Titan Protectorate
+			un(1, i(41758)),	-- Blood-Bond Helm
+			un(1, i(42886)),	-- Gloves of the Howling Peaks
 			un(1, i(109265)),	-- Unknown
 			un(1, i(46273)),	-- Scourgestalker Handguards
 			un(1, i(46275)),	-- Scourgestalker legguards
@@ -727,6 +736,8 @@ _.NeverImplemented =
 		}),
 		n(-183, { 	-- Engineering
 
+			un(1, i(23813)),	-- Schematic: Blue Smoke Flare [Removed TBC Beta]
+			un(1, i(23812)),	-- Schematic: Red Smoke Flare [Removed TBC Beta]
 		}),
 		n(-185, { 	-- Inscription
 			un(1, i(87830)),	-- Recipe: Tigersblood Tincture
@@ -873,6 +884,8 @@ _.NeverImplemented =
 		n(-338, { -- One-Handed Swords
 			un(1, i(108803)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(108804)),	-- Unknown - was under Legion>1Handed Swords
+			un(1, i(64817)),	-- Bloodthirsty Gladiator's Quickblade (Epic BG Item, never made it out of beta)
+			un(1, i(64858)),	-- Bloodthirsty Gladiator's Slicer (Epic BG Item, never made it out of beta))
 			un(1, i(47846)),	-- Cruel Barb (Glow, Purple - Low)
 			un(1, i(108805)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(109320)),	-- 6.0 QA Combat Test Strength 1h Sword 2

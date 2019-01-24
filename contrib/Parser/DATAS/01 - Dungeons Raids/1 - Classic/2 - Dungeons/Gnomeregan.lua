@@ -128,20 +128,30 @@ _.Instances =
 						},
 					}),
 					n(  0, {	-- Zone Drop
-							{    -- Red Punch Card
-								["itemID"] = 9281,        -- Red Punch Card
-								["requireSkill"] = 202,    -- Engineering
-								["g"] = {
-									{    -- Security DELTA Data Access Card
-										["itemID"] = 9327,        -- Security DELTA Data Access Card
-										["g"] = {
-											{    -- Schematic: Discombobulator Ray
+						{    -- Red Punch Card
+							["itemID"] = 9281,        -- Red Punch Card
+							["requireSkill"] = 202,    -- Engineering
+							["g"] = {
+								{    -- Security DELTA Data Access Card
+									["itemID"] = 9327,        -- Security DELTA Data Access Card
+									["g"] = {
+										{    -- Schematic: Discombobulator Ray
 											["itemID"] = 4413,    -- Schematic: Discombobulator Ray
-											},
 										},
 									},
 								},
 							},
+						},
+						{
+							["itemID"] = 9280,	-- Yellow Punch Card
+							["requireSkill"] = 202,    -- Engineering
+							["description"] = "Head down to the Matrix Punchograph 3005-B and there you learn the schematic.",
+							["g"] = {
+								{    -- Schematic: Minor Recombobulator
+									["itemID"] = 14639,    -- Schematic: Minor Recombobulator
+								},
+							},
+						},
 						i(9308),	-- Grime-Encrusted Object
 						i(9510, {	-- Caverndeep Trudgers
 							["crs"] = {
@@ -281,14 +291,26 @@ _.Instances =
 					}),
 					cr( 7800, e(422, {	-- Mekgineer Thermaplugg
 						ach(634),	-- Gnomeregan
-						i( 9459),	-- Thermaplugg's Left Arm
-						i( 9458),	-- Thermaplugg's Central Core
-						i( 9492),	-- Electromagnetic Gigaflux Reactivator
-						i( 9461),	-- Charged Gear
-						i( 4415), 	-- Schematic: Craftsman's Monocle
-						i(11828), 	-- Schematic: Pet Bombling
+						i(9459),	-- Thermaplugg's Left Arm
+						i(9458),	-- Thermaplugg's Central Core
+						i(9492),	-- Electromagnetic Gigaflux Reactivator
+						i(9461),	-- Charged Gear
+						i(4415), 	-- Schematic: Craftsman's Monocle
+						i(4413),	-- Schematic: Discombobulator Ray
+						i(6716),	-- Schematic: EZ-Thro Dynamite
 						i(4411), 	-- Schematic: Flame Deflector
 						i(6672),    -- Schematic: Flash Bomb
+						i(7742),	-- Schematic: Gnomish Cloaking Device
+						i(7560),	-- Schematic: Gnomish Universal Remote
+						i(7561),	-- Schematic: Goblin Jumper Cables
+						i(4416),	-- Schematic: Goblin Land Mine
+						i(4417),	-- Schematic: Large Seaforium Charge
+						i(4408),	-- Schematic: Mechanical Squirrel Box
+						i(4412),	-- Schematic: Moonsight Rifle
+						i(11828), 	-- Schematic: Pet Bombling
+						i(4414),	-- Schematic: Portable Bronze Mortar
+						i(4410),	-- Schematic: Shadow Goggles
+						i(4409),	-- Schematic: Small Seaforium Charge
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {
@@ -321,7 +343,12 @@ _.Instances =
 				},
 				["lvl"] = 19,
 				["mapID"] = 226,
-				["maps"] = { 227, 228, 229 },
+				["maps"] = { 
+					227, 
+					228, 
+					229, 
+					841,	-- Pet Dungeon
+				},
 			}),
 		},
 		["tierID"] = 1
