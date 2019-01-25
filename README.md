@@ -1,5 +1,4 @@
 TODO:
-- flight masters (ticky - lack of API methods)
 - item "appearances" - switch logic to having item instead of appearance by itself
 - ulduar 10 boss loot
 - blacksmithing armor categories rewrite

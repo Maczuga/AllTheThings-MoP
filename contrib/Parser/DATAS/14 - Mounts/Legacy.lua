@@ -37,12 +37,6 @@ nld({	-- Legacy
 			["description"] = "If you completed the Brewfest Riding Rams quest in 2007, you are eligible to buy this mount from Brewfest vendors. You cannot purchase this mount otherwise.",
 			["u"] = 4,
 		},
-		ach(6375, {	-- Challenge Conqueror: Silver
-			i(90710),	-- Ashen Pandaren Phoenix
-			i(89154),	-- Crimson Pandaren Phoenix
-			i(90711),	-- Emerald Pandaren Phoenix
-			i(90712),	-- Violet Pandaren Phoenix
-		}),
 		un(2, ach(2138, {	-- Glory of the Raider (25 Player) Pre 3.1
 			["groups"] = {
 				un(2, i(44164)),	-- Reins of the Black Proto-Drake

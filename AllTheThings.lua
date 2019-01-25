@@ -3845,60 +3845,52 @@ end
 		422,	-- Dread Wastes (All of Pandaria)
 	};
 	local cachedNodeData = {};
-	app.CacheFlightPathData = function()
-		do return end
-		for i,mapID in ipairs(arrOfNodes) do
-			local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
-			if allNodeData then
-				for j,nodeData in ipairs(allNodeData) do
-					local node = cachedNodeData[nodeData.nodeID];
-					if not node then
-						node = {};
-						cachedNodeData[nodeData.nodeID] = node;
-					end
-					if nodeData.faction then node["faction"] = nodeData.faction; end
-					if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
-					if nodeData.name then node["text"] = nodeData.name; end
-				end
-			end
-		end
-	end
+
 	app.CacheFlightPathDataForCurrentNode = function()
-		do return end
-		local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
-		if allNodeData then
-			local knownNodeIDs = {};
-			for j,nodeData in ipairs(allNodeData) do
-				local node = cachedNodeData[nodeData.nodeID];
-				if not node then
-					node = {};
-					cachedNodeData[nodeData.nodeID] = node;
+		local knownNodeIDs = {};
+		for i=1,NumTaxiNodes() do
+			local nodeType = TaxiNodeGetType(i);
+			if nodeType ~= "NONE" then 
+				local name = TaxiNodeName(i);
+				
+				-- Check for faction specific first - there is more those than neutral
+				local nodeID = app.FlightPathNameToIDDB[name .. " | " .. app.Faction];
+				if not nodeID then
+					nodeID = app.FlightPathNameToIDDB[name]
 				end
-				if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
-				if nodeData.name then node["text"] = nodeData.name; end
-				if nodeData.state and nodeData.state < 2 then
-					table.insert(knownNodeIDs, nodeData.nodeID);
-				end
-			end
-			
-			if GetDataMember("FlightPathsAccountWide") then
-				for i,nodeID in ipairs(knownNodeIDs) do
-					if not GetDataSubMember("FlightPaths", nodeID) then
-						SetDataSubMember("FlightPaths", nodeID, 1);
-						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
-						UpdateSearchResults(SearchForField("flightPathID", nodeID));
+
+				if nodeID then 
+					local node = cachedNodeData[nodeID];
+					if not node then
+						node = {
+							["nodeID"] = nodeID,
+							["text"] = name,
+						};
+						cachedNodeData[nodeID] = node;
 					end
-				end
-			else
-				for i,nodeID in ipairs(knownNodeIDs) do
-					if not GetPersonalDataSubMember("FlightPaths", nodeID) then
-						SetDataSubMember("FlightPaths", nodeID, 1);
-						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
-						UpdateSearchResults(SearchForField("flightPathID", nodeID));
-					end
+					table.insert(knownNodeIDs, nodeID);
 				end
 			end
 		end
+		
+		if GetDataMember("FlightPathsAccountWide") then
+			for i,nodeID in ipairs(knownNodeIDs) do
+				if not GetDataSubMember("FlightPaths", nodeID) then
+					SetDataSubMember("FlightPaths", nodeID, 1);
+					SetPersonalDataSubMember("FlightPaths", nodeID, 1);
+					UpdateSearchResults(SearchForField("flightPathID", nodeID));
+				end
+			end
+		else
+			for i,nodeID in ipairs(knownNodeIDs) do
+				if not GetPersonalDataSubMember("FlightPaths", nodeID) then
+					SetDataSubMember("FlightPaths", nodeID, 1);
+					SetPersonalDataSubMember("FlightPaths", nodeID, 1);
+					UpdateSearchResults(SearchForField("flightPathID", nodeID));
+				end
+			end
+		end
+		
 	end
 	app:RegisterEvent("TAXIMAP_OPENED");
 	app.events.TAXIMAP_OPENED = app.CacheFlightPathDataForCurrentNode;
@@ -3914,14 +3906,13 @@ end
 				end
 				return GetPersonalDataSubMember("FlightPaths", t.flightPathID);
 			elseif key == "text" then
-				local info = t.info;
-				return info and info.text;
+				return app.FlightPathDB[t.flightPathID].Name;
 			elseif key == "nmr" then
-				local info = t.info;
-				if info and info.faction then
-					if info.faction == 2 then
+				local info = app.FlightPathDB[t.flightPathID];
+				if info and info.Faction then
+					if info.Faction == 1 then
 						return app.Faction == "Horde";
-					elseif info.faction == 1 then
+					elseif info.Faction == 2 then
 						return app.Faction == "Alliance";
 					end
 				end
@@ -3930,11 +3921,11 @@ end
 			elseif key == "description" then
 				return "Flight paths are cached when you look at the flight master on each continent. We refresh the collection status when you look at the Flight Map. (blizzard limitation, not by choice... sorry!)\n\nHave fun!\n - Crieve";
 			elseif key == "icon" then
-				local info = t.info;
-				if info and info.faction and info.faction == 2 then
-					return "Interface/ICONS/Ability_Rogue_Sprint_Blue";
+				local info = app.FlightPathDB[t.flightPathID];
+				if info and info.Faction and info.Faction == 1 then
+					return "Interface/ICONS/Ability_mount_pandarenkitemount_blue";
 				end
-				return "Interface/ICONS/Ability_Rogue_Sprint";
+				return "Interface/ICONS/Ability_mount_pandarenkitemount";
 			else
 				-- Something that isn't dynamic.
 				return table[key];
@@ -3942,7 +3933,7 @@ end
 		end
 	};
 	app.CreateFlightPath = function(id, t)
-		return nil; --createInstance(constructor(id, t, "flightPathID"), app.BaseFlightPath);
+		return createInstance(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 	end
 end)();
 
@@ -11016,8 +11007,6 @@ app.events.PLAYER_LOGIN = function()
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_COMPLETE");
 		RefreshSaves();
-		
-		-- app.CacheFlightPathData();
 		
 		-- NOTE: The auto refresh only happens once.
 		if not app.autoRefreshedCollections then

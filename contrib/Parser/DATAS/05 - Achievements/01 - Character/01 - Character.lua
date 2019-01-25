@@ -39,7 +39,7 @@ _.Achievements =
 				ach(4826),		-- Level 85
 			}),
 			a(ach(8304, { 		-- Mount Parade (Alliance) (200)
-				i(98259), 		-- Frenzied Feltalon
+				i(98259), 		-- Armored Blue Dragonhawk
 				ach(7860, {		-- We're Going to Need More Saddles (Alliance) (150)
 					i(91802),		-- Jade Pandaren Kite String
 				}),
@@ -53,7 +53,7 @@ _.Achievements =
 				ach(2141),		-- Stable Keeper (10)
 			})),
 			h(ach(8302, { 		-- Mount Parade (Horde) (200)
-				i(98259), 		-- Frenzied Feltalon
+				i(98104), 		-- Armored Red Dragonhawk
 				ach(7862, {		-- We're Going to Need More Saddles (Horde) (150)
 					i(91802),		-- Jade Pandaren Kite String
 				}),
