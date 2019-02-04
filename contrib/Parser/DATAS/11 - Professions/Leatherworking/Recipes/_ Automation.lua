@@ -37,6 +37,22 @@ profession(165, {	-- Leatherworking
 						["recipeID"] = 124561
 					},
 					{
+						["name"] = "Fur Lining - Agility (Rank 3)",
+						["recipeID"] = 124551
+					},
+					{
+						["name"] = "Fur Lining - Intellect (Rank 3)",
+						["recipeID"] = 124552
+					},
+					{
+						["name"] = "Fur Lining - Stamina (Rank 3)",
+						["recipeID"] = 124553
+					},
+					{
+						["name"] = "Fur Lining - Strength (Rank 3)",
+						["recipeID"] = 124554
+					},
+					{
 						["name"] = "Heavy Leg Reinforcements",
 						["recipeID"] = 124563
 					},
@@ -1117,6 +1133,28 @@ profession(165, {	-- Leatherworking
 				}
 			},
 			{
+				["name"] = "Embossments",
+				["categoryID"] = 248,
+				["g"] = {
+					{
+						["name"] = "Fur Lining - Agility (Rank 2)",
+						["recipeID"] = 85008
+					},
+					{
+						["name"] = "Fur Lining - Intellect (Rank 2)",
+						["recipeID"] = 85010
+					},
+					{
+						["name"] = "Fur Lining - Stamina (Rank 2)",
+						["recipeID"] = 85007
+					},
+					{
+						["name"] = "Fur Lining - Strength (Rank 2)",
+						["recipeID"] = 85009
+					}
+				}
+			},
+			{
 				["name"] = "Armor Kits",
 				["categoryID"] = 249,
 				["g"] = {
@@ -1551,6 +1589,28 @@ profession(165, {	-- Leatherworking
 					{
 						["name"] = "Heavy Borean Leather",
 						["recipeID"] = 50936
+					}
+				}
+			},
+			{
+				["name"] = "Embossments",
+				["categoryID"] = 248,
+				["g"] = {
+					{
+						["name"] = "Fur Lining - Agility (Rank 1)",
+						["recipeID"] = 57683
+					},
+					{
+						["name"] = "Fur Lining - Intellect (Rank 1)",
+						["recipeID"] = 57691
+					},
+					{
+						["name"] = "Fur Lining - Stamina (Rank 1)",
+						["recipeID"] = 57690
+					},
+					{
+						["name"] = "Fur Lining - Strength (Rank 1)",
+						["recipeID"] = 124549
 					}
 				}
 			},

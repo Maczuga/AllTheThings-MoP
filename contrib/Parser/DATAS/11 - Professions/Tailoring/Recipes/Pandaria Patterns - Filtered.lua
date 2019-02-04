@@ -33,12 +33,24 @@ profession(197, {	-- Tailoring
 				["categoryID"] = 231,
 				["g"] = {
 					{
+						["name"] = "Darkglow Embroidery",
+						["recipeID"] = 125482
+					},
+					{
+						["name"] = "Lightweave Embroidery",
+						["recipeID"] = 125481
+					},
+					{
 						["name"] = "Master's Spellthread",
 						["recipeID"] = 125496
 					},
 					{
 						["name"] = "Sanctified Spellthread",
 						["recipeID"] = 125497
+					},
+					{
+						["name"] = "Swordguard Embroidery",
+						["recipeID"] = 125483
 					}
 				}
 			},

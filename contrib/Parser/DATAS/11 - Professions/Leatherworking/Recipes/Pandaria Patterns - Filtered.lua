@@ -32,6 +32,22 @@ profession(165, {	-- Leatherworking
 						["recipeID"] = 124561
 					},
 					{
+						["name"] = "Fur Lining - Agility (Rank 3)",
+						["recipeID"] = 124551
+					},
+					{
+						["name"] = "Fur Lining - Intellect (Rank 3)",
+						["recipeID"] = 124552
+					},
+					{
+						["name"] = "Fur Lining - Stamina (Rank 3)",
+						["recipeID"] = 124553
+					},
+					{
+						["name"] = "Fur Lining - Strength (Rank 3)",
+						["recipeID"] = 124554
+					},
+					{
 						["name"] = "Heavy Leg Reinforcements",
 						["recipeID"] = 124563
 					},

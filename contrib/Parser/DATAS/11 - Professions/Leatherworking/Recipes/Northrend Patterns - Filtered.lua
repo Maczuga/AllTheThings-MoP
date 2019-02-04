@@ -16,6 +16,28 @@ profession(165, {	-- Leatherworking
 				}
 			},
 			{
+				["name"] = "Embossments",
+				["categoryID"] = 248,
+				["g"] = {
+					{
+						["name"] = "Fur Lining - Agility",
+						["recipeID"] = 57683
+					},
+					{
+						["name"] = "Fur Lining - Intellect",
+						["recipeID"] = 57691
+					},
+					{
+						["name"] = "Fur Lining - Stamina",
+						["recipeID"] = 57690
+					},
+					{
+						["name"] = "Fur Lining - Strength",
+						["recipeID"] = 124549
+					}
+				}
+			},
+			{
 				["name"] = "Armor Kits",
 				["categoryID"] = 249,
 				["g"] = {
