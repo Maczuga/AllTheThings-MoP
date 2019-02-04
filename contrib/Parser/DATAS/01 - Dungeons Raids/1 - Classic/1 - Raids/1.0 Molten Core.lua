@@ -628,18 +628,27 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(11502, e(1528, { -- Ragnaros
 				ach(686),	-- Molten Core
-				i(17204, {	-- Eye of Sulfuras
-					["groups"] = {
-						i(17182, { 	-- Sulfuras, Hand of Ragnaros
-							ach(429, {	-- Sulfuras, Hand of Ragnaros
-								["groups"] = {
-								},
-								["collectible"] = false,
-							}),
-						}),
+				{	-- Eye of Sulfuras
+					["itemID"] = 17204,	-- Eye of Sulfuras
+					["classes"] = {
+						6,	-- Death Knight
+						11,	-- Druid
+						2,	-- Paladin
+						7,	-- Shaman
+						1,	-- Warrior
 					},
-					["classes"] = { 6, 11, 2, 7, 1 }, -- Death Knight / Druid / Paladin / Shaman / Warrior
-				}),
+					["f"] = 24,	-- To match Sulfuras, Hand of Ragnaros and cause it to display even if Quest Items are filtered
+					["g"] = {
+						{	-- Sulfuras, Hand of Ragnaros
+							["itemID"] = 17182,	-- Sulfuras, Hand of Ragnaros
+							["g"] = {
+								{	-- Sulfuras, Hand of Ragnaros
+									["achievementID"] = 429,	-- Sulfuras, Hand of Ragnaros
+								},
+							},
+						},
+					},
+				},
 				i(17076),	-- Bonereaver's Edge
 				i(17104),	-- Spinal Reaper
 				i(18816),	-- Perdition's Blade
