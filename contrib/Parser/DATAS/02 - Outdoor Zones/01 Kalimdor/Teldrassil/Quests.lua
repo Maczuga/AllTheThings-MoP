@@ -72,6 +72,7 @@ _.Zones =
 						["questID"] = 14039,
 						["qg"] = 3515,	-- Corithras Moonrage
 						["coord"] = { 41.0, 45.5 },
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 935,	-- The Waters of Teldrassil
 					},
 					{	-- Jaina's Resolution
@@ -216,7 +217,7 @@ _.Zones =
 						["qg"] = 3515,	-- Corithras Moonrage
 						["coord"] = { 55.8, 53.9 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = 918,	-- Timberling Seeds
+						["sourceQuests"] = { 918 },	-- Timberling Seeds
 					},
 					{	-- Teldrassil: The Coming Dawn
 						["questID"] = 933,

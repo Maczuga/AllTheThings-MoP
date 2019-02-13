@@ -93,7 +93,6 @@ _.Zones =
 							q(30816),	-- Checking In
 							qh( 31459),	-- Cho's Missive
 							qa( 31460),	-- Cho's Missive
-							q(46347),	-- Clean-up on Aisle Sha
 							q(30828),	-- Cleansing the Mere
 							qh( 32378),	-- Clearing a Path
 							q(30487),	-- Comin' Round the Mountain
@@ -153,7 +152,6 @@ _.Zones =
 							q(30994),	-- Lao-Chin's Gambit
 							qh( 32379),	-- Legacy of the Korune
 							q(30801),	-- Lessons from History
-							q(46349),	-- Lilies for Ryuli
 							q(30942),	-- Make A Fighter Out of Me
 							qh( 32368),	-- Memory Wine
 							qa( 32371),	-- Memory Wine
@@ -187,7 +185,6 @@ _.Zones =
 							qh( 32318),	-- Regeneration Takes Time
 							q(30469),	-- Repossession
 							q(30618),	-- Resupplying One Keg
-							q(46342),	-- Return to the Broken Peak
 							q(30946),	-- Revelations
 							q(30617),	-- Roadside Assistance
 							qh( 31256),	-- Round 'Em Up
@@ -204,7 +201,6 @@ _.Zones =
 							q(31306),	-- Seeker's Folly
 							q(30742),	-- Shut it Down
 							q(30823),	-- Shut it Down
-							q(46344),	-- Smelly's Luckydo
 							qh( 32284),	-- Someone You Should See
 							q(30795),	-- Staying Connected
 							q(30800),	-- Stealing Their Thunder King
@@ -218,8 +214,6 @@ _.Zones =
 							q(30747),	-- The Burlap Grind
 							q(30592),	-- The Burlap Trail: To Burlap Waystation
 							q(30692),	-- The Burlap Trail: To Kota Basecamp
-							q(43338),	-- The Codex of Ra
-							q(43334),	-- The Coming Storm
 							q(30665),	-- The Defense of Shado-Pan Fallback
 							qa( 32394),	-- The Divine Bell
 							qh( 32392),	-- The Divine Bell
@@ -252,9 +246,7 @@ _.Zones =
 							q(31858),	-- The Peak of Serenity - Continue Your Training
 							q(30602),	-- The Rabbitsfoot
 							q(30480),	-- The Ritual
-							q(46348),	-- The River to Ban-Lu
 							qh( 31255),	-- The Road to Kun-Lai
-							q(38936),	-- The Road to Kun-Lai
 							qa( 31254),	-- The Road to Kun-Lai
 							qa( 32393),	-- The Ruins of Korune
 							qh( 32391),	-- The Ruins of Korune
@@ -262,7 +254,6 @@ _.Zones =
 							qa( 32333),	-- The Second Riddle: Fellowship
 							qh( 31453),	-- The Shado-Pan
 							qa( 31455),	-- The Shado-Pan
-							q(46346),	-- The Shadow of Ban-Lu
 							qa( 32455),	-- The Silence
 							q(30608),	-- The Snackrifice
 							qa( 32243),	-- The Source of Korune Power
@@ -271,8 +262,6 @@ _.Zones =
 							q(30799),	-- The Tomb of Shadows
 							q(30829),	-- The Tongue of Ba-Shon
 							q(31492),	-- The Torch of Strength
-							q(46343),	-- The Trail of Ban-Lu
-							q(46350),	-- The Trial of Ban-Lu
 							q(31518),	-- The Vale of Eternal Blossoms
 							q(30496),	-- The Waterspeaker's Staff
 							q(30621),	-- They Stole My Luck!

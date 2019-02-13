@@ -1633,12 +1633,10 @@ _.Zones =
 					q(12796),	-- The Magical Kingdom of Dalaran
 					qh( 12791),	-- The Magical Kingdom of Dalaran
 					qa( 12794),	-- The Magical Kingdom of Dalaran
-					q(39210),	-- The Magical Kingdom of Dalaran
 					qh( 32411),	-- The Remaining Sunreavers
 					qh( 32408),	-- The Silver Covenant's Stronghold
 					qh( 32402),	-- The Situation In Dalaran
 					qh( 11971),	-- The Spinner of Summer Tales
-					q(40173),	-- The Unstable Prism
 					q(14103),	-- Titanium Powder
 					q(26012),	-- Trouble at Wyrmrest
 					q(8883),	-- Valadar Starsong

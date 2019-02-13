@@ -187,7 +187,6 @@ _.Zones =
 					q(12629),	-- You Can Run, But You Can't Hide
 					q(12685),	-- You Reap What You Sow
 					q(12686),	-- Zero Tolerance
-					q(39208),	-- Zul'Drak	
 --]]					
 					q(12555,  {  -- A Tangled Skein
 						i(39806),

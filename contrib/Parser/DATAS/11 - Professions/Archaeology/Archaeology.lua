@@ -12,7 +12,7 @@ profession(794, {	-- Archaeology
 		}),
 	}),
 	currency(384,  {	-- Dwarf
-		n(-25, {	-- Pet Battles
+		n(-162, {	-- Pets
 			sp(90521, { i(64372) }),	-- Clockwork Gnome
 		}),
 		n(-161, {	-- Toys
@@ -30,7 +30,7 @@ profession(794, {	-- Archaeology
 		n(-160, {	-- Mounts
 			sp(90619, { i(60954) }),	-- Fossilized Raptor
 		}),
-		n(-25, {	-- Pet Battles
+		n(-162, {	-- Pets
 			sp(89693, { i(60955) }),	-- Fossilized Hatchling
 			sp(98582, { i(69821) }),	-- Pterrordax Hatchling
 		}),
@@ -82,7 +82,7 @@ profession(794, {	-- Archaeology
 		n(-160, {	-- Mounts
 			sp(92148, { i(64883) }),	-- Scepter of Azj'Aqir
 		}),
-		n(-25, {	-- Pet Battles
+		n(-162, {	-- Pets
 			sp(92137, { i(60847) }),	-- Crawling Claw
 		}),
 		n(-161, {	-- Toys
@@ -94,7 +94,7 @@ profession(794, {	-- Archaeology
 		}),
 	}),
 	currency(385,  {	-- Troll
-		n(-25, {	-- Pet Battles
+		n(-162, {	-- Pets
 			sp(98588, { i(69824) }),	-- Voodoo Figurine
 		}),
 		n(-161, {	-- Toys
@@ -103,8 +103,8 @@ profession(794, {	-- Archaeology
 		n(-319, {	-- Weapons
 			sp(90608, { i(64377) }),	-- Zin'rokh, Destroyer of Worlds
 		}),
-		n(-494, {	-- Misc
-			sp(88262, { i(63115) }),	-- Zandalari Voodoo Doll
+		sp(88262, { 
+			i(63115),	-- Zandalari Voodoo Doll
 		}),
 	}),
 	currency(399,  {	-- Vrykul

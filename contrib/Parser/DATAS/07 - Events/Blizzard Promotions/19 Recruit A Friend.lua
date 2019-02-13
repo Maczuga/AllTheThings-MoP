@@ -29,6 +29,7 @@ _.WorldEvents =
 				i(49664), 	-- Zipao Tiger
 			}),
 		},
+		["u"] = 3,	-- Blizzard Promotion
 		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
 };

@@ -1306,6 +1306,7 @@ namespace Parser_V2
                     case "isBreadcrumb":
                     case "isDaily":
                     case "isWeekly":
+                    case "isWQ":
                     case "isRaid":
                     case "isLockoutShared":
                     case "isToy":
@@ -1478,6 +1479,37 @@ namespace Parser_V2
                             break;
                         }
 
+                    // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
+                    case "sym":
+                        {
+                            // Convert the data to a list of generic objects.
+                            var newListOfLists = value as List<List<object>>;
+                            if (newListOfLists == null)
+                            {
+                                var newList = value as List<object>;
+                                if (newList == null)
+                                {
+                                    var dict = value as Dictionary<object, object>;
+                                    if (dict == null) return;
+                                    else newList = dict.Values.ToList();
+                                }
+                                newListOfLists = new List<List<object>>();
+                                foreach (var o in newList)
+                                {
+                                    var list = o as List<object>;
+                                    if (list == null)
+                                    {
+                                        var dict = o as Dictionary<object, object>;
+                                        if (dict == null) return;
+                                        else list = dict.Values.ToList();
+                                    }
+                                    newListOfLists.Add(list);
+                                }
+                            }
+                            item[field] = newListOfLists;
+                            break;
+                        }
+
                     // Special parser for coordinate data. (list of floats)
                     case "coord":
                         {
@@ -1550,6 +1582,8 @@ namespace Parser_V2
                     // Blacklisted Fields
                     case "link":
                     case "retries":
+                    case "previousRecipeID":
+                    case "nextRecipeID":
                         {
                             return;
                         }

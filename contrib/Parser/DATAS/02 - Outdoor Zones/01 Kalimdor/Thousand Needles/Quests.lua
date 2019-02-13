@@ -1039,13 +1039,6 @@ _.Zones =
 --					qg(40475, qa(25561)),	-- Circle the Wagons... er, Boats (REMOVED/REPLACED)
 --					qg(40487, qh(25562)),	-- Circle the Wagons... er, Boats (REMOVED/REPLACED)
 --					q(28601),	-- Old Puttery (REMOVED?  no info on wowhead)
---[[EVENT WORLD Quests
-					q(45808),	-- Beach Ball Bash (WORLD QUEST)
-					q(45806),	-- Boat Tour (WORLD QUEST)
-					q(45807),	-- Garbage Fishing (WORLD QUEST)
-					q(45809),	-- Grog, Rum, and Ale (WORLD QUEST)
-					q(45810),	-- The Gnomes Stole Our Bombs! (WORLD QUEST)
-					q(45811),	-- The Goblins Stole Our Bombs! (WORLD QUEST)	--]]
 -- DUNGEON QUESTS					
 					{	-- Looming Threat
 						["questID"] = 27062,

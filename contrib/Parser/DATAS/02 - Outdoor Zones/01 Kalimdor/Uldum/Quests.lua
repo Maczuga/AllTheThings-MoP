@@ -931,7 +931,6 @@ _.Zones =
 						["itemID"] = 63700,
 						["questID"] = 28376,
 						["qg"] = 48428,	-- Myzerian
-						["sourceQuest"] = 48431,	-- Shroud of the Makers!
 					},
 					{	-- Ploughshares to Swords
 						["questID"] = 28201,

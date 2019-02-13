@@ -51,11 +51,6 @@ _.Zones =
 						i(60926),
 						i(60927),
 					})),
---[[					
-					qart(qg(101651, q(40785, {	-- A Foe of the Dark
-						["classes"] = {11}, -- Druid
-					}))),
---]]
 					qg(288, qa(26787, { -- Bear In Mind
 						i(60934),
 						i(60935),
@@ -124,9 +119,6 @@ _.Zones =
 					qg(43453, qa(26785)),	-- Part of the Pack
 					qg(43731, qa(26838)),	-- Rebels Without a Clue 
 					qg(302, qa(26654)),	-- Return the Comb
-					qg(110684, q(43393, {	-- Rising Shadows
-						["classes"] = {5}, -- Priest
-					})),
 --]]					
 					qg(267, qa(26670, { -- Roland's Doom
 						i(60914),
@@ -139,9 +131,7 @@ _.Zones =
 
 --[[					
 					qg(272, qa(26620)),	-- Seasoned Wolf Kabobs
-					qg(111041, q(43391, {	-- Secrets of the Void
-						["classes"] = {5}, -- Priest
-					})),
+
 					qg(43731, qa(26777)),	-- Soothing Spirits
 					qg(289, qa(26653)),	-- Supplies from Darkshire
 --]]					

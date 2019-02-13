@@ -278,8 +278,6 @@ Legacy				q( 1436),	-- Alliance Relations
 --]]					
 --[[					
 					desc(q( 32674), "This quest is automatically offered to Horde players upon reaching level 60."),	-- I Believe You Can Fly (despite this quest, you can learn flying anywhere - not sure if it should be included?)
-					qg(95234, q(44663)),	-- In the Blink of an Eye
---					q(47251),	-- Interesting Times (LEGACY - 13th anniversary, quest was received via mail and ended in Org)
 --]]					
 --[[
 					desc(q(32673), "This quest is available to Goblins upon reaching level 20.", {	-- Learn To Ride
@@ -364,7 +362,6 @@ Legacy				q( 1436),	-- Alliance Relations
 						["coord"] = { 55.6, 45.8 },
 						["requireSkill"] = 171,	-- Alchemy
 					},
---					qg(95234, q(44092)),	-- Protect the Home Front (LEGACY - pre-Legion)
 					qg(14720, q(25275)),	-- Report to the Labor Captain (QG in Orgrimmar, additional QGs 39605 and 86832, previous Horde leaders)
 --]]
 					{
@@ -472,7 +469,6 @@ Legacy				q( 1436),	-- Alliance Relations
 						["qg"] = 3352,	-- Ormak Grimshot
 						["classes"] = { 3 },	-- Hunter
 					}),
---					q(43472),	-- The Historians (LEGACY - 2016 anniversary)
 					qg(39605, q(31013, {	-- The Horde Way
 						["races"] = { 26 },	-- Pandaren
 					})),
@@ -490,7 +486,6 @@ Legacy				q( 1436),	-- Alliance Relations
 					})),
 		--[[			
 					qg(45244, q(27203)),	-- The Maelstrom
---					q(47254),	-- The Originals (LEGACY - 13th anniversary)
 --]]
 					q(28458, {	-- The Pyromancer's Grimoire
 						["groups"] = {
@@ -507,7 +502,6 @@ Legacy				q( 1436),	-- Alliance Relations
 						["races"] = { 8 },	-- Troll
 						["classes"] = { 5 },	-- Priest
 					}),
---					q(40786),	-- The Smoldering Ember (QG item received from final boss in TW dungeons)
 --[[					
 					qg(52234, q(29220)),	-- To Bambala
 					qg(3399, q(6611, { ["requireSkill"] = 185 })),	-- To Gadgetzan You Go!

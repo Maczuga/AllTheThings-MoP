@@ -24,8 +24,6 @@ _.WorldEvents =
 							un(30, i(19971)),	-- High Test Eternium Fishing Line
 						},
 					}),
-					--[[
-					-- These two quests appear to no longer be in game. "Retrieving Data"
 					q(32435, { -- Second Prize
 						["repeatable"] = true,
 						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
@@ -39,18 +37,6 @@ _.WorldEvents =
 						["repeatable"] = true,
 						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
 						["groups"] = {
-							un(30, i(19971)),	-- High Test Eternium Fishing Line
-						},
-					}),
-					]]--
-					q(44765, { -- Stranglethorn Fishing Extravaganza
-						["repeatable"] = true,
-						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
-						["groups"] = {
-							un(30, i(19970)),	-- Arcanite Fishing Pole
-							un(30, i(50287)),	-- Boots of the Bay
-							un(30, i(50255)),	-- Dread Pirate Ring
-							un(30, i(19979)),	-- Hook of the Master Angler
 							un(30, i(19971)),	-- High Test Eternium Fishing Line
 						},
 					}),

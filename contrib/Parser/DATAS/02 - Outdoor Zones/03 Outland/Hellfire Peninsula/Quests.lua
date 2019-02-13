@@ -532,7 +532,6 @@ _.Zones =
 								i(25487),	-- Wind Dancer's Pendant
 								i(25489),	-- Windtalker's Cloak
 							}),
-							un(40, q(45415)),	-- Between Worlds
 							qh(  9397),	-- Birds of a Feather
 							q(11516),	-- Blast the Gateway
 							q(11515),	-- Blood for Blood
@@ -545,7 +544,6 @@ _.Zones =
 								i(25486), 	-- Demonslayer's Wristguards
 								i(25484),	-- Telhamat Pendant
 							}),
-							un(40, q(45414)),	-- Confirming Suspicions
 							qa(  9399),	-- Cruel Taskmasters
 							qh( 10136, {	-- Cruel's Intentions
 								i(28041),	-- Bladefist's Breadth
@@ -578,7 +576,6 @@ _.Zones =
 								i(29399),	-- Rod of the Void Caller
 							}),
 							qa(  9563),	-- Gaining Mirren's Trust
-							un(40, q(45413)),	-- Gathering Information
 							qa( 10382),	-- Go to the Front
 --							qa( 10762),	-- Grand Master Dumphry (removed, old BT key questline)
 							qh(10834,  {  -- Grillok "Darkeye"

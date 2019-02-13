@@ -12,8 +12,8 @@ _.Mounts =
 		i(83086),		-- Obsidian Nightwing
 		un(3, i(76889)),	-- Spectral Gryphon
 		un(3, i(76902)),	-- Spectral Wind Rider
-		i(37719),		-- Swift Zhevra
+		un(3, i(37719)),	-- Swift Zhevra
 		un(3, i(76755)),	-- Tyrael's Charger
-		i(54860),		-- X-53 Touring Rocket
+		un(3, i(54860)),	-- X-53 Touring Rocket
 	}),
 };

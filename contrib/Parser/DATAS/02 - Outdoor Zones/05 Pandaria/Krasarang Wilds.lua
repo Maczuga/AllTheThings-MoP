@@ -469,10 +469,6 @@ _.Zones =
 						["qg"] = 60506, -- Thelonius
 						["isDaily"] = true,
 					}),
-					q(36608, {	-- Finding Nat Pagle
-						["qgs"] = { 79917, 85708 }, -- Rak'jin, Segumi
-						["sourceQuests"] = { 36612, 36870 }, -- Luring Nat (both faction versions)
-					}),
 					q(30080, {	-- Finding Yi-Mo
 						["qg"] = 57744, -- Mei Barrelbottom
 					}),

@@ -543,16 +543,6 @@ _.Zones =
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 9250,	-- Frame of Atiesh
 					},
-					{	-- Blingtron Circuit Design
-						["objectID"] = 246438,
-						["coord"] = { 69.5, 68.4 },
-						["groups"] = {
-							{	-- Oil Rags to Riches
-								["questID"] = 40881,
-								["requireSkill"] = 202,	-- Engineering
-							},
-						},
-					},
 					{	-- Blisterpaw Butchery
 						["questID"] = 25115,
 						["qg"] = 39178,	-- Driz Plunkbow
@@ -809,10 +799,6 @@ _.Zones =
 						["qg"] = 28126,	-- Don Carlos
 						["coord"] = { 50.7, 27.5 },
 					},
-					{	-- Not Dead Yet! -- never went live
-						["questID"] = 38890,
-						["u"] = 1,
-					},
 					{	-- Old Hillsbrad
 						["questID"] = 10282,
 						["qg"] = 20130,	-- Andormu
@@ -906,10 +892,6 @@ _.Zones =
 						["qg"] = 39178,	-- Driz Plunkbow
 						["coord"] = { 52.2, 28.0 },
 						["sourceQuest"] = 25112,	-- Butcherbot
-					},
-					{	-- Scouting Report -- never went live
-						["questID"] = 38892,
-						["u"] = 1,
 					},
 					{	-- Secrets in the Oasis
 						["questID"] = 25032,

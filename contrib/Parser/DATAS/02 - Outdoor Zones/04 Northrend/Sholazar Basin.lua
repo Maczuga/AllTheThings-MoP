@@ -388,8 +388,6 @@ _.Zones =
 					q(13018),	-- Sandrene the Elder
 					q(12605),	-- Securing the Bait
 					q(12603),	-- Sharpening Your Talons
-					q(39209),	-- Sholazar Basin
-					q(39212),	-- Sholazar Basin
 					q(12634),	-- Some Make Lemonade, Some Make Liquor
 					q(12644),	-- Still At It
 					q(12578),	-- The Angry Gorloc
@@ -512,6 +510,7 @@ _.Zones =
 						i(39412),
 						i(39444),
 						i(39464),
+						i(39481),	-- Signet of the Avenging Heart
 					}),
 					q(12556,  {  -- Rhino Mastery: The Kill
 						i(39333),

@@ -33,9 +33,6 @@ _.Zones =
 --[[					
 					qg(39406, q(25494)),	-- A Champion's Collar
 					qg(41006, q(25758)),	-- A Gap in Their Armor
-					qg(106250, q(42046), {	-- A New Beginning
-						["classes"]= {11},
-					}),
 					qg(39933, q(25411)),	-- A New Master
 					qg(41068, q(25665)),	-- A Plea From Beyond
 --]]
@@ -72,20 +69,6 @@ _.Zones =
 --[[					
 					qg(41005, q(25663)),	-- An Offering for Aviana
 ]]--
-					{
-						["questID"] = 44877,	-- Attack on the Roost
-						["qgs"] = { 115802, 119982 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
-						["sourceQuest"]	= 44869,	-- Source Quest: Talon Terror
-						["classes"]= { 11 },	-- Druid
-						["lvl"] = 110,
-					},
-					{
-						["questID"] = 44888,	-- Aviana's Grace
-						["qgs"] = { 115802, 119982 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
-						["sourceQuests"] = { 44877, 45532 },	-- Source Quest: Attack on the Roost / Mother's Orders
-						["classes"]= { 11 },	-- Druid
-						["lvl"] = 110,
-					},
 --[[
 					qg(40289, q(27874)),	-- Aviana's Legacy (add'l QGs 46987 and 46998)
 					qg(52669, q(29125)),	-- Between the Trees
@@ -125,9 +108,6 @@ _.Zones =
 					qg(39432, qh(25277)),	-- Cleaning House
 					qg(39433, qa(25278)),	-- Cleaning House
 					qg(40289, q(25597)),	-- Commander Jarod Shadowsong
-					qg(106204, q(42045, {	-- Communing With Malorne (QG in Emerald Dreamway)
-						["classes"]= {11},
-					})),
 --]]					
 					qg(40834, q(25577, { -- Crushing the Cores
 						i(57358),
@@ -325,13 +305,6 @@ _.Zones =
 						i(57287),
 					})),
 					{
-						["questID"] = 45532,	-- Mother's Orders
-						["qgs"] = { 115802, 119982 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
-						["sourceQuest"]	= 44869,	-- Source Quest: Talon Terror
-						["classes"]= { 11 },	-- Druid
-						["lvl"] = 110,
-					},
-					{
 						["questID"] = 29162,	-- Nature's Blessing
 						["sourceQuest"] = 29161,	-- Those Bears Up There
 						["qg"] = 52671,	-- Mylune
@@ -481,7 +454,6 @@ _.Zones =
 						i(57369),
 					})),
 				--[[
-					qg(106299, q(44869)),	-- Talon Terror (QG in The Dreamgrove)
 					qg(41504, q(25653)),	-- The Ancients are With Us
 					qg(40772, qa(27398)),	-- The Battle Is Won, The War Goes On
 					qg(40772, qh(27399)),	-- The Battle Is Won, The War Goes On

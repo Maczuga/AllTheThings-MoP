@@ -73,7 +73,6 @@ _.Zones =
 					qh(11757),	-- Desecrate this Fire!
 					qh(11581),	-- Desecrate this Fire!
 					qh(11749),	-- Desecrate this Fire!
-					qg(, q(38841)),	-- Die, Fish-People
 --]]
 					qg(41415, qa(25864, { -- Dinosaur Crisis
 						i(59095),

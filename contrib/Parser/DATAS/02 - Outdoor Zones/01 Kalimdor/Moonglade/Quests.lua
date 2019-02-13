@@ -42,17 +42,6 @@ _.Zones =
 						["coord"] = { 36.2, 41.8 },
 						["sourceQuest"] = 13073,	-- The Keeper's Favor
 					},
-					{	-- Let Sleeping Dogs Lie
-						["questID"] = 45498,
-						["qgs"] = {
-							120032,	-- Thisalee Crow
-							120041,	-- Druid of the Talon
-						},
-						["lvl"] = 110,
-						["coord"] = { 68.0, 54.8 },
-						["classes"]= { 11 },	-- Druid
-						["sourceQuest"]	= 44921,	-- Lone Wolf
-					},
 					{	-- Shards of the Felvine
 						["questID"] = 5526,
 						["u"] = 40,
@@ -62,17 +51,6 @@ _.Zones =
 							un(2, i(18535)),	-- Milli's Shield
 							un(2, i(18536)),	-- Milli's Lexicon
 						},
-					},
-					{	-- The Befouled Barrows
-						["questID"] = 45528,
-						["qgs"] = {
-							120032,	-- Thisalee Crow
-							120041,	-- Druid of the Talon
-						},
-						["lvl"] = 110,
-						["classes"]= { 11 },	-- Druid
-						["coord"] = { 68.0, 54.8 },
-						["sourceQuest"]	= 44921,	-- Lone Wolf
 					},
 					{	-- The Boon of Remulos
 						["questID"] = 13075,

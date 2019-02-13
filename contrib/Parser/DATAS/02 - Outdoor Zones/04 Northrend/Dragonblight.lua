@@ -989,26 +989,6 @@ _.Zones =
 							["qg"] = 27348,	-- Tilda Darathan
 							["isBreadcrumb"] = true,
 						}),
-						--
-						--
-						-- Move these quests to Deaths of Chromie
-						--
-						--
-						-- q(47904, {	--  Preserve the True Future
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
-						-- }),
-						-- q(47545, {	--  Rewind
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
-						-- }),
-						-- q(47543, {	--  The Day That Chromie Dies
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
-						-- }),
-						-- q(47906, {	--  The Deaths of Chromie
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
-						-- }),
-						-- q(47550, {	--  The Many Advantages of Being a Time Dragon
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
-						-- }),
 					}),
 					n(-383, {	-- Miscellaneous [THESE QUESTS HAVE NOT BEEN SORTED YET!!]
 						--

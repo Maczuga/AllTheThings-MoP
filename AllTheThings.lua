@@ -2033,6 +2033,25 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		
+		-- If the item is a recipe, then show which characters know this recipe.
+		if group.f == 200 and group.collectible and group.spellID and GetDataMember("ShowKnownBy") then
+			local recipes, knownBy = GetDataMember("CollectedSpellsPerCharacter"), {};
+			for key,value in pairs(recipes) do
+				if value[group.spellID] then
+					table.insert(knownBy, key);
+				end
+			end
+			if #knownBy > 0 then
+				table.sort(knownBy);
+				local desc = "Known by ";
+				for i,key in ipairs(knownBy) do
+					if i > 1 then desc = desc .. ", "; end
+					desc = desc .. key;
+				end
+				tinsert(info, { left = desc, wrap = true, color = "ff66ccff" });
+			end
+		end
+		
 		-- If the user wants to show the progress of this search result, do so.
 		if GetDataMember("ShowProgress") and (not group.spellID or #info > 0) then
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
@@ -2075,6 +2094,7 @@ local CacheFields;
 fieldCache["currencyID"] = {};
 fieldCache["creatureID"] = {};
 fieldCache["encounterID"] = {};
+fieldCache["instanceID"] = {};
 fieldCache["flightPathID"] = {};
 fieldCache["objectID"] = {};
 fieldCache["itemID"] = {};
@@ -2085,6 +2105,7 @@ fieldCache["s"] = {};
 fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
 fieldCache["toyID"] = {};
+fieldCache["sym"] = {};
 local function CacheArrayFieldIDs(group, field, arrayField)
 	local firldCache_g = group[arrayField];
 	if firldCache_g then
@@ -2130,6 +2151,7 @@ CacheFields = function(group)
 	CacheArrayFieldIDs(group, "creatureID", "crs");
 	CacheArrayFieldIDs(group, "creatureID", "qgs");
 	CacheFieldID(group, "encounterID");
+	CacheFieldID(group, "instanceID");
 	CacheFieldID(group, "flightPathID");
 	CacheFieldID(group, "objectID");
 	CacheFieldID(group, "itemID");
@@ -2152,9 +2174,10 @@ CacheFields = function(group)
 		for i,subgroup in ipairs(group.g) do
 			CacheFields(subgroup);
 		end
+	elseif group.sym then
+		table.insert(fieldCache["sym"], group);
 	end
 end
-app.CacheFields = CacheFields;
 end)();
 local function SearchForFieldRecursively(group, field, value)
 	if group.g then
@@ -2762,6 +2785,7 @@ local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
 		while InCombatLockdown() do coroutine.yield(); end
 		app.print("Refreshing " .. app.DisplayName .. " collection status...");
+		app.events.QUEST_LOG_UPDATE();
 		
 		-- Harvest Title Collections
 		local collectedTitles = GetDataMember("CollectedTitles", {});
@@ -4156,16 +4180,23 @@ app.BaseGearSet = {
 			local info = t.info;
 			if info then return info.requiredFaction; end
 		elseif key == "icon" then
-			local sources = C_TransmogSets.GetSetSources(t.setID);
-			for sourceID, value in pairs(sources) do
-				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-				if sourceInfo and sourceInfo.invType == 2 then
-					local icon = select(10, GetItemInfo(sourceInfo.itemID));
-					if icon then rawset(t, "icon", icon); end
-					return icon;
+			if t.sources then
+				for sourceID, value in pairs(t.sources) do
+					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+					if sourceInfo and sourceInfo.invType == 2 then
+						local icon = select(10, GetItemInfo(sourceInfo.itemID));
+						if icon then rawset(t, "icon", icon); end
+						return icon;
+					end
 				end
 			end
 			return QUESTION_MARK_ICON;
+		elseif key == "sources" then
+			local sources = C_TransmogSets.GetSetSources(t.setID);
+			if sources then
+				rawset(t, "sources", sources);
+				return sources;
+			end
 		elseif key == "header" then
 			local info = t.info;
 			if info then return info.label; end
@@ -6193,44 +6224,127 @@ local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local popout = app:GetWindow((group.parent and group.parent.text or "") .. (group.text or ""));
 	if group.s then
-		-- This is an item that has an appearance
-		local mainItem = setmetatable({ ["g"] = {}, ['hideText'] = true }, { __index = group });
+		popout.data = setmetatable({ ["g"] = {}, ["progress"] = 0, ["total"] = 0, ['hideText'] = true }, { __index = group });
+		
+		-- Attempt to get information about the source ID.
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
 		if sourceInfo then
+			-- Show a list of all of the Shared Appearances.
+			local g = {};
+			
 			-- Go through all of the shared appearances and see if we're "unlocked" any of them.
 			for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 				-- If this isn't the source we already did work on and we haven't already completed it
 				if otherSourceID ~= group.s then
 					local attSearch = SearchForSourceIDQuickly(otherSourceID);
 					if attSearch then
-						tinsert(mainItem.g, setmetatable({ ['hideText'] = true }, { __index = attSearch })); 
+						tinsert(g, setmetatable({ ["collectible"] = true, ['hideText'] = true }, { __index = attSearch })); 
 					else
 						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 						if otherSourceInfo then
-							local newItem = app.CreateItem(otherSourceInfo.itemID);
+							local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
 							if otherSourceInfo.isCollected then
 								SetDataSubMember("CollectedSources", otherSourceID, 1);
 								newItem.collected = true;
 							end
-							newItem.s = otherSource;
-							newItem.description = "|CFFFF0000This sourceID was not found in the ATT database. It might be invalid.|r";
-							tinsert(mainItem.g, newItem);
+							tinsert(g, newItem);
 						end
 					end
 				end
 			end
+			if #g > 0 then
+				table.insert(popout.data.g, {
+					["text"] = "Shared Appearances",
+					["description"] = "The items in this list are shared appearances for the above item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
+					["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
+					["g"] = g
+				});
+			else
+				table.insert(popout.data.g, setmetatable({
+					["text"] = "Unique Appearance",
+					["description"] = "This item has a Unique Appearance. You must collect this item specifically to earn the appearance.",
+					["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
+					["collectible"] = true,
+				}, { __index = group }));
+			end
 		end
-		CacheFields(mainItem);
-		popout.data = {
-			["text"] = "Shared Appearances",
-			["description"] = "The items in this list are shared appearances for the following item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
-			["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
-			["visible"] = true,
-			["g"] = { mainItem }
-		};
+		
+		-- Determine if this source is part of a set or two.
+		local allSets = GetDataMember("Sets", {});
+		local sourceSets = GetDataMember("SourceSets", {});
+		local GetVariantSets = C_TransmogSets.GetVariantSets;
+		local GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
+		for i,data in ipairs(C_TransmogSets.GetAllSets()) do
+			local sources = GetAllSourceIDs(data.setID);
+			if #sources > 0 then allSets[data.setID] = sources; end
+			for j,sourceID in ipairs(sources) do
+				local s = sourceSets[sourceID];
+				if not s then
+					s = {};
+					sourceSets[sourceID] = s;
+				end
+				s[data.setID] = 1;
+			end
+			local variants = GetVariantSets(data.setID);
+			if type(variants) == "table" then
+				for j,data in ipairs(variants) do
+					local sources = GetAllSourceIDs(data.setID);
+					if #sources > 0 then allSets[data.setID] = sources; end
+					for k, sourceID in ipairs(sources) do
+						local s = sourceSets[sourceID];
+						if not s then
+							s = {};
+							sourceSets[sourceID] = s;
+						end
+						s[data.setID] = 1;
+					end
+				end
+			end
+		end
+		local data = sourceSets[group.s];
+		if data then
+			for setID,value in pairs(data) do
+				local g = {};
+				setID = tonumber(setID);
+				for i,sourceID in ipairs(allSets[setID]) do
+					local attSearch = SearchForSourceIDQuickly(sourceID);
+					if attSearch then
+						tinsert(g, setmetatable({ ["collectible"] = true, ['hideText'] = true }, { __index = attSearch })); 
+					else
+						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+						if otherSourceInfo then
+							local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
+							if otherSourceInfo.isCollected then
+								SetDataSubMember("CollectedSources", sourceID, 1);
+								newItem.collected = true;
+							end
+							tinsert(g, newItem);
+						end
+					end
+				end
+				table.insert(popout.data.g, app.CreateGearSet(setID, { ["visible"] = true, ["g"] = g }));
+			end
+		end
+		
 		BuildGroups(popout.data, popout.data.g);
 		UpdateGroups(popout.data, popout.data.g);
-		mainItem.visible = true;
+		local oldUpdate = popout.Update;
+		popout.Update = function(self)
+			-- Turn off all filters momentarily.
+			local GroupFilter = app.GroupFilter;
+			local GroupVisibilityFilter = app.GroupVisibilityFilter;
+			local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
+			local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
+			app.GroupFilter = app.NoFilter;
+			app.GroupVisibilityFilter = app.NoFilter;
+			app.CollectedItemVisibilityFilter = app.NoFilter;
+			app.CollectedItemVisibilityFilter = app.NoFilter;
+			oldUpdate(self);
+			app.GroupFilter = GroupFilter;
+			app.GroupVisibilityFilter = GroupVisibilityFilter;
+			app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
+			app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
+		end;
 	elseif group.questID or group.sourceQuests then
 		-- This is a quest object. Let's show prereqs and breadcrumbs.
 		local mainQuest = setmetatable({ ['collectible'] = true, ['hideText'] = true }, { __index = group });
@@ -6255,7 +6369,7 @@ local function CreateMiniListForGroup(group)
 						for i=1,#sourceQuest,1 do
 							-- Only care about the first search result.
 							local sq = sourceQuest[i];
-							if sq and app.GroupFilter(sq) then
+							if sq and app.GroupFilter(sq) and not sq.isBreadcrumb then
 								if sq.altQuestID then
 									-- Alt Quest IDs are always Horde.
 									if app.Faction == "Horde" then
@@ -6274,11 +6388,17 @@ local function CreateMiniListForGroup(group)
 							end
 						end
 						if found then
-							sourceQuest = setmetatable({ --[[['collectible'] = true,]] ['visible'] = true, ['hideText'] = true }, { __index = found });
-							if sourceQuest.sourceQuests and #sourceQuest.sourceQuests > 0 and (not sourceQuest.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
+							sourceQuest = setmetatable({ ['collectible'] = true, ['visible'] = true, ['hideText'] = true }, { __index = found });
+							if found.sourceQuests and #found.sourceQuests > 0 and (not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
 								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
-								for j, subsourceQuests in ipairs(sourceQuest.sourceQuests) do
+								for j, subsourceQuests in ipairs(found.sourceQuests) do
 									subSourceQuests[subsourceQuests] = true;
+								end
+							end
+							if found.g then
+								sourceQuest.g = {};
+								for i,subgroup in ipairs(found.g) do
+									table.insert(sourceQuest.g, setmetatable({ ['hideText'] = true }, { __index = subgroup }));
 								end
 							end
 						else
@@ -6344,25 +6464,22 @@ local function CreateMiniListForGroup(group)
 		};
 		BuildGroups(popout.data, popout.data.g);
 		UpdateGroups(popout.data, popout.data.g);
-		CacheFields(popout.data);
 	elseif group.g then
 		-- This is already a container with accurate numbers.
 		popout.data = setmetatable({ ['visible'] = true }, { __index = group });
 	else
 		-- This is a standalone item
-		local newItem = setmetatable({ ['visible'] = true, ['hideText'] = true }, { __index = group });
-		CacheFields(newItem);
 		popout.data = {
 			["text"] = "Standalone Item",
 			["icon"] = "Interface\\Icons\\item_elementiumkey.blp",
-			["g"] = { newItem },
+			["g"] = { setmetatable({ ['visible'] = true, ['hideText'] = true }, { __index = group }); },
 			["visible"] = true,
 			["progress"] = 0,
 			["total"] = 0,
 		};
 		BuildGroups(popout.data, popout.data.g);
 		UpdateGroups(popout.data, popout.data.g);
-		newItem.visible = true;
+		popout.data.visible = true;
 	end
 	AddTomTomWaypoint(popout.data, false);
 	if not popout.data.expanded then
@@ -6913,7 +7030,7 @@ local function RowOnEnter(self)
 		end
 		local lvl = reference.lvl or 0;
 		if lvl > 1 then GameTooltip:AddDoubleLine(L("REQUIRES_LEVEL"), tostring(lvl)); end
-		--if reference.b then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
+		if reference.b then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
 		if reference.requireSkill then
 			local spellName = select(1, GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0));
 			if (spellName) then
@@ -6952,16 +7069,7 @@ local function RowOnEnter(self)
 		if reference.setID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setID)); end
 		if reference.setHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setHeaderID)); end
 		if reference.setSubHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setSubHeaderID)); end
-		if reference.description and GetDataMember("ShowDescriptions") then
-			local found = false;
-			for i=1,GameTooltip:NumLines() do
-				if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
-					found = true;
-					break;
-				end
-			end
-			if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
-		end
+		
 		if reference.mapID and GetDataMember("ShowMapID") then GameTooltip:AddDoubleLine(L("MAP_ID"), tostring(reference.mapID)); end
 		if reference.coords and app.GetDataMember("ShowCoordinatesInTooltip") then
 			local j = 0;
@@ -6993,8 +7101,20 @@ local function RowOnEnter(self)
 		if not reference.itemID then
 			if reference.speciesID then
 				AttachTooltipSearchResults(GameTooltip, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
-			elseif reference.u then
-				GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, 1, true);
+			else
+				if reference.description and GetDataMember("ShowDescriptions") then
+					local found = false;
+					for i=1,GameTooltip:NumLines() do
+						if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
+							found = true;
+							break;
+						end
+					end
+					if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
+				end
+				if reference.u then
+					GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, 1, true);
+				end
 			end
 		end
 		if reference.speciesID then
@@ -7103,10 +7223,32 @@ local function RowOnEnter(self)
 		
 		-- Show Quest Prereqs
 		if reference.sourceQuests and not reference.saved then
+			local prereqs, bc = {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
-				if not IsQuestFlaggedCompleted(sourceQuestID) then
-					GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
-					break;
+				if sourceQuestID > 0 and not IsQuestFlaggedCompleted(sourceQuestID) then
+					local sqs = SearchForField("questID", sourceQuestID);
+					if sqs and #sqs > 0 then
+						local sq = sqs[1];
+						if sq and sq.isBreadcrumb then
+							table.insert(bc, sqs[1]);
+						else
+							table.insert(prereqs, sqs[1]);
+						end
+					else
+						table.insert(prereqs, {questID = sourceQuestID});
+					end
+				end
+			end
+			if prereqs and #prereqs > 0 then
+				GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
+				for i,prereq in ipairs(prereqs) do
+					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
+				end
+			end
+			if bc and #bc > 0 then
+				GameTooltip:AddLine("This quest has a breadcrumb quest that you may be unable to complete after completing this one.");
+				for i,prereq in ipairs(bc) do
+					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
 				end
 			end
 		end
@@ -7900,9 +8042,110 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		BuildGroups(allData, allData.g);
-		UpdateGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
+		
+		-- Evaluate the Symbolic links.
+		if fieldCache["sym"] then
+			for i,o in ipairs(fieldCache["sym"]) do
+				if o.sym then
+					local searchResults = {};
+					-- {{"select", "itemID", 119321}, {"where", "modID", 6 },{"pop"}},
+					for j,sym in ipairs(o.sym) do
+						local cmd = sym[1];
+						if cmd == "select" then
+							-- Instruction to search the full database for something.
+							for k,s in ipairs(SearchForField(sym[2], sym[3])) do
+								table.insert(searchResults, s);
+							end
+						elseif cmd == "pop" then
+							-- Instruction to "pop" all of the group values up one level.
+							local orig = searchResults;
+							searchResults = {};
+							for k,s in ipairs(orig) do
+								if s.g then
+									for l,t in ipairs(s.g) do
+										table.insert(searchResults, t);
+									end
+								end
+							end
+						elseif cmd == "where" then
+							-- Instruction to include only search results where a key value is a value
+							local key, value = sym[2], sym[3];
+							for k=#searchResults,1,-1 do
+								local s = searchResults[k];
+								if not s[key] or s[key] ~= value then
+									table.remove(searchResults, k);
+								end
+							end
+						elseif cmd == "not" then
+							-- Instruction to include only search results where a key value is not a value
+							if #sym > 3 then
+								local dict = {};
+								for k=2,#sym,2 do
+									dict[sym[k]] = sym[k + 1];
+								end
+								for k=#searchResults,1,-1 do
+									local s = searchResults[k];
+									local matched = true;
+									for key,value in pairs(dict) do
+										if not s[key] or s[key] ~= value then
+											matched = false;
+											break;
+										end
+									end
+									if matched then
+										table.remove(searchResults, k);
+									end
+								end
+							else
+								local key, value = sym[2], sym[3];
+								for k=#searchResults,1,-1 do
+									local s = searchResults[k];
+									if s[key] and s[key] == value then
+										table.remove(searchResults, k);
+									end
+								end
+							end
+						elseif cmd == "is" then
+							-- Instruction to include only search results where a key exists
+							local key = sym[2];
+							for k=#searchResults,1,-1 do
+								local s = searchResults[k];
+								if not s[key] then table.remove(searchResults, k); end
+							end
+						elseif cmd == "isnt" then
+							-- Instruction to include only search results where a key doesn't exist
+							local key = sym[2];
+							for k=#searchResults,1,-1 do
+								local s = searchResults[k];
+								if s[key] then table.remove(searchResults, k); end
+							end
+						elseif cmd == "contains" then
+							-- Instruction to include only search results where a key value contains a value.
+							local key = sym[2];
+							table.remove(sym, 1);
+							table.remove(sym, 1);
+							for k=#searchResults,1,-1 do
+								local s = searchResults[k];
+								if not s[key] or not contains(sym, s[key]) then
+									table.remove(searchResults, k);
+								end
+							end
+						end
+					end
+					
+					if #searchResults > 0 then
+						-- print("Symbolic Link for ", o.key, " ", o[o.key], " contains ", #searchResults, " values after filtering.");
+						o.g = searchResults;
+					else
+						-- print("Symbolic Link for ", o.key, " ", o[o.key], " contained no values after filtering.");
+					end
+					o.sym = nil;
+				end
+			end
+			fieldCache["sym"] = nil;
+		end
 		
 		-- Uncomment this section if you need to Harvest Display IDs:
 		--[[
@@ -10997,8 +11240,6 @@ app.events.PLAYER_LOGIN = function()
 		if knownMountCount < 1 then return true; end
 		
 		-- Harvest the Spell IDs for Conversion.
-		local collectedSpells = GetDataMember("CollectedSpells", {});
-		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
 		app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
 		
 		-- Mark all previously completed quests.
@@ -11007,7 +11248,7 @@ app.events.PLAYER_LOGIN = function()
 		GetQuestsCompleted(CompletedQuests);
 		wipe(DirtyQuests);
 		app:RegisterEvent("QUEST_LOG_UPDATE");
-		app:RegisterEvent("QUEST_COMPLETE");
+		app:RegisterEvent("QUEST_TURNED_IN");
 		RefreshSaves();
 		
 		-- NOTE: The auto refresh only happens once.
@@ -11101,14 +11342,22 @@ app.events.COMPANION_UNLEARNED = function(...)
 	--print("COMPANION_UNLEARNED", ...);
 	RefreshMountCollection();
 end
-app.events.QUEST_COMPLETE = function()
+app.events.QUEST_TURNED_IN = function(questID)
 	GetQuestsCompleted(CompletedQuests);
+	CompletedQuests[questID] = true;
 	for questID,completed in pairs(DirtyQuests) do
 		app.QuestCompletionHelper(tonumber(questID));
 	end
 	wipe(DirtyQuests);
 end
-app.events.QUEST_LOG_UPDATE = app.events.QUEST_COMPLETE;
+app.events.QUEST_LOG_UPDATE = function()
+	GetQuestsCompleted(CompletedQuests);
+	for questID,completed in pairs(DirtyQuests) do
+		app.QuestCompletionHelper(tonumber(questID));
+	end
+	wipe(DirtyQuests);
+	app:UnregisterEvent("QUEST_LOG_UPDATE");
+end
 app.events.TRADE_SKILL_LIST_UPDATE = function(...)
 	OpenMiniListForCurrentProfession(false, true);
 end

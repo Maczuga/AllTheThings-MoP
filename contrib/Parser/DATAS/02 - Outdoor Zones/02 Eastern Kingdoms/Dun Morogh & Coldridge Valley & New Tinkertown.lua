@@ -142,8 +142,6 @@ _.Zones =
 					})),
 					qg(15011, qa( 8149)),	-- Honoring a Hero
 --					q(25285),	-- In and Out (REMOVED)
---					q(43284),	-- Invasion: Dun Morogh (REMOVED, pre-Legion invasions)
---					q(42803),	-- Invasion: Dun Morogh (REMOVED, pre-Legion invasions)
 					qg(41578, qa(25932)),	-- It's Raid Night Every Night
 					desc(qa(32663), "This quest is available to Gnomes upon reaching level 20.", {	-- Learn To Ride
 						["races"] = {7},
@@ -188,7 +186,6 @@ _.Zones =
 					}),
 --[[
 					qg(1261, qa(25905)),	-- Rams on the Lam
---					q(43292),	-- Repel (REMOVED, pre-Legion invasions)
 					qg(45966, q(28167, {	-- Report to Carvo Blastbolt
 						["races"] = {7,9},	-- Gnome, Goblin
 					})),
@@ -455,10 +452,6 @@ _.Zones =
 								qg(460, qa(26424, {	-- Meet the High Tinker
 									["races"] = {7},	-- Gnome
 									["classes"] = {9},	-- Warlock
-								})),
-								qg(103614, q(41218, {	-- Meet the High Tinker
-									["races"] = {7,9},	-- Gnome, Goblin
-									["classes"] = {3},	-- Hunter
 								})),
 								qg(42708, qa(26284, {	-- Missing in Action
 									["races"] = {7},	-- Gnome

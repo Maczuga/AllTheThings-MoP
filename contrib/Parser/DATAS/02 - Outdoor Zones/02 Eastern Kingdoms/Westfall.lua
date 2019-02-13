@@ -64,9 +64,6 @@ _.Zones =
 					qg(, q(26353)),	-- Captain Sanders' Hidden Treasure
 					qg(, q(26355)),	-- Captain Sanders' Hidden Treasure
 					qg(, q(26354)),	-- Captain Sanders' Hidden Treasure
-					qg(, q(46293)),	-- Deadmines, Part Three?
-					qg(, q(43287)),	-- Defend
-					qg(, q(43242)),	-- Demon Commander
 					qh(11749),	-- Desecrate this Fire!
 					qh(11745),	-- Desecrate this Fire!
 					qh(11581),	-- Desecrate this Fire!
@@ -107,10 +104,6 @@ _.Zones =
 						i(58912),	-- Sentinel Hill Surcoat
 						i(58913),	-- Sentinel Hill Vest
 					})),
---[[
-					qg(, q(43245)),	-- Invasion: Westfall
-					qg(, q(42235)),	-- Invasion: Westfall
---]]
 					qg(42498, qa(26229, { -- "I TAKE Candle!"
 						i(58905),	-- Kobold Basher
 						i(58903),	-- Kobold Candle
@@ -143,10 +136,8 @@ _.Zones =
 					qg(, qa(31724)),	-- Old MacDonald
 					qg(, q(31780)),	-- Old MacDonald
 					qg(, qh(27842)),	-- Only the Beginning
-					qg(, q(46292)),	-- Pet Battle Challenge: Deadmines
 					qg(, qa(11882)),	-- Playing with Fire
 					qg(, qa(26295)),	-- Propaganda
-					qg(, q(43288)),	-- Repel
 					qg(, qa(26370)),	-- Return to Sentinel Hill
 --]]
 					qg(42750, qa(26322, { -- Rise of the Brotherhood (secondary QG ID 234)
@@ -170,7 +161,6 @@ _.Zones =
 					})),
 --[[
 					qg(, qa(26297)),	-- The Dawning of a New Day
-					qg(, q(46291)),	-- The Deadmines Strike Back
 					qg(, qh(27850)),	-- The Defias Kingpin
 					qg(, qa(26371)),	-- The Legend of Captain Grayson
 					qg(, qa(26287)),	-- The Westfall Brigade
@@ -439,17 +429,6 @@ _.Zones =
 						un(7, i(5971)),		-- Feathered Cape
 						un(7, i(4454)),		-- Talon of Vultros
 					}), 
-				}),
-				n(-77, {	-- Special
-					o(269830, { 	-- Gift of the Mind-Seekers
-						["groups"] = {
-						},
-						["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
-						["questID"] = 47214,
-						["repeatable"] = true,
-						["isWeekly"] = true,
-						["description"] = "For a walkthrough of how to obtain this mount. Go to Special Header under Outdoor Zones - Broken Isles - Dalaran.",
-					}),										
 				}),
 				na(-2, {	-- Vendors
 					n(844, {	-- Antonio Perelli <Traveling Salesman>

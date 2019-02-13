@@ -84,7 +84,7 @@ _.Zones =
 						crit(2, { -- The Bloodmire
 							qa(27821, {	-- Orcs and Humans
 								["qg"] = 46676,
-								["sourceQuests"] = { 27870 },
+								["sourceQuests"] = { 27870 },	-- To Marshtide Watch
 							}),
 							qa(27822, { -- Lumbering Oafs
 								["groups"] = {
@@ -93,7 +93,7 @@ _.Zones =
 									i(64612),
 								},
 								["qg"] = 46676,
-								["sourceQuests"] = { 27870 },
+								["sourceQuests"] = { 27870 },	-- To Marshtide Watch
 							}),
 							qa(27795, { -- Tides of Darkness
 								["groups"] = {
@@ -251,7 +251,7 @@ _.Zones =
 									i(64631),
 								},
 								["qg"] = 7623,
-								["sourceQuests"] = { 27870 },
+								["sourceQuests"] = { 27870 },	-- To Marshtide Watch
 							}),
 							qh(27856, {	-- Marking the Fallen
 								["qg"] = 7623,
@@ -300,6 +300,7 @@ _.Zones =
 							}),
 							qa(27870, {	-- To Marshtide Watch
 								["qg"] = 46071,	-- Lord Itharius
+								["isBreadcrumb"] = true,
 								["sourceQuests"] = { 27914 },
 							}),
 							qh(27871, {	-- To Stonard

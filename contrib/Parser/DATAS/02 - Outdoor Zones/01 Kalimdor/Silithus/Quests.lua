@@ -240,12 +240,6 @@ _.Zones =
 							},
 						},
 					},
-					{	-- Blessed Blade of the Windseeker
-						["questID"] = 43002,
-						["qg"] = 14347,	-- Highlord Demitrian
-						["coord"] = { 29.6, 10.6 },
-						["classes"]= { 7 },	-- Shaman
-					},
 					{	-- Call of the Warmatron
 						["questID"] = 28865,
 						["qg"] = 50587,	-- Okril'on Mage
@@ -525,34 +519,6 @@ _.Zones =
 						["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
 						["sourceQuest"] = 7785,	-- Examine the Vessel
 					}),
---[[ MICRO-HOLIDAY - CALL OF THE SCARAB
-					desc(qwe(qh(45785)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
-					desc(qwe(qa(45787)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
-					qwe(qg(117432, qh(45639))),	-- Chilled Meat (CotS)
-					qwe(qg(117434, qa(45731)))	-- Chilled Meat (CotS)
-					qwe(qg(117434, qa(45732))),	-- Crocolisk Tails
-					qwe(qg(117432, q(45640))),	-- Crocolisk Tails (probably Horde-only)
-					qwe(qg(117434, qa(45730))),	-- Crunchy Spider Legs
-					qwe(qg(117432, q(45638))),	-- Crunchy Spider Legs (probably Horde-only)
-					qwe(qg(117432, qh(45643))),	-- Lean Shanks
-					qwe(qg(117434, qa(45735))),	-- Lean Shanks
-					qwe(q(45739)),	-- Lesser Wind Stones (WORLD QUEST)
-					qwe(q(45656)),	-- Lesser Wind Stones (WORLD QUEST)
-					qwe(qg(117432, qh(45642))),	-- Raw Clefthoof Meat
-					qwe(qg(117434, qa(45734))),	-- Raw Clefthoof Meat
-					qwe(qg(117432, qh(45641))),	-- Raw Tiger Steaks
-					qwe(qg(117434, qa(45733))),	-- Raw Tiger Steaks
-					qwe(qg(117434, qa(45729))),	-- Sandworm Meat
-					qwe(q(45637)),	-- Sandworm Meat (probably Horde-only)
-					qwe(q(45740)),	-- Silithyst (WORLD QUEST)
-					qwe(q(45657)),	-- Silithyst (WORLD QUEST)
-					qwe(q(45655)),	-- The Colossus of Ashi (WORLD QUEST)
-					qwe(q(45738)),	-- The Colossus of Ashi (WORLD QUEST)
-					qwe(q(45674)),	-- The Colossus of Regal (WORLD QUEST)
-					qwe(q(45741)),	-- The Colossus of Regal (WORLD QUEST)
-					qwe(q(45742)),	-- The Colossus of Zora (WORLD QUEST)
-					qwe(q(45675)),	-- The Colossus of Zora (WORLD QUEST)
-END OF MICRO-HOLIDAY --]]
 				}),
 			},
 		}),

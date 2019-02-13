@@ -506,7 +506,6 @@ _.Zones =
 							})),
 						}),
 --[[
-					qg(, q(40847)),	-- A Friendly Accord
 					qg(, qh(29400)),	-- A Season for Celebration
 					qg(, qa(29074)),	-- A Season for Celebration
 --]]					
@@ -585,7 +584,6 @@ _.Zones =
 					qh( 11761),	-- Desecrate this Fire!
 					qg(, qh(26592)),	-- Diffractory Chromascope
 					qg(, q(9272)),	-- Dressing the Part
-					qg(, q(38399)),	-- Fencing the Rose
 					qg(, q(26839)),	-- Get Away From It All!
 					qg(, q(8193)),	-- Grand Prize
 					qg(, q(26452)),	-- Gurubashi Challenge
@@ -607,8 +605,6 @@ _.Zones =
 					qg(, q(8224)),	-- Rare Fish - Dezian Queenfish
 					qg(, q(8221)),	-- Rare Fish - Keefer's Angelfish
 					qg(, q(32435)),	-- Second Place
-					qg(, q(44765)),	-- Stranglethorn Fishing Extravaganza
-					qg(, q(40849)),	-- The Dreadblades
 					q(26837),	-- The Explorers' League Digsite //REMOVED
 					qg(, qa(47709)),	-- The Great Gnomeregan Race
 					qg(, qh(26590)),	-- The Holy Water of Clarity
@@ -620,7 +616,6 @@ _.Zones =
 					qg(, q(9259)),	-- Traitor to the Bloodsail
 					qg(, qh(28704)),	-- Warchief's Command: The Cape of Stranglethorn!
 					qg(, q(8674)),	-- Winterhoof the Elder
-					qg(, q(42758)),	-- You're Gonna Need A Bigger Boat!
 					qg(, qh(26533)),	-- Zanzil's Secret	
 --]]
 --[[					nlq({     -- Legacy Quests 

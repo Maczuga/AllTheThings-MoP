@@ -127,7 +127,6 @@ _.Zones =
 					qg(248, qa(  107)),	-- Note to William				
 					qg(384, qa( 7678)),	-- Palomino Exchange
 					qg(247, qa(   86)),	-- Pie for Billy
---					q(42568),	-- Preparation (part of Rogue class campaign, not sure where it starts)
 					qg(244, qa(   88)),	-- Princess Must Die!
 --]]					
 					qg(261, qa(   52, { -- Protect the Frontier

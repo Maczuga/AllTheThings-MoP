@@ -233,6 +233,9 @@ namespace Parser_V2
                     case "coords":
                     case "criteriaID":
                     case "heirloomID":
+                    case "recipeID":
+                    case "previousRecipeID":
+                    case "nextRecipeID":
                         {
                             return;
                         }
@@ -368,6 +371,37 @@ namespace Parser_V2
 
                             // Merge the new list of data into the old data and ensure there are no duplicate values.
                             foreach (var pair in newDict) oldDict[Convert.ToInt32(pair.Key)] = Convert.ToInt32(pair.Value);
+                            break;
+                        }
+
+                    // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
+                    case "sym":
+                        {
+                            // Convert the data to a list of generic objects.
+                            var newListOfLists = value as List<List<object>>;
+                            if (newListOfLists == null)
+                            {
+                                var newList = value as List<object>;
+                                if (newList == null)
+                                {
+                                    var dict = value as Dictionary<object, object>;
+                                    if (dict == null) return;
+                                    else newList = dict.Values.ToList();
+                                }
+                                newListOfLists = new List<List<object>>();
+                                foreach(var o in newList)
+                                {
+                                    var list = o as List<object>;
+                                    if (list == null)
+                                    {
+                                        var dict = o as Dictionary<object, object>;
+                                        if (dict == null) return;
+                                        else list = dict.Values.ToList();
+                                    }
+                                    newListOfLists.Add(list);
+                                }
+                            }
+                            item[field] = newListOfLists;
                             break;
                         }
 

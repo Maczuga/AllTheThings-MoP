@@ -512,7 +512,10 @@ _.Zones =
 						},
 						["qg"] = 39653,	-- Silvia
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 25208,	-- Tell Silvia
+						["sourceQuests"] = {
+							25406,	-- Gordok Guards
+							25208,	-- Tell Silvia
+						},
 					},
 					{	-- More than Illness
 						["questID"] = 25394,
@@ -713,6 +716,7 @@ _.Zones =
 						["questID"] = 25208,
 						["qg"] = 40052,	-- Estulan
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = { 25403 },	-- Ogre Abduction
 					},
 					{	-- The Battle of Sardor
 						["questID"] = 25304,

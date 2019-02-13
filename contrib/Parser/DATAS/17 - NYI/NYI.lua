@@ -344,14 +344,6 @@ _.NeverImplemented =
 			un(1, i(109352)),	-- Unknown
 			un(1, i(109353)),	-- Unknown
 			un(1, i(109354)),	-- Unknown
-			un(1, i(114249)),	-- Leafscale bracers
-			un(1, i(114252)),	-- Leafscale chestguard
-			un(1, i(114257)),	-- Leafscale boots
-			un(1, i(114261)),	-- Leafscale gauntlets
-			un(1, i(114265)),	-- Leafscale helm
-			un(1, i(114269)),	-- Leafscale legguards
-			un(1, i(114273)),	-- Leafscale spaulders
-			un(1, i(114277)),	-- Leafscale belt
 			un(1, i(37433)),	-- Layered Scale Boots
 			un(1, i(37444)),	-- Wavekeeper's Helm
 			un(1, i(13090)),	-- Breastplate of the Chosen
@@ -919,9 +911,6 @@ _.NeverImplemented =
 			un(1, i(34415)),	-- Crystaline Shard Shield
 			un(1, i(54554)),	-- Bejeweled Ship's Wheel
 			un(1, i(60220)),	-- Unknown
-			un(1, i(159814)),	-- Unknown
-			un(1, i(159815)),	-- Unknown
-			un(1, i(165276)),	-- Unknown
 		}),
 		n(-342, { -- Staves
 			un(1, i(49458)),	-- Unknown
@@ -945,7 +934,6 @@ _.NeverImplemented =
 			un(1, i(108782)),	-- Unknown
 			un(1, i(69916)),	-- Trollbane (Test)
 			un(1, i(109519)),	-- Unknown
-			un(1, i(117994)),	-- Rename karabor honor guard axe
 			un(1, i(64701)),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta))
 			un(1, i(64726)),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta))
 		}),
@@ -1061,9 +1049,6 @@ m(465), -- Le Glas
 m(516), -- Isle of Thunder (One of last initial scenaraio)
 m(892), -- Azuremyst Isle (Argus Opening)
 m(893), -- Azuremyst Isle (Argus Opening)
-
--- This map is used during the quest "Fel Annihilation" (43483) and is never revisited. Temporarily putting it here
-m(776),	-- Azuremyst Isle
 
 -- These maps are used in the Siege of Lordaeron
 m(998),	-- Undercity

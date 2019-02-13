@@ -489,7 +489,6 @@ _.Zones =
 							qa(24432),	-- Sea Legs
 							qh(25929),	-- Sea Legs
 --]]
---							q(35738),	-- Shallow End of the Gene Pool (In beta never added to game.)
 --							q(25498),	-- Shark Bait (In beta never added to game.)
 							q(27699, {	-- Shark Weak
 								["sourceQuests"] = { 25657 },	-- Dah, Nunt.. Dah, Nunt...
@@ -932,7 +931,6 @@ _.Zones =
 							qg(, qa(27393)),	-- The Call of the Blade
 							qg(, q(26191)),	-- The Culmination of Our Efforts
 							qg(, q(25620)),	-- The Revered Lady							
-							qg(, q(43644)),	-- To the Deeps
 							qg(, q(25637)),	-- To the Fathom-Lord's Call
 							qg(, q(25359)),	-- Toshe's Vengeance
 							qg(, qh(25971)),	-- Unfurling Plan
@@ -971,7 +969,6 @@ _.Zones =
 							qg(, q(25441)),	-- Vortex
 							qg(, qa(25922)),	-- Waking the Beast
 							qg(, qh(25996)),	-- Waking the Beast
-							qg(, q(43645)),	-- Wavespeaker's Trail
 							qg(, qa(25917)),	-- We Are Not Alone
 							qg(, qh(25991)),	-- We Are Not Alone
 --]]

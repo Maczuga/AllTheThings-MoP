@@ -141,10 +141,6 @@ _.Zones =
 						["qg"] = 10837,	-- High Executor Derrington
 						["sourceQuests"] = { 25007 },	-- East... Always to the East
 					}),
-					qart(q(40710, {	-- Blade in Twilight
-						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
-						["classes"] = { 5 },	-- Priest
-					})),
 					qh(24990, {	-- Darkhound Pounding -- anytime
 						["qg"] = 10665,	-- Junior Apothecary Holland
 					}),
@@ -219,13 +215,6 @@ _.Zones =
 						["qg"] = 38978,	-- Apprentice Crispin
 						["sourceQuests"] = { 24994 },	-- Doom Weed
 					}),
-					q(40705, {	-- Priestly Matters
-						["qgs"] = {
-							101344,	-- Hooded Priestess (horde)
-							102333,	-- Hooded Priestess (alliance)
-						},
-						["classes"] = { 5 },	-- Priest
-					}),
 					qh(24978, {	-- Reaping the Reapers -- anytime
 						["qg"] = 1519,	-- Deathguard Simmer
 					}),
@@ -278,10 +267,6 @@ _.Zones =
 							["qg"] = 1658,	-- Captain Dargol
 						}),
 					}),
-					qart(q(41625, {	-- The Light's Wrath
-						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
-						["classes"] = { 5 },	-- Priest
-					})),
 					qh(25004, {	-- The Mills Overrun
 						["qg"] = 1500,	-- Coleman Farthing
 						["sourceQuests"] = { 25003 },	-- The Family Crypt
@@ -294,10 +279,6 @@ _.Zones =
 						["qg"] = 1519,	-- Deathguard Simmer
 						["sourceQuests"] = { 24978 },	-- Reaping the Reapers
 					}),
-					qart(q(41957, {	-- The Vindicator's Plea
-						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
-						["classes"] = { 5 },	-- Priest
-					})),
 					qh(25011, {	-- To Bigger and Better Things
 						["qg"] = 10837,	-- High Executor Derrington
 						["sourceQuests"] = { 25046 },	-- A Daughter's Embrace
