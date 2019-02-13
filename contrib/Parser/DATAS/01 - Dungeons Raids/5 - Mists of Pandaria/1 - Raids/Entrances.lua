@@ -37,7 +37,10 @@ _.Instances =
 					{	-- Sha of Anger
 						["encounterID"] = 691,	-- Sha of Anger
 						["coords"] = {
-							{ 53.53, 65.26, 379 },
+							{ 53.8, 64.6, 379 },
+							{ 70.8, 63.8, 379 },
+							{ 67.8, 78.0, 379 },
+							{ 51.2, 87.7, 379 },
 						},
 					},
 					{	-- The Four Celestials

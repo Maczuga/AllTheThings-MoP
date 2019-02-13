@@ -20,36 +20,54 @@ profession(773, {	-- Inscription
 				["categoryID"] = 113,
 				["g"] = {
 					{
-						["name"] = "Glyph of Burning Anger",
-						["recipeID"] = 112430
+						["name"] = "Glyph of Aspect of the Beast",
+						["recipeID"] = 124442
+					},
+					{
+						["name"] = "Glyph of Colossus Smash",
+						["recipeID"] = 89815
 					},
 					{
 						["name"] = "Glyph of Crackling Tiger Lightning",
 						["recipeID"] = 112462
 					},
 					{
-						["name"] = "Glyph of Crittermorph",
-						["recipeID"] = 56986
+						["name"] = "Glyph of Fighting Pose",
+						["recipeID"] = 112469
 					},
 					{
-						["name"] = "Glyph of Disguise",
-						["recipeID"] = 64260
+						["name"] = "Glyph of Fists of Fury",
+						["recipeID"] = 124445
 					},
 					{
-						["name"] = "Glyph of Shadowy Friends",
-						["recipeID"] = 126800
+						["name"] = "Glyph of Flying Serpent Kick",
+						["recipeID"] = 112463
 					},
 					{
-						["name"] = "Glyph of the Heavens",
-						["recipeID"] = 124466
+						["name"] = "Glyph of Mind Flay",
+						["recipeID"] = 124459
 					},
 					{
-						["name"] = "Glyph of the Ursol Chameleon",
-						["recipeID"] = 58287
+						["name"] = "Glyph of Spinning Crane Kick",
+						["recipeID"] = 124453
 					},
 					{
-						["name"] = "Glyph of Thunder Strike",
-						["recipeID"] = 68166
+						["name"] = "Glyph of Surging Mist",
+						["recipeID"] = 124455
+					},
+					{
+						["name"] = "Glyph of Touch of Death",
+						["recipeID"] = 124456
+					},
+				}
+			},
+			{
+				["name"] = "Clear Mind",
+				["categoryID"] = 105,
+				["g"] = {
+					{
+						["name"] = "Dust of Disappearance",
+						["recipeID"] = 92027
 					}
 				}
 			},
