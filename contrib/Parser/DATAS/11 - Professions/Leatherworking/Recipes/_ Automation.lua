@@ -1115,14 +1115,6 @@ profession(165, {	-- Leatherworking
 				["categoryID"] = 247,
 				["g"] = {
 					{
-						["name"] = "Blackened Dragonscale",
-						["recipeID"] = 163216
-					},
-					{
-						["name"] = "Deepsea Scale",
-						["recipeID"] = 163218
-					},
-					{
 						["name"] = "Heavy Savage Leather",
 						["recipeID"] = 78436
 					},
