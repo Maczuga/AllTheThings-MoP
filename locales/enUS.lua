@@ -163,8 +163,6 @@ AllTheThings.L = {
 		["Wrath of the Lich King"] = "WotLK",
 		["Cataclysm"] = "Cata",
 		["Mists of Pandaria"] = "MoP",
-		["Warlords of Draenor"] = "WoD",
-		["Battle for Azeroth"] = "BFA",
 		["Player vs Player"] = "PvP",
 		["Raid Finder"] = "LFR",
 		["Looking For Raid"] = "LFR",
@@ -187,8 +185,6 @@ AllTheThings.L = {
 		["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
 		["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
 		["Mini World Events"] = GetSpellInfo(57055),
-		["Emissary Quests"] = "Emissary",
-		["World Quests"] = "WQ",
 		["WoW Anniversary"] = "Anniversary",
 		
 	};
@@ -957,7 +953,7 @@ AllTheThings.L = {
 		[-64] = "Main Questline",
 		[-65] = "Blizzard Promotions",						 -- GetSpellInfo(190357).." "..select(1,GetCategoryInfo(15268))
 		[-66] = "Pet Battle",						 -- BATTLE_PET_SOURCE_5
-		[-67] = "Warlords of Draenor Chaallenge Mode Weapons",						 -- EXPANSION_NAME5.." "..CHALLENGE_MODE.." "..AUCTION_CATEGORY_WEAPONS
+
 		[-68] = "The Emerald Dream",						 -- DUNGEON_FLOOR_NIGHTMARERAID13
 		[-69] = "Maraudon Portal",						 -- GetSpellInfo(21127)
 		[-70] = "Foulspore Cavern [Orange]",						 -- DUNGEON_FLOOR_DESOLACE22.." - "..GetSpellInfo(251097)
@@ -1249,7 +1245,7 @@ AllTheThings.L = {
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-489] = "War Chest",
-		[-490] = "Dread Gladiator: Battle for Azeroth  Season 1",						 -- select(2, GetAchievementInfo(12945))
+
 		[-491] = "Tarot Cards",
 		[-492] = "Illusions",
 		[-493] = "Unknown location",						 -- TIME_UNKNOWN.." "..SPELL_TARGET_TYPE6_DESC
@@ -1258,15 +1254,12 @@ AllTheThings.L = {
 		[-496] = "Bizmo's Brawlpub",						 -- DUNGEON_FLOOR_DEEPRUNTRAM2
 		[-497] = "Demonic Offering",						 -- GetSpellInfo(213410).." "..GetSpellInfo(76724)
 		[-498] = "Twisting Nether",						 -- GetSpellInfo(23700)
-		[-499] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
+
 		[-500] = "WoW Anniversary",
 		[-520] = "Expansion Pre-Launch",
 		[-521] = "Burning Crusade: Dark Portal Opens",
 		[-522] = "Wrath of the Lich King: Zombie Infestation",
 		[-523] = "Cataclysm: Elemental Unrest",
-		[-525] = "Warlords of Draenor: Iron Horde Incursion",
-		[-526] = "Legion: Legion Invasion",
-		[-527] = "Battle for Azeroth: War of the Thorns",
 
 		[-531] = "2008 Spirit of Competition Event",
 		[-532] = "Heroes of the Storm Promotion",
@@ -1559,9 +1552,7 @@ AllTheThings.L = {
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
 		[-4168] = "The Scale's Embrace",
 		[-4169] = "Embrace of the Viper",
-		[-4170] = "Warlords Season 3",
-		[-4171] = "Warlords Season 2",
-		[-4172] = "Warlords Season 1",
+
 		[-4173] = "Season 16",
 		[-4174] = "Season 15",
 		[-4175] = "Season 14",
@@ -1770,12 +1761,9 @@ AllTheThings.L = {
 		[-10049] = "Command Center",						 -- BROKENSHORE_BUILDING_COMMANDCENTER
 		[-10050] = "Nether Disruptor",						 -- BROKENSHORE_BUILDING_NETHERDISRUPTOR
 		[-10051] = "Character",						 -- select(1,GetCategoryInfo(92))
-		[-10052] = "Battle for Azeroth",						 -- select(1,GetCategoryInfo(15284))
-		[-10053] = "Battle Dungeon",						 -- select(1,GetCategoryInfo(15285))
-		[-10054] = "Battle Raid",						 -- select(1,GetCategoryInfo(15286))
+
 		[-10055] = "Expansion Features",						 -- select(1,GetCategoryInfo(15301))
-		[-10056] = "Island Expeditions",						 -- select(1,GetCategoryInfo(15307))
-		[-10057] = "War Effort",						 -- select(1,GetCategoryInfo(15308))
+
 		[-10058] = "World",						 -- select(1,GetCategoryInfo(15283))
 		[-10059] = "Pandaria Scenarios",						 -- select(1,GetCategoryInfo(15302))
 		[-10060] = "The Four Celestials",						 -- select(2,GetAchievementInfo(7333))
@@ -1785,7 +1773,7 @@ AllTheThings.L = {
 		[-10064] = "Rare",						 -- BATTLE_PET_BREED_QUALITY4
 		[-10065] = "Epic",						 -- BATTLE_PET_BREED_QUALITY5
 		[-10066] = "Legendary",						 -- BATTLE_PET_BREED_QUALITY6
-		[-10067] = "Artifact",						 -- ITEM_QUALITY6_DESC
+
 		[-10068] = "PLACE_HOLDER",						 -- OPTION_TOOLTIP_ANIMATION
 		
 		--80000+ custom

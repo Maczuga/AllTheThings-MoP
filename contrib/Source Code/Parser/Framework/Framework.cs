@@ -340,10 +340,7 @@ namespace Parser_V2
                     else if (itemID < 29205) tier = tierLists[2];   // Burning Crusade
                     else if (itemID < 37649) tier = tierLists[3];   // Wrath of the Lich King
                     else if (itemID < 72019) tier = tierLists[4];   // Cataclysm
-                    else if (itemID < 100855) tier = tierLists[5];   // Mists of Pandaria
-                    else if (itemID < 130731) tier = tierLists[6];   // Warlords of Draenor
-                    else if (itemID < 156823) tier = tierLists[7];   // Legion
-                    else tier = tierLists[8];   // Battle For Azeroth
+                    else tier = tierLists[5];   // Mists of Pandaria
                 }
                 else tier = tierLists[1];
 
