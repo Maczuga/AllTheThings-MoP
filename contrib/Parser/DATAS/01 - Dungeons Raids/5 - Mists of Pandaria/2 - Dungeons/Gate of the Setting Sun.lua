@@ -8,17 +8,18 @@ _.Instances =
 		["groups"] = {
 			inst(303, { 	-- Gate of the Setting Sun
 				["groups"] = {
+					n(-17, {	-- Quests 
+						q(31363),	-- Lighting the Way
+						q(31364, {	-- That's a Big Bug!
+							i(87351),	-- Carapace Inlaid Drape
+							i(87352),	-- Cloak of the Unending Swarm
+							i(87353),	-- Cloak of Collective Thought
+							i(87354),	-- Drape of the Burning Signal
+							i(87355),	-- Mantid Exterminator's Cloak
+						}),
+					}),
 					d( 1, {	-- Normal
 						["groups"] = {
-							n(-17, {	-- Quests 					
-								q(31364, {	-- That's a Big Bug!
-									i(87351),	-- Carapace Inlaid Drape
-									i(87352),	-- Cloak of the Unending Swarm
-									i(87353),	-- Cloak of Collective Thought
-									i(87354),	-- Drape of the Burning Signal
-									i(87355),	-- Mantid Exterminator's Cloak
-								}),
-							}),
 							cr(56906, e(655, {	-- Saboteur Kip'tilak
 								i(80920),	-- Fallout Filter (7.1 - Removed from Game!)
 								i(80921),	-- Saboteur's Stablizing Bracers (7.1 - Removed from Game!)

@@ -36,28 +36,15 @@ _.Instances =
 					}),
 					d( 1, {	-- Normal
 						["groups"] = {
-							n(-17, {	-- Quests 						
-								q(31324, {
-									i(87310),	-- Stormstout Drink Napkin
-									i(87311),	-- Used Bar Rag
-									i(87312),	-- Auntie's Cooking Apron
-									i(87313),	-- Tasting Room Tablecloth
-									i(87314),	-- Blackened Chain Cloak
-								}),
-								q(31327, {
-									i(87301),	-- Master Brewer's Gloves
-									i(87302),	-- Barrel Stacker's Mitts
-									i(87303),	-- Wine Tasting Gloves
-									i(87304),	-- Uncorking Gloves
-									i(87305),	-- Barrel-Aged Gloves
-									i(87306),	-- Virmen Exterminator Gloves
-									i(87307),	-- Vegetable Chopping Handguards
-									i(87308),	-- Partycrasher's Gauntlets
-									i(87309),	-- Handguards of Sturdy Constitution
-								}),
-							}),
 							ach(6400),	-- How Did He Get Up There?
-							ach(6402),	-- Ling-Ting's Herbal Journey
+							{	-- Ling-Ting's Herbal Journey
+								["achievementID"] = 6402,	-- Ling-Ting's Herbal Journey
+								["g"] = {
+									{	-- Hopling
+										["itemID"] = 86562,	-- Hopling
+									},
+								},
+							},
 							cr(56637, e(668, {	-- Ook-Ook
 								i(80892),	-- Ook's Hozen Slicer (7.1 - Removed from Game!)
 								i(80896),	-- Nimbletoe Chestguard (7.1 - Removed from Game!)
@@ -84,7 +71,14 @@ _.Instances =
 						["groups"] = {
 							ach(6420),	-- Hopocalypse Now!
 							ach(6400),	-- How Did He Get Up There?
-							ach(6402),	-- Ling-Ting's Herbal Journey
+							{	-- Ling-Ting's Herbal Journey
+								["achievementID"] = 6402,	-- Ling-Ting's Herbal Journey
+								["g"] = {
+									{	-- Hopling
+										["itemID"] = 86562,	-- Hopling
+									},
+								},
+							},
 							cr(56637, e(668, {	-- Ook-Ook
 								ach(6089),	-- Keep Rollin' Rollin' Rollin'
 								i(81061),	-- Ook's Hozen Slicer (7.1 - Removed from Game!)
@@ -101,6 +95,11 @@ _.Instances =
 							})),
 							cr(59479, e(670, {	-- Yan-Zhu the Uncasked
 								ach(6456),	-- Heroic: Stormstout Brewery
+								{	-- Polyformic Acid Science: Yan-Zhu the Uncasked
+									["achievementID"] = 6715,	-- Polyformic Acid Science
+									["criteriaID"] = 6,	-- Yan-Zhu the Uncasked
+									["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
+								},
 								ach(6457),	-- Stormstout Brewery
 								i(81140),	-- Wort Stirring Rod (7.1 - Removed from Game!)
 								i(81062),	-- Gao's Keg Tapper (7.1 - Removed from Game!)

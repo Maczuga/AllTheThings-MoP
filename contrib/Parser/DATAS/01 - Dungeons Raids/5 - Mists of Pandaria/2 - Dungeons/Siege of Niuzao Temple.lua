@@ -8,6 +8,16 @@ _.Instances =
 		["groups"] = {
 			inst(324, { 	-- Siege of Niuzao Temple
 				["groups"] = {
+					n(-17, {	-- Quests
+						q(31365),	-- Somewhere Inside
+						q(31366, {	-- Take Down the Wing Leader
+							i(87356),	-- Badge of the Amber Siege
+							i(87357),	-- Bridge Breaker Medallion
+							i(87358),	-- Hardened Resin Pendant
+							i(87359),	-- Mantid Eye Amulet
+							i(87360),	-- Saboteur's Locket
+						}),
+					}),
 					d( 1, {	-- Normal
 						["groups"] = {
 							cr(61567, e(693, {	-- Vizier Jin'bak
@@ -47,6 +57,11 @@ _.Instances =
 						["lvl"] = 90,
 						["groups"] = {
 							cr(61567, e(693, {	-- Vizier Jin'bak
+								{	-- Polyformic Acid Science: Vizier Jin'bak
+									["achievementID"] = 6715,	-- Polyformic Acid Science
+									["criteriaID"] = 5,	-- Vizier Jin'bak
+									["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
+								},
 								i(81262),	-- Hood of Viridian Residue (7.1 - Removed from Game!)
 								i(81272),	-- Girdle of Soothing Detonation (7.1 - Removed from Game!)
 								i(81270),	-- Sap-Encrusted Legplates (7.1 - Removed from Game!)

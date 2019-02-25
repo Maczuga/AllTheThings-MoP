@@ -9,9 +9,9 @@
 --------------------------------------------------------------------------------
 --				This script is called directly after the Core.lua file. 	  --
 --------------------------------------------------------------------------------
-AllTheThings.Locales.enUS = {
+AllTheThings.L = {
 	-- General Text
-	["TITLE"] = "ALL THE THINGS";
+	["TITLE"] = "|cffb4b4ffALL THE THINGS|r";
 	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	--["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"\n\n|CFFFF0000Collection Mode Styles:\n\nUnique + Main Only = LFR Mode\nUnique = Normal Mode\nCompletitonist = Heroic Mode\nDebug + Completionist = Mythic Mode\n";
 	["LOADING"] = "v%s loaded successfully.";
@@ -2191,6 +2191,7 @@ AllTheThings.Locales.enUS = {
 		[257999] = "Interface\\Icons\\70_professions_scroll_02",
 		[258978] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome02",
 		[270917] = "Interface\\Icons\\INV_Misc_Book_16",
+		[271844] = "Interface\\Icons\\inv_misc_note_05",
 		[271849] = "Interface\\Icons\\inv_misc_treasurechest04d",
 		[271850] = "Interface\\Icons\\inv_misc_treasurechest04d",
 		[272179] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
@@ -2234,16 +2235,21 @@ AllTheThings.Locales.enUS = {
 		[277373] = "Interface\\Icons\\INV_MISC_HERB_06",
 		[277459] = "Interface\\Icons\\Inv_misc_trinket6oOG_CyclopianPig3",
 		[278313] = "Interface\\Icons\\INV_Misc_NotePicture1c",
+		[278368] = "Interface\\Icons\\inv_misc_note_05",
+		[278447] = "Interface\\Icons\\archaeology_5_0_spearofxuen",
 		[278669] = "Interface\\Icons\\INV_Misc_Book_08",
 		[278675] = "Interface\\Icons\\Trade_Archaeology_Bones of Transformation",
 		[279337] = "Interface\\Icons\\INV_Misc_Book_08",
 		[280727] = "Interface\\Icons\\INV_Misc_ScrollUnrolled02",
+		[281583] = "Interface\\Icons\\inv_jewelcrafting_gem_05",
+		[281639] = "Interface\\Icons\\inv_jewelcrafting_70_cutgem03_blue",
 		[281646] = "Interface\\Icons\\INV_Potion_147",
 		[281673] = "Interface\\Icons\\INV_Misc_Book_09",
 		[282448] = "Interface\\Icons\\INV_Misc_ScrollUnrolled04",
 		[282457] = "Interface\\Icons\\Spell_Shaman_TotemRecall",
 		[282478] = "Interface\\Icons\\INV_Crate_03",
 		[284426] = "Interface\\Icons\\inv_pick_03",
+		[287441] = "Interface\\Icons\\inv_misc_note_05",
 		[288157] = "Interface\\Icons\\INV_Misc_ScrollUnrolled02",
 		[288214] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[288622] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
@@ -2253,6 +2259,7 @@ AllTheThings.Locales.enUS = {
 		[292523] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[290765] = "Interface\\Icons\\INV_Ore_Gold_Nugget",
 		[290993] = "Interface\\Icons\\inv_misc_treasurechest04b",
+		[291143] = "Interface\\Icons\\inv_misc_wrench_01",
 		[9999999] = "Interface\\Icons\\Garrison_SilverChest",
 		[9999998] = "Interface\\Icons\\Garrison_SilverChest",
 		[9999997] = "Interface\\Icons\\Garrison_SilverChest",
@@ -3324,11 +3331,9 @@ AllTheThings.Locales.enUS = {
 		{0, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 		{21, "|CFFFF0000May require a specific Micro-Holiday to be active.|r", "Micro-Holiday (44)"}; -- 44
+		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation for Ulduar broke a number of Hard Mode loot tables.|r", "Ulduar Hard Mode Loot (45)"}; -- 45
 	};
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
 };
-
--- Set the fallback file for all translation IDs.
-AllTheThings.Locales.Base = { __index = AllTheThings.Locales.enUS };

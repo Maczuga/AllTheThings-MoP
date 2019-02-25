@@ -16,19 +16,19 @@ _.Instances =
 									["qg"] = 64838,	-- Hooded Crusader
 								}),
 								q(31516, {	-- Unto Dust Thou Shalt Return
-									["groups"] = {
-									i(87361),	-- Martial Purification Gloves
-									i(87362),	-- Gauntlets of Righteous Conviction
-									i(87363),	-- Zealous Fervor Handguards
-									i(87364),	-- Gloves of Sanctity
-									i(87365),	-- Beneficent Gloves
-									i(87366),	-- Scarlet Visionary Gloves
-									i(87367),	-- Gloves of Fiery Purification
-									i(87368),	-- Gauntlets of Bloody Judgment
-									i(87369),	-- Crimson Monk Handwraps
-									},
-									["qg"] = 64855,	-- Blade of the Anointed
 									["sourceQuests"] = { 31515 },	-- Blades of the Anointed
+									["qg"] = 64855,	-- Blade of the Anointed
+									["groups"] = {
+										i(87361),	-- Martial Purification Gloves
+										i(87362),	-- Gauntlets of Righteous Conviction
+										i(87363),	-- Zealous Fervor Handguards
+										i(87364),	-- Gloves of Sanctity
+										i(87365),	-- Beneficent Gloves
+										i(87366),	-- Scarlet Visionary Gloves
+										i(87367),	-- Gloves of Fiery Purification
+										i(87368),	-- Gauntlets of Bloody Judgment
+										i(87369),	-- Crimson Monk Handwraps
+									},
 								}),
 							}),
 							cr(59789, e(688, {	-- Thalnos the Soulrender

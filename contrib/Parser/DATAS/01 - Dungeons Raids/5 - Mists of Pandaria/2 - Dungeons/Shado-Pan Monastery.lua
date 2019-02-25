@@ -8,32 +8,32 @@ _.Instances =
 		["groups"] = {
 			inst(312, { 	-- Shado-Pan Monastery
 				["groups"] = {
+					n(-17, {	-- Quests 				
+						q(30757, {	-- Lord of the Shado-Pan
+							i(87315),	-- Cowl of Angry Thoughts
+							i(87316),	-- Headcover of Disturbed Serenity
+							i(87317),	-- Vexing Coif
+							i(87318),	-- Hood of Endless Agitation
+							i(87319),	-- Antagonist's Headwrap
+							i(87320),	-- Headcover of the Impatient
+							i(87321),	-- Cowl of Internal Strife
+							i(87322),	-- Helm of Enmity
+							i(87323),	-- Helm of Unstable Temperament
+						}),
+						q(31342, {	-- The Path to Respect Lies in Violence
+							i(87324),	-- Cord of Sha Ravagery
+							i(87325),	-- Kun-Lai Climbing Belt
+							i(87326),	-- Sha-Trapper Waistguard
+							i(87327),	-- Cloudstriker Cord
+							i(87328),	-- Shado-Pan Initiate's Belt
+							i(87329),	-- Elemental Archer's Links
+							i(87330),	-- Monastery Guardian Waistguard
+							i(87331),	-- Girdle of the Broken Seal
+							i(87332),	-- Cord of Disturbed Dreams
+						}),
+					}),
 					d( 1, {	-- Normal
 						["groups"] = {
-							n(-17, {	-- Quests 				
-								q(30757, {
-									i(87315),	-- Cowl of Angry Thoughts
-									i(87316),	-- Headcover of Disturbed Serenity
-									i(87317),	-- Vexing Coif
-									i(87318),	-- Hood of Endless Agitation
-									i(87319),	-- Antagonist's Headwrap
-									i(87320),	-- Headcover of the Impatient
-									i(87321),	-- Cowl of Internal Strife
-									i(87322),	-- Helm of Enmity
-									i(87323),	-- Helm of Unstable Temperament
-								}),
-								q(31342, {
-									i(87324),	-- Cord of Sha Ravagery
-									i(87325),	-- Kun-Lai Climbing Belt
-									i(87326),	-- Sha-Trapper Waistguard
-									i(87327),	-- Cloudstriker Cord
-									i(87328),	-- Shado-Pan Initiate's Belt
-									i(87329),	-- Elemental Archer's Links
-									i(87330),	-- Monastery Guardian Waistguard
-									i(87331),	-- Girdle of the Broken Seal
-									i(87332),	-- Cord of Disturbed Dreams
-								}),
-							}),
 							cr(56747, e(673, {	-- Gu Cloudstrike
 								i(80909),	-- Azure Serpent Chestguard (7.1 - Removed from Game!)
 								i(80908),	-- Sparkbreath Girdle (7.1 - Removed from Game!)

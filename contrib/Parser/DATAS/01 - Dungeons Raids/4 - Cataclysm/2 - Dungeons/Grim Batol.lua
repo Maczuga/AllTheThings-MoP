@@ -110,14 +110,6 @@ _.Instances =
 								i( 56449),	-- Throngus's Finger
 							})),
 							cr(40319, e(133, { -- Drahga Shadowburner
-								n(-50, {    -- Love is in the Air
-									["groups"] = {
-										ig(44731),	-- Bouquet of Ebon Roses
-										ig(22206),	-- Bouquet of Red Roses
-									},
-									["achievementID"] = 1693,    -- Fool For Love
-									["u"] = 18,
-								}),
 								i( 56454),	-- Windwalker Blade
 								i( 56452),	-- Earthshape Pauldrons
 								i( 56450),	-- Azureborne Cloak

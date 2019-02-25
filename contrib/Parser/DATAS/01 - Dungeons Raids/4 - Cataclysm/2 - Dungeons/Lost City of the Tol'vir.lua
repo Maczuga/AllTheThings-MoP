@@ -112,6 +112,9 @@ _.Instances =
 							}),	
 						})),
 						cr(44819, e(122, {	-- Siamat
+							{	-- Lost City of the Tol'vir
+								["achievementID"] = 4848,	-- Lost City of the Tol'vir
+							},
 							i(56396),	-- Hammer of Sparks
 							i(56402),	-- Zora's Ward
 							i(56399),	-- Mantle of Master Cho

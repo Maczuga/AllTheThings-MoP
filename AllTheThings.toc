@@ -2,16 +2,25 @@
 ## Interface: 50400
 ## Title: AllTheThings-MoP
 ## Name: AllTheThings
-## SavedVariables: AllTheThingsAD, AllTheThingsDebugData, AllTheThingsHarvestItems
-## SavedVariablesPerCharacter: AllTheThingsPCD
+## SavedVariables: AllTheThingsSettings, AllTheThingsAD, AllTheThingsDebugData, AllTheThingsHarvestItems
+## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter, AllTheThingsPCD
 ## Notes: Addon for Tracking Collections & Account Completion
-## Version: 1.8.3
+## Version: 1.8.4
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 lib\!NoTaint_UIDropDownMenu\UIDropDownMenu.xml
 src\base.lua
 locales\enUS.lua
+locales\enGB.lua
+locales\esES.lua
+locales\esMX.lua
+locales\deDE.lua
+locales\frFR.lua
+locales\itIT.lua
+locales\koKR.lua
+locales\ptBR.lua
+locales\ruRU.lua
 AllTheThings.lua
 db\Presets.lua
 db\RaceDB.lua
@@ -21,5 +30,5 @@ db\HolidayDB.lua
 db\FlightPathDB.lua
 db\TradeSkillCategoryDB.lua
 db\Categories.lua
-Settings.lua
 ScrollFrame.xml
+Settings.lua

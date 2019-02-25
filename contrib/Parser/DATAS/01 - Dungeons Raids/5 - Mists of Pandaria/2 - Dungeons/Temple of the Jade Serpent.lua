@@ -8,31 +8,33 @@ _.Instances =
 		["groups"] = {
 			inst(313, { 	-- Temple of the Jade Serpent
 				["groups"] = {
+					n(-17, {	-- Quests 					
+						q(31356, {	-- Deep Doubts, Deep Wisdom
+							i(87283),	-- Windstrong Leggings
+							i(87284),	-- Leggings of the Fifth Sun
+							i(87285),	-- Legguards of the Tides
+							i(87286),	-- Legplates of Absolute Clarity
+							i(87287),	-- Leggings of Inner Peace
+							i(87288),	-- Lui's Leggings
+							i(87289),	-- Equilibrium Legwraps
+							i(87290),	-- Legguards of Ironclad Confidence
+							i(87291),	-- Legplates of Pure Purpose
+						}),
+						q(31355, {	-- Restoring Jade's Purity
+							i(87292),	-- Flameheart Wristguards
+							i(87293),	-- Defiant Archer's Bracers
+							i(87294),	-- Scrollkeeper's Cuffs
+							i(87295),	-- Summerpetal Cuffs
+							i(87296),	-- Coiled Serpent Armband
+							i(87297),	-- Wise Mari's Bracers
+							i(87298),	-- Bracers of Ancient Tales
+							i(87299),	-- Eversight Armplates
+							i(87300),	-- Armplates of the Jade Idol
+						}),
+					}),
 					d( 1, {	-- Normal
 						["groups"] = {
-							n(-17, {	-- Quests 					
-								q(31356, {
-									i(87283),	-- Windstrong Leggings
-									i(87284),	-- Leggings of the Fifth Sun
-									i(87285),	-- Legguards of the Tides
-									i(87286),	-- Legplates of Absolute Clarity
-									i(87287),	-- Leggings of Inner Peace
-									i(87288),	-- Lui's Leggings
-									i(87289),	-- Equilibrium Legwraps
-									i(87290),	-- Legguards of Ironclad Confidence
-									i(87291),	-- Legplates of Pure Purpose
-								}),
-								q(31355, {
-									i(87292),	-- Flameheart Wristguards
-									i(87293),	-- Defiant Archer's Bracers
-									i(87294),	-- Scrollkeeper's Cuffs
-									i(87295),	-- Summerpetal Cuffs
-									i(87296),	-- Coiled Serpent Armband
-									i(87297),	-- Wise Mari's Bracers
-									i(87298),	-- Bracers of Ancient Tales
-									i(87299),	-- Eversight Armplates
-									i(87300),	-- Armplates of the Jade Idol
-								}),
+							n(-17, {	-- Quests
 								{
 									["questID"] = 33107,		-- Bad Feeling, Worse Result
 									["objectID"] = 221413,		-- Lin Family Scroll
@@ -99,6 +101,11 @@ _.Instances =
 								i(81073),	-- Stonestep Boots (7.1 - Removed from Game!)
 							})),
 							cr(56732, e(658, {	-- Liu Flameheart
+								{	-- Polyformic Acid Science: Liu Flameheart
+									["achievementID"] = 6715,	-- Polyformic Acid Science
+									["criteriaID"] = 2,	-- Liu Flameheart
+									["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
+								},
 								i(81067),	-- Firebelcher Hand Cannon (7.1 - Removed from Game!)
 								i(81070),	-- Serpentstrike Shoulderpads (7.1 - Removed from Game!)
 								i(81084),	-- Cape of Entaglement (7.1 - Removed from Game!)

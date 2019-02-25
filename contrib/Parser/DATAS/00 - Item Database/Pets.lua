@@ -147,6 +147,7 @@ pet(8501, 67); 		-- Hawk Owl
 pet(46802, 228); 	-- Heavy Murloc Egg (Grunty)
 pet(23713, 130); 	-- Hippogryph Hatchling
 pet(86563, 836);	-- Hollow Reed (Aqua Strider)
+pet(86562, 835);	-- Hopling
 pet(72045, 332); 	-- Horde Balloon
 pet(70140, 317);	-- Hyjal Bear Cub
 pet(53641, 253); 	-- Ice Chip (Frigid Frostling)
