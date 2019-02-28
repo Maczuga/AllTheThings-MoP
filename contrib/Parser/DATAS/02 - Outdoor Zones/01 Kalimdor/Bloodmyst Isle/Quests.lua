@@ -86,7 +86,7 @@ _.Zones =
 						},
 						["qg"] = 17684,	-- Vindicator Boros
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = 9693,	-- What Argus Means to Me
+						["sourceQuests"] = { 9693 },	-- What Argus Means to Me
 					},
 					{	-- Catch and Release
 						["questID"] = 9629,
@@ -345,7 +345,7 @@ _.Zones =
 						["questID"] = 9668,
 						["qg"] = 17649,	-- Kessel
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = 9666,	-- Declaration of Power
+						["sourceQuests"] = { 9666 },	-- Declaration of Power
 					},
 					{	-- Restoring Sanctity
 						["questID"] = 9687,
@@ -359,7 +359,7 @@ _.Zones =
 						},
 						["qg"] = 17600,	-- Draenei Cartographer
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = 9620,	-- The Missing Survey Team
+						["sourceQuests"] = { 9620 },	-- The Missing Survey Team
 					},
 					{	-- Saving Princess Stillpine
 						["questID"] = 9667,
@@ -389,7 +389,7 @@ _.Zones =
 						["questID"] = 9674,
 						["qg"] = 17712,	-- Captain Edward Hanes
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = 9672,	-- The Bloodcurse Legacy
+						["sourceQuests"] = { 9672 },	-- The Bloodcurse Legacy
 					},
 					{	-- The Cryo-Core
 						["questID"] = 9703,

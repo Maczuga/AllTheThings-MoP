@@ -28,7 +28,7 @@ _.Zones =
 								["questID"] = 28469,
 								["qg"] = 9298,	-- Donova Snowden
 								["coord"] = { 25.1, 58.5 },
-								["sourceQuests"] = 28467,	-- Mystery Goo
+								["sourceQuests"] = { 28467 },	-- Mystery Goo
 							},
 							{	-- Crudely-Written Log
 								["qg"] = 10738,	-- High Chief Winterfall
@@ -319,7 +319,7 @@ _.Zones =
 								["questID"] = 28830,
 								["qg"] = 50263,	-- Jadrag the Slicer
 								["coord"] = { 61.8, 74.6 },
-								["sourceQuests"] = 28829,	-- Razor Beak and Antlers Pointy
+								["sourceQuests"] = { 28829 },	-- Razor Beak and Antlers Pointy
 							},
 							{	-- Damn You, Frostilicus
 								["questID"] = 28831,
@@ -368,7 +368,7 @@ _.Zones =
 									i(67190),	-- Ice Avatar Legguards
 									i(67207),	-- Winterwater Cloak
 								},
-								["sourceQuests"] = 28839,	-- Magic Prehistoric
+								["sourceQuests"] = { 28839 },	-- Magic Prehistoric
 							},
 							{	-- Umbranse's Deliverance
 								["questID"] = 28842,
@@ -380,7 +380,7 @@ _.Zones =
 								},
 								["qg"] = 10929,	-- Haleh
 								["coord"] = { 58.0, 63.7 },
-								["sourceQuests"] = 28840,	-- Winterwater
+								["sourceQuests"] = { 28840 },	-- Winterwater
 							},
 						}),
 					}),
@@ -692,7 +692,7 @@ _.Zones =
 						["questID"] = 28841,
 						["qg"] = 10929,	-- Haleh
 						["coord"] = { 58.0, 63.7 },
-						["sourceQuests"] = 28840,	-- Winterwater
+						["sourceQuests"] = { 28840 },	-- Winterwater
 					},
 					{	-- The Crystal of Zin-Malor
 						["questID"] = 5253,
