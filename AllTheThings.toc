@@ -21,8 +21,10 @@ locales\itIT.lua
 locales\koKR.lua
 locales\ptBR.lua
 locales\ruRU.lua
-AllTheThings.lua
 db\Presets.lua
+ScrollFrame.xml
+Settings.lua
+AllTheThings.lua
 db\RaceDB.lua
 db\NPCDB.lua
 db\ItemDB.lua
@@ -30,5 +32,3 @@ db\HolidayDB.lua
 db\FlightPathDB.lua
 db\TradeSkillCategoryDB.lua
 db\Categories.lua
-ScrollFrame.xml
-Settings.lua
