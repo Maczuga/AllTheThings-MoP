@@ -99,12 +99,14 @@ local FilterSettingsBase = {
 local TooltipSettingsBase = {
 	__index = {
 		["Auto:MiniList"] = true,
+		["Auto:ProfessionList"] = true,
 		["Celebrate"] = true,
 		["ClassRequirements"] = true,
 		["Descriptions"] = true,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
 		["Expand:Difficulty"] = true,
+		["IncludeOriginalSource"] = true,
 		["LootSpecializations"] = true,
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
@@ -500,6 +502,10 @@ settings.UpdateMode = function(self)
 		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 	else
 		app.GroupRequirementsFilter = app.NoFilter;
+	end
+	app:UnregisterEvent("TAXIMAP_OPENED");
+	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
+		app:RegisterEvent("TAXIMAP_OPENED");
 	end
 end
 
