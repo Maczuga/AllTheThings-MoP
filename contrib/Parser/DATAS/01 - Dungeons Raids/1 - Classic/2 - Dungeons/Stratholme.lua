@@ -44,14 +44,9 @@ _.Instances =
 								i(17683, {	-- Book: Gift of the Wild Rank 2
 								--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
 								}),
-								i(16248, {	-- Formula: Enchant Weapon - Unholy
+								i(16249,  {  -- Formula: Enchant 2H Weapon - Major Intellect
 									["crs"] = {
-										10398,	-- Thuzadin Shadowcaster
-									},
-								}),
-								i(16052,  {  -- Schematic: Voice Amplification Modulator
-									["crs"] = {
-										10426,  -- Risen Inquisitor
+										10422,  -- Risen Sorcerer
 									},
 								}),
 								i(18743),	-- Gracious Cape
@@ -60,6 +55,16 @@ _.Instances =
 								i(18744),	-- Plaguebat Fur Gloves
 								i(18736),	-- Plaguehound Leggings
 								i(18745),	-- Sacred Cloth Leggings
+								i(18658,  { -- Schematic: Ultra-Flash Shadow Reflector
+									["crs"] = {
+										10426,  -- Risen Inquisitor
+									},
+								}),
+								i(16052,  { -- Schematic: Voice Amplification Modulator
+									["crs"] = {
+										10426,  -- Risen Inquisitor
+									},
+								}),
 								i(18742),	-- Stratholme Militia Shoulderguard
 							}),
 							n(10393, {			-- Skul
@@ -260,22 +265,25 @@ _.Instances =
 									i(17683, {	-- Book: Gift of the Wild Rank 2
 									--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
 									}),
+									i(16248, {	-- Formula: Enchant Weapon - Unholy
+										["crs"] = {
+											10398,	-- Thuzadin Shadowcaster
+										},
+									}),
 									i(18743),	-- Gracious Cape
 									i(17061),	-- Juno's Shadow
 									i(18741),	-- Morlune's Bracer
 									i(18744),	-- Plaguebat Fur Gloves
 									i(18736),	-- Plaguehound Leggings
-									i(18745),	-- Sacred Cloth Leggings
-									i(18742),	-- Stratholme Militia Shoulderguard
-									n(10422, {	-- Risen Sorcerer
 										i(16249),	-- Formula: Enchant 2H Weapon - Major Intellect
-									}),
 									i(74274, {	-- Plans: Phantom Blade
 										["crs"] = {
 											10463,	-- Shrieking Banshee
 											10464,	-- Wailing Banshee
 										},
 									}),
+									i(18745),	-- Sacred Cloth Leggings
+									i(18742),	-- Stratholme Militia Shoulderguard
 									--[[ No evidence that this drops from any mobs, only that it can be looted from the Blacksmithing Plans object.
 									n(10391, {	-- Skeletal Berserker
 										["groups"] = {

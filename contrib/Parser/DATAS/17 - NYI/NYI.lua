@@ -154,6 +154,7 @@ _.NeverImplemented =
 				un(1, i(7953)),		-- Mask of Thero-Shan
 				un(1, i(7949)),		-- Leggings of Thero-Shan
 			}),
+			un(1, i(27719)),	-- Aldor Leggings of Puissance (never made it to live)
 			un(1, i(14550)),	-- Bladebane Armguards (Leather)
 			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
 			un(1, i(5821)),		-- Darkstalker Boots (Leather)

@@ -233,7 +233,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(  6902),	-- Bands of Serra'kis
 				i(  6901),	-- Glowing Thresher Cape
 			})),
-			cr(74728, e( 437, { -- Twilight Lord Bathiel
+			cr(74728, e( 437, {	-- Twilight Lord Bathiel
 				i(  1155),	-- Rod of the Sleepwalker
 				i(  6903),	-- Gaze Dreamer Pants
 			})),

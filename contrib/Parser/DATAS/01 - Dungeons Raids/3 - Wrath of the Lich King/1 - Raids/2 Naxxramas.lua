@@ -4,7 +4,7 @@
 
 _.Instances = 
 {
-	{ -- Wrath of the Lich King
+	{	-- Wrath of the Lich King
 		["groups"] = {
 			inst(754, { 	-- Naxxramas
 				["groups"] = {
@@ -22,12 +22,228 @@ _.Instances =
 							},
 						},
 						n(0, {		-- Zone Drop
-							i(39467),	-- Minion Bracers
-							i(39427),	-- Omen of Ruin
-							i(39468),	-- The Stray
-							i(39473),	-- Contortion
-							i(39472),	-- Chain of Latent Energies
-							i(39470),	-- Medallion of the Disgraced
+							i(39467, {	-- Minion Bracers
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
+							i(39427, {	-- Omen of Ruin
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
+							i(39468, {	-- The Stray
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
+							i(39473, {	-- Contortion
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
+							i(39472, {	-- Chain of Latent Energies
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
+							i(39470, {	-- Medallion of the Disgraced
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
 						}),
 						n(-368, {	-- The Arachnid Quarter
 							ach(562),	-- The Arachnid Quarter (10 player)
@@ -165,7 +381,7 @@ _.Instances =
 										["criteriaID"] = 9,			-- Loatheb slain
 									},
 									i(93032),	-- Blighted Spore (PET!)
-									i(40622, { -- Spaulders of the Lost Conqueror
+									i(40622, {	-- Spaulders of the Lost Conqueror
 										i(39518),	-- Heroes' Shoulderpads of Faith
 										i(39631),	-- Heroes' Redemption Spaulders
 										i(39637),	-- Heroes' Redemption Shoulderplates
@@ -173,7 +389,7 @@ _.Instances =
 										i(39499),	-- Heroes' Plagueheart Shoulderpads
 										i(39529),	-- Heroes' Mantle of Faith
 									}),
-									i(40623, { -- Spaulders of the Lost Protector
+									i(40623, {	-- Spaulders of the Lost Protector
 										i(39590),	-- Heroes' Earthshatter Spaulders
 										i(39596),	-- Heroes' Earthshatter Shoulderpads
 										i(39604),	-- Heroes' Earthshatter Shoulderguards
@@ -181,7 +397,7 @@ _.Instances =
 										i(39613),	-- Heroes' Dreadnaught Pauldrons
 										i(39581),	-- Heroes' Cryptstalker Spaulders
 									}),
-									i(40624, { -- Spaulders of the Lost Vanquisher
+									i(40624, {	-- Spaulders of the Lost Vanquisher
 										i(39621),	-- Heroes' Scourgeborne Shoulderplates
 										i(39627),	-- Heroes' Scourgeborne Pauldrons
 										i(39494),	-- Heroes' Frostfire Shoulderpads
@@ -254,7 +470,7 @@ _.Instances =
 										["achievementID"] = 568,	-- The Military Quarter (10 player)
 										["criteriaID"] = 3,	-- The Four Horsemen slain
 									},
-									i(40610, { -- Chestguard of the Lost Conqueror
+									i(40610, {	-- Chestguard of the Lost Conqueror
 										i(39515),	-- Heroes' Robe of Faith
 										i(39629),	-- Heroes' Redemption Tunic
 										i(39633),	-- Heroes' Redemption Chestpiece
@@ -262,7 +478,7 @@ _.Instances =
 										i(39523),	-- Heroes' Raiment of Faith
 										i(39497),	-- Heroes' Plagueheart Robe
 									}),
-									i(40611, { -- Chestguard of the Lost Protector
+									i(40611, {	-- Chestguard of the Lost Protector
 										i(39588),	-- Heroes' Earthshatter Tunic
 										i(39592),	-- Heroes' Earthshatter Hauberk
 										i(39597),	-- Heroes' Cryptstalker Tunic
@@ -270,7 +486,7 @@ _.Instances =
 										i(39606),	-- Heroes' Dreadnaught Battleplate
 										i(39579),	-- Heroes' Earthshatter Chestguard
 									}),
-									i(40612, { -- Chestguard of the Lost Vanquisher
+									i(40612, {	-- Chestguard of the Lost Vanquisher
 										i(39623),	-- Heroes' Scourgeborne Chestguard
 										i(39617),	-- Heroes' Scourgeborne Battleplate
 										i(39492),	-- Heroes' Frostfire Robe
@@ -347,7 +563,7 @@ _.Instances =
 										["criteriaID"] = 10,		-- Gluth slain
 									},
 									i(93029),	-- Gluth's Bone (PET!)
-									i(40610, { -- Chestguard of the Lost Conqueror
+									i(40610, {	-- Chestguard of the Lost Conqueror
 										i(39515),	-- Heroes' Robe of Faith
 										i(39629),	-- Heroes' Redemption Tunic
 										i(39633),	-- Heroes' Redemption Chestpiece
@@ -355,7 +571,7 @@ _.Instances =
 										i(39523),	-- Heroes' Raiments of Faith
 										i(39497),	-- Heroes' Plagueheart Robe
 									}),
-									i(40611, { -- Chestguard of the Lost Protector
+									i(40611, {	-- Chestguard of the Lost Protector
 										i(39588),	-- Heroes' Earthshatter Tunic
 										i(39592),	-- Heroes' Earthshatter Hauberk
 										i(39597),	-- Heroes' Earthshatter Chestguard
@@ -363,7 +579,7 @@ _.Instances =
 										i(39606),	-- Heroes' Dreadnaught Battleplate
 										i(39579),	-- Heroes' Cryptstalker Tunic
 									}),
-									i(40612, { -- Chestguard of the Lost Vanquisher
+									i(40612, {	-- Chestguard of the Lost Vanquisher
 										i(39623),	-- Heroes' Scourgeborne Chestguard
 										i(39617),	-- Heroes' Scourgeborne Battleplate
 										i(39492),	-- Heroes' Frostfire Robe
@@ -372,7 +588,7 @@ _.Instances =
 										i(39554),	-- Heroes' Dreamwalker Raiments
 										i(39558),	-- Heroes' Bonescythe Breastplate
 									}),
-									i(40619, { -- Leggings of the Lost Conqueror
+									i(40619, {	-- Leggings of the Lost Conqueror
 										i(39636),	-- Heroes' Redemption Legplates
 										i(39641),	-- Heroes' Redemption Legguards
 										i(39630),	-- Heroes' Redemption Greaves
@@ -380,7 +596,7 @@ _.Instances =
 										i(39528),	-- Heroes' Pants of Faith
 										i(39517),	-- Heroes' Leggings of Faith
 									}),
-									i(40620, { -- Leggings of the Lost Protector
+									i(40620, {	-- Leggings of the Lost Protector
 										i(39603),	-- Heroes' Earthshatter War-Kilt
 										i(39589),	-- Heroes' Earthshatter Legguards
 										i(39595),	-- Heroes' Earthshatter Kilt
@@ -388,7 +604,7 @@ _.Instances =
 										i(39612),	-- Heroes' Dreadnaught Legguards
 										i(39580),	-- Heroes' Cryptstalker Legguards
 									}),
-									i(40621, { -- Leggings of the Lost Vanquisher
+									i(40621, {	-- Leggings of the Lost Vanquisher
 										i(39620),	-- Heroes' Scourgeborne Legplates
 										i(39626),	-- Heroes' Scourgeborne Legguards
 										i(39493),	-- Heroes' Frostfire Leggings
@@ -397,7 +613,7 @@ _.Instances =
 										i(39539),	-- Heroes' Dreamwalker Leggings
 										i(39564),	-- Heroes' Bonescythe Legplates
 									}),
-									i(40622, { -- Spaulders of the Lost Conqueror
+									i(40622, {	-- Spaulders of the Lost Conqueror
 										i(39518),	-- Heroes' Shoulderpads of Faith
 										i(39631),	-- Heroes' Redemption Spaulders
 										i(39637),	-- Heroes' Redemption Shoulderplates
@@ -405,7 +621,7 @@ _.Instances =
 										i(39499),	-- Heroes' Plagueheart Shoulderpads
 										i(39529),	-- Heroes' Mantle of Faith
 									}),
-									i(40623, { -- Spaulders of the Lost Protector
+									i(40623, {	-- Spaulders of the Lost Protector
 										i(39590),	-- Heroes' Earthshatter Spaulders
 										i(39596),	-- Heroes' Earthshatter Shoulderpads
 										i(39604),	-- Heroes' Earthshatter Shoulderguards
@@ -413,7 +629,7 @@ _.Instances =
 										i(39613),	-- Heroes' Dreadnaught Pauldrons
 										i(39581),	-- Heroes' Cryptstalker Spaulders
 									}),
-									i(40624, { -- Spaulders of the Lost Vanquisher
+									i(40624, {	-- Spaulders of the Lost Vanquisher
 										i(39621),	-- Heroes' Scourgeborne Shoulderplates
 										i(39627),	-- Heroes' Scourgeborne Pauldrons
 										i(39494),	-- Heroes' Frostfire Shoulderpads
@@ -542,7 +758,7 @@ _.Instances =
 										["achievementID"] = 578,	-- The Dedicated Few (10 player)
 										["criteriaID"] = 11,		-- Thaddius slain
 									},
-									i(40619, { -- Leggings of the Lost Conqueror
+									i(40619, {	-- Leggings of the Lost Conqueror
 										i(39636),	-- Heroes' Redemption Legplates
 										i(39641),	-- Heroes' Redemption Legguards
 										i(39630),	-- Heroes' Redemption Greaves
@@ -550,7 +766,7 @@ _.Instances =
 										i(39528),	-- Heroes' Pants of Faith
 										i(39517),	-- Heroes' Leggings of Faith
 									}),
-									i(40620, { -- Leggings of the Lost Protector
+									i(40620, {	-- Leggings of the Lost Protector
 										i(39603),	-- Heroes' Earthshatter War-Kilt
 										i(39589),	-- Heroes' Earthshatter Legguards
 										i(39595),	-- Heroes' Earthshatter Kilt
@@ -558,7 +774,7 @@ _.Instances =
 										i(39612),	-- Heroes' Dreadnaught Legguards
 										i(39580),	-- Heroes' Cryptstalker Legguards
 									}),
-									i(40621, { -- Leggings of the Lost Vanquisher
+									i(40621, {	-- Leggings of the Lost Vanquisher
 										i(39620),	-- Heroes' Scourgeborne Legplates
 										i(39626),	-- Heroes' Scourgeborne Legguards
 										i(39493),	-- Heroes' Frostfire Leggings
@@ -618,7 +834,7 @@ _.Instances =
 										["achievementID"] = 578,	-- The Dedicated Few (10 player)
 										["criteriaID"] = 1,			-- Kel'Thuzad slain
 									},
-									i(40616, { -- Helm of the Lost Conqueror
+									i(40616, {	-- Helm of the Lost Conqueror
 										i(39635),	-- Heroes' Redemption Helm
 										i(39628),	-- Heroes' Redemption Headpiece
 										i(39640),	-- Heroes' Redemption Faceguard
@@ -626,7 +842,7 @@ _.Instances =
 										i(39514),	-- Heroes' Crown of Faith
 										i(39521),	-- Heroes' Circlet of Faith
 									}),
-									i(40617, { -- Helm of the Lost Protector
+									i(40617, {	-- Helm of the Lost Protector
 										i(39594),	-- Heroes' Earthshatter Helm
 										i(39583),	-- Heroes' Earthshatter Headpiece
 										i(39602),	-- Heroes' Earthshatter Faceguard
@@ -634,7 +850,7 @@ _.Instances =
 										i(39610),	-- Heroes' Dreadnaught Greathelm
 										i(39578),	-- Heroes' Cryptstalker Headpiece
 									}),
-									i(40618, { -- Helm of the Lost Vanquisher
+									i(40618, {	-- Helm of the Lost Vanquisher
 										i(39619),	-- Heroes' Scourgeborne Helmet
 										i(39625),	-- Heroes' Scourgeborne Faceguard
 										i(39491),	-- Heroes' Frostfire Circlet
@@ -671,13 +887,265 @@ _.Instances =
 							},
 						},
 						n(0, {		-- Zone Drop
-							i(40410),	-- Shadow of the Ghoul
-							i(40409),	-- Boots of the Escaped Captive
-							i(40414),	-- Shoulderguards of the Undaunted
-							i(40408),	-- Haunting Call
-							i(40407),	-- Silent Crusader
-							i(40406),	-- Inevitable Defeat
-							i(40412),	-- Ousted Bead Necklace
+							i(40410, {	-- Shadow of the Ghoul
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
+							i(40409, {	-- Boots of the Escaped Captive
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
+							i(40414, {	-- Shoulderguards of the Undaunted
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
+							i(40408, {	-- Haunting Call
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
+							i(40407, {	-- Silent Crusader
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
+							i(40406, {	-- Inevitable Defeat
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
+							i(40412, {	-- Ousted Bead Necklace
+								["crs"] = {
+									16018,	-- Bile Retcher
+									16167,	-- Bony Construct
+									15975,	-- Carrion Spinner
+									15978,	-- Crypt Reaver
+									16146,	-- Death Knight
+									16145,	-- Death Knight Captain
+									16163,	-- Death Knight Cavalier
+									16067,	-- Deathcharger Steed
+									15974,	-- Dread Creeper
+									16036,	-- Frenzied Bat
+									16244,	-- Infectious Ghoul
+									16021,	-- Living Monstrosity
+									16020,	-- Mad Scientist
+									16297,	-- Mutated Grub
+									15981,	-- Naxxramas Acolyte
+									15980,	-- Naxxramas Cultist
+									16165,	-- Necro Knight
+									16017,	-- Patchwork Golem
+									16037,	-- Plagued Bat
+									16447,	-- Plagued Ghoul
+									16154,	-- Risen Squire
+									16164,	-- Shade of Naxxramas
+									16193,	-- Skeletal Smith
+									16029,	-- Sludge Belcher
+									30071,	-- Stitched Colossus
+									16025,	-- Stitched Giant
+									16168,	-- Stoneskin Gargoyle
+									16022,	-- Surgical Assistant
+									15979,	-- Tomb Horror
+									16194,	-- Unholy Axe
+									16215,	-- Unholy Staff
+									16216,	-- Unholy Swords
+									15976,	-- Venom Stalker
+								},
+							}),
 						}),
 						n(-368, { 	-- The Arachnid Quarter
 							ach(563),	-- The Arachnid Quarter (25 player)
@@ -879,7 +1347,7 @@ _.Instances =
 										["criteriaID"] = 9,			-- Loatheb slain
 									},
 									i(93032),	-- Blighted Spore (PET!)
-									i(40637, { -- Mantle of the Lost Conqueror
+									i(40637, {	-- Mantle of the Lost Conqueror
 										i(40450),	-- Valorous Shoulderpads of Faith
 										i(40573),	-- Valorous Redemption Spaulders
 										i(40578),	-- Valorous Redemption Shoulderplates
@@ -887,7 +1355,7 @@ _.Instances =
 										i(40424),	-- Valorous Plagueheart Shoulderpads
 										i(40459),	-- Valorous Mantle of Faith
 									}),
-									i(40638, { -- Mantle of the Lost Protector
+									i(40638, {	-- Mantle of the Lost Protector
 										i(40513),	-- Valorous Earthshatter Spaulders
 										i(40518),	-- Valorous Earthshatter Shoulderpads
 										i(40524),	-- Valorous Earthshatter Shoulderguards
@@ -895,7 +1363,7 @@ _.Instances =
 										i(40548),	-- Valorous Dreadnaught Pauldrons
 										i(40507),	-- Valorous Cryptstalker Spaulders
 									}),
-									i(40639, { -- Mantle of the Lost Vanquisher
+									i(40639, {	-- Mantle of the Lost Vanquisher
 										i(40557),	-- Valorous Scourgeborne Shoulderplates
 										i(40568),	-- Valorous Scourgeborne Pauldrons
 										i(40419),	-- Valorous Frostfire Shoulderpads
@@ -1007,7 +1475,7 @@ _.Instances =
 									i(40349),	-- Gloves of Peaceful Death
 									i(40347),	-- Zeliek's Gauntlets
 									i(40352),	-- Leggings of Voracious Shadows
-									i(40625, { -- Breastplate of the Lost Conqueror
+									i(40625, {	-- Breastplate of the Lost Conqueror
 										i(40449),	-- Valorous Robe of Faith
 										i(40569),	-- Valorous Redemption Tunic
 										i(40574),	-- Valorous Redemption Chestpiece
@@ -1015,7 +1483,7 @@ _.Instances =
 										i(40458),	-- Valorous Raiments of Faith
 										i(40423),	-- Valorous Plagueheart Robe
 									}),
-									i(40626, { -- Breastplate of the Lost Protector
+									i(40626, {	-- Breastplate of the Lost Protector
 										i(40508),	-- Valorous Earthshatter Tunic
 										i(40514),	-- Valorous Earthshatter Hauberk
 										i(40523),	-- Valorous Earthshatter Chestguard
@@ -1023,7 +1491,7 @@ _.Instances =
 										i(40525),	-- Valorous Dreadnaught Battleplate
 										i(40503),	-- Valorous Cryptstalker Tunic
 									}),
-									i(40627, { -- Breastplate of the Lost Vanquisher
+									i(40627, {	-- Breastplate of the Lost Vanquisher
 										i(40559),	-- Valorous Scourgeborne Chestguard
 										i(40550),	-- Valorous Scourgeborne Battleplate
 										i(40418),	-- Valorous Frostfire Robe
@@ -1122,7 +1590,7 @@ _.Instances =
 										["criteriaID"] = 10,		-- Gluth slain
 									},
 									i(93029),	-- Gluth's Bone (TOY!)
-									i(40625, { -- Breastplate of the Lost Conqueror
+									i(40625, {	-- Breastplate of the Lost Conqueror
 										i(40449),	-- Valorous Robe of Faith
 										i(40569),	-- Valorous Redemption Tunic
 										i(40574),	-- Valorous Redemption Chestpiece
@@ -1130,7 +1598,7 @@ _.Instances =
 										i(40458),	-- Valorous Raiments of Faith
 										i(40423),	-- Valorous Plagueheart Robe
 									}),
-									i(40626, { -- Breastplate of the Lost Protector
+									i(40626, {	-- Breastplate of the Lost Protector
 										i(40508),	-- Valorous Earthshatter Tunic
 										i(40514),	-- Valorous Earthshatter Hauberk
 										i(40523),	-- Valorous Earthshatter Chestguard
@@ -1138,7 +1606,7 @@ _.Instances =
 										i(40525),	-- Valorous Dreadnaught Battleplate
 										i(40503),	-- Valorous Cryptstalker Tunic
 									}),
-									i(40627, { -- Breastplate of the Lost Vanquisher
+									i(40627, {	-- Breastplate of the Lost Vanquisher
 										i(40559),	-- Valorous Scourgeborne Chestguard
 										i(40550),	-- Valorous Scourgeborne Battleplate
 										i(40418),	-- Valorous Frostfire Robe
@@ -1147,7 +1615,7 @@ _.Instances =
 										i(40471),	-- Valorous Dreamwalker Raiments
 										i(40495),	-- Valorous Bonescythe Breastplate
 									}),
-									i(40634, { -- Legplates of the Lost Conqueror
+									i(40634, {	-- Legplates of the Lost Conqueror
 										i(40577),	-- Valorous Redemption Legplates
 										i(40583),	-- Valorous Redemption Legguards
 										i(40572),	-- Valorous Redemption Greaves
@@ -1155,7 +1623,7 @@ _.Instances =
 										i(40457),	-- Valorous Pants of Faith
 										i(40448),	-- Valorous Leggings of Faith
 									}),
-									i(40635, { -- Legplates of the Lost Protector
+									i(40635, {	-- Legplates of the Lost Protector
 										i(40522),	-- Valorous Earthshatter War-Kilt
 										i(40512),	-- Valorous Earthshatter Legguards
 										i(40517),	-- Valorous Earthshatter Kilt
@@ -1163,7 +1631,7 @@ _.Instances =
 										i(40547),	-- Valorous Dreadnaught Legguards
 										i(40506),	-- Valorous Crypstalker Legguards
 									}),
-									i(40636, { -- Legplates of the Lost Vanquisher
+									i(40636, {	-- Legplates of the Lost Vanquisher
 										i(40556),	-- Valorous Scourgeborne Legplates
 										i(40567),	-- Valorous Scourgeborne Legguards
 										i(40417),	-- Valorous Frostfire Leggings
@@ -1172,7 +1640,7 @@ _.Instances =
 										i(40462),	-- Valorous Dreamwalker Leggings
 										i(40500),	-- Valorous Bonescythe Legplates
 									}),
-									i(40637, { -- Mantle of the Lost Conqueror
+									i(40637, {	-- Mantle of the Lost Conqueror
 										i(40450),	-- Valorous Shoulderpads of Faith
 										i(40573),	-- Valorous Redemption Spaulders
 										i(40578),	-- Valorous Redemption Shoulderplates
@@ -1180,7 +1648,7 @@ _.Instances =
 										i(40424),	-- Valorous Plagueheart Shoulderpads
 										i(40459),	-- Valorous Mantle of Faith
 									}),
-									i(40638, { -- Mantle of the Lost Protector
+									i(40638, {	-- Mantle of the Lost Protector
 										i(40513),	-- Valorous Earthshatter Spaulders
 										i(40518),	-- Valorous Earthshatter Shoulderpads
 										i(40524),	-- Valorous Earthshatter Shoulderguards
@@ -1188,7 +1656,7 @@ _.Instances =
 										i(40548),	-- Valorous Dreadnaught Pauldrons
 										i(40507),	-- Valorous Cryptstalker Spaulders
 									}),
-									i(40639, { -- Mantle of the Lost Vanquisher
+									i(40639, {	-- Mantle of the Lost Vanquisher
 										i(40557),	-- Valorous Scourgeborne Shoulderplates
 										i(40568),	-- Valorous Scourgeborne Pauldrons
 										i(40419),	-- Valorous Frostfire Shoulderpads
@@ -1360,7 +1828,7 @@ _.Instances =
 										["achievementID"] = 579,	-- The Dedicated Few (25 player)
 										["criteriaID"] = 12,		-- Thaddius slain
 									},
-									i(40634, { -- Legplates of the Lost Conqueror
+									i(40634, {	-- Legplates of the Lost Conqueror
 										i(40577),	-- Valorous Redemption Legplates
 										i(40583),	-- Valorous Redemption Legguards
 										i(40572),	-- Valorous Redemption Greaves
@@ -1368,7 +1836,7 @@ _.Instances =
 										i(40457),	-- Valorous Pants of Faith
 										i(40448),	-- Valorous Leggings of Faith
 									}),
-									i(40635, { -- Legplates of the Lost Protector
+									i(40635, {	-- Legplates of the Lost Protector
 										i(40522),	-- Valorous Earthshatter War-Kilt
 										i(40512),	-- Valorous Earthshatter Legguards
 										i(40517),	-- Valorous Earthshatter Kilt
@@ -1376,7 +1844,7 @@ _.Instances =
 										i(40547),	-- Valorous Dreadnaught Legguards
 										i(40506),	-- Valorous Cryptstalker Legguards
 									}),
-									i(40636, { -- Legplates of the Lost Vanquisher
+									i(40636, {	-- Legplates of the Lost Vanquisher
 										i(40556),	-- Valorous Scourgeborne Legplates
 										i(40567),	-- Valorous Scourgeborne Legguards
 										i(40417),	-- Valorous Frostfire Leggings
@@ -1461,7 +1929,7 @@ _.Instances =
 										["achievementID"] = 579,	-- The Dedicated Few (25 player)
 										["criteriaID"] = 6,			-- Kel'Thuzad slain
 									},
-									i(40631, { -- Crown of the Lost Conqueror
+									i(40631, {	-- Crown of the Lost Conqueror
 										i(40576),	-- Valorous Redemption Helm
 										i(40571),	-- Valorous Redemption Headpiece
 										i(40581),	-- Valorous Redemption Faceguard
@@ -1469,7 +1937,7 @@ _.Instances =
 										i(40447),	-- Valorous Crown of Faith
 										i(40456),	-- Valorous Circlet of Faith
 									}),
-									i(40632, { -- Crown of the Lost Protector
+									i(40632, {	-- Crown of the Lost Protector
 										i(40516),	-- Valorous Earthshatter Helm
 										i(40510),	-- Valorous Earthshatter Headpiece
 										i(40521),	-- Valorous Earthshatter Faceguard
@@ -1477,7 +1945,7 @@ _.Instances =
 										i(40546),	-- Valorous Dreadnaught Greathelm
 										i(40505),	-- Valorous Cryptstalker Headpiece
 									}),
-									i(40633, { -- Crown of the Lost Vanquisher
+									i(40633, {	-- Crown of the Lost Vanquisher
 										i(40554),	-- Valorous Scourgeborne Helmet
 										i(40565),	-- Valorous Scourgeborne Faceguard
 										i(40416),	-- Valorous Frostfire Circlet

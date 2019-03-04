@@ -31,12 +31,7 @@ _.Toys =
 		i(86588),		-- Pandaren Firework Launcher
 		i(86586),		-- Panflute of Pandaria
 		i(13379),		-- Piccolo of the Flaming Fire
-		--Note!! The below items are unconfirmed to drop.  However, due to how Island Expedition loot works there is no way
-		--to accurately verify if they do.  On November 20th, 2018 they tweeted that the mobs for a pet weren't spawning which caused
-		--it to look like they weren't.  Due to the possibility of these mobs not spawning they stay in the addon until Patch 8.1 on
-		--December 11, 2018.  At that point if no confirmed drops have been spotted and still not in Toy Box then they will be
-		--marked with un(1 here in this file.
-		--Source: https://twitter.com/WarcraftDevs/status/1065080683058487297
+
 		i(104294), 		-- Rime of the Time-Lost Mariner
 		i(86583), 		-- Salyin Battle Banner
 		i(86573),		-- Shard of Archstone

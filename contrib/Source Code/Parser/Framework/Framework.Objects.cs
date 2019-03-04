@@ -79,7 +79,7 @@ namespace Parser_V2
                 new ObjectData("difficultyID", "d", new List<string>{ "f" }),
                 new ObjectData("encounterID", "e", new List<string>{ "f" }),
                 new ObjectData("flightPathID", "fp", new List<string>{ "f" }),
-                new ObjectData("npcID", "n", new List<string>{ "f" }),
+                new NPCData("npcID", "n", new List<string>{ "f" }),
                 new ObjectData("objectID", "o", new List<string>{ "f" }),
                 new ObjectData("petAbilityID", "pa", new List<string>{ "f" }),
                 new ObjectData("petTypeID", "pt", new List<string>{ "f" }),
@@ -93,9 +93,9 @@ namespace Parser_V2
                 new ObjectData("setSubHeaderID", "gssh", new List<string>{ "f" }),
                 new ObjectData("titleID", "title", new List<string>{ "f" }),
                 new ObjectData("currencyID", "cu", new List<string>{ "f" }),
-                new ObjectData("itemID", "i", new List<string>{ "f" }),
+                new ItemData("itemID", "i", new List<string>{ "f" }),
                 new ObjectData("factionID", "faction", new List<string>{ "f" }),
-                new ObjectData("questID", "q", new List<string>{ "f" }),
+                new QuestData("questID", "q", new List<string>{ "f" }),
                 new ObjectData("achID", "ach", new List<string>{ "f" }),
                 new ObjectData("tierID", "t", new List<string>{ "f" }),
                 new ObjectData("professionID", "prof", new List<string>{ "requireSkill" }),
@@ -363,6 +363,19 @@ namespace Parser_V2
                 #endregion
                 #region Functionality
                 /// <summary>
+                /// Build the object.
+                /// This writes the primary field and removes it from the list of available fields.
+                /// </summary>
+                /// <param name="builder">The builder.</param>
+                /// <param name="data">The data.</param>
+                /// <param name="fields">The fields.</param>
+                public virtual void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+                {
+                    builder.Append(ConstructorShortcut).Append('(');
+                    Constructor(builder, data, fields);
+                }
+
+                /// <summary>
                 /// The constructor.
                 /// This writes the primary field and removes it from the list of available fields.
                 /// </summary>
@@ -433,6 +446,73 @@ namespace Parser_V2
             }
 
             /// <summary>
+            /// The item data class.
+            /// This writes the itemID to the constructor.
+            /// </summary>
+            public class ItemData : ObjectData
+            {
+                #region Constructor
+                /// <summary>
+                /// Create a data container for the shortcut.
+                /// </summary>
+                /// <param name="objectType">The object type.</param>
+                /// <param name="shortcut">The shortcut.</param>
+                public ItemData(string objectType, string shortcut) : base(objectType, shortcut)
+                {
+
+                }
+
+                /// <summary>
+                /// Create a data container for the shortcut.
+                /// </summary>
+                /// <param name="objectType">The object type.</param>
+                /// <param name="shortcut">The shortcut.</param>
+                /// <param name="blacklist">The blacklist.</param>
+                public ItemData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
+                {
+
+                }
+                #endregion
+                #region Functionality
+                /// <summary>
+                /// Build the object.
+                /// This writes the primary field and removes it from the list of available fields.
+                /// </summary>
+                /// <param name="builder">The builder.</param>
+                /// <param name="data">The data.</param>
+                /// <param name="fields">The fields.</param>
+                public override void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+                {
+                    if (data.TryGetValue("f", out object fObj) && Convert.ToInt32(fObj) == 60)
+                    {
+                        builder.Append("selfie(");
+                        Framework.Export(builder, data["questID"]);
+                        fields.Remove("questID");
+                    }
+                    else
+                    {
+                        builder.Append(ConstructorShortcut).Append('(');
+                        Framework.Export(builder, data[ObjectType]);
+                        fields.Remove(ObjectType);
+                    }
+                    Constructor(builder, data, fields);
+                }
+
+                /// <summary>
+                /// The constructor.
+                /// This writes the primary field and removes it from the list of available fields.
+                /// </summary>
+                /// <param name="builder">The builder.</param>
+                /// <param name="data">The data.</param>
+                /// <param name="fields">The fields.</param>
+                public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+                {
+
+                }
+                #endregion
+            }
+
+            /// <summary>
             /// The mount data class.
             /// This writes the mountID to the constructor.
             /// </summary>
@@ -486,6 +566,74 @@ namespace Parser_V2
                 }
                 #endregion
             }
+
+            /// <summary>
+            /// The NPC data class.
+            /// This writes the npcID to the constructor.
+            /// </summary>
+            public class NPCData : ObjectData
+            {
+                #region Constructor
+                /// <summary>
+                /// Create a data container for the shortcut.
+                /// </summary>
+                /// <param name="objectType">The object type.</param>
+                /// <param name="shortcut">The shortcut.</param>
+                public NPCData(string objectType, string shortcut) : base(objectType, shortcut)
+                {
+
+                }
+
+                /// <summary>
+                /// Create a data container for the shortcut.
+                /// </summary>
+                /// <param name="objectType">The object type.</param>
+                /// <param name="shortcut">The shortcut.</param>
+                /// <param name="blacklist">The blacklist.</param>
+                public NPCData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
+                {
+
+                }
+                #endregion
+                #region Functionality
+                /// <summary>
+                /// Build the object.
+                /// This writes the primary field and removes it from the list of available fields.
+                /// </summary>
+                /// <param name="builder">The builder.</param>
+                /// <param name="data">The data.</param>
+                /// <param name="fields">The fields.</param>
+                public override void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+                {
+                    if (data.TryGetValue("f", out object fObj) && Convert.ToInt32(fObj) == 60)
+                    {
+                        builder.Append("selfie(");
+                        Framework.Export(builder, data["questID"]);
+                        fields.Remove("questID");
+                    }
+                    else
+                    {
+                        builder.Append(ConstructorShortcut).Append('(');
+                        Framework.Export(builder, data[ObjectType]);
+                        fields.Remove(ObjectType);
+                    }
+                    Constructor(builder, data, fields);
+                }
+
+                /// <summary>
+                /// The constructor.
+                /// This writes the primary field and removes it from the list of available fields.
+                /// </summary>
+                /// <param name="builder">The builder.</param>
+                /// <param name="data">The data.</param>
+                /// <param name="fields">The fields.</param>
+                public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+                {
+                    
+                }
+                #endregion
+            }
+
 
             /// <summary>
             /// The species data class.
@@ -588,6 +736,54 @@ namespace Parser_V2
                 }
                 #endregion
             }
+
+            /// <summary>
+            /// The quest data class.
+            /// This writes the questID to the constructor.
+            /// </summary>
+            public class QuestData : ObjectData
+            {
+                #region Constructor
+                /// <summary>
+                /// Create a data container for the shortcut.
+                /// </summary>
+                /// <param name="objectType">The object type.</param>
+                /// <param name="shortcut">The shortcut.</param>
+                public QuestData(string objectType, string shortcut) : base(objectType, shortcut)
+                {
+
+                }
+
+                /// <summary>
+                /// Create a data container for the shortcut.
+                /// </summary>
+                /// <param name="objectType">The object type.</param>
+                /// <param name="shortcut">The shortcut.</param>
+                /// <param name="blacklist">The blacklist.</param>
+                public QuestData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
+                {
+
+                }
+                #endregion
+                #region Functionality
+                /// <summary>
+                /// Build the object.
+                /// This writes the primary field and removes it from the list of available fields.
+                /// </summary>
+                /// <param name="builder">The builder.</param>
+                /// <param name="data">The data.</param>
+                /// <param name="fields">The fields.</param>
+                public override void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+                {
+                    if (data.TryGetValue("f", out object fObj) && Convert.ToInt32(fObj) == 60)
+                    {
+                        builder.Append("selfie(");
+                    }
+                    else builder.Append(ConstructorShortcut).Append('(');
+                    Constructor(builder, data, fields);
+                }
+                #endregion
+            }
             #endregion
 
             /// <summary>
@@ -648,8 +844,7 @@ namespace Parser_V2
                 if (OBJECT_CONSTRUCTORS.TryGetValue(mostSignificantType, out ObjectData constructor))
                 {
                     // Write the shortcut for the shortcut and the required types.
-                    builder.Append(constructor.ConstructorShortcut).Append('(');
-                    constructor.Constructor(builder, data, fields);
+                    constructor.Build(builder, data, fields);
 
                     // Remove globally blacklisted fields.
                     fields.Remove("ilvl");
@@ -1190,6 +1385,7 @@ namespace Parser_V2
                     { "q", "_.CreateQuest" },
                     { "r", "_.CreateRecipe" },
                     { "s", "_.CreateItemSource" },
+                    { "selfie", "_.CreateSelfieFilter" },
                     { "sp", "_.CreateSpell" },
                     { "t", "_.CreateTier" },
                     { "title", "_.CreateTitle" },
