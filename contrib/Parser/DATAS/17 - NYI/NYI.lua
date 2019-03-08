@@ -158,6 +158,7 @@ _.NeverImplemented =
 			un(1, i(14550)),	-- Bladebane Armguards (Leather)
 			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
 			un(1, i(5821)),		-- Darkstalker Boots (Leather)
+			un(1, i(37316)),	-- HF28 Leather Physical Legs4
 			un(1, i(25795)),	-- Gloves of Preservation (not added version)
 			un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
@@ -495,6 +496,16 @@ _.NeverImplemented =
 			un(1, i(18023)),	-- Blood Ruby Pendant
 			un(1, i(23058)),	-- Life Channeling Necklace
 			un(1, i(28043)),	-- Demon Stalker Pendant
+			un(1, i(31930)),	--Unknown
+			un(1, i(31931)),	--Unknown
+			un(1, i(31932)),	--Unknown
+			un(1, i(31933)),	--Unknown
+			un(1, i(31934)),	--Unknown
+			un(1, i(33198)),	--Unknown
+			un(1, i(33199)),	--Unknown
+			un(1, i(33200)),	--Unknown
+			un(1, i(33201)),	--Unknown
+			un(1, i(37544)),	--Unknown
 		}),
 		filter(52, {	-- Finger
 			un(1, i(4988)),		-- Burning Obsidian Band
@@ -514,6 +525,8 @@ _.NeverImplemented =
 		}),
 		n(-386, {	-- Trinket
 			un(1, i(12805)), -- Orb of Fire
+			un(1, i(25994)),	-- rune of force (only beta)
+			un(1, i(25995)),	-- Star of Sha'naar (only beta)
 			un(1, i(18355)), -- Ferras Collar
 			un(1, i(18438)), -- Sergeant's Mark
 			un(1, i(20084)), -- Hunting Net
@@ -533,6 +546,7 @@ _.NeverImplemented =
 			un(1, i(20936)),	-- Unknown
 			un(1, i(20937)),	-- Unknown
 		}),
+		un(1, i(79907)),	-- Spear of Xuen (Old Version)
 		un(1, spell(5169)),	-- defias disguise
 		un(1, i(45818)),	-- Unknown
 		un(1, i(46056)),	-- Unknown
@@ -850,6 +864,9 @@ _.NeverImplemented =
 		n(-345, { -- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
 			un(1, i(38246)),	-- Skull-Forged Blunderbuss
+			un(1, i(108790)),	-- Unknown
+			un(1, i(109491)),	-- Unknown
+			un(1, i(109529)),	-- Unknown
 			un(1, i(64824)),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta))
 			
 		}),
@@ -945,6 +962,7 @@ _.NeverImplemented =
 			un(1, i(33475)),	-- Artefact Frostmourne
 		--	un(1, i(84717),		-- Dreadful Gladiator's Greatsword (did not make it :( )
 			un(1, i(49457)),	-- Unknown
+			un(1, i(81703)),	-- Glorenzelg, added in 5.0.1 ??
 			un(1, i(64755)),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta))
 			un(1, i(49547)),	-- Unknown
 			un(1, i(108806)),	-- Unknown, tagged as 2Hand Sword
