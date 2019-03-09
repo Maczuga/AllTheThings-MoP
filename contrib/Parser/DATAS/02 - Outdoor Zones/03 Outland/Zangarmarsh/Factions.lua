@@ -41,7 +41,7 @@ _.Zones =
 							}),
 							n(-2,   {	-- Vendors
 								n(17904,  {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
-									["g"] = {
+									["groups"] = {
 										i(31804),	-- Cenarion Expedition Tabard
 										i(33999),	-- Cenarion War Hippogryph Mount
 										i(35403),	-- Crusader's Ornamented Gloves
@@ -93,12 +93,12 @@ _.Zones =
 									["coord"] = { 79.2, 63.7, 102 },
 								}),
 							}),
-						}
+						},
 					}),
 					faction(970, {	-- Sporeggar
 						["groups"] = {
+							ach(900),	-- The Czar of Sporeggarre
 							n(-17,  {	-- Quests
-								
 								q(9809, {	-- More Glowcaps 
 									["qg"] = 17924,	-- Mshii'fn
 									["sourceQuests"] = { 9808 },	-- Glowcap Mushrooms
@@ -132,7 +132,7 @@ _.Zones =
 							}),
 							n(-2,   {	-- Vendors
 								n(18382,  {		-- Mycah <Sporeggar Quartermaster>
-									["g"] = {
+									["groups"] = {
 										i(24245, {	-- Glowcap
 											i(38229),	-- Pattern: Mycah's Botanical Bag
 											i(30156),	-- Recipe: Clam Bar

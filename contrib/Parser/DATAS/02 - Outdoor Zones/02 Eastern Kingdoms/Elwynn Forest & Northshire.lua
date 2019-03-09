@@ -127,8 +127,9 @@ _.Zones =
 					qg(248, qa(  107)),	-- Note to William				
 					qg(384, qa( 7678)),	-- Palomino Exchange
 					qg(247, qa(   86)),	-- Pie for Billy
+					
+--]]				
 					qg(244, qa(   88)),	-- Princess Must Die!
---]]					
 					qg(261, qa(   52, { -- Protect the Frontier
 						i(57523),
 						i(57524),
@@ -512,7 +513,10 @@ _.Zones =
 				}),	
 			},
 			["lvl"] = 1,
-			["maps"] = { 40 }, -- Jasperlode Mine
+			["maps"] = {
+				39,	-- Fargodeep Mine
+				40,	-- Jasperlode Mine
+			},
 			["achievementID"] = 776,
 			["description"] = "|cff66ccffElwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center.|r",				
 		}),	

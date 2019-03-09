@@ -1609,12 +1609,14 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.trackable then
-					if group.saved then
-						if app.Settings:Get("Show:CollectedThings") then
-							right = L["COMPLETE_ICON"];
+					if app.Settings:Get("Show:IncompleteThings") then
+						if group.saved then
+							if app.Settings:Get("Show:CollectedThings") then
+								right = L["COMPLETE_ICON"];
+							end
+						else
+							right = L["NOT_COLLECTED_ICON"];
 						end
-					else
-						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.visible then
 					right = "---";
@@ -2534,162 +2536,6 @@ end
 local function OpenMainList()
 	app:OpenWindow("Prime");
 end
-local function OpenMiniListForCurrentProfession(manual, refresh)
-	if app.Categories.Professions then
-		local popout = app:GetWindow("Tradeskills");
-		local tradeSkillLine = AllTheThings.GetTradeSkillLine();
-		if tradeSkillLine and app.Settings:GetTooltipSetting("Auto:ProfessionList") and fieldCache["requireSkill"][tradeSkillLine]
-			and not (IsTradeSkillLinked()) then
-			-- and not (C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild()) then
-			if manual or not refresh then
-				popout:ClearAllPoints();
-				popout:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
-				popout:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
-				popout:SetVisible(true);
-			end
-		else
-			if manual then
-				app.print("You must have a profession open to open the profession mini list.");
-			end
-			popout:SetVisible(false);
-		end
-		
-		if popout:IsShown() and refresh then
-			-- Cache Learned Spells
-			local skillCache = fieldCache["spellID"];
-			if skillCache then
-
-				-- Clear the search box focus so the scan will have correct results.
-				local searchBox = _G.TradeSkillFrameSearchBox
-				searchBox:SetText("")
-
-				_G.TradeSkillSearch_OnTextChanged(searchBox)
-				searchBox:ClearFocus()
-				searchBox:GetScript("OnEditFocusLost")(searchBox)
-
-				headerList = {};
-				table.wipe(headerList)
-
-				-- Save the current state of the TradeSkillFrame so it can be restored after we muck with it.
-				local hasMaterials = _G.TradeSkillFrame.filterTbl.hasMaterials
-				local hasSkillUp = _G.TradeSkillFrame.filterTbl.hasSkillUp
-
-				if hasMaterials then
-					_G.TradeSkillFrame.filterTbl.hasMaterials = false
-					_G.TradeSkillOnlyShowMakeable(false)
-				end
-
-				if hasSkillUp then
-					_G.TradeSkillFrame.filterTbl.hasSkillUp = false
-					_G.TradeSkillOnlyShowSkillUps(false)
-				end
-				_G.SetTradeSkillInvSlotFilter(0, true, true)
-				_G.TradeSkillUpdateFilterBar()
-				_G.TradeSkillFrame_Update()
-
-				-- Expand all headers so we can see all the recipes there are
-				for i = 1, _G.GetNumTradeSkills() do
-					local name, tradeSkillType, _, is_expanded = _G.GetTradeSkillInfo(i)
-
-					if tradeSkillType == "header" or tradeSkillType == "subheader" then
-						if not is_expanded then
-							headerList[name] = true
-							_G.ExpandTradeSkillSubClass(i)
-						end
-					end
-				end
-
-				for categoryId,categoryName in pairs(app.TradeSkillCategoryDB[tradeSkillLine]) do
-					app.SetDataSubMember("Categories", categoryId, categoryName);
-				end
-
-				-- Cache learned recipes
-				local learned = 0;
-				local reagentCache = app.GetDataMember("Reagents", {});
-				for i = 1,_G.GetNumTradeSkills() do
-					local tradeName,tradeType = GetTradeSkillInfo(i)
-					local rank,maxrank = select(9,GetTradeSkillInfo(i))
-
-					if tradeName and tradeType~="header" and tradeType~="subheader" then
-						local link = GetTradeSkillRecipeLink(i)
-						if link then
-							local receipeID = tonumber(strmatch(link,"|H%w+:(%d+)"));
-
-							SetTempDataSubMember("CollectedSpells", receipeID, 1);
-							if not GetDataSubMember("CollectedSpells", receipeID) then
-								SetDataSubMember("CollectedSpells", receipeID, 1);
-								learned = learned + 1;
-							end
-							if not skillCache[receipeID] then
-								app.print("Missing [??] (Spell ID #" .. receipeID .. ") in ATT Database. Please report it!");
-								skillCache[receipeID] = { {} };
-							end
-							
-							local craftedItemID = GetItemId(GetTradeSkillItemLink(i));
-							for j=1,GetTradeSkillNumReagents(i) do
-								local reagentName, reagentTexture, reagentCount, playerCount = GetTradeSkillReagentInfo(i, j);
-								local itemID = GetItemId(GetTradeSkillReagentItemLink(i, j));
-								if itemID > 0 then
-									--print(receipeID, itemID, "=>", craftedItemID);
-									
-									-- Make sure a cache table exists for this item.
-									-- Index 1: The Recipe Skill IDs
-									-- Index 2: The Crafted Item IDs
-									if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-									reagentCache[itemID][1][receipeID] = reagentCount;
-									if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
-								end
-							end
-						end
-					end
-
-				end
-
-				-- Restore the state of the things we changed.
-				for i = 1, _G.GetNumTradeSkills() do
-					local name, tradeSkillType, _, is_expanded = _G.GetTradeSkillInfo(i)
-
-					if headerList[name] then
-						_G.CollapseTradeSkillSubClass(i)
-					end
-				end
-
-				_G.TradeSkillFrame.filterTbl.hasMaterials = hasMaterials
-				_G.TradeSkillOnlyShowMakeable(hasMaterials)
-				_G.TradeSkillFrame.filterTbl.hasSkillUp = hasSkillUp
-				_G.TradeSkillOnlyShowSkillUps(hasSkillUp)
-
-				_G.TradeSkillUpdateFilterBar()
-				_G.TradeSkillFrame_Update()
-				
-				-- If something new was "learned", then refresh the data.
-				if learned > 0 then
-					app:RefreshData(false, true, true);
-					app.print("Cached " .. learned .. " known recipes!");
-					wipe(searchCache);
-				end
-			end
-		end
-		
-		-- Open the Tradeskill list for this Profession
-		local tradeSkillID = AllTheThings.GetTradeSkillLine();
-		if popout.tradeSkillID ~= tradeSkillID then
-			popout.tradeSkillID = tradeSkillID;
-			for i,group in ipairs(app.Categories.Professions) do
-				if group.requireSkill == tradeSkillID then
-					popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
-					BuildGroups(popout.data, popout.data.g);
-					app.UpdateGroups(popout.data, popout.data.g);
-					if not popout.data.expanded then
-						popout.data.expanded = true;
-						ExpandGroupsRecursively(popout.data, true);
-					end
-					popout:SetVisible(true);
-				end
-			end
-		end
-	end
-end
 local function RefreshSavesCoroutine()
 	local waitTimer = 30;
 	while waitTimer > 0 do
@@ -3000,8 +2846,6 @@ end
 app.RefreshCollections = RefreshCollections;
 app.RefreshSaves = RefreshSaves;
 app.OpenMainList = OpenMainList;
-app.OpenMiniListForCurrentProfession = OpenMiniListForCurrentProfession;
-
 
 -- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, group)
@@ -8849,9 +8693,11 @@ end):Show();
 							local clone = {};
 							for key,value in pairs(group) do
 								if key == "maps" then
-									if group.mapID then
-										clone[key] = value;
+									local maps = {};
+									for i,mapID in ipairs(value) do
+										tinsert(maps, mapID);
 									end
+									clone[key] = maps;
 								else
 									clone[key] = value;
 								end
@@ -9935,6 +9781,482 @@ end);
 		UpdateWindow(self, true);
 	end);
 end)();
+(function()
+	app:GetWindow("Tradeskills", UIParent, function(self, ...)
+		if not self.initialized then
+			self.initialized = true;
+			self:RegisterEvent("TRADE_SKILL_SHOW");
+			self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
+			self:RegisterEvent("TRADE_SKILL_CLOSE");
+			self:RegisterEvent("NEW_RECIPE_LEARNED");
+			self.data = {
+				['text'] = "Profession List",
+				['icon'] = "Interface\\Icons\\INV_Scroll_04.blp", 
+				["description"] = "Open your professions to cache them.",
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = { },
+			};
+			self.CacheRecipes = function(self)
+				-- Cache Learned Spells
+				local skillCache = fieldCache["spellID"];
+				if skillCache then
+					local tradeSkillID = AllTheThings.GetTradeSkillLine();
+					if tradeSkillID == self.lastTradeSkillID then
+						return false;
+					end
+					self.lastTradeSkillID = tradeSkillID;
+					
+
+					-- Clear the search box focus so the scan will have correct results.
+					local searchBox = _G.TradeSkillFrameSearchBox
+					searchBox:SetText("")
+
+					_G.TradeSkillSearch_OnTextChanged(searchBox)
+					searchBox:ClearFocus()
+					searchBox:GetScript("OnEditFocusLost")(searchBox)
+
+					headerList = {};
+					table.wipe(headerList)
+
+					-- Save the current state of the TradeSkillFrame so it can be restored after we muck with it.
+					local hasMaterials = _G.TradeSkillFrame.filterTbl.hasMaterials
+					local hasSkillUp = _G.TradeSkillFrame.filterTbl.hasSkillUp
+
+					if hasMaterials then
+						_G.TradeSkillFrame.filterTbl.hasMaterials = false
+						_G.TradeSkillOnlyShowMakeable(false)
+					end
+
+					if hasSkillUp then
+						_G.TradeSkillFrame.filterTbl.hasSkillUp = false
+						_G.TradeSkillOnlyShowSkillUps(false)
+					end
+					_G.SetTradeSkillInvSlotFilter(0, true, true)
+					_G.TradeSkillUpdateFilterBar()
+					_G.TradeSkillFrame_Update()
+
+					-- Expand all headers so we can see all the recipes there are
+					for i = 1, _G.GetNumTradeSkills() do
+						local name, tradeSkillType, _, is_expanded = _G.GetTradeSkillInfo(i)
+
+						if tradeSkillType == "header" or tradeSkillType == "subheader" then
+							if not is_expanded then
+								headerList[name] = true
+								_G.ExpandTradeSkillSubClass(i)
+							end
+						end
+					end
+
+					
+					-- Cache learned recipes
+					local learned = 0;
+					local reagentCache = app.GetDataMember("Reagents", {});
+					for i = 1,_G.GetNumTradeSkills() do
+						local tradeName,tradeType = GetTradeSkillInfo(i)
+						local rank,maxrank = select(9,GetTradeSkillInfo(i))
+
+						if tradeName and tradeType~="header" and tradeType~="subheader" then
+							local link = GetTradeSkillRecipeLink(i)
+							if link then
+								local receipeID = tonumber(strmatch(link,"|H%w+:(%d+)"));
+
+								SetTempDataSubMember("CollectedSpells", receipeID, 1);
+								if not GetDataSubMember("CollectedSpells", receipeID) then
+									SetDataSubMember("CollectedSpells", receipeID, 1);
+									learned = learned + 1;
+								end
+								if not skillCache[receipeID] then
+									app.print("Missing [??] (Spell ID #" .. receipeID .. ") in ATT Database. Please report it!");
+									skillCache[receipeID] = { {} };
+								end
+							
+								local craftedItemID = GetItemId(GetTradeSkillItemLink(i));
+								for j=1,GetTradeSkillNumReagents(i) do
+									local reagentName, reagentTexture, reagentCount, playerCount = GetTradeSkillReagentInfo(i, j);
+									local itemID = GetItemId(GetTradeSkillReagentItemLink(i, j));
+									if itemID > 0 then
+										--print(receipeID, itemID, "=>", craftedItemID);
+									
+										-- Make sure a cache table exists for this item.
+										-- Index 1: The Recipe Skill IDs
+										-- Index 2: The Crafted Item IDs
+										if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+										reagentCache[itemID][1][receipeID] = reagentCount;
+										if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+									end
+								end
+							end
+						end
+
+					end
+
+					-- Open the Tradeskill list for this Profession
+					if self.tradeSkillID ~= tradeSkillID then
+						self.tradeSkillID = tradeSkillID;
+						for i,group in ipairs(app.Categories.Professions) do
+							if group.requireSkill == tradeSkillID then
+								self.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
+								BuildGroups(self.data, self.data.g);
+								app.UpdateGroups(self.data, self.data.g);
+								if not self.data.expanded then
+									self.data.expanded = true;
+									ExpandGroupsRecursively(self.data, true);
+								end
+								self:SetVisible(true);
+							end
+						end
+					end
+				
+					-- Restore the state of the things we changed.
+					for i = 1, _G.GetNumTradeSkills() do
+						local name, tradeSkillType, _, is_expanded = _G.GetTradeSkillInfo(i)
+
+						if headerList[name] then
+							_G.CollapseTradeSkillSubClass(i)
+						end
+					end
+
+					_G.TradeSkillFrame.filterTbl.hasMaterials = hasMaterials
+					_G.TradeSkillOnlyShowMakeable(hasMaterials)
+					_G.TradeSkillFrame.filterTbl.hasSkillUp = hasSkillUp
+					_G.TradeSkillOnlyShowSkillUps(hasSkillUp)
+
+					_G.TradeSkillUpdateFilterBar()
+					_G.TradeSkillFrame_Update()
+				
+					-- If something new was "learned", then refresh the data.
+					if learned > 0 then
+						app:RefreshData(false, true, true);
+						app.print("Cached " .. learned .. " known recipes!");
+						wipe(searchCache);
+					end
+				end
+			end
+			
+			-- Setup Event Handlers and register for events
+			self:SetScript("OnEvent", function(self, e, ...)
+				if e == "TRADE_SKILL_LIST_UPDATE" then
+					if self:IsVisible() then
+						-- If it's not yours, don't take credit for it.
+						if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
+							self:SetVisible(false);
+							return false;
+						end
+						
+						-- Check to see if ATT has information about this profession.
+						local tradeSkillID = AllTheThings.GetTradeSkillLine();
+						if not tradeSkillID or not fieldCache["requireSkill"][tradeSkillID] then
+							if self:IsVisible() then
+								app.print("You must have a profession open to open the profession mini list.");
+							end
+							self:SetVisible(false);
+							return false;
+						end
+						
+						-- Set the Window to align with the Profession Window
+						self:ClearAllPoints();
+						self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
+						self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+					end
+					if app.CollectibleRecipes then
+						self:CacheRecipes();
+					end
+				elseif e == "TRADE_SKILL_SHOW" then
+					if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+						self:SetVisible(true);
+					end
+					if app.CollectibleRecipes then
+						self:CacheRecipes();
+					end
+				elseif e == "NEW_RECIPE_LEARNED" then
+					local spellID = ...;
+					if spellID then
+						SetDataSubMember("CollectedSpells", spellID, 1);
+						if not SetTempDataSubMember("CollectedSpells", spellID) then
+							SetTempDataSubMember("CollectedSpells", spellID, 1);
+							app:RefreshData(true, true, true);
+							app:PlayFanfare();
+							wipe(searchCache);
+							collectgarbage();
+						end
+					end
+				elseif e == "TRADE_SKILL_CLOSE" then
+					self:SetVisible(false);
+				end
+			end);
+		end
+		
+		-- Update the window and all of its row data
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g);
+		UpdateWindow(self, ...);
+	end);
+end)();
+(function()
+	local worldMapIDs = {
+		14,		-- Arathi Highlands
+		62,		-- Darkshore
+		875,	-- Zandalar
+		876,	-- Kul'Tiras
+		619,	-- The Broken Isles
+		885,	-- Antoran Wastes
+		830,	-- Krokuun
+		882,	-- Mac'Aree
+	};
+	app:GetWindow("WorldQuests", UIParent, function(self)
+		if not self.initialized then
+			self.initialized = true;
+			self.data = {
+				['text'] = "World Quests",
+				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp", 
+				["description"] = "These are World Quests that are currently available somewhere. Go get 'em!",
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {
+					{
+						['text'] = "Update World Quests Now",
+						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
+						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
+						['back'] = 0.5,
+						['OnClick'] = function(data, button)
+							Push(self, "Rebuild", self.Rebuild);
+							return true;
+						end,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
+					},
+				},
+			};
+			self.rawData = {};
+			local OnUpdateForItem = function(self)
+				for i,o in ipairs(self.g) do
+					o.visible = false;
+				end
+			end;
+			self.Clear = function(self)
+				local temp = self.data.g[1];
+				wipe(self.data.g);
+				wipe(self.rawData);
+				tinsert(self.data.g, temp);
+				self:Rebuild();
+			end
+			self.Rebuild = function(self, no)
+				-- Rebuild all World Quest data
+				local retry = false;
+				local temp = {};
+				local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
+				for _,mapID in pairs(worldMapIDs) do
+					local mapObject = { mapID=mapID,g={},progress=0,total=0};
+					local cache = fieldCache["mapID"][mapID];
+					if cache then
+						for _,data in ipairs(cache) do
+							if data.mapID and data.icon then
+								mapObject.icon = data.icon;
+								mapObject.lvl = data.lvl;
+								mapObject.description = data.description;
+								break;
+							end
+						end
+					end
+					
+					local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
+					if pois then
+						for i,poi in ipairs(pois) do
+							local questObject = {questID=poi.questId,g={},progress=0,total=0};
+							if poi.mapID ~= mapID then
+								local subMapObject = { mapID=poi.mapID,g={},progress=0,total=0};
+								cache = fieldCache["mapID"][poi.mapID];
+								if cache then
+									for _,data in ipairs(cache) do
+										if data.mapID and data.icon then
+											subMapObject.icon = data.icon;
+											subMapObject.lvl = data.lvl;
+											subMapObject.description = data.description;
+											break;
+										end
+									end
+								end
+								MergeObject(subMapObject.g, questObject);
+								MergeObject(mapObject.g, subMapObject);
+							else
+								MergeObject(mapObject.g, questObject);
+							end
+							local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = GetQuestTagInfo(questObject.questID);
+							if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
+								questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
+							elseif worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE then
+								questObject.icon = "Interface\\Icons\\PetJournalPortrait";
+							elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
+								questObject.icon = "Interface\\Icons\\Trade_BlackSmithing";
+							elseif worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON then
+								-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
+								-- TODO: Add the relevent dungeon icon.
+								
+							elseif worldQuestType == LE_QUEST_TAG_TYPE_RAID then
+								-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
+								-- TODO: Add the relevent dungeon icon.
+							elseif worldQuestType == LE_QUEST_TAG_TYPE_INVASION or worldQuestType == LE_QUEST_TAG_TYPE_INVASION_WRAPPER then
+								questObject.icon = "Interface\\Icons\\achievements_zone_brokenshore";
+							--elseif worldQuestType == LE_QUEST_TAG_TYPE_TAG then
+								-- completely useless
+								--questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+							--elseif worldQuestType == LE_QUEST_TAG_TYPE_NORMAL then
+							--	questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+							end
+							
+							cache = fieldCache["questID"][questObject.questID];
+							if cache then
+								for _,data in ipairs(cache) do
+									for key,value in pairs(data) do
+										if not (key == "g" or key == "parent") then
+											questObject[key] = value;
+										end
+									end
+									if data.g then
+										for _,entry in ipairs(data.g) do
+											tinsert(questObject.g, entry);
+										end
+									end
+								end
+							end
+							
+							local numQuestRewards = GetNumQuestLogRewards (questObject.questID)
+							for j=1,numQuestRewards,1 do
+								local itemID = select(6, GetQuestLogRewardInfo (j, questObject.questID));
+								if itemID then
+									if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
+										-- QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
+										local item = { ["itemID"] = itemID, ["expanded"] = false, };
+										cache = fieldCache["itemID"][itemID];
+										if cache then
+											for _,data in ipairs(cache) do
+												if data.f then
+													item.f = data.f;
+												end
+												if data.s then
+													item.s = data.s;
+												end
+												if data.g and #data.g > 0 then
+													if not item.g then
+														item.g = {};
+														item.progress = 0;
+														item.total = 0;
+														item.OnUpdate = OnUpdateForItem;
+													end
+													for __,subdata in ipairs(data.g) do
+														MergeObject(item.g, subdata);
+													end
+												end
+											end
+										end
+										MergeObject(questObject.g, item);
+									end
+								else
+									return true;
+								end
+							end
+							
+							if showCurrencies then
+								local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
+								if numCurrencies > 0 then
+									for j=1,numCurrencies,1 do
+										local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
+										if currencyID then
+											local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
+											cache = fieldCache["currencyID"][currencyID];
+											if cache then
+												for _,data in ipairs(cache) do
+													if data.f then
+														item.f = data.f;
+													end
+													if data.g and #data.g > 0 then
+														if not item.g then
+															item.g = {};
+															item.progress = 0;
+															item.total = 0;
+															item.OnUpdate = OnUpdateForItem;
+														end
+														for __,subdata in ipairs(data.g) do
+															MergeObject(item.g, subdata);
+														end
+													end
+												end
+											end
+											if not item.g then
+												item.g = {};
+												item.progress = 0;
+												item.total = 0;
+												item.OnUpdate = OnUpdateForItem;
+											end
+											MergeObject(questObject.g, item);
+										else
+											return true;
+										end
+									end
+								end
+							end
+							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID, timeRemaining);
+							--print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
+						end
+						table.sort(mapObject.g, self.Sort);
+					end
+					if #mapObject.g > 0 then
+						MergeObject(temp, mapObject);
+					end
+				end
+				for i,o in ipairs(temp) do
+					MergeObject(self.rawData, o);
+				end
+				for i,o in ipairs(self.rawData) do
+					MergeObject(self.data.g, CreateObject(o));
+				end
+				BuildGroups(self.data, self.data.g);
+				if not no then self:Update(); end
+			end
+			self.Sort = function(a, b)
+				if a.isRaid then
+					if b.isRaid then
+						return false;
+					else
+						return true;
+					end
+				elseif b.isRaid then
+					return false;
+				end
+				if a.questID then
+					if b.questID then
+						return a.questID < b.questID;
+					else
+						return true;
+					end
+				end
+				if a.mapID then
+					if b.mapID then
+						if a.text and b.text then
+							return a.text < b.text;
+						else
+							return a.mapID < b.mapID;
+						end
+					else
+						return true;
+					end
+				end
+				return false;
+			end;
+		end
+		
+		-- Update the window and all of its row data
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g);
+		UpdateWindow(self, true);
+	end);
+end)();
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
@@ -10019,9 +10341,6 @@ end
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
-app:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
-app:RegisterEvent("TRADE_SKILL_SHOW");
-app:RegisterEvent("TRADE_SKILL_CLOSE");
 app:RegisterEvent("COMPANION_LEARNED");
 app:RegisterEvent("COMPANION_UNLEARNED");
 app:RegisterEvent("NEW_PET_ADDED");
@@ -11134,8 +11453,6 @@ app.events.PLAYER_LOGIN = function()
 		OnEnter = MinimapButtonOnEnter,
 		OnLeave = MinimapButtonOnLeave,
 	});
-	
-	
 end
 app.events.ACTIVE_TALENT_GROUP_CHANGED = function()
 	app.Spec = GetLootSpecialization();
@@ -11211,15 +11528,6 @@ app.events.QUEST_LOG_UPDATE = function()
 	end
 	wipe(DirtyQuests);
 	app:UnregisterEvent("QUEST_LOG_UPDATE");
-end
-app.events.TRADE_SKILL_LIST_UPDATE = function(...)
-	OpenMiniListForCurrentProfession(false, true);
-end
-app.events.TRADE_SKILL_SHOW = function(...)
-	OpenMiniListForCurrentProfession(false, false);
-end
-app.events.TRADE_SKILL_CLOSE = function(...)
-	app:GetWindow("Tradeskills"):SetVisible(false);
 end
 
 app.CreateArtifact = function(id, t) return nil; end
