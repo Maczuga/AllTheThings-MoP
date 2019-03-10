@@ -6748,7 +6748,7 @@ local function RowOnClick(self, button)
 				-- If you're looking at the Profession Window, Shift Clicking will replace the search string instead.
 				if app:GetWindow("Tradeskills"):IsShown() then
 					
-				else
+				elseif button == "LeftButton"
 					-- Default behaviour is to Refresh Collections.
 					RefreshCollections(reference);
 				end
