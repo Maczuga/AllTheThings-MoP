@@ -17,7 +17,7 @@ _.Instances =
 							["races"] = HORDE_ONLY,
 						}),
 					}),
-					d(7, {	-- LFR
+					d(17, {	-- LFR
 						["groups"] = {
 							n(-1, {		-- Shared Boss Loot
 								i(104275, {	-- Twisted Treasures of the Vale
@@ -683,8 +683,34 @@ _.Instances =
 							}),	
 						},
 					}),
-					d(1, {	-- Normal
-						["difficulties"] = { 3, 4 },
+					d(1, {	-- Legacy (Normal). Now called Heroic. >>Every Item got the HEROIC Tag<<
+						["u"] = 12,
+						["description"] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better and they chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
+						["groups"] = {
+							n(71543, { -- Immerseus
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71475, { -- The Fallen Protectors (Rook Stonetoe)
+								un(2, i(103776)),	-- Death Lotus Crossbow Heroic TAG
+								un(2, i(105180)),	-- Death Lotus Crossbow Heroic WF TAG
+							}),
+						},
+					}),
+					d(2, {	-- Legacy (Heroic). Now called Mythic. >>Every Item got the MYTHIC Tag<<
+						["u"] = 12,
+						["description"] = "This version of the instance was the original Heroic difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better and they chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
+						["groups"] = {
+							n(71543, { -- Immerseus
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71475, { -- The Fallen Protectors (Rook Stonetoe)
+								un(2, i(104433)),	-- Death Lotus Crossbow Mythic TAG
+								un(2, i(105429)),	-- Death Lotus Crossbow Mythic WF TAG
+							}),
+						},
+					}),
+					d(14, {	-- Normal (Was Flex)
+					--	["description"] = "This version of the instance was the original Flex difficulty mode. It was split into both Normal and Heroic mode after they introduced Mythic.",
 						["groups"] = {
 							n(0, {	-- Zone Drop
 								{	-- Aeth's Swiftcinder Cloak
@@ -1427,26 +1453,26 @@ _.Instances =
 									i(99584),	-- Robes of the Ternion Glory
 									i(99570),	-- Robes of the Horned Nightmare
 								}),
-								i( 99691, {	-- Chest of the Cursed Protector
-									i(99167),	-- Tunic of the Unblinking Vigil
-									i(99140),	-- Chestguard of Seven Sacred Seals
-									i(99154),	-- Tunic of Seven Sacred Seals
-									i(99150),	-- Vest of Seven Sacred Seals
-									i(99101),	-- Cuirass of Celestial Harmony
-									i(99106),	-- Hauberk of Celestial Harmony
-									i(99107),	-- Tunic of Celestial Harmony
-									i(99197),	-- Battleplate of the Prehistoric Marauder
-									i(99201),	-- Chestguard of the Prehistoric Marauder
+								i( 99744, {	-- Chest of the Cursed Protector
+									i(99577),	-- Tunic of the Unblinking Vigil
+									i(99643),	-- Chestguard of Seven Sacred Seals
+									i(99555),	-- Tunic of Seven Sacred Seals
+									i(99641),	-- Vest of Seven Sacred Seals
+									i(99615),	-- Cuirass of Celestial Harmony
+									i(99579),	-- Hauberk of Celestial Harmony
+									i(99636),	-- Tunic of Celestial Harmony
+									i(99603),	-- Battleplate of the Prehistoric Marauder
+									i(99562),	-- Chestguard of the Prehistoric Marauder
 								}),
-								i( 99696, {	-- Chest of the Cursed Vanquisher
-									i(99192),	-- Breastplate of Cyclopean Dread
-									i(99188),	-- Chestguard of Cyclopean Dread
-									i(99180),	-- Raiment of the Shattered Vale
-									i(99172),	-- Robes of the Shattered Vale
-									i(99170),	-- Tunic of the Shattered Vale
-									i(99177),	-- Vestment of the Shattered Vale
-									i(99152),	-- Chronomancer Robes
-									i(99112),	-- Tunic of the Barbed Assassin
+								i( 99742, {	-- Chest of the Cursed Vanquisher
+									i(99608),	-- Breastplate of Cyclopean Dread
+									i(99640),	-- Chestguard of Cyclopean Dread
+									i(99632),	-- Raiment of the Shattered Vale
+									i(99582),	-- Robes of the Shattered Vale
+									i(99622),	-- Tunic of the Shattered Vale
+									i(99620),	-- Vestment of the Shattered Vale
+									i(99658),	-- Chronomancer Robes
+									i(99629),	-- Tunic of the Barbed Assassin
 								}),
 								i(104162),	-- Droplet of Y'Shaarj (PET!)
 								i(104163),	-- Gooey Sha-ling (PET!)
@@ -1585,26 +1611,26 @@ _.Instances =
 									i(99590),	-- Handwraps of the Ternion Glory
 									i(99567),	-- Gloves of the Horned Nightmare
 								}),
-								i( 99692, {	-- Gauntlets of the Cursed Protector
-									i(99168),	-- Gloves of the Unblinking Vigil
-									i(99141),	-- Gauntlets of Seven Sacred Seals
-									i(99155),	-- Grips of Seven Sacred Seals
-									i(99147),	-- Handwraps of Seven Sacred Seals
-									i(99092),	-- Gloves of Celestial Harmony
-									i(99102),	-- Grips of Celestial Harmony
-									i(99108),	-- Handwraps of Celestial Harmony
-									i(99198),	-- Gauntlets of the Prehistoric Marauder
-									i(99202),	-- Handguards of the Prehistoric Marauder
+								i( 99747, {	-- Gauntlets of the Cursed Protector
+									i(99578),	-- Gloves of the Unblinking Vigil
+									i(99644),	-- Gauntlets of Seven Sacred Seals
+									i(99556),	-- Grips of Seven Sacred Seals
+									i(99552),	-- Handwraps of Seven Sacred Seals
+									i(99580),	-- Gloves of Celestial Harmony
+									i(99616),	-- Grips of Celestial Harmony
+									i(99611),	-- Handwraps of Celestial Harmony
+									i(99559),	-- Gauntlets of the Prehistoric Marauder
+									i(99563),	-- Handguards of the Prehistoric Marauder
 								}),
-								i( 99682, {	-- Gauntlets of the Cursed Vanquisher
-									i(99193),	-- Gauntlets of Cyclopean Dread
-									i(99189),	-- Handguards of Cyclopean Dread
-									i(99174),	-- Gloves of the Shattered Vale
-									i(99181),	-- Grips of the Shattered Vale
-									i(99163),	-- Handguards of the Shattered Vale
-									i(99185),	-- Handwraps of the Shattered Vale
-									i(99160),	-- Chronomancer Gloves
-									i(99113),	-- Gloves of the Barbed Assassin
+								i( 99745, {	-- Gauntlets of the Cursed Vanquisher
+									i(99609),	-- Gauntlets of Cyclopean Dread
+									i(99604),	-- Handguards of Cyclopean Dread
+									i(99633),	-- Grips of the Shattered Vale
+									i(99617),	-- Gloves of the Shattered Vale
+									i(99623),	-- Handguards of the Shattered Vale
+									i(99637),	-- Handwraps of the Shattered Vale
+									i(99575),	-- Chronomancer Gloves
+									i(99630),	-- Gloves of the Barbed Assassin
 								}),
 								i(112785),	-- Gar'tok, Strength of the Faithful
 								i(112787),	-- Arcweaver Spell Sword
@@ -1695,26 +1721,26 @@ _.Instances =
 									i(99587),	-- Hood of the Ternion Glory
 									i(99568),	-- Hood of the Horned Nightmare
 								}),
-								i( 99694, {	-- Helm of the Cursed Protector
-									i(99157),	-- Headguard of the Unblinking Vigil
-									i(99142),	-- Crown of Seven Sacred Seals
-									i(99156),	-- Headpiece of Seven Sacred Seals
-									i(99148),	-- Helm of Seven Sacred Seals
-									i(99109),	-- Faceguard of Celestial Harmony
-									i(99093),	-- Headpiece of Celestial Harmony
-									i(99103),	-- Helmet of Celestial Harmony
-									i(99203),	-- Faceguard of the Prehistoric Marauder
-									i(99206),	-- Helmet of the Prehistoric Marauder
+								i( 99750, {	-- Helm of the Cursed Protector
+									i(99660),	-- Headguard of the Unblinking Vigil
+									i(99607),	-- Crown of Seven Sacred Seals
+									i(99653),	-- Headpiece of Seven Sacred Seals
+									i(99553),	-- Helm of Seven Sacred Seals
+									i(99612),	-- Faceguard of Celestial Harmony
+									i(99645),	-- Headpiece of Celestial Harmony
+									i(99649),	-- Helmet of Celestial Harmony
+									i(99557),	-- Faceguard of the Prehistoric Marauder
+									i(99602),	-- Helmet of the Prehistoric Marauder
 								}),
-								i( 99683, {	-- Helm of the Cursed Vanquisher
-									i(99190),	-- Faceguard of Cyclopean Dread
-									i(99194),	-- Helmet of Cyclopean Dread
-									i(99175),	-- Cover of the Shattered Vale
-									i(99164),	-- Headguard of the Shattered Vale
-									i(99182),	-- Headpiece of the Shattered Vale
-									i(99178),	-- Helm of the Shattered Vale
-									i(99161),	-- Chronomancer Hood
-									i(99114),	-- Helmet of the Barbed Assassin
+								i( 99748, {	-- Helm of the Cursed Vanquisher
+									i(99605),	-- Faceguard of Cyclopean Dread
+									i(99571),	-- Helmet of Cyclopean Dread
+									i(99618),	-- Cover of the Shattered Vale
+									i(99624),	-- Headguard of the Shattered Vale
+									i(99599),	-- Headpiece of the Shattered Vale
+									i(99638),	-- Helm of the Shattered Vale
+									i(99576),	-- Chronomancer Hood
+									i(99631),	-- Helmet of the Barbed Assassin
 								}),
 								i(112862),	-- Britomart's Jagged Pike
 								i(112853),	-- Hvitserk's Formidable Shanker
@@ -1755,34 +1781,34 @@ _.Instances =
 									},
 								},
 								i(104158),	-- Blackfuse Bombling (PET!)
-								i( 99690, {	-- Shoulders of the Cursed Conqueror
-									i(99125),	-- Mantle of Winged Triumph
-									i(99132),	-- Pauldrons of Winged Triumph
-									i(99130),	-- Shoulderguards of Winged Triumph
-									i(99120),	-- Mantle of the Ternion Glory
-									i(99111),	-- Shoulderguards of the Ternion Glory
-									i(99205),	-- Mantle of the Horned Nightmare
+								i(99755, {	-- Shoulders of the Cursed Conqueror
+									i(99656),	-- Mantle of Winged Triumph
+									i(99662),	-- Pauldrons of Winged Triumph
+									i(99594),	-- Shoulderguards of Winged Triumph
+									i(99585),	-- Mantle of the Ternion Glory
+									i(99628),	-- Shoulderguards of the Ternion Glory
+									i(99601),	-- Mantle of the Horned Nightmare
 								}),
-								i( 99695, {	-- Shoulders of the Cursed Protector
-									i(99159),	-- Spaulders of the Unblinking Vigil
-									i(99151),	-- Mantle of Seven Sacred Seals
-									i(99144),	-- Shoulderguards of Seven Sacred Seals
-									i(99146),	-- Spaulders of Seven Sacred Seals
-									i(99100),	-- Mantle of Celestial Harmony
-									i(99095),	-- Shoulderwraps of Celestial Harmony
-									i(99105),	-- Spaulders of Celestial Harmony
-									i(99200),	-- Pauldrons of the Prehistoric Marauder
-									i(99196),	-- Shoulderguards of the Prehistoric Marauder
+								i(99756, {	-- Shoulders of the Cursed Protector
+									i(99574),	-- Spaulders of the Unblinking Vigil
+									i(99642),	-- Mantle of Seven Sacred Seals
+									i(99565),	-- Shoulderguards of Seven Sacred Seals
+									i(99655),	-- Spaulders of Seven Sacred Seals
+									i(99614),	-- Mantle of Celestial Harmony
+									i(99647),	-- Shoulderwraps of Celestial Harmony
+									i(99663),	-- Spaulders of Celestial Harmony
+									i(99561),	-- Pauldrons of the Prehistoric Marauder
+									i(99597),	-- Shoulderguards of the Prehistoric Marauder
 								}),
-								i( 99685, {	-- Shoulders of the Cursed Vanquisher
-									i(99187),	-- Pauldrons of Cyclopean Dread
-									i(99179),	-- Shoulderguards of Cyclopean Dread
-									i(99173),	-- Mantle of the Shattered Vale
-									i(99166),	-- Shoulderguards of the Shattered Vale
-									i(99169),	-- Shoulderwraps of the Shattered Vale
-									i(99184),	-- Spaulders of the Shattered Vale
-									i(99153),	-- Chronomancer Mantle
-									i(99116),	-- Spaulders of the Barbed Assassin
+								i(99754, {	-- Shoulders of the Cursed Vanquisher
+									i(99639),	-- Pauldrons of Cyclopean Dread
+									i(99652),	-- Shoulderguards of Cyclopean Dread
+									i(99583),	-- Mantle of the Shattered Vale
+									i(99664),	-- Shoulderguards of the Shattered Vale
+									i(99621),	-- Shoulderwraps of the Shattered Vale
+									i(99589),	-- Spaulders of the Shattered Vale
+									i(99659),	-- Chronomancer Mantle
+									i(99635),	-- Spaulders of the Barbed Assassin
 								}),
 								i(112892),	-- Lever of the Megantholithic Apparatus
 								i(112897),	-- Siegecrafter's Forge Hammer
@@ -1803,74 +1829,36 @@ _.Instances =
 								},
 								{	-- Now We are the Paragon
 									["achievementID"] = 8531,	-- Now We are the Paragon
-									["g"] = {
-										{	-- Become the Bloodseeker
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 2,	-- Become the Bloodseeker
-										},
-										{	-- Become the Dissector
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 5,	-- Become the Dissector
-										},
-										{	-- Become the Locust
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 9,	-- Become the Locust
-										},
-										{	-- Become the Lucid
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 7,	-- Become the Lucid
-										},
-										{	-- Become the Manipulator
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 6,	-- Become the Manipulator
-										},
-										{	-- Become the Poisoned Mind
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 8,	-- Become the Poisoned Mind
-										},
-										{	-- Become the Prime
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 3,	-- Become the Prime
-										},
-										{	-- Become the Swarmkeeper
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 4,	-- Become the Swarmkeeper
-										},
-										{	-- Become the Wind-Reaver
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 1,	-- Become the Wind-Reaver
-										},
-									},
 								},
 								i(104165),	-- Kovok (PET!)
-								i(99688, {	-- Leggings of the Cursed Conqueror
-									i(99124),	-- Greaves 	of Winged Triumph
-									i(99129),	-- Legguards of Winged Triumph
-									i(99139),	-- Legplates of Winged Triumph
-									i(99123),	-- Leggings of the Ternion Glory
-									i(99118),	-- Legwraps of the Ternion Glory
-									i(99098),	-- Leggings of the Horned Nightmare
+								i( 99752, {	-- Leggings of the Cursed Conqueror
+									i(99666),	-- Greaves of Winged Triumph
+									i(99593),	-- Legguards of Winged Triumph
+									i(99661),	-- Legplates of Winged Triumph
+									i(99588),	-- Leggings of the Ternion Glory
+									i(99592),	-- Legwraps of the Ternion Glory
+									i(99569),	-- Leggings of the Horned Nightmare
 								}),
-								i(99693, {	-- Leggings of the Cursed Protector
-									i(99158),	-- Legguards of the Unblinking Vigil
-									i(99145),	-- Leggings of Seven Sacred Seals
-									i(99143),	-- Legguards of Seven Sacred Seals
-									i(99149),	-- Legwraps of Seven Sacred Seals
-									i(99094),	-- Leggings of Celestial Harmony
-									i(99104),	-- Legguards of Celestial Harmony
-									i(99099),	-- Legwraps of Celestial Harmony
-									i(99195),	-- Legguards of the Prehistoric Marauder
-									i(99199),	-- Legplates of the Prehistoric Marauder
+								i( 99753, {	-- Leggings of the Cursed Protector
+									i(99573),	-- Legguards of the Unblinking Vigil
+									i(99654),	-- Leggings of Seven Sacred Seals
+									i(99606),	-- Legguards of Seven Sacred Seals
+									i(99554),	-- Legwraps of Seven Sacred Seals
+									i(99646),	-- Leggings of Celestial Harmony
+									i(99650),	-- Legguards of Celestial Harmony
+									i(99613),	-- Legwraps of Celestial Harmony
+									i(99558),	-- Legguards of the Prehistoric Marauder
+									i(99560),	-- Legplates of the Prehistoric Marauder
 								}),
-								i(99684, {	-- Leggings of the Cursed Vanquisher
-									i(99186),	-- Greaves of Cyclopean Dread
-									i(99191),	-- Legguards of Cyclopean Dread
-									i(99165),	-- Breeches of the Shattered Vale
-									i(99176),	-- Leggings of the Shattered Vale
-									i(99183),	-- Legguards of the Shattered Vale
-									i(99171),	-- Legwraps of the Shattered Vale
-									i(99162),	-- Chronomancer Leggings
-									i(99115),	-- Legguards of the Barbed Assassin
+								i( 99751, {	-- Leggings of the Cursed Vanquisher
+									i(99572),	-- Greaves of Cyclopean Dread
+									i(99564),	-- Legguards of Cyclopean Dread
+									i(99610),	-- Breeches of the Shattered Vale
+									i(99619),	-- Leggings of the Shattered Vale
+									i(99600),	-- Legguards of the Shattered Vale
+									i(99581),	-- Legwraps of the Shattered Vale
+									i(99657),	-- Chronomancer Leggings
+									i(99634),	-- Legguards of the Barbed Assassin
 								}),
 								i(112921),	-- Kil'ruk's Furious Blade
 								i(112920),	-- Korven's Crimson Crescent
@@ -1919,8 +1907,8 @@ _.Instances =
 							})),
 						},
 					}),
-					d(2, {	-- Heroic
-						["difficulties"] = { 5, 6 },
+					d(15, {	-- Heroic (Was Normal)
+					--	["description"] = "This version of the instance was the original Flex difficulty mode. It was split into both Normal and Heroic mode after they introduced Mythic.",
 						["groups"] = {
 							n(0, {	-- Zone Drop
 								{	-- Aeth's Swiftcinder Cloak
@@ -2663,26 +2651,26 @@ _.Instances =
 									i(99119),	-- Robes of the Ternion Glory
 									i(99204),	-- Robes of the Horned Nightmare
 								}),
-								i( 99716, {	-- Chest of the Cursed Protector
-									i(99405),	-- Tunic of the Unblinking Vigil
-									i(99382),	-- Chestguard of Seven Sacred Seals
-									i(99396),	-- Tunic of Seven Sacred Seals
-									i(99391),	-- Vest of Seven Sacred Seals
-									i(99347),	-- Cuirass of Celestial Harmony
-									i(99344),	-- Hauberk of Celestial Harmony
-									i(99351),	-- Tunic of Celestial Harmony
-									i(99411),	-- Battleplate of the Prehistoric Marauder
-									i(99415),	-- Chestguard of the Prehistoric Marauder
+								i( 99691, {	-- Chest of the Cursed Protector
+									i(99167),	-- Tunic of the Unblinking Vigil
+									i(99140),	-- Chestguard of Seven Sacred Seals
+									i(99154),	-- Tunic of Seven Sacred Seals
+									i(99150),	-- Vest of Seven Sacred Seals
+									i(99101),	-- Cuirass of Celestial Harmony
+									i(99106),	-- Hauberk of Celestial Harmony
+									i(99107),	-- Tunic of Celestial Harmony
+									i(99197),	-- Battleplate of the Prehistoric Marauder
+									i(99201),	-- Chestguard of the Prehistoric Marauder
 								}),
-								i( 99714, {	-- Chest of the Cursed Vanquisher
-									i(99335),	-- Breastplate of Cyclopean Dread
-									i(99330),	-- Chestguard of Cyclopean Dread
-									i(99326),	-- Raiment of the Shattered Vale
-									i(99430),	-- Robes of the Shattered Vale
-									i(99419),	-- Tunic of the Shattered Vale
-									i(99427),	-- Vestment of the Shattered Vale
-									i(99400),	-- Chronomancer Robes
-									i(99356),	-- Tunic of the Barbed Assassin
+								i( 99696, {	-- Chest of the Cursed Vanquisher
+									i(99192),	-- Breastplate of Cyclopean Dread
+									i(99188),	-- Chestguard of Cyclopean Dread
+									i(99180),	-- Raiment of the Shattered Vale
+									i(99172),	-- Robes of the Shattered Vale
+									i(99170),	-- Tunic of the Shattered Vale
+									i(99177),	-- Vestment of the Shattered Vale
+									i(99152),	-- Chronomancer Robes
+									i(99112),	-- Tunic of the Barbed Assassin
 								}),
 								i(104162),	-- Droplet of Y'Shaarj (PET!)
 								i(104163),	-- Gooey Sha-ling (PET!)
@@ -2821,26 +2809,26 @@ _.Instances =
 									i(99131),	-- Handgwraps of the Ternion Glory
 									i(99096),	-- Gloves of the Horned Nightmare
 								}),
-								i(99722, {	-- Gauntlets of the Cursed Protector
-									i(99406),	-- Gloves of the Unblinking Vigil
-									i(99383),	-- Gauntlets of Seven Sacred Seals
-									i(99392),	-- Grips of Seven Sacred Seals
-									i(99388),	-- Handwraps of Seven Sacred Seals
-									i(99345),	-- Gloves of Celestial Harmony
-									i(99340),	-- Grips of Celestial Harmony
-									i(99352),	-- Handwraps of Celestial Harmony
-									i(99412),	-- Gauntlets of the Prehistoric Marauder
-									i(99408),	-- Handguards of the Prehistoric Marauder
+								i( 99692, {	-- Gauntlets of the Cursed Protector
+									i(99168),	-- Gloves of the Unblinking Vigil
+									i(99141),	-- Gauntlets of Seven Sacred Seals
+									i(99155),	-- Grips of Seven Sacred Seals
+									i(99147),	-- Handwraps of Seven Sacred Seals
+									i(99092),	-- Gloves of Celestial Harmony
+									i(99102),	-- Grips of Celestial Harmony
+									i(99108),	-- Handwraps of Celestial Harmony
+									i(99198),	-- Gauntlets of the Prehistoric Marauder
+									i(99202),	-- Handguards of the Prehistoric Marauder
 								}),
-								i(99720, {	-- Gauntlets of the Cursed Vanquisher
-									i(99336),	-- Gauntlets of Cyclopean Dread
-									i(99331),	-- Handguards of Cyclopean Dread
-									i(99432),	-- Gloves of the Shattered Vale
-									i(99327),	-- Grips of the Shattered Vale
-									i(99420),	-- Handguards of the Shattered Vale
-									i(99435),	-- Handwraps of the Shattered Vale
-									i(99397),	-- Chronomancer Gloves
-									i(99355),	-- Gloves of the Barbed Assassin
+								i( 99682, {	-- Gauntlets of the Cursed Vanquisher
+									i(99193),	-- Gauntlets of Cyclopean Dread
+									i(99189),	-- Handguards of Cyclopean Dread
+									i(99174),	-- Gloves of the Shattered Vale
+									i(99181),	-- Grips of the Shattered Vale
+									i(99163),	-- Handguards of the Shattered Vale
+									i(99185),	-- Handwraps of the Shattered Vale
+									i(99160),	-- Chronomancer Gloves
+									i(99113),	-- Gloves of the Barbed Assassin
 								}),
 								i(112785),	-- Gar'tok, Strength of the Faithful
 								i(112787),	-- Arcweaver Spell Sword
@@ -2931,26 +2919,26 @@ _.Instances =
 									i(99122),	-- Hood of the Ternion Glory
 									i(99097),	-- Hood of the Horned Nightmare
 								}),
-								i(99725, {	-- Helm of the Cursed Protector
-									i(99402),	-- Headguard of the Unblinking Vigil
-									i(99384),	-- Crown of Seven Sacred Seals
-									i(99393),	-- Headpiece of Seven Sacred Seals
-									i(99389),	-- Helm of Seven Sacred Seals
-									i(99353),	-- Faceguard of Celestial Harmony
-									i(99332),	-- Headpiece of Celestial Harmony
-									i(99341),	-- Helmet of Celestial Harmony
-									i(99409),	-- Faceguard of the Prehistoric Marauder
-									i(99418),	-- Helmet of the Prehistoric Marauder
+								i( 99694, {	-- Helm of the Cursed Protector
+									i(99157),	-- Headguard of the Unblinking Vigil
+									i(99142),	-- Crown of Seven Sacred Seals
+									i(99156),	-- Headpiece of Seven Sacred Seals
+									i(99148),	-- Helm of Seven Sacred Seals
+									i(99109),	-- Faceguard of Celestial Harmony
+									i(99093),	-- Headpiece of Celestial Harmony
+									i(99103),	-- Helmet of Celestial Harmony
+									i(99203),	-- Faceguard of the Prehistoric Marauder
+									i(99206),	-- Helmet of the Prehistoric Marauder
 								}),
-								i(99723, {	-- Helm of the Cursed Vanquisher
-									i(99323),	-- Faceguard of Cyclopean Dread
-									i(99337),	-- Helmet of Cyclopean Dread
-									i(99433),	-- Cover of the Shattered Vale
-									i(99421),	-- Headguard of the Shattered Vale
-									i(99328),	-- Headpiece of the Shattered Vale
-									i(99436),	-- Helm of the Shattered Vale
-									i(99398),	-- Chronomancer Hood
-									i(99348),	-- Helmet of the Barbed Assassin
+								i( 99683, {	-- Helm of the Cursed Vanquisher
+									i(99190),	-- Faceguard of Cyclopean Dread
+									i(99194),	-- Helmet of Cyclopean Dread
+									i(99175),	-- Cover of the Shattered Vale
+									i(99164),	-- Headguard of the Shattered Vale
+									i(99182),	-- Headpiece of the Shattered Vale
+									i(99178),	-- Helm of the Shattered Vale
+									i(99161),	-- Chronomancer Hood
+									i(99114),	-- Helmet of the Barbed Assassin
 								}),
 								i(112862),	-- Britomart's Jagged Pike
 								i(112853),	-- Hvitserk's Formidable Shanker
@@ -2991,34 +2979,34 @@ _.Instances =
 									},
 								},
 								i(104158),	-- Blackfuse Bombling (PET!)
-								i( 99718, {	-- Shoulders of the Cursed Conqueror
-									i(99378),	-- Mantle of Winged Triumph
-									i(99373),	-- Pauldrons of Winged Triumph
-									i(99364),	-- Shoulderguards of Winged Triumph
-									i(99358),	-- Mantle of the Ternion Glory
-									i(99363),	-- Shoulderguards of the Ternion Glory
-									i(99417),	-- Mantle of the Horned Nightmare
+								i( 99690, {	-- Shoulders of the Cursed Conqueror
+									i(99125),	-- Mantle of Winged Triumph
+									i(99132),	-- Pauldrons of Winged Triumph
+									i(99130),	-- Shoulderguards of Winged Triumph
+									i(99120),	-- Mantle of the Ternion Glory
+									i(99111),	-- Shoulderguards of the Ternion Glory
+									i(99205),	-- Mantle of the Horned Nightmare
 								}),
-								i( 99719, {	-- Shoulders of the Cursed Protector
-									i(99404),	-- Spaulders of the Unblinking Vigil
-									i(99381),	-- Mantle of Seven Sacred Seals
-									i(99386),	-- Shoulderguards of Seven Sacred Seals
-									i(99395),	-- Spaulders of Seven Sacred Seals
-									i(99346),	-- Mantle of Celestial Harmony
-									i(99334),	-- Shoulderwraps of Celestial Harmony
-									i(99343),	-- Spaulders of Celestial Harmony
-									i(99414),	-- Pauldrons of the Prehistoric Marauder
-									i(99407),	-- Shoulderguards of the Prehistoric Marauder
+								i( 99695, {	-- Shoulders of the Cursed Protector
+									i(99159),	-- Spaulders of the Unblinking Vigil
+									i(99151),	-- Mantle of Seven Sacred Seals
+									i(99144),	-- Shoulderguards of Seven Sacred Seals
+									i(99146),	-- Spaulders of Seven Sacred Seals
+									i(99100),	-- Mantle of Celestial Harmony
+									i(99095),	-- Shoulderwraps of Celestial Harmony
+									i(99105),	-- Spaulders of Celestial Harmony
+									i(99200),	-- Pauldrons of the Prehistoric Marauder
+									i(99196),	-- Shoulderguards of the Prehistoric Marauder
 								}),
-								i( 99717, {	-- Shoulders of the Cursed Vanquisher
-									i(99339),	-- Pauldrons of Cyclopean Dread
-									i(99325),	-- Shoulderguards of Cyclopean Dread
-									i(99431),	-- Mantle of the Shattered Vale
-									i(99423),	-- Shoulderguards of the Shattered Vale
-									i(99428),	-- Shoulderwraps of the Shattered Vale
-									i(99322),	-- Spaulders of the Shattered Vale
-									i(99401),	-- Chronomancer Mantle
-									i(99350),	-- Spaulders of the Barbed Assassin
+								i( 99685, {	-- Shoulders of the Cursed Vanquisher
+									i(99187),	-- Pauldrons of Cyclopean Dread
+									i(99179),	-- Shoulderguards of Cyclopean Dread
+									i(99173),	-- Mantle of the Shattered Vale
+									i(99166),	-- Shoulderguards of the Shattered Vale
+									i(99169),	-- Shoulderwraps of the Shattered Vale
+									i(99184),	-- Spaulders of the Shattered Vale
+									i(99153),	-- Chronomancer Mantle
+									i(99116),	-- Spaulders of the Barbed Assassin
 								}),
 								i(112892),	-- Lever of the Megantholithic Apparatus
 								i(112897),	-- Siegecrafter's Forge Hammer
@@ -3039,74 +3027,36 @@ _.Instances =
 								},
 								{	-- Now We are the Paragon
 									["achievementID"] = 8531,	-- Now We are the Paragon
-									["g"] = {
-										{	-- Become the Bloodseeker
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 2,	-- Become the Bloodseeker
-										},
-										{	-- Become the Dissector
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 5,	-- Become the Dissector
-										},
-										{	-- Become the Locust
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 9,	-- Become the Locust
-										},
-										{	-- Become the Lucid
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 7,	-- Become the Lucid
-										},
-										{	-- Become the Manipulator
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 6,	-- Become the Manipulator
-										},
-										{	-- Become the Poisoned Mind
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 8,	-- Become the Poisoned Mind
-										},
-										{	-- Become the Prime
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 3,	-- Become the Prime
-										},
-										{	-- Become the Swarmkeeper
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 4,	-- Become the Swarmkeeper
-										},
-										{	-- Become the Wind-Reaver
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 1,	-- Become the Wind-Reaver
-										},
-									},
 								},
 								i(104165),	-- Kovok (PET!)
-								i(99712, {	-- Leggings of the Cursed Conqueror
-									i(99377),	-- Greaves of Winged Triumph
-									i(99371),	-- Legguards of Winged Triumph
-									i(99372),	-- Legplates of Winged Triumph
-									i(99361),	-- Leggings of the Ternion Glory
-									i(99367),	-- Legwraps of the Ternion Glory
-									i(99426),	-- Leggings of the Horned Nightmare
+								i(99688, {	-- Leggings of the Cursed Conqueror
+									i(99124),	-- Greaves 	of Winged Triumph
+									i(99129),	-- Legguards of Winged Triumph
+									i(99139),	-- Legplates of Winged Triumph
+									i(99123),	-- Leggings of the Ternion Glory
+									i(99118),	-- Legwraps of the Ternion Glory
+									i(99098),	-- Leggings of the Horned Nightmare
 								}),
-								i(99713, {	-- Leggings of the Cursed Protector
-									i(99403),	-- Legguards of the Unblinking Vigil
-									i(99394),	-- Leggings of Seven Sacred Seals
-									i(99385),	-- Legguards of Seven Sacred Seals
-									i(99390),	-- Legwraps of Seven Sacred Seals
-									i(99333),	-- Leggings of Celestial Harmony
-									i(99342),	-- Legguards of Celestial Harmony
-									i(99354),	-- Legwraps of Celestial Harmony
-									i(99410),	-- Legguards of the Prehistoric Marauder
-									i(99413),	-- Legplates of the Prehistoric Marauder
+								i(99693, {	-- Leggings of the Cursed Protector
+									i(99158),	-- Legguards of the Unblinking Vigil
+									i(99145),	-- Leggings of Seven Sacred Seals
+									i(99143),	-- Legguards of Seven Sacred Seals
+									i(99149),	-- Legwraps of Seven Sacred Seals
+									i(99094),	-- Leggings of Celestial Harmony
+									i(99104),	-- Legguards of Celestial Harmony
+									i(99099),	-- Legwraps of Celestial Harmony
+									i(99195),	-- Legguards of the Prehistoric Marauder
+									i(99199),	-- Legplates of the Prehistoric Marauder
 								}),
-								i(99726, {	-- Leggings of the Cursed Vanquisher
-									i(99338),	-- Greaves of Cyclopean Dread
-									i(99324),	-- Legguards of Cyclopean Dread
-									i(99422),	-- Breeches of the Shattered Vale
-									i(99434),	-- Leggings of the Shattered Vale
-									i(99329),	-- Legguards of the Shattered Vale
-									i(99429),	-- Legwraps of the Shattered Vale
-									i(99399),	-- Chronomancer Leggings
-									i(99349),	-- Legguards of the Barbed Assassin
+								i(99684, {	-- Leggings of the Cursed Vanquisher
+									i(99186),	-- Greaves of Cyclopean Dread
+									i(99191),	-- Legguards of Cyclopean Dread
+									i(99165),	-- Breeches of the Shattered Vale
+									i(99176),	-- Leggings of the Shattered Vale
+									i(99183),	-- Legguards of the Shattered Vale
+									i(99171),	-- Legwraps of the Shattered Vale
+									i(99162),	-- Chronomancer Leggings
+									i(99115),	-- Legguards of the Barbed Assassin
 								}),
 								i(112921),	-- Kil'ruk's Furious Blade
 								i(112920),	-- Korven's Crimson Crescent
@@ -3152,9 +3102,8 @@ _.Instances =
 								i(105857),	-- Essence of the Cursed Protector
 								i(105859),	-- Essence of the Cursed Vanquisher
 								i(112935, { -- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
-									["bonusID"] = 450,
+									["bonusID"] = 449,
 								}),
-								i(104253),	-- Kor'kron Juggernaut (MOUNT!)
 								i(112932),	-- Kor'kron Spire of Supremacy
 								i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
 								i(112939),	-- Horned Mace of the Old Ones
@@ -3179,7 +3128,8 @@ _.Instances =
 							})),
 						},
 					}),
-					d(14, {	-- Flex
+					d(16, {	-- Mythic
+						--["ignoreBonus"] = true,
 						["groups"] = {
 							n(0, {	-- Zone Drop
 								{	-- Aeth's Swiftcinder Cloak
@@ -3938,26 +3888,26 @@ _.Instances =
 									i(99357),	-- Robes of the Ternion Glory
 									i(99416),	-- Robes of the Horned Nightmare
 								}),
-								i( 99744, {	-- Chest of the Cursed Protector
-									i(99577),	-- Tunic of the Unblinking Vigil
-									i(99643),	-- Chestguard of Seven Sacred Seals
-									i(99555),	-- Tunic of Seven Sacred Seals
-									i(99641),	-- Vest of Seven Sacred Seals
-									i(99615),	-- Cuirass of Celestial Harmony
-									i(99579),	-- Hauberk of Celestial Harmony
-									i(99636),	-- Tunic of Celestial Harmony
-									i(99603),	-- Battleplate of the Prehistoric Marauder
-									i(99562),	-- Chestguard of the Prehistoric Marauder
+								i( 99716, {	-- Chest of the Cursed Protector
+									i(99405),	-- Tunic of the Unblinking Vigil
+									i(99382),	-- Chestguard of Seven Sacred Seals
+									i(99396),	-- Tunic of Seven Sacred Seals
+									i(99391),	-- Vest of Seven Sacred Seals
+									i(99347),	-- Cuirass of Celestial Harmony
+									i(99344),	-- Hauberk of Celestial Harmony
+									i(99351),	-- Tunic of Celestial Harmony
+									i(99411),	-- Battleplate of the Prehistoric Marauder
+									i(99415),	-- Chestguard of the Prehistoric Marauder
 								}),
-								i( 99742, {	-- Chest of the Cursed Vanquisher
-									i(99608),	-- Breastplate of Cyclopean Dread
-									i(99640),	-- Chestguard of Cyclopean Dread
-									i(99632),	-- Raiment of the Shattered Vale
-									i(99582),	-- Robes of the Shattered Vale
-									i(99622),	-- Tunic of the Shattered Vale
-									i(99620),	-- Vestment of the Shattered Vale
-									i(99658),	-- Chronomancer Robes
-									i(99629),	-- Tunic of the Barbed Assassin
+								i( 99714, {	-- Chest of the Cursed Vanquisher
+									i(99335),	-- Breastplate of Cyclopean Dread
+									i(99330),	-- Chestguard of Cyclopean Dread
+									i(99326),	-- Raiment of the Shattered Vale
+									i(99430),	-- Robes of the Shattered Vale
+									i(99419),	-- Tunic of the Shattered Vale
+									i(99427),	-- Vestment of the Shattered Vale
+									i(99400),	-- Chronomancer Robes
+									i(99356),	-- Tunic of the Barbed Assassin
 								}),
 								i(104162),	-- Droplet of Y'Shaarj (PET!)
 								i(104163),	-- Gooey Sha-ling (PET!)
@@ -4108,26 +4058,26 @@ _.Instances =
 									i(99365),	-- Handwraps of the Ternion Glory
 									i(99424),	-- Gloves of the Horned Nightmare
 								}),
-								i( 99747, {	-- Gauntlets of the Cursed Protector
-									i(99578),	-- Gloves of the Unblinking Vigil
-									i(99644),	-- Gauntlets of Seven Sacred Seals
-									i(99556),	-- Grips of Seven Sacred Seals
-									i(99552),	-- Handwraps of Seven Sacred Seals
-									i(99580),	-- Gloves of Celestial Harmony
-									i(99616),	-- Grips of Celestial Harmony
-									i(99611),	-- Handwraps of Celestial Harmony
-									i(99559),	-- Gauntlets of the Prehistoric Marauder
-									i(99563),	-- Handguards of the Prehistoric Marauder
+								i(99722, {	-- Gauntlets of the Cursed Protector
+									i(99406),	-- Gloves of the Unblinking Vigil
+									i(99383),	-- Gauntlets of Seven Sacred Seals
+									i(99392),	-- Grips of Seven Sacred Seals
+									i(99388),	-- Handwraps of Seven Sacred Seals
+									i(99345),	-- Gloves of Celestial Harmony
+									i(99340),	-- Grips of Celestial Harmony
+									i(99352),	-- Handwraps of Celestial Harmony
+									i(99412),	-- Gauntlets of the Prehistoric Marauder
+									i(99408),	-- Handguards of the Prehistoric Marauder
 								}),
-								i( 99745, {	-- Gauntlets of the Cursed Vanquisher
-									i(99609),	-- Gauntlets of Cyclopean Dread
-									i(99604),	-- Handguards of Cyclopean Dread
-									i(99633),	-- Grips of the Shattered Vale
-									i(99617),	-- Gloves of the Shattered Vale
-									i(99623),	-- Handguards of the Shattered Vale
-									i(99637),	-- Handwraps of the Shattered Vale
-									i(99575),	-- Chronomancer Gloves
-									i(99630),	-- Gloves of the Barbed Assassin
+								i(99720, {	-- Gauntlets of the Cursed Vanquisher
+									i(99336),	-- Gauntlets of Cyclopean Dread
+									i(99331),	-- Handguards of Cyclopean Dread
+									i(99432),	-- Gloves of the Shattered Vale
+									i(99327),	-- Grips of the Shattered Vale
+									i(99420),	-- Handguards of the Shattered Vale
+									i(99435),	-- Handwraps of the Shattered Vale
+									i(99397),	-- Chronomancer Gloves
+									i(99355),	-- Gloves of the Barbed Assassin
 								}),
 								i(112785),	-- Gar'tok, Strength of the Faithful
 								i(112787),	-- Arcweaver Spell Sword
@@ -4229,26 +4179,26 @@ _.Instances =
 									i(99360),	-- Hood of the Ternion Glory
 									i(99425),	-- Hood of the Horned Nightmare
 								}),
-								i( 99750, {	-- Helm of the Cursed Protector
-									i(99660),	-- Headguard of the Unblinking Vigil
-									i(99607),	-- Crown of Seven Sacred Seals
-									i(99653),	-- Headpiece of Seven Sacred Seals
-									i(99553),	-- Helm of Seven Sacred Seals
-									i(99612),	-- Faceguard of Celestial Harmony
-									i(99645),	-- Headpiece of Celestial Harmony
-									i(99649),	-- Helmet of Celestial Harmony
-									i(99557),	-- Faceguard of the Prehistoric Marauder
-									i(99602),	-- Helmet of the Prehistoric Marauder
+								i(99725, {	-- Helm of the Cursed Protector
+									i(99402),	-- Headguard of the Unblinking Vigil
+									i(99384),	-- Crown of Seven Sacred Seals
+									i(99393),	-- Headpiece of Seven Sacred Seals
+									i(99389),	-- Helm of Seven Sacred Seals
+									i(99353),	-- Faceguard of Celestial Harmony
+									i(99332),	-- Headpiece of Celestial Harmony
+									i(99341),	-- Helmet of Celestial Harmony
+									i(99409),	-- Faceguard of the Prehistoric Marauder
+									i(99418),	-- Helmet of the Prehistoric Marauder
 								}),
-								i( 99748, {	-- Helm of the Cursed Vanquisher
-									i(99605),	-- Faceguard of Cyclopean Dread
-									i(99571),	-- Helmet of Cyclopean Dread
-									i(99618),	-- Cover of the Shattered Vale
-									i(99624),	-- Headguard of the Shattered Vale
-									i(99599),	-- Headpiece of the Shattered Vale
-									i(99638),	-- Helm of the Shattered Vale
-									i(99576),	-- Chronomancer Hood
-									i(99631),	-- Helmet of the Barbed Assassin
+								i(99723, {	-- Helm of the Cursed Vanquisher
+									i(99323),	-- Faceguard of Cyclopean Dread
+									i(99337),	-- Helmet of Cyclopean Dread
+									i(99433),	-- Cover of the Shattered Vale
+									i(99421),	-- Headguard of the Shattered Vale
+									i(99328),	-- Headpiece of the Shattered Vale
+									i(99436),	-- Helm of the Shattered Vale
+									i(99398),	-- Chronomancer Hood
+									i(99348),	-- Helmet of the Barbed Assassin
 								}),
 								i(112862),	-- Britomart's Jagged Pike
 								i(112853),	-- Hvitserk's Formidable Shanker
@@ -4292,34 +4242,34 @@ _.Instances =
 									["achievementID"] = 8480,	-- Mythic: Siegecrafter Blackfuse
 								},
 								i(104158),	-- Blackfuse Bombling (PET!)
-								i(99755, {	-- Shoulders of the Cursed Conqueror
-									i(99656),	-- Mantle of Winged Triumph
-									i(99662),	-- Pauldrons of Winged Triumph
-									i(99594),	-- Shoulderguards of Winged Triumph
-									i(99585),	-- Mantle of the Ternion Glory
-									i(99628),	-- Shoulderguards of the Ternion Glory
-									i(99601),	-- Mantle of the Horned Nightmare
+								i( 99718, {	-- Shoulders of the Cursed Conqueror
+									i(99378),	-- Mantle of Winged Triumph
+									i(99373),	-- Pauldrons of Winged Triumph
+									i(99364),	-- Shoulderguards of Winged Triumph
+									i(99358),	-- Mantle of the Ternion Glory
+									i(99363),	-- Shoulderguards of the Ternion Glory
+									i(99417),	-- Mantle of the Horned Nightmare
 								}),
-								i(99756, {	-- Shoulders of the Cursed Protector
-									i(99574),	-- Spaulders of the Unblinking Vigil
-									i(99642),	-- Mantle of Seven Sacred Seals
-									i(99565),	-- Shoulderguards of Seven Sacred Seals
-									i(99655),	-- Spaulders of Seven Sacred Seals
-									i(99614),	-- Mantle of Celestial Harmony
-									i(99647),	-- Shoulderwraps of Celestial Harmony
-									i(99663),	-- Spaulders of Celestial Harmony
-									i(99561),	-- Pauldrons of the Prehistoric Marauder
-									i(99597),	-- Shoulderguards of the Prehistoric Marauder
+								i( 99719, {	-- Shoulders of the Cursed Protector
+									i(99404),	-- Spaulders of the Unblinking Vigil
+									i(99381),	-- Mantle of Seven Sacred Seals
+									i(99386),	-- Shoulderguards of Seven Sacred Seals
+									i(99395),	-- Spaulders of Seven Sacred Seals
+									i(99346),	-- Mantle of Celestial Harmony
+									i(99334),	-- Shoulderwraps of Celestial Harmony
+									i(99343),	-- Spaulders of Celestial Harmony
+									i(99414),	-- Pauldrons of the Prehistoric Marauder
+									i(99407),	-- Shoulderguards of the Prehistoric Marauder
 								}),
-								i(99754, {	-- Shoulders of the Cursed Vanquisher
-									i(99639),	-- Pauldrons of Cyclopean Dread
-									i(99652),	-- Shoulderguards of Cyclopean Dread
-									i(99583),	-- Mantle of the Shattered Vale
-									i(99664),	-- Shoulderguards of the Shattered Vale
-									i(99621),	-- Shoulderwraps of the Shattered Vale
-									i(99589),	-- Spaulders of the Shattered Vale
-									i(99659),	-- Chronomancer Mantle
-									i(99635),	-- Spaulders of the Barbed Assassin
+								i( 99717, {	-- Shoulders of the Cursed Vanquisher
+									i(99339),	-- Pauldrons of Cyclopean Dread
+									i(99325),	-- Shoulderguards of Cyclopean Dread
+									i(99431),	-- Mantle of the Shattered Vale
+									i(99423),	-- Shoulderguards of the Shattered Vale
+									i(99428),	-- Shoulderwraps of the Shattered Vale
+									i(99322),	-- Spaulders of the Shattered Vale
+									i(99401),	-- Chronomancer Mantle
+									i(99350),	-- Spaulders of the Barbed Assassin
 								}),
 								i(112892),	-- Lever of the Megantholithic Apparatus
 								i(112897),	-- Siegecrafter's Forge Hammer
@@ -4343,74 +4293,36 @@ _.Instances =
 								},
 								{	-- Now We are the Paragon
 									["achievementID"] = 8531,	-- Now We are the Paragon
-									["g"] = {
-										{	-- Become the Bloodseeker
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 2,	-- Become the Bloodseeker
-										},
-										{	-- Become the Dissector
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 5,	-- Become the Dissector
-										},
-										{	-- Become the Locust
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 9,	-- Become the Locust
-										},
-										{	-- Become the Lucid
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 7,	-- Become the Lucid
-										},
-										{	-- Become the Manipulator
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 6,	-- Become the Manipulator
-										},
-										{	-- Become the Poisoned Mind
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 8,	-- Become the Poisoned Mind
-										},
-										{	-- Become the Prime
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 3,	-- Become the Prime
-										},
-										{	-- Become the Swarmkeeper
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 4,	-- Become the Swarmkeeper
-										},
-										{	-- Become the Wind-Reaver
-											["achievementID"] = 8531,	-- Now We are the Paragon
-											["criteriaID"] = 1,	-- Become the Wind-Reaver
-										},
-									},
 								},
 								i(104165),	-- Kovok (PET!)
-								i( 99752, {	-- Leggings of the Cursed Conqueror
-									i(99666),	-- Greaves of Winged Triumph
-									i(99593),	-- Legguards of Winged Triumph
-									i(99661),	-- Legplates of Winged Triumph
-									i(99588),	-- Leggings of the Ternion Glory
-									i(99592),	-- Legwraps of the Ternion Glory
-									i(99569),	-- Leggings of the Horned Nightmare
+								i(99712, {	-- Leggings of the Cursed Conqueror
+									i(99377),	-- Greaves of Winged Triumph
+									i(99371),	-- Legguards of Winged Triumph
+									i(99372),	-- Legplates of Winged Triumph
+									i(99361),	-- Leggings of the Ternion Glory
+									i(99367),	-- Legwraps of the Ternion Glory
+									i(99426),	-- Leggings of the Horned Nightmare
 								}),
-								i( 99753, {	-- Leggings of the Cursed Protector
-									i(99573),	-- Legguards of the Unblinking Vigil
-									i(99654),	-- Leggings of Seven Sacred Seals
-									i(99606),	-- Legguards of Seven Sacred Seals
-									i(99554),	-- Legwraps of Seven Sacred Seals
-									i(99646),	-- Leggings of Celestial Harmony
-									i(99650),	-- Legguards of Celestial Harmony
-									i(99613),	-- Legwraps of Celestial Harmony
-									i(99558),	-- Legguards of the Prehistoric Marauder
-									i(99560),	-- Legplates of the Prehistoric Marauder
+								i(99713, {	-- Leggings of the Cursed Protector
+									i(99403),	-- Legguards of the Unblinking Vigil
+									i(99394),	-- Leggings of Seven Sacred Seals
+									i(99385),	-- Legguards of Seven Sacred Seals
+									i(99390),	-- Legwraps of Seven Sacred Seals
+									i(99333),	-- Leggings of Celestial Harmony
+									i(99342),	-- Legguards of Celestial Harmony
+									i(99354),	-- Legwraps of Celestial Harmony
+									i(99410),	-- Legguards of the Prehistoric Marauder
+									i(99413),	-- Legplates of the Prehistoric Marauder
 								}),
-								i( 99751, {	-- Leggings of the Cursed Vanquisher
-									i(99572),	-- Greaves of Cyclopean Dread
-									i(99564),	-- Legguards of Cyclopean Dread
-									i(99610),	-- Breeches of the Shattered Vale
-									i(99619),	-- Leggings of the Shattered Vale
-									i(99600),	-- Legguards of the Shattered Vale
-									i(99581),	-- Legwraps of the Shattered Vale
-									i(99657),	-- Chronomancer Leggings
-									i(99634),	-- Legguards of the Barbed Assassin
+								i(99726, {	-- Leggings of the Cursed Vanquisher
+									i(99338),	-- Greaves of Cyclopean Dread
+									i(99324),	-- Legguards of Cyclopean Dread
+									i(99422),	-- Breeches of the Shattered Vale
+									i(99434),	-- Leggings of the Shattered Vale
+									i(99329),	-- Legguards of the Shattered Vale
+									i(99429),	-- Legwraps of the Shattered Vale
+									i(99399),	-- Chronomancer Leggings
+									i(99349),	-- Legguards of the Barbed Assassin
 								}),
 								i(112921),	-- Kil'ruk's Furious Blade
 								i(112920),	-- Korven's Crimson Crescent
