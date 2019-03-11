@@ -530,6 +530,18 @@ _.NeverImplemented =
 			un(1, i(17000)),	-- Band of the Wraith
 			un(1, i(17108)),	-- Mark of Deflection
 			un(1, i(13812)),	-- Ring of the Dawn
+			un(1, i(108813)),	-- Unknown
+			un(1, i(108820)),	-- Unknown
+			un(1, i(108821)),	-- Unknown
+			un(1, i(109277)),	-- Unknown
+			un(1, i(109365)),	-- Unknown
+			un(1, i(109410)),	-- Unknown
+			un(1, i(109418)),	-- Unknown
+			un(1, i(109447)),	-- Unknown
+			un(1, i(109454)),	-- Unknown
+			un(1, i(109478)),	-- Unknown
+			un(1, i(109512)),	-- Unknown
+			un(1, i(109516)),	-- Unknown
 			un(1, i(19065)),	-- Emerald Circle
 			un(1, i(62035)), 	-- Antique Myrmidon's Signet
 			un(1, i(62036)), 	-- Ornate Band of Accuria
@@ -862,6 +874,7 @@ _.NeverImplemented =
 			un(1, i(103375)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(102613)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)	
 			un(1, i(102810)),    -- Grievous Gladiator's Heavy Crossbow (they ditched those items)
+			un(1, i(103178)),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items) (A)
 		}),
 		n(-333, { -- Daggers
 			un(1, i(108785)),	-- Unknown
@@ -903,6 +916,7 @@ _.NeverImplemented =
 			un(1, i(108790)),	-- Unknown
 			un(1, i(109491)),	-- Unknown
 			un(1, i(109529)),	-- Unknown
+			un(1, i(122080)),	-- Warscout Shotgun (not added version)
 			un(1, i(64824)),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta))
 			
 		}),
@@ -992,6 +1006,10 @@ _.NeverImplemented =
 			un(1, i(23457)),	-- High Warlord's Destroyer
 			un(1, i(159555)),	-- Unknown
 			un(1, i(165263)),	-- Unknown
+			un(1, i(108794)),	-- Unknown
+			un(1, i(108795)),	-- Unknown
+			un(1, i(108796)),	-- Unknown
+			un(1, i(109401)),	-- Unknown
 		}),
 		n(-339, { -- Two Handed Swords
 			un(1, i(33475)),	-- Artefact Frostmourne
