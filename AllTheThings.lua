@@ -9905,7 +9905,9 @@ end)();
 									self.data.expanded = true;
 									ExpandGroupsRecursively(self.data, true);
 								end
-								self:SetVisible(true);
+								if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+									self:SetVisible(true);
+								end
 							end
 						end
 					end
@@ -9974,11 +9976,14 @@ end)();
 				elseif e == "NEW_RECIPE_LEARNED" then
 					local spellID = ...;
 					if spellID then
+						local previousState = GetDataSubMember("CollectedSpells", spellID);
 						SetDataSubMember("CollectedSpells", spellID, 1);
 						if not SetTempDataSubMember("CollectedSpells", spellID) then
 							SetTempDataSubMember("CollectedSpells", spellID, 1);
 							app:RefreshData(true, true, true);
-							app:PlayFanfare();
+							if not previousState or not app.Settings:Get("AccountWide:Recipes") then
+								app:PlayFanfare();
+							end
 							wipe(searchCache);
 							collectgarbage();
 						end
