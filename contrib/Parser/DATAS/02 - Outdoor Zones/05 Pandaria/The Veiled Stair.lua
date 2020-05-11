@@ -39,16 +39,16 @@ _.Zones =
 					p(709), 	-- Malayan Quillrat Pup
 				}),
 				n(-17, { 	-- Quests
-					un(40, q(33104, { -- A Pandaren Legend
+					q(33104, { -- A Pandaren Legend
 						i(102457, { -- Timeless Essence of the Black Dragonflight
-							un(38, i(102248)), -- Fen-Yu, Fury of Xuen
-							un(38, i(102249)), -- Gon-Lu, Strength of Xuen
-							un(38, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
-							un(38, i(102245)), -- Qian-Le, Courage of Niuzao
-							un(38, i(102250)), -- Qian-Ying, Fortitude of Niuzao
-							un(38, i(102246)), -- Xing-Ho, Breath of Yu'lon
+							i(102248), -- Fen-Yu, Fury of Xuen
+							i(102249), -- Gon-Lu, Strength of Xuen
+							i(102247), -- Jina-Kang, Kindness of Chi-Ji
+							i(102245), -- Qian-Le, Courage of Niuzao
+							i(102250), -- Qian-Ying, Fortitude of Niuzao
+							i(102246), -- Xing-Ho, Breath of Yu'lon
 						}),
-					})),
+					}),
 --[[				
 					q(31287),	-- Educating Saurok
 					q(31286),	-- Robbing Robbers of Robbers
