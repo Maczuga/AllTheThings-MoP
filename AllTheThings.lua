@@ -7170,9 +7170,11 @@ local function RowOnEnter(self)
 		if reference.races and app.Settings:GetTooltipSetting("RaceRequirements") then
 			local str = "";
 			for i,race in ipairs(reference.races) do
-				if i > 1 then str = str .. ", "; end
 				local race_name = AllTheThings.RaceDBTable[race];
-				str = str .. race_name;
+				if race_name ~= nil then
+					if i > 1 then str = str .. ", "; end
+					str = str .. race_name;
+				end
 			end
 			GameTooltip:AddDoubleLine("Races", str);
 		end
