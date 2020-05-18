@@ -312,37 +312,6 @@ ItemClassInfo = {
 		["class"] = "Consumable",
 	},
 };
-WOD_CRAFTED_ITEM = function(id)
-	return 
-	{
-		["itemID"] = id,
-		["bonusID"] = 525,
-		["groups"] = {
-			{
-				["itemID"] = id,
-				["bonusID"] = 558,
-				["groups"] = {
-					{
-						["itemID"] = id,
-						["bonusID"] = 559,
-					},
-					{
-						["itemID"] = id,
-						["bonusID"] = 594,
-					},
-					{
-						["itemID"] = id,
-						["bonusID"] = 619,
-					},
-					{
-						["itemID"] = id,
-						["bonusID"] = 620,
-					}
-				}
-			}
-		}
-	};
-end
 
 -- Construct a commonly formatted object.
 struct = function(field, id, t)

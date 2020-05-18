@@ -203,7 +203,6 @@ namespace Parser_V2
                     case "link":
                     case "bonusID":
                     case "modID":
-                    case "artifactID":
                     case "visualID":
                     case "itemID":
                     case "items":

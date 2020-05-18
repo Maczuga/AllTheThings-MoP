@@ -67,7 +67,6 @@ namespace Parser_V2
                 new MountData("mountID", "mnt", new List<string>{ "f", "spellID" }),            // Mount ID (TODO: Add item ID cache data if missing)
                 new SpeciesData("speciesID", "p", new List<string>{ "f", "spellID" }),          // Species ID (TODO: Add item ID cache data if missing)
                 new ObjectData("instanceID", "inst", new List<string>{ "f" }),
-                new ObjectData("artifactID", "artifact", new List<string>{ "f" }),
                 new HeirloomData("heirloomID", "heir"),
                 new ObjectData("holidayID", "ho", new List<string>{ "f" }),
                 new ItemSourceData("s", "s"),

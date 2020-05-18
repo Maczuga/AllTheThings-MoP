@@ -154,7 +154,6 @@ _.Zones =
 								qh(9842, {	-- The Sharpest Blades
 									["groups"] = {
 										i( 27753),	-- Ensorcelled Marshfang Blade
-										i(157547),	-- Keen Marshfang Shanker
 										i( 27754),	-- Keen Marshfang Slicer
 										i( 27756),	-- Marshfang Blade Axe
 									},
@@ -261,7 +260,6 @@ _.Zones =
 								qa(9833, {	-- Lines of Communication
 									["groups"] = {
 										i( 27753),	-- Ensorcelled Marshfang Blade
-										i(157547),	-- Keen Marshfang Shanker
 										i( 27754),	-- Keen Marshfang Slicer
 										i( 27756),	-- Marshfang Blade Axe
 									},
@@ -511,7 +509,6 @@ _.Zones =
 									i(25518),	-- Explorer's Leggings
 									i(25517),	-- Preserver's Medallion
 									i(25519),	-- Warden's Hammer
-									i(157548),	-- Warden's Longbow
 								},
 								["qg"] = 17969,	-- Kayra Longmane
 								["coord"] = { 83.4, 85.5, 102 },

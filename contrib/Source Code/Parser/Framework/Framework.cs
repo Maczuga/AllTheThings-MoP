@@ -590,12 +590,6 @@ namespace Parser_V2
                         return "modID";
                     }
 
-                case "artifactId":
-                case "artifactID":
-                    {
-                        return "artifactID";
-                    }
-
                 case "categoryId":
                 case "categoryID":
                     {
@@ -620,13 +614,7 @@ namespace Parser_V2
                     {
                         return "coords";
                     }
-
-                case "illusionId":
-                case "illusionID":
-                    {
-                        return "illusionID";
-                    }
-
+                    
                 case "itemId":
                 case "itemID":
                     {

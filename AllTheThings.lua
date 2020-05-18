@@ -9808,7 +9808,6 @@ end)();
 					end
 					self.lastTradeSkillID = tradeSkillID;
 					
-
 					-- Clear the search box focus so the scan will have correct results.
 					local searchBox = _G.TradeSkillFrameSearchBox
 					searchBox:SetText("")
@@ -9849,7 +9848,6 @@ end)();
 						end
 					end
 
-					
 					-- Cache learned recipes
 					local learned = 0;
 					local reagentCache = app.GetDataMember("Reagents", {});
@@ -9940,7 +9938,7 @@ end)();
 				if e == "TRADE_SKILL_LIST_UPDATE" then
 					if self:IsVisible() then
 						-- If it's not yours, don't take credit for it.
-						if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
+						if IsTradeSkillLinked() or IsTradeSkillGuild() then
 							self:SetVisible(false);
 							return false;
 						end
