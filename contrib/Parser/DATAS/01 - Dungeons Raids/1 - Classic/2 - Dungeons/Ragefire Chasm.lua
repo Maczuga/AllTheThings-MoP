@@ -26,9 +26,6 @@ _.Instances =
 								{	-- Robes of the Doomed Ritual
 									["itemID"] = 82891,	-- Robes of the Doomed Ritual
 								},
-								{	-- Scaled Vest of the Shaman
-									["itemID"] = 131712,	-- Scaled Vest of the Shaman
-								},
 								{	-- Searing Belt
 									["itemID"] = 82895,	-- Searing Belt
 								},
@@ -37,9 +34,6 @@ _.Instances =
 								},
 								{	-- Stone Guard Greaves (Plate)
 									["itemID"] = 82894,	-- Stone Guard Greaves
-								},
-								{	-- Stone Guard Greaves (Mail)
-									["itemID"] = 131711,	-- Stone Guard Greaves
 								},
 							},
 						},

@@ -570,7 +570,6 @@ _.Zones =
 					}),
 					n(54657, {	-- Doris Volanthius <Vicious Gladiator>
 					-- The NPC ID got reused, she was also >S11< Elite Vendor
-						-- i(146641), --  Arsenal: Vicious Gladiator's Weapons
 						-- Weapons
 						i(61360),	-- Vicious Gladiator's Barrier
 						i(61351),	-- Vicious Gladiator's Baton of Light

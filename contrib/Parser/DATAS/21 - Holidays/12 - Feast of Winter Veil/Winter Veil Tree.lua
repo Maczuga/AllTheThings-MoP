@@ -37,25 +37,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 						["lvl"] = 20,
 					}),
-					q(50420, { 	-- A Gently Shaken Gift
-						["groups"] = {
-							i(21270, { -- Gently Shaken Gift
-								["groups"] = {
-									un(29, i(21235)), -- Winter Veil Roast
-								},
-								["description"] = "Gift from 2014 and was given to anyone who wasn't a spell caster.",
-								["questID"] = 8767,
-							}),
-							i(21271, { -- Gently Shaken Gift
-								["groups"] = {
-									un(29, i(21241)), -- Winter Veil Eggnog
-								},
-								["description"] = "Gift from 2014 and was given to spell casters.",
-								["questID"] = 8788,
-							}),
-						},
-						["lvl"] = 10,
-					}),
 					q(8769, { 	-- A Ticking Present
 						["groups"] = {
 							i(21327, { -- Ticking Present
@@ -71,60 +52,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 							}),
 						},
 						["lvl"] = 40,
-					}),
-					q(47751, { 	-- A Winter Veil Gift
-						["groups"] = {
-							i(34426, { -- Winter Veil Gift
-								["groups"] = {
-									un(29, i(34425)), -- Clockwork Rocket Bot
-								},
-								["description"] = "Gift from 2007.",
-								["questID"] = 11528,
-								["u"] = 40, -- Legacy Quest/Quest Item
-							}),
-							i(34426, { -- Winter Veil Gift
-								["groups"] = {
-									un(29, i(37710)), -- Crashin' Thrashin' Racer Controller
-								},
-								["description"] = "Gift from 2008.",
-								["questID"] = 13203,
-								["u"] = 40, -- Legacy Quest/Quest Item
-							}),
-							i(67443, { -- Winter Veil Gift
-								["groups"] = {
-									un(29, i(46709)), -- MiniZep Controller
-								},
-								["description"] = "Gift from 2010.",
-								["questID"] = 28878,
-								["u"] = 40, -- Legacy Quest/Quest Item
-							}),
-							i(70938, { -- Winter Veil Gift
-								["groups"] = {
-									un(29, i(70923)), -- Gaudy Winter Veil Sweater
-								},
-								["description"] = "Gift from 2011.",
-								["questID"] = 29385,
-								["u"] = 40, -- Legacy Quest/Quest Item
-							}),
-							i(90892, { -- Winter Veil Gift
-								["groups"] = {
-									un(29, i(90888)), -- Foot Ball
-									un(29, i(90883)), -- The Pigskin
-								},
-								["description"] = "Gift from 2012.",
-								["questID"] = 32106,
-								["u"] = 40, -- Legacy Quest/Quest Item
-							}),
-							i(104319, { -- Winter Veil Gift
-								["groups"] = {
-									un(29, i(104318)), -- Crashin' Thrashin' Flyer Controller
-								},
-								["description"] = "Gift from 2013.",
-								["questID"] = 33252,
-								["u"] = 40, -- Legacy Quest/Quest Item
-							}),
-						},
-						["lvl"] = 10,
 					}),
 				},
 			}),

@@ -36,13 +36,6 @@ _.Achievements =
 						crit(3),		-- A Pirate's Life For You
 						crit(4),		-- Bloodsail and Brashtide
 					}),
-					a(ach(12430, {	-- Duskwood Quests
-						crit(1),		-- The Legend of Stalvan
-						crit(2),		-- Morbent Fel
-						crit(3),		-- A Hermit's Errand
-						crit(4),		-- Mor'ladim
-						crit(5),		-- Citizens of Darkshire
-					})),
 					ach(4892, {		-- Eastern Plaguelands Quests
 						crit(1),		-- The Paladin Pals
 						crit(2),		-- The Redpaths of Darrowshire
@@ -76,10 +69,6 @@ _.Achievements =
 						crit(2),		-- Jintha'Alor / Hiri'watha
 						crit(3),		-- Quel'Danil Lodge / Revantusk Village
 					}),
-					a(ach(12456, {	-- Loch Modan & Wetlands Quests (another one where criteria don't populate properly, used ach in place)
-						ach(4899),		-- Loch Modan Quests
-						ach(12429),		-- Wetlands Quests
-					})),
 					a(ach(4899, {	-- Loch Modan Quests
 						crit(1),		-- The Road to Thelsamar
 						crit(2),		-- The Axis of Awful
@@ -140,16 +129,11 @@ _.Achievements =
 						crit(3),		-- The Second Battle for Andorhal
 						crit(4),		-- The Menders' Stead
 					}),
-					a(ach(12455, {	-- Westfall & Duskwood Quests
+					a(ach(4903, {	-- Westfall & Duskwood Quests
 						crit(1),		-- Westfall Quests
 						crit(2),		-- Duskwood Quests
 					})),
-					a(ach(4903, {	-- Westfall Quests
-						crit(1),		-- Crime Scene Investigation
-						crit(2),		-- Investigating the Shadows
-						crit(3),		-- The Defias Brotherhood Reborn
-					})),
-					a(ach(12429, {	-- Wetlands Quests
+					a(ach(4899, {	-- Wetlands Quests
 						crit(1),		-- Slabchisel Survey
 						crit(2),		-- The Flooding of Menethil
 						crit(3),		-- Engineers and Archaeologists

@@ -9,15 +9,6 @@ _.Holidays = bubbleDown({["u"] = 18},
 		["g"] = {
 			n(-139, {	-- Bosses
 				n(36296, {	-- Apothecary Hummel
-					i(147907, {	-- Heart-Shaped Carton
-						["g"] = {
-							un(18, i(49715)),		-- Forever-Lovely Rose
-							un(18, i(50446)),		-- Toxic Wasteling
-							un(18, i(50741)),		-- Vile Fumigator's Mask
-							un(18, i(50471)),		-- The Heartbreaker
-						},
-						["lvl"] = 16,
-					}),
 					i(54537, {	-- Heart-Shaped Box
 						["g"] = {
 							un(18, i(49715)),		-- Forever-Lovely Rose
@@ -30,7 +21,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 								},
 							}),
 						},
-						["lvl"] = 110,
+						["lvl"] = 90,
 					}),
 				
 					un(2, i(51808)),	-- Choker of the Pure Heart [Level 80]

@@ -49,35 +49,6 @@ _.Zones =
 							["coord"] = { 42.8, 42.6, 107 },
 							["description"] = "This vendor is only accessible when the Horde controls Halaa.",
 						})),
-						{				-- Elementalist Sharvak <The Earthen Ring>
-							["npcID"] = 18072,	-- Elementalist Sharvak <The Earthen Ring>
-							["coord"] = { 60.60, 22.11, 107 },
-							["g"] = {
-								{	-- Technique: Glyph of Flickering
-									["itemID"] = 141059,	-- Technique: Glyph of Flickering
-									["classes"] = {
-										7,	-- Shaman
-									},
-									["description"] = "Currently this Technique can only be learned by Shaman's.  We suggest submitting a bug report to Blizzard to have it usuable by all scribes like the other techniques."
-								},
-								{	-- Raging Elemental Stone
-									["itemID"] = 136934,	-- Raging Elemental Stone - Shaman only - Toy
-								},
-								{	-- Tadpole Cloudseeder
-									["itemID"] = 136935,	-- Tadpole Cloudseeder - Shaman only - Toy
-								},
-								{	-- Vol'jin's Serpent Totem
-									["itemID"] = 136937,	-- Vol'jin's Serpent Totem - Shaman only - Toy
-								},
-								{	-- Waterspeaker's Totem
-									["itemID"] = 138490,	-- Waterspeaker's Totem - Shaman only - Toy
-								},
-								{	-- Tome of Hex: Compy
-									["itemID"] = 136938,	-- Tome of Hex: Compy
-									["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
-								},
-							},
-						},
 						h(n(19015, {	-- Mathar G'ochar <Trade Supplies>
 							["g"] = {
 								i(21894),	-- Pattern: Bolt of Soulcloth

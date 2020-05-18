@@ -194,11 +194,6 @@ _.Zones =
 						["qg"] = 47900,	-- Master Apothecary Lydon
 						["sourceQuests"] = { 28206 },	-- Little Girl Lost
 					}),
-					qart(qa(11997, {	-- The Frozen Flame
-						["qg"] = 99415,	-- Aethas Sunreaver
-						["classes"] = { 8 },	-- Mage
-						["sourceQuests"] = { 40270 },	-- The Path of Atonement
-					})),
 					q( 28744, {	-- Ghouls Hate My Grains
 						["qg"] = 49687,	-- Brazie the Botanist
 						["sourceQuests"] = { 28617 },	-- Flower Power

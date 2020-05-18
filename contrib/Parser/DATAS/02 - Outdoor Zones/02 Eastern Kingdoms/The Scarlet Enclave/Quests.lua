@@ -29,7 +29,6 @@ _.Zones =
 										["sourceQuest"] = 12593,
 										["groups"] = {
 											i(38707),	-- Runed Soulblade
-											i(142320),	-- Runed Soulsaber
 										},
 									},
 									{	-- Runeforging: Preparation For Battle
@@ -337,7 +336,6 @@ _.Zones =
 										["groups"] = {
 											i(38633),	-- Greataxe of the Ebon Blade
 											i(38632),	-- Greatsword of the Ebon Blade
-											i(142321),	-- Saber of the Ebon Blade
 										},
 									},
 									{	-- Taking Back Acherus

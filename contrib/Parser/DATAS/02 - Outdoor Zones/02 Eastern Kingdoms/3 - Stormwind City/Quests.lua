@@ -428,7 +428,7 @@ _.Zones =
 		--						["sourceQuests"] = {  },	-- 
 							}),
 							qa(28238, {	-- Twilight Shores
-								["qg"] = 107574,	-- Anduin Wrynn
+								["qg"] = 29611,	-- Anduin Wrynn
 								["sourceQuests"] = { 28716 },	-- Hero's Call: Twilight Highlands!
 								["coord"] = { 85.6, 31.8, 84 },
 							}),

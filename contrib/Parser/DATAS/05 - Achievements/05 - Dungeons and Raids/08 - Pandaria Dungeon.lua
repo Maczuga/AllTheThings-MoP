@@ -37,11 +37,6 @@ _.Achievements =
 					},
 					{	-- Heroic: Gate of the Setting Sun
 						["achievementID"] = 6759,	-- Heroic: Gate of the Setting Sun
-						["g"] = {
-							{	-- Gate of the Setting Sun
-								["achievementID"] = 10010,	-- Gate of the Setting Sun
-							},
-						},
 					},
 					{	-- Heroic: Mogu'shan Palace
 						["achievementID"] = 6756,	-- Heroic: Mogu'shan Palace
@@ -70,11 +65,6 @@ _.Achievements =
 					},
 					{	-- Heroic: Siege of Niuzao Temple
 						["achievementID"] = 6763,	-- Heroic: Siege of Niuzao Temple
-						["g"] = {
-							{	-- Siege of Niuzao Temple
-								["achievementID"] = 10011,	-- Siege of Niuzao Temple
-							},
-						},
 					},
 					{	-- Heroic: Stormstout Brewery
 						["achievementID"] = 6456,	-- Heroic: Stormstout Brewery

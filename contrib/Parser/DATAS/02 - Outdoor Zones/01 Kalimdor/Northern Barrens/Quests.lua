@@ -27,7 +27,6 @@ _.Zones =
 									i(59542),	-- Thornweaver Leggings
 									i(59543),	-- Pigman Belt
 									i(59544),	-- Kargal's Breastplate
-									i(131224),	-- Pigman Waistband
 									un(2, i(5275)),	-- Binding Girdle NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
 									un(2, i(5328)),	-- Cinched Belt NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
 								},

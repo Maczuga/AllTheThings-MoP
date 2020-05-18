@@ -26,7 +26,6 @@ _.Holidays = bubbleDown({["u"] = 18},
 									un(18, i(22276)),	-- Lovely Red Dress
 								}),
 								-- Toys --
-								un(18, i(165670)),	-- Peddlefeet's Lovely Hearthstone
 								un(18, i(34480)),	-- Romantic Picnic Basket
 								-- Pets --
 								un(18, i(22235)),	-- Truesilver Shafted Arrow
