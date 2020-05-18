@@ -57,10 +57,6 @@ ALLIANCE_ONLY = {
 	11,	-- Draenei
 	22,	-- Worgen
 	25,	-- Pandaren [Alliance]
-	29,	-- Void Elf
-	30,	-- Lightforged
-	32,	-- Kul Tiran
-	34,	-- Dark Iron
 };
 HORDE_ONLY = {
 	2,	-- Orc
@@ -70,10 +66,6 @@ HORDE_ONLY = {
 	9,	-- Goblin
 	10,	-- Blood Elf
 	26,	-- Pandaren [Horde]
-	27,	-- Nightborne
-	28,	-- Highmountain
-	31,	-- Zandalari
-	36,	-- Mag'har
 };
 ALL_RACES = {	-- NOTE: Use this with the exclude function.
 	1,	-- Human
@@ -91,14 +83,6 @@ ALL_RACES = {	-- NOTE: Use this with the exclude function.
 	24,	-- Pandaren [Neutral]
 	25,	-- Pandaren [Alliance]
 	26,	-- Pandaren [Horde]
-	27,	-- Nightborne
-	28,	-- Highmountain
-	29,	-- Void Elf
-	30,	-- Lightforged
-	31,	-- Zandalari
-	32,	-- Kul Tiran
-	34,	-- Dark Iron
-	36,	-- Mag'har
 };
 ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	1,	-- Warrior
@@ -112,7 +96,6 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	9,	-- Warlock
 	10,	-- Monk
 	11,	-- Druid
-	12,	-- Demon Hunter
 };
 ItemClassInfo = {
 	{

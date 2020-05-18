@@ -7159,7 +7159,7 @@ local function RowOnEnter(self)
 			local str = "";
 			for i,cl in ipairs(reference.c) do
 				if i > 1 then str = str .. ", "; end
-				str = str .. C_CreatureInfo.GetClassInfo(cl).className;
+				str = str .. select(1, GetClassInfoByID(cl));
 			end
 			GameTooltip:AddDoubleLine("Classes", str);
 		end
@@ -7167,7 +7167,8 @@ local function RowOnEnter(self)
 			local str = "";
 			for i,race in ipairs(reference.races) do
 				if i > 1 then str = str .. ", "; end
-				str = str .. C_CreatureInfo.GetRaceInfo(race).raceName;
+				local race_name = AllTheThings.RaceDBTable[race];
+				str = str .. race_name;
 			end
 			GameTooltip:AddDoubleLine("Races", str);
 		end
@@ -7184,7 +7185,6 @@ local function RowOnEnter(self)
 			end
 			GameTooltipIcon:Show();
 		elseif reference.displayID or reference.modelID or reference.model then
-			end
 			if app.Settings:GetTooltipSetting("displayID") then
 				if reference.displayID or reference.modelID then
 					GameTooltip:AddDoubleLine("Display ID", reference.displayID);
@@ -11047,22 +11047,12 @@ app.events.VARIABLES_LOADED = function()
 		factions[app.Me] = myfactions;
 		SetTempDataMember("CollectedFactions", myfactions);
 	end
-	
-	-- Cache your character's selfie filters data.
-	local selfieFilters = GetDataMember("CollectedSelfieFiltersPerCharacter", {});
-	local mySelfieFilters = GetTempDataMember("CollectedSelfieFilters", selfieFilters[app.Me]);
-	if not mySelfieFilters then
-		mySelfieFilters = {};
-		selfieFilters[app.Me] = mySelfieFilters;
-		SetTempDataMember("CollectedSelfieFilters", mySelfieFilters);
-	end
-	
 	-- Cache your character's title data.
 	local titles = GetDataMember("CollectedTitlesPerCharacter", {});
 	local myTitles = GetTempDataMember("CollectedTitles", titles[app.Me]);
 	if not myTitles then
 		myTitles = {};
-		musicRolls[app.Me] = myTitles;
+		titles[app.Me] = myTitles;
 		SetTempDataMember("CollectedTitles", myTitles);
 	end
 	

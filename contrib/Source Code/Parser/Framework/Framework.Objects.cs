@@ -66,7 +66,6 @@ namespace Parser_V2
                 new ToyData("toyID", "toy", new List<string>{ "f", "spellID" }),                // Toy ID
                 new MountData("mountID", "mnt", new List<string>{ "f", "spellID" }),            // Mount ID (TODO: Add item ID cache data if missing)
                 new SpeciesData("speciesID", "p", new List<string>{ "f", "spellID" }),          // Species ID (TODO: Add item ID cache data if missing)
-                new MusicRollData("musicRollID", "mr", new List<string>{ "f", "spellID" }),     // Music Roll ID (TODO: Add item ID cache data if missing)
                 new ObjectData("instanceID", "inst", new List<string>{ "f" }),
                 new ObjectData("artifactID", "artifact", new List<string>{ "f" }),
                 new HeirloomData("heirloomID", "heir"),
@@ -84,11 +83,9 @@ namespace Parser_V2
                 new ObjectData("objectID", "o", new List<string>{ "f" }),
                 new ObjectData("petAbilityID", "pa", new List<string>{ "f" }),
                 new ObjectData("petTypeID", "pt", new List<string>{ "f" }),
-                new ObjectData("followerID", "follower", new List<string>{ "f" }),
                 new ObjectData("missionID", "gm", new List<string>{ "f" }),
                 new ObjectData("talentID", "gt", new List<string>{ "f" }),
                 new ObjectData("mapID", "m", new List<string>{ "f" }),
-                new ObjectData("illusionID", "ill", new List<string>{ "f", "spellID" }),
                 new ObjectData("recipeID", "r", new List<string>{ "f", "spellID" }),
                 new ObjectData("spellID", "sp", new List<string>{ "f" }),
                 new ObjectData("setID", "gs", new List<string>{ "f" }),
@@ -491,56 +488,6 @@ namespace Parser_V2
             }
 
             /// <summary>
-            /// The music roll data class.
-            /// This writes the musicRollID to the constructor.
-            /// </summary>
-            public class MusicRollData : ObjectData
-            {
-                #region Constructor
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                public MusicRollData(string objectType, string shortcut) : base(objectType, shortcut)
-                {
-
-                }
-
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                /// <param name="blacklist">The blacklist.</param>
-                public MusicRollData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
-                {
-
-                }
-                #endregion
-                #region Functionality
-                /// <summary>
-                /// The constructor.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    // Write the default data field to the builder.
-                    Framework.Export(builder, data[ObjectType]);
-                    fields.Remove(ObjectType);
-
-                    // Export the Item ID as the second argument.
-                    //builder.Append(',');
-                    //Framework.Export(builder, data["itemID"]);
-                    //fields.Remove("itemID");
-                }
-                #endregion
-            }
-
-            /// <summary>
             /// The species data class.
             /// This writes the speciesID to the constructor.
             /// </summary>
@@ -805,12 +752,10 @@ namespace Parser_V2
                 Mount = 100,
                 BattlePet = 101,
                 Toy = 102,
-                Illusion = 103,
                 Quest = 104,
                 Achievement = 105,
                 Holiday = 106,
                 Vignette = 107,
-                MusicRoll = 108,
                 Heirloom = 109,
                 Title = 110,
                 Glyph = 111,
@@ -1079,7 +1024,6 @@ namespace Parser_V2
                 if (data.ContainsKey("mountID")) return Filters.Mount;
                 if (data.ContainsKey("speciesID")) return Filters.BattlePet;
                 if (data.ContainsKey("isToy")) return Filters.Toy;
-                if (data.ContainsKey("illusionID")) return Filters.Illusion;
                 if (data.ContainsKey("professionID")) return Filters.Recipe;
                 if (data.ContainsKey("questID")) return Filters.Quest;
                 if (data.ContainsKey("achID")) return Filters.Achievement;
@@ -1219,7 +1163,6 @@ namespace Parser_V2
                 var keyValues = (new Dictionary<string, string>
                 {
                     { "ach", "_.CreateAchievement" },
-                    { "artifact", "_.CreateArtifact" },
                     { "cat", "_.CreateCategory" },
                     { "cl", "_.CreateCharacterClass" },
                     { "crit", "_.CreateAchievementCriteria" },
@@ -1229,21 +1172,15 @@ namespace Parser_V2
                     { "faction", "_.CreateFaction" },
                     { "fp", "_.CreateFlightPath" },
                     { "flt", "_.CreateFilter" },
-                    { "follower", "_.CreateFollower" },
-                    { "gb", "_.CreateGarrisonBuilding" },
-                    { "gm", "_.CreateGarrisonMission" },
-                    { "gt", "_.CreateGarrisonTalent" },
                     { "gs", "_.CreateGearSet" },
                     { "gsh", "_.CreateGearSetHeader" },
                     { "gssh", "_.CreateGearSetSubHeader" },
                     { "heir", "_.CreateHeirloom" },
                     { "ho", "_.CreateHoliday" },
                     { "inst", "_.CreateInstance" },
-                    { "ill", "_.CreateIllusion" },
                     { "i", "_.CreateItem" },
                     { "m", "_.CreateMap" },
                     { "mnt", "_.CreateMount" },
-                    { "mr", "_.CreateMusicRoll" },
                     { "n", "_.CreateNPC" },
                     { "o", "_.CreateObject" },
                     { "p", "_.CreateSpecies" },
@@ -1409,8 +1346,6 @@ namespace Parser_V2
 
                     // Integer Data Type Fields
                     //case "questID":
-                    //case "musicRollID":
-                    //case "illusionID":
                     case "altAchID":
                     case "altQuestID":
                     case "requireSkill":

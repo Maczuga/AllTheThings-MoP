@@ -23,3 +23,24 @@ AllTheThings.RaceDB = {
 		["Horde"] = 26,
 	},
 };
+
+AllTheThings.RaceDBTable = {
+	[1] = "Human",
+	[2] = "Orc",
+	[3] = "Dwarf",
+	[4] = "Night Elf",
+	[4] = "NightElf",
+	[5] = "Undead",
+	[5] = "Scourge",
+	[6] = "Tauren",
+	[7] = "Gnome",
+	[8] = "Troll",
+	[9] = "Goblin",
+	[10] = "BloodElf",
+	[10] = "Blood Elf",
+	[11] = "Draenei",
+	[22] = "Worgen",
+	[24] = "Pandaren - Neutral",
+	[25] = "Pandaren - Alliance", 
+	[26] = "Pandaren - Horde",
+};
