@@ -34,19 +34,6 @@ _.Zones =
 					p(418), 	-- Water Snake
 				}),
 				n(-17, {	-- Quests
---[[	Achievement info for Loremaster related zone quests
-					a(ach(12429, {	-- Wetlands Quests
-						crit(1),		-- Slabchisel Survey
-						crit(2),		-- The Flooding of Menethil
-						crit(3),		-- Engineers and Archaeologists
-						crit(4),		-- Wardens of the Wetlands
-					})),
-]]--				
---[[
-					qg(, qa(25726)),	-- A Dumpy Job
-					qg(, qa(25820)),	-- A Mother's Worries
-					qg(, qa(26327)),	-- Anvilmar the Hero
---]]
 					qg(2104, qa(25780, { -- Assault on Menethil Keep
 						i(59078),
 						i(59077),

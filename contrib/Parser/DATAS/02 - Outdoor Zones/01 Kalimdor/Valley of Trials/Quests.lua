@@ -38,13 +38,8 @@ _.Zones =
 								["coord"] = { 44.9, 66.4 },
 								["sourceQuest"] = 25172, -- Invaders In Our Home
 							},
-							{	-- Lazy Peons (replaced by 37446)
-								["questID"] = 25134,
-								["u"] = 40,
-								["qg"] = 11378,	-- Foreman Thazz'ril
-							},
 							{	-- Lazy Peons
-								["questID"] = 37446,
+								["questID"] = 25134,
 								["qg"] = 11378, -- Foreman Thazz'ril
 								["coord"] = { 46.2, 63.3 },
 								["sourceQuest"] = 25127, -- Sting of the Scorpid
@@ -53,7 +48,7 @@ _.Zones =
 								["questID"] = 25135,
 								["qg"] = 11378, -- Foreman Thazz'ril
 								["coord"] = { 46.2, 63.3 },
-								["sourceQuest"] = 37446, -- Lazy Peons
+								["sourceQuest"] = 25134, -- Lazy Peons
 							},
 							{	-- Vile Familiars
 								["questID"] = 25131,

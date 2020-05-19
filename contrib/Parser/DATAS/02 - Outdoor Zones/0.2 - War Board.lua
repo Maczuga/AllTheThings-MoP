@@ -33,7 +33,6 @@ _.Zones =
 			q(28549),	-- Warchief's Command: Southern Barrens!
 			q(28532),	-- Warchief's Command: Stonetalon Mountains!
 			q(28509),	-- Warchief's Command: Tanaris!
-			q(39182),	-- Warchief's Command: Terokkar Forest!
 			q(28504),	-- Warchief's Command: Thousand Needles!
 			q(28717),	-- Warchief's Command: Twilight Highlands!
 			q(28557),	-- Warchief's Command: Uldum!

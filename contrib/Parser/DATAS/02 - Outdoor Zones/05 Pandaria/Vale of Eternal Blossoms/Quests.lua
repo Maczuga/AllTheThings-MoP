@@ -16,16 +16,16 @@ _.Zones =
 							["qg"] = 73691,	-- Chromie <The Timewalkers>
 							["isBreadcrumb"] = true,
 						},
-						un(1, {
+						{
 							["questID"] = 37188,	-- A Flash of Bronze...
 							["qg"] = 73691,	-- Chromie <The Timewalkers>
 							["isBreadcrumb"] = true,
-						}),
-						un(1, {
+						},
+						{
 							["questID"] = 37194,	-- A Flash of Bronze...
 							["qg"] = 73691,	-- Chromie <The Timewalkers>
 							["isBreadcrumb"] = true,
-						}),
+						},
 						{
 							["allianceQuestID"] = 33231,	-- Journey to the Timeless Isle
 							["hordeQuestID"] = 33232,	-- Journey to the Timeless Isle

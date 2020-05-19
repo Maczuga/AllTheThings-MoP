@@ -15,13 +15,13 @@ _.Zones =
 					p(419),	-- Small Frog
 					{	-- Analynn
 						["questID"] = 31814,
+						["qg"] = 66135,	-- Dagra the Fierce
+						["coord"] = { 58.6, 53.0, 10 },
+						["classes"] = HORDE_ONLY,
+						["sourceQuest"] = 31813,	-- Dagra the Fierce
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
-						["qg"] = 66135,	-- Dagra the Fierce
-						["coord"] = { 58.6, 53.0 },
-						["classes"] = HORDE_ONLY,
-						["sourceQuest"] = 31813,	-- Dagra the Fierce
 					},
 					{	-- CLUCK!
 						["questID"] = 3861,
@@ -31,7 +31,7 @@ _.Zones =
 					{	-- Dagra the Fierce
 						["questID"] = 31819,
 						["qg"] = 66135,	-- Dagra the Fierce
-						["coord"] = { 58.6, 53.0 },
+						["coord"] = { 58.6, 53.0, 10 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},

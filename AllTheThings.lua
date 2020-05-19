@@ -1591,6 +1591,103 @@ local function ReapplyExpand(g, g2)
 		end
 	end
 end
+local function ResolveSymbolicLink(o)
+	if o.sym then
+		local searchResults = {};
+		-- {{"select", "itemID", 119321}, {"where", "modID", 6 },{"pop"}},
+		for j,sym in ipairs(o.sym) do
+			local cmd = sym[1];
+			if cmd == "select" then
+				-- Instruction to search the full database for something.
+				for k,s in ipairs(app.SearchForField(sym[2], sym[3])) do
+					table.insert(searchResults, s);
+				end
+			elseif cmd == "pop" then
+				-- Instruction to "pop" all of the group values up one level.
+				local orig = searchResults;
+				searchResults = {};
+				for k,s in ipairs(orig) do
+					if s.g then
+						for l,t in ipairs(s.g) do
+							table.insert(searchResults, t);
+						end
+					end
+				end
+			elseif cmd == "where" then
+				-- Instruction to include only search results where a key value is a value
+				local key, value = sym[2], sym[3];
+				for k=#searchResults,1,-1 do
+					local s = searchResults[k];
+					if not s[key] or s[key] ~= value then
+						table.remove(searchResults, k);
+					end
+				end
+			elseif cmd == "not" then
+				-- Instruction to include only search results where a key value is not a value
+				if #sym > 3 then
+					local dict = {};
+					for k=2,#sym,2 do
+						dict[sym[k] ] = sym[k + 1];
+					end
+					for k=#searchResults,1,-1 do
+						local s = searchResults[k];
+						local matched = true;
+						for key,value in pairs(dict) do
+							if not s[key] or s[key] ~= value then
+								matched = false;
+								break;
+							end
+						end
+						if matched then
+							table.remove(searchResults, k);
+						end
+					end
+				else
+					local key, value = sym[2], sym[3];
+					for k=#searchResults,1,-1 do
+						local s = searchResults[k];
+						if s[key] and s[key] == value then
+							table.remove(searchResults, k);
+						end
+					end
+				end
+			elseif cmd == "is" then
+				-- Instruction to include only search results where a key exists
+				local key = sym[2];
+				for k=#searchResults,1,-1 do
+					local s = searchResults[k];
+					if not s[key] then table.remove(searchResults, k); end
+				end
+			elseif cmd == "isnt" then
+				-- Instruction to include only search results where a key doesn't exist
+				local key = sym[2];
+				for k=#searchResults,1,-1 do
+					local s = searchResults[k];
+					if s[key] then table.remove(searchResults, k); end
+				end
+			elseif cmd == "contains" then
+				-- Instruction to include only search results where a key value contains a value.
+				local key = sym[2];
+				local clone = {unpack(sym)};
+				table.remove(clone, 1);
+				table.remove(clone, 1);
+				for k=#searchResults,1,-1 do
+					local s = searchResults[k];
+					if not s[key] or not contains(clone, s[key]) then
+						table.remove(searchResults, k);
+					end
+				end
+			end
+		end
+		
+		if #searchResults > 0 then
+			-- print("Symbolic Link for ", o.key, " ", o[o.key], " contains ", #searchResults, " values after filtering.");
+			return searchResults;
+		else
+			-- print("Symbolic Link for ", o.key, " ", o[o.key], " contained no values after filtering.");
+		end
+	end
+end
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	for i,group in ipairs(groups) do
 		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
@@ -1646,7 +1743,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
-				if group.g and layer < 2 and (not group.achievementID or paramA == "creatureID") and not group.parent.difficultyID then
+				if layer < 2 and group.g and (not group.achievementID or paramA == "creatureID") and not group.parent.difficultyID and #group.g > 0 and not group.g[1].artifactID then
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
 				end
 			end
@@ -1725,6 +1822,24 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				group = subgroup;
 			end
+		elseif paramA == "achievementID" or paramA == "titleID" then
+			-- Don't do anything
+			local regroup = {};
+			if app.Settings:Get("AccountMode") then
+				for i,j in ipairs(group) do
+					if app.RecursiveUnobtainableFilter(j) then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					end
+				end
+			else
+				for i,j in ipairs(group) do
+					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					end
+				end
+			end
+			
+			group = regroup;
 		else
 			-- Determine if this is a cache for an item
 			local itemID, sourceID;
@@ -2058,17 +2173,28 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group.g = merged;
 			end
 			
+			local symbolicLink = ResolveSymbolicLink(group);
+			if symbolicLink then
+				if not group.g or #group.g == 0 then
+					group.g = symbolicLink;
+				else
+					for i,o in ipairs(group.g) do
+						MergeObject(symbolicLink, CreateObject(o));
+					end
+				end
+			end
+			
 			group.progress = 0;
 			group.total = 0;
 			app.UpdateGroups(group, group.g);
 		end
 		
-		if group.description and app.Settings:GetTooltipSetting("Descriptions") and not group.encounterID then
+		if group.description and app.Settings:GetTooltipSetting("Descriptions") and not group.encounterID and not (paramA == "achievementID" or paramA == "titleID") then
 			tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
 		end
 		
 		if group.g and #group.g > 0 then
-			if app.Settings:GetTooltipSetting("Descriptions") then
+			if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
 				for i,j in ipairs(group.g) do
 					if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
 						tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
@@ -2158,6 +2284,7 @@ end
 local fieldCache = {};
 local CacheFields;
 (function()
+fieldCache["achievementID"] = {};
 fieldCache["currencyID"] = {};
 fieldCache["creatureID"] = {};
 fieldCache["encounterID"] = {};
@@ -2171,8 +2298,8 @@ fieldCache["requireSkill"] = {};
 fieldCache["s"] = {};
 fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
+fieldCache["titleID"] = {};
 fieldCache["toyID"] = {};
-fieldCache["sym"] = {};
 local function CacheArrayFieldIDs(group, field, arrayField)
 	local firldCache_g = group[arrayField];
 	if firldCache_g then
@@ -2213,6 +2340,7 @@ local function CacheSubFieldID(group, field, subfield)
 	end
 end
 CacheFields = function(group)
+	CacheFieldID(group, "achievementID");
 	CacheFieldID(group, "creatureID");
 	CacheFieldID(group, "currencyID");
 	CacheArrayFieldIDs(group, "creatureID", "crs");
@@ -2222,6 +2350,7 @@ CacheFields = function(group)
 	CacheFieldID(group, "flightPathID");
 	CacheFieldID(group, "objectID");
 	CacheFieldID(group, "itemID");
+	CacheFieldID(group, "titleID");
 	CacheFieldID(group, "questID");
 	CacheSubFieldID(group, "questID", "altQuestID");
 	CacheFieldID(group, "requireSkill");
@@ -2241,8 +2370,6 @@ CacheFields = function(group)
 		for i,subgroup in ipairs(group.g) do
 			CacheFields(subgroup);
 		end
-	elseif group.sym then
-		table.insert(fieldCache["sym"], group);
 	end
 end
 end)();
@@ -2312,10 +2439,35 @@ local function SearchForLink(link)
 		-- Parse the link and get the itemID and bonus ids.
 		local itemString = string.match(link, "item[%-?%d:]+") or link;
 		if itemString then
-			local itemID = tonumber(select(2, strsplit(":", link)) or "0") or 0;
+			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
+				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
+				itemID = tonumber(itemID) or 0;
 				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
-				return sourceID and SearchForField("s", sourceID) or SearchForField("itemID", itemID);
+				if sourceID then
+					_ = SearchForField("s", sourceID);
+					if _ then return _; end
+				end
+				
+				-- Search for the item ID.
+				_ = SearchForField("itemID", itemID);
+				if _ and modID and modID ~= "" then
+					modID = tonumber(modID or "1");
+					local onlyMatchingModIDs = {};
+					for i,o in ipairs(_) do
+						if o.modID then
+							if o.modID == modID then
+								tinsert(onlyMatchingModIDs, o);
+							end
+						else
+							tinsert(onlyMatchingModIDs, o);
+						end
+					end
+					if #onlyMatchingModIDs > 0 then
+						return onlyMatchingModIDs;
+					end
+				end
+				return _;
 			end
 		end
 	else
@@ -6976,6 +7128,7 @@ local function RowOnEnter(self)
 		if reference.titleID then
 			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
 			GameTooltip:AddDoubleLine(" ", L[IsTitleKnown(reference.titleID) and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
+			AttachTooltipSearchResults(GameTooltip, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID, true);
 		end
 		if reference.questID then
 			if app.Settings:GetTooltipSetting("questID") then
@@ -7053,7 +7206,10 @@ local function RowOnEnter(self)
 			end
 			GameTooltip:AddDoubleLine("Cost", cost); 
 		end
-		if reference.criteriaID and reference.achievementID then GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID)); end
+		if reference.criteriaID and reference.achievementID then
+			GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID));
+		end
+		if reference.achievementID then AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID, true); end
 		
 		-- Show Quest Prereqs
 		if reference.sourceQuests and not reference.saved then
@@ -7879,108 +8035,6 @@ function app:GetDataCache()
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
 		
-		-- Evaluate the Symbolic links.
-		if fieldCache["sym"] then
-			for i,o in ipairs(fieldCache["sym"]) do
-				if o.sym then
-					local searchResults = {};
-					-- {{"select", "itemID", 119321}, {"where", "modID", 6 },{"pop"}},
-					for j,sym in ipairs(o.sym) do
-						local cmd = sym[1];
-						if cmd == "select" then
-							-- Instruction to search the full database for something.
-							for k,s in ipairs(SearchForField(sym[2], sym[3])) do
-								table.insert(searchResults, s);
-							end
-						elseif cmd == "pop" then
-							-- Instruction to "pop" all of the group values up one level.
-							local orig = searchResults;
-							searchResults = {};
-							for k,s in ipairs(orig) do
-								if s.g then
-									for l,t in ipairs(s.g) do
-										table.insert(searchResults, t);
-									end
-								end
-							end
-						elseif cmd == "where" then
-							-- Instruction to include only search results where a key value is a value
-							local key, value = sym[2], sym[3];
-							for k=#searchResults,1,-1 do
-								local s = searchResults[k];
-								if not s[key] or s[key] ~= value then
-									table.remove(searchResults, k);
-								end
-							end
-						elseif cmd == "not" then
-							-- Instruction to include only search results where a key value is not a value
-							if #sym > 3 then
-								local dict = {};
-								for k=2,#sym,2 do
-									dict[sym[k]] = sym[k + 1];
-								end
-								for k=#searchResults,1,-1 do
-									local s = searchResults[k];
-									local matched = true;
-									for key,value in pairs(dict) do
-										if not s[key] or s[key] ~= value then
-											matched = false;
-											break;
-										end
-									end
-									if matched then
-										table.remove(searchResults, k);
-									end
-								end
-							else
-								local key, value = sym[2], sym[3];
-								for k=#searchResults,1,-1 do
-									local s = searchResults[k];
-									if s[key] and s[key] == value then
-										table.remove(searchResults, k);
-									end
-								end
-							end
-						elseif cmd == "is" then
-							-- Instruction to include only search results where a key exists
-							local key = sym[2];
-							for k=#searchResults,1,-1 do
-								local s = searchResults[k];
-								if not s[key] then table.remove(searchResults, k); end
-							end
-						elseif cmd == "isnt" then
-							-- Instruction to include only search results where a key doesn't exist
-							local key = sym[2];
-							for k=#searchResults,1,-1 do
-								local s = searchResults[k];
-								if s[key] then table.remove(searchResults, k); end
-							end
-						elseif cmd == "contains" then
-							-- Instruction to include only search results where a key value contains a value.
-							local key = sym[2];
-							table.remove(sym, 1);
-							table.remove(sym, 1);
-							for k=#searchResults,1,-1 do
-								local s = searchResults[k];
-								if not s[key] or not contains(sym, s[key]) then
-									table.remove(searchResults, k);
-								end
-							end
-						end
-					end
-					
-					if #searchResults > 0 then
-						-- print("Symbolic Link for ", o.key, " ", o[o.key], " contains ", #searchResults, " values after filtering.");
-						o.g = searchResults;
-					else
-						-- print("Symbolic Link for ", o.key, " ", o[o.key], " contained no values after filtering.");
-					end
-					o.sym = nil;
-				end
-			end
-			fieldCache["sym"] = nil;
-		end
-		
 		-- Uncomment this section if you need to Harvest Display IDs:
 		--[[
 		local displayData = {};
@@ -8284,6 +8338,82 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime"):SetSize(425, 305);
 app:GetWindow("Unsorted");
+(function()
+	app:GetWindow("CosmicInfuser", UIParent, function(self)
+		if not self.initialized then
+			self.initialized = true;
+			self.data = {
+				['text'] = "Cosmic Infuser",
+				['icon'] = "Interface\\Icons\\INV_Misc_Celestial Map.blp", 
+				["description"] = "This window helps debug when we're missing map IDs in the addon.",
+				['visible'] = true, 
+				['expanded'] = true,
+				['OnUpdate'] = function(data) 
+					data.visible = true;
+				end,
+				['back'] = 1,
+				['g'] = {
+					{
+						['text'] = "Check for missing maps now!",
+						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
+						['description'] = "This function will check for missing mapIDs in ATT.",
+						['back'] = 0.5,
+						['OnClick'] = function(data, button)
+							Push(self, "Rebuild", self.Rebuild);
+							return true;
+						end,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
+					},
+				},
+			};
+			self.Rebuild = function(self)
+				-- Rebuild all the datas
+				local temp = self.data.g[1];
+				wipe(self.data.g);
+				tinsert(self.data.g, temp);
+				
+				-- Go through all of the possible maps
+				for mapID=1,3000,1 do
+					local mapInfo = C_Map.GetMapInfo(mapID);
+					if mapInfo then
+						local results = SearchForField("mapID", mapID);
+						local mapObject = { ["mapID"] = mapID, ["collectible"] = true };
+						if results and #results > 0 then
+							mapObject.collected = true;
+						else	
+							mapObject.collected = false;
+						end
+						
+						-- Recurse up the map chain and build the full hierarchy
+						local parentMapID = mapInfo.parentMapID;
+						while parentMapID do
+							mapInfo = C_Map.GetMapInfo(parentMapID);
+							if mapInfo then
+								mapObject = { ["mapID"] = parentMapID, ["collectible"] = true, ["g"] = { mapObject } };
+								parentMapID = mapInfo.parentMapID;
+							else
+								break;
+							end
+						end
+						
+						-- Merge it into the listing.
+						MergeObject(self.data.g, CreateObject(mapObject));
+					end
+				end
+				
+				self:Update();
+			end
+		end
+		
+		-- Update the window and all of its row data
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g);
+		UpdateWindow(self, true);
+	end);
+end)();
 --[[
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
@@ -9800,6 +9930,10 @@ end)();
 					if tradeSkillID == self.lastTradeSkillID then
 						return false;
 					end
+					-- If it's not yours, don't take credit for it.
+					if IsTradeSkillLinked() or IsTradeSkillGuild() then
+						return false;
+					end
 					self.lastTradeSkillID = tradeSkillID;
 					
 					-- Clear the search box focus so the scan will have correct results.
@@ -10001,268 +10135,6 @@ end)();
 		UpdateWindow(self, ...);
 	end);
 end)();
-(function()
-	local worldMapIDs = {
-		14,		-- Arathi Highlands
-		62,		-- Darkshore
-		875,	-- Zandalar
-		876,	-- Kul'Tiras
-		619,	-- The Broken Isles
-		885,	-- Antoran Wastes
-		830,	-- Krokuun
-		882,	-- Mac'Aree
-	};
-	app:GetWindow("WorldQuests", UIParent, function(self)
-		if not self.initialized then
-			self.initialized = true;
-			self.data = {
-				['text'] = "World Quests",
-				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp", 
-				["description"] = "These are World Quests that are currently available somewhere. Go get 'em!",
-				['visible'] = true, 
-				['expanded'] = true,
-				['back'] = 1,
-				['g'] = {
-					{
-						['text'] = "Update World Quests Now",
-						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
-						['back'] = 0.5,
-						['OnClick'] = function(data, button)
-							Push(self, "Rebuild", self.Rebuild);
-							return true;
-						end,
-						['OnUpdate'] = function(data) 
-							data.visible = true;
-						end,
-					},
-				},
-			};
-			self.rawData = {};
-			local OnUpdateForItem = function(self)
-				for i,o in ipairs(self.g) do
-					o.visible = false;
-				end
-			end;
-			self.Clear = function(self)
-				local temp = self.data.g[1];
-				wipe(self.data.g);
-				wipe(self.rawData);
-				tinsert(self.data.g, temp);
-				self:Rebuild();
-			end
-			self.Rebuild = function(self, no)
-				-- Rebuild all World Quest data
-				local retry = false;
-				local temp = {};
-				local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
-				for _,mapID in pairs(worldMapIDs) do
-					local mapObject = { mapID=mapID,g={},progress=0,total=0};
-					local cache = fieldCache["mapID"][mapID];
-					if cache then
-						for _,data in ipairs(cache) do
-							if data.mapID and data.icon then
-								mapObject.icon = data.icon;
-								mapObject.lvl = data.lvl;
-								mapObject.description = data.description;
-								break;
-							end
-						end
-					end
-					
-					local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
-					if pois then
-						for i,poi in ipairs(pois) do
-							local questObject = {questID=poi.questId,g={},progress=0,total=0};
-							if poi.mapID ~= mapID then
-								local subMapObject = { mapID=poi.mapID,g={},progress=0,total=0};
-								cache = fieldCache["mapID"][poi.mapID];
-								if cache then
-									for _,data in ipairs(cache) do
-										if data.mapID and data.icon then
-											subMapObject.icon = data.icon;
-											subMapObject.lvl = data.lvl;
-											subMapObject.description = data.description;
-											break;
-										end
-									end
-								end
-								MergeObject(subMapObject.g, questObject);
-								MergeObject(mapObject.g, subMapObject);
-							else
-								MergeObject(mapObject.g, questObject);
-							end
-							local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = GetQuestTagInfo(questObject.questID);
-							if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
-								questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE then
-								questObject.icon = "Interface\\Icons\\PetJournalPortrait";
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
-								questObject.icon = "Interface\\Icons\\Trade_BlackSmithing";
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON then
-								-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-								-- TODO: Add the relevent dungeon icon.
-								
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_RAID then
-								-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-								-- TODO: Add the relevent dungeon icon.
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_INVASION or worldQuestType == LE_QUEST_TAG_TYPE_INVASION_WRAPPER then
-								questObject.icon = "Interface\\Icons\\achievements_zone_brokenshore";
-							--elseif worldQuestType == LE_QUEST_TAG_TYPE_TAG then
-								-- completely useless
-								--questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-							--elseif worldQuestType == LE_QUEST_TAG_TYPE_NORMAL then
-							--	questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-							end
-							
-							cache = fieldCache["questID"][questObject.questID];
-							if cache then
-								for _,data in ipairs(cache) do
-									for key,value in pairs(data) do
-										if not (key == "g" or key == "parent") then
-											questObject[key] = value;
-										end
-									end
-									if data.g then
-										for _,entry in ipairs(data.g) do
-											tinsert(questObject.g, entry);
-										end
-									end
-								end
-							end
-							
-							local numQuestRewards = GetNumQuestLogRewards (questObject.questID)
-							for j=1,numQuestRewards,1 do
-								local itemID = select(6, GetQuestLogRewardInfo (j, questObject.questID));
-								if itemID then
-									if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
-										-- QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
-										local item = { ["itemID"] = itemID, ["expanded"] = false, };
-										cache = fieldCache["itemID"][itemID];
-										if cache then
-											for _,data in ipairs(cache) do
-												if data.f then
-													item.f = data.f;
-												end
-												if data.s then
-													item.s = data.s;
-												end
-												if data.g and #data.g > 0 then
-													if not item.g then
-														item.g = {};
-														item.progress = 0;
-														item.total = 0;
-														item.OnUpdate = OnUpdateForItem;
-													end
-													for __,subdata in ipairs(data.g) do
-														MergeObject(item.g, subdata);
-													end
-												end
-											end
-										end
-										MergeObject(questObject.g, item);
-									end
-								else
-									return true;
-								end
-							end
-							
-							if showCurrencies then
-								local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
-								if numCurrencies > 0 then
-									for j=1,numCurrencies,1 do
-										local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
-										if currencyID then
-											local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
-											cache = fieldCache["currencyID"][currencyID];
-											if cache then
-												for _,data in ipairs(cache) do
-													if data.f then
-														item.f = data.f;
-													end
-													if data.g and #data.g > 0 then
-														if not item.g then
-															item.g = {};
-															item.progress = 0;
-															item.total = 0;
-															item.OnUpdate = OnUpdateForItem;
-														end
-														for __,subdata in ipairs(data.g) do
-															MergeObject(item.g, subdata);
-														end
-													end
-												end
-											end
-											if not item.g then
-												item.g = {};
-												item.progress = 0;
-												item.total = 0;
-												item.OnUpdate = OnUpdateForItem;
-											end
-											MergeObject(questObject.g, item);
-										else
-											return true;
-										end
-									end
-								end
-							end
-							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID, timeRemaining);
-							--print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
-						end
-						table.sort(mapObject.g, self.Sort);
-					end
-					if #mapObject.g > 0 then
-						MergeObject(temp, mapObject);
-					end
-				end
-				for i,o in ipairs(temp) do
-					MergeObject(self.rawData, o);
-				end
-				for i,o in ipairs(self.rawData) do
-					MergeObject(self.data.g, CreateObject(o));
-				end
-				BuildGroups(self.data, self.data.g);
-				if not no then self:Update(); end
-			end
-			self.Sort = function(a, b)
-				if a.isRaid then
-					if b.isRaid then
-						return false;
-					else
-						return true;
-					end
-				elseif b.isRaid then
-					return false;
-				end
-				if a.questID then
-					if b.questID then
-						return a.questID < b.questID;
-					else
-						return true;
-					end
-				end
-				if a.mapID then
-					if b.mapID then
-						if a.text and b.text then
-							return a.text < b.text;
-						else
-							return a.mapID < b.mapID;
-						end
-					else
-						return true;
-					end
-				end
-				return false;
-			end;
-		end
-		
-		-- Update the window and all of its row data
-		self.data.progress = 0;
-		self.data.total = 0;
-		UpdateGroups(self.data, self.data.g);
-		UpdateWindow(self, true);
-	end);
-end)();
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
@@ -10281,17 +10153,15 @@ ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
---[[
-WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
-WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
-WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
-WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipCleared", ClearTooltip);
+-- WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+-- WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+-- WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
+-- WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnShow", AttachTooltip);
---]]
 
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
@@ -10315,6 +10185,11 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 		if group then CreateMiniListForGroup(group); end
 	end
+end
+
+SLASH_AllTheThingsMAPS1 = "/attmaps";
+SlashCmdList["AllTheThingsMAPS"] = function(cmd)
+	app:GetWindow("CosmicInfuser"):Toggle();
 end
 
 SLASH_AllTheThingsNote1 = "/attnote";

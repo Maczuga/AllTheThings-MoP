@@ -63,6 +63,15 @@ _.NeverImplemented =
 			un(1, i(32111)),	-- Chancellor's Silk Rainment
 			un(1, i(32112)),	-- Chancellor's Silk Legs
 			un(1, i(104355)),	-- Titan Rocket Boots-
+			un(1, i(107890)),	-- Unknown
+			un(1, i(109272)),	-- Unknown
+			un(1, i(109278)),	-- Unknown
+			un(1, i(109290)),	-- Unknown
+			un(1, i(109296)),	-- Unknown
+			un(1, i(109297)),	-- Unknown
+			un(1, i(109298)),	-- Unknown
+			un(1, i(109299)),	-- Unknown
+			un(1, i(109302)),	-- Unknown
 			un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
 			un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
 			un(1, i(6478)),		-- Rat Stompers
@@ -333,7 +342,9 @@ _.NeverImplemented =
 			}),
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
+			un(1, i(106166)),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire )
 			un(1, i(30289)),	-- Cenarion warden's belt 
+			un(1, i(106178)),	-- Rangari Initiate Wristwraps (Beta only)
 			un(1, i(68844)),	-- Unknown
 			un(1, i(38527)),	-- Onslaught Scaemail haubberk
 			un(1, i(39440)),	-- Greaves of the Titan Protectorate
@@ -568,6 +579,14 @@ _.NeverImplemented =
 			un(1, i(46839)),	-- Unknown
 			un(1, i(46840)),	-- Unknown
 			un(1, i(65015)),	-- Donstusefury of angerforge
+			un(1, i(109263)),	-- Unknown
+			un(1, i(109286)),	-- Unknown
+			un(1, i(109360)),	-- Unknown
+			un(1, i(109370)),	-- Unknown
+			un(1, i(109376)),	-- Unknown
+			un(1, i(109378)),	-- Unknown
+			un(1, i(109386)),	-- Unknown
+			un(1, i(109394)),	-- Unknown
 			
 		}),
 	}),
@@ -587,6 +606,8 @@ _.NeverImplemented =
 		un(1, i(31500)),	-- Unknown
 		un(1, i(31502)),	-- Unknown
 		un(1, i(31503)),	-- Unknown
+		un(1, i(107474)),	-- ph6 engorged innards
+		un(1, i(103535)),	-- Bulging Bag of Charms (was planned for asia store
 		un(1, i(31507)),	-- Unknown
 		un(1, i(36963)),	-- Unknown
 		un(1, i(90568)),	-- Unknown
@@ -874,6 +895,9 @@ _.NeverImplemented =
 			un(1, i(103375)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(102613)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)	
 			un(1, i(102810)),    -- Grievous Gladiator's Heavy Crossbow (they ditched those items)
+			un(1, i(100241)),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items, first try) (A)
+			un(1, i(100556)),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items, first try) (H)
+			un(1, i(100242)),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items, first try) (Elite)
 			un(1, i(103178)),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items) (A)
 		}),
 		n(-333, { -- Daggers
@@ -916,7 +940,6 @@ _.NeverImplemented =
 			un(1, i(108790)),	-- Unknown
 			un(1, i(109491)),	-- Unknown
 			un(1, i(109529)),	-- Unknown
-			un(1, i(122080)),	-- Warscout Shotgun (not added version)
 			un(1, i(64824)),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta))
 			
 		}),
@@ -937,6 +960,15 @@ _.NeverImplemented =
 			un(1, i(64700)),	-- Bloodthirsty Gladiator's Bonecracker (Epic BG Item, never made it out of beta)
 			un(1, i(64752)),	-- Bloodthirsty Gladiator's Gravel (Epic BG Item, never made it out of beta)
 			un(1, i(64816)),	-- Bloodthirsty Gladiator's Pummeler (Epic BG Item, never made it out of beta))
+			un(1, i(108791)),	-- Unknown
+			un(1, i(108792)),	-- Unknown
+			un(1, i(108793)),	-- Unknown
+			un(1, i(109279)),	-- Unknown
+			un(1, i(109383)),	-- Unknown
+			un(1, i(109404)),	-- Unknown
+			un(1, i(109438)),	-- Unknown
+			un(1, i(109470)),	-- Unknown
+			un(1, i(109533)),	-- Unknown
 		}),
 		n(-334, { -- One-Handed Axes
 			un(1, i(68050)),	-- Shatterscale Mightfish
@@ -979,6 +1011,9 @@ _.NeverImplemented =
 			un(1, i(34415)),	-- Crystaline Shard Shield
 			un(1, i(54554)),	-- Bejeweled Ship's Wheel
 			un(1, i(60220)),	-- Unknown
+			un(1, i(93441)),	-- crafted dreadful gladiator's barrier
+			un(1, i(93483)),	-- crafted dreadful gladiator's redoubt
+			un(1, i(93614)),	-- crafted dreadful gladiator's shield wall
 		}),
 		n(-342, { -- Staves
 			un(1, i(49458)),	-- Unknown
@@ -1004,8 +1039,6 @@ _.NeverImplemented =
 		}),
 		n(-337, { -- Two Handed Maces
 			un(1, i(23457)),	-- High Warlord's Destroyer
-			un(1, i(159555)),	-- Unknown
-			un(1, i(165263)),	-- Unknown
 			un(1, i(108794)),	-- Unknown
 			un(1, i(108795)),	-- Unknown
 			un(1, i(108796)),	-- Unknown
@@ -1017,8 +1050,6 @@ _.NeverImplemented =
 			un(1, i(81703)),	-- Glorenzelg, added in 5.0.1 ??
 			un(1, i(64755)),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta))
 			un(1, i(49547)),	-- Unknown
-			un(1, i(108806)),	-- Unknown, tagged as 2Hand Sword
-			un(1, i(109373)),	-- 6.0 QA Combat Test Strength 2h Sword
 		}),
 	-- Dreadful Gladiator (BLUE QUALITY) (did not make it to live)
 	un(1, i(84697)),	-- Dreadful Gladiator's Fleshslicer

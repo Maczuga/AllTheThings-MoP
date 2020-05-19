@@ -7,7 +7,7 @@ _.Zones =
 		m(467, {	-- Sunstrider Isle
 			["groups"] = {
 				n(-17, {	-- Quests
-					q(37440, {	-- A Fistful of Slivers
+					q(8836, {	-- A Fistful of Slivers
 						["qg"] = 15296,	-- Arcanist Ithanas
 						["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 					}),
@@ -30,7 +30,7 @@ _.Zones =
 						["qg"] = 15278,	-- Magistrix Erona
 						["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 					}),
-					q(37443, {	-- Solanian's Belongings
+					q(8830, {	-- Solanian's Belongings
 						["qg"] = 15295,	-- Well Watcher Solanian
 						["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 					}),
@@ -39,11 +39,11 @@ _.Zones =
 							["qg"] = 15298,	-- Tainted Arcane Wraith
 						}),
 					}),
-					q(37442, {	-- The Shrine of Dath'Remar
+					q(8345, {	-- The Shrine of Dath'Remar
 						["qg"] = 15295,	-- Well Watcher Solanian
 						["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 					}),
-					q(37439, {	-- Thirst Unending
+					q(8346, {	-- Thirst Unending
 						["qg"] = 15297,	-- Arcanist Helion
 						["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 					}),

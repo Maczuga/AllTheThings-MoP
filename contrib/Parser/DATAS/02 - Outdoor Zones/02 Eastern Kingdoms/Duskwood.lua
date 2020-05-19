@@ -32,16 +32,6 @@ _.Zones =
 					}))),
 				}),
 				n(-17,  {	-- Quests
---[[	Achievement info for Loremaster related zone quests
-					a(ach(12430, {	-- Duskwood Quests
-						crit(1),		-- The Legend of Stalvan
-						crit(2),		-- Morbent Fel
-						crit(3),		-- A Hermit's Errand
-						crit(4),		-- Mor'ladim
-						crit(5),		-- Citizens of Darkshire
-					})),
-]]--				
---					qg(43730, qa(26720)),	-- A Curse We Cannot Lift
 					qg(576, qa(26797, { -- A Daughters Love
 						i(60937),
 					})),

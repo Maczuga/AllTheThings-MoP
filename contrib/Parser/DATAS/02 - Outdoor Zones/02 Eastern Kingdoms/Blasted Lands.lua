@@ -58,7 +58,6 @@ _.Zones =
 					qg(42298, qa(26158)),	-- Attune the Bloodstone
 					qg(42298, qa(26160)),	-- Blood Ritual
 					qg(7506, qh(25686)),	-- Blood Ritual
---					q(35499),	-- Blow up towers (NOT IN GAME?)
 --]]
 
 					qg(5385, qa(25716, { -- Cultists at our Doorstep

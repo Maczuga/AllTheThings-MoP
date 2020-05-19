@@ -190,7 +190,8 @@ _.Zones =
 							}),
 							nh(73145, { -- Acon Deathwielder (5.4.7 Elite and removed Version) -- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
 								["groups"] = {
-									un(2, i(103636)),	-- Elite Prideful Gladiator's Greatcloak
+									un(2, i(103635)),	-- Elite Prideful Gladiator's Greatcloak
+									un(2, i(103636)),	-- Elite Prideful Gladiator's Tabard
 									un(2, i(102984)),	-- Elite Prideful Gladiator's Decapitator
 									un(2, i(103032)),	-- Elite Prideful Gladiator's Energy Staff
 									un(2, i(102987)),	-- Elite Prideful Gladiator's Cleaver
@@ -213,6 +214,8 @@ _.Zones =
 									un(2, i(102988)),	-- Elite Prideful Gladiator's pummeler
 									un(2, i(103030)),	-- Elite Prideful Gladiator's gravel
 									un(2, i(103120)),	-- Elite Prideful Gladiator's bonecracker
+									un(2, i(103002)),	-- Elite Prideful Gladiator's Touch of Defeat
+									un(2, i(103118)),	-- Elite Prideful Gladiator's baton of light
 									un(2, i(103039)),	-- Elite Prideful Gladiator's Chain Helm
 									un(2, i(103041)),	-- Elite Prideful Gladiator's Chain Spaulders
 									un(2, i(103037)),	-- Elite Prideful Gladiator's Chain Armor
@@ -646,11 +649,15 @@ _.Zones =
 									un(2, i(85123)),	-- Elite Malevolent Gladiator's Rifle
 									un(2, i(85120)),	-- Elite Malevolent Gladiator's Crossbow
 									un(2, i(85122)),	-- Elite Malevolent Gladiator's Baton of Light
-									un(2, i(85120)),	-- Elite Malevolent Gladiator's Touch of Defeat
+									un(2, i(85120)),	-- Elite Malevolent Gladiator's Heavy Crossbow
 									un(2, i(85136)),	-- Elite Malevolent Gladiator's Bonecracker  -- Maces
 									un(2, i(85130)),	-- Elite Malevolent Gladiator's Pummeler
 									un(2, i(85137)),	-- Elite Malevolent Gladiator's Gavel
 									un(2, i(85107)),	-- Elite Malevolent Gladiator's Bonegrinder
+									un(2, i(85121)),	-- Elite Malevolent GLadiator's Touch of Defeat
+									un(2, i(85124)),	-- Elite Malevolent Gladiator's shield wall
+									un(2, i(85125)),	-- Elite Malevolent Gladiator's barrier
+									un(2, i(85126)),	-- Elite Malevolent GLadiator's redoubt
 									un(2, i(84993)), -- Elite Malevolent Gladiator's Dreadplate Chestpiece  -- DK
 									un(2, i(85028)), -- Elite Malevolent Gladiator's Dreadplate Gauntlets
 									un(2, i(85046)), -- Elite Malevolent Gladiator's Dreadplate Helm
@@ -711,11 +718,14 @@ _.Zones =
 									un(2, i(85053)), -- Elite Malevolent Gladiator's Satin Leggings
 									un(2, i(85073)), -- Elite Malevolent Gladiator's Satin Robe
 									un(2, i(85074)), -- Elite Malevolent Gladiator's Satin Mantle
-									un(2, i(84994)), -- Elite Malevolent Gladiator's Leather Tunic  -- Rogue Leather
+									un(2, i(84994)), -- Elite Malevolent Gladiator's Chain Armor
+									un(2, i(84995)), -- Elite Malevolent Gladiator's Leather Tunic
 									un(2, i(85023)), -- Elite Malevolent Gladiator's Leather Gloves
 									un(2, i(85041)), -- Elite Malevolent Gladiator's Leather Helm
 									un(2, i(85055)), -- Elite Malevolent Gladiator's Leather Legguards
 									un(2, i(85089)), -- Elite Malevolent Gladiator's Leather Spaulders
+									un(2, i(84792)), -- Malevolent Gladiator's Leather Tunic  (used to upgrade to elite)
+									un(2, i(84848)), -- Malevolent Gladiator's Leather Helm		(used to upgrade to elite)
 									un(2, i(84990)), -- Elite Malevolent Gladiator's Ringmail Armor  -- Shaman RingMail
 									un(2, i(85014)), -- Elite Malevolent Gladiator's Ringmail Gauntlets
 									un(2, i(85029)), -- Elite Malevolent Gladiator's Ringmail Helm
@@ -906,20 +916,31 @@ _.Zones =
 							}),
 							nh(70108, {	-- Roo Desvin >S13< Elite
 								["groups"] = {
+									un(2, i(98336)),	-- Tyrannical Gladiator's Greatcloak
 									un(2, i(94307)),	-- Tyrannical Gladiator's Staff
 									un(2, i(94313)),	-- Tyrannical Gladiator's Battle Staff
 									un(2, i(94320)),	-- Tyrannical Gladiator's Energy Staff
 									un(2, i(91393)),	-- Tyrannical Gladiator's Ripper
 									un(2, i(91397)),	-- Tyrannical Gladiator's Render
+									un(2, i(94501)),	-- Tyrannical Gladiator's Barrier (used 2 upgrade to elite)
+									un(2, i(94498)),	-- Tyrannical Gladiator's Redoubt (used 2 upgrade to elite)
+									un(2, i(94500)),	-- Tyrannical Gladiator's Shield Wall (used 2 upgrade to elite)
 									un(2, i(91130)),	-- Tyrannical Gladiator's Barrier
 									un(2, i(91206)),	-- Tyrannical Gladiator's Redoubt
 									un(2, i(91419)),	-- Tyrannical Gladiator's Shield Wall
+									un(2, i(94323)),	-- Tyrannical Gladiator's Decapitator (used 2 upgrade to elite)
 									un(2, i(91088)),	-- Tyrannical Gladiator's Decapitator
+									un(2, i(94311)),	-- Tyrannical Gladiator's Greatsword (used 2 upgrade to elite)
 									un(2, i(91092)),	-- Tyrannical Gladiator's Greatsword
 									un(2, i(91096)),	-- Tyrannical Gladiator's Pummeler
 									un(2, i(91204)),	-- Tyrannical Gladiator's Gavel
+									un(2, i(91108)),	-- Tyrannical Gladiator's Longbow
+									un(2, i(91405)),	-- Tyrannical Gladiator's Cleaver
 									un(2, i(91407)),	-- Tyrannical Gladiator's Bonecracker
 									un(2, i(91202)),	-- Tyrannical Gladiator's Rifle
+									un(2, i(94325)),	-- Tyrannical Gladiator's Quickblade (used 2 upgrade to elite)
+									un(2, i(94310)),	-- Tyrannical Gladiator's Mageblade (used 2 upgrade to elite)
+									un(2, i(94318)),	-- Tyrannical Gladiator's Slicer (used 2 upgrade to elite)
 									un(2, i(91098)),	-- Tyrannical Gladiator's Quickblade
 									un(2, i(91399)),	-- Tyrannical Gladiator's Mageblade
 									un(2, i(91409)),	-- Tyrannical Gladiator's Slicer
@@ -1321,99 +1342,102 @@ _.Zones =
 								i(103529),	-- Prideful Gladiator's Plate Shoulders
 							}),
 							n(61749, {	-- The Metal Paw <Adventuring Supplies>
-								i(82614),	-- Mountainscaler Satin Hood
-								i(82615),	-- Mountainscaler Hide Helm
-								i(82616),	-- Mountainscaler Ringmail Helm
-								i(82617),	-- Mountainscaler Burnished Headcover
-								i(82618),	-- Mountainscaler Silk Cowl
-								i(82619),	-- Mountainscaler Leather Helm
-								i(82620),	-- Mountainscaler Chain Helm
-								i(82621),	-- Mountainscaler Heavy Helm
-								i(82622),	-- Mountainscaler Armored Helm
-								i(82623),	-- Mountainscaler Satin Mantle
-								i(82624),	-- Mountainscaler Hide Spaulders
-								i(82625),	-- Mountainscaler Ringmail Spaulders
-								i(82626),	-- Mountainscaler Burnished Spaulders
-								i(82627),	-- Mountainscaler Silk Amice
-								i(82628),	-- Mountainscaler Leather Spaulders
-								i(82629),	-- Mountainscaler Chain Spaulders
-								i(82630),	-- Mountainscaler Heavy Shoulders
-								i(82631),	-- Mountainscaler Armored Shoulders
-								i(82632),	-- Mountainscaler Satin Robe
-								i(82633),	-- Mountainscaler Hide Robes
-								i(82634),	-- Mountainscaler Ringmail Armor
-								i(82635),	-- Mountainscaler Burnished Chestguard
-								i(82636),	-- Mountainscaler Silk Robe
-								i(82637),	-- Mountainscaler Leather Tunic
-								i(82638),	-- Mountainscaler Chain Armor
-								i(82639),	-- Mountainscaler Heavy Chestpiece
-								i(82640),	-- Mountainscaler Armored Chestpiece
-								i(82641),	-- Mountainscaler Satin Leggings
-								i(82642),	-- Mountainscaler Hide Legguards
-								i(82643),	-- Mountainscaler Ringmail Leggings
-								i(82644),	-- Mountainscaler Burnished Legplates
-								i(82645),	-- Mountainscaler Silk Trousers
-								i(82646),	-- Mountainscaler Leather Legguards
-								i(82647),	-- Mountainscaler Chain Leggings
-								i(82648),	-- Mountainscaler Heavy Legguards
-								i(82649),	-- Mountainscaler Armored Legguards
-								i(82650),	-- Mountainscaler Satin Treads
-								i(82651),	-- Mountainscaler Hide Footguards
-								i(82652),	-- Mountainscaler Ringmail Sabatons
-								i(82653),	-- Mountainscaler Burnished Greaves
-								i(82654),	-- Mountainscaler Silk Treads
-								i(82655),	-- Mountainscaler Leather Boots
-								i(82656),	-- Mountainscaler Chain Sabatons
-								i(82657),	-- Mountainscaler Heavy Warboots
-								i(82658),	-- Mountainscaler Armored Warboots
-								i(82659),	-- Mountainscaler Satin Cord
-								i(82660),	-- Mountainscaler Hide Belt
-								i(82661),	-- Mountainscaler Ringmail Waistguard
-								i(82662),	-- Mountainscaler Burnished Clasp
-								i(82663),	-- Mountainscaler Silk Cord
-								i(82664),	-- Mountainscaler Leather Belt
-								i(82665),	-- Mountainscaler Chain Links
-								i(82666),	-- Mountainscaler Heavy Girdle
-								i(82667),	-- Mountainscaler Armored Girdle
-								i(82668),	-- Mountainscaler Satin Gloves
-								i(82669),	-- Mountainscaler Hide Gloves
-								i(82670),	-- Mountainscaler Ringmail Gauntlets
-								i(82671),	-- Mountainscaler Burnished Gloves
-								i(82672),	-- Mountainscaler Silk Handguards
-								i(82673),	-- Mountainscaler Leather Gloves
-								i(82674),	-- Mountainscaler Chain Gauntlets
-								i(82675),	-- Mountainscaler Heavy Gauntlets
-								i(82676),	-- Mountainscaler Armored Gauntlets
-								i(82677),	-- Mountainscaler Satin Cuffs
-								i(82678),	-- Mountainscaler Hide Bindings
-								i(82679),	-- Mountainscaler Ringmail Armbands
-								i(82680),	-- Mountainscaler Burnished Bracers
-								i(82681),	-- Mountainscaler Silk Cuffs
-								i(82682),	-- Mountainscaler Leather Armwraps
-								i(82683),	-- Mountainscaler Chain Wristguards
-								i(82684),	-- Mountainscaler Heavy Armplates
-								i(82685),	-- Mountainscaler Armored Bracers
-								i(82701),	-- Mountainscaler Shawl
-								i(82702),	-- Mountainscaler Drape
-								i(82703),	-- Mountainscaler Cape
-								i(82704),	-- Mountainscaler Manteau
-								i(82705),	-- Mountainscaler Cloak
-								i(82706),	-- Mountainscaler Meditation Staff
-								i(82707),	-- Mountainscaler Diviner's Rod
-								i(82708),	-- Mountainscaler Combat Staff
-								i(82709),	-- Mountainscaler Battlemace
-								i(82710),	-- Mountainscaler Handaxe
-								i(82711),	-- Mountainscaler Crossbow
-								i(82712),	-- Mountainscaler Saber
-								i(82713),	-- Mountainscaler Scepter
-								i(82714),	-- Mountainscaler Dagger
-								i(82715),	-- Mountainscaler Smasher
-								i(82716),	-- Mountainscaler Greatsword
-								i(82717),	-- Mountainscaler Mace
-								i(82718),	-- Mountainscaler Barrier
-								i(82719),	-- Mountainscaler Shield
-								i(82720),	-- Mountainscaler Blade
-								i(82721),	-- Mountainscaler Axe
+								["coord"] = { 71.4, 92.1, 379 },
+								["g"] = {
+									i(82614),	-- Mountainscaler Satin Hood
+									i(82615),	-- Mountainscaler Hide Helm
+									i(82616),	-- Mountainscaler Ringmail Helm
+									i(82617),	-- Mountainscaler Burnished Headcover
+									i(82618),	-- Mountainscaler Silk Cowl
+									i(82619),	-- Mountainscaler Leather Helm
+									i(82620),	-- Mountainscaler Chain Helm
+									i(82621),	-- Mountainscaler Heavy Helm
+									i(82622),	-- Mountainscaler Armored Helm
+									i(82623),	-- Mountainscaler Satin Mantle
+									i(82624),	-- Mountainscaler Hide Spaulders
+									i(82625),	-- Mountainscaler Ringmail Spaulders
+									i(82626),	-- Mountainscaler Burnished Spaulders
+									i(82627),	-- Mountainscaler Silk Amice
+									i(82628),	-- Mountainscaler Leather Spaulders
+									i(82629),	-- Mountainscaler Chain Spaulders
+									i(82630),	-- Mountainscaler Heavy Shoulders
+									i(82631),	-- Mountainscaler Armored Shoulders
+									i(82632),	-- Mountainscaler Satin Robe
+									i(82633),	-- Mountainscaler Hide Robes
+									i(82634),	-- Mountainscaler Ringmail Armor
+									i(82635),	-- Mountainscaler Burnished Chestguard
+									i(82636),	-- Mountainscaler Silk Robe
+									i(82637),	-- Mountainscaler Leather Tunic
+									i(82638),	-- Mountainscaler Chain Armor
+									i(82639),	-- Mountainscaler Heavy Chestpiece
+									i(82640),	-- Mountainscaler Armored Chestpiece
+									i(82641),	-- Mountainscaler Satin Leggings
+									i(82642),	-- Mountainscaler Hide Legguards
+									i(82643),	-- Mountainscaler Ringmail Leggings
+									i(82644),	-- Mountainscaler Burnished Legplates
+									i(82645),	-- Mountainscaler Silk Trousers
+									i(82646),	-- Mountainscaler Leather Legguards
+									i(82647),	-- Mountainscaler Chain Leggings
+									i(82648),	-- Mountainscaler Heavy Legguards
+									i(82649),	-- Mountainscaler Armored Legguards
+									i(82650),	-- Mountainscaler Satin Treads
+									i(82651),	-- Mountainscaler Hide Footguards
+									i(82652),	-- Mountainscaler Ringmail Sabatons
+									i(82653),	-- Mountainscaler Burnished Greaves
+									i(82654),	-- Mountainscaler Silk Treads
+									i(82655),	-- Mountainscaler Leather Boots
+									i(82656),	-- Mountainscaler Chain Sabatons
+									i(82657),	-- Mountainscaler Heavy Warboots
+									i(82658),	-- Mountainscaler Armored Warboots
+									i(82659),	-- Mountainscaler Satin Cord
+									i(82660),	-- Mountainscaler Hide Belt
+									i(82661),	-- Mountainscaler Ringmail Waistguard
+									i(82662),	-- Mountainscaler Burnished Clasp
+									i(82663),	-- Mountainscaler Silk Cord
+									i(82664),	-- Mountainscaler Leather Belt
+									i(82665),	-- Mountainscaler Chain Links
+									i(82666),	-- Mountainscaler Heavy Girdle
+									i(82667),	-- Mountainscaler Armored Girdle
+									i(82668),	-- Mountainscaler Satin Gloves
+									i(82669),	-- Mountainscaler Hide Gloves
+									i(82670),	-- Mountainscaler Ringmail Gauntlets
+									i(82671),	-- Mountainscaler Burnished Gloves
+									i(82672),	-- Mountainscaler Silk Handguards
+									i(82673),	-- Mountainscaler Leather Gloves
+									i(82674),	-- Mountainscaler Chain Gauntlets
+									i(82675),	-- Mountainscaler Heavy Gauntlets
+									i(82676),	-- Mountainscaler Armored Gauntlets
+									i(82677),	-- Mountainscaler Satin Cuffs
+									i(82678),	-- Mountainscaler Hide Bindings
+									i(82679),	-- Mountainscaler Ringmail Armbands
+									i(82680),	-- Mountainscaler Burnished Bracers
+									i(82681),	-- Mountainscaler Silk Cuffs
+									i(82682),	-- Mountainscaler Leather Armwraps
+									i(82683),	-- Mountainscaler Chain Wristguards
+									i(82684),	-- Mountainscaler Heavy Armplates
+									i(82685),	-- Mountainscaler Armored Bracers
+									i(82701),	-- Mountainscaler Shawl
+									i(82702),	-- Mountainscaler Drape
+									i(82703),	-- Mountainscaler Cape
+									i(82704),	-- Mountainscaler Manteau
+									i(82705),	-- Mountainscaler Cloak
+									i(82706),	-- Mountainscaler Meditation Staff
+									i(82707),	-- Mountainscaler Diviner's Rod
+									i(82708),	-- Mountainscaler Combat Staff
+									i(82709),	-- Mountainscaler Battlemace
+									i(82710),	-- Mountainscaler Handaxe
+									i(82711),	-- Mountainscaler Crossbow
+									i(82712),	-- Mountainscaler Saber
+									i(82713),	-- Mountainscaler Scepter
+									i(82714),	-- Mountainscaler Dagger
+									i(82715),	-- Mountainscaler Smasher
+									i(82716),	-- Mountainscaler Greatsword
+									i(82717),	-- Mountainscaler Mace
+									i(82718),	-- Mountainscaler Barrier
+									i(82719),	-- Mountainscaler Shield
+									i(82720),	-- Mountainscaler Blade
+									i(82721),	-- Mountainscaler Axe
+								},
 							}),
 							n(64518, {	-- Uncle Bigpocket <Used Yak Salesgrummle>
 								i(87789),	-- Reins of the Blond Riding Yak Mount
