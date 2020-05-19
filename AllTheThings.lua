@@ -12,9 +12,7 @@ local L = app.L;
 -- local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByID;
 -- local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 -- local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
--- local C_TransmogCollection_GetIllusionSourceInfo = C_TransmogCollection.GetIllusionSourceInfo;
 -- local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
--- local C_TransmogCollection_GetIllusions = C_TransmogCollection.GetIllusions;
 -- local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
 -- local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
 -- local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
@@ -1516,8 +1514,6 @@ local function MergeObject(g, t, index)
 			key = "encounterID";
 		elseif t.instanceID then
 			key = "instanceID";
-		elseif t.illusionID then
-			key = "illusionID";
 		elseif t.speciesID then
 			key = "speciesID";
 		elseif t.recipeID then
@@ -3751,11 +3747,7 @@ app.BaseFaction = {
 		elseif key == "trackable" or key == "collectible" then
 			return app.CollectibleReputations;
 		elseif key == "saved" or key == "collected" then
-			if app.AccountWideReputations then
-				if GetDataSubMember("CollectedFactions", t.factionID) then return 1; end
-			else
-				if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
-			end
+			if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
 			if t.isFriend and not select(9, GetFriendshipReputation(t.factionID)) or t.standing == 8 then
 				SetTempDataSubMember("CollectedFactions", t.factionID, 1);
 				SetDataSubMember("CollectedFactions", t.factionID, 1);
@@ -3932,14 +3924,8 @@ app.BaseHeirloom = {
 			if t.factionID then
 				if t.repeatable then
 					-- This is used by reputation tokens.
-					if app.AccountWideReputations then
-						if GetDataSubMember("CollectedFactions", t.factionID) then
-							return 1;
-						end
-					else
-						if GetTempDataSubMember("CollectedFactions", t.factionID) then
-							return 1;
-						end
+					if GetTempDataSubMember("CollectedFactions", t.factionID) then
+						return 1;
 					end
 					
 					if select(1, GetFriendshipReputation(t.factionID)) and not select(9, GetFriendshipReputation(t.factionID)) or select(3, GetFactionInfoByID(t.factionID)) == 8 then
@@ -4283,14 +4269,8 @@ app.BaseItem = {
 			if t.factionID then
 				if t.repeatable then
 					-- This is used by reputation tokens.
-					if app.AccountWideReputations then
-						if GetDataSubMember("CollectedFactions", t.factionID) then
-							return 1;
-						end
-					else
-						if GetTempDataSubMember("CollectedFactions", t.factionID) then
-							return 1;
-						end
+					if GetTempDataSubMember("CollectedFactions", t.factionID) then
+						return 1;
 					end
 					
 					if select(1, GetFriendshipReputation(t.factionID)) and not select(9, GetFriendshipReputation(t.factionID)) or select(3, GetFactionInfoByID(t.factionID)) == 8 then
@@ -4852,68 +4832,6 @@ app.BaseRecipe = {
 };
 app.CreateRecipe = function(id, t)
 	return createInstance(constructor(id, t, "spellID"), app.BaseRecipe);
-end
-
--- Selfie Filters Lib
-app.BaseSelfieFilter = {
-	__index = function(t, key)
-		if key == "key" then
-			return "questID";
-		elseif key == "text" then
-			if t.npcID then
-				if t.npcID > 0 then
-					return t.npcID > 0 and NPCNameFromID[t.npcID];
-				else
-					return L["NPC_ID_NAMES"][t.npcID];
-				end
-			end
-			return t.questName;
-		elseif key == "questName" then
-			local questID = t.questID;
-			local questName = QuestTitleFromID[questID];
-			if questName then
-				t.retries = nil;
-				t.title = nil;
-				return "[" .. questName .. "]";
-			end
-			if t.retries and t.retries > 120 then
-				return "[Quest #" .. questID .. "*]";
-			else
-				t.retries = (t.retries or 0) + 1;
-			end
-		elseif key == "link" then
-			return "quest:" .. t.questID;
-		elseif key == "icon" then
-			return "Interface\\Icons\\INV_Misc_ SelfieCamera_02";
-		elseif key == "trackable" then
-			return true;
-		elseif key == "collectible" then
-			return app.CollectibleSelfieFilters;
-		elseif key == "collected" then
-			return t.saved;
-		elseif key == "saved" then
-			if app.AccountWideSelfieFilters then
-				if GetDataSubMember("CollectedSelfieFilters", t.questID) then
-					return 1;
-				end
-			else
-				if GetTempDataSubMember("CollectedSelfieFilters", t.questID) then
-					return 1;
-				end
-			end
-			if IsQuestFlaggedCompleted(t.questID) then
-				SetTempDataSubMember("CollectedSelfieFilters", t.questID, 1);
-				SetDataSubMember("CollectedSelfieFilters", t.questID, 1);
-				return 1;
-			end
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateSelfieFilter = function(id, t)
-	return createInstance(constructor(id, t, "questID"), app.BaseSelfieFilter);
 end
 
 -- Spell Lib
@@ -6903,15 +6821,15 @@ local function RowOnClick(self, button)
 		-- Control Click Expands the Groups
 		if IsControlKeyDown() then
 			-- Illusions are a nasty animal that need to be displayed a special way.
-			if reference.illusionID then
-				DressUpVisual(DressUpOutfitMixin:GetSlotSourceID("MAINHANDSLOT", LE_TRANSMOG_TYPE_APPEARANCE), 16, reference.illusionID);
-			else
+			-- if reference.illusionID then
+				-- DressUpVisual(DressUpOutfitMixin:GetSlotSourceID("MAINHANDSLOT", LE_TRANSMOG_TYPE_APPEARANCE), 16, reference.illusionID);
+			-- else
 				-- If this reference has a link, then attempt to preview the appearance.
 				local link = reference.link or reference.silentLink;
 				if link and HandleModifiedItemClick(link) then
 					return true;
 				end
-			end
+			-- end
 			
 			-- If this reference is anything else, expand the groups.
 			if reference.g then
@@ -7061,7 +6979,6 @@ local function RowOnEnter(self)
 		--	if reference.parent and reference.parent.locks then GameTooltip:AddDoubleLine("Instance Progress", GetCompletionText(reference.saved)); end
 		end
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
-		if reference.illusionID and app.Settings:GetTooltipSetting("illusionID") then GameTooltip:AddDoubleLine(L["ILLUSION_ID"], tostring(reference.illusionID)); end
 		if reference.instanceID then
 			if app.Settings:GetTooltipSetting("instanceID") then GameTooltip:AddDoubleLine(L["INSTANCE_ID"], tostring(reference.instanceID)); end
 			GameTooltip:AddDoubleLine(L["LOCKOUT"], L[reference.isLockoutShared and "SHARED" or "SPLIT"]);
@@ -7659,15 +7576,6 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		-- Illusions
-		-- if app.Categories.Illusions then
-		-- 	db = {};
-		-- 	db.expanded = false;
-		-- 	db.text = "Illusions";
-		-- 	db.group = app.Categories.Illusions;
-		-- 	table.insert(g, db);
-		-- end
-		
 		-- Factions
 		if app.Categories.Factions then
 			db = app.CreateAchievement(6742, app.Categories.Factions);
@@ -7771,27 +7679,6 @@ function app:GetDataCache()
 		table.insert(g, db);
 		--]]
 		
-		-- Illusions (Dynamic)
-		--[[
-		db = {};
-		db.g = (function()
-			local cache = GetTempDataMember("ILLUSION_CACHE");
-			if not cache then
-				cache = {};
-				SetTempDataMember("ILLUSION_CACHE", cache);
-				for i=1,10000,1 do
-					local visualID = select(1, C_TransmogCollection.GetIllusionSourceInfo(i));
-					if visualID and visualID > 0 then
-						tinsert(cache, app.CreateIllusion(i));
-					end
-				end
-			end
-			return cache;
-		end)();
-		db.expanded = false;
-		db.text = "Illusions (Dynamic)";
-		table.insert(g, db);
-		--]]
 		-- Items (Dynamic)
 		--[[
 		db = {};
@@ -11241,7 +11128,6 @@ app.events.VARIABLES_LOADED = function()
 	
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedFactions", {});
-	GetDataMember("CollectedSelfieFilters", {});
 	GetDataMember("CollectedTitles", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("SeasonalFilters", {});
@@ -11426,3 +11312,4 @@ app.CreateIllusion = function(id, t) return nil; end
 app.CreateMusicRoll = function(id, t) return nil; end
 app.CreateTransmogCategory = function(id, t) return nil; end
 app.CreateToy = function(id, t) return nil; end
+app.CreateSelfieFilter = function(id, t) return nil; end

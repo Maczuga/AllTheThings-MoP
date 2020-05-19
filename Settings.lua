@@ -73,7 +73,6 @@ local GeneralSettingsBase = {
 		-- ["AccountWide:Mounts"] = true,
 		-- ["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
-		["AccountWide:Reputations"] = true,
 		["AccountWide:Titles"] = true,
 		-- ["AccountWide:Toys"] = true,
 		-- ["AccountWide:Transmog"] = true,
@@ -433,7 +432,6 @@ settings.UpdateMode = function(self)
 		app.AccountWideMounts = self:Get("AccountWide:Mounts");
 		app.AccountWideQuests = self:Get("AccountWide:Quests");
 		app.AccountWideRecipes = self:Get("AccountWide:Recipes");
-		app.AccountWideReputations = self:Get("AccountWide:Reputations");
 		app.AccountWideTitles = self:Get("AccountWide:Titles");
 		app.AccountWideToys = self:Get("AccountWide:Toys");
 		app.AccountWideTransmog = self:Get("AccountWide:Transmog");
@@ -879,76 +877,6 @@ end);
 FlightPathsAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
 FlightPathsAccountWideCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "TOPLEFT", 220, 0);
 
-local FollowersCheckBox = settings:CreateCheckBox("Followers / Champions",
-function(self)
-	self:SetChecked(settings:Get("Thing:Followers"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Followers", GetChecked(self));
-	settings:UpdateMode();
-	app:RefreshData();
-end);
-FollowersCheckBox:SetATTTooltip("Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, and BFA Campaign Minions.");
-FollowersCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local FollowersAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
-function(self)
-	self:SetChecked(settings:Get("AccountWide:Followers"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Followers") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:Followers", GetChecked(self));
-	settings:UpdateMode();
-	app:RefreshData();
-end);
-FollowersAccountWideCheckBox:SetATTTooltip("Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.");
-FollowersAccountWideCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "TOPLEFT", 220, 0);
-
-local IllusionsCheckBox = settings:CreateCheckBox("Illusions",
-function(self)
-	self:SetChecked(settings:Get("Thing:Illusions"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Illusions", GetChecked(self));
-	settings:UpdateMode();
-	app:RefreshData();
-end);
-IllusionsCheckBox:SetATTTooltip("Enable this option to track illusions.\n\nThese are really cool looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an Illusion despite what all the Nightborn think.\n\nTracked Account Wide by Default.");
-IllusionsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
-
-local IllusionsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
-function(self)
-	self:SetChecked(settings:Get("AccountWide:Illusions"));
-	self:Disable();
-	self:SetAlpha(0.2);
-end,
-function(self)
-	settings:Set("AccountWide:Illusions", GetChecked(self));
-	settings:UpdateMode();
-	app:RefreshData();
-end);
-IllusionsAccountWideCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "TOPLEFT", 220, 0);
-
 local MountsCheckBox = settings:CreateCheckBox("Mounts",
 function(self)
 	self:SetChecked(settings:Get("Thing:Mounts"));
@@ -966,7 +894,7 @@ function(self)
 	app:RefreshData();
 end);
 MountsCheckBox:SetATTTooltip("Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!\n\nTracked Account Wide by Default.");
-MountsCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "BOTTOMLEFT", 0, 4);
+MountsCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local MountsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
@@ -1062,60 +990,12 @@ ReputationsCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ReputationsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:Reputations"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Reputations") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:Reputations", GetChecked(self));
-	settings:UpdateMode();
-	app:RefreshData();
+	self:SetChecked(false);
+	self:Disable();
+	self:SetAlpha(0.2);
 end);
-ReputationsAccountWideCheckBox:SetATTTooltip("Reputations are now tracked account wide in Blizzard's database for achievements, so turning this on may be a good idea.");
+ReputationsAccountWideCheckBox:SetATTTooltip("Reputations will be tracked account wide in Blizzard's database for achievements in future expansions.");
 ReputationsAccountWideCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "TOPLEFT", 220, 0);
-
-local SelfieFiltersCheckBox = settings:CreateCheckBox("Selfie Filters",
-function(self)
-	self:SetChecked(settings:Get("Thing:SelfieFilters"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:SelfieFilters", GetChecked(self));
-	settings:UpdateMode();
-	app:RefreshData();
-end);
-SelfieFiltersCheckBox:SetATTTooltip("Enable this option to track selfie filters for S.E.L.F.I.E Camera Toy.\n\nOh joy! Selfies! Okay duuude.");
-SelfieFiltersCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local SelfieFiltersAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
-function(self)
-	self:SetChecked(settings:Get("AccountWide:SelfieFilters"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:SelfieFilters") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:SelfieFilters", GetChecked(self));
-	settings:UpdateMode();
-	app:RefreshData();
-end);
-SelfieFiltersAccountWideCheckBox:SetATTTooltip("Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You have to snap a selfie with your S.E.L.F.I.E Camera Toy!");
-SelfieFiltersAccountWideCheckBox:SetPoint("TOPLEFT", SelfieFiltersCheckBox, "TOPLEFT", 220, 0);
 
 local TitlesCheckBox = settings:CreateCheckBox("Titles",
 function(self)
@@ -1134,7 +1014,7 @@ function(self)
 	app:RefreshData();
 end);
 TitlesCheckBox:SetATTTooltip("Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.");
-TitlesCheckBox:SetPoint("TOPLEFT", SelfieFiltersCheckBox, "BOTTOMLEFT", 0, 4);
+TitlesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local TitlesAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
@@ -1176,7 +1056,7 @@ ToysCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ToysAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
-	self:SetChecked(true);
+	self:SetChecked(false);
 	self:Disable();
 	self:SetAlpha(0.2);
 end);

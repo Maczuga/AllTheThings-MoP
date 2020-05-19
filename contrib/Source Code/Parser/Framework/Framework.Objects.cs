@@ -1384,7 +1384,6 @@ namespace Parser_V2
                     { "q", "_.CreateQuest" },
                     { "r", "_.CreateRecipe" },
                     { "s", "_.CreateItemSource" },
-                    { "selfie", "_.CreateSelfieFilter" },
                     { "sp", "_.CreateSpell" },
                     { "t", "_.CreateTier" },
                     { "title", "_.CreateTitle" },
