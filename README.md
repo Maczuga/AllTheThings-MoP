@@ -1,3 +1,6 @@
+## After downloading and extracting the addon into the addons folder, rename or make sure the extracted folder is named AllTheThings
+
+
 TODO:
 - item "appearances" - switch logic to having item instead of appearance by itself
 - ulduar 10 boss loot
